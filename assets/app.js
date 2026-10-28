@@ -166,7 +166,7 @@ function heroHTML() {
   return `<section class="hero">
     <p class="hero-eyebrow"><span class="pulse"></span>${todayLabel()} · 每日更新</p>
     <h1>把论文，切成<br /><mark>高中生能消化</mark>的小块。</h1>
-    <p class="hero-lede">每天从 arXiv 抓取集成电路、数学、物理、化学、生物的最新研究，用 AI 翻成中文，写成 3 分钟就能读完的版本。</p>
+    <p class="hero-lede">每天从 arXiv 抓取集成电路、数学、物理、化学、生物的最新研究，用 AI 翻成中文，把每个名词都讲清楚，写成 4 分钟就能读完的版本。</p>
     <div class="hero-stats">
       <div><strong>${state.papers.length}</strong><span>篇精选</span></div>
       <div><strong>${state.fields.length}</strong><span>个领域</span></div>
@@ -350,7 +350,7 @@ function renderPaper(id) {
       </div>
 
       <section class="terms">
-        <h2>术语小词典</h2>
+        <h2>术语小词典${p.terms.length ? ` · ${p.terms.length} 个` : ''}</h2>
         <dl>${p.terms.map((t) => `<div class="term"><dt>${esc(t.t)}</dt><dd>${esc(t.d)}</dd></div>`).join('')}</dl>
       </section>
 
