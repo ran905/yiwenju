@@ -37,7 +37,17 @@ jobs:
       - name: 合成站点数据
         run: node scripts/compose.mjs
 
-      - name: 提交
+      - name: 构建
+        run: node scripts/build.mjs
+
+      - name: 部署到 Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=yiwenju --branch=main
+
+      - name: 提交数据
         run: |
           git config user.name "yiwenju-bot"
           git config user.email "bot@users.noreply.github.com"
