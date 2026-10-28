@@ -1,0 +1,18 @@
+{
+  "name": "frontier-slice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "前沿切片：给高中生看的科研速递。抓取 arXiv 论文，用 AI 翻成中文并改写成人话。",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "fetch": "node scripts/fetch.mjs",
+    "summarize": "node scripts/summarize.mjs",
+    "compose": "node scripts/compose.mjs",
+    "refresh": "node scripts/fetch.mjs --per-field 12 --days 7 && node scripts/summarize.mjs && node scripts/compose.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

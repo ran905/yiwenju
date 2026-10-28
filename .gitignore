@@ -1,0 +1,11 @@
+node_modules/
+data/raw/
+dist/
+.tools/
+.npm-cache/
+frontier-slice-site.zip
+scripts/_*.mjs
+.DS_Store
+Thumbs.db
+*.log
+.wrangler/

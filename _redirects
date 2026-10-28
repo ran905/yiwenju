@@ -1,0 +1,2 @@
+# Redirect www to the apex domain (after both are added in Pages)
+https://www.yiwenju.asia/*  https://yiwenju.asia/:splat  301

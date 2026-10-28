@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chip",
+    "name": "集成电路",
+    "en": "Chips",
+    "color": "#3d6be5",
+    "blurb": "芯片、器件、光刻，以及下一代计算硬件",
+    "arxiv": ["cs.AR", "physics.app-ph", "cond-mat.mes-hall"]
+  },
+  {
+    "id": "math",
+    "name": "数学",
+    "en": "Math",
+    "color": "#7c5ce0",
+    "blurb": "从数论到组合，纯数学里的漂亮想法",
+    "arxiv": ["math.NT", "math.CO", "math.AG", "math.DS"]
+  },
+  {
+    "id": "physics",
+    "name": "物理",
+    "en": "Physics",
+    "color": "#df6435",
+    "blurb": "量子、凝聚态、天体，宇宙怎么运转",
+    "arxiv": ["quant-ph", "cond-mat.str-el", "hep-th", "astro-ph.CO"]
+  },
+  {
+    "id": "chem",
+    "name": "化学",
+    "en": "Chemistry",
+    "color": "#149c78",
+    "blurb": "分子、材料、催化，以及它们怎么被造出来",
+    "arxiv": ["physics.chem-ph", "cond-mat.mtrl-sci"]
+  },
+  {
+    "id": "bio",
+    "name": "生物",
+    "en": "Biology",
+    "color": "#d1467a",
+    "blurb": "大脑、基因、细胞，生命这台机器的细节",
+    "arxiv": ["q-bio.NC", "q-bio.GN", "q-bio.CB", "q-bio.QM"]
+  }
+]

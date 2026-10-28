@@ -1,0 +1,792 @@
+{
+  "count": 16,
+  "papers": [
+    {
+      "id": "2610.31131",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-10-22",
+      "title_en": "Music Between Two Minds: Individual Signatures, Shared States, and the Emergence of Creative Interaction",
+      "title_zh": "两个大脑即兴爵士：各自保留旋律，却共享节奏",
+      "one_liner": "分析 986 段职业爵士二重奏，发现音高上的「惊喜」是每个人的签名，节奏上的起伏却让两个人变成同一个系统。",
+      "why": "合作中的创造力是怎么发生的？这篇用真实的即兴演奏数据，把「默契」拆成了可测量的信息量。原来个性和共性可以同时存在，只是藏在不同维度里。",
+      "sections": {
+        "background": "人与人之间的创造性互动——对话、协作、即兴音乐——是最珍贵的创造力形式之一。但两个大脑如何实时协调「新意」的流动，一直缺少定量研究。",
+        "method": "分析 986 段职业爵士即兴二重奏，把演奏转成音高序列和节奏序列，计算「不确定性」与「惊喜」的逐拍波动，再做跨演奏者、跨轮次的统计比较。",
+        "finding": "音高波动在 90% 的演奏里能区分两位演奏者，甚至单段独奏就能认出是谁，而且这种差异跨轮次、跨曲目都不消失——它是个体签名。节奏波动则相反：同一段演奏里两人统计上不可区分，但会在曲目之间一起漂移，各自远离自己过去的速率，与远离伙伴的速率相同。还发现了「轮次互补」：一方超出自己的平均惊喜，另一方下一段就会低于自己的平均。",
+        "impact": "说明「个体性」和「共同性」可以共存于不同维度；为研究多人协作、教学互动甚至人机合奏提供了可量化的框架。"
+      },
+      "analogy": "两个人跳舞：各自的舞步风格一眼能认出（音高），但音乐的节拍让两人同步（节奏）。谁也不会变成谁，但脚踩在同一个鼓点上。",
+      "terms": [
+        {
+          "t": "即兴",
+          "d": "不预先写好、当场创作并演奏的音乐形式。"
+        },
+        {
+          "t": "信息熵",
+          "d": "衡量「不确定性」的指标，熵越高，下一个音越难猜。"
+        },
+        {
+          "t": "互补性",
+          "d": "一方高、另一方低的动态平衡，像跷跷板。"
+        }
+      ],
+      "tags": [
+        "神经科学",
+        "音乐",
+        "合作"
+      ],
+      "difficulty": 1,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Tatsuya Daikoku",
+        "Risa Kobayashi",
+        "Rina Tabuchi",
+        "Yoshia Abe",
+        "Yasuo Kuniyoshi"
+      ],
+      "abstract": "Some of the most valued forms of human creativity arise between people-in conversation, collaboration, and improvised music-yet how two minds jointly regulate the flow of novelty in real time remains unknown. Here we examined the information dynamics of interpersonal improvisation using 986 professional jazz improvisations. Pitch-based fluctuations of uncertainty and surprise behaved as signatures of individual identity: the two partners differed within 90% of takes, performers were identifiable from single solos and the separation between partners persisted undiminished across turns and takes. Rhythm-based fluctuations showed the reverse organization: partners were statistically indistinguishable within a take yet shifted together from take to take, and this shared state drifted gradually as each performance progressed, with each performer moving away from their own past at the same rate as from their partner's. Beyond joint drift, solo hand-offs revealed turn-by-turn complementarity: when one performer exceeded their own average surprise in the predictive dynamics of improvisation, the partner's next solo fell below their own, in both pitch and rhythm and in all duos. Improvising pairs thus neither fuse into one system nor remain two independent ones: they preserve individual melodic voices while sharing a rhythmic state, within which moment-to-moment push-pull continually rebalances their interaction. Individuality and togetherness thus coexist, carried by different musical dimensions, a measurable organization of creativity that emerges between minds.",
+      "url": "https://arxiv.org/abs/2610.31131",
+      "pdf": "https://arxiv.org/pdf/2610.31131v1"
+    },
+    {
+      "id": "2610.31157",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.soft",
+      "published": "2026-10-22",
+      "title_en": "Functional understanding of structural components in polypseudorotaxane gels",
+      "title_zh": "让水凝胶「滑」起来：滑环凝胶里每个零件到底管什么用",
+      "one_liner": "分别削弱环糊精之间、以及环糊精与聚合物之间的作用，再测凝胶变软多少，终于搞清滑环凝胶「又韧又能拉」的分子原因。",
+      "why": "水凝胶很软但容易断，滑环凝胶却能拉伸几十倍不断。搞清楚它的「配方原理」，才能做出更好的柔性机器人、可穿戴设备和人造血管。",
+      "sections": {
+        "background": "滑环凝胶由聚轮烷构成：环糊精像戒指一样套在聚合物链上，可以滑动，代替传统的化学交联点，韧性因此提高几个数量级。但每个组分具体贡献什么，一直不清楚。",
+        "method": "在「未封端」的假聚轮烷溶液里做简单的合成扰动，分别针对聚合物-环糊精、环糊精-环糊精的相互作用；测量流变学性质的变化；再用粗粒化分子动力学模拟解释结构-功能关系。",
+        "finding": "削弱环糊精之间的相互作用，会破坏结晶、显著削弱凝胶；用偶氮苯修饰 PEG 链、让「穿环」在热力学上更有利，即使在很低的环糊精比例下，也能形成稳定、长寿命的网络。",
+        "impact": "给出了滑环凝胶的「设计手册」：想更韧就加强环间作用，想更好拉就促进穿环。这对软材料工程有直接的指导意义。"
+      },
+      "analogy": "一件由很多「戒指串在绳子上」织成的衣服。戒指之间粘住，衣服就挺括；戒指能在绳上自由滑动，衣服就能拉得很长而不断。",
+      "terms": [
+        {
+          "t": "聚轮烷",
+          "d": "环状分子（如环糊精）套在聚合物链上形成的「项链」结构。"
+        },
+        {
+          "t": "环糊精",
+          "d": "一种环状糖分子，中间有孔，可以像戒指一样套在聚合物上。"
+        },
+        {
+          "t": "流变学",
+          "d": "研究材料在受力时如何流动和变形的学科。"
+        }
+      ],
+      "tags": [
+        "软材料",
+        "水凝胶",
+        "超分子"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Ella Sapsford",
+        "Andrea Bonato",
+        "Simon Weir",
+        "Nawar Zebari",
+        "Paul J. Lusby",
+        "Chenfeng Ke",
+        "Davide Michieletto"
+      ],
+      "abstract": "Biomedical devices, wearable interfaces, and soft robots require compliant soft materials with reliable mechanical performance, yet the molecular principles needed to design such materials are not always fully understood. Thus, there is an urgent need to understand how to design novel stretchable and soft hydrogels with enhanced toughness, i.e. resistance to breakage. Slide-ring gels (SRGs) are a class of unconventional soft materials formed by polyrotaxanes (PR) building blocks whereby sliding cyclodextrins (CD) replace traditional chemical and physical crosslinks and in turn enhance toughness and stretchability by several orders of magnitude. The rational design of SRGs re- mains challenging due to a lack of a mechanistic understanding of the role played by individual components. In this work, we implement simple synthetic perturbations that individually target polymer-CD and CD-CD interactions in unstoppered pseudopolyrotaxanes (pPR) solutions and measure the consequent changes in viscoelastic properties. Weakening the intermolecular interaction between CDs abolishes crystallisation and significantly weakens the gel. At the same time, thermodynamically favouring threading by using azobenzene-modified PEG chains favours the formation of stable and long-lived networks even at remarkably low CD stoichiometries. We rationalise these observations with coarse-grained Molecular Dynamics simulations which clarify the structure-function relationship of the components forming these materials. Our work contributes to guiding the rational design and development of enhanced SRG hydrogels and elastomers.",
+      "url": "https://arxiv.org/abs/2610.31157",
+      "pdf": "https://arxiv.org/pdf/2610.31157v1"
+    },
+    {
+      "id": "2610.31184",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-10-22",
+      "title_en": "Anomalous polar chains in halide perovskites",
+      "title_zh": "卤化物钙钛矿里的「极性链」：一种不像铁电体的铁电行为",
+      "one_liner": "CsGeBr3 在名义立方相里，Ge 原子的偏心会连成几十纳米长的一维极性链，翻转速度比传统铁电体慢一万倍。",
+      "why": "钙钛矿是太阳能电池和发光器件的明星材料。发现它内部有这种「长程一维极性」，可能解释它为什么有时表现得很奇怪，也给器件设计提了个醒。",
+      "sections": {
+        "background": "铁电钙钛矿里的局域极性畸变、集体有序和电场翻转已经被研究了几十年。但卤化物钙钛矿里的极性行为，尤其是动力学，和氧化物很不一样。",
+        "method": "用第一性原理训练原子间势，做大规模分子动力学，模拟 CsGeBr3（以及 CsSnBr3）在不同温度下的结构和极性动力学。",
+        "finding": "立方相里 Ge 的偏心形成至少几十纳米长的一维极性链，弛豫时间在纳秒量级，比 BaTiO3、PbTiO3 慢四个数量级。立方相是「动态无序」态：方向相反的链在整个晶体里不断翻转，宏观净极化为零，但局域一维极化的寿命很长。到了铁电相，极化则是一条链一条链地翻转。",
+        "impact": "扩展了「铁电体」的图景：长程一维关联可以和零净极化共存。这对钙钛矿光电器件的稳定性、滞后和噪声都可能有影响。"
+      },
+      "analogy": "一群人举着牌子，整体看左右人数一样多（净极化为零），但每一排的人会整排整排地同时换边，而且换得很慢——这就是「局域有序、全局无序」。",
+      "terms": [
+        {
+          "t": "钙钛矿",
+          "d": "一类 ABX₃ 结构的晶体，是光伏和发光器件里的明星材料。"
+        },
+        {
+          "t": "铁电体",
+          "d": "具有自发极化、并且极化能被电场翻转的材料。"
+        },
+        {
+          "t": "分子动力学",
+          "d": "用计算机模拟每个原子受力后的运动，从而预测材料性质。"
+        }
+      ],
+      "tags": [
+        "材料科学",
+        "铁电",
+        "钙钛矿"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Erik Fransson",
+        "Apinya Ngoipala",
+        "Priyanka Deswal",
+        "Ethan Berger",
+        "Nicholas C. Bristowe",
+        "Paul Erhart",
+        "Julia Wiktor"
+      ],
+      "abstract": "Local polar distortions, their collective ordering, and their field-driven reversal have been studied extensively in ferroelectric perovskites for decades. Here we identify an unusual behavior in the ferroelectric halide perovskite CsGeBr3 using large-scale molecular dynamics with first-principles-trained interatomic potentials. In its nominally cubic phase the Ge off-centering forms one-dimensional polar chains that extend over at least tens of nanometers and relax on nanosecond timescales, four orders of magnitude slower than in BaTiO3 and PbTiO3, with CsSnBr3 in between. The cubic CsGeBr3 phase is a dynamically disordered state in which oppositely polarized chains flip throughout the crystal, and a long-lived one-dimensional local polarization coexists with zero net polarization. A simple three-dimensional perovskite thus hosts long-ranged one-dimensional polar correlations with remarkably slow dynamics. In the ferroelectric phase the same chains set a one-dimensional switching mechanism, in which the polarization reverses chain by chain.",
+      "url": "https://arxiv.org/abs/2610.31184",
+      "pdf": "https://arxiv.org/pdf/2610.31184v1"
+    },
+    {
+      "id": "2610.31242",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-10-22",
+      "title_en": "Fluctuation-free Quantum Battery Charging Enabled by Bell-like Entangled and Separable Charger States",
+      "title_zh": "让量子电池「每次都充满」：用类贝尔态消除充电涨落",
+      "one_liner": "三个量子比特组成的「充电器 + 电池」，只要充电器处在特定的类贝尔纠缠态（甚至某些可分离态），每次充电得到的能量就完全一样。",
+      "why": "量子世界天然有随机性，同样的操作做两次，结果可能不同。这篇找到了让量子电池「每次充电都一模一样」的条件，是把量子电池从概念推向可用的关键一步。",
+      "sections": {
+        "background": "量子电池用处于量子态的微观系统储能，理论上可以做到很高的功率密度。但量子测量的随机性会让每次充电后的能量有涨落，影响「充电一致性」。",
+        "method": "在一个级联碰撞模型里，两个量子比特当充电器、第三个当电池；每次碰撞后对充电器做自适应测量，得到四个条件电池态；对任意固定的充电器态推导储能递推关系，分析涨落是否依赖电池相位 γ_n。",
+        "finding": "对两类类贝尔纠缠态以及它们的「计算基可分离态」，动力学与 γ_n 无关，储能涨落严格为零；其他纠缠态或可分离态则会出现涨落。也就是说，充电器的状态可以被「设计」成抗随机性的。",
+        "impact": "给出了「工程化充电器态」来设计均匀充电量子电池架构的范式。虽然离实用还很远，但它把「量子优势」和「可靠性」放在一起考虑了。"
+      },
+      "analogy": "给手机无线充电，每次放上去位置都差一点，充进的电就忽多忽少。这篇相当于设计了一块「充电板」：不管怎么放，充进去的电都一样多。",
+      "terms": [
+        {
+          "t": "量子电池",
+          "d": "用微观量子系统（如原子、超导比特）储存能量的装置，理论上充放电功率很高。"
+        },
+        {
+          "t": "贝尔态",
+          "d": "两个量子比特最大纠缠的四种状态，对其中一个测量，另一个的结果完全确定。"
+        },
+        {
+          "t": "涨落",
+          "d": "重复实验时结果围绕平均值波动的现象，在量子测量中不可避免。"
+        }
+      ],
+      "tags": [
+        "量子技术",
+        "储能",
+        "纠缠"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Longyan Gong",
+        "Jing Zhang",
+        "Yongtao Li"
+      ],
+      "abstract": "The implication of entanglement in quantum battery charging remains poorly understood. In addition, intrinsic quantum randomness poses a fundamental challenge to charging uniformity across distinct trials. To address these issues, we study a three-qubit system within a cascaded collision frame, with two qubits acting as the charger and the third serving as the battery. After each collision, an adaptive measurement is performed on the charger, yielding four conditional post-measurement battery states with identical expected stored energy. For arbitrary fixed charger states, we derive analytical expressions for the recurrence relation of stored energy. We find that stored-energy fluctuations depend on whether the dynamics relies on the battery phase \\(γ_n\\). For two Bell-like families of entangled states, together with their computational basis states termed Bell-like separable states, the dynamics is \\(γ_n\\)-independent and fluctuations vanish, whereas for other entangled and separable states, fluctuations emerge. These insights establish a paradigm for engineering charger states to design uniform-charging quantum-battery architectures despite inherent quantum randomness.",
+      "url": "https://arxiv.org/abs/2610.31242",
+      "pdf": "https://arxiv.org/pdf/2610.31242v1"
+    },
+    {
+      "id": "2610.31508",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mes-hall",
+      "published": "2026-10-22",
+      "title_en": "Spin-Dependent Transport in One-Dimensional Mercury- and Silver-Mediated DNA Nanowires",
+      "title_zh": "用汞和银给 DNA「镀」上线：一维分子导线里的自旋输运",
+      "one_liner": "让汞离子或银离子规律地嵌进 DNA 双螺旋，DNA 就变成一维导线；汞版本还能高效地让电子自旋翻转，银版本几乎不翻。",
+      "why": "DNA 不只是遗传物质，还能当「乐高」来搭纳米电路。这篇说明：换一种金属离子，就能把同一根 DNA 变成完全不同的量子器件。",
+      "sections": {
+        "background": "金属-DNA 纳米线是把金属离子配位到 DNA 碱基对上形成的准一维导体，可编程、可自组装。但金属的种类如何影响能带和自旋，一直不清楚。",
+        "method": "用第一性原理计算，比较 Hg²⁺ 和 Ag⁺ 配位的 DNA 纳米线的能带结构、自旋轨道耦合、跳跃积分和透射谱。",
+        "finding": "重金属配位让 DNA 出现以金属为中心的色散能带（而不是孤立局域态），带宽可达 1 eV，是普通 DNA 的两倍多。Hg 纳米线的自旋轨道劈裂与次近邻跳跃同量级，自旋翻转电导和自旋守恒电导相当，而且能维持很长距离；Ag 纳米线的自旋翻转则弱一个数量级以上。",
+        "impact": "说明「选哪种金属」是设计分子自旋电子器件的关键旋钮，也为 DNA 电子学的可编程性提供了物理依据。"
+      },
+      "analogy": "同一条乐高轨道，换成不同的金属积木，火车（电子）跑的速度和「转身」方式就完全不同。汞积木让电子容易翻跟头，银积木则让它稳稳直跑。",
+      "terms": [
+        {
+          "t": "自旋轨道耦合",
+          "d": "电子的自旋和它的运动（轨道）相互影响，在重元素里特别强。"
+        },
+        {
+          "t": "能带",
+          "d": "晶体里电子允许占据的能量区间，能带越宽，电子越容易离域。"
+        },
+        {
+          "t": "分子导线",
+          "d": "用单个分子或分子链连接电极、传导电流的结构。"
+        }
+      ],
+      "tags": [
+        "分子电子学",
+        "DNA",
+        "自旋"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Arpan De",
+        "William Livernois",
+        "Simon Vecchioni",
+        "Yoel P. Ohayon",
+        "M. P. Anantram"
+      ],
+      "abstract": "Metallo-DNA nanowires serve as a versatile, programmable scaffold for molecular-scale electronics. In this work, we demonstrate that periodic heavy-metal coordination fundamentally reshapes the electronic landscape of DNA, generating dispersive, metal-centered conduction bands rather than isolated localized states. Driven by enhanced inter-layer coupling, where second nearest-neighbor hopping plays a crucial role: the conduction bandwidth can approach 1 eV, more than double that of canonical DNA. These broad bands suggest enhanced robustness of transport against structural fluctuations. As a result of relativistic effects, in these quasi-one-dimensional materials, spin-orbit (SO) coupling enhances band dispersion and governs spin-dependent transport. We predict that although ligand hybridization reduces atomic SO splitting, the effective SO splitting in these nanowires is comparable to the next-nearest-neighbor hopping strength, which results in considerable spin mixing. We find that Hg2+-coordinated nanowire exhibit pronounced spin-flip conductance comparable to spin-conserving conductance across the LUMO manifold. This efficient spin conversion remains robust over extended molecular lengths and is accompanied by a set of highly delocalized unoccupied states with oscillating nodal structures, readily accessible under low-bias transport measurements. In contrast, the Ag+-coordinated nanowires exhibit weak spin-flip scattering that is more than an order of magnitude smaller than spin-preserving transport. This duality establishes the choice of coordination metal as a decisive parameter to govern metal-metal interaction, electron delocalization, and spin-dependent transport. Overall, our findings demonstrate how relativistic effects and quantum confinement intersect in these bio-templated, quasi-one-dimensional molecular conductors.",
+      "url": "https://arxiv.org/abs/2610.31508",
+      "pdf": "https://arxiv.org/pdf/2610.31508v1"
+    },
+    {
+      "id": "2610.31600",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.SG",
+      "published": "2026-10-22",
+      "title_en": "SympFormer: Inertial Attention Blocks from Damped Hamiltonian Dynamics on Spaces of Probability Measures",
+      "title_zh": "给注意力机制装上「惯性」：从阻尼哈密顿动力学看 Transformer",
+      "one_liner": "把 Transformer 的注意力看成一群粒子在概率分布空间里滚动；加上惯性和阻尼后，模型反而训练得更好。",
+      "why": "我们天天用大模型，却不太清楚它内部到底在「算什么」。这篇用物理里的动力学方程重新解释注意力，还据此改进了 nanoGPT。",
+      "sections": {
+        "background": "已有研究把注意力层看作相互作用的粒子系统，它的连续极限是概率密度空间上的梯度流。但真实训练里还有「动量」，这部分一直没被纳入几何框架。",
+        "method": "在 Wasserstein 型度量下，推导带惯性的 Nesterov 型阻尼哈密顿动力学；定义「局部迁移率几何」，并为线性注意力的退化核构造商 Stein 几何；再据此给 token 和动量的更新加上几何修正项。",
+        "finding": "在线性注意力下给出了有限维解的存在性理论，以及「二阶矩在有限时间爆炸」的精确条件；还证明了连续时间的矩爆炸与离散层深之间的定量关系。在 TinyStories 和 OpenWebText 上，修正后的 nanoGPT 验证损失更低。",
+        "impact": "为「理解大模型内部动力学」提供了一个可计算的几何框架，也说明物理直觉可以反过来指导模型设计。"
+      },
+      "analogy": "把 token 想成一群小球在山谷里往下滚。原来只考虑「往低处走」，现在加上质量和惯性，球会冲过头再被阻尼拉回来——路线不同，最后停的位置也更好。",
+      "terms": [
+        {
+          "t": "梯度流",
+          "d": "让系统沿着能量下降最快的方向演化，最终停在能量最低的地方。"
+        },
+        {
+          "t": "Wasserstein 距离",
+          "d": "衡量把一堆「土」搬成另一堆「土」所需的最小代价，用来比较两个概率分布。"
+        },
+        {
+          "t": "哈密顿动力学",
+          "d": "用位置和动量描述系统演化的物理框架，能量在其中守恒。"
+        }
+      ],
+      "tags": [
+        "AI 理论",
+        "最优传输",
+        "动力学"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Viktor Stein",
+        "Levin Maier",
+        "Wuchen Li",
+        "Gabriele Steidl"
+      ],
+      "abstract": "The attention mechanism underpins modern large language models, yet their dynamics remain only partially understood. Recent perspectives interpret attention blocks as interacting particle systems, whose mean-field limits correspond to gradient flows of energy functionals on spaces of probability densities on $\\mathbb R^d$ equipped with Wasserstein-type metrics. We extend this viewpoint by deriving accelerated attention blocks from inertial, Nesterov-type damped Hamiltonian dynamics on these density spaces, developing the geometry and differential calculus needed to make the construction rigorous. In particular, we introduce a local-mobility geometry for the Otto-Wasserstein and softmax-Wasserstein settings, and a quotient Stein geometry that resolves the degeneracy of the linear-attention kernel to yield a well-defined metric and differential calculus. We provide rigorous foundations when softmax attention admits a gradient-flow formulation and when its inertial counterpart admits a damped Hamiltonian on explicitly characterized domains. For linear attention, we obtain a finite-dimensional solution theory with sharp conditions for global existence versus finite-time second-moment blow-up. We further prove a quantitative link between continuous moment blow-up and the discrete-layer depth at which token norms cross a prescribed threshold. Finally, motivated by the finite-token geometry, we propose geometric corrections to token and momentum updates. In decoder-only, nanoGPT-style experiments on TinyStories and OpenWebText, these corrections lower validation negative log-likelihood on next-token prediction relative to momentum-only controls.",
+      "url": "https://arxiv.org/abs/2610.31600",
+      "pdf": "https://arxiv.org/pdf/2610.31600v1"
+    },
+    {
+      "id": "2610.31618",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-10-22",
+      "title_en": "The Asymptotic Number of Anticodes in Hamming Spaces",
+      "title_zh": "二进制世界里「抱团」的集合：反码到底有多少个？",
+      "one_liner": "在 n 位二进制串里，两两距离不超过 d 的集合叫「d-反码」。这篇算出了当 n 很大时，这种集合的总数几乎只由最大的那一组决定。",
+      "why": "这是编码理论里一个很基础的问题：把字符串按「相似度」分组，能分出多少种组法？答案出奇地简洁，也让人看到组合数学里「局部」和「全局」的奇妙联系。",
+      "sections": {
+        "background": "在汉明空间里，两个字符串的距离等于它们不同位的个数。d-反码就是「直径」不超过 d 的集合，和纠错码正好相反——纠错码要求码字之间尽量远，反码要求尽量近。m_q(n,d) 是最大反码的大小。",
+        "method": "用组合计数和渐近分析：固定字母表大小 q、让 n 趋于无穷，估计所有 d-反码的总数；另外单独数「线性反码」（直径不超过 d 的子空间），分 d 固定、d 增长、d 接近 n 几种情形讨论。",
+        "finding": "对 4≤d≤n-1，反码总数等于 2 的「(1+o(1))·m_q(n,d)」次方（q=2 且 d=n-1 时例外）；线性反码在 d 固定时只有多项式多个；当 d 接近 n 时，数量约为 q 的 (1/4+o(1))n² 次方。",
+        "impact": "把「数集合」和「找最大集合」这两个看似不同的问题连了起来，也为编码理论提供了新的计数工具。"
+      },
+      "analogy": "一个班要分组，要求每组内同学的身高差不超过 d。问「有多少种分组方式」——答案居然主要由「最大的组能有多大」决定，而不是由分组细节决定。",
+      "terms": [
+        {
+          "t": "汉明距离",
+          "d": "两个等长字符串在多少个位置上不同，就是它们的汉明距离。"
+        },
+        {
+          "t": "反码",
+          "d": "直径（最大两两距离）不超过 d 的集合，和纠错码的「码」相反。"
+        },
+        {
+          "t": "渐近",
+          "d": "让 n 越来越大，看数量的增长趋势，忽略低阶的小项。"
+        }
+      ],
+      "tags": [
+        "编码理论",
+        "组合数学",
+        "计数"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Anna-Lena Horlemann",
+        "Ananthakrishnan Ravi"
+      ],
+      "abstract": "In the Hamming space $\\mathbb{F}_q^n$, a $d$-anticode is a subset in which every pair of points has Hamming distance at most $d$, or equivalently, a set of diameter at most $d$. Let $m_q(n,d)$ denote the maximum size of a $d$-anticode and let $\\mathcal{A}_q(n,d)$ be the family of all $d$-anticodes. We show that for fixed $q$, as $n\\to\\infty$, the total number of $d$-anticodes satisfies \\[ |\\mathcal{A}_q(n,d)|=2^{(1+o(1))m_q(n,d)} \\] for $4\\le d\\le n-1$, except when $q=2$ and $d=n-1$. We also count linear $d$-anticodes, that is, subspaces of $\\mathbb F_q^n$ with diameter at most $d$. For fixed $q$ and $d$, their number is polynomial in $n$. For growing $d$, we determine the exponential order as $q^{Θ_q(d^2+d\\log_q(n/d))}$ in the sublinear regime and $q^{Θ(n^2)}$ when $d/n\\toα\\in(0,1)$. In the near-full regime $n-d=o(n)$, we obtain the sharper count $q^{(1/4+o(1))n^2}$. A random-generator construction further improves the binary lower bound for every fixed linear diameter.",
+      "url": "https://arxiv.org/abs/2610.31618",
+      "pdf": "https://arxiv.org/pdf/2610.31618v1"
+    },
+    {
+      "id": "2610.31632",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-10-22",
+      "title_en": "What does quantum parameter estimation estimate? A no-go result for true quantity values",
+      "title_zh": "「真实值」真的存在吗？量子测量给出的一个「不可能」结论",
+      "one_liner": "如果量子态是完备的、探针和被测系统会纠缠，那么「测量前就存在一个唯一真实值」这个假设，和标准量子力学无法同时成立。",
+      "why": "我们总觉得「测量只是发现已经存在的值」。这篇证明，在量子计量里这个直觉和量子力学的两个基本假设是冲突的——要么放弃「真实值」，要么接受隐变量。",
+      "sections": {
+        "background": "量子参数估计通常假设：被估计的量是一个参数，而且存在一个独立于测量、先于测量的「真值」。量子计量学讨论精度极限时，常常以此为基础。",
+        "method": "放宽「被估计量必须是参数」的假设，建立更一般的估计框架；把「真值唯一」「先于测量存在」「独立于测量」形式化成三条假设，再证明它们与「量子态完备（没有隐变量）」和「探针与被测系统存在纠缠」不相容。",
+        "finding": "只要不接受隐变量、也不修改标准量子力学去引入破坏纠缠的新机制，那么对估计的「实在论」解释就不可能成立。纠缠是标准量子理论的普遍预言，所以这个冲突是本质性的。",
+        "impact": "把量子计量学的哲学基础问题变成了一个定理；也提醒实验物理学家：「测到的值」和「原本的值」在量子层面不是一回事。"
+      },
+      "analogy": "你以为温度计只是「读出」房间本来的温度。但量子世界告诉你：温度计本身会改变房间，而且「读数的唯一真值」这个前提，和物理定律打架。",
+      "terms": [
+        {
+          "t": "量子计量学",
+          "d": "利用量子效应提高测量精度的学科，比如引力波探测。"
+        },
+        {
+          "t": "隐变量",
+          "d": "为了解释量子随机性而假设的、我们还没看到的隐藏参数。"
+        },
+        {
+          "t": "no-go 定理",
+          "d": "证明某组假设不可能同时成立的数学结论。"
+        }
+      ],
+      "tags": [
+        "量子测量",
+        "科学哲学",
+        "计量学"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Jacques L. Pienaar",
+        "Eran Tal",
+        "Asya Ciftci"
+      ],
+      "abstract": "We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true'' quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes that the quantity to be estimated is a parameter, we argue that this assumption can be lifted, opening the way to a more general formulation of estimation that may apply even in situations where the quantity to be estimated is no longer a parameter, but instead a quantum variable susceptible to quantum fluctuations. We identify three assumptions that characterize the way estimation is often presented in the quantum metrology literature, namely, as a procedure for inferring an unknown ``true value\", which is assumed to be unique and to exist prior to and independently of measurement. Using our more general framework, we prove a no-go theorem showing that the preceding assumptions are jointly incompatible with two further assumptions: the completeness of the quantum state (no `hidden variables'), and the presence of entanglement between the probe systems and the system under measurement. We note that the presence of such entanglement is a generic prediction of standard quantum theory. Consequently, if one is not willing to accept hidden variables, nor willing to modify standard quantum theory by introducing a new physical mechanism that destroys entanglement at some scale or regime, then a realist account of estimation is ultimately impossible.",
+      "url": "https://arxiv.org/abs/2610.31632",
+      "pdf": "https://arxiv.org/pdf/2610.31632v1"
+    },
+    {
+      "id": "2610.31638",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CC",
+      "published": "2026-10-22",
+      "title_en": "No Perfect Randomized Composition",
+      "title_zh": "把两个问题拼起来，难度会相乘吗？答案是不一定",
+      "one_liner": "计算 f 和 g 的复合，随机查询复杂度并不总等于两者相乘——最好的情况下会比乘积小一个 log 因子，推翻了长期以来的猜想。",
+      "why": "「组合」是计算复杂性里最自然的操作之一。大家一直猜难度会相乘，这篇用构造反例说明不会，而且证明还在 Lean 里被机器验证过。",
+      "sections": {
+        "background": "查询复杂度衡量的是：把函数当成黑箱，最少要问多少次输入才能确定输出。组合问题 f∘g 的意思是先对输入算 g，再把结果喂给 f。一个经典猜想是 R(f∘g) ≈ R(f)·R(g)。",
+        "method": "构造总函数 f、g（不是部分函数），借助「线性化查询复杂度 LR」和「带噪随机查询复杂度 noisyR」作为中间工具，把已有的部分函数分离「总化」；最后在 Lean 证明助手里形式化验证。",
+        "finding": "存在 f、g 使 R(f∘g) = Θ(1/log R(g))·R(f)·R(g)，也就是比乘积小一个 log 因子；随机复杂度最多可以比它的组合极限 R* 小 Θ(log R)。",
+        "impact": "修正了组合复杂度的图景；同时展示了形式化证明正在进入理论计算机科学的前沿，人和机器一起检查数学。"
+      },
+      "analogy": "两个人接力跑，大家以为总时间就是两人成绩相加。结果发现只要交接棒设计得巧，总时间能比相加少一点——因为第二个人可以「偷看」第一个人怎么跑。",
+      "terms": [
+        {
+          "t": "查询复杂度",
+          "d": "把函数当成黑箱，数一数最少问多少次输入才能确定输出。"
+        },
+        {
+          "t": "组合",
+          "d": "f∘g 表示先对输入算 g，再把结果喂给 f，像流水线上的两道工序。"
+        },
+        {
+          "t": "Lean",
+          "d": "一个交互式定理证明器，可以把数学证明写成代码，让机器逐行检查。"
+        }
+      ],
+      "tags": [
+        "计算复杂性",
+        "组合",
+        "形式化证明"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Alexander Meiburg"
+      ],
+      "abstract": "Does computing a composition of total Boolean functions require the product of the randomized query complexities of its factors? We give a negative answer. There are families of total functions $f,g$ such that $R(f\\circ g) =Θ\\!\\left(\\frac1{\\log R(g)}\\right)R(f)R(g)$ This result requires first separating linearized query complexity $\\LR$, as well as noisy randomized query complexity $noisyR$, from standard randomized query complexity $R$. Both constructions essentially come from totalizing existing partial function separations, albeit via different techniques. By adapting these techniques, we also construct total functions separating every adjacent pair in the chain from sabotage $RS$, max-conflict $\\barχ$, and linearised query complexity $LR$. We show that AND-of-ORs separates conflict $χ$ from max-conflict $\\barχ$ complexity and makes conflict and sabotage incomparable. Finally, randomized complexity can be smaller than its composition limit $R^*$ by the maximal factor $Θ(\\log R)$. The total--total composition separation is also formalized in Lean.",
+      "url": "https://arxiv.org/abs/2610.31638",
+      "pdf": "https://arxiv.org/pdf/2610.31638v1"
+    },
+    {
+      "id": "2610.31660",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · astro-ph.CO",
+      "published": "2026-10-22",
+      "title_en": "Sound-Horizon-Agnostic Forecast for Constraints on $H_0$ and $Σm_ν$ from BAO, CMB Lensing, Supernovae and LSST-like Galaxy Lensing",
+      "title_zh": "不依赖「标准宇宙学」的哈勃常数测量：给 ΛCDM 做一次体检",
+      "one_liner": "把重子声学振荡的「标尺长度」当成自由参数，联合未来巡天数据独立测哈勃常数，误差有望压到 0.7 到 1.5 km/s/Mpc。",
+      "why": "宇宙膨胀速度到底是多少？不同方法测出来的结果一直对不上，这就是「哈勃张力」。这篇提出一种不预设早期宇宙模型的测法，相当于换一把尺子再量一次。",
+      "sections": {
+        "background": "哈勃常数 H0 描述宇宙现在膨胀得多快。用宇宙微波背景（早期宇宙）测，和用造父变星、超新星（近邻宇宙）测，结果相差约 5σ。这可能是新物理，也可能是系统误差。",
+        "method": "把重子拖曳声视界 r_d 当作自由参数，联合 LSST 类弱引力透镜、Simons 天文台类 CMB 透镜、DESI 的 BAO 和扩充的超新星样本做参数预测，并把光变红移标定、剪切偏差、内禀排列、重子反馈等系统误差都边缘化掉。",
+        "finding": "固定中微子质量之和时，H0 的不确定度约为 1.5（宽松先验）、1.3（较严先验）、0.7（再加 A_s 先验）km/s/Mpc；允许中微子质量自由时 H0 约束会变弱，但中微子质量之和在 95% 置信度下仍能限制到约 0.4 eV。",
+        "impact": "提供了一种「不靠早期宇宙标定」的一致性检验。如果未来数据和标准模型对不上，就能帮助区分「新物理」和「系统误差」。"
+      },
+      "analogy": "量房间长度时，卷尺本身可能不准。这篇的做法是：不假设卷尺有多长，而是用好几把不同的尺子互相校准，再判断房间到底多长。",
+      "terms": [
+        {
+          "t": "哈勃常数 H0",
+          "d": "宇宙现在每百万秒差距膨胀多少公里每秒，用来描述膨胀速度。"
+        },
+        {
+          "t": "重子声学振荡 (BAO)",
+          "d": "早期宇宙声波留下的特征尺度，像一把可以量宇宙的标准尺。"
+        },
+        {
+          "t": "哈勃张力",
+          "d": "不同方法测出的 H0 不一致的现象，可能指向尚未发现的新物理。"
+        }
+      ],
+      "tags": [
+        "宇宙学",
+        "哈勃常数",
+        "暗能量"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Seyed Hamidreza Mirpoorian",
+        "Helena García Escudero",
+        "Levon Pogosian",
+        "Amy Wayland",
+        "David Alonso"
+      ],
+      "abstract": "We present a sound-horizon-agnostic forecast for constraints on the Hubble constant $H_0$ and the sum of the neutrino masses $Σm_ν$ from a combination of LSST-like galaxy weak lensing, Simons-Observatory-like CMB lensing, the completed DESI BAO program, and expanded supernova samples. Treating the sound horizon at baryon drag $r_d$ as a free parameter, the method provides a consistency test of $Λ$CDM without relying on the standard early-Universe calibration of $r_d$. The analysis incorporates realistic galaxy weak-lensing systematics, explicitly marginalizing over photometric-redshift calibration, multiplicative shear biases, intrinsic alignments, and baryonic feedback, and extends the CMB-lensing analysis to $L_{\\max}=5000$. For fixed $Σm_ν$, we forecast uncertainties of $σ(H_0)\\simeq 1.5$ km/s/Mpc with our least informative prior set, $σ(H_0)\\simeq 1.3$ km/s/Mpc with more restrictive priors, and $σ(H_0)\\simeq 0.7$ km/s/Mpc with an additional informative prior on the amplitude of primordial fluctuations $A_s$. Allowing $Σm_ν$ to vary weakens the $H_0$ constraints, while still yielding a forecast 95% CL upper limit of about 0.4 eV on $Σm_ν$. We also clarify the scope of the $r_d$-agnostic approach through validation tests using mock data from modified recombination and early dark energy models. The method recovers unbiased constraints on $H_0$ for the former but not the latter, highlighting its dependence on assumptions about early-Universe physics.",
+      "url": "https://arxiv.org/abs/2610.31660",
+      "pdf": "https://arxiv.org/pdf/2610.31660v1"
+    },
+    {
+      "id": "2610.31664",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · astro-ph.GA",
+      "published": "2026-10-22",
+      "title_en": "Odd radio circle J1555+2726: Observational evidence for shock re-acceleration of fossil plasma",
+      "title_zh": "宇宙里的「怪圈」：射电环其实是古老等离子体被冲击波重新点亮",
+      "one_liner": "观测一个直径几十万光年的奇数射电环，发现环上的电子是被冲击波重新加速的「化石」等离子体，而不是新产生的。",
+      "why": "奇数射电环是近几年才被发现的天体，长得像巨大的烟圈，成因一直是个谜。这篇用三台射电望远镜的数据，给出了目前最完整的一条证据链。",
+      "sections": {
+        "background": "ORC 是河外的射电圆环，中心常有一个大质量椭圆星系，环的尺度可达几百千秒差距。主流解释包括星系风终止激波、活动星系核喷流、星系合并激波等。",
+        "method": "用 LOFAR、uGMRT、MeerKAT 在 50 到 1284 MHz 观测 ORC J1555+2726，做高分辨率成像和谱指数图，拟合积分谱、射电功率和径向谱变化，再画射电「色-色图」。",
+        "finding": "积分谱斜率 α=1.06±0.03，环所在位置的谱变平到 α≈0.5，而且高频端更平。这种「凸」的谱曲率和特殊形状，无法用「热粒子被激波加速 + 标准老化」解释，说明源内共存着不同谱的电子群：环上以被冲击波重新加速的高能电子为主，低能电子则铺满整个（可能是椭球）体积。",
+        "impact": "把 ORC 的成因从「新加速」推向「化石等离子体再加速」，也为星系际介质里的激波和磁场研究提供了新探针。"
+      },
+      "analogy": "像一盏快没电的霓虹灯，被路过的一阵风「晃」了一下又亮起来。环不是新灯泡，而是旧等离子体被冲击波重新点亮。",
+      "terms": [
+        {
+          "t": "射电环 (ORC)",
+          "d": "射电波段看到的大圆环状天体，直径可达几十万光年，中心常有大质量星系。"
+        },
+        {
+          "t": "谱指数",
+          "d": "射电亮度随频率变化的斜率，能反映电子的能量分布和年龄。"
+        },
+        {
+          "t": "化石等离子体",
+          "d": "过去的活动遗留下来、已经冷却但仍在的电子「余烬」。"
+        }
+      ],
+      "tags": [
+        "天体物理",
+        "射电观测",
+        "星系"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "L. Bruno",
+        "B. Koribalski",
+        "R. P. Norris",
+        "A. Ivleva",
+        "T. Venturi",
+        "A. Botteon",
+        "C. J. Riseley",
+        "K. Dolag",
+        "J. R. Callingham",
+        "T. W. Shimwell"
+      ],
+      "abstract": "Context. Odd radio circles (ORCs) are peculiar extragalactic sources recently discovered. They are characterised by one or more bright rings extending on scales of hundreds of kiloparsecs, and are filled with fainter emission. A massive elliptical galaxy lies at the centre of ORCs. While their formation mechanism is debated, a shock is plausibly involved. Aims. We aim to constrain the nature of ORC J1555+2726 (ORC4) through the analysis of its morphological and spectral properties. Methods. We utilised Low Frequency ARray (LOFAR), upgraded Giant Metrewave Radio Telescope (uGMRT), and MeerKAT radio data at 50-1284 MHz to obtain images and spectral index maps at high resolution and sensitivity. Results. Both the resolution and observing frequency affect the observed morphology. In particular, the brightness contrast between the ring and the filling emission becomes progressively smoother from higher to lower frequencies. We measured an integrated spectrum of slope $α=1.06\\pm 0.03$, a radio power of $P_{\\rm 150}= (5.4\\pm 0.5)\\times 10^{25} \\; {\\rm W \\; Hz^{-1}}$ at 150 MHz, and a radial spectral flattening down to $α\\sim0.5$ at the ring location. However, we inferred a negative (convex) spectral curvature and a peculiar spectral shape in radio colour-colour diagrams, which imply spectral flattening towards high frequencies. These properties cannot be explained by shock acceleration of thermal particles and standard ageing. Conclusions. The observed features suggest that a mixture of electrons with different spectra coexist within ORC4 volume, likely associated with shock re-acceleration of a fossil relativistic reservoir. The ring emission is plausibly dominated by higher-energy electrons re-accelerated at the shock front, while lower-energy re-accelerated electrons are more uniformly distributed across the whole source (possibly ellipsoidal) volume.",
+      "url": "https://arxiv.org/abs/2610.31664",
+      "pdf": "https://arxiv.org/pdf/2610.31664v1"
+    },
+    {
+      "id": "2610.29720",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.SD",
+      "published": "2026-10-21",
+      "title_en": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
+      "title_zh": "向大脑学「听」：用脉冲神经网络做语音识别，不用矩阵乘法",
+      "one_liner": "把三元权重循环网络和「共振-发放」神经元结合，做出第一个不用矩阵乘法、也不加额外语言模型就能把 LibriSpeech 错误率做到个位数的脉冲网络。",
+      "why": "现在的大模型靠海量矩阵乘法，耗电惊人。大脑用「脉冲」计算，能效高得多。这篇说明仿脑架构在真实任务上也能打。",
+      "sections": {
+        "background": "脉冲神经网络（SNN）用稀疏的 0/1 脉冲传递信息，理论上非常省电，但在连续、依赖上下文的语音识别任务上一直表现不佳。瓶颈在于 LIF 神经元：膜电位的衰减会抹掉停顿和音素边界处的信息。",
+        "method": "提出 Spiking Ternary GRU（stGRU）：三元权重的 GRU 负责时间滤波，下游的 Resonate-and-Fire 神经元产生二值脉冲流，驱动下一层的脉冲通路。端到端训练，让「二值事件传输」成为训练时的约束，而不是部署时再做的量化步骤。",
+        "finding": "在 LibriSpeech-960 上，Small、Medium、Large 三个规模的 test-clean 词错误率分别为 8.09%、7.04%、6.44%，是首个不用矩阵乘法、也不用 ANN 序列解码器就做到个位数 WER 的脉冲网络；在 Aishell-1 上字符错误率 10.88%。网络还自发形成「浅层快滤波、深层慢整合」的层级，深层发放率呈对数正态分布，和人类皮层类似。",
+        "impact": "证明仿脑计算可以在真实任务上兼顾性能和能效。「训练时就约束成脉冲」的思路，对低功耗边缘 AI 很有启发。"
+      },
+      "analogy": "普通神经网络像用计算器做每一道乘法；脉冲网络像用一串「有 / 没有」的信号接力传话——信息少了，但传得又快又省电。",
+      "terms": [
+        {
+          "t": "脉冲神经网络",
+          "d": "用离散的 0/1 脉冲（而不是连续数值）传递信息的网络，模仿大脑。"
+        },
+        {
+          "t": "三元权重",
+          "d": "权重只取 -1、0、+1 三种值，乘法可以简化成加减。"
+        },
+        {
+          "t": "词错误率 (WER)",
+          "d": "语音识别里识别错的词占全部词的比例。"
+        }
+      ],
+      "tags": [
+        "类脑计算",
+        "语音识别",
+        "低功耗"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Pavlos Poulos",
+        "Katelyn Sadorf",
+        "Themos Stafylakis",
+        "Costas A. Anastassiou"
+      ],
+      "abstract": "Spiking Neural Networks (SNNs) promise energy-efficient inference through sparse, event-driven computation, yet remain constrained on continuous, context-dependent tasks such as automatic speech recognition (ASR). A key bottleneck is the Leaky Integrate-and-Fire (LIF) neuron, whose membrane decay erases information across pauses and phonetic boundaries while it must both extract features and retain long-range context. Inspired by cortical separation of nonlinear filtering and somatic integration, we introduce the Spiking Ternary GRU (stGRU): a ternary-weight gated recurrent unit performs temporal filtering, while downstream Resonate-and-Fire (RF) neurons generate the binary spike stream driving the next block's event pathway. This makes binary event transmission a native training constraint rather than a separate deployment-time activation quantization step; together with ternary weights, learned projections avoid dense floating-point matrix MACs. Trained end-to-end on LibriSpeech-960, Small, Medium, and Large stGRUs reach 8.09%, 7.04%, and $6.44 \\pm 0.17\\%$ WER on test-clean without an external language model. To our knowledge, these are the first matrix-MAC-free spiking networks without a learned ANN sequence decoder to achieve single-digit WER on LibriSpeech. The architecture also achieves 10.88% test CER on Aishell-1 (9.28% on dev) when trained from scratch. Internally, trained networks develop a depth-graded hierarchy: shallow layers act as fast acoustic filters, while deep layers form slower semantic integrators whose latent representations segregate into part-of-speech manifolds and word-level spike events. Deep-layer firing rates follow lognormal distributions with a sparsity gradient, mirroring hierarchical processing observed in human cortex in vivo. Our biologically grounded architecture combines competitive ASR with favorable modeled compute and memory cost.",
+      "url": "https://arxiv.org/abs/2610.29720",
+      "pdf": "https://arxiv.org/pdf/2610.29720v1"
+    },
+    {
+      "id": "2610.30287",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.soft",
+      "published": "2026-10-21",
+      "title_en": "Non-Destructive Detection of Early Drought Stress via Spectral Submanifold Analysis",
+      "title_zh": "给大豆「听诊」：用茎的振动提前发现缺水",
+      "one_liner": "分析大豆茎振动的非线性特征，就能在叶子蔫之前发现缺水——因为茎的阻尼从黏弹性变成了摩擦性。",
+      "why": "农业缺水通常靠人眼看叶子，或者把叶子摘下来测，既慢又伤植物。这篇用一种完全无损的物理方法，把「植物内部状态」变成了可测量的信号。",
+      "sections": {
+        "background": "精准农业需要早期、无损地检测水分胁迫。传统方法要么费人力，要么破坏样本。植物的茎可以看成一根充满液体的管道，缺水会改变它的力学性质。",
+        "method": "用谱子流形（SSM）约化分析大豆茎的非线性振动，从数据里提取阻尼系数；同时测量 SPAD 值和颜色指标，作为生理胁迫的对照。",
+        "finding": "随着干旱加重，茎的非线性阻尼系数发生符号反转：从「富液、超线性黏弹性阻尼」变成「干燥细胞固体、亚线性摩擦阻尼」。这个转变与 SPAD 值下降高度相关；而传统的线性频率和叶片萎蔫，并不能稳定反映缺水。",
+        "impact": "首次证明 SSM 这种非线性模型降维方法能检测活体植物的内部状态变化，为高通量植物表型测量提供了新工具。"
+      },
+      "analogy": "敲西瓜听声音判断熟没熟——这篇是敲植物的茎，「听」它的振动是清脆还是闷，从而判断它渴不渴。",
+      "terms": [
+        {
+          "t": "谱子流形 (SSM)",
+          "d": "非线性系统里的一种低维「吸引面」，把复杂振动约化成少数几个变量。"
+        },
+        {
+          "t": "阻尼",
+          "d": "振动能量被耗散掉的快慢。黏弹性像蜂蜜，摩擦性像砂纸。"
+        },
+        {
+          "t": "SPAD",
+          "d": "一种测量叶绿素含量的便携指标，常用来判断植物是否健康。"
+        }
+      ],
+      "tags": [
+        "农业科技",
+        "非线性动力学",
+        "植物"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Sunghwan Jung",
+        "Isabella Thiel",
+        "Jisoo Yuk",
+        "George Haller"
+      ],
+      "abstract": "Non-destructive early detection of water stress is critical for precision agriculture, yet current detection methods are often labor-intensive or destructive. We propose a rapid, non-invasive method based on Spectral Submanifold (SSM) reduction to analyze the nonlinear vibration dynamics of soybean plants. Unlike traditional linear modal analysis, our data-driven approach reveals a distinct transition in the dominant dynamics of the plant stem as drought progresses. Specifically, we uncover a sign reversal in the nonlinear damping coefficient within SSM-reduced models of full plants. Our finding reveals a fundamental transition in the plant's dissipative mechanics from a pressurized, fluid-rich vessel exhibiting superlinear (viscoelastic) damping to a dry, cellular solid dominated by sublinear (frictional) damping. This transition is closely correlated with the onset of physiological stress indicated by a significant decrease in the values of mature-leaf soil plant analysis development (SPAD) and colorimetric metrics. In contrast, traditional metrics, such as linear frequency and leaf wilting, do not provide consistent statistical signals of water stress. This study provides the first experimental evidence that SSM-based nonlinear model reduction can detect the changing internal state of a living organism, offering a physics-based metric for high-throughput plant phenotyping.",
+      "url": "https://arxiv.org/abs/2610.30287",
+      "pdf": "https://arxiv.org/pdf/2610.30287v1"
+    },
+    {
+      "id": "2610.30397",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-10-21",
+      "title_en": "Verified DRAM Address Mapping Reverse Engineering with Threshold Sweep",
+      "title_zh": "用「延迟指纹」反推内存地址映射：给 Rowhammer 攻击铺路",
+      "one_liner": "只靠测量访问延迟，就能反推出 LPDDR5 内存从地址到 bank 的映射关系，而且能自动验证结果对不对。",
+      "why": "内存看起来是一大片连续空间，其实被切成了很多 bank。知道地址怎么映射到 bank，是 Rowhammer 这类「比特翻转」攻击的第一步。这是硬件安全里很关键、也很少被讲的一环。",
+      "sections": {
+        "background": "DRAM 内部有 bank、row、column 的层级结构，物理地址到 bank 的映射由内存控制器决定，而且不公开。已有的「Knock-Knock」类方法利用访问同一 bank 的延迟差异来推断，但容易受噪声影响，也缺少验证手段。",
+        "method": "采集大量地址对的访问延迟，画出直方图；用「阈值扫描」挑出可能是同一 bank 的地址对；对每个阈值跑线性约束求解器恢复 bank 掩码，再用 GF(2) 行最简形合并；最后用「组验证」和「单函数验证」两步检查掩码是否与真实时序一致。",
+        "finding": "在 ARM 嵌入式设备上，这套流程能稳定选出 bank 掩码。它把每个阈值下的候选解和验证指标都记录下来，比只给一个答案的方法更可靠。",
+        "impact": "让 Rowhammer 研究能在更多设备上复现，也提醒我们：内存的「物理布局」本身就是攻击面，安全不能只靠软件。"
+      },
+      "analogy": "蒙着眼睛在一栋楼里走，靠「从哪个门进去要走多久」来猜房间编号的规则。延迟就是脚步声，映射规则就是楼层平面图。",
+      "terms": [
+        {
+          "t": "Rowhammer",
+          "d": "反复快速访问同一行内存，会让相邻行的比特「翻转」，是一种硬件层面的攻击。"
+        },
+        {
+          "t": "bank",
+          "d": "DRAM 内部可以独立操作的小块存储区，访问不同 bank 可以并行进行。"
+        },
+        {
+          "t": "GF(2) 行最简形",
+          "d": "在只有 0 和 1 的算术里解线性方程组，用来把候选掩码化简、合并。"
+        }
+      ],
+      "tags": [
+        "内存安全",
+        "硬件逆向",
+        "Rowhammer"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Hewen Zhang",
+        "Ian G. Harris"
+      ],
+      "abstract": "We propose an end-to-end software pipeline for solving and validating DRAM address mapping functions on embedded LPDDR5 systems, and we instantiate it on embedded platforms. Starting from a large latency dataset of address pairs, the pipeline first builds a latency histogram and then performs a threshold sweep to obtain candidate same-bank address pairs. For each threshold, we apply a Knock-Knock-style linear-constraint solver to recover candidate bank masks. Final bank masks are calculated using GF(2) reduced row echelon form (RREF). To verify correctness, we implement two verification stages, group verification and single function verification, inspired by prior work. Group verification checks whether bank partitions induced by the recovered masks agree with observed timing behavior. Single function verification removes one addressing function at a time and measures the resulting change in verification pass rate. Unlike approaches that return only a single inferred mapping, our workflow systematically records, for each candidate threshold, the solved bank masks and validation metrics. This pipeline supports more robust selection of bank masks on ARM-based embedded devices and provides an efficient method for reverse engineering DRAM address mapping functions and subsequent Rowhammer analysis.",
+      "url": "https://arxiv.org/abs/2610.30397",
+      "pdf": "https://arxiv.org/pdf/2610.30397v1"
+    },
+    {
+      "id": "2610.27371",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-10-19",
+      "title_en": "M3D-FLOW: A Monolithic 3-D-Stackable Processing-Near-DRAM Architecture for Generative Normalizing Flow Applications",
+      "title_zh": "把内存和计算「焊」在一起：给生成模型设计的 3D 堆叠芯片",
+      "one_liner": "用铜-铜混合键合把逻辑芯片和 DRAM 垂直叠起来，让「算」贴着「存」，跑归一化流生成模型时性能提升 6.6 倍。",
+      "why": "现代芯片最大的瓶颈往往不是算得慢，而是数据在内存和处理器之间来回搬。3D 堆叠是绕开这堵「存储墙」的主流路线之一，这篇给出了一个完整的设计和实测。",
+      "sections": {
+        "background": "归一化流（Normalizing Flow）是一种能精确计算概率的生成模型，但它的计算是一层接一层的串行操作，在 GPU/TPU 上内存带宽跟不上，算力大量闲置。",
+        "method": "设计 M3D-FLOW：逻辑 die 与 DRAM die 用 Cu-Cu 混合键合做单片 3D 堆叠，DRAM 分成访问延迟不同的层级；乘法器采用「二进制 + 随机」混合浮点，尾数在随机域相乘、指数在二进制域计算；再把生成模型的各个阶段流水线式地映射到动态划分的处理单元组上。",
+        "finding": "相比之前的近内存计算加速器，性能至少高 6.6 倍、能效高 3 倍，精度只比 bfloat16 差 2.2%。随机比特流越短速度越快（最多 3.3 倍），但误差更大，论文据此给出了明确的「延迟-精度」设计指南。",
+        "impact": "说明「存算一体 + 3D 堆叠」不只是概念，可以针对具体模型做出端到端的收益；也展示了用「近似计算」换能效的工程取舍。"
+      },
+      "analogy": "把厨房的冰箱直接搬到灶台旁边，就不用每拿一次食材都跑一趟仓库。3D 堆叠就是把「仓库」叠在「灶台」上面。",
+      "terms": [
+        {
+          "t": "混合键合",
+          "d": "把两片芯片的铜垫直接压合在一起，不用焊球，互连密度高、延迟低。"
+        },
+        {
+          "t": "近内存计算",
+          "d": "把计算单元放到内存旁边而不是隔着总线，减少数据搬运的能耗和时间。"
+        },
+        {
+          "t": "归一化流",
+          "d": "一类生成模型，通过可逆变换把简单分布变成复杂的数据分布，能精确计算似然。"
+        }
+      ],
+      "tags": [
+        "3D 封装",
+        "存算一体",
+        "生成模型"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Bipin Thapa Magar",
+        "Ishan Thakkar",
+        "Sudeep Pasricha"
+      ],
+      "abstract": "Normalizing Flows (NFs) have shown strong results in generative modeling, recently reaching state-of-the-art image generation performance. However, their repetitive, sequential operations limit the computational and memory efficiency achievable with GPUs and TPUs. We propose M3D-FLOW, a novel monolithic 3D-stackable (M3D) DRAM-based processing-near-memory (PNM) architecture that eliminates memory bottlenecks using a Cu-Cu hybrid-bonded logic die integrated with an M3D DRAM die. The M3D DRAM provides dense bank integration and a tiered organization with variable access latencies that M3D-FLOW exploits for the efficient processing of different NF workloads. To maximize compute density while minimizing area, energy, and thermal overhead, M3D-FLOW employs hybrid binary--stochastic floating-point multipliers, performing mantissa multiplication in the stochastic domain and exponent operations in the binary domain. A pipelined execution strategy maps sequential NF stages across dynamically partitioned PE groups, and together with the stochastic hardware, enables M3D-FLOW to achieve at least $6.6\\times$ higher performance and $3\\times$ better energy efficiency than prior PNM accelerators, with only a 2.2% bits-per-dimension (BPD) increase over bfloat16 and 4.1% over FP32. An analysis of stochastic hardware variants further shows that shorter stochastic bitstreams reduce execution time by up to $3.3\\times$ at the cost of higher approximation error, providing a concrete design guide for latency--accuracy trade-offs.",
+      "url": "https://arxiv.org/abs/2610.27371",
+      "pdf": "https://arxiv.org/pdf/2610.27371v2"
+    },
+    {
+      "id": "2610.27376",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-10-19",
+      "title_en": "Green Light: Carbon-Aware Design of Photonic Transformer Accelerators at the Edge",
+      "title_zh": "给 AI 芯片算一笔「碳账」：光子 Transformer 加速器",
+      "one_liner": "用光而不是电做矩阵乘法，还把「造芯片」的碳排放一起算进去——在边缘设备上，光子加速器的综合碳效率比 CPU 高好几个数量级。",
+      "why": "大家谈芯片省电，通常只算「用的时候」。这篇把「造的时候」也算上了，结果发现：芯片的「出生碳足迹」可能比它一辈子的耗电还高。以后做硬件，不能只盯功耗。",
+      "sections": {
+        "background": "Transformer 推理正在从云端搬到手机、眼镜和传感器上。硅光子的微环谐振器能用极低能耗做矩阵乘法，但过去的设计是为卷积网络优化的，而且只计算运行能耗，忽略了制造芯片产生的碳排放。",
+        "method": "把三种微环「点积单元」结构（AMW、MAW、MWA）改造成适合 Transformer 的版本，并各扩展出一种随机信号版本，共 6 种；然后分别计算每次推理的运行碳排和「隐含碳排」（制造环节的碳），再与 CPU、H100 GPU、TPU v5p 对比。",
+        "finding": "相比 CPU，光子系统在「能耗-延迟」「碳-延迟」等指标上领先 4 到 6 个数量级。但模拟信号转随机信号会让芯片面积和隐含碳排都涨 4 倍多：运行能耗虽然降了 91%，制造碳排却已经和运行碳排相当甚至更高。真正决定碳排的，是点积单元怎么组织，而不是用哪家晶圆厂的电网。",
+        "impact": "最快的方案不一定最环保。芯片设计需要从「每瓦性能」转向「全生命周期碳效率」。这也提醒我们：AI 的碳成本不只在电费单上。"
+      },
+      "analogy": "评价一辆车环不环保，不能只看百公里油耗，还要把造车、造电池的碳排放摊进去。光子芯片「跑起来」很省，但「造出来」可能很贵。",
+      "terms": [
+        {
+          "t": "微环谐振器",
+          "d": "指甲盖大小的环形光路，特定波长的光会在里面共振，可以用来做光信号的计算和调制。"
+        },
+        {
+          "t": "隐含碳",
+          "d": "制造、运输、报废一件产品所产生的碳排放，区别于使用时的「运行碳」。"
+        },
+        {
+          "t": "随机计算",
+          "d": "用一串 0/1 出现的概率来表示数值，乘法因此变成简单的与门，省硬件但精度有限。"
+        }
+      ],
+      "tags": [
+        "光子芯片",
+        "低碳计算",
+        "Transformer"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Bharat Bhatta",
+        "Ishan Thakkar"
+      ],
+      "abstract": "Migrating transformer inference to the edge requires sustainability considerations that encompass both operation and manufacturing, rather than operational energy alone. Silicon photonics enables high-bandwidth, low-energy matrix multiplication; however, existing microring-resonator-based Dot Product Unit (DPU) organizations have been tailored to convolutional computations and evaluated using analog signaling without accounting for embodied carbon footprints. We adapt three DPU organizations (AMW, MAW, and MWA) to transformer inference workloads and extend each organization to stochastic signaling, yielding six organizations in total. We then calculate their embodied and operational carbon per inference. Across five transformer models and four foundry grids, the photonic system achieves improvements of four, four, and six orders of magnitude in Energy-Delay, Carbon-Delay, and Carbon-Energy Product, respectively, relative to CPUs, while also being compared against H100 SXM5 GPU and TPU v5p baseline systems. Analog-to-stochastic conversion increases die area by 4.3-4.6x and embodied carbon by 4.4-4.8x, while reducing operational energy by approximately 91% and causing embodied carbon to equal or exceed operational carbon per inference. Importantly, the DPU organization and signaling scheme, rather than the foundry grid, are the key determinants of carbon impact. Consequently, the fastest organization (MWA) is not necessarily the most carbon-efficient, whereas MAW-Stochastic offers a favorable balance between sustainability and performance.",
+      "url": "https://arxiv.org/abs/2610.27376",
+      "pdf": "https://arxiv.org/pdf/2610.27376v1"
+    }
+  ]
+}

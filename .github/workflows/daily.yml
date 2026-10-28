@@ -1,0 +1,50 @@
+name: 每日更新
+
+on:
+  schedule:
+    # UTC 23:00 = 北京时间 07:00
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 抓取候选论文
+        run: node scripts/fetch.mjs --per-field 12 --days 7
+
+      - name: 筛选并改写
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: node scripts/summarize.mjs --per-field 3 --candidates 10
+
+      - name: 合成站点数据
+        run: node scripts/compose.mjs
+
+      - name: 提交
+        run: |
+          git config user.name "yiwenju-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "今天没有新内容"
+            exit 0
+          fi
+          git commit -m "chore: 更新 $(date -u +%F) 论文"
+          git push

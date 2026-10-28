@@ -1,0 +1,274 @@
+{
+  "2610.27376": {
+    "id": "2610.27376",
+    "title": "Green Light: Carbon-Aware Design of Photonic Transformer Accelerators at the Edge",
+    "abstract": "Migrating transformer inference to the edge requires sustainability considerations that encompass both operation and manufacturing, rather than operational energy alone. Silicon photonics enables high-bandwidth, low-energy matrix multiplication; however, existing microring-resonator-based Dot Product Unit (DPU) organizations have been tailored to convolutional computations and evaluated using analog signaling without accounting for embodied carbon footprints. We adapt three DPU organizations (AMW, MAW, and MWA) to transformer inference workloads and extend each organization to stochastic signaling, yielding six organizations in total. We then calculate their embodied and operational carbon per inference. Across five transformer models and four foundry grids, the photonic system achieves improvements of four, four, and six orders of magnitude in Energy-Delay, Carbon-Delay, and Carbon-Energy Product, respectively, relative to CPUs, while also being compared against H100 SXM5 GPU and TPU v5p baseline systems. Analog-to-stochastic conversion increases die area by 4.3-4.6x and embodied carbon by 4.4-4.8x, while reducing operational energy by approximately 91% and causing embodied carbon to equal or exceed operational carbon per inference. Importantly, the DPU organization and signaling scheme, rather than the foundry grid, are the key determinants of carbon impact. Consequently, the fastest organization (MWA) is not necessarily the most carbon-efficient, whereas MAW-Stochastic offers a favorable balance between sustainability and performance.",
+    "authors": [
+      "Bharat Bhatta",
+      "Ishan Thakkar"
+    ],
+    "published": "2026-10-19T22:58:54Z",
+    "primary": "cs.AR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.27376",
+    "pdf": "https://arxiv.org/pdf/2610.27376v1"
+  },
+  "2610.27371": {
+    "id": "2610.27371",
+    "title": "M3D-FLOW: A Monolithic 3-D-Stackable Processing-Near-DRAM Architecture for Generative Normalizing Flow Applications",
+    "abstract": "Normalizing Flows (NFs) have shown strong results in generative modeling, recently reaching state-of-the-art image generation performance. However, their repetitive, sequential operations limit the computational and memory efficiency achievable with GPUs and TPUs. We propose M3D-FLOW, a novel monolithic 3D-stackable (M3D) DRAM-based processing-near-memory (PNM) architecture that eliminates memory bottlenecks using a Cu-Cu hybrid-bonded logic die integrated with an M3D DRAM die. The M3D DRAM provides dense bank integration and a tiered organization with variable access latencies that M3D-FLOW exploits for the efficient processing of different NF workloads. To maximize compute density while minimizing area, energy, and thermal overhead, M3D-FLOW employs hybrid binary--stochastic floating-point multipliers, performing mantissa multiplication in the stochastic domain and exponent operations in the binary domain. A pipelined execution strategy maps sequential NF stages across dynamically partitioned PE groups, and together with the stochastic hardware, enables M3D-FLOW to achieve at least $6.6\\times$ higher performance and $3\\times$ better energy efficiency than prior PNM accelerators, with only a 2.2% bits-per-dimension (BPD) increase over bfloat16 and 4.1% over FP32. An analysis of stochastic hardware variants further shows that shorter stochastic bitstreams reduce execution time by up to $3.3\\times$ at the cost of higher approximation error, providing a concrete design guide for latency--accuracy trade-offs.",
+    "authors": [
+      "Bipin Thapa Magar",
+      "Ishan Thakkar",
+      "Sudeep Pasricha"
+    ],
+    "published": "2026-10-19T22:49:55Z",
+    "primary": "cs.AR",
+    "comment": "13 pages, 12 figures. Presented in CASES 2026 as a part of ESWEEK 2026. Accepted for publication in IEEE TCAD",
+    "url": "https://arxiv.org/abs/2610.27371",
+    "pdf": "https://arxiv.org/pdf/2610.27371v2"
+  },
+  "2610.31131": {
+    "id": "2610.31131",
+    "title": "Music Between Two Minds: Individual Signatures, Shared States, and the Emergence of Creative Interaction",
+    "abstract": "Some of the most valued forms of human creativity arise between people-in conversation, collaboration, and improvised music-yet how two minds jointly regulate the flow of novelty in real time remains unknown. Here we examined the information dynamics of interpersonal improvisation using 986 professional jazz improvisations. Pitch-based fluctuations of uncertainty and surprise behaved as signatures of individual identity: the two partners differed within 90% of takes, performers were identifiable from single solos and the separation between partners persisted undiminished across turns and takes. Rhythm-based fluctuations showed the reverse organization: partners were statistically indistinguishable within a take yet shifted together from take to take, and this shared state drifted gradually as each performance progressed, with each performer moving away from their own past at the same rate as from their partner's. Beyond joint drift, solo hand-offs revealed turn-by-turn complementarity: when one performer exceeded their own average surprise in the predictive dynamics of improvisation, the partner's next solo fell below their own, in both pitch and rhythm and in all duos. Improvising pairs thus neither fuse into one system nor remain two independent ones: they preserve individual melodic voices while sharing a rhythmic state, within which moment-to-moment push-pull continually rebalances their interaction. Individuality and togetherness thus coexist, carried by different musical dimensions, a measurable organization of creativity that emerges between minds.",
+    "authors": [
+      "Tatsuya Daikoku",
+      "Risa Kobayashi",
+      "Rina Tabuchi",
+      "Yoshia Abe",
+      "Yasuo Kuniyoshi"
+    ],
+    "published": "2026-10-22T11:51:21Z",
+    "primary": "q-bio.NC",
+    "comment": "34 pages, 2 figure",
+    "url": "https://arxiv.org/abs/2610.31131",
+    "pdf": "https://arxiv.org/pdf/2610.31131v1"
+  },
+  "2610.29720": {
+    "id": "2610.29720",
+    "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
+    "abstract": "Spiking Neural Networks (SNNs) promise energy-efficient inference through sparse, event-driven computation, yet remain constrained on continuous, context-dependent tasks such as automatic speech recognition (ASR). A key bottleneck is the Leaky Integrate-and-Fire (LIF) neuron, whose membrane decay erases information across pauses and phonetic boundaries while it must both extract features and retain long-range context. Inspired by cortical separation of nonlinear filtering and somatic integration, we introduce the Spiking Ternary GRU (stGRU): a ternary-weight gated recurrent unit performs temporal filtering, while downstream Resonate-and-Fire (RF) neurons generate the binary spike stream driving the next block's event pathway. This makes binary event transmission a native training constraint rather than a separate deployment-time activation quantization step; together with ternary weights, learned projections avoid dense floating-point matrix MACs. Trained end-to-end on LibriSpeech-960, Small, Medium, and Large stGRUs reach 8.09%, 7.04%, and $6.44 \\pm 0.17\\%$ WER on test-clean without an external language model. To our knowledge, these are the first matrix-MAC-free spiking networks without a learned ANN sequence decoder to achieve single-digit WER on LibriSpeech. The architecture also achieves 10.88% test CER on Aishell-1 (9.28% on dev) when trained from scratch. Internally, trained networks develop a depth-graded hierarchy: shallow layers act as fast acoustic filters, while deep layers form slower semantic integrators whose latent representations segregate into part-of-speech manifolds and word-level spike events. Deep-layer firing rates follow lognormal distributions with a sparsity gradient, mirroring hierarchical processing observed in human cortex in vivo. Our biologically grounded architecture combines competitive ASR with favorable modeled compute and memory cost.",
+    "authors": [
+      "Pavlos Poulos",
+      "Katelyn Sadorf",
+      "Themos Stafylakis",
+      "Costas A. Anastassiou"
+    ],
+    "published": "2026-10-21T13:29:46Z",
+    "primary": "cs.SD",
+    "comment": "22 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2610.29720",
+    "pdf": "https://arxiv.org/pdf/2610.29720v1"
+  },
+  "2610.31242": {
+    "id": "2610.31242",
+    "title": "Fluctuation-free Quantum Battery Charging Enabled by Bell-like Entangled and Separable Charger States",
+    "abstract": "The implication of entanglement in quantum battery charging remains poorly understood. In addition, intrinsic quantum randomness poses a fundamental challenge to charging uniformity across distinct trials. To address these issues, we study a three-qubit system within a cascaded collision frame, with two qubits acting as the charger and the third serving as the battery. After each collision, an adaptive measurement is performed on the charger, yielding four conditional post-measurement battery states with identical expected stored energy. For arbitrary fixed charger states, we derive analytical expressions for the recurrence relation of stored energy. We find that stored-energy fluctuations depend on whether the dynamics relies on the battery phase \\(γ_n\\). For two Bell-like families of entangled states, together with their computational basis states termed Bell-like separable states, the dynamics is \\(γ_n\\)-independent and fluctuations vanish, whereas for other entangled and separable states, fluctuations emerge. These insights establish a paradigm for engineering charger states to design uniform-charging quantum-battery architectures despite inherent quantum randomness.",
+    "authors": [
+      "Longyan Gong",
+      "Jing Zhang",
+      "Yongtao Li"
+    ],
+    "published": "2026-10-22T13:24:47Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.31242",
+    "pdf": "https://arxiv.org/pdf/2610.31242v1"
+  },
+  "2610.31660": {
+    "id": "2610.31660",
+    "title": "Sound-Horizon-Agnostic Forecast for Constraints on $H_0$ and $Σm_ν$ from BAO, CMB Lensing, Supernovae and LSST-like Galaxy Lensing",
+    "abstract": "We present a sound-horizon-agnostic forecast for constraints on the Hubble constant $H_0$ and the sum of the neutrino masses $Σm_ν$ from a combination of LSST-like galaxy weak lensing, Simons-Observatory-like CMB lensing, the completed DESI BAO program, and expanded supernova samples. Treating the sound horizon at baryon drag $r_d$ as a free parameter, the method provides a consistency test of $Λ$CDM without relying on the standard early-Universe calibration of $r_d$. The analysis incorporates realistic galaxy weak-lensing systematics, explicitly marginalizing over photometric-redshift calibration, multiplicative shear biases, intrinsic alignments, and baryonic feedback, and extends the CMB-lensing analysis to $L_{\\max}=5000$. For fixed $Σm_ν$, we forecast uncertainties of $σ(H_0)\\simeq 1.5$ km/s/Mpc with our least informative prior set, $σ(H_0)\\simeq 1.3$ km/s/Mpc with more restrictive priors, and $σ(H_0)\\simeq 0.7$ km/s/Mpc with an additional informative prior on the amplitude of primordial fluctuations $A_s$. Allowing $Σm_ν$ to vary weakens the $H_0$ constraints, while still yielding a forecast 95% CL upper limit of about 0.4 eV on $Σm_ν$. We also clarify the scope of the $r_d$-agnostic approach through validation tests using mock data from modified recombination and early dark energy models. The method recovers unbiased constraints on $H_0$ for the former but not the latter, highlighting its dependence on assumptions about early-Universe physics.",
+    "authors": [
+      "Seyed Hamidreza Mirpoorian",
+      "Helena García Escudero",
+      "Levon Pogosian",
+      "Amy Wayland",
+      "David Alonso"
+    ],
+    "published": "2026-10-22T17:59:04Z",
+    "primary": "astro-ph.CO",
+    "comment": "11 pages, 3 figures, 3 tables",
+    "url": "https://arxiv.org/abs/2610.31660",
+    "pdf": "https://arxiv.org/pdf/2610.31660v1"
+  },
+  "2610.31618": {
+    "id": "2610.31618",
+    "title": "The Asymptotic Number of Anticodes in Hamming Spaces",
+    "abstract": "In the Hamming space $\\mathbb{F}_q^n$, a $d$-anticode is a subset in which every pair of points has Hamming distance at most $d$, or equivalently, a set of diameter at most $d$. Let $m_q(n,d)$ denote the maximum size of a $d$-anticode and let $\\mathcal{A}_q(n,d)$ be the family of all $d$-anticodes. We show that for fixed $q$, as $n\\to\\infty$, the total number of $d$-anticodes satisfies \\[ |\\mathcal{A}_q(n,d)|=2^{(1+o(1))m_q(n,d)} \\] for $4\\le d\\le n-1$, except when $q=2$ and $d=n-1$. We also count linear $d$-anticodes, that is, subspaces of $\\mathbb F_q^n$ with diameter at most $d$. For fixed $q$ and $d$, their number is polynomial in $n$. For growing $d$, we determine the exponential order as $q^{Θ_q(d^2+d\\log_q(n/d))}$ in the sublinear regime and $q^{Θ(n^2)}$ when $d/n\\toα\\in(0,1)$. In the near-full regime $n-d=o(n)$, we obtain the sharper count $q^{(1/4+o(1))n^2}$. A random-generator construction further improves the binary lower bound for every fixed linear diameter.",
+    "authors": [
+      "Anna-Lena Horlemann",
+      "Ananthakrishnan Ravi"
+    ],
+    "published": "2026-10-22T17:41:49Z",
+    "primary": "math.CO",
+    "comment": "Two figures. Comments are welcome",
+    "url": "https://arxiv.org/abs/2610.31618",
+    "pdf": "https://arxiv.org/pdf/2610.31618v1"
+  },
+  "2610.31184": {
+    "id": "2610.31184",
+    "title": "Anomalous polar chains in halide perovskites",
+    "abstract": "Local polar distortions, their collective ordering, and their field-driven reversal have been studied extensively in ferroelectric perovskites for decades. Here we identify an unusual behavior in the ferroelectric halide perovskite CsGeBr3 using large-scale molecular dynamics with first-principles-trained interatomic potentials. In its nominally cubic phase the Ge off-centering forms one-dimensional polar chains that extend over at least tens of nanometers and relax on nanosecond timescales, four orders of magnitude slower than in BaTiO3 and PbTiO3, with CsSnBr3 in between. The cubic CsGeBr3 phase is a dynamically disordered state in which oppositely polarized chains flip throughout the crystal, and a long-lived one-dimensional local polarization coexists with zero net polarization. A simple three-dimensional perovskite thus hosts long-ranged one-dimensional polar correlations with remarkably slow dynamics. In the ferroelectric phase the same chains set a one-dimensional switching mechanism, in which the polarization reverses chain by chain.",
+    "authors": [
+      "Erik Fransson",
+      "Apinya Ngoipala",
+      "Priyanka Deswal",
+      "Ethan Berger",
+      "Nicholas C. Bristowe",
+      "Paul Erhart",
+      "Julia Wiktor"
+    ],
+    "published": "2026-10-22T12:33:55Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.31184",
+    "pdf": "https://arxiv.org/pdf/2610.31184v1"
+  },
+  "2610.31157": {
+    "id": "2610.31157",
+    "title": "Functional understanding of structural components in polypseudorotaxane gels",
+    "abstract": "Biomedical devices, wearable interfaces, and soft robots require compliant soft materials with reliable mechanical performance, yet the molecular principles needed to design such materials are not always fully understood. Thus, there is an urgent need to understand how to design novel stretchable and soft hydrogels with enhanced toughness, i.e. resistance to breakage. Slide-ring gels (SRGs) are a class of unconventional soft materials formed by polyrotaxanes (PR) building blocks whereby sliding cyclodextrins (CD) replace traditional chemical and physical crosslinks and in turn enhance toughness and stretchability by several orders of magnitude. The rational design of SRGs re- mains challenging due to a lack of a mechanistic understanding of the role played by individual components. In this work, we implement simple synthetic perturbations that individually target polymer-CD and CD-CD interactions in unstoppered pseudopolyrotaxanes (pPR) solutions and measure the consequent changes in viscoelastic properties. Weakening the intermolecular interaction between CDs abolishes crystallisation and significantly weakens the gel. At the same time, thermodynamically favouring threading by using azobenzene-modified PEG chains favours the formation of stable and long-lived networks even at remarkably low CD stoichiometries. We rationalise these observations with coarse-grained Molecular Dynamics simulations which clarify the structure-function relationship of the components forming these materials. Our work contributes to guiding the rational design and development of enhanced SRG hydrogels and elastomers.",
+    "authors": [
+      "Ella Sapsford",
+      "Andrea Bonato",
+      "Simon Weir",
+      "Nawar Zebari",
+      "Paul J. Lusby",
+      "Chenfeng Ke",
+      "Davide Michieletto"
+    ],
+    "published": "2026-10-22T12:15:02Z",
+    "primary": "cond-mat.soft",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.31157",
+    "pdf": "https://arxiv.org/pdf/2610.31157v1"
+  },
+  "2610.31638": {
+    "id": "2610.31638",
+    "title": "No Perfect Randomized Composition",
+    "abstract": "Does computing a composition of total Boolean functions require the product of the randomized query complexities of its factors? We give a negative answer. There are families of total functions $f,g$ such that $R(f\\circ g) =Θ\\!\\left(\\frac1{\\log R(g)}\\right)R(f)R(g)$ This result requires first separating linearized query complexity $\\LR$, as well as noisy randomized query complexity $noisyR$, from standard randomized query complexity $R$. Both constructions essentially come from totalizing existing partial function separations, albeit via different techniques. By adapting these techniques, we also construct total functions separating every adjacent pair in the chain from sabotage $RS$, max-conflict $\\barχ$, and linearised query complexity $LR$. We show that AND-of-ORs separates conflict $χ$ from max-conflict $\\barχ$ complexity and makes conflict and sabotage incomparable. Finally, randomized complexity can be smaller than its composition limit $R^*$ by the maximal factor $Θ(\\log R)$. The total--total composition separation is also formalized in Lean.",
+    "authors": [
+      "Alexander Meiburg"
+    ],
+    "published": "2026-10-22T17:52:26Z",
+    "primary": "cs.CC",
+    "comment": "56 pages",
+    "url": "https://arxiv.org/abs/2610.31638",
+    "pdf": "https://arxiv.org/pdf/2610.31638v1"
+  },
+  "2610.31632": {
+    "id": "2610.31632",
+    "title": "What does quantum parameter estimation estimate? A no-go result for true quantity values",
+    "abstract": "We examine the conditions under which quantum parameter estimation is compatible with the concept of a ``true'' quantity value: a unique value of the estimated quantity that exists prior to and independently of measurement. While quantum parameter estimation typically assumes that the quantity to be estimated is a parameter, we argue that this assumption can be lifted, opening the way to a more general formulation of estimation that may apply even in situations where the quantity to be estimated is no longer a parameter, but instead a quantum variable susceptible to quantum fluctuations. We identify three assumptions that characterize the way estimation is often presented in the quantum metrology literature, namely, as a procedure for inferring an unknown ``true value\", which is assumed to be unique and to exist prior to and independently of measurement. Using our more general framework, we prove a no-go theorem showing that the preceding assumptions are jointly incompatible with two further assumptions: the completeness of the quantum state (no `hidden variables'), and the presence of entanglement between the probe systems and the system under measurement. We note that the presence of such entanglement is a generic prediction of standard quantum theory. Consequently, if one is not willing to accept hidden variables, nor willing to modify standard quantum theory by introducing a new physical mechanism that destroys entanglement at some scale or regime, then a realist account of estimation is ultimately impossible.",
+    "authors": [
+      "Jacques L. Pienaar",
+      "Eran Tal",
+      "Asya Ciftci"
+    ],
+    "published": "2026-10-22T17:49:03Z",
+    "primary": "quant-ph",
+    "comment": "20 pages, 2 figures. To appear in Coherentist Approaches to Quantum Metrology, Routledge Studies in the Philosophy of Mathematics and Physics (forthcoming)",
+    "url": "https://arxiv.org/abs/2610.31632",
+    "pdf": "https://arxiv.org/pdf/2610.31632v1"
+  },
+  "2610.30397": {
+    "id": "2610.30397",
+    "title": "Verified DRAM Address Mapping Reverse Engineering with Threshold Sweep",
+    "abstract": "We propose an end-to-end software pipeline for solving and validating DRAM address mapping functions on embedded LPDDR5 systems, and we instantiate it on embedded platforms. Starting from a large latency dataset of address pairs, the pipeline first builds a latency histogram and then performs a threshold sweep to obtain candidate same-bank address pairs. For each threshold, we apply a Knock-Knock-style linear-constraint solver to recover candidate bank masks. Final bank masks are calculated using GF(2) reduced row echelon form (RREF). To verify correctness, we implement two verification stages, group verification and single function verification, inspired by prior work. Group verification checks whether bank partitions induced by the recovered masks agree with observed timing behavior. Single function verification removes one addressing function at a time and measures the resulting change in verification pass rate. Unlike approaches that return only a single inferred mapping, our workflow systematically records, for each candidate threshold, the solved bank masks and validation metrics. This pipeline supports more robust selection of bank masks on ARM-based embedded devices and provides an efficient method for reverse engineering DRAM address mapping functions and subsequent Rowhammer analysis.",
+    "authors": [
+      "Hewen Zhang",
+      "Ian G. Harris"
+    ],
+    "published": "2026-10-21T20:03:19Z",
+    "primary": "cs.AR",
+    "comment": "4 pages. Accepted at DFTS 2026",
+    "url": "https://arxiv.org/abs/2610.30397",
+    "pdf": "https://arxiv.org/pdf/2610.30397v1"
+  },
+  "2610.30287": {
+    "id": "2610.30287",
+    "title": "Non-Destructive Detection of Early Drought Stress via Spectral Submanifold Analysis",
+    "abstract": "Non-destructive early detection of water stress is critical for precision agriculture, yet current detection methods are often labor-intensive or destructive. We propose a rapid, non-invasive method based on Spectral Submanifold (SSM) reduction to analyze the nonlinear vibration dynamics of soybean plants. Unlike traditional linear modal analysis, our data-driven approach reveals a distinct transition in the dominant dynamics of the plant stem as drought progresses. Specifically, we uncover a sign reversal in the nonlinear damping coefficient within SSM-reduced models of full plants. Our finding reveals a fundamental transition in the plant's dissipative mechanics from a pressurized, fluid-rich vessel exhibiting superlinear (viscoelastic) damping to a dry, cellular solid dominated by sublinear (frictional) damping. This transition is closely correlated with the onset of physiological stress indicated by a significant decrease in the values of mature-leaf soil plant analysis development (SPAD) and colorimetric metrics. In contrast, traditional metrics, such as linear frequency and leaf wilting, do not provide consistent statistical signals of water stress. This study provides the first experimental evidence that SSM-based nonlinear model reduction can detect the changing internal state of a living organism, offering a physics-based metric for high-throughput plant phenotyping.",
+    "authors": [
+      "Sunghwan Jung",
+      "Isabella Thiel",
+      "Jisoo Yuk",
+      "George Haller"
+    ],
+    "published": "2026-10-21T18:05:09Z",
+    "primary": "cond-mat.soft",
+    "comment": "Includes supplementary information and one supplementary video. This manuscript has been submitted",
+    "url": "https://arxiv.org/abs/2610.30287",
+    "pdf": "https://arxiv.org/pdf/2610.30287v1"
+  },
+  "2610.31600": {
+    "id": "2610.31600",
+    "title": "SympFormer: Inertial Attention Blocks from Damped Hamiltonian Dynamics on Spaces of Probability Measures",
+    "abstract": "The attention mechanism underpins modern large language models, yet their dynamics remain only partially understood. Recent perspectives interpret attention blocks as interacting particle systems, whose mean-field limits correspond to gradient flows of energy functionals on spaces of probability densities on $\\mathbb R^d$ equipped with Wasserstein-type metrics. We extend this viewpoint by deriving accelerated attention blocks from inertial, Nesterov-type damped Hamiltonian dynamics on these density spaces, developing the geometry and differential calculus needed to make the construction rigorous. In particular, we introduce a local-mobility geometry for the Otto-Wasserstein and softmax-Wasserstein settings, and a quotient Stein geometry that resolves the degeneracy of the linear-attention kernel to yield a well-defined metric and differential calculus. We provide rigorous foundations when softmax attention admits a gradient-flow formulation and when its inertial counterpart admits a damped Hamiltonian on explicitly characterized domains. For linear attention, we obtain a finite-dimensional solution theory with sharp conditions for global existence versus finite-time second-moment blow-up. We further prove a quantitative link between continuous moment blow-up and the discrete-layer depth at which token norms cross a prescribed threshold. Finally, motivated by the finite-token geometry, we propose geometric corrections to token and momentum updates. In decoder-only, nanoGPT-style experiments on TinyStories and OpenWebText, these corrections lower validation negative log-likelihood on next-token prediction relative to momentum-only controls.",
+    "authors": [
+      "Viktor Stein",
+      "Levin Maier",
+      "Wuchen Li",
+      "Gabriele Steidl"
+    ],
+    "published": "2026-10-22T17:32:11Z",
+    "primary": "math.SG",
+    "comment": "97 pages, 5 figures, 4 tables, comments welcome!",
+    "url": "https://arxiv.org/abs/2610.31600",
+    "pdf": "https://arxiv.org/pdf/2610.31600v1"
+  },
+  "2610.31508": {
+    "id": "2610.31508",
+    "title": "Spin-Dependent Transport in One-Dimensional Mercury- and Silver-Mediated DNA Nanowires",
+    "abstract": "Metallo-DNA nanowires serve as a versatile, programmable scaffold for molecular-scale electronics. In this work, we demonstrate that periodic heavy-metal coordination fundamentally reshapes the electronic landscape of DNA, generating dispersive, metal-centered conduction bands rather than isolated localized states. Driven by enhanced inter-layer coupling, where second nearest-neighbor hopping plays a crucial role: the conduction bandwidth can approach 1 eV, more than double that of canonical DNA. These broad bands suggest enhanced robustness of transport against structural fluctuations. As a result of relativistic effects, in these quasi-one-dimensional materials, spin-orbit (SO) coupling enhances band dispersion and governs spin-dependent transport. We predict that although ligand hybridization reduces atomic SO splitting, the effective SO splitting in these nanowires is comparable to the next-nearest-neighbor hopping strength, which results in considerable spin mixing. We find that Hg2+-coordinated nanowire exhibit pronounced spin-flip conductance comparable to spin-conserving conductance across the LUMO manifold. This efficient spin conversion remains robust over extended molecular lengths and is accompanied by a set of highly delocalized unoccupied states with oscillating nodal structures, readily accessible under low-bias transport measurements. In contrast, the Ag+-coordinated nanowires exhibit weak spin-flip scattering that is more than an order of magnitude smaller than spin-preserving transport. This duality establishes the choice of coordination metal as a decisive parameter to govern metal-metal interaction, electron delocalization, and spin-dependent transport. Overall, our findings demonstrate how relativistic effects and quantum confinement intersect in these bio-templated, quasi-one-dimensional molecular conductors.",
+    "authors": [
+      "Arpan De",
+      "William Livernois",
+      "Simon Vecchioni",
+      "Yoel P. Ohayon",
+      "M. P. Anantram"
+    ],
+    "published": "2026-10-22T16:24:49Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.31508",
+    "pdf": "https://arxiv.org/pdf/2610.31508v1"
+  },
+  "2610.31664": {
+    "id": "2610.31664",
+    "title": "Odd radio circle J1555+2726: Observational evidence for shock re-acceleration of fossil plasma",
+    "abstract": "Context. Odd radio circles (ORCs) are peculiar extragalactic sources recently discovered. They are characterised by one or more bright rings extending on scales of hundreds of kiloparsecs, and are filled with fainter emission. A massive elliptical galaxy lies at the centre of ORCs. While their formation mechanism is debated, a shock is plausibly involved. Aims. We aim to constrain the nature of ORC J1555+2726 (ORC4) through the analysis of its morphological and spectral properties. Methods. We utilised Low Frequency ARray (LOFAR), upgraded Giant Metrewave Radio Telescope (uGMRT), and MeerKAT radio data at 50-1284 MHz to obtain images and spectral index maps at high resolution and sensitivity. Results. Both the resolution and observing frequency affect the observed morphology. In particular, the brightness contrast between the ring and the filling emission becomes progressively smoother from higher to lower frequencies. We measured an integrated spectrum of slope $α=1.06\\pm 0.03$, a radio power of $P_{\\rm 150}= (5.4\\pm 0.5)\\times 10^{25} \\; {\\rm W \\; Hz^{-1}}$ at 150 MHz, and a radial spectral flattening down to $α\\sim0.5$ at the ring location. However, we inferred a negative (convex) spectral curvature and a peculiar spectral shape in radio colour-colour diagrams, which imply spectral flattening towards high frequencies. These properties cannot be explained by shock acceleration of thermal particles and standard ageing. Conclusions. The observed features suggest that a mixture of electrons with different spectra coexist within ORC4 volume, likely associated with shock re-acceleration of a fossil relativistic reservoir. The ring emission is plausibly dominated by higher-energy electrons re-accelerated at the shock front, while lower-energy re-accelerated electrons are more uniformly distributed across the whole source (possibly ellipsoidal) volume.",
+    "authors": [
+      "L. Bruno",
+      "B. Koribalski",
+      "R. P. Norris",
+      "A. Ivleva",
+      "T. Venturi",
+      "A. Botteon",
+      "C. J. Riseley",
+      "K. Dolag",
+      "J. R. Callingham",
+      "T. W. Shimwell"
+    ],
+    "published": "2026-10-22T17:59:32Z",
+    "primary": "astro-ph.GA",
+    "comment": "11 pages (+3 pages appendix). Resubmitted to A&A after referee's report",
+    "url": "https://arxiv.org/abs/2610.31664",
+    "pdf": "https://arxiv.org/pdf/2610.31664v1"
+  },
+  "2610.31631": {
+    "id": "2610.31631",
+    "title": "Nonvanishing of 2-primary Kolyvagin classes via simultaneous quadratic twists",
+    "abstract": "Let $E/\\mathbf{Q}$ be an elliptic curve, let $K=\\mathbf{Q}(\\sqrt{D})$ satisfy the Heegner hypothesis with $D<-4$, and fix a modular parametrization $\\varphi$ with $\\varphi(\\infty)=O$. Under surjectivity modulo $2^L$, with $L\\ge 2$, and a cohomological exclusion condition at level $4$, we construct a finite set of primes $T$ such that, writing $d_T=\\prod_{q\\in T}(-q)$ and $n_T=\\prod_{q\\in T}q$, the $2$-Selmer dimensions of $E^{d_T}$ and $E^{d_TD}$ are $0$ and $1$. The support size is bounded in terms of the initial Selmer dimensions, independently of $L$. Inspired by the work of Tian and Tian--Yuan--Zhang on congruent numbers, we construct a point $Q_T$ on the terminal twist and identify its Kummer class with the standard mod-$2$ Kolyvagin class. Using the low-corank $2$-converse and the $2$-primary Birch--Swinnerton-Dyer formula, we prove that its index $m_T$ in the full Mordell--Weil lattice satisfies $v_2(m_T)=v_2(c_\\varphi)+\\mathfrak{i}(E,K)$. The optimal Manin constant theorem supplies a $2$-indivisible parametrization $\\varphi_0$, for which $κ^{\\mathrm{std}}_{n_T,1}(\\varphi_0)\\ne 0$ if and only if $\\mathfrak{i}(E,K)=0$. When the intrinsic index vanishes, the minimum terminal support size is $R=\\min\\{d_2(E),d_2(E^D)\\}$, and the normalized standard classes have order $2^M$ for $1\\le M\\le L$. Full $2$-adic Galois image then gives strong nonvanishing.",
+    "authors": [
+      "Zhiqi Sun"
+    ],
+    "published": "2026-10-22T17:48:19Z",
+    "primary": "math.NT",
+    "comment": "56 pages, 4 tables",
+    "url": "https://arxiv.org/abs/2610.31631",
+    "pdf": "https://arxiv.org/pdf/2610.31631v1"
+  }
+}
