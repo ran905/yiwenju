@@ -1,6 +1,728 @@
 {
-  "count": 16,
+  "count": 31,
   "papers": [
+    {
+      "id": "2610.36541",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-10-27",
+      "title_en": "The geometry of cognition: from neural populations to neurotechnology",
+      "title_zh": "认知的几何：从神经元群体到脑机接口",
+      "one_liner": "综述用低维几何描述群体神经活动，指出认知变量在群体空间中近乎正交，减少干扰。",
+      "why": "它把“大脑如何同时处理多种信息”讲成几何问题，用向量、降维等课本概念解释记忆和决策，适合对数学和脑科学都感兴趣的同学。",
+      "sections": {
+        "background": "单个神经元反应混杂，难以对应单一认知变量。群体水平分析成为主流，但如何从高维数据中提取可解释结构仍是挑战。",
+        "method": "综述梳理了群体向量、主成分分析、降维回归等方法，区分操作定义的子空间与有几何结构的神经流形，并讨论在感觉、工作记忆、决策等任务中的应用。",
+        "finding": "提出两个组织原则：认知变量可在群体维度上分离或近似正交，减少感觉、记忆、决策信号的相互干扰；这种分离不需要解剖上独立的细胞类型，混合选择性神经元也能实现。",
+        "impact": "为解读大脑群体活动提供统一几何框架，可能指导脑机接口解码和神经假体设计。"
+      },
+      "analogy": "就像调音台每个旋钮控制一种音色，虽然每个旋钮内部线路混杂，但输出通道彼此独立，互不干扰。",
+      "terms": [
+        {
+          "t": "群体向量",
+          "d": "用一群神经元的整体活动表示一个方向或变量。"
+        },
+        {
+          "t": "神经流形",
+          "d": "高维神经活动数据所在的低维弯曲曲面。"
+        },
+        {
+          "t": "正交",
+          "d": "两个方向互不影响，像直角坐标轴。"
+        }
+      ],
+      "tags": [
+        "神经科学",
+        "几何",
+        "认知"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Lucas Bayones",
+        "Devika Narain",
+        "Roman Rossi-Pool"
+      ],
+      "abstract": "Cognition is implemented by distributed neural populations whose collective activity evolves through structured, low-dimensional state spaces. In this review, we survey the analytical and conceptual tools used to study latent population dynamics in biological neural networks. We begin with single-unit coding, which remains essential for interpreting neuronal selectivity, and then review population-level approaches, including population vectors, cosine similarity, principal component analysis and its mnemonic variants, multivariable linear regression axes, demixed principal component analysis, and single-trial latent-variable models, and distinguish operationally defined population subspaces from neural manifolds with reproducible geometry or topology. We use these methods to discuss sensory coding, working memory, decision-making, temporal processing, and sensorimotor transformations. Two organizing principles are emphasized throughout. First, cognitive variables can be expressed in separable or near-orthogonal population dimensions, reducing interference between sensory, mnemonic, decision-related, and motor signals. Second, such geometric separation does not require anatomically or functionally discrete cell classes; separable population readouts can coexist with a continuum of mixed-selective single-neuron responses within a shared biological substrate. We then consider recurrent neural networks as testbeds for generating and evaluating mechanistic hypotheses about how circuits produce low-dimensional dynamics, and intracortical brain-computer interfaces as a translational domain in which population geometry becomes an operational control signal. Overall, this review argues that population dynamics now provide a common language for linking neurophysiology, computational modelling, and neurotechnology.",
+      "url": "https://arxiv.org/abs/2610.36541",
+      "pdf": "https://arxiv.org/pdf/2610.36541v1"
+    },
+    {
+      "id": "2610.37152",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mes-hall",
+      "published": "2026-10-27",
+      "title_en": "Cu intercalation and field-driven filament formation in vertically aligned MoS$_2$ memristors",
+      "title_zh": "MoS₂忆阻器里铜细丝怎么长出来",
+      "one_liner": "他们用计算机模拟发现，铜原子会钻进二硫化钼层间形成金属性“骰子晶格”，通电后长成导电细丝，解释了忆阻器开关的机制。",
+      "why": "忆阻器是可能改变电脑存储方式的小器件，但里面到底发生了什么一直不清楚。这篇论文用多尺度模拟，像拍慢动作电影一样，展示了铜原子怎么钻进材料、怎么连成导电细丝。你能看到理论计算怎么解释真实器件的开关速度。",
+      "sections": {
+        "background": "用铜电极和垂直排列的二硫化钼做的忆阻器，开关行为被认为靠导电细丝，但细丝的具体原子结构没人看清。实验很难直接观测纳米尺度的细丝，所以需要理论模拟来补上这个空白。",
+        "method": "作者先用密度泛函理论算铜原子在二硫化钼层间的稳定位置，再用这些结果训练一个机器学习力场，最后用动力学蒙特卡洛模拟大量铜原子在电场下的运动，重现细丝形成过程。",
+        "finding": "最稳定的结构是 MoS₂Cu₀.₁₁，铜原子在层间排成“骰子晶格”，这种结构有金属性，能导电。模拟出的开关速度和阈值电压和实验数据吻合，说明细丝确实是这样形成的。",
+        "impact": "这给忆阻器的设计提供了原子尺度的指导，可能帮助优化开关速度和寿命。也展示了多尺度模拟如何把量子计算和器件行为连起来。"
+      },
+      "analogy": "就像想知道堵车时车流怎么动，先研究每辆车的反应（量子计算），再编成交通规则（机器学习力场），最后模拟整条路（蒙特卡洛），看堵点怎么形成。",
+      "terms": [
+        {
+          "t": "忆阻器",
+          "d": "一种电阻会随电流历史改变的电子元件，能记住状态。"
+        },
+        {
+          "t": "导电细丝",
+          "d": "金属原子连成的纳米级通道，让绝缘材料突然导电。"
+        },
+        {
+          "t": "动力学蒙特卡洛",
+          "d": "用随机抽样模拟原子跳跃过程的计算方法。"
+        }
+      ],
+      "tags": [
+        "材料模拟",
+        "忆阻器",
+        "多尺度计算"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Touko Lehenkari",
+        "Hannu-Pekka Komsa"
+      ],
+      "abstract": "Vertically-aligned MoS$_2$ films paired with a Cu top electrode have been used as electrochemical metallization cell memristor devices. The memristive switching has been attributed to the formation of conductive filaments, yet their exact structure has remained elusive. Here we carry out a multi-scale computational study of Cu intercalation, clustering, and field-driven dynamics to eventually model the filament formation under operating conditions. We use density-functional theory results to fine-tune a machine learning force field, and the most important physical phenomena are further distilled into multi-particle kinetic Monte Carlo simulations. By exhaustive enumeration of Cu intercalated structures, we find the most stable structure at MoS$_2$Cu$_{0.11}$ composition, with Cu atoms forming a dice lattice between the MoS$_2$ layers. These structures are shown to exhibit metallic character and can thus form conductive filaments under memristor operation. The simulated switching speed and threshold voltage agree well with the available experimental data. Our results give fundamental insights on the device operation mechanism and guidelines for maximizing switching speed and endurance.",
+      "url": "https://arxiv.org/abs/2610.37152",
+      "pdf": "https://arxiv.org/pdf/2610.37152v1"
+    },
+    {
+      "id": "2610.37319",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-10-27",
+      "title_en": "AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents",
+      "title_zh": "用大语言模型帮模拟电路“调尺寸”",
+      "one_liner": "让大语言模型代理复用已验证设计并解析计算，在相同仿真预算下功耗比传统优化方法低43.3%。",
+      "why": "模拟电路设计是芯片行业最依赖经验的环节，这篇论文把大语言模型和经典方法结合，展示了AI如何辅助工程优化。高中生可以了解芯片设计中的“试错”成本，以及AI在其中的角色。",
+      "sections": {
+        "background": "模拟电路设计需要反复调整晶体管尺寸，使电路在工艺、电压、温度变化下都满足指标。每次调整都要跑SPICE仿真，而多 corner 仿真非常耗时，成为设计迭代的瓶颈。传统优化器和近期的大语言模型代理都依赖大量仿真，预算有限时效果受限。",
+        "method": "研究者提出AnalogScout框架，让大语言模型代理先复用已有的精英设计，再用解析的gm/Id方法做局部尺寸调整，最后全局细化并在全corner下验证。在三个复杂度递增的SKY130运算放大器上测试，总仿真预算为1.6万次。",
+        "finding": "在相同预算下，AnalogScout比进化策略CMA-ES功耗低43.3%，并且只用了CMA-ES最终功耗所需预算的7.0%就达到同等功耗。它也比贝叶斯优化和两个复现的大语言模型流程功耗更低。",
+        "impact": "这表明大语言模型可以更聪明地利用仿真预算，加速模拟电路设计。未来可能让芯片设计周期缩短，降低对资深工程师经验的依赖。"
+      },
+      "analogy": "就像做菜时不用每道菜都从头试味道，而是先参考已验证的菜谱，再根据手头食材微调，最后整体尝一遍。这样既省时间又保证味道。",
+      "terms": [
+        {
+          "t": "SPICE仿真",
+          "d": "电路设计软件，通过数值计算模拟电路行为，很耗时。"
+        },
+        {
+          "t": "PVT corner",
+          "d": "工艺、电压、温度的不同极端组合，电路必须在所有组合下都正常。"
+        },
+        {
+          "t": "gm/Id方法",
+          "d": "一种用晶体管跨导和电流比来快速估算模拟电路尺寸的解析方法。"
+        }
+      ],
+      "tags": [
+        "芯片设计",
+        "人工智能",
+        "模拟电路"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Yichen Long",
+        "Keren Zhu"
+      ],
+      "abstract": "Analog device sizing must satisfy all specifications across process, voltage, and temperature (PVT) corners to ensure tape-out success, but simulating every candidate at all corners dominates the sizing time and slows design iteration. Conventional surrogate-based optimizers search the sizing space directly, while recent large language model (LLM) agents add circuit knowledge to designs but still delegate the sizes to global optimizers. Both learn the circuit response from repeated multi-corner SPICE simulations and optimize on top of it, which becomes expensive under a limited simulation budget. Providing an agent with reusable verified designs and sizing sub-blocks analytically could save most of this budget. We propose AnalogScout, a simulation-efficient PVT-aware sizing framework driven by an LLM agent. Combining elite-design reuse, analytic gm/Id local sizing and global refinement under full-corner verification, AnalogScout reduces power by 43.3% relative to the evolution strategy CMA-ES at an equal budget of 16k simulations on three SKY130 OTAs of increasing complexity, and reaches the final CMA-ES power after 7.0% of that budget. It also attains lower power than Bayesian optimization on all three OTAs and than two re-implemented LLM-driven flows on the two OTAs where they were tested.",
+      "url": "https://arxiv.org/abs/2610.37319",
+      "pdf": "https://arxiv.org/pdf/2610.37319v1"
+    },
+    {
+      "id": "2610.37327",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-10-27",
+      "title_en": "Local learning is all you need: brain-aligned predictive coding networks",
+      "title_zh": "大脑式学习：局部预测编码网络",
+      "one_liner": "提出预测脑网络，用局部学习规则训练，在图像识别和脑对齐上媲美主流深度网络。",
+      "why": "它挑战了“只有全局反向传播才能训练好网络”的常见印象，用更接近大脑的局部规则取得好效果，能帮你理解生物智能与人工智能的异同。",
+      "sections": {
+        "background": "大脑如何学习一直是谜。预测编码理论认为大脑靠层级预测和局部误差学习，不需要全局信号。但以往这类模型性能远不如深度学习，形成悖论。",
+        "method": "作者构建了预测脑网络（PBN），一种分层循环网络，每层只用局部预测误差更新，不依赖全局反向传播。他们在图像分类任务上训练，并对比人类视觉皮层的脑活动数据。",
+        "finding": "PBN在脑对齐上匹配或超过主流视觉模型，且自上而下的预测携带独特信息。在分类任务上大幅超越已有预测编码网络，并复现了高级预测调制低级反应的皮层特征。",
+        "impact": "说明局部学习规则也能训练出强大网络，为理解大脑学习提供新框架，也可能启发更省能耗的AI训练方法。"
+      },
+      "analogy": "就像学骑自行车，不需要教练全局指挥每个肌肉，而是每个关节根据失衡感局部调整，最后整体骑得稳。",
+      "terms": [
+        {
+          "t": "预测编码",
+          "d": "大脑不断预测下一层输入，只传预测误差的机制。"
+        },
+        {
+          "t": "局部学习",
+          "d": "每个神经元只用附近信息更新，不靠全局信号。"
+        },
+        {
+          "t": "反向传播",
+          "d": "深度网络常用的全局误差回传训练法。"
+        }
+      ],
+      "tags": [
+        "计算神经科学",
+        "机器学习",
+        "视觉皮层"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Dirk Gütlin",
+        "Ryszard Auksztulewicz",
+        "Adrien Doerig"
+      ],
+      "abstract": "Predictive Coding (PC) is an influential account of how brain representations emerge through hierarchical, local, self-supervised prediction-based learning, without requiring globally propagated error signals. Despite extensive evidence supporting PC, a striking paradox persists: computational models built on these biologically grounded principles have consistently failed to match state-of-the-art Deep Neural Networks in performance and brain-alignment. Here, we show that this paradox can be overcome. We introduce Predictive Brain Networks (PBNs), a hierarchical recurrent framework that implements local PC-based learning and achieves representational alignment with the human ventral visual stream matching or exceeding established vision models. Importantly, PBN top-down predictions encode unique, brain-aligned information not captured during bottom-up feature extraction, with this contribution increasing in locally trained variants. Further, PBNs substantially outperform existing PC-inspired networks on downstream classification tasks, reproduce key signatures of PC (with higher-level predictions shaping lower-level visual responses as observed in the primate cortex), and support uncertainty estimation. PBNs therefore close a longstanding gap in computational neuroscience by combining two properties that have been largely separated: the brain-inspired learning mechanisms of predictive coding and the representational power of modern deep networks. They provide a scalable framework for studying biologically grounded learning without sacrificing the capacity to produce rich neural representations.",
+      "url": "https://arxiv.org/abs/2610.37327",
+      "pdf": "https://arxiv.org/pdf/2610.37327v1"
+    },
+    {
+      "id": "2610.37480",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.NI",
+      "published": "2026-10-27",
+      "title_en": "Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition",
+      "title_zh": "让雷达自己“思考”：毫米波无线感知芯片",
+      "one_liner": "用脉冲神经网络在射频芯片上直接识别人体动作，准确率94.7%，推理仅206微秒，能耗极低。",
+      "why": "这篇论文把“永远在线的感知”和“低功耗芯片”结合，和手机、智能家居里的动作识别直接相关。高中生能从中看到神经网络如何变成硬件，以及为什么省电是芯片设计的核心问题。",
+      "sections": {
+        "background": "无线网络在通信时本来就会测量信道，这些数据可以用来识别人体动作，但通常要送到基站或手机的通用处理器上计算，而处理器是设备最耗电的部分。要想让设备在待机时也能感知，就需要一个极小的专用分类器。",
+        "method": "研究者用开源工具Spiker+生成了脉冲神经网络加速器，在ZCU208射频片上系统上实现了从微多普勒帧到动作标签的完整链路。网络只有132个神经元，全部在可编程逻辑中运行，并尝试了量化训练把权重压到3比特。",
+        "finding": "在公开数据集DISC上，对未见过的受试者识别准确率达到94.7%，单次推理耗时206微秒。相比同拓扑的传统网络，逻辑资源只需八分之一，每次决策动态能耗低3.4倍；相比输入16比特频谱图的网络，能耗低7.6倍，准确率仅低1.2个百分点。",
+        "impact": "这展示了脉冲神经网络在低功耗边缘感知中的潜力，未来可能让手机、家电在休眠时也能持续感知环境，而不必唤醒高功耗处理器。"
+      },
+      "analogy": "就像家里的门铃不用一直开着大灯，只用一颗小灯泡就能知道有人经过。这个芯片就是那颗小灯泡，专门负责“看”动作，其他部分可以安心睡觉。",
+      "terms": [
+        {
+          "t": "脉冲神经网络",
+          "d": "模仿生物神经元用脉冲传递信息的网络，事件驱动，很省电。"
+        },
+        {
+          "t": "微多普勒",
+          "d": "雷达回波中由人体动作引起的微小频率变化，可用来识别动作。"
+        },
+        {
+          "t": "射频片上系统",
+          "d": "把射频电路和可编程逻辑集成在一颗芯片上，能处理无线信号。"
+        }
+      ],
+      "tags": [
+        "芯片",
+        "神经网络",
+        "无线感知"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Anthony Sánchez",
+        "Rafael Ruiz",
+        "José A. Belloch",
+        "Jesús O. Lacruz",
+        "Joerg Widmer"
+      ],
+      "abstract": "Integrated sensing and communication allows wireless networks to recognize human activity from the channel estimates that the receiver computes anyway. The inference, however, runs on the general-purpose processors of the base station, access point or handset, which are the first components a device switches off to save energy. Always-on sensing therefore requires a classifier that is small enough to remain powered while the rest of the system sleeps. We investigate whether Spiking Neural Networks (SNNs) can provide such a classifier. To this end, we generate SNN accelerators for micro-Doppler activity recognition on the public DISC dataset (IEEE 802.11ay at 60 GHz) with the open-source Spiker+ framework, and implement them together with a spike encoder on a ZCU208 RFSoC, so that the complete chain from micro-Doppler frame to activity label runs in programmable logic. A fully connected SNN with 132 neurons achieves 94.7 % accuracy (90.7 % macro-F1) on unseen subjects and performs an inference in 206 microseconds. Compared to conventional networks of the same topology on the same device, it requires an eighth of the logic and 3.4X less dynamic energy per decision than a network fed the same binary spikes, at comparable accuracy, and 7.6X less than a network fed the 16-bit spectrogram, at 1.2 points lower accuracy. Quantization-aware training reduces its weights to 3 bits within half a percentage point of the 6-bit network at the same encoder threshold",
+      "url": "https://arxiv.org/abs/2610.37480",
+      "pdf": "https://arxiv.org/pdf/2610.37480v1"
+    },
+    {
+      "id": "2610.37483",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · physics.chem-ph",
+      "published": "2026-10-27",
+      "title_en": "StudDFT: A quantum chemistry program for educational and research purposes",
+      "title_zh": "StudDFT：一个教学用的量子化学程序",
+      "one_liner": "他们写了一个叫 StudDFT 的量子化学软件，能算分子能量和结构，精度和主流软件相当，适合学生上手。",
+      "why": "如果你好奇化学家怎么用电脑“算”分子，这篇很合适。它介绍了一个专门给学生用的量子化学程序，能算分子能量、优化结构、预测红外光谱，而且和主流软件对比过，误差很小。你可以看到课本上的化学键和能量是怎么变成计算机里的数字的。",
+      "sections": {
+        "background": "量子化学计算能预测分子性质，但专业软件往往又贵又难学，高中生很难接触。之前学生要么用商业软件，要么用复杂的研究级代码，缺少一个专门为教学设计的、容易安装和理解的工具。",
+        "method": "作者开发了 StudDFT 程序，支持 Hartree-Fock、密度泛函理论（DFT）和 MP2 等常见方法，能优化分子几何、算振动频率和热化学性质。他们用 50 个分子和 ORCA、PySCF 两个成熟软件对比，检查单点能量、键长和频率的误差。",
+        "finding": "对大多数方法，单点能量平均误差不超过 7 微哈特里（约 0.0002 电子伏特），键长误差不超过 0.00012 埃，频率误差不超过 1.2 波数。只有 PBE 和 PBE0 有几十微哈特里的系统偏差，作者追踪到是 PBE 交换泛函中一个参数 μ 的取值造成的。",
+        "impact": "这个程序让高中生和本科生也能亲手做量子化学计算，理解理论怎么变成可执行的代码。它可能成为化学课和课外科研的入门工具，降低计算化学的门槛。"
+      },
+      "analogy": "就像学开车不一定非要开真赛车，有个专门的教学车，方向盘和刹车都调得温和，让你先学会基本操作，再去开真车。StudDFT 就是化学计算的“教学车”。",
+      "terms": [
+        {
+          "t": "密度泛函理论（DFT）",
+          "d": "一种用电子密度算分子能量的方法，比精确解薛定谔方程快很多。"
+        },
+        {
+          "t": "哈特里",
+          "d": "能量的单位，1 哈特里约等于 27.2 电子伏特。"
+        },
+        {
+          "t": "基组",
+          "d": "用一组数学函数拼出分子轨道，就像用积木搭形状。"
+        }
+      ],
+      "tags": [
+        "量子化学",
+        "计算软件",
+        "教学工具"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Stanislav K. Ignatov"
+      ],
+      "abstract": "StudDFT is a quantum chemistry program for Hartree--Fock (HF), density functional theory (DFT), and second-order Møller--Plesset (MP2) calculations of small and medium-sized molecules. It is intended primarily for teaching and student research, but its accuracy suffices for routine research calculations. Version 1.30.2 implements the RHF/UHF, RKS/UKS, and RMP2/UMP2/PUMP2 schemes in Gaussian basis sets, including effective core potentials (ECP); LDA, GGA (BLYP, BP86, BPW91, PBE), meta-GGA (r$^2$SCAN), global hybrid (B3LYP, PBE0) and range-separated hybrid ($ω$B97, $ω$B97X, $ω$B97X-D) functionals; analytical gradients and Hessians; geometry optimization, transition-state and reaction-path (IRC) searches, potential energy surface scans, harmonic frequencies and IR intensities, thermochemistry, counterpoise corrections, D3(BJ) dispersion, polarizable continuum solvation, density fitting (RI-J/RI-JK), linear-response TDDFT, and fractional-occupation smearing. The program has been verified against ORCA and PySCF on 50 molecules (30 for optimizations): the mean absolute deviations of the single-point energies do not exceed 7 $μ$Ha for HF, MP2, and the LDA, GGA, and global hybrid functionals except PBE and PBE0, whose systematic shifts of several tens of $μ$Ha are traced mainly to the value of $μ$ in the PBE exchange; those of the optimized interatomic distances and harmonic frequencies do not exceed 1.2$\\times$10$^{-4}$ Å and 1.2 cm$^{-1}$. Corrections made since the first public version (0.82), mainly affecting vibrational frequencies, are documented with their effect on the verification results. Unlike large multi-language packages, StudDFT is a monolithic Fortran code with OpenMP parallelization, which simplifies its use in courses. Binaries for Windows and Linux, the documentation, and all test inputs and outputs are freely available.",
+      "url": "https://arxiv.org/abs/2610.37483",
+      "pdf": "https://arxiv.org/pdf/2610.37483v1"
+    },
+    {
+      "id": "2610.37486",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-10-27",
+      "title_en": "Sufficiency Theorem and Closed-Form Posterior for a Windowed Change Point Detection Task",
+      "title_zh": "变化检测：只看最近窗口就够",
+      "one_liner": "证明在限时变化检测任务中，后验概率只依赖最近窗口内的点击，丢弃旧证据反而最优。",
+      "why": "它用数学证明了一个反直觉的日常策略：在截止时间压力下，忘记旧信息可能是明智的。能联系到考试、游戏等需要快速反应的情境。",
+      "sections": {
+        "background": "变化点检测是大脑和机器都要做的事：环境统计特性突然改变时，要尽快发现。但旧证据该保留多久一直不清楚。",
+        "method": "作者研究一个任务：点击按泊松过程随机到来，其速率在某未知时刻改变，智能体必须在固定时间窗内报告变化。他们用概率论推导后验概率的表达式。",
+        "finding": "证明窗口充分性定理：变化的后验概率只取决于最近窗口内的点击，与变化时刻的先验无关。对指数先验还给出闭式解。这意味着丢弃过期证据可以是最优策略。",
+        "impact": "为理解大脑为何“健忘”提供理论依据，也可能改进需要快速反应的工程检测系统。"
+      },
+      "analogy": "就像玩打地鼠，你只盯最近几秒冒头的洞，而不是回忆十分钟前的地鼠，因为规则可能已经变了。",
+      "terms": [
+        {
+          "t": "泊松过程",
+          "d": "事件随机独立发生的统计模型。"
+        },
+        {
+          "t": "后验概率",
+          "d": "看到新证据后对事件发生可能性的更新。"
+        },
+        {
+          "t": "窗口充分性",
+          "d": "最近窗口内信息足以做出最优判断。"
+        }
+      ],
+      "tags": [
+        "神经科学",
+        "概率统计",
+        "决策"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Payton Hanks",
+        "Rishidev Chaudhuri",
+        "Timothy D. Hanks"
+      ],
+      "abstract": "To function effectively in a changing world, agents must detect changes and act on them in a timely fashion. We study this in the context of a change point detection task in which clicks arrive from a Poisson process whose rate changes at an unknown time. An agent must declare the change within a detection window of fixed width or the trial ends in a miss. Here we prove a window sufficiency theorem, which states that the posterior probability of a change depends only on the clicks within the most recent window, regardless of the prior on the change time. This result follows from combining survival conditioning, which rules out change times whose windows have already expired, with cancellations driven by independent increments of a known baseline process. Window sufficiency generalizes to an unknown post-change process, as long as the baseline process is known. For an exponential prior on the change time, we further derive the posterior in closed form as a function of the elapsed times since each click in the most recent window, the known rates, and the window width. These results suggest that discarding old evidence can be optimal rather than a limitation when decisions face a deadline.",
+      "url": "https://arxiv.org/abs/2610.37486",
+      "pdf": "https://arxiv.org/pdf/2610.37486v1"
+    },
+    {
+      "id": "2610.37530",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-10-27",
+      "title_en": "Back-End-Of-Line Integration of 2-Terminal Ferroelectric Hafnia Synaptic Weights on Commercial CMOS Process",
+      "title_zh": "在商用芯片后道集成铁电突触权重",
+      "one_liner": "首次在商用180纳米CMOS芯片的后道工序中集成两端铁电突触器件，编程电压低于1.8伏，循环波动小于3%。",
+      "why": "这篇论文把新型存储材料直接做在现成芯片的金属层里，为神经形态计算提供了一条低成本路径。高中生可以了解芯片制造的后道工序，以及材料如何影响器件性能。",
+      "sections": {
+        "background": "神经形态计算需要能在芯片上存储权重并模拟突触的器件。铁电材料有非易失性和可调电导，但通常需要高温工艺，与标准CMOS后道工序不兼容。如何在商用芯片上直接集成这类器件一直是个挑战。",
+        "method": "研究者在商用180纳米CMOS晶圆的后道工序中，构建了TiN/WOx/[HfO2-ZrO2]/Mo的叠层结构，形成两端铁电突触器件。他们对比了450°C和500°C退火条件，并用硬件感知的神经网络仿真评估训练性能。",
+        "finding": "450°C退火的器件编程电压低于1.8伏，循环间波动小于3%；500°C退火的器件权重更新更渐进，但底层NMOS晶体管在完整集成后仍能工作。仿真显示了热预算与训练性能之间的权衡。",
+        "impact": "这为在现有商用芯片上增加神经形态功能提供了可行方案，可能降低专用AI硬件的制造成本，并推动存内计算的发展。"
+      },
+      "analogy": "就像在已经盖好的房子后面加建一个小仓库，不用拆掉整栋房子。后道集成就是在芯片的“布线层”里加建存储单元，不影响底层电路。",
+      "terms": [
+        {
+          "t": "后道工序",
+          "d": "芯片制造中形成金属互连线的阶段，在晶体管之后。"
+        },
+        {
+          "t": "铁电材料",
+          "d": "能在外电场下改变极化方向并保持的材料，可做非易失存储。"
+        },
+        {
+          "t": "突触权重",
+          "d": "神经网络中连接强度，决定信号传递的强弱。"
+        }
+      ],
+      "tags": [
+        "芯片",
+        "新材料",
+        "神经形态计算"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Alexander Flasby",
+        "Anwesha Panda",
+        "Nathan Savoia",
+        "Laura Bégon-Lours"
+      ],
+      "abstract": "Functionalising the back-end-of-line (BEOL) of CMOS with emerging materials is a key route to neural network accelerators and neuromorphic systems. In this work, we demonstrate for the first time the integration of 2-terminal ferroelectric synaptic weights in the BEOL of as-delivered commercial 180 nm CMOS dies. A novel material stack is proposed, in which a WOx/[HfO2-ZrO2] bilayer is sandwiched between TiN and Mo electrodes. For devices annealed at 450 °C, programming below 1.8 V is achieved with a cycle-to-cycle variation below 3 %. Synaptic weights annealed at 500 °C exhibit more gradual weight updates, while the tested underlying NMOS transistors remain functional after the complete integration process. The trade-off between thermal budget and on-device training performance is illustrated using hardware-aware neural network simulations.",
+      "url": "https://arxiv.org/abs/2610.37530",
+      "pdf": "https://arxiv.org/pdf/2610.37530v1"
+    },
+    {
+      "id": "2610.37532",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.LO",
+      "published": "2026-10-27",
+      "title_en": "Relative distality and incidence bounds in positive characteristic",
+      "title_zh": "正特征域上的关联界",
+      "one_liner": "用模型论中的“相对 distality”证明有限域等域上点-线关联数有统一幂节省界 |P|^(8/9)|L|^(5/9)。",
+      "why": "点-线关联是组合几何的明星问题，Szemerédi–Trotter 定理在实数域很有名。这篇把它推进到有限域，结论是一个干净的不等式，读者能看懂“点多了线就少交点”的直觉。",
+      "sections": {
+        "background": "平面上 n 个点和 m 条线最多有多少个“点在线上”的关联？实数域有经典答案，但换到有限域，直线会“绕回来”，老方法失效。Bays 和 Martin 曾对某些关系得到幂节省，但常数可能依赖域，能否统一一直未知。",
+        "method": "作者引入模型论概念“相对于一个可定义集的 distality”，先证明代数闭值域理论相对于剩余域是 distal 的，再套用 Chernikov–Peterzil–Starchenko 的定理，把模型论性质翻译成组合计数不等式。",
+        "finding": "得到统一幂节省：存在只依赖维度和关系复杂度、不依赖域 F 的 ε>0，使 |E(A,B)| ≤ O(|A|^(1-ε)|B|^((1-ε)/d)+|A|+|B|)。对点-线关联给出显式界 O(|P|^(8/9)|L|^(5/9)+|P|+|L|)，适用于 F_q(t)、F_q((t)) 等域。",
+        "impact": "把模型论工具和组合几何连起来，说明幂节省可以做到与域无关。这可能推动有限域组合几何的更多统一结果，也为模型论方法打开应用面。"
+      },
+      "analogy": "像统计城市里路口和道路的相遇次数：不管城市怎么变形，只要道路不“扎堆”，相遇总数就被一个统一公式压住。",
+      "terms": [
+        {
+          "t": "关联数",
+          "d": "点落在直线上的配对数量。"
+        },
+        {
+          "t": "幂节省",
+          "d": "比平凡上界少一个幂次因子的改进。"
+        },
+        {
+          "t": "distality",
+          "d": "模型论中刻画“可定义集不纠缠”的性质。"
+        }
+      ],
+      "tags": [
+        "组合几何",
+        "模型论",
+        "有限域"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Mira Tartarotti"
+      ],
+      "abstract": "We prove Szemerédi-Trotter-type incidence bounds for algebraic relations in any field $F$ admitting a valuation with finite residue field. This includes $\\mathbb F_q(t)$, $\\mathbb F_q((t))$, and all finitely generated extensions of finite fields. Bays and Martin show that any algebraic $K_{d,s}$-free relation $E\\subseteq F^k\\times F^\\ell$ admits a power-saving in the classical Zarankiewicz bound of Kővári, Sós, and Turán. Answering a question of the authors, we show that this power-saving is uniform in $F$: There is some $ε>0$ depending only on $d$ and the complexity of $E$ (and not on $F$) such that for $A\\subseteq F^k$ and $B\\subseteq F^\\ell$, the number of edges $|E(A,B)|$ is at most $O(|A|^{1-ε}|B|^{1-\\frac{1-ε}{d}}+|A|+|B|)$. For the case where $A$ is a set of points and $B$ is a set of lines in $F^2$ and $E$ is the incidence relation, we prove the explicit bound $O(|P|^{\\frac{8}{9}}|L|^{\\frac{5}{9}}+|P|+|L|)$. As the central ingredient of the proof, we introduce the model-theoretic notion of distality relative to a definable set. We begin developing this notion and prove that the theory of algebraically closed valued fields is distal relative to the residue field. An application of a result of Chernikov, Peterzil, and Starchenko, based on work of Chernikov, Galvin, and Starchenko, yields our incidence bounds.",
+      "url": "https://arxiv.org/abs/2610.37532",
+      "pdf": "https://arxiv.org/pdf/2610.37532v1"
+    },
+    {
+      "id": "2610.37539",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-10-27",
+      "title_en": "The packing and covering number of trees are local",
+      "title_zh": "树的打包数与覆盖数是局部的",
+      "one_liner": "证明局部有限树上 r-覆盖数和 r-打包数在“边缘拓扑”下连续，统一解释了多类随机树的收敛现象。",
+      "why": "打包和覆盖是“用最少的点盖住所有点”和“选最散的点”这对日常问题。结论说大树的这两个量只由边缘的局部结构决定，直觉清楚，还能连到随机树模型。",
+      "sections": {
+        "background": "在图上，r-打包数是彼此距离至少 r 的最大点集大小，r-覆盖数是能覆盖所有点的最小点集大小。对随机生长的大树，人们早就观察到这些量会收敛到常数，但过去只能对每种树模型分别算，缺少统一解释。",
+        "method": "作者在局部有限树上定义“边缘拓扑”，刻画树在远处边缘处的局部形状，并构造一个标准的、最小的 r-网。再利用 Meir 和 Moon 给出的覆盖数与打包数之间的关系，证明这两个量随树的变化连续。",
+        "finding": "证明了 r-覆盖数和 r-打包数在边缘拓扑下连续。由此一次性回收了均匀二叉树、平面树、Polya 树、随机递归树等的已知收敛结果，并新覆盖 Bienaymé 树、m-叉搜索树、完全图最小生成树、优先连接树等模型，还给出极限常数的直观解释和显式计算路径。",
+        "impact": "把许多零散的随机树收敛结果纳入一个统一框架，说明极限只取决于边缘局部结构。对研究随机树、网络生长模型的人，这可能成为通用工具。"
+      },
+      "analogy": "像看一棵不断长大的树：想知道要多少路灯才能照亮所有枝杈，不必看整棵树，只需看树梢边缘怎么分叉，答案就定了。",
+      "terms": [
+        {
+          "t": "r-打包数",
+          "d": "彼此距离至少 r 的最大点集大小。"
+        },
+        {
+          "t": "r-覆盖数",
+          "d": "能覆盖所有点的最小点集大小。"
+        },
+        {
+          "t": "边缘拓扑",
+          "d": "描述树在远处边缘局部形状的收敛方式。"
+        }
+      ],
+      "tags": [
+        "组合",
+        "随机树",
+        "概率"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Caelan Atamanchuk",
+        "Simon Briend",
+        "Serte Donderwinkel",
+        "Elaine Herrera"
+      ],
+      "abstract": "For a graph, its $r$-packing number is the size of the largest $r$-separated set and its $r$-covering number is the size of the smallest $r$-net. We show that the $r$-covering number and $r$-packing number are continuous in the fringe topology on locally finite trees. This recovers convergence results by Meir and Moon for e.g. uniform binary trees, uniform plane trees, uniform Polyá trees and random recursive trees, and proves new results for many other tree models, such as size-conditioned Bienaymé trees, simply generated trees, $m$-ary search trees, the minimum spanning tree of the complete graph and preferential attachment trees. Moreover, our formulation provides an intuitive interpretation of the limiting constant, that also provides an easy route for explicit computations in the case of size-conditioned Bienaymé trees. Our method relies on the definition of a canonical minimum $r$-net, and a relation between covering numbers and packing numbers due to Meir and Moon.",
+      "url": "https://arxiv.org/abs/2610.37539",
+      "pdf": "https://arxiv.org/pdf/2610.37539v1"
+    },
+    {
+      "id": "2610.37578",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-10-27",
+      "title_en": "A cubic chromatic bound for capped graphs",
+      "title_zh": "带帽图的染色数上界",
+      "one_liner": "证明了一类特殊有序图（带帽图）的染色数不超过 min{3^(ω-1), 18ω³}，解决了 Davies 等人的猜想。",
+      "why": "染色问题是课本里“给地图上色”的进阶版，结论形式干净，还带着指数和多项式两种上界。读者能亲手验证小例子，体会“猜想—证明”的数学节奏。",
+      "sections": {
+        "background": "图染色问的是：最少用几种颜色，能让相邻顶点颜色不同？一般图很难，数学家就转向特殊结构。带帽图是一类有序图，满足一条传递性规则：若 a<b<c<d 且 ac、bd 是边，则 ad 也必须是边。此前 Davies 等人猜想这类图的染色数能被团数 ω 控制，但没证出来。",
+        "method": "作者从带帽图的结构性质入手，利用这条“若 ac、bd 则 ad”的规则限制边的分布，再结合贪心染色和团数的组合估计，分别导出指数型上界 3^(ω-1) 和多项式型上界 18ω³，取两者较小值。",
+        "finding": "证明了每个非空带帽图都满足 χ(G) ≤ min{3^(ω(G)-1), 18ω(G)³}。也就是说，当团数 ω 较小时指数界更紧，ω 较大时多项式界更紧，两条界共同覆盖所有情况，从而完整解决了该猜想。",
+        "impact": "这是组合数学中“结构假设换来控制”的典型胜利，说明额外规则能把一般图染色的困难大幅削弱。方法可能被推广到其他有序图类，也为相关猜想提供了模板。"
+      },
+      "analogy": "就像给一栋楼安排房间：普通情况下很难说最少几间够用；但如果规定“同层相邻的人不能同房”，房间需求就能被楼层人数直接框住。",
+      "terms": [
+        {
+          "t": "染色数 χ",
+          "d": "给顶点上色、相邻不同所需的最少颜色数。"
+        },
+        {
+          "t": "团数 ω",
+          "d": "图中两两相邻的最大顶点集合的大小。"
+        },
+        {
+          "t": "带帽图",
+          "d": "满足特定传递性规则的有序图。"
+        }
+      ],
+      "tags": [
+        "图论",
+        "染色",
+        "组合"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Hongyang Wang"
+      ],
+      "abstract": "An ordered graph is capped if, for any four vertices $a<b<c<d$, the edges $ac$ and $bd$ imply the edge $ad$. We prove that every nonempty capped graph $G$ satisfies $χ(G)\\leq\\min\\{3^{ω(G)-1},18ω(G)^3\\}$, where $χ(G)$ and $ω(G)$ are its chromatic number and clique number. This proves a conjecture of Davies, Krawczyk, McCarty and Walczak.",
+      "url": "https://arxiv.org/abs/2610.37578",
+      "pdf": "https://arxiv.org/pdf/2610.37578v1"
+    },
+    {
+      "id": "2610.37597",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-10-27",
+      "title_en": "The Acridine Polymorph Landscape: Characterization and Selective Control by Additives",
+      "title_zh": "吖啶晶体多晶型与添加剂控制",
+      "one_liner": "他们搞清了吖啶分子能形成七种不同晶体结构，并发现添加剂能选择性地让某一种结构优先长出来。",
+      "why": "同一种分子能长出不同晶体，就像同一种积木能搭出不同形状，这直接影响药物和材料的性质。这篇论文把吖啶的七种晶体结构都找了出来，还解释了添加剂怎么“挑”出想要的那一种。适合对晶体和材料感兴趣的同学。",
+      "sections": {
+        "background": "分子晶体常有多晶型现象，即同一种分子排列成不同结构，性质可能差很多。但预测和选择性控制多晶型很难，因为不同结构之间的能量差很小，实验和理论都容易出错。",
+        "method": "作者用熔融结晶实验发现了以前未知的吖啶第八种晶型，用拓扑晶体结构预测找全了七种已知无溶剂晶型。他们还结合机器学习原子间势和自由能计算，分析各晶型的稳定性，并测试添加剂对晶型选择的影响。",
+        "finding": "吖啶的自由能面很平缓，不同晶型能量接近。实验观察到的添加剂诱导晶型偏好，和混合晶体中取代缺陷的能量以及添加剂与吖啶晶体结构的拓扑相似性相关。这给出了结构、稳定性和添加剂控制之间的完整图景。",
+        "impact": "这有助于理解怎么通过添加剂定向得到想要的晶体，对药物研发和材料制备有潜在价值。也展示了计算和实验结合怎么解决多晶型难题。"
+      },
+      "analogy": "就像一堆同样的乐高积木能搭出房子、车和桥，能量差不多。添加剂就像一张图纸，告诉积木优先搭成哪种形状。",
+      "terms": [
+        {
+          "t": "多晶型",
+          "d": "同一种分子以不同方式排列成多种晶体结构。"
+        },
+        {
+          "t": "自由能",
+          "d": "决定一个过程能否自发进行的能量，越低越稳定。"
+        },
+        {
+          "t": "拓扑相似性",
+          "d": "只看原子连接方式是否相似，不管具体距离。"
+        }
+      ],
+      "tags": [
+        "晶体",
+        "多晶型",
+        "添加剂"
+      ],
+      "difficulty": 2,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Adam Lahouari",
+        "Hengyu Zhou",
+        "Nikolaos Galanakis",
+        "Michael Kilgour",
+        "Daisuke Kuroshima",
+        "Jihye Han",
+        "Bart Kahr",
+        "Mark E. Tuckerman",
+        "Alexander G. Shtukenberg",
+        "Jutta Rogal"
+      ],
+      "abstract": "Polymorphism in molecular crystals presents a major challenge for controlling crystallization. Here, we combine experiment and theory to characterize the polymorph landscape of acridine and investigate its selective control by additives. Melt crystallization experiments resolve the previously unknown structure of form VIII, while topological crystal structure prediction recovers all seven known unsolvated polymorphs with determined crystal structures. Combining a fine-tuned machine-learned interatomic potential with anharmonic free energy calculations reproduces the experimentally observed stability relationships and reveals a shallow free energy landscape. Finally, experimentally observed additive-induced polymorph preferences correlate with mixed-crystal substitutional defect energies and topological similarities between additive and acridine crystal structures. Together, these results provide a comprehensive picture of acridine polymorphism, linking crystal structure, thermodynamic stability, and additive-controlled crystallization.",
+      "url": "https://arxiv.org/abs/2610.37597",
+      "pdf": "https://arxiv.org/pdf/2610.37597v1"
+    },
+    {
+      "id": "2610.37638",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · gr-qc",
+      "published": "2026-10-27",
+      "title_en": "Weighing dark matter particles with gravitational waves",
+      "title_zh": "用引力波给暗物质粒子称重",
+      "one_liner": "模拟表明，LISA 引力波天文台观测到的极端质量比双星，可以测出超轻暗物质粒子的质量，精度约一个数量级。",
+      "why": "暗物质是什么，是每个对宇宙好奇的人都会问的问题。这篇论文给出了一个具体的、可检验的测量思路：不靠发光，而靠引力波。它把「引力波」「暗物质」这两个高中课本里出现过的词连在一起，适合作为了解现代天体物理的入口。",
+      "sections": {
+        "background": "暗物质占了宇宙物质的大部分，但我们只知道它有引力，不知道它由什么粒子组成。通常认为暗物质粒子之间几乎不碰撞，所以单靠引力效应没法测出单个粒子的质量，就像看一团雾，只能知道总重量，不知道每颗雾滴多大。",
+        "method": "作者考虑一种情形：一个超大质量黑洞周围聚集着极轻的暗物质，形成密度很高的「尖峰」。旁边有一颗恒星级小黑洞绕它转，会发出毫赫兹引力波，这正是 LISA 这类空间引力波天文台的目标。他们把暗物质的波动效应，包括吸积和动力学摩擦，写进引力波波形，再用模拟的 LISA 信号反推暗物质粒子质量。",
+        "finding": "对于质量约 10^5 倍太阳质量的超大黑洞，模拟显示可以把 10^-14 到 10^-11 电子伏特范围内的暗物质粒子质量测到一个数量级以内。这个质量范围极其轻，比电子还轻十几个数量级，属于「超轻暗物质」候选者。",
+        "impact": "这提供了一种全新的暗物质探测方式：用引力波而不是粒子探测器。如果 LISA 未来真的运行，可能第一次给暗物质粒子「称重」，也可能排除一批理论模型。"
+      },
+      "analogy": "就像听一口钟的回声判断钟里装的是什么。小黑洞绕大黑洞转时发出的引力波，会被周围的暗物质「搅动」，波形里留下痕迹，我们反推痕迹就能猜出暗物质粒子有多重。",
+      "terms": [
+        {
+          "t": "引力波",
+          "d": "时空的涟漪，加速的大质量天体发出的信号。"
+        },
+        {
+          "t": "极端质量比双星",
+          "d": "一个大黑洞配一个小黑洞，质量相差极大。"
+        },
+        {
+          "t": "LISA",
+          "d": "计划中的空间引力波天文台，探测毫赫兹频段。"
+        }
+      ],
+      "tags": [
+        "暗物质",
+        "引力波",
+        "天体物理"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": true,
+      "authors": [
+        "Rodrigo Vicente",
+        "Francisco Duque",
+        "Theophanes K. Karydas",
+        "Gianfranco Bertone"
+      ],
+      "abstract": "It is commonly assumed that the mass of dark matter particles cannot be determined from their gravitational effects when dark matter behaves as collisionless matter. Here we show that extreme-mass-ratio inspirals observable by millihertz gravitational-wave observatories such as the Laser Interferometer Space Antenna (LISA) could measure the mass of ultralight dark matter particles in sufficiently dense dark matter spikes. The separation of scales between the two black holes allows ultralight dark matter to form a collisionless density spike around the massive primary while retaining wave effects in its interaction with the stellar-mass companion. We incorporate wave-dependent accretion and dynamical friction into relativistic inspiral waveforms and jointly infer the dark matter particle mass, spike normalisation and binary parameters from simulated LISA signals. For massive black holes at the low-mass end of the LISA population ($M\\sim 10^5 M_\\odot$), our forecasts show that particle masses spanning $10^{-14}-10^{-11}\\,\\mathrm{eV}$ could be measured to within an order of magnitude.",
+      "url": "https://arxiv.org/abs/2610.37638",
+      "pdf": "https://arxiv.org/pdf/2610.37638v1"
+    },
+    {
+      "id": "2610.37660",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-10-27",
+      "title_en": "Optimal quantum discrimination at Liouvillian exceptional points",
+      "title_zh": "奇异点传感器到底能不能更快？",
+      "one_liner": "论文证明，在某些量子传感器中，「奇异点」不会从根本上加快弱信号的探测，但选对信号类型可以缩短达到目标精度所需的时间。",
+      "why": "「奇异点能放大信号」是近几年很热的说法，这篇论文冷静地给出了边界条件：哪些情况下有优势，哪些情况下没有。它教给高中生一件重要的事：科学结论往往是有条件的，而不是一句「更灵敏」就完事。",
+      "sections": {
+        "background": "有一类量子系统在所谓「奇异点」附近，对外界扰动的响应会异常放大，因此被寄望用来做超灵敏传感器。但「响应大」不等于「测得快、测得准」，因为噪声和衰减也会一起变化。这个区别此前没有被系统地说清楚。",
+        "method": "作者在有限维的 Lindblad 开放量子系统框架下，分析探测一个弱扰动所需的观测时间如何随扰动强度变化。他们还构造了一个光机械模型作为例子，比较奇异点方案和普通方案在同样衰减率下的表现。",
+        "finding": "论文发现，在具有唯一稳态和非零弛豫间隙的系统中，奇异点并不能改变观测时间随扰动强度变化的基本标度，也就是没有根本优势。但如果专门挑选能提高量子费舍尔信息率的扰动，奇异点方案确实能用更短时间达到同样的探测可靠性。",
+        "impact": "这给「奇异点传感器」的热潮划了一条理论底线，也为设计更快的光机械、超导量子比特或离子阱传感器提供了指导。"
+      },
+      "analogy": "就像用放大镜看东西：放大倍数高不代表看得快，因为视野更小、抖动更明显。奇异点放大了信号，但也放大了噪声，关键要看「信噪比」而不是「放大倍数」。",
+      "terms": [
+        {
+          "t": "奇异点",
+          "d": "系统某些参数下本征值和本征态同时合并的特殊点。"
+        },
+        {
+          "t": "量子费舍尔信息",
+          "d": "衡量一个量子态能多精确地反映某个参数的量。"
+        },
+        {
+          "t": "Lindblad 方程",
+          "d": "描述开放量子系统与环境相互作用的方程。"
+        }
+      ],
+      "tags": [
+        "量子传感",
+        "开放量子系统",
+        "精密测量"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Aritra Ghosh",
+        "M. Bhattacharya"
+      ],
+      "abstract": "Central to non-Hermitian sensing is the question of whether exceptional points (EPs) can make weak perturbations easier to detect. We show that despite enhanced spectral response, in finite-dimensional Lindblad systems with a unique stationary state and a nonzero relaxation gap, EPs offer no fundamental advantage in how the observation time required for reliable detection of a weak perturbation scales with the perturbation strength. We nevertheless demonstrate that by selectively choosing perturbations that enhance the quantum Fisher information rate, EPs can shorten the observation time needed to reach a predefined detection accuracy relative to a comparable non-EP reference at the same decay rate. As an illustration, we show using an optomechanical model at an EP that we can detect a weak force through the cavity output at the same reliability in less time than a non-EP reference. Our results establish fundamental limits on perturbation detection at EPs and can guide the design of faster non-Hermitian sensors based on optomechanical resonators, superconducting qubits, and trapped ions.",
+      "url": "https://arxiv.org/abs/2610.37660",
+      "pdf": "https://arxiv.org/pdf/2610.37660v1"
+    },
+    {
+      "id": "2610.37664",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · astro-ph.CO",
+      "published": "2026-10-27",
+      "title_en": "Improving cosmological distance measurements at high redshift using Lyman-Alpha forest BAO reconstruction",
+      "title_zh": "用莱曼α森林重建宇宙标尺",
+      "one_liner": "作者把星系巡天里常用的「重建」技术搬到莱曼α森林上，把宇宙膨胀距离的测量误差降低了约 15% 到 25%。",
+      "why": "这是关于「宇宙膨胀有多快」的测量方法改进，直接关系到暗能量的本质。它展示了一个很朴素的科研思路：不造新仪器，而是用更好的数据处理方法，把已有数据的价值榨出来。适合对宇宙学和数据分析感兴趣的同学。",
+      "sections": {
+        "background": "宇宙膨胀的历史可以通过「重子声学振荡」来测量，也就是早期宇宙留下的一个特征尺度，像一把标准尺子。在星系巡天里，科学家已经会用「重建」技术把被引力弄模糊的尺子刻度修清楚；但在更遥远的莱曼α森林数据上，这一步一直没做。",
+        "method": "作者把星系巡天中成熟的 Zel'dovich 重建方法推广到莱曼α森林，并在 AbacusSummit 宇宙学模拟生成的模拟数据上检验。他们还用「控制变量」技巧压低统计噪声，并测试了接近真实 DESI 巡天的观测掩模会带来什么影响。",
+        "finding": "在理想模拟中，重建把径向的声学振荡模糊尺度减半，把径向和横向距离参数的误差分别降低约 25% 和 15%，还把非线性导致的偏移从 +0.3% 压到 +0.10±0.07%。",
+        "impact": "如果这套方法用到真实 DESI 数据上，可能让高红移处的宇宙膨胀测量更准，帮助判断暗能量是不是随时间变化。"
+      },
+      "analogy": "就像拍一张远处路标的照片，本来被热空气晃得模糊。重建不是换相机，而是用已知的物理规律把模糊「反推」回去，让路标重新变清晰。",
+      "terms": [
+        {
+          "t": "莱曼α森林",
+          "d": "遥远类星体光谱中被氢气吸收出的密集暗线。"
+        },
+        {
+          "t": "重子声学振荡",
+          "d": "早期宇宙声波留下的特征尺度，可当标准尺。"
+        },
+        {
+          "t": "红移",
+          "d": "光被宇宙膨胀拉长波长的程度，用来表示距离。"
+        }
+      ],
+      "tags": [
+        "宇宙学",
+        "暗能量",
+        "数据分析"
+      ],
+      "difficulty": 3,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Boryana Hadzhiyska",
+        "Roger de Belsunce"
+      ],
+      "abstract": "The Dark Energy Spectroscopic Instrument (DESI) measures baryon acoustic oscillations (BAO) in the Lyman-$α$ (Lyman-alpha) forest and provides a robust probe of the expansion history in the matter-dominated era. Yet, non-linear structure formation broadens and shifts the BAO peak. To undo these effects, we extend standard Zel'dovich reconstruction, routinely applied to galaxy surveys, to the Lyman-alpha forest. We validate our methodology on large-volume idealized Lyman-alpha forest mocks painted on top of the \\textsc{AbacusSummit} $N$-body simulations, using linear control variates to suppress sample variance and thereby reduce the error bars by a factor of up to $\\approx \\sqrt{50}$. In fully sampled periodic boxes, reconstruction halves the radial BAO damping scale and reduces the uncertainties on the radial ($\\apar$) and transverse ($\\aperp$) scaling parameters by $\\approx25\\%$ and $\\approx15\\%$, respectively. It also reduces the non-linear shift from $Δ\\apar=+0.3\\%$ to $+0.10\\pm0.07\\%$, while $\\aperp$ remains unbiased. To make this approach readily applicable to observational data, we demonstrate the impact of a survey mask with a DESI-like density of $50\\,\\mathrm{deg}^{-2}$. For this mask, we compare two approaches to estimate the displacement field: either directly from the Lyman-alpha forest or using an external tracer with a number density of $\\bar n \\simeq 10^{-3}\\,h^3\\mathrm{Mpc}^{-3}$, such as Lyman-break galaxies and Lyman-$α$ emitters---both key targets for DESI-II. Both approaches give comparable gains and reduce the uncertainties on $\\apar$ and $\\aperp$ by $\\approx 27\\%$ and $\\approx 10\\%$, respectively, with mild improvements for futuristic high-density surveys with $160\\,\\mathrm{deg}^{-2}$. Correspondingly, the figure of merit improves by factors of $1.66$ for fully sampled boxes, $1.65$ for a DESI-like, and $1.76$ for a high-density survey.",
+      "url": "https://arxiv.org/abs/2610.37664",
+      "pdf": "https://arxiv.org/pdf/2610.37664v1"
+    },
     {
       "id": "2610.31131",
       "field": "bio",

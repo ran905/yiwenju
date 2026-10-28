@@ -270,5 +270,232 @@
     "comment": "56 pages, 4 tables",
     "url": "https://arxiv.org/abs/2610.31631",
     "pdf": "https://arxiv.org/pdf/2610.31631v1"
+  },
+  "2610.37539": {
+    "id": "2610.37539",
+    "title": "The packing and covering number of trees are local",
+    "abstract": "For a graph, its $r$-packing number is the size of the largest $r$-separated set and its $r$-covering number is the size of the smallest $r$-net. We show that the $r$-covering number and $r$-packing number are continuous in the fringe topology on locally finite trees. This recovers convergence results by Meir and Moon for e.g. uniform binary trees, uniform plane trees, uniform Polyá trees and random recursive trees, and proves new results for many other tree models, such as size-conditioned Bienaymé trees, simply generated trees, $m$-ary search trees, the minimum spanning tree of the complete graph and preferential attachment trees. Moreover, our formulation provides an intuitive interpretation of the limiting constant, that also provides an easy route for explicit computations in the case of size-conditioned Bienaymé trees. Our method relies on the definition of a canonical minimum $r$-net, and a relation between covering numbers and packing numbers due to Meir and Moon.",
+    "authors": [
+      "Caelan Atamanchuk",
+      "Simon Briend",
+      "Serte Donderwinkel",
+      "Elaine Herrera"
+    ],
+    "published": "2026-10-27T16:54:55Z",
+    "primary": "math.CO",
+    "comment": "11 pages",
+    "url": "https://arxiv.org/abs/2610.37539",
+    "pdf": "https://arxiv.org/pdf/2610.37539v1"
+  },
+  "2610.37638": {
+    "id": "2610.37638",
+    "title": "Weighing dark matter particles with gravitational waves",
+    "abstract": "It is commonly assumed that the mass of dark matter particles cannot be determined from their gravitational effects when dark matter behaves as collisionless matter. Here we show that extreme-mass-ratio inspirals observable by millihertz gravitational-wave observatories such as the Laser Interferometer Space Antenna (LISA) could measure the mass of ultralight dark matter particles in sufficiently dense dark matter spikes. The separation of scales between the two black holes allows ultralight dark matter to form a collisionless density spike around the massive primary while retaining wave effects in its interaction with the stellar-mass companion. We incorporate wave-dependent accretion and dynamical friction into relativistic inspiral waveforms and jointly infer the dark matter particle mass, spike normalisation and binary parameters from simulated LISA signals. For massive black holes at the low-mass end of the LISA population ($M\\sim 10^5 M_\\odot$), our forecasts show that particle masses spanning $10^{-14}-10^{-11}\\,\\mathrm{eV}$ could be measured to within an order of magnitude.",
+    "authors": [
+      "Rodrigo Vicente",
+      "Francisco Duque",
+      "Theophanes K. Karydas",
+      "Gianfranco Bertone"
+    ],
+    "published": "2026-10-27T17:54:29Z",
+    "primary": "gr-qc",
+    "comment": "11 pages, 5 figures. Comments are welcomed",
+    "url": "https://arxiv.org/abs/2610.37638",
+    "pdf": "https://arxiv.org/pdf/2610.37638v1"
+  },
+  "2610.37532": {
+    "id": "2610.37532",
+    "title": "Relative distality and incidence bounds in positive characteristic",
+    "abstract": "We prove Szemerédi-Trotter-type incidence bounds for algebraic relations in any field $F$ admitting a valuation with finite residue field. This includes $\\mathbb F_q(t)$, $\\mathbb F_q((t))$, and all finitely generated extensions of finite fields. Bays and Martin show that any algebraic $K_{d,s}$-free relation $E\\subseteq F^k\\times F^\\ell$ admits a power-saving in the classical Zarankiewicz bound of Kővári, Sós, and Turán. Answering a question of the authors, we show that this power-saving is uniform in $F$: There is some $ε>0$ depending only on $d$ and the complexity of $E$ (and not on $F$) such that for $A\\subseteq F^k$ and $B\\subseteq F^\\ell$, the number of edges $|E(A,B)|$ is at most $O(|A|^{1-ε}|B|^{1-\\frac{1-ε}{d}}+|A|+|B|)$. For the case where $A$ is a set of points and $B$ is a set of lines in $F^2$ and $E$ is the incidence relation, we prove the explicit bound $O(|P|^{\\frac{8}{9}}|L|^{\\frac{5}{9}}+|P|+|L|)$. As the central ingredient of the proof, we introduce the model-theoretic notion of distality relative to a definable set. We begin developing this notion and prove that the theory of algebraically closed valued fields is distal relative to the residue field. An application of a result of Chernikov, Peterzil, and Starchenko, based on work of Chernikov, Galvin, and Starchenko, yields our incidence bounds.",
+    "authors": [
+      "Mira Tartarotti"
+    ],
+    "published": "2026-10-27T16:52:24Z",
+    "primary": "math.LO",
+    "comment": "30 pages",
+    "url": "https://arxiv.org/abs/2610.37532",
+    "pdf": "https://arxiv.org/pdf/2610.37532v1"
+  },
+  "2610.37664": {
+    "id": "2610.37664",
+    "title": "Improving cosmological distance measurements at high redshift using Lyman-Alpha forest BAO reconstruction",
+    "abstract": "The Dark Energy Spectroscopic Instrument (DESI) measures baryon acoustic oscillations (BAO) in the Lyman-$α$ (Lyman-alpha) forest and provides a robust probe of the expansion history in the matter-dominated era. Yet, non-linear structure formation broadens and shifts the BAO peak. To undo these effects, we extend standard Zel'dovich reconstruction, routinely applied to galaxy surveys, to the Lyman-alpha forest. We validate our methodology on large-volume idealized Lyman-alpha forest mocks painted on top of the \\textsc{AbacusSummit} $N$-body simulations, using linear control variates to suppress sample variance and thereby reduce the error bars by a factor of up to $\\approx \\sqrt{50}$. In fully sampled periodic boxes, reconstruction halves the radial BAO damping scale and reduces the uncertainties on the radial ($\\apar$) and transverse ($\\aperp$) scaling parameters by $\\approx25\\%$ and $\\approx15\\%$, respectively. It also reduces the non-linear shift from $Δ\\apar=+0.3\\%$ to $+0.10\\pm0.07\\%$, while $\\aperp$ remains unbiased. To make this approach readily applicable to observational data, we demonstrate the impact of a survey mask with a DESI-like density of $50\\,\\mathrm{deg}^{-2}$. For this mask, we compare two approaches to estimate the displacement field: either directly from the Lyman-alpha forest or using an external tracer with a number density of $\\bar n \\simeq 10^{-3}\\,h^3\\mathrm{Mpc}^{-3}$, such as Lyman-break galaxies and Lyman-$α$ emitters---both key targets for DESI-II. Both approaches give comparable gains and reduce the uncertainties on $\\apar$ and $\\aperp$ by $\\approx 27\\%$ and $\\approx 10\\%$, respectively, with mild improvements for futuristic high-density surveys with $160\\,\\mathrm{deg}^{-2}$. Correspondingly, the figure of merit improves by factors of $1.66$ for fully sampled boxes, $1.65$ for a DESI-like, and $1.76$ for a high-density survey.",
+    "authors": [
+      "Boryana Hadzhiyska",
+      "Roger de Belsunce"
+    ],
+    "published": "2026-10-27T17:59:31Z",
+    "primary": "astro-ph.CO",
+    "comment": "17 pages, 7 figures",
+    "url": "https://arxiv.org/abs/2610.37664",
+    "pdf": "https://arxiv.org/pdf/2610.37664v1"
+  },
+  "2610.37483": {
+    "id": "2610.37483",
+    "title": "StudDFT: A quantum chemistry program for educational and research purposes",
+    "abstract": "StudDFT is a quantum chemistry program for Hartree--Fock (HF), density functional theory (DFT), and second-order Møller--Plesset (MP2) calculations of small and medium-sized molecules. It is intended primarily for teaching and student research, but its accuracy suffices for routine research calculations. Version 1.30.2 implements the RHF/UHF, RKS/UKS, and RMP2/UMP2/PUMP2 schemes in Gaussian basis sets, including effective core potentials (ECP); LDA, GGA (BLYP, BP86, BPW91, PBE), meta-GGA (r$^2$SCAN), global hybrid (B3LYP, PBE0) and range-separated hybrid ($ω$B97, $ω$B97X, $ω$B97X-D) functionals; analytical gradients and Hessians; geometry optimization, transition-state and reaction-path (IRC) searches, potential energy surface scans, harmonic frequencies and IR intensities, thermochemistry, counterpoise corrections, D3(BJ) dispersion, polarizable continuum solvation, density fitting (RI-J/RI-JK), linear-response TDDFT, and fractional-occupation smearing. The program has been verified against ORCA and PySCF on 50 molecules (30 for optimizations): the mean absolute deviations of the single-point energies do not exceed 7 $μ$Ha for HF, MP2, and the LDA, GGA, and global hybrid functionals except PBE and PBE0, whose systematic shifts of several tens of $μ$Ha are traced mainly to the value of $μ$ in the PBE exchange; those of the optimized interatomic distances and harmonic frequencies do not exceed 1.2$\\times$10$^{-4}$ Å and 1.2 cm$^{-1}$. Corrections made since the first public version (0.82), mainly affecting vibrational frequencies, are documented with their effect on the verification results. Unlike large multi-language packages, StudDFT is a monolithic Fortran code with OpenMP parallelization, which simplifies its use in courses. Binaries for Windows and Linux, the documentation, and all test inputs and outputs are freely available.",
+    "authors": [
+      "Stanislav K. Ignatov"
+    ],
+    "published": "2026-10-27T16:10:21Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.37483",
+    "pdf": "https://arxiv.org/pdf/2610.37483v1"
+  },
+  "2610.37319": {
+    "id": "2610.37319",
+    "title": "AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents",
+    "abstract": "Analog device sizing must satisfy all specifications across process, voltage, and temperature (PVT) corners to ensure tape-out success, but simulating every candidate at all corners dominates the sizing time and slows design iteration. Conventional surrogate-based optimizers search the sizing space directly, while recent large language model (LLM) agents add circuit knowledge to designs but still delegate the sizes to global optimizers. Both learn the circuit response from repeated multi-corner SPICE simulations and optimize on top of it, which becomes expensive under a limited simulation budget. Providing an agent with reusable verified designs and sizing sub-blocks analytically could save most of this budget. We propose AnalogScout, a simulation-efficient PVT-aware sizing framework driven by an LLM agent. Combining elite-design reuse, analytic gm/Id local sizing and global refinement under full-corner verification, AnalogScout reduces power by 43.3% relative to the evolution strategy CMA-ES at an equal budget of 16k simulations on three SKY130 OTAs of increasing complexity, and reaches the final CMA-ES power after 7.0% of that budget. It also attains lower power than Bayesian optimization on all three OTAs and than two re-implemented LLM-driven flows on the two OTAs where they were tested.",
+    "authors": [
+      "Yichen Long",
+      "Keren Zhu"
+    ],
+    "published": "2026-10-27T14:33:02Z",
+    "primary": "cs.AR",
+    "comment": "5 pages, 5 figures, 1 table. Submitted to IEEE ISCAS 2027",
+    "url": "https://arxiv.org/abs/2610.37319",
+    "pdf": "https://arxiv.org/pdf/2610.37319v1"
+  },
+  "2610.37486": {
+    "id": "2610.37486",
+    "title": "Sufficiency Theorem and Closed-Form Posterior for a Windowed Change Point Detection Task",
+    "abstract": "To function effectively in a changing world, agents must detect changes and act on them in a timely fashion. We study this in the context of a change point detection task in which clicks arrive from a Poisson process whose rate changes at an unknown time. An agent must declare the change within a detection window of fixed width or the trial ends in a miss. Here we prove a window sufficiency theorem, which states that the posterior probability of a change depends only on the clicks within the most recent window, regardless of the prior on the change time. This result follows from combining survival conditioning, which rules out change times whose windows have already expired, with cancellations driven by independent increments of a known baseline process. Window sufficiency generalizes to an unknown post-change process, as long as the baseline process is known. For an exponential prior on the change time, we further derive the posterior in closed form as a function of the elapsed times since each click in the most recent window, the known rates, and the window width. These results suggest that discarding old evidence can be optimal rather than a limitation when decisions face a deadline.",
+    "authors": [
+      "Payton Hanks",
+      "Rishidev Chaudhuri",
+      "Timothy D. Hanks"
+    ],
+    "published": "2026-10-27T16:13:54Z",
+    "primary": "q-bio.NC",
+    "comment": "12 pages, 3 figures",
+    "url": "https://arxiv.org/abs/2610.37486",
+    "pdf": "https://arxiv.org/pdf/2610.37486v1"
+  },
+  "2610.37152": {
+    "id": "2610.37152",
+    "title": "Cu intercalation and field-driven filament formation in vertically aligned MoS$_2$ memristors",
+    "abstract": "Vertically-aligned MoS$_2$ films paired with a Cu top electrode have been used as electrochemical metallization cell memristor devices. The memristive switching has been attributed to the formation of conductive filaments, yet their exact structure has remained elusive. Here we carry out a multi-scale computational study of Cu intercalation, clustering, and field-driven dynamics to eventually model the filament formation under operating conditions. We use density-functional theory results to fine-tune a machine learning force field, and the most important physical phenomena are further distilled into multi-particle kinetic Monte Carlo simulations. By exhaustive enumeration of Cu intercalated structures, we find the most stable structure at MoS$_2$Cu$_{0.11}$ composition, with Cu atoms forming a dice lattice between the MoS$_2$ layers. These structures are shown to exhibit metallic character and can thus form conductive filaments under memristor operation. The simulated switching speed and threshold voltage agree well with the available experimental data. Our results give fundamental insights on the device operation mechanism and guidelines for maximizing switching speed and endurance.",
+    "authors": [
+      "Touko Lehenkari",
+      "Hannu-Pekka Komsa"
+    ],
+    "published": "2026-10-27T12:51:02Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.37152",
+    "pdf": "https://arxiv.org/pdf/2610.37152v1"
+  },
+  "2610.37480": {
+    "id": "2610.37480",
+    "title": "Keeping Inference in the Radio: Design and Measurement of a Spiking Accelerator for mmWave ISAC Activity Recognition",
+    "abstract": "Integrated sensing and communication allows wireless networks to recognize human activity from the channel estimates that the receiver computes anyway. The inference, however, runs on the general-purpose processors of the base station, access point or handset, which are the first components a device switches off to save energy. Always-on sensing therefore requires a classifier that is small enough to remain powered while the rest of the system sleeps. We investigate whether Spiking Neural Networks (SNNs) can provide such a classifier. To this end, we generate SNN accelerators for micro-Doppler activity recognition on the public DISC dataset (IEEE 802.11ay at 60 GHz) with the open-source Spiker+ framework, and implement them together with a spike encoder on a ZCU208 RFSoC, so that the complete chain from micro-Doppler frame to activity label runs in programmable logic. A fully connected SNN with 132 neurons achieves 94.7 % accuracy (90.7 % macro-F1) on unseen subjects and performs an inference in 206 microseconds. Compared to conventional networks of the same topology on the same device, it requires an eighth of the logic and 3.4X less dynamic energy per decision than a network fed the same binary spikes, at comparable accuracy, and 7.6X less than a network fed the 16-bit spectrogram, at 1.2 points lower accuracy. Quantization-aware training reduces its weights to 3 bits within half a percentage point of the 6-bit network at the same encoder threshold",
+    "authors": [
+      "Anthony Sánchez",
+      "Rafael Ruiz",
+      "José A. Belloch",
+      "Jesús O. Lacruz",
+      "Joerg Widmer"
+    ],
+    "published": "2026-10-27T16:07:09Z",
+    "primary": "cs.NI",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.37480",
+    "pdf": "https://arxiv.org/pdf/2610.37480v1"
+  },
+  "2610.36541": {
+    "id": "2610.36541",
+    "title": "The geometry of cognition: from neural populations to neurotechnology",
+    "abstract": "Cognition is implemented by distributed neural populations whose collective activity evolves through structured, low-dimensional state spaces. In this review, we survey the analytical and conceptual tools used to study latent population dynamics in biological neural networks. We begin with single-unit coding, which remains essential for interpreting neuronal selectivity, and then review population-level approaches, including population vectors, cosine similarity, principal component analysis and its mnemonic variants, multivariable linear regression axes, demixed principal component analysis, and single-trial latent-variable models, and distinguish operationally defined population subspaces from neural manifolds with reproducible geometry or topology. We use these methods to discuss sensory coding, working memory, decision-making, temporal processing, and sensorimotor transformations. Two organizing principles are emphasized throughout. First, cognitive variables can be expressed in separable or near-orthogonal population dimensions, reducing interference between sensory, mnemonic, decision-related, and motor signals. Second, such geometric separation does not require anatomically or functionally discrete cell classes; separable population readouts can coexist with a continuum of mixed-selective single-neuron responses within a shared biological substrate. We then consider recurrent neural networks as testbeds for generating and evaluating mechanistic hypotheses about how circuits produce low-dimensional dynamics, and intracortical brain-computer interfaces as a translational domain in which population geometry becomes an operational control signal. Overall, this review argues that population dynamics now provide a common language for linking neurophysiology, computational modelling, and neurotechnology.",
+    "authors": [
+      "Lucas Bayones",
+      "Devika Narain",
+      "Roman Rossi-Pool"
+    ],
+    "published": "2026-10-27T02:54:14Z",
+    "primary": "q-bio.NC",
+    "comment": "Review article; 32 pages, 6 figures; submitted to Neuroscience & Biobehavioral Reviews",
+    "url": "https://arxiv.org/abs/2610.36541",
+    "pdf": "https://arxiv.org/pdf/2610.36541v1"
+  },
+  "2610.37660": {
+    "id": "2610.37660",
+    "title": "Optimal quantum discrimination at Liouvillian exceptional points",
+    "abstract": "Central to non-Hermitian sensing is the question of whether exceptional points (EPs) can make weak perturbations easier to detect. We show that despite enhanced spectral response, in finite-dimensional Lindblad systems with a unique stationary state and a nonzero relaxation gap, EPs offer no fundamental advantage in how the observation time required for reliable detection of a weak perturbation scales with the perturbation strength. We nevertheless demonstrate that by selectively choosing perturbations that enhance the quantum Fisher information rate, EPs can shorten the observation time needed to reach a predefined detection accuracy relative to a comparable non-EP reference at the same decay rate. As an illustration, we show using an optomechanical model at an EP that we can detect a weak force through the cavity output at the same reliability in less time than a non-EP reference. Our results establish fundamental limits on perturbation detection at EPs and can guide the design of faster non-Hermitian sensors based on optomechanical resonators, superconducting qubits, and trapped ions.",
+    "authors": [
+      "Aritra Ghosh",
+      "M. Bhattacharya"
+    ],
+    "published": "2026-10-27T17:59:06Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.37660",
+    "pdf": "https://arxiv.org/pdf/2610.37660v1"
+  },
+  "2610.37597": {
+    "id": "2610.37597",
+    "title": "The Acridine Polymorph Landscape: Characterization and Selective Control by Additives",
+    "abstract": "Polymorphism in molecular crystals presents a major challenge for controlling crystallization. Here, we combine experiment and theory to characterize the polymorph landscape of acridine and investigate its selective control by additives. Melt crystallization experiments resolve the previously unknown structure of form VIII, while topological crystal structure prediction recovers all seven known unsolvated polymorphs with determined crystal structures. Combining a fine-tuned machine-learned interatomic potential with anharmonic free energy calculations reproduces the experimentally observed stability relationships and reveals a shallow free energy landscape. Finally, experimentally observed additive-induced polymorph preferences correlate with mixed-crystal substitutional defect energies and topological similarities between additive and acridine crystal structures. Together, these results provide a comprehensive picture of acridine polymorphism, linking crystal structure, thermodynamic stability, and additive-controlled crystallization.",
+    "authors": [
+      "Adam Lahouari",
+      "Hengyu Zhou",
+      "Nikolaos Galanakis",
+      "Michael Kilgour",
+      "Daisuke Kuroshima",
+      "Jihye Han",
+      "Bart Kahr",
+      "Mark E. Tuckerman",
+      "Alexander G. Shtukenberg",
+      "Jutta Rogal"
+    ],
+    "published": "2026-10-27T17:31:07Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.37597",
+    "pdf": "https://arxiv.org/pdf/2610.37597v1"
+  },
+  "2610.37578": {
+    "id": "2610.37578",
+    "title": "A cubic chromatic bound for capped graphs",
+    "abstract": "An ordered graph is capped if, for any four vertices $a<b<c<d$, the edges $ac$ and $bd$ imply the edge $ad$. We prove that every nonempty capped graph $G$ satisfies $χ(G)\\leq\\min\\{3^{ω(G)-1},18ω(G)^3\\}$, where $χ(G)$ and $ω(G)$ are its chromatic number and clique number. This proves a conjecture of Davies, Krawczyk, McCarty and Walczak.",
+    "authors": [
+      "Hongyang Wang"
+    ],
+    "published": "2026-10-27T17:20:37Z",
+    "primary": "math.CO",
+    "comment": "10 pages",
+    "url": "https://arxiv.org/abs/2610.37578",
+    "pdf": "https://arxiv.org/pdf/2610.37578v1"
+  },
+  "2610.37530": {
+    "id": "2610.37530",
+    "title": "Back-End-Of-Line Integration of 2-Terminal Ferroelectric Hafnia Synaptic Weights on Commercial CMOS Process",
+    "abstract": "Functionalising the back-end-of-line (BEOL) of CMOS with emerging materials is a key route to neural network accelerators and neuromorphic systems. In this work, we demonstrate for the first time the integration of 2-terminal ferroelectric synaptic weights in the BEOL of as-delivered commercial 180 nm CMOS dies. A novel material stack is proposed, in which a WOx/[HfO2-ZrO2] bilayer is sandwiched between TiN and Mo electrodes. For devices annealed at 450 °C, programming below 1.8 V is achieved with a cycle-to-cycle variation below 3 %. Synaptic weights annealed at 500 °C exhibit more gradual weight updates, while the tested underlying NMOS transistors remain functional after the complete integration process. The trade-off between thermal budget and on-device training performance is illustrated using hardware-aware neural network simulations.",
+    "authors": [
+      "Alexander Flasby",
+      "Anwesha Panda",
+      "Nathan Savoia",
+      "Laura Bégon-Lours"
+    ],
+    "published": "2026-10-27T16:51:15Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "5 pages, 6 figures, submitted to ISCAS 2027, Special Session \"Hafnia Ferroelectrics: Co-Design from Materials to Energy-Efficient AI Circuits\"",
+    "url": "https://arxiv.org/abs/2610.37530",
+    "pdf": "https://arxiv.org/pdf/2610.37530v1"
+  },
+  "2610.37327": {
+    "id": "2610.37327",
+    "title": "Local learning is all you need: brain-aligned predictive coding networks",
+    "abstract": "Predictive Coding (PC) is an influential account of how brain representations emerge through hierarchical, local, self-supervised prediction-based learning, without requiring globally propagated error signals. Despite extensive evidence supporting PC, a striking paradox persists: computational models built on these biologically grounded principles have consistently failed to match state-of-the-art Deep Neural Networks in performance and brain-alignment. Here, we show that this paradox can be overcome. We introduce Predictive Brain Networks (PBNs), a hierarchical recurrent framework that implements local PC-based learning and achieves representational alignment with the human ventral visual stream matching or exceeding established vision models. Importantly, PBN top-down predictions encode unique, brain-aligned information not captured during bottom-up feature extraction, with this contribution increasing in locally trained variants. Further, PBNs substantially outperform existing PC-inspired networks on downstream classification tasks, reproduce key signatures of PC (with higher-level predictions shaping lower-level visual responses as observed in the primate cortex), and support uncertainty estimation. PBNs therefore close a longstanding gap in computational neuroscience by combining two properties that have been largely separated: the brain-inspired learning mechanisms of predictive coding and the representational power of modern deep networks. They provide a scalable framework for studying biologically grounded learning without sacrificing the capacity to produce rich neural representations.",
+    "authors": [
+      "Dirk Gütlin",
+      "Ryszard Auksztulewicz",
+      "Adrien Doerig"
+    ],
+    "published": "2026-10-27T14:36:52Z",
+    "primary": "q-bio.NC",
+    "comment": "29 pages, 5 main figures",
+    "url": "https://arxiv.org/abs/2610.37327",
+    "pdf": "https://arxiv.org/pdf/2610.37327v1"
   }
 }
