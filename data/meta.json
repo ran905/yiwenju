@@ -961,5 +961,254 @@
     "comment": "27 pages, 13 figures",
     "url": "https://arxiv.org/abs/2610.38807",
     "pdf": "https://arxiv.org/pdf/2610.38807v1"
+  },
+  "2610.40402": {
+    "id": "2610.40402",
+    "title": "Characterizing Reaction Types through Linear Free-Energy Relationships in Cavities",
+    "abstract": "Polaritonic chemistry holds the promise of controlling chemical reactivity through confined light-matter interactions, yet how reactions respond inside optical cavities remains debated. Here, we take a more zoomed-out view, inspired by electrostatic catalysis. We extend nonempirical linear free-energy relationships to cavity-modified reactions and show that their behavior falls into four distinct reaction types set by simple response-crossing rules. Reactions can follow conventional Bell-Evans-Polanyi (BEP) or counterintuitive Opposite-BEP behavior regardless of cavity tuning, or switch between the two as the cavity frequency is varied. We establish this picture analytically and demonstrate it in the Shin Metiu model and in four molecular reactions treated with ab initio electronic-structure methods. Even at this deliberately coarse-grained level, cavity-modified reactivity already shows qualitatively different and strongly counterintuitive behavior, including reactions that switch character with cavity frequency. Yet this complexity can still be reduced to a simple competition between permanent-dipole and polarizability responses. This reaction-type classification therefore provides a new route to organize and anticipate cavity-modified reactivity.",
+    "authors": [
+      "Jillian G. Hoffstadt",
+      "Davis M. Welakuh",
+      "Norah M. Hoffmann"
+    ],
+    "published": "2026-10-29T16:35:19Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40402",
+    "pdf": "https://arxiv.org/pdf/2610.40402v1"
+  },
+  "2610.40624": {
+    "id": "2610.40624",
+    "title": "Left-Handed Transmission Lines for the Dynamical Casimir Effect",
+    "abstract": "Left-handed (LH) superconducting transmission lines, built with series capacitors and shunt inductors instead of the series inductors and shunt capacitors of a conventional right-handed (RH) line, have a spectrum with a nonzero lower band edge and modes that become sparse at high frequencies. We study the dynamical Casimir effect in a LH line terminated by a flux-modulated SQUID and compare it with an RH line built from the same elements and with a long coplanar waveguide terminated by the same SQUID. We derive the quantum Hamiltonian and show that the coupling between two modes factorizes into their amplitudes at the SQUID. Together, the LH spectrum and the mode dependence of this coupling determine which modes are populated and how fast. With equal elements, the LH coupling grows with frequency and exceeds the RH one above a crossover pump frequency set by the cell inductance and capacitance, and only the LH line has resonances above the RH band edge. Pumping two modes at once lets a weakly coupled mode borrow coupling from a strongly coupled one, while crossings of resonance lines populate three or four modes without increasing the growth rate. Compared with the coplanar waveguide, the LH line has a similar coupling but keeps the created particles in the target mode, whereas the nearly equidistant waveguide spreads them over many pairs and needs more pump energy.",
+    "authors": [
+      "Valentin E. Salari",
+      "Fernando C. Lombardo",
+      "Paula I. Villar"
+    ],
+    "published": "2026-10-29T17:56:20Z",
+    "primary": "quant-ph",
+    "comment": "18 pages, 12 figures",
+    "url": "https://arxiv.org/abs/2610.40624",
+    "pdf": "https://arxiv.org/pdf/2610.40624v1"
+  },
+  "2610.40561": {
+    "id": "2610.40561",
+    "title": "Grow, Compress, and Perturb: A Hybrid Quantum-Classical Pathway to Scalable Quantum Chemistry on Quantum Computers",
+    "abstract": "While Variational Quantum Eigensolver (VQE) variants are among leading candidates for electronic structure calculations on quantum computers, gradient-based operator selection limits their scalability. To solve this, we introduce the Hamiltonian-gradient-free VULCAN (Variational Upbuilding, Layered Compression, Adaptive N-body perturbation) layered VQE framework. Our method dynamically generates ansatz operators using Variational Double Bracket Flow (VDBF) equations. Combined with a linearly scaling minimal complete pool, it creates a pool 4-12 times smaller than QEB (Qubit-Excitation-Based) pools. By appending entire layers simultaneously, Hamiltonian gradient measurements are completely eliminated. Circuit depth is managed via a grow-then-compress scheme using efficient state-overlap measurements, and qubit requirements are reduced by projecting the Hamiltonian onto a dominant-determinant subspace. Using high-performance emulation up to 32 logical qubits, we achieve chemical accuracy at just 5-20% of the measurement cost of batched ADAPT-VQE for hydrogen chains, BeH2 and H2O. For the 32-qubit C3H6, where batched ADAPT-VQE does not reach chemical accuracy, a single VULCAN layer combined with a GPU-accelerated stochastic Epstein-Nesbet (ENPT2) correction does. This stochastic ENPT2 post-processing step enables early termination at chemical accuracy.",
+    "authors": [
+      "Hugo D. Nogueira",
+      "Siwar Badreddine",
+      "Olivier Adjoua",
+      "Diata Traore",
+      "Guillaume Michel",
+      "Jean-Philip Piquemal"
+    ],
+    "published": "2026-10-29T17:41:19Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40561",
+    "pdf": "https://arxiv.org/pdf/2610.40561v1"
+  },
+  "2610.40445": {
+    "id": "2610.40445",
+    "title": "ML-COHP: predicting bond descriptors using latent space of a universal interatomic potentials",
+    "abstract": "The integrated crystal orbital Hamilton population (ICOHP) is the standard measure of bond strength in a DFT calculation, but every structure needs its own DFT single point and LOBSTER projection, which takes days for a cell of a hundred atoms, such as a grain boundary or a catalytic nanoparticle. We predict ICOHP from the frozen descriptors of a MACE foundation model. A symmetric pair head reads the scalar and bond-projected vector channels of the two atoms and corrects a pair baseline built from the element embeddings of the same model. We tested the model on the high-entropy diboride (Hf,Zr,Ti,Nb,Ta)B$_2$, Pt clusters on defective graphene and Pt/Pd nanoparticles with adsorbed O$_2$. The error on bonds stronger than 0.5 eV is 1.6-4.1%, about half that of the Gaussian-process model of Ferreira et al. trained on the same data. Trained only on high-temperature HEB$_2$ snapshots, the model reproduces the LOBSTER ICOHP of relaxed grain boundary cells to 0.06 eV in about a second, against 5-51 hours of LOBSTER. The vector channels halve the error compared to the scalar ones, and the baseline keeps the model usable with two training structures. With geometries from a fine-tuned MACE potential, the model gives the bonding of Pt/Pd particles over a continuous O$_2$ coverage, and DFT on these particles shows that O$_2$ costs a Pt-rich shell several times more metal--metal bonding than a Pd shell.",
+    "authors": [
+      "Daniil S. Alekseev",
+      "Ilya V. Chepkasov",
+      "Alexander G. Kvashnin"
+    ],
+    "published": "2026-10-29T16:58:12Z",
+    "primary": "physics.comp-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40445",
+    "pdf": "https://arxiv.org/pdf/2610.40445v1"
+  },
+  "2610.40469": {
+    "id": "2610.40469",
+    "title": "Chiral $p$-Wave Superconductivity Proximate to a Fractional Chern Insulator and a Topological Charge Density Wave in a Moiré Chern Band",
+    "abstract": "We study a spin-polarized moiré Chern band of twisted MoTe$_2$ with short-range repulsion, finding superconductivity proximate to a fractional Chern insulator at filling $ν=2/3$ and a topological charge density wave at $ν=3/4$. Exact diagonalization reveals pair binding over $0.7\\lesssimν\\lesssim0.77$, consistent with experiment, along with finite superfluid stiffness, chiral $p$-wave pairing correlations, and adiabatic connectivity to an attractive model. At weak repulsion, Kohn-Luttinger theory supports a Fermi-surface instability with the same pairing symmetry. The superconducting state has a Bogoliubov-de Gennes Chern number $C_{\\mathrm{BdG}}=-1$, opposite to the normal-state Chern number at $ν=1$. Our results reveal interplay among superconductivity, fractional topology, and charge order.",
+    "authors": [
+      "Yunze Ouyang",
+      "Fengcheng Wu"
+    ],
+    "published": "2026-10-29T17:07:07Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "6 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2610.40469",
+    "pdf": "https://arxiv.org/pdf/2610.40469v1"
+  },
+  "2610.40638": {
+    "id": "2610.40638",
+    "title": "Entanglement diagnostics of stochastic-resetting steady states: theory and measurement on superconducting qubits",
+    "abstract": "Stochastic resetting drives quantum systems into nonequilibrium stationary states unreachable under uninterrupted unitary evolution, and their entanglement depends on whether the reset history is resolved or averaged over. We study this interplay in the transverse-field Ising chain, deriving closed-form results for two qubits and evaluating chains of up to 12 qubits exactly. In the two-qubit system, these closed-form results show that phase matching between energy eigenstates produces resonances, and their visibility in the stationary state is determined by the symmetry of the reset state. Measurements on an IBM superconducting processor show the entropies evaluated before and after the reset average closely following noiseless predictions with no fitted parameter, while concurrence lies below prediction across most of the hardware measurements. The two diagnostics respond differently because they read different components of the same reconstructed state, and a depolarizing model captures the concurrence suppression with one fitted parameter. The difference between the two entropies, i. e., the Jensen gap of entanglement entropy, equals the Holevo information that a subsystem retains about the time since the last reset. With a Bell-state reset, this information grows with chain length across a half-chain cut over the sizes studied, without visible saturation at the smaller reset probabilities. Since reset times are sampled and recorded classically, the trajectory-averaged entropy, and with it the Jensen gap, is obtained without postselection, in contrast to monitored circuits, where trajectory-resolved entanglement requires sampling exponentially rare measurement records.",
+    "authors": [
+      "Jakob Murauer",
+      "Sabine Tornow",
+      "Manas Kulkarni",
+      "Eli Barkai",
+      "Satya N. Majumdar",
+      "Monalisa Singh Roy"
+    ],
+    "published": "2026-10-29T17:58:29Z",
+    "primary": "quant-ph",
+    "comment": "21 pages (including appendices), 7 figures",
+    "url": "https://arxiv.org/abs/2610.40638",
+    "pdf": "https://arxiv.org/pdf/2610.40638v1"
+  },
+  "2610.40436": {
+    "id": "2610.40436",
+    "title": "Yoga biomechanics through energy optimization: diverse kinematics and low-dimensional kinetics",
+    "abstract": "Yoga is widely practiced for improving physical and mental health, yet the biomechanical demands of individual yoga poses remain poorly characterized. Existing experimental studies typically examine only a small number of poses or muscles, limiting their ability to guide pose selection for rehabilitation or exercise prescription. Here we present a computational framework for predicting whole-body joint torques and contact forces from two-dimensional images of yoga poses. The framework combines manual pose digitization, a sagittal-plane MuJoCo human model, and constrained metabolic energy minimization subject to static equilibrium. We applied the framework to 55 sagittally symmetric yoga poses from Light on Yoga, generating a dataset of joint kinematics, contact locations, and predicted joint torques and contact forces. These poses collectively span nearly the full physiological range of motion of the major joints while exhibiting a wide range of predicted joint torques, with the greatest average demands on the lower extremities and lumbar region. Principal component analysis revealed a striking contrast between kinematics and kinetics: nearly all ten dimensions were required to represent the joint-angle data, whereas the first three principal components captured over 90% of the variance in joint torques. Thus, yoga poses exhibit substantial diversity in body configurations but comparatively low-dimensional patterns of predicted joint loading. Predicted joint torque rankings were also largely insensitive to uncertainty in the relative weighting of joint metabolic costs. This framework enables systematic biomechanical analysis of yoga poses and provides a foundation for quantitatively evaluating their mechanical demands and informing future rehabilitation strategies.",
+    "authors": [
+      "Sriram Sekaripuram Muralidhar",
+      "Manoj Srinivasan"
+    ],
+    "published": "2026-10-29T16:54:43Z",
+    "primary": "q-bio.QM",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40436",
+    "pdf": "https://arxiv.org/pdf/2610.40436v1"
+  },
+  "2610.40521": {
+    "id": "2610.40521",
+    "title": "Directed Cut-Query Complexity of Finding a King",
+    "abstract": "A king in a tournament is a vertex from which every other vertex is reachable by a directed path of length at most two. We study the deterministic query complexity of finding a king when a query specifies a set of vertices and returns the number of edges directed from that set to its complement. We prove that this complexity is $Θ(n)$ for $n$-vertex tournaments. To show this, we first show that every correct deterministic algorithm in this model must output a maximum-outdegree vertex, even though a king need not have maximum outdegree. We then give an adversary whose answers, after too few queries, remain consistent with a tournament in which the algorithm's output does not have maximum outdegree.",
+    "authors": [
+      "Ziad Ismaili Alaoui",
+      "Oded Lachish",
+      "Nikhil S. Mande"
+    ],
+    "published": "2026-10-29T17:29:59Z",
+    "primary": "cs.CC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40521",
+    "pdf": "https://arxiv.org/pdf/2610.40521v1"
+  },
+  "2610.40571": {
+    "id": "2610.40571",
+    "title": "On the Quantum Chromatic Gap II",
+    "abstract": "We confirm a conjecture of the first author [SODA'26] on a strong form of pseudo-telepathy for Khot's $d$-to-$1$ games: for every $d\\geq 4$, every $ε>0$, and every $k\\in\\mathbb N$, there is a $d$-to-$1$ label-cover game of classical value less than $ε$ that admits a perfect quantum strategy using finite-dimensional shared entanglement with measurement contexts of radius at least $k$. As a consequence, there exist graphs whose quantum chromatic number $χ_q$ is $3$ and whose classical chromatic number $χ$ is arbitrarily large. This is the first improvement on the quantum chromatic gap since the work of Brassard, Cleve, and Tapp [Phys. Rev. Lett.'99], which produced graphs for which $χ$ grows exponentially in $χ_q$. To prove the conjecture, we proceed as follows. We start with a ``stretched'' version of the Mermin--Peres magic square, obtained by spacing out its equations and linking them with additional long equation wires. This operation increases the radius of the initial measurement contexts of a perfect quantum strategy for the game, while preserving classical unsatisfiability. We then apply parallel repetition to make the classical value small, and we turn the system into a pseudo-telepathic multi-layered Kneser hypergraph via a PCP construction of Dinur, Guruswami, Khot, and Regev [STOC'03]. Finally, we feed the resulting hypergraph into the reduction of Fei, Minzer, and Wang from hypergraph colouring to $4$-to-$1$ games, we establish quantum completeness of this reduction, and we show that it preserves context radius.",
+    "authors": [
+      "Lorenzo Ciardo",
+      "Antoine Mottet"
+    ],
+    "published": "2026-10-29T17:44:20Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40571",
+    "pdf": "https://arxiv.org/pdf/2610.40571v1"
+  },
+  "2610.40379": {
+    "id": "2610.40379",
+    "title": "Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records",
+    "abstract": "Large language model (LLM) agents are proposed for clinical prediction but are untested in pediatrics, where cohorts are small and outcomes are uncommon. Using records from 2,489 youth with type 2 diabetes (T2D) and 4,018 with type 1 diabetes (T1D), spanning structured data, note-derived social determinants and, in T1D, continuous glucose monitoring data, we predicted seven T2D outcomes, four also in T1D, at 24 months from 18 months of follow-up. CEDAR (Clinical Evidence-Driven Agent for Risk-prediction), an evidence-citing, self-auditing LLM pipeline, outperformed trained machine learning in both cohorts (pooled area under the receiver operating characteristic curve 0.815 versus 0.656 to 0.700 in T2D and 0.756 versus 0.603 to 0.631 in T1D), most on the sparsely screened outcomes. Only 4 of 70,246 values it cited did not match the chart. Reading only the evidence and reasoning cited by CEDAR, two pediatric endocrinologists reached the same prediction as CEDAR in about nine of ten cases, agreeing with each other on 90.5%.",
+    "authors": [
+      "Daniel Palacios",
+      "Guantong Qi",
+      "Anna Kadi",
+      "Natali Borrego",
+      "Sukru Aras",
+      "Michael L. Ferm",
+      "Elizabeth Kubota-Mishra",
+      "Maria J. Redondo",
+      "Zhandong Liu",
+      "Mustafa Tosur",
+      "Hu Chen"
+    ],
+    "published": "2026-10-29T16:23:47Z",
+    "primary": "q-bio.QM",
+    "comment": "18 pages main text plus 40 pages Supplementary Information",
+    "url": "https://arxiv.org/abs/2610.40379",
+    "pdf": "https://arxiv.org/pdf/2610.40379v1"
+  },
+  "2610.40593": {
+    "id": "2610.40593",
+    "title": "Probing fluctuations in photon emission statistics of spin injected quantum dots with time dependent electronic excitation",
+    "abstract": "Electrically spin-injected ensembles of InGaAs/GaAs quantum dots emit circularly polarized single photons, with the emission helicity determined by the spin polarization of the injected electrons. A ferromagnetic CoFeB spin-injection layer with perpendicular magnetic anisotropy, combined with an MgO tunnel barrier, enables spin-polarized electron injection into the quantum-dot active region, resulting in circularly polarized photon emission at zero applied magnetic field. These devices realize direct spin-charge-photon conversion in an electrically driven, microelectronics-compatible quantum light source that operates without an external pump laser. Using an extended Hanbury Brown-Twiss interferometer with four detectors and time-tagged readout, we measure time-resolved photon-number statistics that resolve up to $|2\\rangle$ Fock states within a single excitation cycle. While single-photon ($n=|1\\rangle$) emission tracks the electrical excitation pulse as expected, the two-photon ($n=|2\\rangle$) statistics exhibit pronounced fluctuations at multiple temporal positions within the pulse. These fluctuations vanish upon demagnetization of the spin-injection layer, establishing a direct link between the multi-photon emission dynamics and the spin polarization of the injected carriers. The observations indicate that spin injection controls not only the helicity of the emitted photons but also higher-order temporal correlations of the emission. The behavior is phenomenologically captured by inserting both a variable excitation mechanism and a set of multi-emitter collapse operators within a stochastic wave function evolution. The platform thus opens a route to electrically driven, spin-controlled single and multi-photon Fock-state sources and provides a testbed for spin-conditioned multi-emitter dynamics in solid-state quantum light sources.",
+    "authors": [
+      "Chiran Wijesundara",
+      "Vincent Iglesias-Cardinale",
+      "Yuan Lu",
+      "Herbert Fotso",
+      "Bo Xu",
+      "Tim Thomay"
+    ],
+    "published": "2026-10-29T17:49:21Z",
+    "primary": "quant-ph",
+    "comment": "8 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2610.40593",
+    "pdf": "https://arxiv.org/pdf/2610.40593v1"
+  },
+  "2610.40511": {
+    "id": "2610.40511",
+    "title": "A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening",
+    "abstract": "Large language models (LLMs) are increasingly used as computational models of human language processing, yet it remains unclear which components of their representations drive alignment with neural activity. Here, we use ridge reduced-rank regression to identify the brain-predictive subspace of LLM representations: the representational directions that support linear prediction of neural responses. Across three naturalistic language-listening datasets spanning intracranial electrophysiology and fMRI, and six model conditions spanning autoregressive, bidirectional masked, and randomly initialized language models, we find that full linear encoding performance can be recovered using only 1-3% of the original embedding dimensionality. These low-dimensional subspaces generalize across held-out participants and, to a lesser extent, across datasets, suggesting that neural predictivity is concentrated in a compact and partially shared representational space. We next compare these brain-predictive directions with the principal axes of variation in the embeddings. Principal component analysis requires substantially more dimensions to recover neural prediction, demonstrating that the directions most useful for predicting neural activity are distinct from those capturing the most overall variance within LLM representations themselves. Finally, characterizing the learned subspaces allows us to surface interpretable features that are overrepresented in neural activity above and beyond the LLM representations. Together, these results show that LLM-brain alignment is supported by a small, structured subset of model representations and provides a framework for better understanding exactly why these representations align. Code can be found at: https://github.com/thefinnlab/low-rank-alignment",
+    "authors": [
+      "Zach Paris",
+      "Emily Finn"
+    ],
+    "published": "2026-10-29T17:23:44Z",
+    "primary": "cs.CL",
+    "comment": "23 pages, 12 figures. Code: https://github.com/thefinnlab/low-rank-alignment",
+    "url": "https://arxiv.org/abs/2610.40511",
+    "pdf": "https://arxiv.org/pdf/2610.40511v1"
+  },
+  "2610.40423": {
+    "id": "2610.40423",
+    "title": "Electric field control of anisotropic spin traffic between spin-filtering and magnon-scattering in a layered antiferromagnet",
+    "abstract": "Layered A-type antiferromagnetic (AFM) semiconductors offer a unique platform for spintronic devices by combining robust magnetism with gate-tunable semiconducting properties. We present a dual-gate field-effect transistor based on CrSBr, a layered A-type AFM with pronounced transport anisotropy and complex spin dynamics. Our device provides independent control over carrier density and displacement field. Systematic transport measurements reveal that the displacement field, rather than doping, predominantly governs the sign and magnitude of magnetoresistance ratio (MRR). We identify the origins of both negative and positive MRR components and connect them to interlayer and intralayer spin-dependent transport mechanisms. We interpret these findings with ab initio calculations and an effective spin-circuit model that reproduces the anisotropic magnetotransport. Our results identify the displacement field as an efficient electrical control parameter of spin transport in CrSBr and suggest that multi-gate architectures could provide similar control in other layered antiferromagnetic semiconductors.",
+    "authors": [
+      "Mohamed Soliman",
+      "Jaime Garrido Aldea",
+      "Davy Borowski",
+      "Dorye L. Esteras",
+      "Neeraj K. Rajak",
+      "Niels Chapuis",
+      "Abdelkarim Ouerghi",
+      "Arnaud Gloppe",
+      "Jérôme Robert",
+      "Bernard Doudin",
+      "Takashi Taniguchi",
+      "Kenji Watanabe",
+      "José H. García",
+      "Stephan Roche",
+      "Jean-François Dayen"
+    ],
+    "published": "2026-10-29T16:49:01Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40423",
+    "pdf": "https://arxiv.org/pdf/2610.40423v1"
+  },
+  "2610.40623": {
+    "id": "2610.40623",
+    "title": "Optimal Diamond Distance Estimation for Unitary Channels",
+    "abstract": "The diamond distance between two quantum channels determines the optimal probability of distinguishing them from a single use. We give a quantum algorithm that estimates the diamond distance between two unknown $d$-dimensional unitary channels to within additive error $\\varepsilon$, using $O(\\sqrt{d}/\\varepsilon)$ queries to the unitary channels and their inverses. The query complexity is optimal, as it matches the lower bound due to Jeon and Oh (npj Quantum Inf. 2026).",
+    "authors": [
+      "Jinge Bao",
+      "Qisheng Wang"
+    ],
+    "published": "2026-10-29T17:56:18Z",
+    "primary": "quant-ph",
+    "comment": "12 pages, 4 figures, 1 algorithm",
+    "url": "https://arxiv.org/abs/2610.40623",
+    "pdf": "https://arxiv.org/pdf/2610.40623v1"
+  },
+  "2610.40570": {
+    "id": "2610.40570",
+    "title": "Supersaturation: Cliques and Positive Square Energy",
+    "abstract": "Let $G$ be a simple graph of order $n$ and let $k_r$ denote the number of unlabeled copies of $K_r$ in $G$. Let $s^+$ denote the sum of the squares of the positive adjacency eigenvalues of $G$. For every fixed integer $r\\geq2$, we prove that, as $n \\to \\infty$ \\[ \\sqrt{s^+}>\\left(1-\\frac1r\\right)n \\quad\\Longrightarrow\\quad k_{r+1}\\geq \\left(\\frac1{r^{r-1}}-o_r(1)\\right)n^{r-1}. \\] The coefficient $r^{-(r-1)}$ is asymptotically best possible; in particular, the triangle case gives $k_3\\geq n/2-o(n)$. The proof combines positive square energy stability, the clique removal lemma, and a sharp clique count around a maximum $r$-cut. The triangle case requires an additional block-matrix argument.",
+    "authors": [
+      "Abhay Jayarajan",
+      "M. Rajesh Kannan",
+      "Shivaramakrishna Pragada"
+    ],
+    "published": "2026-10-29T17:44:06Z",
+    "primary": "math.CO",
+    "comment": "Comments are welcome",
+    "url": "https://arxiv.org/abs/2610.40570",
+    "pdf": "https://arxiv.org/pdf/2610.40570v1"
   }
 }
