@@ -1210,5 +1210,246 @@
     "comment": "Comments are welcome",
     "url": "https://arxiv.org/abs/2610.40570",
     "pdf": "https://arxiv.org/pdf/2610.40570v1"
+  },
+  "2610.40612": {
+    "id": "2610.40612",
+    "title": "Exceptional Points as Witnesses of Non-Gaussian Noise",
+    "abstract": "Efficient control of quantum devices requires the knowledge of their environmental noise, yet the commonly measured power spectrum does not fully characterize non-Gaussian fluctuations of realistic environments. Here we show that exceptional points (EPs) in the noise-averaged dephasing response can expose observable signatures of non-Gaussian statistics, distinguishing environments with identical lower-order statistics. We also introduce a theoretical model that describes dephasing environments in terms of identical independent noise sources while preserving the power spectrum. Given a calibrated single-source model, the largest EP order extracted from the measured dephasing response determines the number of sources and predicts the higher-order statistics of the combined noise. We illustrate an atomtronic readout that maps distinct EP signatures onto an evolving ensemble-averaged atomic interference pattern. Our results connect non-Hermitian dynamics to environmental noise statistics, providing a route to characterize noise in quantum devices used in computing, metrology, and precision measurement.",
+    "authors": [
+      "Aritra Ghosh",
+      "Subhashish Banerjee",
+      "M. Bhattacharya"
+    ],
+    "published": "2026-10-29T17:54:10Z",
+    "primary": "quant-ph",
+    "comment": "Comments are welcome",
+    "url": "https://arxiv.org/abs/2610.40612",
+    "pdf": "https://arxiv.org/pdf/2610.40612v1"
+  },
+  "2610.39704": {
+    "id": "2610.39704",
+    "title": "Confidence Filtering in Video-Based Gait Assessment: Measurement Error versus Selection Shift",
+    "abstract": "Video-based gait assessment often keeps only high-confidence pose observations, which can lower measurement error but change the movement assessed. We compared confidence selection with budget-matched random selection in a Parkinson-related cohort (n = 96) and an NF2-related replication cohort (n = 18). In the Parkinson-related cohort, confidence selection produced a small but consistent shift in the observed movement summary (+0.05 SD, 95% CI 0.03 to 0.07), while held-out Mini-BESTest error stayed flat (-0.04 points, -0.13 to 0.05); a policy preserving motion-group proportions reduced the shift, while NF2 showed no shift and its predictor did not beat a constant baseline. Because this shift mixes measurement error with selection shift, we decompose and simulate both on the cohort's window structure. Filtering lowers local error when error depends on confidence, but biases the endpoint once confidence tracks movement more than error. In the Parkinson-related data, confidence was only weakly tied to movement (rho = 0.14). There, filtering is harmless if well-tracked windows are unbiased. If instead systematic error only redistributes within participants, filtering can add up to 0.58 degrees. Unchanged clinical error from such small-cohort predictors therefore cannot show that quality filtering preserves the assessed movement.",
+    "authors": [
+      "David Regev",
+      "Eran Beeri Bamani"
+    ],
+    "published": "2026-10-29T09:37:48Z",
+    "primary": "cs.CV",
+    "comment": "6 pages + 2-page appendix, 4 figures, 2 supplementary figures, 2 tables. Submitted to the 2027 IEEE International Conference on Rehabilitation Robotics (ICORR)",
+    "url": "https://arxiv.org/abs/2610.39704",
+    "pdf": "https://arxiv.org/pdf/2610.39704v1"
+  },
+  "2610.40338": {
+    "id": "2610.40338",
+    "title": "Differentiable Electronic Grand Canonical Learning for Electrochemistry",
+    "abstract": "Electronic grand-canonical density functional theory captures how structure and electronic charge respond to electrode potential and, together with statistical mechanics, how these responses give rise to emergent phenomena. However, its computational cost limits the system sizes and sampling times accessible to first- principles simulations. Here, we introduce a differentiable architecture that represents the grand potential and obtains forces and electronic charge as its derivatives, exactly satisfying the mixed-derivative constraints required for thermodynamic consistency, and implement it within the equivariant MACE framework as GC- MACE. We demonstrate more accurate joint learning across multiple electrochemical interfaces and improved transferability to thicker water films relative to previous models, while enabling constant-potential simulations at substantially larger length and time scales than accessible to ab initio molecular dynamics. With broad training data, the framework offers a route to thermodynamically consistent foundation interatomic potentials for the electronic grand canonical ensemble",
+    "authors": [
+      "Phillip E. Pope",
+      "Timothy C. Berkelbach",
+      "Venkat Kapil"
+    ],
+    "published": "2026-10-29T16:03:16Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40338",
+    "pdf": "https://arxiv.org/pdf/2610.40338v1"
+  },
+  "2610.40551": {
+    "id": "2610.40551",
+    "title": "Ramanujan Challenge Results: AI-Assisted Evaluation Pipeline for Multi-Format Proofs",
+    "abstract": "As AI's mathematical capabilities rapidly improve, meaningful benchmarks are shifting from university-level problems and math olympiads to research-level mathematics. The Ramanujan Challenge is a benchmark comprised of research-level problems in number theory, including unpublished results and open conjectures. It presented concrete formulas for mathematical constants whose correctness can be checked numerically, while their proofs may require non-obvious mathematics. Here, we analyze the Challenge submissions, measuring the relative success of different AI models, Computer Algebra Systems (CAS), and formal tools. We find correct submissions that are conceptually distinct from the official solutions, and a proof of one of the published open conjectures. Evaluating the submissions exposed a second challenge: judging complex proofs reliably at scale. We introduce an AI-assisted evaluation pipeline for natural language proofs, CAS code, and Lean formalizations that assesses semantic and logical correctness. Compared with the conventional one-shot LLM judgment, our pipeline reduces false-positive verdicts on natural language proofs from 23% to 6% and improves judgment accuracy on supporting code from 46% to 58%. This approach provides a methodology for evaluating research-level mathematics at scale, with potential applications across mathematics and AI for science.",
+    "authors": [
+      "Alan Sorani",
+      "Ashvni Narayanan",
+      "Michael Shalyt",
+      "Tali Monderer",
+      "Rotem Kalisch",
+      "Hila Barkan",
+      "Elyasheev Leibtag",
+      "Shachar Weinbaum",
+      "Carsten Schneider",
+      "John Campbell",
+      "Ido Kaminer"
+    ],
+    "published": "2026-10-29T17:39:04Z",
+    "primary": "cs.AI",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40551",
+    "pdf": "https://arxiv.org/pdf/2610.40551v1"
+  },
+  "2610.40648": {
+    "id": "2610.40648",
+    "title": "Light-Cone Friedel Oscillations: a Window into van Hove Superconductivity",
+    "abstract": "Van Hove (vH) singularities can enhance superconductivity by generating a large pairing susceptibility. Yet, it remains challenging to experimentally establish whether pairing really occurs near these points. We show that the saddle-point dispersion near a vH point gives rise to a `light-cone' vH-selective behavior of Friedel oscillations, which is drastically different from the familiar concentric circles. Each vH point maps onto its own real-space light-cone sector, allowing STM around a single impurity to measure whether---and how strongly---that saddle-point quasiparticle sector is gapped. A superconducting gap near vH points suppresses the oscillations in the directions corresponding to peaks in the gap function angular dependence, a behavior that provides a signature of vH-related pairing at STM-accessible length scales. This STM protocol, targeting vH superconductivity, is capable of determining whether superconducting pairing emerges near the vH points or elsewhere on the Fermi surface.",
+    "authors": [
+      "Archisman Panigrahi",
+      "Vladislav Poliakov",
+      "Leonid Levitov"
+    ],
+    "published": "2026-10-29T17:59:26Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40648",
+    "pdf": "https://arxiv.org/pdf/2610.40648v1"
+  },
+  "2610.40399": {
+    "id": "2610.40399",
+    "title": "Soliton-Lattice Origin of Incommensurability in High-Pressure Antimony",
+    "abstract": "The microscopic origin of incommensurability in host-guest crystals remains unresolved. Here we show that the high-pressure antimony host-guest phase Sb-II is a soliton lattice, where localized guest-host misregistries decorate a commensurate 4/3 reference structure. First-principles calculations reveal a corrugated and hysteretic registry landscape, motivating a Frenkel-Kontorova description that accounts for soliton-lattice approximants of the form $(4n+1)/(3n+1)$. Machine-learning-potential calculations of these approximants show an energetically preferred soliton spacing, and their localized misregistry cores are also verified by first-principles relaxations. At finite temperature, the thermally broadened soliton lattice appears as an atomic density wave along the guest chains, consistent with experimental diffraction. This soliton-registry picture provides a microscopic mechanism for host-guest incommensurability in Sb-II.",
+    "authors": [
+      "M. Smirman",
+      "K. Sun",
+      "H. Sheng",
+      "I. I. Mazin"
+    ],
+    "published": "2026-10-29T16:33:56Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "6 pages, 4 figures; Supplemental Material (20 pages) included; submitted to PRL",
+    "url": "https://arxiv.org/abs/2610.40399",
+    "pdf": "https://arxiv.org/pdf/2610.40399v1"
+  },
+  "2610.40652": {
+    "id": "2610.40652",
+    "title": "Reconstructing hidden observables via quantum snapshot thermometry",
+    "abstract": "Projective snapshots are a standard readout tool for quantum simulators, but they directly probe only observables that are diagonal in the measurement basis. We show how local equilibration and an independently calibrated equilibrium equation of state can reveal otherwise hidden conserved-density profiles. We demonstrate numerically that such ``quantum snapshot thermometry'' can recover energy fronts and a diffusion constant, distinguish spin transport from energy spreading, and reveal conserved-charge profiles invisible in the initial measurements. We also identify symmetry-imposed ambiguities in the readout and show how prior knowledge of the spatial structure can resolve them. Fixed-basis snapshot thermometry thus provides quantitative hydrodynamic information beyond transport exponents, bypassing additional measurement bases and quantum state tomography.",
+    "authors": [
+      "Jie Ren",
+      "Andrew Hallam",
+      "Luheng Zhao",
+      "Huanqian Loh",
+      "Zlatko Papić"
+    ],
+    "published": "2026-10-29T17:59:38Z",
+    "primary": "quant-ph",
+    "comment": "14 pages, 8 figures",
+    "url": "https://arxiv.org/abs/2610.40652",
+    "pdf": "https://arxiv.org/pdf/2610.40652v1"
+  },
+  "2610.40628": {
+    "id": "2610.40628",
+    "title": "Locality in Dissipative Ground-State Preparation",
+    "abstract": "Can the ground state of a local Hamiltonian be prepared by local dissipation? We address this question for free-fermion Hamiltonians, using a quadratic Lindbladian with linear jump operators for the dissipative ground-state preparation. For translation-invariant targets, Fourier correspondence relates spatial locality to momentum-space analyticity, allowing us to derive a complete spectral criterion for the existence of exponentially local linear jump operators that prepare the ground state. This criterion leads to a no-go theorem that, sign-changing Fermi-level crossings exclude exponentially local linear jump operators for preparing the ground state. While these crossings are the complete obstruction in one dimension, additional obstructions generally arise in higher dimensions. We illustrate these additional obstructions using two quadratic-band-touching models with algebraically decaying ground-state correlations. We further show that short-range ground-state correlations, although not necessary, are sufficient for local dissipative preparation even without translation invariance. Our results establish how the spectral structure of the target Hamiltonian governs the locality of dissipative ground-state preparation.",
+    "authors": [
+      "Qicheng Tang",
+      "Ruhanshi Barad",
+      "Xueda Wen"
+    ],
+    "published": "2026-10-29T17:56:55Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40628",
+    "pdf": "https://arxiv.org/pdf/2610.40628v1"
+  },
+  "2610.40496": {
+    "id": "2610.40496",
+    "title": "Real-rooted Ehrhart $h^*$-polynomials of crown posets and wheel and whirl matroids",
+    "abstract": "We prove that the Ehrhart $h^*$-polynomials of crown order polytopes are real-rooted, settling a conjecture of Lundström and Saud Maia Leite. For each integer $r\\ge3$, the crown order polytope on $2r$ elements and the rank-$r$ whirl base polytope have the same $h^*$-polynomial. The $h^*$-polynomials of the rank-$r$ wheel and whirl base polytopes, as well as every convex combination of the two, have $2r-2$ distinct negative roots. Their coefficient sequences are positive, unimodal, and strictly ultra log-concave of order $2r-2$.",
+    "authors": [
+      "Ying Cao",
+      "Houshan Fu"
+    ],
+    "published": "2026-10-29T17:18:57Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40496",
+    "pdf": "https://arxiv.org/pdf/2610.40496v1"
+  },
+  "2610.40262": {
+    "id": "2610.40262",
+    "title": "PCR-ALERA: A PCR-ELISA analogue but antibody-free DNA detection system",
+    "abstract": "PCR-ALERA is a new concept for DNA detection that combines DNA amplification by polymerase chain reaction (PCR) with an activator-linked enzyme reactivation assay (ALERA). PCR-ALERA resembles the commercial, semi-quantitative PCR-ELISA assay that offers high sensitivity and high-throughput screening in microplates. PCR-ALERA overcomes a major drawback of PCR-ELISA since it does not require the time-consuming handling of expensive antibodies. In the first step of the assay, commercially available modified nucleotides were incorporated during PCR amplification of the target DNA. A selenocysteine containing peptide (the activator) was linked to the amplified DNA by click chemistry. This peptide has been optimized for the highly efficient activation of the latent protease papain by selenolate-triggered disulfide cleavage. The DNA-peptide hybrid was then immoblized in microplate wells and incubated with latent papain. The latter was readily activated and converted a fluorogenic substrate to a fluorescent product with high catalytic turnover. Overall assay time is about 4 hours including PCR.",
+    "authors": [
+      "Miles Bonenberger",
+      "Roland Krämer"
+    ],
+    "published": "2026-10-29T15:25:37Z",
+    "primary": "q-bio.QM",
+    "comment": "20 pages, 11 figures",
+    "url": "https://arxiv.org/abs/2610.40262",
+    "pdf": "https://arxiv.org/pdf/2610.40262v1"
+  },
+  "2610.40590": {
+    "id": "2610.40590",
+    "title": "An Adian-Rabin theorem for quantum automorphism groups of graphs",
+    "abstract": "Given a graph $G$, does it have quantum symmetries, or in other words, is the algebra of the quantum automorphism group non-commutative? In the world of ordinary groups, determining whether a finitely presented group is commutative is undecidable. This is an immediate consequence of the Adian-Rabin theorem, which shows that many natural properties of finitely presented groups are undecidable. In this paper, we prove an Adian-Rabin theorem for quantum automorphism groups of graphs, showing that many natural properties of the quantum automorphism group of a graph (including having quantum symmetries) are undecidable. We also show that it's undecidable to determine if the discrete quantum automorphism group is non-trivial. Our methods are based on solution groups of linear system nonlocal games, and we also prove an Adian-Rabin theorem in this context.",
+    "authors": [
+      "Josse van Dobben de Bruyn",
+      "William Slofstra"
+    ],
+    "published": "2026-10-29T17:48:22Z",
+    "primary": "math.QA",
+    "comment": "21 pages",
+    "url": "https://arxiv.org/abs/2610.40590",
+    "pdf": "https://arxiv.org/pdf/2610.40590v1"
+  },
+  "2610.40222": {
+    "id": "2610.40222",
+    "title": "Stabilizing fluctuating Cooper pairs with a terahertz resonator",
+    "abstract": "Coupling quantum materials to electromagnetic cavities or resonators without external driving has gained prominence as a new control mechanism. Here we develop an equilibrium theory of a mesoscopic, disordered two-dimensional superconductor coupled to a subwavelength terahertz resonator, focusing on the interplay between superconducting phase fluctuations in the sample and electromagnetic fluctuations of the resonator. Modeling the resonator as a lumped-element circuit, we show that the coupling enhances, rather than suppresses, the superconducting transition temperature $T_c$. When the sample is smaller than the Pearl length, phase fluctuations near the Berezinskii--Kosterlitz--Thouless (BKT) transition strongly amplify this enhancement. Crucially, the resistive quasiparticle response of the sample must be included in the analysis: at low frequencies the superfluid shunts the normal-fluid channel, reducing the total sample impedance. For representative parameters, a $1 \\,μ\\mathrm{m} \\times 1 \\,μ\\mathrm{m}$, $8 $nm-thick disordered film, we find a relative $T_c$ enhancement of about $1\\%$, an order of magnitude larger than the $0.1\\% $ obtained when phase fluctuations are neglected. These results identify superconductors with soft phase fluctuations as promising platforms for equilibrium control with terahertz resonators.",
+    "authors": [
+      "Frieder Lindel",
+      "Jonathan B. Curtis",
+      "Jérôme Faist",
+      "Eugene Demler"
+    ],
+    "published": "2026-10-29T15:04:22Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "10 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2610.40222",
+    "pdf": "https://arxiv.org/pdf/2610.40222v1"
+  },
+  "2610.40410": {
+    "id": "2610.40410",
+    "title": "Light-induced chiral altermagnets from conventional antiferromagnets",
+    "abstract": "Altermagnets combine compensated collinear magnetic order with momentum-dependent nonrelativistic spin splitting, offering new opportunities for spintronic applications. Here, we propose a route to optically induce altermagnetism through coherent lattice control. Using symmetry analysis, we identify phonon distortions that lift the spin degeneracy of conventional antiferromagnets while preserving the rotational symmetries connecting opposite-spin sublattices. Among these, geometric chiral phonons provide a particularly appealing pathway, linking the emergence of altermagnetism to structural chirality. Taking Fe$_2$TeO$_6$ as a prototype, we demonstrate that a linearly polarized mid-infrared pulse can drive a structural instability through negative biquadratic coupling between an infrared-active phonon and an optically silent, symmetry-breaking mode. First-principles-based lattice dynamics reveal the emergence of a transient chiral distortion, while electronic-structure calculations establish that the light-induced structure exhibits nonrelativistic spin splitting characteristic of altermagnetism. Our results establish a symmetry-guided pathway toward the ultrafast optical control of altermagnetic states through nonlinear phononics.",
+    "authors": [
+      "Jorge Cardenas-Gamboa",
+      "Devika Jayadeep",
+      "Aritz Leonardo",
+      "Gregory A. Fiete",
+      "Jeroen van den Brink",
+      "Maia G. Vergniory"
+    ],
+    "published": "2026-10-29T16:40:19Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "7 pages, 2 figures",
+    "url": "https://arxiv.org/abs/2610.40410",
+    "pdf": "https://arxiv.org/pdf/2610.40410v1"
+  },
+  "2610.40617": {
+    "id": "2610.40617",
+    "title": "Field-level inference under pressure: the information content of the thermal Sunyaev-Zel'dovich field",
+    "abstract": "The thermal Sunyaev--Zel'dovich (tSZ) field is highly non-Gaussian and contains cosmological information that cannot be fully captured by its angular power spectrum. In this work, we investigate the information content of this field using a convolutional neural network (CNN), and compare to simple and interpretable summary statistics, in a simulation-based inference (SBI) framework. We perform the first field-level analysis of the tSZ field, using a suite of $10{,}000$ simulated Compton-$y$ maps, where we jointly vary the cosmological parameters $Ω_c$ and $σ_8$ (the density fraction for cold dark matter and the matter clustering amplitude, respectively) and two parameters describing the amplitude and shape of the electron pressure profile, $P_0$ and $β$, that aim to capture astrophysical uncertainties. We consider both noiseless simulations and simulations including realistic Simons Observatory (SO) noise after component separation. We use SBI to compare the constraints obtained from the CNN with those from the three Minkowski functionals (MFs), individually and in combination, as well as the angular power spectrum. This is the first application of SBI to the MFs of the tSZ field. We find that the CNN provides tighter constraints than conventional summary statistics in the noiseless case. However, at SO-like noise levels, the combination of MFs and the power spectrum recovers constraints comparable to those obtained with the CNN. Our results highlight the potential of these interpretable summary statistics, as well as field-level inference, for extracting information from the tSZ field, motivating efforts toward their application to real data.",
+    "authors": [
+      "Carmen Embil Villagra",
+      "Adrian E. Bayer",
+      "William R. Coulton",
+      "Alina Sabyr",
+      "Francisco Villaescusa-Navarro",
+      "Blake D. Sherwin",
+      "Anthony Challinor",
+      "J. Colin Hill",
+      "Nicholas Battaglia"
+    ],
+    "published": "2026-10-29T17:54:55Z",
+    "primary": "astro-ph.CO",
+    "comment": "16 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2610.40617",
+    "pdf": "https://arxiv.org/pdf/2610.40617v1"
+  },
+  "2610.40524": {
+    "id": "2610.40524",
+    "title": "A heterogenetic theory of living systems",
+    "abstract": "The problem of the dynamics of living systems and their mathematical representation essentially unfolds on two levels. Firstly, the principles of autopoiesis and operational closure describe how a living system produces and maintains itself. Secondly, living phenomena are recognised as historical, involving the evolution of dynamics and spaces of possibility that change over time. Currently, no differential model can incorporate both of these aspects. We propose adopting the differential heterogenesis framework, which enables us to define differential operators that change in space and time, producing event-based and historical dynamics. In this construction, heterogeneous operator assemblages will be constrained by the principles of autopoiesis and operational closure, providing a theoretical framework for event-based and historical living systems. Finally, we provide a specific example of assembly with Gray-Scott kinetic equations, along with numerical simulations and results.",
+    "authors": [
+      "Alessandro Sarti",
+      "Giovanna Citti"
+    ],
+    "published": "2026-10-29T17:32:25Z",
+    "primary": "q-bio.QM",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40524",
+    "pdf": "https://arxiv.org/pdf/2610.40524v1"
   }
 }
