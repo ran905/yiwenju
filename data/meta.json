@@ -1451,5 +1451,244 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2610.40524",
     "pdf": "https://arxiv.org/pdf/2610.40524v1"
+  },
+  "2610.40605": {
+    "id": "2610.40605",
+    "title": "A self-normalized law of the iterated logarithm for Rademacher random multiplicative functions",
+    "abstract": "Let $f$ be a Rademacher random multiplicative function supported on the squarefree integers, and let $M(x)=\\sum_{n\\le x}f(n)$. We prove a two-sided law of the iterated logarithm normalized by the full predictable quadratic variation \\[ Q(x)=\\sum_{p\\le x}\\bigg(\\sum_{\\substack{m\\le x/p\\\\ P(m)<p}}f(m)\\bigg)^2 \\] of the martingale obtained by revealing the prime signs. Almost surely, \\[ \\limsup_{x\\to\\infty}\\frac{M(x)}{\\sqrt{2Q(x)\\log\\log x}}=1, \\qquad \\liminf_{x\\to\\infty}\\frac{M(x)}{\\sqrt{2Q(x)\\log\\log x}}=-1. \\] The same equalities hold with $\\log\\log Q(x)$ in the denominator. The almost sure cluster set of the normalized sum is $[-1,1]$. This gives a self-normalized version of the questions of Wintner and Erdős on almost sure fluctuations. We also prove that $Q(x)/q(x)$ cannot converge in probability to $1$ for any positive deterministic function $q$. Moreover, \\[ \\limsup_{x\\to\\infty} \\frac{|M(x)|}{\\sqrt{x}(\\log\\log x)^{1/4}} \\] is either an almost surely finite and positive random variable with nondegenerate distribution or infinite almost surely. We do not determine which alternative holds.",
+    "authors": [
+      "Dariusz Buraczewski",
+      "Alexander Iksanov"
+    ],
+    "published": "2026-10-29T17:52:57Z",
+    "primary": "math.PR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40605",
+    "pdf": "https://arxiv.org/pdf/2610.40605v1"
+  },
+  "2610.40642": {
+    "id": "2610.40642",
+    "title": "Comparison of entangling strategies for unitary synthesis",
+    "abstract": "Trapped-ion quantum computers are promising as a platform for realizing quantum computational advantage. They promise long coherence times, near all-to-all connectivity, and potential multiqubit gates as distinguishing advantages compared to competing platforms. Regarding these advantages, it is crucial to understand the trade-offs between increasing engineering complexity and actual improvements in running quantum algorithms with a more flexible gate set. In this work, we investigate this question and develop a versatile toolset to evaluate the performance of gate sets composed of native Mølmer--Sørensen multiqubit gates. To this end, we employ unitary synthesis as an application-agnostic benchmark target and identify specific hardware requirements for multiqubit gates to be advantageous.",
+    "authors": [
+      "Jonas Wunder",
+      "Hendrik Weimer",
+      "Ricardo Costa de Almeida"
+    ],
+    "published": "2026-10-29T17:58:57Z",
+    "primary": "quant-ph",
+    "comment": "16 pages, 8 figures",
+    "url": "https://arxiv.org/abs/2610.40642",
+    "pdf": "https://arxiv.org/pdf/2610.40642v1"
+  },
+  "2610.40621": {
+    "id": "2610.40621",
+    "title": "Generalizing Density Functional Theory with a Particle-Hole Expansion",
+    "abstract": "Strong electron correlation remains difficult to describe within conventional density functional approximations, particularly when natural-orbital occupations become strongly fractional. We introduce a systematic particle-hole expansion that generalizes density functional theory (DFT) through an explicit functional of the one-electron reduced density matrix. The previously derived cumulant-based correction emerges as the leading term and the thermal (entropic) correction as an infinite-order member whose coefficients are fixed by a single parameter. The expansion can be formulated as a moment problem solved by semidefinite programming with computational scaling comparable to DFT. We show that both the first- and second-order corrections yield closed-form natural-orbital occupations. Applications to periacenes and Fe-porphyrin demonstrate that the second-order correction substantially reduces excessive orbital fractionalization, yielding natural-orbital occupations and fundamental gaps in improved agreement with correlated calculations.",
+    "authors": [
+      "Shurui Zhao",
+      "Madhubani Mukherjee",
+      "David A. Mazziotti"
+    ],
+    "published": "2026-10-29T17:55:39Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40621",
+    "pdf": "https://arxiv.org/pdf/2610.40621v1"
+  },
+  "2610.40556": {
+    "id": "2610.40556",
+    "title": "Advancing Clinical Genomic Analysis with a Skill-Centred Agent",
+    "abstract": "Clinical genomic analysis requires experts to integrate evolving guidelines, databases, and computational evidence. As sequencing has become increasingly accessible, this complex and labor-intensive process has become a major bottleneck to the timely use of genomic information in clinical decision-making. To fill this gap, we developed ClinGeX, a large-language-model agent that composes 105 curated executable skills through task-specific retrieval and dependency-aware orchestration. On 223 temporally held-out benchmark cases, ClinGeX achieved 71.7\\% macro-averaged task-level concordance with expert reference classifications, compared with 45.7\\% for the strongest comparator. In a three-condition, counterbalanced human-AI collaboration study, 45 clinical genomic professionals assessed 135 clinically derived cases under routine (no AI assistance), DeepSeek-assisted and ClinGeX-assisted conditions. ClinGeX assistance increased raw case-level concordance across criterion-level variant analysis, genomic interpretation in rare disease and molecular oncology decision-making (51.1\\%, 57.8\\%, 64.4\\% versus 15.6\\%, 31.1\\%, 20.0\\% in comparator conditions) and reduced reported interpretation time in all scenarios. During an exploratory one-month real-world non-interventional assessment, 11 experienced professionals submitted feedback on 96 self-selected analysis episodes and reported frequent conclusion adoption and time savings. These findings support executable domain skills as a promising approach to augment specialist genomic interpretation.",
+    "authors": [
+      "Qiaoyu Zheng",
+      "Weike Zhao",
+      "Yanjie Fan",
+      "Ye Cao",
+      "Mengqi Jiang",
+      "Xiao Zhou",
+      "Xiaoman Zhang",
+      "Pengcheng Qiu",
+      "Yongguo Yu",
+      "Yanfeng Wang",
+      "Ya Zhang",
+      "Chaoyi Wu",
+      "Weidi Xie"
+    ],
+    "published": "2026-10-29T17:40:24Z",
+    "primary": "cs.AI",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40556",
+    "pdf": "https://arxiv.org/pdf/2610.40556v1"
+  },
+  "2610.40519": {
+    "id": "2610.40519",
+    "title": "Petersson-rigid lattices of signature (2,1) and their harmonic weak Maass forms",
+    "abstract": "An even lattice $L$ of signature $(2,1)$ is Petersson-rigid if the orthogonal group of its discriminant form acts absolutely irreducibly on the space of cusp forms of weight $\\frac32$ for its Weil representation, a space of dimension at least two. We prove, with computer assistance, that there are exactly twelve such lattices up to isometry, and we determine their root bases. Four of them are theta lattices, whose cusp forms are lifts of unary theta series. On each, the space is $\\mathbb C F_0\\otimesσ_0$ for one form $F_0$ and an irreducible $σ_0$, so the Petersson norm is $\\|F\\|^2=t_μ\\|c_F(μ)\\|^2$ for all cusp forms $F$, with one $t_μ>0$, $μ$ the least exponent of $F_0$ and $c_F(μ)$ the coefficient of $q^μ$ in $F$. We prove that the harmonic weak Maass forms of weight $\\frac12$ in the $σ_0$-isotypic part with a pole of least possible order are exactly the forms $\\mathcal H_F$ with principal part $q^{-μ}\\overline{c_F(μ)}$, and $ξ_{1/2}\\mathcal H_F=F/t_μ$. For the four theta lattices it is a theorem that $t_μ=\\frac{s-1}{12}\\sqrt s$, with $s$ the square-free part of $|\\det L|/2$, and the $\\mathcal H_F$ come from umbral moonshine. For the eight others we compute $F_0$, $t_μ$ and $\\mathcal H_{F_0}$: the Hecke eigenvalues are integers and, at the primes computed, the $a_p$ of an elliptic curve, and for three of the eight $F_0$ is explicit as an eta-theta product. We prove, for every prime $p>3$, a closed formula in $p$ and one class number for the difference $g(X_0(4p)/w_p)-g(X_0(2p)/w_p)$ of the genera of two Atkin-Lehner quotients of modular curves. In a family $\\mathcal D_p$ of discriminant forms, $p$ an odd prime, containing three of the eight, comparison with that classification shows that $\\mathcal D_p$ is rigid exactly when $X_0(4p)/w_p$ has genus $1$ and $X_0(2p)/w_p$ has genus $0$.",
+    "authors": [
+      "Eungang Cho"
+    ],
+    "published": "2026-10-29T17:27:02Z",
+    "primary": "math.NT",
+    "comment": "43 pages, 3 tables. Paper III of a series (arXiv:2608.19706, arXiv:2609.02843). Every statement marked [C] is reproduced by a script and a log of the reproduction archive, Zenodo, doi:10.5281/zenodo.23770095",
+    "url": "https://arxiv.org/abs/2610.40519",
+    "pdf": "https://arxiv.org/pdf/2610.40519v1"
+  },
+  "2610.40413": {
+    "id": "2610.40413",
+    "title": "Photon Statistics and Light Squeezing Under Vibrational Strong Coupling from Real-Time Nuclear--Electronic Orbital Theory",
+    "abstract": "Molecular polaritons have attracted great interest in recent years as a promising avenue for developing optical control of chemical processes. A major open question in this field is the role of quantum optical effects in understanding the molecular dynamics observed in cavities. In this work, we use our recently developed mean-field quantum and full-quantum real-time nuclear--electronic orbital time-dependent density functional theory methods to simulate photon statistics for a cavity mode strongly coupled to a molecular vibrational transition. Our comparative use of these two methods allows us to isolate the contributions of light--matter entanglement to the photon statistics. We consider three initial conditions of the cavity mode: a coherent state, a squeezed coherent state, and a single photon Fock state. These conditions span Poissonian, super-Poissonian, and sub-Poissonian photon statistics. Our full-quantum dynamics initialized with a coherent state show considerable super-Poissonian fluctuations of the photon statistics and light-squeezing of the cavity photons by the vibrational mode. These dynamics are particularly notable considering the quasi-classical properties of the coherent state. The squeezed coherent and Fock state initial conditions also demonstrate noteworthy fluctuations in the photon statistics. All three initial conditions reveal dynamics in the full-quantum photon statistics that differ considerably from the statistics obtained with the mean-field quantum method. Our results demonstrate the importance of considering quantum optical effects for molecules under strong coupling in certain situations.",
+    "authors": [
+      "Millan Welman",
+      "Sharon Hammes-Schiffer"
+    ],
+    "published": "2026-10-29T16:41:42Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40413",
+    "pdf": "https://arxiv.org/pdf/2610.40413v1"
+  },
+  "2610.40443": {
+    "id": "2610.40443",
+    "title": "Framework-Conditional Open Materials Generation",
+    "abstract": "Theoretical predictions of novel materials rely on a variety of techniques, from data-mining-based ion substitution methods to fully de novo generative models. Each approach imposes specific constraints and encounters unique challenges when extrapolating beyond the distribution of known materials to discover new ones. The foremost goal of materials generation is to produce stable, unique, and novel (S.U.N.) structures. Predicted structures that meet these criteria, however, typically result from novel chemical compositions mapped onto known structural prototypes or frameworks. We leverage this heuristic insight to present a new generative paradigm for the de novo prediction of inorganic crystalline materials constrained by their structural framework---i.e., the unit cell shapes and respective particle positions. Our method, termed OMatG-FC (Open Materials Framework-Conditional Generation), learns via a combination of discrete flow matching on the atomic species and stochastic interpolants for the volume scaling of the unit cell lattice, while fixing in-place the fractional coordinates and the unit-volume lattice vectors, dramatically reducing the dimensionality of the problem compared to unconstrained (framework-free) generation. Our method is more flexible than existing prototype-constrained methods, demonstrating capability for discovery of unseen, stable prototypes derived from known structural frameworks. We also investigate the number of unique frameworks in the MP-20 dataset, demonstrating the propensity of duplicate frameworks within the dataset and providing a framework-split version. We benchmark the performance of our model using the LeMat-GenBench suite using three ML interatomic potentials and achieve state-of-the-art S.U.N. rate below the convex hull, eschewing the need to learn atomic packings for materials discovery.",
+    "authors": [
+      "Maya M. Martirossyan",
+      "Hillary Pan",
+      "Philipp Höllmer",
+      "Stefano Martiniani"
+    ],
+    "published": "2026-10-29T16:57:14Z",
+    "primary": "cs.LG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40443",
+    "pdf": "https://arxiv.org/pdf/2610.40443v1"
+  },
+  "2610.40442": {
+    "id": "2610.40442",
+    "title": "Time Reflection-Refraction Crossover at Topological Kramers Edge States",
+    "abstract": "Time-reversal symmetry protects helical edge states against static nonmagnetic backscattering. We show that spatially uniform temporal modulation produces a time reflection-refraction crossover within the same quantum spin Hall phase while preserving time-reversal symmetry of the instantaneous Hamiltonian. A finite gap to the bulk and an edge splitting that vanishes at the Kramers crossing allow the modulation to suppress bulk excitation while remaining nonadiabatic between the edge channels. Virtual transitions through bulk states enable coherent conversion between counter-propagating edge channels at fixed crystal momentum. Near the crossing, $qT$ governs the leading crossover dynamics for a fixed ramp shape, where $q$ is the momentum offset and $T$ the ramp duration. Coherent interference can suppress and restore reflection as the ramp slows. In the adiabatic limit, two initially time-reversed wave packets follow their respective propagation branches and acquire equal geometric displacements. Their group-velocity contributions cancel, isolating the contribution from the Berry curvature to be directly observable. Temporal modulation thus controls protected states and quantum geometry along a topological edge.",
+    "authors": [
+      "Junpeng Hou",
+      "Ya-Jie Wu"
+    ],
+    "published": "2026-10-29T16:56:58Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "13 pages, 7 figures",
+    "url": "https://arxiv.org/abs/2610.40442",
+    "pdf": "https://arxiv.org/pdf/2610.40442v1"
+  },
+  "2610.40317": {
+    "id": "2610.40317",
+    "title": "Transport in spinful non-Hermitian gauge lattices",
+    "abstract": "We extend the generalized transfer-matrix method introduced in [H. Ghaemi-Dizicheh, Phys.\\ Rev.\\ B \\textbf{107}, 125155 (2023)] to one-dimensional spinful non-Hermitian tight-binding lattices with matrix-valued Abelian and non-Abelian gauge couplings. We derive a minimal channel-resolved transfer matrix and identify its eigenvalues with the generalized Bloch factors. The same transfer matrix determines the periodic- and open-boundary spectra, generalized Brillouin zone, skin localization, and finite-sample scattering conditions. In the Abelian limit, the model separates into fixed spin sectors, yielding exact spectral results and closed finite-length transport expressions in terms of Chebyshev polynomials. These results reveal bipolar spin-dependent skin localization and distinguish the reciprocal hopping scale, which governs poles, zeros, and reflectionlessness, from the directed-amplification factor controlling transmission asymmetry, transparency, and invisibility. For non-Abelian gauge fields, noncommuting link matrices coherently mix the spin sectors, such that four transfer eigenmodes jointly determine the non-Bloch spectrum and transport eigenchannels. We show that this mixing produces spin-hybridized lasing and coherent-perfect-absorption channels, Zeeman-tunable lasing thresholds, and direction-dependent reflectionless transport accompanied by pronounced spin conversion. The resulting boundary-condition criteria describe lasing, coherent perfect absorption, reflectionlessness, transparency, and invisibility, while identifying spin polarization and conversion as experimentally accessible signatures that distinguish Abelian from non-Abelian non-Hermitian transport.",
+    "authors": [
+      "Hamed Ghaemi-Dizicheh",
+      "Shahram Dehdashti",
+      "Janis Nötzel"
+    ],
+    "published": "2026-10-29T15:52:39Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "28 pages, 7 Figures",
+    "url": "https://arxiv.org/abs/2610.40317",
+    "pdf": "https://arxiv.org/pdf/2610.40317v1"
+  },
+  "2610.40280": {
+    "id": "2610.40280",
+    "title": "Latent Prediction Yields Cross-Subject Alignable Representations in Sensory-Evoked fMRI",
+    "abstract": "Decoding sensory-evoked functional magnetic resonance imaging (fMRI) data is a central analytical tool in cognitive neuroscience. Here we ask whether self-supervised learning (SSL), which has been scarcely explored in this domain, can yield representations that support strong downstream performance. To do so, we adapt a joint embedding predictive architecture (JEPA) to train participant-specific encoders on brain data alone. The encoders never see the stimulus images or any representation derived from them. Applied to the Natural Scenes Dataset (NSD), we evaluate our learned brain embeddings on the downstream tasks of brain captioning and image reconstruction, as well as cross-participant generalization. Our self-supervised approach achieves competitive performance with parameter-rich supervised pipelines that are trained end-to-end with access to image and language data. We further find that encoders trained independently for different participants can be aligned fully unsupervised, using neither images nor stimuli shared between them. After alignment, a neural decoding head trained on one participant can be applied to another without fine-tuning and retains most of its within-subject performance on image reconstruction and brain captioning. By removing the need for images and shared stimuli, our approach is a step towards pooling fMRI data across participants and, eventually, across datasets.",
+    "authors": [
+      "Serwan Jassim",
+      "Victoria Bosch",
+      "Daniel Anthes",
+      "Elia Bruni",
+      "Tim Kietzmann"
+    ],
+    "published": "2026-10-29T15:33:41Z",
+    "primary": "cs.LG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40280",
+    "pdf": "https://arxiv.org/pdf/2610.40280v1"
+  },
+  "2610.40447": {
+    "id": "2610.40447",
+    "title": "Learning developmental dynamics from lineage context",
+    "abstract": "A central goal of biology is to predict the dynamics of multicellular systems. Lineage context (the states of a cell's sisters, cousins, etc.) could inform these predictions, but how best to leverage it remains unclear. Here we introduce lineage inpainting, a generative modeling approach that uses lineage context with tree-structured transformers and stochastic interpolants to model cell state dynamics across lineage trees. Applied to a lineage-traced transcriptional atlas of mouse embryogenesis, it recovers dynamics not resolved by gene expression alone, including multiple transcriptional convergence events where distinct lineages are drawn to a common state. Despite being fit on unperturbed development, lineage inpainting can generate hypotheses about perturbation responses by simulating counterfactuals. These simulations agree in many cases with observed developmental phenotypes, including a single-cell measurement of the Tbx5 knockout response. Our results show that lineage information provides a rich source of context for learning multicellular dynamics.",
+    "authors": [
+      "Gokul Gowri",
+      "Nic Fishman",
+      "William N. Colgan",
+      "Minming Wang",
+      "Yusuke Kijima",
+      "Sachin A. Kumar",
+      "Aleksandr Zimin",
+      "Luke W. Koblan",
+      "Marinka Zitnik",
+      "Zachary D. Smith",
+      "Stephen Bates",
+      "Philippe Rigollet",
+      "Jonathan S. Weissman"
+    ],
+    "published": "2026-10-29T16:59:01Z",
+    "primary": "q-bio.QM",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2610.40447",
+    "pdf": "https://arxiv.org/pdf/2610.40447v1"
+  },
+  "2610.40657": {
+    "id": "2610.40657",
+    "title": "Variational wavefunctions for ideal anyon gas: superfluid and skyrmion Hall crystal",
+    "abstract": "The ground state of an ideal gas of anyons with statistical angle $θ\\in(0,π)$ is a long-standing open problem, with renewed interest from the recent observations of fractional Chern insulators. In this work we construct variational wavefunctions that build in the exact anyon statistics and combine theory-guided composite-boson, composite-fermion and parton wavefunctions with neural-network correlations on the sphere. For spinless and SU(2) semions we confirm the paired anyon superfluid, well below the best crystal states. At $θ=π/3$ liquids and crystals are closer in energy for the spinless case. For $θ=π/3$ anyons with SU(3) flavor, we find two candidates. One is a skyrmion Hall crystal, in which the anyons form an integer quantum Hall state in the effective magnetic field from the spin texture. The other is a chiral color superconductor of six-anyon clusters, the color-flavor-locked pairing descendant of a holon metal with SU(3) color gauge symmetry and SU(3) flavor symmetry; its wavefunction is a hyperdeterminant rather than a product of parton determinants. Within our variational ansatz the color superconductor has better energy than both crystals and the color-flavor locked phases with U(1)$^2$ and Z$_3$ gauge groups. For twisted MoTe$_2$ this suggests that the reentrant integer quantum anomalous Hall phase is the skyrmion Hall crystal of the doped anyons, and that the observed superconductivity may be the color superconductor, which can undergo a transition to an $f+if$ BCS superconductor with a jump of the chiral central charge by 3.",
+    "authors": [
+      "Ya-Hui Zhang"
+    ],
+    "published": "2026-10-29T17:59:59Z",
+    "primary": "cond-mat.str-el",
+    "comment": "31 pages, 10 figures (2 in the main text), including Supplemental Material",
+    "url": "https://arxiv.org/abs/2610.40657",
+    "pdf": "https://arxiv.org/pdf/2610.40657v1"
+  },
+  "2610.40651": {
+    "id": "2610.40651",
+    "title": "Renormalization for Robust Memory without Synchronization",
+    "abstract": "Local error correction can preserve classical information against noise, but protection under synchronized updates need not survive when sites evolve at independent random times. Establishing stability is particularly challenging when protection relies on the collective action of competing local rules. Here we develop a spacetime renormalization framework that reveals how independently acting local updates can collectively stabilize memory. We identify sufficient conditions under which the geometry of stable interfaces and suppression of defect propagation produce reliable erosion at large scales. Applying this framework, we prove stability of the asynchronous \\textsf{R} squeezing code and introduce robust processes in two and three dimensions. In these systems, both encoded phases persist under sufficiently weak noise, even when the noise favors one phase. Our results provide a criterion for designing autonomous memories sustained by competing local stochastic dynamics.",
+    "authors": [
+      "Shashwat Chakraborty",
+      "Jong Yeon Lee"
+    ],
+    "published": "2026-10-29T17:59:33Z",
+    "primary": "cond-mat.stat-mech",
+    "comment": "13 pages main",
+    "url": "https://arxiv.org/abs/2610.40651",
+    "pdf": "https://arxiv.org/pdf/2610.40651v1"
+  },
+  "2610.40631": {
+    "id": "2610.40631",
+    "title": "Gravitational-Wave Echoes and Greybody Cutoff from Logarithmic Throats at a Marginal-Trapping Threshold",
+    "abstract": "When a static, spherically symmetric configuration is brought close to a marginal-trapping threshold, it develops a long throat. As the nondegenerate minimum of $F=1-2m/r$ approaches zero, $F\\simeqΔ+β(r-R_M)^2$, the proper length across the throat grows as $-\\lnΔ/\\sqrtβ$, even though the local curvature stays finite. We study how axial gravitational waves propagate in an effective model of this throat, in which the lapse is parametrized as $N\\propto F^{s/2}$. For $s>0$ the throat acts as a cavity behind the angular-momentum barrier, and waves come back out as echoes spaced by $T_{\\rm echo}\\simeq2Λ+δ\\proptoΔ^{-s/2}$, where $Λ$ is the optical length of the throat and $δ$ does not depend on $Δ$. We study four-dimensional, matter-supported quasi-black holes in which a regular centre caps the near-AdS$_2$ throat. These configurations provide a simplified model for investigating capped throats in horizonless microstate geometries. The echo delay in this model is controlled by the inverse redshift near the bottom of the throat, as in capped microstate geometries. This differs from thin-shell gravastars and wormholes, where the delay grows only logarithmically with the distance to the would-be horizon. Time-domain evolutions confirm the $Δ^{-s/2}$ scaling over three decades in $Δ$; for $s=0$ the throat becomes part of the barrier and no distinct echo appears. The barrier also imposes a greybody cutoff on the reflected spectrum, $1-Γ\\simeq e^{-(ω-f)/T}$, where $T$ is fixed by the curvature of the barrier and does not depend on the surface gravity of any horizon behind it. In this model, the prompt signal is the same whether the interior contains a horizon or a reflecting throat. In the horizonless case, however, the transmitted wave returns as echoes, restoring the high-frequency part of the full reflected spectrum.",
+    "authors": [
+      "Jahed Abedi"
+    ],
+    "published": "2026-10-29T17:57:40Z",
+    "primary": "gr-qc",
+    "comment": "20 pages, 10 figures, 1 table",
+    "url": "https://arxiv.org/abs/2610.40631",
+    "pdf": "https://arxiv.org/pdf/2610.40631v1"
+  },
+  "2610.40622": {
+    "id": "2610.40622",
+    "title": "The Number of Tropical Order Types and Coherent Matching Fields",
+    "abstract": "We investigate counting problems for discrete (geometric) structures in tropical settings, motivated by the comparison of the expressivity of linear programs and mean-payoff games. First, we give an upper bound on the number of coherent matching fields of type $(n,r)$ and a lower bound on the number of combinatorial types of $n$-hyperplane sequences in the max-plus tropical space of dimension $r-1$. These structures are closely related, and our bounds establish that as $n \\to \\infty$, for every fixed $r$ their number equals $n^{(r-1)^2n+o(n)}$. This in turn implies that the number of regular triangulations of the products of simplices $Δ^{n-1}\\timesΔ^{r-1}$ is also $n^{(r-1)^2n+o(n)}$, thereby answering a question of Santos. Second, we obtain that the number of labeled order types over the reals and over the signed tropical numbers coincide at first order, establishing a comparison of the expressivity of mean-payoff games and linear programs as measured by labeled order types. Last, the subclass of mean-payoff games known as parity games arise from linear programs by a ``double tropicalization.'' We show that the number of labeled order types obtained after this double tropicalization collapses.",
+    "authors": [
+      "Xavier Allamigeon",
+      "Yiyuan Chen",
+      "Stéphane Gaubert",
+      "Xavier Goaoc"
+    ],
+    "published": "2026-10-29T17:56:09Z",
+    "primary": "math.CO",
+    "comment": "35 pages, 16 figures",
+    "url": "https://arxiv.org/abs/2610.40622",
+    "pdf": "https://arxiv.org/pdf/2610.40622v1"
   }
 }
