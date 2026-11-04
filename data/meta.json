@@ -1933,5 +1933,234 @@
     "comment": "24 pages, 11 figures, 1 table",
     "url": "https://arxiv.org/abs/2611.01238",
     "pdf": "https://arxiv.org/pdf/2611.01238v1"
+  },
+  "2611.04276": {
+    "id": "2611.04276",
+    "title": "Testing Implies Distance Estimation with Polynomial Loss",
+    "abstract": "A tester decides whether a graph has a property or is far from having it. A distance estimator asks for more: it must approximately determine how many edges need to be changed. A property is said to be testable if there is a tester with a number of queries bounded independently of the graph's order for each conceivable distance. Similarly, if a property admits an estimator with a number of queries bounded independently of the graph's order, it is said to be estimable. Fischer and Newman proved that, in the dense graph model, every testable property is also estimable. We show that the passage from testing to estimation requires only a polynomial increase in query complexity. This resolves a long-standing open problem in property testing, previously tackled by Fiat and Ron, by Hoppen, Kohayakawa, Lang, Lefmann, and Stagni, and by Gishboliner, Kushnir, and Shapira.",
+    "authors": [
+      "Gaia Carenini",
+      "Cameron Seth"
+    ],
+    "published": "2026-11-03T04:02:51Z",
+    "primary": "cs.DS",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.04276",
+    "pdf": "https://arxiv.org/pdf/2611.04276v1"
+  },
+  "2611.03841": {
+    "id": "2611.03841",
+    "title": "Evolved Spiking Neural Networks for EEG Seizure Detection: Calcium Dynamics and Delay Mechanics",
+    "abstract": "Neuroevolution can discover compact network designs that are hard to specify by hand. The EONS framework evolves the topology, weights, thresholds and delays of neuromorphic spiking networks without gradients. We tested whether giving integrate-and-fire (IF) neurons an activity-dependent calcium current (Ca-IF neurons) improves evolved networks for EEG seizure detection, with calcium parameters fixed, shared across a network, or evolved for each neuron. On 10 held-out CHB-MIT patients never seen in training, per-neuron calcium raised the record-level Matthews correlation coefficient (MCC) from 0.592 to 0.726 over 20 independent runs (p = 0.008) and lowered the false-alarm rate from 0.17 to 0.10. Fixed or per-network calcium gave no significant benefit. IF networks with evolved synaptic delays of 1-3 ticks gave a similar gain (p = 0.005), whereas axonal delays did not. On Siena, with unchanged settings, per-neuron calcium gained +0.096 MCC over IF in one patient-disjoint split (p = 0.011) and +0.059 in the other (p = 0.052). These results suggest that calcium and delays may make the evolutionary search more effective, and motivate testing on more data and in neuromorphic hardware.",
+    "authors": [
+      "Tuba Aksoy"
+    ],
+    "published": "2026-11-02T19:13:02Z",
+    "primary": "q-bio.NC",
+    "comment": "16 pages, 5 figures, 4 tables, plus three supplementary tables and one supplementary figure",
+    "url": "https://arxiv.org/abs/2611.03841",
+    "pdf": "https://arxiv.org/pdf/2611.03841v1"
+  },
+  "2611.04274": {
+    "id": "2611.04274",
+    "title": "Reasoning about Shared-Qubit Concurrency in Quantum Computing",
+    "abstract": "In this paper, we develop a semantic model for the parallel execution of quantum circuits, providing a formal foundation for studying shared-qubit concurrency in quantum computing. As in classical shared-memory concurrency, parallel quantum circuits may interfere with one another through operations on shared qubits. However, quantum entanglement and the noncommutativity of quantum operations introduce additional challenges for reasoning about their correctness. To address these challenges, we generalise the classical Owicki-Gries method to quantum computing at the level of quantum circuits. Our approach enables compositional reasoning about parallel quantum circuits by separating the verification of individual components from the analysis of interference between them. We formulate proof rules for establishing the correctness of parallel quantum circuits and prove their soundness with respect to the proposed semantic model.",
+    "authors": [
+      "Mingsheng Ying"
+    ],
+    "published": "2026-11-03T04:02:30Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.04274",
+    "pdf": "https://arxiv.org/pdf/2611.04274v1"
+  },
+  "2611.04253": {
+    "id": "2611.04253",
+    "title": "UMLoad: Fast On-Demand Model Loading on Unified Memory Architecture",
+    "abstract": "On-demand model loading dominates response latency for interactive on-device AI, yet unified memory architectures (UMAs), now common on edge devices, should make it cheap by placing weights in memory the GPU already sees. However, frameworks still use the loading flow built for discrete GPUs, leaving significant inefficiencies. This paper presents UMLoad, a system-level model-loading accelerator that decouples a framework's logical allocations from their physical page backing. UMLoad uses on-demand reconstruction to eliminate the weight copy while preserving copy independence, and GPU-assisted page zeroing to accelerate runtime allocation while preserving its security guarantee. Implemented on Intel, AMD, and NVIDIA UMA platforms and evaluated with llama.cpp, PyTorch, and vLLM across six models, UMLoad reduces average loading time by 36.6%-71.9% over vanilla and 19.9%-62.7% over pipelined loaders, and cuts mean LLM-routing time to first token (TTFT) by 51.3%-59.3% and model-backed tool completion latency by 10.2%-31.6%.",
+    "authors": [
+      "Zimeng Wang",
+      "Jinrong Yang",
+      "Rong Chen"
+    ],
+    "published": "2026-11-03T03:44:38Z",
+    "primary": "cs.OS",
+    "comment": "17 pages, 12 figures, 2 tables",
+    "url": "https://arxiv.org/abs/2611.04253",
+    "pdf": "https://arxiv.org/pdf/2611.04253v1"
+  },
+  "2611.04178": {
+    "id": "2611.04178",
+    "title": "Ramanujan-type congruences for the smallest parts function",
+    "abstract": "In a famous paper of Andrews, he defined and studied the smallest parts function $\\operatorname{spt}(n)$. He showed that it satisfies the three Ramanujan-type congruences: \\[ \\operatorname{spt}(5n+4)\\equiv0\\pmod5,\\qquad \\operatorname{spt}(7n+5)\\equiv0\\pmod7,\\qquad \\operatorname{spt}(13n+6)\\equiv0\\pmod{13}. \\] In a recent preprint, the author showed that these are the only \"canonical'' congruences. Here, we complete the classification of Ramanujan-type congruences for $\\operatorname{spt}$, showing that if $\\operatorname{spt}(\\ell n+b)\\equiv0\\pmod\\ell$ for all $n\\geq0$, where $\\ell\\geq5$ is prime, then $(\\ell,b)\\in\\{(5,4),(7,5),(13,6)\\}.$ That is, Andrews' congruences are the only Ramanujan-type congruences for $\\operatorname{spt}(n)$. These results have been verified in Lean by AxiomProver.",
+    "authors": [
+      "Larry Rolen"
+    ],
+    "published": "2026-11-03T02:09:51Z",
+    "primary": "math.NT",
+    "comment": "8 pages",
+    "url": "https://arxiv.org/abs/2611.04178",
+    "pdf": "https://arxiv.org/pdf/2611.04178v1"
+  },
+  "2611.03929": {
+    "id": "2611.03929",
+    "title": "Early-age formation of MgO-SiO$_2$ binders and the effect of hydromagnesite and dehydrated hydromagnesite: An in situ synchrotron X-ray diffraction and pair distribution function study",
+    "abstract": "MgO-SiO$_2$ binders are promising low-CO$_2$ alternatives to Portland cement that can permanently store CO$_2$ by incorporating magnesium carbonate phases. Adding a magnesium carbonate such as nesquehonite or hydromagnesite is known to change the initial hydration product from crystalline brucite (Mg(OH)$_2$) to disordered hydrous carbonate-containing brucite (HCB), yet how these binders evolve during the initial hours of reaction remains largely unknown. Here, in situ synchrotron X-ray diffraction (XRD) and pair distribution function (PDF) analysis follows an MgO-SiO$_2$ paste with and without hydromagnesite (HY, Mg$_5$(CO$_3$)$_4$(OH)$_2$$\\cdot$4H$_2$O) or dehydrated hydromagnesite (DHY, HY heated at 325 °C to remove water) over the first 24 h, with ex situ measurements to 42 days. Real space phase quantification reveals that magnesium-silicate-hydrate (M-S-H) is detected in the first scan (~45 min) of every paste, before formation of any brucite or HCB. The PDF results also show that in the neat MgO-SiO$_2$ paste, half of the M-S-H present at 42 days has formed by 24 h, while no M-S-H is detected by XRD at any age due to the intrinsic disorder present in this phase. Both carbonate sources (HY and DHY) are found to increase the extent of MgO dissolution, where no unreacted MgO is detected at 24 h in contrast with >7 days for the neat paste. However, DHY is seen to slow the initial stages of MgO dissolution (prior to ~6 h) compared with the neat paste, a period during which significant DHY rehydration is seen to occur without any HCB formation. Hence, this investigation shows that the onset of HCB precipitation in MgO-SiO$_2$-(D)HY paste is influenced by the hydration state of the DHY phase, where precipitation is delayed while DHY is rehydrating.",
+    "authors": [
+      "Jordan Mravca-Bailey",
+      "Claire E. White"
+    ],
+    "published": "2026-11-02T20:32:01Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.03929",
+    "pdf": "https://arxiv.org/pdf/2611.03929v1"
+  },
+  "2611.03897": {
+    "id": "2611.03897",
+    "title": "Fly Whiskers Meet LiDAR: Robust Navigation under Sensor Failure",
+    "abstract": "We extend FLYNN, a leaky integrator recurrent network wired on the Drosophila melanogaster connectome, with a 32-ray 2D LiDAR interface that requires no learned fusion layer beyond a scalar input gain. A 270 degree frontal scan at 8 m range is injected as inverted proximity into the 37 BM Vib head-bristle neurons. Across 24 paired comparisons in a four- state vision matrix with LiDAR on or off, FLYNN-LiDAR has 17 significant wins, 5 nonsignificant comparisons, and 2 significant losses against three LiDAR-capable baselines. Both losses are to MobileNet with the left eye off. With full vision, FLYNN- LiDAR reaches 96.6% success. Under total vision loss, the scan raises success from 45.2% to 64.6%; the baselines reach 44.6% to 56.6% with the scan on. Under out of distribution textures, it is the only LiDAR-capable model whose success improves with the scan (44.2% to 58.4%); both CNNs score 0%, and SmallWorld declines from 26.8% to 7.4%. Under periodic vision dropout, FLYNN-LiDAR achieves 93.6% and 89.6% success at 25% and 50% duty with fewer collisions. Profiling the evaluated forward paths gives 3.93M multiply accumulate operations per step; EfficientNet and MobileNet require 4.60x and 2.94x as many. Final- state analysis shows near-linear sensory superposition (cosine 0.9955).",
+    "authors": [
+      "Ali Mahzarnia",
+      "Homayoun Jamshidi"
+    ],
+    "published": "2026-11-02T20:05:14Z",
+    "primary": "q-bio.NC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.03897",
+    "pdf": "https://arxiv.org/pdf/2611.03897v1"
+  },
+  "2611.04008": {
+    "id": "2611.04008",
+    "title": "Triboelectric nanogenerators across length scales: linking materials, multiscale modelling and applications",
+    "abstract": "Triboelectric nanogenerators (TENGs) convert low-frequency mechanical energy into electricity and enable self-powered sensing. Their performance depends on interactions among material properties, surface morphology, contact mechanics, charge generation and external circuits. This review examines these interactions across length scales to assess how material and interface descriptions support predictive device design. Polymeric, inorganic, composite and natural materials are discussed in relation to charge generation and retention, mechanical compliance, durability and application requirements. Modelling approaches span molecular dynamics and first-principles calculations, rough-surface contact mechanics, device-scale electrostatics and equivalent circuits. Their capabilities are assessed through the inputs they require, the quantities they predict and the experimental evidence used for validation. Particular attention is given to prescribed surface charge density, idealised geometries and nominal contact-area assumptions, which constrain predictions under realistic loading conditions. Applications are organised by macroscale, milliscale and microscale device dimensions to examine requirements for materials, architecture and integration. The review identifies evolving real contact area and contact-dependent charge generation and decay as critical links between interfacial behaviour and electrical output. A staged validation strategy is proposed for contact mechanics, electrostatics and circuit response, with independent testing beyond calibration conditions. These priorities guide the development of multiscale models and reliable TENG systems.",
+    "authors": [
+      "MD Tanzib Ehsan Sanglap",
+      "Ans Al Rashid",
+      "Abdullah Sayam",
+      "Injamamul Arief",
+      "Andrei G. Shvarts",
+      "Lukasz Kaczmarczyk",
+      "Muammer Koc",
+      "Mokarram Hossain"
+    ],
+    "published": "2026-11-02T21:50:31Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "44 pages, 14 figures",
+    "url": "https://arxiv.org/abs/2611.04008",
+    "pdf": "https://arxiv.org/pdf/2611.04008v1"
+  },
+  "2611.03071": {
+    "id": "2611.03071",
+    "title": "Intrinsic network dynamics catalyze switching in functional connectivity states of the brain",
+    "abstract": "Dynamic functional connectivity (dFC) reflects ongoing reconfiguration of large-scale brain networks, but the temporal organization and network processes underlying spontaneous state transitions remain poorly understood. We developed functional connectivity state switching (FCSS), a phase-coherence-based framework that tracks multiscale changes in dominant whole-brain connectivity configurations. In Human Connectome Project fMRI, FCSS was strongly evoked by cognitive state and condition switches, and distinct transition dynamics differentially predicted working-memory performance. During rest, spontaneous FCSS was characterized by progressive changes in network segregation, integration, and cross-network communication as connectivity approached a switching event. Critically, event-related analysis time-locked to spontaneous FCSS revealed opposing pre-switch dynamics: salience-network contribution increased while default-mode-network contribution decreased, suggesting coordinated engagement and disengagement of these networks before switching. This reciprocal reweighting may provide a network-level mechanism for spontaneous FC reconfiguration. Together, these findings identify both global reorganization and network-specific processes underlying spontaneous and task-evoked brain-state transitions in the human brain.",
+    "authors": [
+      "Steven S. Kang",
+      "Dae-Jin Kim"
+    ],
+    "published": "2026-11-02T12:58:21Z",
+    "primary": "q-bio.NC",
+    "comment": "15 pages, 5 figures",
+    "url": "https://arxiv.org/abs/2611.03071",
+    "pdf": "https://arxiv.org/pdf/2611.03071v1"
+  },
+  "2611.04179": {
+    "id": "2611.04179",
+    "title": "Hardware-Efficient Reinforcement-Learned Scheduling for Quantum LDPC Decoders",
+    "abstract": "Quantum low-density parity-check (QLDPC) codes are promising for fault-tolerant quantum computing, but their decoding algorithms present significant hardware implementation challenges. Reinforcement-learned sequential belief propagation (RL-S) improves the error-correction performance of conventional belief propagation (BP) through adaptive variable-node scheduling. However, its heap-based priority management introduces substantial hardware overhead. This paper presents hardware implementations of BP, RL-S, and bucket-based reinforcement-learned BP (BRL-S) for the [[288,12,18]] bivariate bicycle QLDPC code. The BRL-S architectures employ quantized priorities and first-in, first-out (FIFO) buckets to simplify scheduling. Three configurations with two, four, and eight priority levels are evaluated. FPGA synthesis results demonstrate that BRL-S reduces lookup-table utilization by approximately 68--72% compared with RL-S. ASIC synthesis further shows reductions of 63--67% in area and 64--69% in estimated power consumption. These results demonstrate that bucket-based scheduling substantially improves the hardware efficiency of reinforcement-learned QLDPC decoders.",
+    "authors": [
+      "Mohsen Moradi",
+      "Vahid Nourozi",
+      "Wei Tang",
+      "David Mitchell"
+    ],
+    "published": "2026-11-03T02:14:49Z",
+    "primary": "cs.IT",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.04179",
+    "pdf": "https://arxiv.org/pdf/2611.04179v1"
+  },
+  "2611.04144": {
+    "id": "2611.04144",
+    "title": "HyPAIC: Personal AI Computer with High Bandwidth Flash for High Performance Trillion-Parameter LLM Inference",
+    "abstract": "LLMs have rapidly expanded from simple chatbots to agentic AI, where models directly use tools to solve complex problems. To improve problem solving, most frontier LLMs adopt an MoE architecture, pushing model sizes into the trillion-parameter regime. While cloud services have dominated large-scale LLM inference, cost and security concerns drive demand for on-premises deployment. Thus, GPU manufacturers have introduced personal AI computers (PAICs). However, existing PAICs with LPDDR-based unified main memory suffer from severe capacity limitations, restricting hostable LLM size on a single device. If most memory holds model weights, little remains for the KV cache, reducing supported context length. In this paper, we propose HyPAIC, a PAIC architecture incorporating HBF to overcome these memory constraints. HyPAIC stores read-only model weights in HBF and mutable runtime data in LPDDR. HBF offers over 10x the capacity of HBM with comparable TB/s-scale bandwidth. HyPAIC addresses HBF's access latency, limited write endurance, and page-level access granularity through prefetching, read-only weight placement, and coarse-grained weight accesses, respectively; power and cooling remain significant implementation challenges. Through simulation-based evaluation, we show that a single HyPAIC improves end-to-end system throughput by up to 1.04x and TDP-normalized throughput by up to 3.59x during 1T-parameter MoE inference versus the aggregate of eight baseline systems without HBF, one HyPAIC thus approaches the raw performance of eight baselines with far superior power efficiency. For small model inference, HyPAIC increases the maximum number of concurrent tasks sustaining at least 50 decode TPS per task by up to 4x, enhancing user experience and productivity. Although HBF specifications are still evolving, this study demonstrates strong architectural synergy between HBF and PAICs.",
+    "authors": [
+      "Minho Ha",
+      "Myunghyun Rhee",
+      "Euiseok Kim",
+      "Hoshik Kim"
+    ],
+    "published": "2026-11-03T01:36:46Z",
+    "primary": "cs.AR",
+    "comment": "14 pages, 16 figures, 4 tables",
+    "url": "https://arxiv.org/abs/2611.04144",
+    "pdf": "https://arxiv.org/pdf/2611.04144v1"
+  },
+  "2611.04273": {
+    "id": "2611.04273",
+    "title": "Deep Learning Compilers: Architecture, Optimization, and Empirical Characterization",
+    "abstract": "As deep learning (DL) models become increasingly complex and hardware architectures grow more heterogeneous, DL compilers play a critical role in optimizing computational efficiency and enabling scalable deployment. This paper presents a systematic analysis of DL compilers, covering their architectural evolution, compilation workflows, optimization techniques, and emerging research directions. We organize DL compiler architectures into frontend, middle-end, and backend stages, emphasizing the role of the middle-end in connecting high-level model representations with hardware-specific optimizations. We further examine representative DL compilers and recent optimization techniques across different compilation stages. Beyond architectural and technical analysis, we conduct an empirical evaluation of compiler behaviors to investigate the effectiveness of graph optimization, compilation overhead, and dynamic-shape handling. Experiments using PyTorch/TorchInductor on an NVIDIA RTX A6000 demonstrate that compiler benefits depend strongly on workload characteristics, with speedups of up to 8.21\\times for fusion-friendly computation graphs, while other workloads exhibit limited improvements. Our results further reveal that compilation overhead can require thousands of executions to amortize, and dynamic-shape compilation reduces cumulative shape-transition costs by approximately 70\\% at the expense of modest steady-state performance degradation. By combining systematic architectural analysis with quantitative experimental evidence, this work provides insights into the design, optimization, and practical deployment of modern DL compilers.",
+    "authors": [
+      "Jinghao Wen",
+      "Ruixuan Wang",
+      "Xun Jiao"
+    ],
+    "published": "2026-11-03T04:02:15Z",
+    "primary": "cs.LG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.04273",
+    "pdf": "https://arxiv.org/pdf/2611.04273v1"
+  },
+  "2611.04229": {
+    "id": "2611.04229",
+    "title": "Thermally enhanced magnon-phonon resonance in van der Waals antiferromagnet FePS3",
+    "abstract": "Strong coupling between collective excitations provides a route to controlling quantum states of matter, yet its evolution under thermal fluctuations remains poorly understood. In the van der Waals antiferromagnet FePS3, strong magnon-phonon coupling is established at low temperatures. At the same time, recent terahertz experiments revealed the counterintuitive stabilization of a long-lived metastable magnetic state with an exceedingly long lifetime of 5 msec at the antiferromagnetic transition, not at the base temperature. This was attributed to a strongly coupled spin-lattice scenario, challenging the conventional wisdom that increased magnetic and thermal fluctuations near TN should be detrimental to the coherent control of a metastable phase. Thus it requires an independent examination for correct understanding. Using high-field Raman spectroscopy, we systematically investigate the temperature evolution of magnon-phonon coupling in FePS3. We observe a pronounced avoided crossing between magnon and phonon modes across a wide range of temperatures and find that the coupling strength remains remarkably robust with increasing temperatures. The zero-field magnon-phonon detuning decreases progressively with warming, driving the system toward resonance and thereby enhancing their hybridization near the transition temperature. This anomalous thermal evolution provides the crucial key to understanding the unusual terahertz-driven states recently reported in FePS3. More broadly, our results highlight van der Waals magnets as a promising platform for strong coupling among collective excitations and for controlling magnetic states through light-matter interactions.",
+    "authors": [
+      "Kai-Xuan Zhang",
+      "Beom Hyun Kim",
+      "Seungbok Lee",
+      "Hao Li",
+      "Eugene Park",
+      "Heejun Yang",
+      "Feng Jin",
+      "Qingming Zhang",
+      "Je-Geun Park"
+    ],
+    "published": "2026-11-03T03:09:13Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "31 pages, 4 main figures, 17 supporting figures",
+    "url": "https://arxiv.org/abs/2611.04229",
+    "pdf": "https://arxiv.org/pdf/2611.04229v1"
+  },
+  "2611.04184": {
+    "id": "2611.04184",
+    "title": "Short permutation pattern waves: The complete length-five classification",
+    "abstract": "For a permutation pi in Sk, a pi-wave is an increasing sequence of integers whose consecutive gaps have relative order pi. Let g(pi, n) be the maximum cardinality of a pi-wave-free subset of [n], and let P(pi, r) be the least integer N such that every r-coloring of [N] contains a monochromatic pi-wave. We determine the asymptotic orders of both functions for every permutation of length at most five. Existing upper bounds and weak-wave constructions provide sharp bounds for all but eight length-five patterns in S_5. For these eight exceptional alternating patterns, we establish g(pi, n) = Theta((log n)squared) and P(pi, r) = Theta(r(log r)squared).",
+    "authors": [
+      "Lihong Qiu",
+      "Minglei Mao",
+      "Yaping Mao"
+    ],
+    "published": "2026-11-03T02:20:58Z",
+    "primary": "math.CO",
+    "comment": "20 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2611.04184",
+    "pdf": "https://arxiv.org/pdf/2611.04184v1"
+  },
+  "2611.04121": {
+    "id": "2611.04121",
+    "title": "Bicarbonate/carbonic acid equilibria in aqueous solutions: Conformational Dynamics, Ion-Pair Speciation, and Free Energy Landscapes from Ab Initio Molecular Dynamics and Metadynamics",
+    "abstract": "Carbonic acid (H2CO3) is connected with the dissolved CO2 and bicarbonate (HCO3-) equilibria in aqueous solutions. Its two elementary reactions in water, acid dissociation and dehydration to CO2, are difficult to resolve because both are coupled to proton transfer through hydrogen-bonded networks. In this work, we combine 0.5 ns of unbiased PBE-D3 molecular dynamics of 1 molar solution of H2CO3 with metadynamics on the O - H coordination (H2CO3 = HCO3- + H+) and the C - O distance of the leaving hydroxyl (H2CO3 <=> CO2 + H2O). These unbiased trajectories show frequent cis-cis <=> cis-trans interconversion through long-lived bicarbonate (well separated from solvated proton, H3O+, and also mediated by a short-lived three-water [H2O...H3O+...H2O] ring that acts as a solvent-shared ion pair (SSIP); only 16-23% of deprotonation events reach a solvent-separated ion pair (SShIP). Resolving ion-pairs as SSIP for proper reaction leads to an improved estimate of pKa1 from 1.1 to 2.4, toward the experimental 3.45-3.59 (measured at supposedly infinite dilution). Further, metadynamics simulations provide a dehydration barrier of 17.8 (1D) and 15.3 kcal/mol (2D), suggesting that the final product CO2 + H2O is 2.8 kcal/mol below H2CO3. Our two-dimensional free energy surface also shows that C--O cleavage proceeds through the CO2 + OH- which further goes down by 9.9 kcal/mol to product CO2 + H2O.",
+    "authors": [
+      "Prabhat Prakash",
+      "Karnamohit Ranka",
+      "Frances A. Houle",
+      "William A. Goddard"
+    ],
+    "published": "2026-11-03T00:54:30Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.04121",
+    "pdf": "https://arxiv.org/pdf/2611.04121v1"
   }
 }
