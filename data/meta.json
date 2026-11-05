@@ -2162,5 +2162,268 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.04121",
     "pdf": "https://arxiv.org/pdf/2611.04121v1"
+  },
+  "2611.03806": {
+    "id": "2611.03806",
+    "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
+    "abstract": "Genomic foundation models are increasingly used to propose DNA sequences and edits. But successful design requires capabilities that current benchmarks do not measure. Here we introduce BEND 2.0 (BENchmark for DNA language models), which tests how well models predict the effects of DNA changes and whether these predictions can guide sequence design. Across eight tasks built on five experimental datasets, we find that model choice and how representations are accessed both affect performance. Linear readouts fitted to frozen representations can match or exceed models' native outputs, and functional post-training substantially improves the models' capabilities. Linear readouts transfer well across experimental assays and genes, suggesting that models capture functional patterns beyond the data used to fit individual predictors. At the same time, strong prediction of average effects can conceal weaker prediction of context-specific effects, and accurate prediction of combined mutation effects does not imply accurate prediction of their interactions. In design tasks, model predictions can reduce the number of candidates needed to find a desired response, but still leave substantial room for better design choices, particularly for context-specific and multi-cell objectives. Our benchmark reveals that genomic models now display signs of general utility but have yet to saturate on performance in even simple tasks.",
+    "authors": [
+      "Andreas Bjerregaard",
+      "Rachael DeVries",
+      "Dionysia Danai Brilli",
+      "Panagiotis Antoniadis",
+      "Yan Li",
+      "Anders Krogh",
+      "Wouter Boomsma",
+      "Ole Winther",
+      "Frederikke Isa Marin"
+    ],
+    "published": "2026-11-02T19:00:07Z",
+    "primary": "q-bio.GN",
+    "comment": "Leaderboard on https://machinelearninglifescience.github.io/BEND2 and code on https://github.com/machinelearninglifescience/BEND2",
+    "url": "https://arxiv.org/abs/2611.03806",
+    "pdf": "https://arxiv.org/pdf/2611.03806v1"
+  },
+  "2611.05947": {
+    "id": "2611.05947",
+    "title": "Gravitational-Wave Microlensing as a Probe of Compact Object Population",
+    "abstract": "The abundance of compact objects ranging from stellar to intermediate masses ($\\sim 1 - 10^{5}M_{\\odot}$) remains poorly constrained, particularly for populations such as primordial black holes and dark matter subhalos that emit little or no electromagnetic radiation. Gravitational-wave (GW) microlensing provides a complementary way to probe these populations through wave-optics effects imprinted on the GW signals, with implications for astrophysical and cosmological inference. We develop a hierarchical Bayesian framework to infer the population properties of microlenses from an ensemble of microlensed GW events, constraining the slope of the power-law lens mass function ($α_{\\rm ML}$), the lens number density ($n_0$), and the fraction of dark matter in compact lenses ($f_{\\rm DM}$). Using simulated microlensed GW signals drawn from a realistic binary black hole population, we find that $\\sim 100$ detected microlensed events are able to constrain both $α_{\\rm ML}$ and $n_0$, although a degeneracy between the two remains. For a low-mass-dominated lens population ($α_{\\rm ML}=2$) with $n_0=10^6~\\mathrm{Mpc}^{-3}$, a three-year observation at the O4 sensitivity yields $\\sim 130$ detectable microlensed events and recovers the injected dark-matter fraction, $f_{\\rm DM}\\simeq 1.2 \\times 10^{-4}$, with a 90% credible interval of $7.3 \\times 10^{-5} \\lesssim f_{\\rm DM} \\lesssim 1.8 \\times 10^{-4}$.",
+    "authors": [
+      "Eungwang Seo",
+      "Jose María Ezquiaga",
+      "Martin Hendry"
+    ],
+    "published": "2026-11-04T04:39:26Z",
+    "primary": "astro-ph.CO",
+    "comment": "17 pages, 7 figures, 2 tables",
+    "url": "https://arxiv.org/abs/2611.05947",
+    "pdf": "https://arxiv.org/pdf/2611.05947v1"
+  },
+  "2611.05912": {
+    "id": "2611.05912",
+    "title": "Algorithmic Wave-Particle Duality: Pathfinding in Welded Trees is Hard",
+    "abstract": "In the welded trees problem, an algorithm navigates a randomly labeled graph formed from two binary trees joined at their leaves through a \"weld\" of connecting edges. A quantum walk can navigate from root to root exponentially faster than any classical algorithm. However, recording its path destroys the constructive interference responsible for the speedup, leaving open whether some quantum algorithm can efficiently find a path between the roots. We prove that, for trees of height $n$, the quantum query complexity of finding a path between the roots with constant probability is $\\tildeΘ(2^{n/3})$. This establishes an algorithmic wave-particle duality, adapting the double-slit experiment to the high-complexity regime: interference between many paths lets a quantum algorithm reach the exit efficiently, but finding a single path (the algorithmic analog of the route of a particle) requires exponentially many queries. Furthermore, the bound is tight, matching the cost of a quantum algorithm that finds collisions between paths from each root to the weld. Our proof uses the compressed permutation oracle to track the information about the graph that an algorithm retains and forgets. We show that the compressed database remains close to a space of states that do not record a path between the roots by bounding the error introduced by each compressed oracle query.",
+    "authors": [
+      "Joseph Carolan",
+      "Andrew M. Childs",
+      "Matthew Coudron",
+      "Amin Shiraz Gilani",
+      "David Miloschewsky",
+      "Supartha Podder"
+    ],
+    "published": "2026-11-04T04:02:14Z",
+    "primary": "quant-ph",
+    "comment": "Subsumes our prior works https://arxiv.org/abs/2609.26712 and https://arxiv.org/abs/2609.20651",
+    "url": "https://arxiv.org/abs/2611.05912",
+    "pdf": "https://arxiv.org/pdf/2611.05912v1"
+  },
+  "2611.05647": {
+    "id": "2611.05647",
+    "title": "Low cross-plane thermal conductivity of $κ$-Ga$_2$O$_3$ thin films",
+    "abstract": "The thermal conductivities of (001) $κ$-Ga$_2$O$_3$ thin films deposited on $c$-plane sapphire substrates were measured with frequency-domain thermoreflectance (FDTR). The thermal conductivity increases from 1.83 $^{+0.19}_{-0.18}$ W/m$\\cdot$K to 2.26 $^{+0.35}_{-0.40}$ W/m$\\cdot$K as the thicknesses increase from 159 nm to 689 nm. This weak thickness dependence indicates that the majority of the intrinsic phonon mean free paths are smaller than the range of investigated film thicknesses. First-principles-based calculations that include phonon-phonon and phonon-boundary scattering capture this size-dependent behavior and support our experimental observation. Temperature-dependent measurements of a 689 nm film from 293 to 400 K show a decrease in thermal conductivity with increasing temperature due to enhanced phonon-phonon scattering. A weaker temperature dependence is observed in a 159 nm film where phonon-boundary scattering becomes more prominent. At comparable film thicknesses, our measured $κ$-Ga$_2$O$_3$ films exhibit lower values of cross-plane thermal conductivity than the other experimentally measured Ga$_2$O$_3$ polymorphs. Our experimental observations are supported by prior predictions, which suggest that the low thermal conductivity of $κ$-Ga$_2$O$_3$ results from its complex crystal structure, which leads to increased anharmonicity and lower phonon group velocities relative to other polymorphs. Thermal management strategies, such as integration with high-thermal-conductivity substrates, may thus be required to mitigate self-heating for $κ$-Ga$_2$O$_3$-based electronic devices.",
+    "authors": [
+      "Seungwon Park",
+      "Jingyu Tang",
+      "Minsung An",
+      "Alan J. H. McGaughey",
+      "Lisa M. Porter",
+      "Robert F. Davis",
+      "Jonathan A. Malen"
+    ],
+    "published": "2026-11-03T21:31:42Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.05647",
+    "pdf": "https://arxiv.org/pdf/2611.05647v1"
+  },
+  "2611.05868": {
+    "id": "2611.05868",
+    "title": "Quantum Advantage in Sensing and Imaging through Coherent Nuisance Suppression",
+    "abstract": "Many sensing and imaging problems must contend with unknown nuisance parameters such as aberrations, background fields, and drift, and the cost of removing these noise sources can dominate the sample budget. In contrast to classical receivers, a quantum receiver can processes samples jointly to directly access observables in which common nuisance is suppressed. We introduce a relational Fourier sampling algorithm for optimal, source-independent imaging with a programmable quantum camera, which uses quantum pixels and a quantum computer to capture and process photon states. We demonstrate its relevance for general astronomical imaging as well as super-resolution and transient-object tracking through drifting atmospheric turbulence. A quantum camera that resolves an optical wavefront across $2^q$ spatial modes using $q$ receiving qubits, with a full-rank and strongly-correlated nuisance over those modes, can yield an exponential sample-complexity reduction of $\\exp[Ω(2^q)]$. For typical seeing conditions at leading ground-based observatories, we predict more than three orders of magnitude fewer photons to resolve point-source positions using only 15 processing qubits and a depth-9 circuit. Our work identifies coherent nuisance suppression as a novel mechanism for provable quantum advantage with direct relevance to many sensing tasks.",
+    "authors": [
+      "Maxim Sirotin",
+      "Aleksandr Mokeev",
+      "Ishaan Kannan",
+      "Julian C. Christou",
+      "Jayadev Rajagopal",
+      "Babak Saif",
+      "Mikhail D. Lukin",
+      "Johannes Borregaard"
+    ],
+    "published": "2026-11-04T03:02:27Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.05868",
+    "pdf": "https://arxiv.org/pdf/2611.05868v1"
+  },
+  "2611.05861": {
+    "id": "2611.05861",
+    "title": "A Complete Characterization of $q$-Ary $2$-Designs in Doubly-Extended Reed-Solomon Codes",
+    "abstract": "Let $\\mathcal{C}_k$ be the doubly-extended Reed--Solomon code with parameters $[q+1, k, q-k+2]_q$. We give a complete characterization of when its codewords of a fixed weight form $q$-ary 2-designs. The main ingredient is an exact criterion showing that the number of $r$-subsets of $\\mathbb{F}_q^*$ with a prescribed product is independent of that product if and only if $\\gcd(r, q-1)=1$. Applying this criterion to the minimum-weight codewords of $\\mathcal{C}_k$, we prove that they form a $q$-ary 2-design if and only if $\\gcd(k-1, q-1)=1$. We further establish a propagation result for MDS codes showing that the $q$-ary 2-design property at minimum weight implies the same property at every nonzero weight. Consequently, $\\mathcal{C}_k$ holds $q$-ary 2-designs at all nonzero weights if and only if $\\gcd(k-1, q-1)=1$.",
+    "authors": [
+      "Xinghao Wu",
+      "Junling Zhou"
+    ],
+    "published": "2026-11-04T02:52:03Z",
+    "primary": "math.CO",
+    "comment": "6 pages",
+    "url": "https://arxiv.org/abs/2611.05861",
+    "pdf": "https://arxiv.org/pdf/2611.05861v1"
+  },
+  "2611.05834": {
+    "id": "2611.05834",
+    "title": "Gate-reconfigurable Josephson microwave source limited by thermal noise",
+    "abstract": "Josephson junctions are compact on-chip sources of coherent microwave and terahertz radiation, but conventional radiators couple the emission frequency, output power and dissipation through a single bias voltage. Here we demonstrate a gate-reconfigurable Josephson microwave radiator based on a graphene weak link integrated with a separately gated graphene shunt resistor. The bias voltage sets the Josephson frequency, while the local gates tune the Josephson current and the total device resistance, enabling electrostatic control of emitted power at a chosen frequency. The device resolves Josephson harmonics up to fourth order, and its radiation power scales with source current and impedance as expected from a lumped-element circuit model. We further show that the emission linewidth is quantitatively described by Johnson-Nyquist noise at the electron temperature. The linewidth therefore provides an on-chip thermometer under bias, with the resistance-dependent heating captured by a minimal heat-balance model based on Wiedemann-Franz diffusion and electron-phonon coupling.",
+    "authors": [
+      "Jayeon Kim",
+      "Seong Jang",
+      "Seunghan Lee",
+      "Dongsung T. Park",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Gil-Ho Lee"
+    ],
+    "published": "2026-11-04T02:20:58Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "12 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.05834",
+    "pdf": "https://arxiv.org/pdf/2611.05834v1"
+  },
+  "2611.05815": {
+    "id": "2611.05815",
+    "title": "Sympathetic Cooling of Ionic Fullerenes with Ultracold Atoms to Millikelvin Temperatures",
+    "abstract": "Cooling complex molecular ions to millikelvin temperatures remains a major challenge because their intricate internal structures prevent laser cooling. Here, we propose to use an ultracold gas of Cd atoms to efficiently cool C$_{60}^+$ ions to average kinetic energies of approximately 20 mK, following an initial precooling stage with He buffer gas. Our approach is based on full molecular dynamics simulations using accurate ion-atom interaction potentials derived from high-level electronic structure methods. Furthermore, using a Monte Carlo approach, we predict the formation of C$_{60}^+$ Coulomb crystals supported solely by collisions with the buffer gas. The probability of reaching these cold states shows a pronounced dependence on the number of trapped ions, revealing the competition between neutral-atom cooling and many-ion dynamics in radio-frequency traps.",
+    "authors": [
+      "Saajid Chowdhury",
+      "Zhongqi Liang",
+      "Yu Wang",
+      "Jesús Pérez-Ríos"
+    ],
+    "published": "2026-11-04T01:47:27Z",
+    "primary": "physics.atom-ph",
+    "comment": "7 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.05815",
+    "pdf": "https://arxiv.org/pdf/2611.05815v1"
+  },
+  "2611.05688": {
+    "id": "2611.05688",
+    "title": "Medial Model of Elastic Curve Contacts, from Clasps to Knits",
+    "abstract": "Materials constructed from interlocking and tangled fibers are challenging to model and understand due in part to the complex interplay between fiber shape and contact mechanics. Much of our intuition about contact mechanics comes from the Hertzian description, which is based on interactions between convex bodies. However, fibers often form clasp shapes, which involve saddle-shaped contact surfaces; the ability for two interacting bodies to conform to each other along a saddle surface confounds many existing mechanical contact models. Following an observation that contact surfaces between fibers tend to look like minimal, constant mean-curvature surfaces, we seek to test this hypothesis and provide a direct link to geometric modeling methods. To do this, we leverage the medial axis transformation, which generalizes the notion of a Voronoi tessellation to generating curves and surfaces. Through computational studies on an orthogonal clasp and a simple knit structure, we find that the medial axis transformation provides a reasonable model for contact surfaces between identical curves. We also show that a generalization of the medial axis transformation based on radical Voronoi tessellations can be used to well-approximate contact surfaces between non-identical curves. We apply this ``radical axis transform'' to curves of different radii and demonstrate a trend for surfaces to adopt finite mean curvature. Our results may point the way towards more sophisticated geometric methods for modeling tangles.",
+    "authors": [
+      "Kathryn Chain",
+      "Haoye Sun",
+      "Michael S. Dimitriyev"
+    ],
+    "published": "2026-11-03T22:19:51Z",
+    "primary": "cond-mat.soft",
+    "comment": "17 pages, 8 figures, submitted as conference proceedings",
+    "url": "https://arxiv.org/abs/2611.05688",
+    "pdf": "https://arxiv.org/pdf/2611.05688v1"
+  },
+  "2611.04565": {
+    "id": "2611.04565",
+    "title": "Curriculum unlearning in humans and neural networks",
+    "abstract": "During learning, humans often benefit from curricula that teach simple rules before exceptions. However, we lack a computational explanation for this phenomenon. Here, using a canonical behavioural task and modelling with neural networks, we develop and test a theory for why simple-to-complex curricula succeed. We show that during learning, both humans and neural networks show simplicity biases, a tendency to learn simple rules that are underfit to the data. In neural networks this bias is accompanied by compression of neural representations. Simple-to-complex curricula help both types of learners overcome this compression, developing representations (and policy) with appropriate dimensionality for the task. We test and confirm a further prediction from this theory: learners that have been pre-exposed to simple tasks and with more compressed initial representations benefit more from curricula. These findings suggest that curricula help with ``unlearning'' of simple rules.",
+    "authors": [
+      "Jirko Rubruck",
+      "Alice Zhang",
+      "Andrew Saxe",
+      "Christopher Summerfield"
+    ],
+    "published": "2026-11-03T09:27:50Z",
+    "primary": "cs.LG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.04565",
+    "pdf": "https://arxiv.org/pdf/2611.04565v1"
+  },
+  "2611.04037": {
+    "id": "2611.04037",
+    "title": "Visualization and Characterization of Gene Group Distribution Patterns Across Genomes",
+    "abstract": "Genes of the same family often lie close together on a chromosome, yet how far apart family members sit, and whether their spacing follows any pattern, has rarely been measured consistently across genomes. We built an interactive web application that places the members of any of the 1,396 FlyBase gene groups on the banded ideogram of the fruit fly (Drosophila melanogaster) and lists each member's neighbours. While browsing it, we found strikingly symmetric gene sets in which consecutive members are almost evenly spaced. In the RAB GTPases, two 5.08 Mb spacings differ by only 634 bp. We also found that distances between neighbouring members fall into two populations: short-range (median 1.8 kb) and long-range (median 2.4 Mb). Although an arm-matched random control suggests that the even spacing (without a minimum-distance filter) as well as the long-range population arise largely by chance, the short-range population turns out to be a genuine clustering signal. We then extended the analysis to human and six other model organisms (mouse, zebrafish, Caenorhabditis elegans, Saccharomyces cerevisiae, Arabidopsis thaliana and maize), and every genome showed the same two populations. The mixture curve of the two is nearly constant across chromosomes in some genomes (Type I: fly, maize, Arabidopsis, C. elegans) but varies across chromosomes in others (Type II: human, mouse, zebrafish, yeast). Thus, across eight eukaryotes, family members lie in two distance populations. The scale of the short-range population follows the spacing of genes in each genome, and the long-range population matches random placement in fly and is consistent with it in the other genomes. Our results also show that visual patterns such as even spacing must be tested against chance before they are interpreted. Our tool and approach give a simple way to explore and compare gene clustering across species.",
+    "authors": [
+      "Yanying Wu"
+    ],
+    "published": "2026-11-02T22:33:01Z",
+    "primary": "q-bio.GN",
+    "comment": "33 pages, 15 figures, 6 tables, 4 supplementary figures",
+    "url": "https://arxiv.org/abs/2611.04037",
+    "pdf": "https://arxiv.org/pdf/2611.04037v1"
+  },
+  "2611.05898": {
+    "id": "2611.05898",
+    "title": "An Asymptotic for E. P. Stein Numbers",
+    "abstract": "Epstein's put-or-take-a-square game is an impartial combinatorial game in which a player may, in each turn, add or subtract the largest square not exceeding the current integer. We study E. P. Stein numbers, the positions from which both legal moves lead directly to positive squares, and prove the following asymptotic formula for the counting function $S_2(X)$ of these positions: \\[ S_2(X)=\\frac{1}{π^2}X^{1/4}\\log X+O(X^{1/4}). \\]",
+    "authors": [
+      "Cameron Rampell"
+    ],
+    "published": "2026-11-04T03:43:59Z",
+    "primary": "math.CO",
+    "comment": "18 pages, 4 figures, 1 table",
+    "url": "https://arxiv.org/abs/2611.05898",
+    "pdf": "https://arxiv.org/pdf/2611.05898v1"
+  },
+  "2611.05810": {
+    "id": "2611.05810",
+    "title": "Atomic-Scale Phonon Engineering for Enhanced Thermal Transport in Wafer-Scale-Bonded $β$-Ga$_{2}$O$_{3}$/SiC Heterostructures",
+    "abstract": "Bonding semiconductors to substrates with high thermal conductivity is a promising way to solve the heat-dissipation problem of materials that transport heat poorly, and it avoids the lattice-matching constraints of conventional epitaxy. However, the lattice mismatch remains, leaving the two materials with mismatched phonon states, while poor interface quality scatters phonons even more. Together, these effects block phonon transport across the bonded interface and make interfacial thermal resistance a critical bottleneck, calling for careful interface engineering. Here, $β$-Ga$_{2}$O$_{3}$/SiC serves as a model system for a phonon-bridging strategy. A nanoscale crystalline Si interlayer is designed and fabricated by wafer bonding to bridge the mismatched phonon states of $β$-Ga$_{2}$O$_{3}$ and SiC. Spatially resolved electron energy-loss spectroscopy and molecular dynamics simulations show that this Si layer opens new channels for phonon transport across the interface. The engineered interface raises the interfacial thermal conductance to 165 MW m$^{-2}$ K$^{-1}$ -- the highest value yet reported for $β$-Ga$_{2}$O$_{3}$/SiC interfaces. These results offer an effective way to manage heat in $β$-Ga$_{2}$O$_{3}$ devices and point to a general approach for building phonon-bridging interfaces that improve heat dissipation in heterogeneous systems.",
+    "authors": [
+      "J. Liu",
+      "R. Mao",
+      "Z. Liu",
+      "Y. Yin",
+      "S. Li",
+      "F. Sun",
+      "B. Liu",
+      "Z. Wang",
+      "P. Gao"
+    ],
+    "published": "2026-11-04T01:35:55Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.05810",
+    "pdf": "https://arxiv.org/pdf/2611.05810v1"
+  },
+  "2611.05751": {
+    "id": "2611.05751",
+    "title": "Scheduling Data to Compute: Hierarchical Data Pipelining for LLM Training on AMD GPUs",
+    "abstract": "Large language models (LLM) have been the key focus of recent machine learning breakthroughs. As the model size grows exponentially, the computation needed for training is astronomical. A GPU can do a huge amount of arithmetic. However, the data its compute units need is not always available when they are ready. This data may still be in slow memory or on another GPU. While the chip waits, expensive compute sits idle, and at scale even a small drop in utilization translates into substantial cost. In this paper, we treat this waiting time as the primary bottleneck. We focus on hardware features designed for explicit data movement. These features load data from off-chip memory onto the chip, rearrange it into the layout the computation requires as it is loaded, and transfer it between GPUs. By orchestrating them, we keep a steady pipeline of data flowing to the compute units so that they remain busy. We present kernel and framework implementations that address this bottleneck using three key data-movement instructions and hardware features. The Tensor Data Mover (TDM) moves tensor data from high-bandwidth memory (HBM) into on-chip memory. Transpose-load instructions transpose tensor data into the layout that LLM computations require as it is loaded on-chip. Finally, System DMA (SDMA) and Remote DMA (RDMA) move data between GPUs over the scale-up and scale-out networks, respectively. Our results show that TDM and transpose-load provide on average 1.88x and 1.19x speedup at the kernel level, respectively. The SDMA and RDMA lead to on average 1.16x and 1.33x speedup for computation overlapped with communication. This is the first AMD LLM training system to utilize all the GPU data pipelining features. Our implementation has been integrated into open source framework and library for AMD GPUs. https://github.com/AMD-AGI/Primus-Turbo https://github.com/AMD-AGI/Primus",
+    "authors": [
+      "Gengyu Rao",
+      "Ghadeer Ahmed H Alabandi",
+      "Su Ann Chong",
+      "Thomas Huber",
+      "Kailash Gogineni",
+      "Subhajit Dutta Chowdhury",
+      "Saleel Kudchadker",
+      "Suchita Pati",
+      "Zirui Zhang",
+      "Zhen Huang",
+      "Yanyuan Qin",
+      "Xiaoming Peng",
+      "Lihuan Zhang",
+      "Botao Hu",
+      "Wei Huang",
+      "Yang Bo",
+      "Wen Xie",
+      "Xiangyu Zhao",
+      "Ruibin Zhang",
+      "Xiaobo Chen",
+      "Vidushi Goyal",
+      "Anshu Raina",
+      "Claire Songhyun Lee",
+      "Jiakun Yan",
+      "Yao Fu",
+      "Nusrat Islam",
+      "Ravi Dwivedula",
+      "Jie Zhang",
+      "Maria Garzaran",
+      "Zhenyu Gu",
+      "Emad Barsoum"
+    ],
+    "published": "2026-11-03T23:44:04Z",
+    "primary": "cs.AR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.05751",
+    "pdf": "https://arxiv.org/pdf/2611.05751v1"
   }
 }
