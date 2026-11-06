@@ -2425,5 +2425,237 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.05751",
     "pdf": "https://arxiv.org/pdf/2611.05751v1"
+  },
+  "2611.07401": {
+    "id": "2611.07401",
+    "title": "Higher-order topological quantum battery",
+    "abstract": "A quantum battery is a next-generation energy-storage device that exploits genuinely quantum properties such as superposition and coherence. We propose a second-order topological quantum battery coupled to a photonic crystal described by the breathing-Kagome model, where optical loss is present on all lattice sites while nonlinear gains are introduced selectively at the output sites. Under these realistic non-Hermitian conditions, the system exhibits a clear topological phase transition manifested in both the ergotropy and the charging power. Remarkably, perfect work extraction is realized in the topological phase, where the maximum value of the ergotropy is quantized and acts as a good topological-phase indicator. The triangular geometry coherently distributes energy into two quantum batteries, where mirror-symmetry-protected phase synchronization gives rise to collective energy storage.",
+    "authors": [
+      "Motohiko Ezawa"
+    ],
+    "published": "2026-11-05T03:53:03Z",
+    "primary": "quant-ph",
+    "comment": "5 pages, 3 figures",
+    "url": "https://arxiv.org/abs/2611.07401",
+    "pdf": "https://arxiv.org/pdf/2611.07401v1"
+  },
+  "2611.07447": {
+    "id": "2611.07447",
+    "title": "Demystifying Graviton Detection",
+    "abstract": "Detecting single gravitons is possible through the extraction of discrete energy quanta from passing gravitational waves. For decades, this was considered hopeless, with estimates suggesting a detector the size of Jupiter. Here, I explain how these earlier estimates relied on the highly inefficient electron ionization process, while the absorption through the full mass quadrupole of a macroscopic system can bring graviton detection within experimental reach. Operating in the LIGO frequency band solves the challenges of graviton sources and noise suppression, allowing gravitons to be extracted from known passing gravitational waves and detection events to be heralded by classical gravitational-wave observations. Combined with the ability to resolve single energy quanta in macroscopic systems, such as in quantum acoustics, this opens a realistic path toward graviton detection. I also discuss the general limitations of particle detection in establishing an underlying quantum theory, illustrated by an energy-nonconserving semiclassical alternative. Nevertheless, the semiclassical alternative is not standard classical wave physics, and extracting $E=\\hbarω$ from a passing wave constitutes bona fide particle detection. This opens the way not only to the first detection of individual gravitons, but also to experimentally probing linearized quantum gravity and the graviton counting statistics of gravitational waves.",
+    "authors": [
+      "Igor Pikovski"
+    ],
+    "published": "2026-11-05T04:45:42Z",
+    "primary": "gr-qc",
+    "comment": "12 pages, 3 figures. Extended author version of article published in Physics Today",
+    "url": "https://arxiv.org/abs/2611.07447",
+    "pdf": "https://arxiv.org/pdf/2611.07447v1"
+  },
+  "2611.07314": {
+    "id": "2611.07314",
+    "title": "On the number of edges in quasiplanar graphs",
+    "abstract": "A $k$-quasiplanar graph is a graph drawn in the plane with no $k$ pairwise crossing edges. Pach, Shahrokhi, and Szegedy conjectured that every such graph on $n$ vertices has $O_k(n)$ edges. ChatGPT produced a proof of this conjecture. Here, we present a simplified, self-contained version of that proof.",
+    "authors": [
+      "János Pach",
+      "Gábor Tardos",
+      "Ji Zeng"
+    ],
+    "published": "2026-11-05T01:59:37Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07314",
+    "pdf": "https://arxiv.org/pdf/2611.07314v1"
+  },
+  "2611.07302": {
+    "id": "2611.07302",
+    "title": "Electrically tunable superconducting dimensionality in stripe-ordered monolayer MoTe$_2$",
+    "abstract": "Dimensionality governs the stability of collective quantum states, including whether Cooper pairs can establish the phase coherence required for superconductivity. In solids, however, electronic dimensionality is usually encoded in the crystal structure and is difficult to control reversibly. Here we show evidence that monolayer 1$T^{\\prime}$-MoTe$_2$ develops a stripe charge-density wave that reorganizes its low-energy electronic states into quasi-one-dimensional channels. Raman spectroscopy and scanning tunneling microscopy identify the stripe order, whereas directional transport and tunneling spectroscopy reveal superconducting correlations confined to the stripe direction and insulating behavior perpendicular to it. Electrostatic doping weakens the transverse insulating response and drives the system into phase-coherent two-dimensional superconductivity. These results show that stripe charge order can reconfigure superconducting dimensionality and make it electrically tunable within a single crystalline layer.",
+    "authors": [
+      "Tianyu Qiu",
+      "Ziyi Han",
+      "Fei Yang",
+      "Keyu Wei",
+      "Liguo Dou",
+      "Yong Zhang",
+      "Dekun Yang",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Xuefeng Wang",
+      "Fucong Fei",
+      "Fengqi Song",
+      "Yanyan Shangguan",
+      "Shaochun Li",
+      "Jinsheng Wen",
+      "Hong Yao",
+      "Chaoxing Liu",
+      "Binghai Yan",
+      "Lin He",
+      "Xiaoxiang Xi"
+    ],
+    "published": "2026-11-05T01:38:08Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07302",
+    "pdf": "https://arxiv.org/pdf/2611.07302v1"
+  },
+  "2611.06618": {
+    "id": "2611.06618",
+    "title": "Synchronized Hearts, Desynchronized Brains: A Nonlinear Dynamics Perspective for Function and Failure",
+    "abstract": "Both the heart and the brain are built from electrically excitable cells, yet the emergent dynamics of these organs could not differ more. In the myocardium, a coherent traveling wave of action potentials ensures coordinated contraction; in the cerebral cortex, distributed, irregular spiking underlies efficient information processing and the generation of behavior. Here, we illuminate the principles that underlie the emergence of such distinct nonlinear dynamics using concepts from complex systems. We trace these principles across scales from ion channels and cellular action potential generation, through cellular coupling mechanisms and network architecture, to organ level dynamics and clinical phenotypes. Designed to support either synchronized waves or desynchronized information processing, the heart and the brain can thus be understood as operating on opposite sides of a synchronization phase transition. Crossing this transition implies pathological dynamics in both organs: Loss of synchrony in the heart produces arrhythmia; excess synchrony in the brain leads to epileptic seizures. We discuss how adaptation mechanisms, including plasticity, modulation, remodeling, and learning, maintain the appropriate level of (de)synchronization. Overall, we provide a unified excitable-system perspective, together with an educational notebook, to foster cross-disciplinary insights into cardiac and neural function and pathology.",
+    "authors": [
+      "Irene Pellini",
+      "Simon Bauer",
+      "Seba Contreras",
+      "Ruben Fernández Busnadiego",
+      "Anushka Deb",
+      "Sophia Hartmann",
+      "Sayedeh Hussaini",
+      "Dörte M. Katschinski",
+      "Sarah Köster",
+      "Stephan E. Lehnart",
+      "Tobias Moser",
+      "Andreas Neef",
+      "Ulrich Parlitz",
+      "Silvio Rizzoli",
+      "Maria-Patapia Zafeiriou",
+      "Wolfram-Hubertus Zimmermann",
+      "Johannes Zierenberg",
+      "Philip Bittihn",
+      "Viola Priesemann"
+    ],
+    "published": "2026-11-04T15:02:46Z",
+    "primary": "q-bio.NC",
+    "comment": "Irene Pellini and Simon Bauer contributed equally. Wolfram-Hubertus Zimmermann, Johannes Zierenberg, Philip Bittihn and Viola Priesemann contributed equally. Corresponding authors: johannes.zierenberg@ds.mpg.de viola.priesemann@ds.mpg.de",
+    "url": "https://arxiv.org/abs/2611.06618",
+    "pdf": "https://arxiv.org/pdf/2611.06618v1"
+  },
+  "2611.07435": {
+    "id": "2611.07435",
+    "title": "Supermoiré Formation and Robust Topological Edge State in Helical Trilayer Graphene",
+    "abstract": "When two materials with nearly matched lattice constants meet, they form commensurate domains separated by incommensurate domain walls that absorb the mismatch. Recently, this picture has been extended to moiré lattices: when two moiré superlattices have nearly equal periodicities, they can form a \"supermoiré\" consisting of commensurate moiré domains separated by domain walls. Helical trilayer graphene (HTG) is a particularly interesting example: theory predicts that its commensurate domains are distinct topological insulators, separated by a network of conducting domain walls. Here, we use scanning tunneling microscopy and spectroscopy to visualize supermoiré domains and their electronic properties in HTG at a twist angle of $\\sim1.7^\\circ$. We find atomic-scale evidence of relaxation into supermoiré domains, each hosting flat bands separated from remote bands by large gaps of $\\sim40$ meV. Domain walls exhibit spectrally uniform edge states along their length, in excellent agreement with calculations for valley-protected topological edge modes. The topological character of the flat bands is intimately tied to wavefunction localization on a graphene sublattice, and we reveal the topological change across a domain boundary by imaging the reversal of sublattice polarization.",
+    "authors": [
+      "Hong Li",
+      "Huandong Chen",
+      "Seongyeon Youn",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Trithep Devakul",
+      "Kazuhiro Fujita",
+      "Abhay Narayan Pasupathy"
+    ],
+    "published": "2026-11-05T04:32:55Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07435",
+    "pdf": "https://arxiv.org/pdf/2611.07435v1"
+  },
+  "2611.07303": {
+    "id": "2611.07303",
+    "title": "Gaps in the Most Frequent Sizes of Integer Sumsets",
+    "abstract": "Nathanson observed that, for four-element sets $A$ of integers, the most frequent sizes of the iterated sumset $hA$ are separated by triangular numbers. Senger proved this and suggested an analogue for larger sets. We establish this pattern for $k$-element subsets of $\\{1,\\ldots,q\\}$, for every fixed $k\\geq3$, where $h\\geq2$ is either fixed or grows slower than $q^{1/(2k-1)}$. As $q\\to\\infty$, almost every such set has the largest possible $h$-fold sumset, and almost every exception has one of $h-1$ explicit smaller sizes. The differences between consecutive sizes among these $h$ values are consecutive $(k-2)$-dimensional simplex numbers.",
+    "authors": [
+      "Saad A. Awan",
+      "Steven J. Miller",
+      "Linh Nguyen",
+      "Steven Senger",
+      "Elvis Wong"
+    ],
+    "published": "2026-11-05T01:38:11Z",
+    "primary": "math.CO",
+    "comment": "19 pages. Lean 4 formalization included as ancillary files",
+    "url": "https://arxiv.org/abs/2611.07303",
+    "pdf": "https://arxiv.org/pdf/2611.07303v1"
+  },
+  "2611.07197": {
+    "id": "2611.07197",
+    "title": "Barlow Packings All Have Maximum Packing Fraction: Why it is so Hard to Find Barlow Structures Other than fcc or hcp?",
+    "abstract": "We apply lattice theory to periodic Barlow packings $(X_{1}X_{2}\\dots X_{N})_{\\infty}$ where $X_{i}\\in\\{A,B,C\\}$ and $X_{i}\\neq X_{i+1}$, formed by stacking two-dimensional hexagonal close-packed layers, interacting via generalized $(n,m)$-Lennard-Jones potentials. The cohesive energies of all packings lie between those of hexagonal close-packed (hcp, $(AB)$) and face-centered cubic (fcc, $(ABC)$) structure and vary almost linearly with the fcc stacking fraction. The equilibrium lattice constant, bulk modulus, Einstein frequency, and vibrational entropy show similarly near-linear trends. For the standard $(12,6)$ potential, fcc has the highest vibrational entropy and hcp the lowest, with other Barlow packings falling between them, consistent with previous sticky-hard-sphere Monte Carlo simulations and supported by phonon dispersion calculations. These trends imply an approximately linear dependence of free energy on fcc stacking fraction, with hcp and fcc as endpoints. This provides a simple thermodynamic explanation for why intermediate Barlow stackings are rare in nature: near-linearity offers little driving force to favor them. Exceptions may arise when hcp and fcc are nearly degenerate in energy or when many-body interactions, absent from the present model, favor another stacking. Density-functional calculations including dispersion forces for argon Barlow packings with periods $N=2,3,4$, and $12$ corroborate the predicted near-linear cohesive energy dependence.",
+    "authors": [
+      "Andres Robles-Navarro",
+      "Shaun Cooper",
+      "Alex Travesset",
+      "Peter Schwerdtfeger"
+    ],
+    "published": "2026-11-04T22:41:04Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07197",
+    "pdf": "https://arxiv.org/pdf/2611.07197v1"
+  },
+  "2611.07407": {
+    "id": "2611.07407",
+    "title": "The Higman-Sims graph and a geometric construction of the Steiner system $S(3,6,22)$",
+    "abstract": "The Higman-Sims graph is the unique strongly regular graph with parameters $(100,22,0,6)$. In this paper, we show that the only distance-regular antipodal double cover of the Higman-Sims graph is its bipartite double cover. Our main tool is a geometric construction of the Steiner system $S(3,6,22)$.",
+    "authors": [
+      "Mahdi Ebrahimi"
+    ],
+    "published": "2026-11-05T04:00:06Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07407",
+    "pdf": "https://arxiv.org/pdf/2611.07407v1"
+  },
+  "2611.07440": {
+    "id": "2611.07440",
+    "title": "Information flow control in hybrid quantum networks",
+    "abstract": "Quantum resources can change the dynamical features and operational behaviors of conventional networks. Long-distance entanglement supports information transfer between nodes lacking a direct connection. This entanglement link not only modifies the stationary effective connectivity of the network but can also be used to suppress undesirable classical dynamics. By examining information flow control mechanism, we demonstrate that classical collective behavior can be well-balanced by altering the initially distributed entanglement. We show the entanglement thresholds for two distinct control approaches: linear response control and Lyapunov functional controllability.",
+    "authors": [
+      "Michael Siomau"
+    ],
+    "published": "2026-11-05T04:38:58Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07440",
+    "pdf": "https://arxiv.org/pdf/2611.07440v1"
+  },
+  "2611.07358": {
+    "id": "2611.07358",
+    "title": "A Synchronized Tri-Modality Wireless System for Multi-Point Non-Contact Cardiac Monitoring",
+    "abstract": "Cardiac physiological monitoring is fundamental to evaluating cardiovascular health and diagnosing related diseases. Non-contact radar sensing can capture chest-wall vibrations with spatial specificity, enabling localized physiological monitoring and cardiac assessment. Progress, however, has been limited by the absence of a reliable, research-grade hardware platform for rigorous validation of radar-based methods. Prior systems typically pair radar, namely Doppler cardiography (DCG), with only electrocardiography (ECG) or other coarse references, providing no direct mechanical ground truth and thus constraining fine-grained evaluation of radar outputs. We present a tri-modality wireless system that integrates ECG, seismocardiography (SCG), and DCG under a unified acquisition and control framework for time-aligned recording and analysis. The tri-modality system combines miniaturized wearable ECG/SCG modules with a high-resolution mmWave radar module, supporting spatially resolved sensing and subsequent feature extraction. To our knowledge, this is the first integrated ECG--SCG--DCG hardware system for comprehensive cardiac monitoring; it enables multi-point thoracic acquisition, achieves precise cross-modal synchronization, and maintains specifications suitable for wearable operation. Experiments on a linear-motion platform show close agreement between DCG- and SCG-derived displacements, confirming accurate displacement measurement. Human-subject studies further demonstrate cross-modal consistency and robust extraction of feature points, establishing ECG as the electrical anchor and SCG as the mechanical ground truth for DCG. Overall, the system provides a rigorous, spatially resolved validation platform that advances non-contact cardiac sensing and supports next-generation radar-based monitoring.",
+    "authors": [
+      "Wei Ren",
+      "Kaili Zhao",
+      "Huansheng Yi",
+      "Miaoyang Hu",
+      "Jianqi Wang",
+      "Canhua Xu",
+      "Fugui Qi"
+    ],
+    "published": "2026-11-05T02:50:52Z",
+    "primary": "cs.AR",
+    "comment": "11 pages, 9 figures",
+    "url": "https://arxiv.org/abs/2611.07358",
+    "pdf": "https://arxiv.org/pdf/2611.07358v1"
+  },
+  "2611.07133": {
+    "id": "2611.07133",
+    "title": "Context-Aware Automated NMR Structure Elucidation",
+    "abstract": "Machine learning approaches are rapidly revolutionizing the ability to analyze and extract structural insights from chemical data, enabling high-throughput chemical discovery. While existing data-driven approaches have shown remarkable promise for predicting chemical structures in the de novo setting, incorporating additional chemically informed context offers the opportunity to further improve these models' performance and extend their real-world utility. Here we provide a straightforward protocol to combine artificial-intelligence-based spectroscopic elucidation pipelines with contextual chemical data, e.g., known reactants or a desired product, by using automated retrosynthetic analysis to generate large training sets of molecules and contextual data in the form of synthetic precursors. We demonstrate our approach by showing that our recently introduced NMR structure elucidation framework can be trained to effectively leverage molecular precursor context. We show that when the chemical context provides useful information on the target molecule we obtain dramatically improved accuracy over using NMR spectra alone, obtaining Top-15 accuracies of up to 95.4% for molecules up to 40 heavy atoms spanning the full elemental range of organic chemistry. Furthermore, we demonstrate that our approach is highly robust, such that even when the context provided is uncorrelated with the target, one still obtains accuracies commensurate with those of the original NMR structure elucidation framework. This approach provides an efficient route to improve a wide range of spectroscopic structure elucidation platforms using contextual data.",
+    "authors": [
+      "Frank Hu",
+      "Jonathan M. Tubb",
+      "Grant M. Rotskoff",
+      "Matthew W. Kanan",
+      "Thomas E. Markland"
+    ],
+    "published": "2026-11-04T21:03:04Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07133",
+    "pdf": "https://arxiv.org/pdf/2611.07133v1"
+  },
+  "2611.07125": {
+    "id": "2611.07125",
+    "title": "Data-Driven Modeling of Molten Chloride Corrosion Using Static Test Data",
+    "abstract": "Molten chloride corrosion has been studied for decades, yet reliable prediction across different alloys, salts, and test conditions remains difficult. In this work, 291 static molten chloride corrosion experiments reported in the literature were compiled into a structured dataset and used to develop an interpretable machine-learning framework for corrosion-rate predictions. To better represent the differences in salt condition across studies, a Chloride Salt Preparation Index (CSPI) was introduced to bring the reported salt-treatment method, atmosphere control, and pre-exposure impurity condition on a common numerical scale. A blended tree-based ensemble provided the most consistent predictive performance, achieving a cross-validated \\(R^2\\) of 0.85 and an MAE of 0.41 mg cm\\(^{-2}\\) day\\(^{-1}\\). The graded CSPI retained more useful information than a simple purified/unpurified classification and emerged as the dominant model descriptor. Global sensitivity and SHAP analyses further identified exposure time, temperature, and alloy chemistry as important contributors to the model predictions, with several observed trends consistent with the established molten-chloride corrosion behavior. The conformal prediction intervals were well calibrated, providing an estimate of prediction uncertainty in addition to the point prediction. Overall, the framework demonstrates that historical corrosion data can support quantitative, interpretable, and uncertainty-aware prediction when experimental context is represented explicitly, while also highlighting where more consistent reporting and targeted experiments are needed to improve future molten-salt corrosion models.",
+    "authors": [
+      "Md Mahmudul Hasan Pathik"
+    ],
+    "published": "2026-11-04T20:46:00Z",
+    "primary": "cs.LG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07125",
+    "pdf": "https://arxiv.org/pdf/2611.07125v1"
   }
 }
