@@ -2657,5 +2657,236 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.07125",
     "pdf": "https://arxiv.org/pdf/2611.07125v1"
+  },
+  "2611.08019": {
+    "id": "2611.08019",
+    "title": "Zero-Point Renormalization Reshapes the Shift Current: The Role of Electron-Phonon Coupling",
+    "abstract": "Shift current (SC) drives the bulk photovoltaic effect, holding promise for near-instantaneous, low-dissipation photodetection and energy conversion. The current understanding of SC relies primarily on a single-particle picture, in which the SC is determined purely by band dispersion. While many-body effects from directly excited quasiparticles, such as excitons, magnons and phonons, have been explored, the renormalization of electronic states by quantum virtual-phonon coupling --- inherent in essentially all solids and particularly decisive for transport --- remains unaddressed. Here, using first-principles calculations, we identify this missing channel --- band-renormalized shift current (BRSC) --- in monolayer MoS2. We find that the zero-point renormalization alone, without any polarization-carrying photoexcited phonons and with barely any alteration of the band dispersion, dramatically reshapes the SC spectrum: emergent low-energy peaks arise from phonon-assisted optical transitions between momentum-distinct states, with a pronounced redshift of higher-energy features. A mere 1.0% strain sharply tunes the BRSC, whereas raising the temperature enhances it. Our findings overturn the band-structure-only paradigm, establishing electron-phonon coupling as an indispensable ingredient for nonlinear photocurrent and opening a strain-thermal route for engineering next-generation optoelectronic responses.",
+    "authors": [
+      "Yang Li",
+      "Zuzhang Lin",
+      "Zhikuan Wang",
+      "Chengzhi Wu",
+      "Zeyu Jiang",
+      "Bing Huang"
+    ],
+    "published": "2026-11-05T13:40:28Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "16 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.08019",
+    "pdf": "https://arxiv.org/pdf/2611.08019v1"
+  },
+  "2611.08444": {
+    "id": "2611.08444",
+    "title": "Polynomial-time classical simulation of boson and fermion sampling under thermal loss",
+    "abstract": "Sampling experiments are a leading approach to demonstrating quantum computational advantage, yet their robustness to experimental noise is not completely understood. We develop a common framework for classical simulation of boson and fermion sampling under thermal loss, including pure loss. For Fock-state boson sampling, Gaussian boson sampling with fixed uniform squeezing, and fermion sampling with magic inputs, we obtain polynomial-time sampling at inverse-polynomial total variation error, for any fixed nonzero overall loss rate, and with high probability over Haar-random interferometers. A milder flatness assumption on the ideal output distribution suffices for quasipolynomial-time simulation without Haar randomness. With constant thermal loss per layer, the same flatness assumption gives polynomial-time simulation at logarithmic depth. Our bounds for Fock-state boson sampling cover both dilute and saturated regimes and become stronger near full input filling: when only a bounded number of input modes are empty, the noisy output for Haar-random interferometers converges, as the number of modes grows, to a distribution independent of the interferometer.",
+    "authors": [
+      "Armando Angrisani",
+      "Hela Mhiri"
+    ],
+    "published": "2026-11-05T18:36:21Z",
+    "primary": "quant-ph",
+    "comment": "83 pages, 2 figures",
+    "url": "https://arxiv.org/abs/2611.08444",
+    "pdf": "https://arxiv.org/pdf/2611.08444v1"
+  },
+  "2611.08432": {
+    "id": "2611.08432",
+    "title": "An improved minimum degree threshold for fractional clique decompositions in partite graphs",
+    "abstract": "We prove a Dirac-type condition for an $r$-partite graph to admit a fractional clique decomposition: every sufficiently large $r$-partite graph with $n$ vertices in each part and partite minimum degree at least $(1 - \\frac{1}{30r^2}) n$ admits a fractional $K_r$-decomposition, subject to necessary divisibility conditions. This implies the same upper bound on the asymptotic minimum degree threshold for $r$-partite graphs to admit a $K_r$-decomposition, using a well-known reduction.",
+    "authors": [
+      "Sean Longbrake",
+      "Michael Simkin",
+      "Liana Yepremyan",
+      "Michael Zheng"
+    ],
+    "published": "2026-11-05T18:25:20Z",
+    "primary": "math.CO",
+    "comment": "33 pages, 2 figures",
+    "url": "https://arxiv.org/abs/2611.08432",
+    "pdf": "https://arxiv.org/pdf/2611.08432v1"
+  },
+  "2611.08239": {
+    "id": "2611.08239",
+    "title": "Experimental Evidence for Type-I Superconductivity in $\\mathrm{OsB_2}$",
+    "abstract": "Since the discovery of superconductivity in $\\mathrm{MgB_2}$, metal diborides have attracted significant attention. Among these, osmium diboride ($\\mathrm{OsB_2}$), crystallizing in an orthorhombic structure (space group $Pmmn$) with puckered boron layers, has been classified as a low-$κ$ Type-II superconductor ($T_c \\approx 2.1~\\mathrm{K}$). Here, we report experimental evidence establishing that $\\mathrm{OsB_2}$ is in fact a rare nonelemental Type-I superconductor. Our identification is supported by three primary experimental hallmarks: (i) a pronounced Differential Paramagnetic Effect (DPE) peak in AC susceptibility ($χ_{ac}$) measurements under static DC magnetic fields, signaling the intermediate state; (ii) a field-induced crossover to a divergent first-order phase transition in specific heat ($C/T$); and (iii) pronounced magnetic hysteresis in field-ramped transitions indicative of supercooling.",
+    "authors": [
+      "Yogesh Singh"
+    ],
+    "published": "2026-11-05T16:19:24Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "4 pages, 3 figures",
+    "url": "https://arxiv.org/abs/2611.08239",
+    "pdf": "https://arxiv.org/pdf/2611.08239v1"
+  },
+  "2611.08199": {
+    "id": "2611.08199",
+    "title": "Do sEMG Foundation Models Improve Cross-Subject Generalisation?",
+    "abstract": "sEMG Foundation Models aim to learn general purpose representations over diverse subjects and recording conditions that boost performance on a variety of downstream tasks. However, existing evaluations make it difficult to discern whether pretraining alone is sufficient to combat the cross-subject overfitting which makes machine learning on sEMG so challenging. We conduct a systematic evaluation of three sEMG foundation models across three gesture classification datasets under both intra-session and inter-subject splits, using three fine-tuning strategies designed to isolate the contribution of pretraining. We find that pretraining boosts performance when train and test samples are drawn from the same recording session, but this benefit largely disappears under inter-subject evaluation. In low subject count datasets, pretraining provides little to no benefit and classical ML baselines match or exceed foundation model performance.",
+    "authors": [
+      "William Raftery",
+      "Dario Farina"
+    ],
+    "published": "2026-11-05T15:53:37Z",
+    "primary": "cs.LG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08199",
+    "pdf": "https://arxiv.org/pdf/2611.08199v1"
+  },
+  "2611.08147": {
+    "id": "2611.08147",
+    "title": "MCUFlowNet: Hardware-Aware Neural Architecture Search for Optical Flow on Microcontrollers",
+    "abstract": "Dense optical flow allows small drones to avoid obstacles. However, few dense optical flow networks are designed for microcontrollers (MCUs) with neural accelerators, whose on-chip SRAM limits the input resolution. We present PACE-NAS, a macro-to-micro neural architecture search framework that decouples memory from latency: a macro design fixes the backbone and its peak SRAM, and a micro design searches operators and depths to trade accuracy against compiler-estimated latency. We apply it to EdgeFlowNet on a Grove Vision AI V2 board (Ethos-U55), where profiling locates the peak SRAM at the full-resolution output head. Replacing transposed convolutions with bilinear upsampling and convolutions lowers the peak SRAM by 18%, and two lightweight context modules lower the endpoint error (EPE) without raising the peak. All searched subnets share this peak, so the search needs no memory constraint. We name the Pareto-optimal models MCUFlowNet; the fastest variant, MCUFlowNet-S, runs 1.76x faster than a retrained EdgeFlowNet at a 1.6% higher EPE and, in simulated forest flights at 2 m/s, reaches the goal without collision in 51.5% of trials, against 41.8%. PACE-NAS also applies to semantic segmentation, where a searched PIDNet-S variant runs 1.17x faster at similar accuracy. Code is available at https://gitlab.kuleuven.be/emedia-research-lab/esat-stadius/mcuflownet/mcuflownet.",
+    "authors": [
+      "Enmin Lin",
+      "Jona Beysens"
+    ],
+    "published": "2026-11-05T15:06:14Z",
+    "primary": "cs.CV",
+    "comment": "Submitted to IEEE ISCAS 2027 (under review). 5 pages",
+    "url": "https://arxiv.org/abs/2611.08147",
+    "pdf": "https://arxiv.org/pdf/2611.08147v1"
+  },
+  "2611.08405": {
+    "id": "2611.08405",
+    "title": "Synaptic Multi-Weight Wafer-Scale Domain Wall Magnetic Tunnel Junctions Driven by Spin Orbit Torque",
+    "abstract": "Spintronic synaptic devices based on magnetic random access memory (MRAM) are a rapidly evolving class within the analog neuromorphic architecture. However, obtaining the multi-weight or analog behavior desired for improved neural network inference accuracy in scaled MRAM remains a challenge. In this study, we demonstrate and tune up to eight distinct resistance levels in 300 mm wafer-scale magnetic tunnel junction artificial synapses driven by spin orbit torque. By varying the applied in-plane field, multi-weight resistance states emerge through domain wall nucleation and pinning. These multi-weight states appear stochastically and can be addressed with an iterative programming algorithm to program a specific resistance. Electromagnetic simulations indicate the multiple states are due to domain wall nucleation mediated by in-plane field and applied voltage. Implementation of the measured multi-weight devices in a neural network yields a 96.1% inference accuracy using the MNIST dataset if all devices provide the same number of multi-weight states. When experimental device-to-device variation is included, the accuracy is 48.6%. Overall, this work demonstrates a route towards multi-weight artificial synapse MRAM, establishing a path towards scalable neuromorphic systems based on spintronics.",
+    "authors": [
+      "Nicholas Zogbi",
+      "Domenico Giuliano",
+      "Vaishnavi Kateel",
+      "Van Dai Nguyen",
+      "Jyotirmoy Chatterjee",
+      "Alvaro Palomino",
+      "Robert Carpenter",
+      "Siddharth Rao",
+      "Jean Anne C. Incorvia"
+    ],
+    "published": "2026-11-05T18:13:45Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08405",
+    "pdf": "https://arxiv.org/pdf/2611.08405v1"
+  },
+  "2611.08375": {
+    "id": "2611.08375",
+    "title": "New results on cyclic and ordered Ramsey numbers",
+    "abstract": "Inspired by the work of Poljak, Bašić, Damnjanović, Stevanović, and Stošić used the Kissat SAT solver in a recent paper to systematically determine the small cyclic and ordered Ramsey numbers of several families of graphs. By studying the patterns in their data, Bašić et al. formulated 15 conjectures on cyclic and ordered Ramsey numbers. In this paper, we confirm 9 of their conjectures, trace confirmations of 2 more to existing literature, and, perhaps surprisingly, disprove another one.",
+    "authors": [
+      "Gaurav Kucheriya",
+      "Jan Petr",
+      "Jun Yan"
+    ],
+    "published": "2026-11-05T17:52:38Z",
+    "primary": "math.CO",
+    "comment": "21 pages, 3 figures, 2 tables",
+    "url": "https://arxiv.org/abs/2611.08375",
+    "pdf": "https://arxiv.org/pdf/2611.08375v1"
+  },
+  "2611.08481": {
+    "id": "2611.08481",
+    "title": "Joint analysis of the Macquart relation and the dispersion measure power spectrum: cross-covariance and redshift self-calibration",
+    "abstract": "The dispersion measures (DMs) of fast radio bursts (FRBs) trace ionised baryons along the line of sight, probing baryonic feedback. Two complementary observables can be constructed from an FRB catalogue: the DM-redshift (Macquart) relation of host-identified FRBs, and the angular power spectrum of the DM field of the full catalogue. Their joint analysis requires their cross-covariance. We derive it within the halo model and show it is a super-sample effect: only the monopole of an individual DM correlates with the angular power spectrum, yielding an exact, model-independent bound on the correlation coefficient. We validate the calculation against log-normal forward simulations of $10^4$ FRBs. For individual DMs, the correlation with the bandpowers is at the per cent level. Neglecting the cross-covariance changes the width of the $χ^2$ distribution by only 0.8 per cent, so the two observables can be treated as effectively independent for wide-area surveys. In a joint forecast with an LSST-like weak lensing survey, adding the Macquart relation tightens constraints on the physical baryon density by 32 per cent and on the mean host contribution by a factor of 4.1, while improving baryonification parameters by only about 5 per cent, indirectly through the host contribution. Finally, we show that the redshift distribution of FRBs without identified hosts, which enters every DM power spectrum, can be reconstructed by inverting their DMs with the jointly fitted mean relation without biasing the inferred parameters, whereas a 20 per cent error in the mean relation biases the DM power spectrum by up to 2$σ$ per band for $5\\times 10^5$ FRBs.",
+    "authors": [
+      "Amy Wayland",
+      "Robert Reischke"
+    ],
+    "published": "2026-11-05T18:59:19Z",
+    "primary": "astro-ph.CO",
+    "comment": "36 pages, 9 figures, submitted to JCAP",
+    "url": "https://arxiv.org/abs/2611.08481",
+    "pdf": "https://arxiv.org/pdf/2611.08481v1"
+  },
+  "2611.08380": {
+    "id": "2611.08380",
+    "title": "SensorGuard-RV: Sensor-to-Register Data Protection for Resource-Constrained RISC-V Devices",
+    "abstract": "Embedded systems rely on sensor measurements that traverse a complex hardware-firmware stack (e.g. peripheral interfaces, communication buses, memory, and drivers) before reaching the applications that use them. At worst, an attacker with access to this path may successfully intercept, overwrite, fabricate, or replay readings. This may cause systems that act on such data, such as flight controllers and industrial processes, to behave incorrectly or unsafely. Existing defences, such as trusted execution environments and trusted I/O paths, still depend on trusted driver software and correctly configured access control, which remain fragile in practice. In response, we present SensorGuard-RV, a hardware-first approach that delivers sensor samples into processor registers without trusting intermediate software, buses, or memory. After configuration, a write-once ownership switch hands the sensor to a fixed-function controller that performs hardware-level authenticated encryption on sensor samples under a key inaccessible to software. We develop a new RISC-V instruction then instructs the CPU to decrypt the sample and writes it to a register only after verifying its tag and rejecting replays, including across resets. We implement SensorGuard-RV on the NEORV32 core with an ADXL362 SPI accelerometer on an Artix-7 FPGA. At 100 MHz, a protected sample reaches a register in 5,191 cycles (51.9 $μ$s), of which the two Ascon authenticated encryption engines account for 30. Because fixed-function acquisition removes per-byte software polling, the protected loop sustains 19,015 transactions/s, 5.3% above a software-driven SPI baseline. The added logic (3,155 LUTs and 2,215 registers; 5.0% and 1.7% of the device) is dominated by the Ascon engine and preserves the 100 MHz clock, while estimated power rises from 118 to 368 mW.",
+    "authors": [
+      "Hamid Noori",
+      "Carlton Shepherd"
+    ],
+    "published": "2026-11-05T17:57:49Z",
+    "primary": "cs.CR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08380",
+    "pdf": "https://arxiv.org/pdf/2611.08380v1"
+  },
+  "2611.08314": {
+    "id": "2611.08314",
+    "title": "Interpretable many-body interaction laws for collective motion from few trajectories",
+    "abstract": "Models of collective motion usually reduce social interactions to pairwise forces, despite empirical evidence for many-body effects. We introduce the directional atomic cluster expansion (dACE), which adapts the atomic cluster expansion (ACE) of interatomic potentials to self-propelled agents. dACE provides a systematically improvable, exactly equivariant expansion of an agent's acceleration that splits uniquely into 1-, 2-, 3-body and higher contributions, along with a self term for the agent's own past motion that is fitted so that it does not absorb the interactions. On simulated collectives in two and three dimensions with known rules, dACE recovers the interaction law body order by body order from little data, while the neural model SocialNet, the current closest competitor, needs more data, has much larger errors on many-body or chiral rules and is restricted to 2D. On real data sets of tracked zebrafish and golden shiners, the laws learned by dACE agree better between disjoint halves of the data than SocialNet's. The learned laws are interpretable, and in the shiners the 3-body term opposes the pairwise response as neighbourhoods get dense. Finally, we show that next-step prediction accuracy mostly measures self-propulsion and noise rather than the interactions, and suggest more robust combinations of error measures for interaction learning.",
+    "authors": [
+      "Timon S. Gutleb"
+    ],
+    "published": "2026-11-05T17:12:40Z",
+    "primary": "cs.LG",
+    "comment": "19 pages, 10 figures",
+    "url": "https://arxiv.org/abs/2611.08314",
+    "pdf": "https://arxiv.org/pdf/2611.08314v1"
+  },
+  "2611.07965": {
+    "id": "2611.07965",
+    "title": "Reversible Dynamics, Asymmetric Actions: Parking as a Trajectory-Level Affordance",
+    "abstract": "Drivers are often told to back into a tight parking space, not drive in nose first. The advice looks paradoxical, because a slow car is dynamically reversible: reverse its speed and replay the steering backward, and it retraces a feasible path. Played backward, though, reverse-in shows a car driving forward out of the space. Reverse-in and forward-in are different tasks: they share a start position but end facing opposite ways. We separate three clearances between car and obstacles. Static fit $F$ is the clearance the parked car keeps at its best acceptable destination pose. Eventual access $A_\\infty$ is the clearance it can keep all the way there with unlimited corrections. Resource-bounded access $A_K$ is the clearance that survives a budget of $K$ reversals, switches between forward and reverse. They satisfy $F\\ge A_\\infty\\ge A_K$. In one fully specified scene (one car, bay, aisle and start), a certified argument proves $A_\\infty=F=0.5000$ m for both tasks. In this scene, all certified forward/reverse asymmetry therefore arises at finite $K$: it lies in how many corrections each task needs, not in the clearance either can eventually keep. With one reversal, an explicit path gives reverse-in at least $0.4410$ m clearance. A certified reachability argument caps forward-in's one-reversal clearance at $d_0<0.1720002$ m. With two reversals, forward-in gets at least $0.2833$ m. To keep a clearance strictly above any $d$ with $d_0\\le d<0.2833$ m, reverse-in thus needs exactly one reversal and forward-in exactly two when both tasks move forward first. If both move in reverse first, the counts are two and three. The contrast depends on the start position (Section 4.15). Proposed experiments test whether observers distinguish fit, eventual access and budgeted access. They compare these with simpler cues, such as how the turning body sweeps, and learned manoeuvre labels.",
+    "authors": [
+      "Adam Y. Shavit"
+    ],
+    "published": "2026-11-05T13:00:12Z",
+    "primary": "q-bio.NC",
+    "comment": "79 pages, 15 figures",
+    "url": "https://arxiv.org/abs/2611.07965",
+    "pdf": "https://arxiv.org/pdf/2611.07965v1"
+  },
+  "2611.08460": {
+    "id": "2611.08460",
+    "title": "Room-Temperature Quantum Emission from Boron Nitride Nanotubes",
+    "abstract": "Quantum information systems such as quantum key distribution and quantum communications require bright, high-purity, stable sources of single photons to act as carriers of quantum information. As such, methods for obtaining single photon emitters (SPEs) in solid-state devices capable of articulating with quantum photonic circuits are a necessary obstacle that must be overcome. Hexagonal boron nitride (hBN) flakes have been extensively studied as a host material for SPEs, though working in two dimensions is accompanied by engineering complexity. However, dimensionality can be reduced through the implementation of boron nitride nanotubes (BNNTs). Here we investigate the potential of BNNTs as room-temperature SPEs using confocal photoluminescence microscopy and Hanbury Brown-Twiss interferometry. Quantum emitters were found in BNNTs spanning the entirety of the visible spectrum, including spectral regions where SPEs within hBN have not been reported. Furthermore, each tube was found to possess multiple SPEs at varying emission wavelengths along the length, exhibiting lifetimes as fast as 0.5 ns, which is about two-fold faster than the fastest hBN SPEs. Additionally, we demonstrate that surface passivation/coating mitigates blinking events, therefore increasing the emitter stability. Thus, BNNTs can function as a single structure supporting a variety of multiwavelength SPE sources, while maintaining a compact radius of ~25 nm, making them ideally suited for deterministic placement and integration within nanophotonic devices such as waveguides and interferometric filters.",
+    "authors": [
+      "Ke-Sean J. M. Peter",
+      "Ryan A. Kowalski",
+      "David A. Curie",
+      "Dakota Braaten",
+      "Matthew W. Day",
+      "Denis R. Candido",
+      "Deyu Li",
+      "Richard F. Haglund",
+      "Joshua D. Caldwell",
+      "Richarda Niemann"
+    ],
+    "published": "2026-11-05T18:51:59Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08460",
+    "pdf": "https://arxiv.org/pdf/2611.08460v1"
+  },
+  "2611.08455": {
+    "id": "2611.08455",
+    "title": "Tusnády's problem and online two-sample thinning",
+    "abstract": "We determine the sharp order of discrepancy in Tusnády's problem in every fixed dimension $d\\ge 2$. The largest combinatorial discrepancy of $N$ points in $\\mathbb{R}^d$ with respect to axis-parallel boxes is $Θ_d((\\log N)^{d-1/2})$, extending Wei's planar result and matching Nikolov's upper bound. More strongly, with high probability, this lower bound holds simultaneously for every subset obtained by deleting at most a sufficiently small fixed fraction of a uniform $N$-point sample. We apply this geometric estimate to online thinning of two independent samples of size $n$ from an unknown common distribution, where observations must be kept or discarded upon arrival. For every fixed dimension $k\\ge 1$ and expected deletion budget $ρn$, with $0<ρ<2$, we prove that the minimax expected prefix discrepancy over lower orthants is $Θ_{k,ρ}((\\log n)^{k+1/2})$. In dimension one, the optimal terminal discrepancy is instead $Θ_ρ((\\log\\log n)^{3/2})$, giving a sharp separation between the prefix and terminal objectives. For $k\\ge 2$, we obtain terminal bounds differing by a factor of $\\log n$. The lower bounds are based on Gaussian small-ball estimates for box-incidence matrices, while the upper bounds use stationary Metropolis thinning and, in one dimension, a terminal cancellation procedure.",
+    "authors": [
+      "Yuhao Lei"
+    ],
+    "published": "2026-11-05T18:47:43Z",
+    "primary": "math.CO",
+    "comment": "40 pages, 5 figures",
+    "url": "https://arxiv.org/abs/2611.08455",
+    "pdf": "https://arxiv.org/pdf/2611.08455v1"
+  },
+  "2611.08024": {
+    "id": "2611.08024",
+    "title": "Heat Transport Mechanisms in MOF-5",
+    "abstract": "We find that MOF-5 supports both long-lived phonons and linker vibrations whose split spectra signal a breakdown of the phonon quasiparticle approximation. Combining mode-projected molecular dynamics spectra with spectral Wigner heat transport, we resolve two contrasting transport channels: low-frequency particle-like phonon propagation decreases strongly from 200 to 500 K, whereas wave-like phonon coherence remains nearly constant and supplies about half the intrinsic conductivity at 500 K. A phenomenological extrinsic scattering model provides a plausible explanation for the discrepancy between calculated and measured conductivities in terms of both its magnitude and temperature dependence. We also identify signatures of phonon quasiparticle breakdown in the linker vibrations of ZIF-8 and HKUST-1, indicating that this feature extends to other metal-organic frameworks.",
+    "authors": [
+      "Zezhu Zeng",
+      "Xia Liang",
+      "Hengtai Zheng",
+      "Aron Walsh",
+      "David E. Manolopoulos"
+    ],
+    "published": "2026-11-05T13:45:27Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "7 pages, 3 figures",
+    "url": "https://arxiv.org/abs/2611.08024",
+    "pdf": "https://arxiv.org/pdf/2611.08024v1"
   }
 }
