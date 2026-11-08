@@ -2888,5 +2888,248 @@
     "comment": "7 pages, 3 figures",
     "url": "https://arxiv.org/abs/2611.08024",
     "pdf": "https://arxiv.org/pdf/2611.08024v1"
+  },
+  "2611.08086": {
+    "id": "2611.08086",
+    "title": "MUSS: A Multi-scale and Sequence-based Model for Single-cell Gene Regulation",
+    "abstract": "Modeling gene regulation in single cells requires jointly representing DNA sequence, chromatin accessibility, and gene expression across regulatory scales. Sequence-based models capture DNA-level regulatory grammar but often lack cell-level resolution, whereas many single-cell omics models represent genes and peaks as fixed-vocabulary tokens without their underlying sequence. Here, we present MUSS, a sequence-based multi-scale model for single-cell gene regulation that preserves both DNA-level and cell-level resolution. MUSS derives peak- and gene-level representations from DNA using a frozen pre-trained sequence encoder and integrates them through peak-peak self-attention and distance-biased peak-gene interactions. Peak masked language modeling followed by training on paired scATAC-seq and scRNA-seq aligns these representations with cell-specific regulatory states. Across gene expression prediction, enhancer-gene linking, motif-guided regulatory prioritization, and zero-shot cell clustering, MUSS achieves strong performance against sequence-based and single-cell omics baselines. It further predicts expression for genes and peaks unseen during task training. These results support sequence-grounded, multi-scale representations for decoding cell-type-specific regulatory programs. Code, datasets, and model checkpoints are available at https://github.com/Lotfollahi-lab/MUSS_neurips26.",
+    "authors": [
+      "Kangjie Zheng",
+      "Amirhossein Vahidi",
+      "Liying Jin",
+      "Joseph Clarke",
+      "Vijaya Baskar MS",
+      "Connor Rogerson",
+      "Mengji Zhang",
+      "Muzlifah Haniffa",
+      "Anshul Kundaje",
+      "Mo Lotfollahi"
+    ],
+    "published": "2026-11-05T14:34:07Z",
+    "primary": "cs.AI",
+    "comment": "30 pages, 5 figures; includes references, appendices, and the NeurIPS checklist",
+    "url": "https://arxiv.org/abs/2611.08086",
+    "pdf": "https://arxiv.org/pdf/2611.08086v1"
+  },
+  "2611.08475": {
+    "id": "2611.08475",
+    "title": "Direct transition from a fractional Chern insulator to a topological superconductor",
+    "abstract": "We find numerical evidence for a direct continuous transition from a Laughlin fractional Chern insulator (FCI) to a $c_-=3/2$ topological superconductor (TSC), driven by increasing bandwidth at filling $ν=1/3$ in a repulsively interacting Chern band. At the critical point, the electron correlation length diverges at momentum away from the reference Fermi surface. We develop a generalized theory of superconducting-vortex proliferation for this transition. Magnetic translation organizes the vortices into six valleys, so translation-preserving proliferation requires additional gauge fields. The resulting theory reproduces the momentum structure of the critical spectrum and captures the divergent electron correlation. Upon doping away from commensurate filling, the theory gives rise to a superconducting dome. These results are consistent with an anyonic origin of the topological superconductivity in the absence of a weak-coupling Fermi-surface instability.",
+    "authors": [
+      "Taige Wang"
+    ],
+    "published": "2026-11-05T18:56:50Z",
+    "primary": "cond-mat.str-el",
+    "comment": "5 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.08475",
+    "pdf": "https://arxiv.org/pdf/2611.08475v1"
+  },
+  "2611.07265": {
+    "id": "2611.07265",
+    "title": "How Deep is the Signal? Time-Context up to 30 Years for Colorectal Cancer Prediction in a Primary-Care EHR Model",
+    "abstract": "EHR foundation models read medical events within a fixed context window, and long context has so far been measured only in tokens. How far back in time a model must look to capture the earliest predictive signal is unknown. We introduce time-context, the calendar lookback window before the prediction point, and provide, to our knowledge, the first systematic evaluation of decade-scale time-context for an EHR foundation model. We pretrained a decoder-only transformer (34.6M parameters) on 1.4B coded events from 3.6M primary-care patients in North West London and fine-tuned it to predict incident colorectal cancer under a 12-month pre-diagnostic buffer. A frozen cohort of 1,008 cases and 9,582 matched controls, all registered for at least 30 years, was evaluated at 15 nested lookback windows from 2 to 30 years, so that every truncation is compared within the same patients. Discrimination rose from an AUROC of 0.551 at 2 years to 0.590 at 18 years, then plateaued, with about 80% of the gain reached within 10 years; an XGBoost baseline converged to the same level (peak AUROC 0.589). A simulation further suggests that rotary position embeddings (RoPE) over elapsed time alias beyond about 20 years at the default base frequency, motivating a retuned $θ$. Time-context is a measurable design axis for clinical prediction models, distinct from token-context, and should be reported.",
+    "authors": [
+      "Achille Raviez",
+      "Lan Wang",
+      "Brendan Delaney"
+    ],
+    "published": "2026-11-05T00:34:47Z",
+    "primary": "cs.LG",
+    "comment": "Accepted at Machine Learning for Health (ML4H) 2026, Findings Track. 10 pages, 6 figures, 3 tables",
+    "url": "https://arxiv.org/abs/2611.07265",
+    "pdf": "https://arxiv.org/pdf/2611.07265v1"
+  },
+  "2611.08356": {
+    "id": "2611.08356",
+    "title": "Pointless K3 surfaces over finite fields",
+    "abstract": "We prove that K3 surfaces with no rational points over the finite field with $q$ elements exist if and only if $q \\leq 11$. Our approach applies linear programming techniques to improve on generic sphere packing bounds for the discriminants of even rootless definite lattices. These bounds are applied to constrain the possible zeta functions of K3 surfaces with no rational points via the Artin--Tate formula. The remaining cases are ruled out by direct analysis of primitive embeddings of particular lattices into Niemeier lattices.",
+    "authors": [
+      "Asher Auel",
+      "Philip Engel",
+      "Kiran S. Kedlaya",
+      "Sair Shaikh"
+    ],
+    "published": "2026-11-05T17:36:46Z",
+    "primary": "math.NT",
+    "comment": "20 pages",
+    "url": "https://arxiv.org/abs/2611.08356",
+    "pdf": "https://arxiv.org/pdf/2611.08356v1"
+  },
+  "2611.07531": {
+    "id": "2611.07531",
+    "title": "Autotaxis of a Run-and-Tumble Agent via Reinforcement Learning",
+    "abstract": "We study the run-tumble motion of a single autochemotactic agent that secretes and senses chemical cues using a reinforcement learning (RL) framework. In a chemical environment that changes dynamically via secretion, diffusion, and degradation of attractant chemicals, we study the effectiveness of RL for a successful navigation strategy. We show that RL enhances chemotactic performance. Starting from a random initial position, the probability of finding the agent in the favorable region (near the attractant peak) increases faster with time and reaches a higher value in the long time limit when RL is used, compared to the case when the agent performs usual run-tumble chemotaxis without using RL. We also characterize the chemotactic performance of the agent by varying different parameters like rates of secretion, degradation, and diffusion. Importantly, we observe a non-monotonic dependence of the chemotactic performance on the learning and exploration rates, indicating the existence of an optimal RL strategy for the most efficient navigation. We explain these observations as a result of the interplay between the pre-existing attractant environment and the agent-generated attractant profile.",
+    "authors": [
+      "Ramesh Pramanik",
+      "Shradha Mishra",
+      "Sakuntala Chatterjee"
+    ],
+    "published": "2026-11-05T06:41:21Z",
+    "primary": "q-bio.CB",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.07531",
+    "pdf": "https://arxiv.org/pdf/2611.07531v1"
+  },
+  "2611.08055": {
+    "id": "2611.08055",
+    "title": "Ferroelectric control of magnetic coupling in a Cr dimer adsorbed on $α$-In$_2$Se$_3$",
+    "abstract": "Ferroelectric substrates offer a route to controlling magnetic interactions in low-dimensional systems through polarization-dependent changes in local bonding and electronic structure. Here, using first-principles calculations, we investigate the adsorption of 3$d$ transition-metal atoms and dimers on monolayer $α$-In$_2$Se$_3$ and identify Cr as a stable dimer configuration on both polar surfaces. Reversing the ferroelectric polarization drives a pronounced change in its magnetic coupling: the AFM state is favored for one polarization, whereas the FM and AFM configurations become nearly degenerate for the opposite one. Analysis of the spin density, projected electronic states, and Wannier Hamiltonians reveals concomitant changes in the direct Cr-Cr hopping and in the interaction with the bridging Se atom. In particular, enhanced Cr-Se hybridization and Se spin polarization, together with a strong reduction of the direct two-center Cr-Cr hopping, point to a polarization-dependent balance between direct and substrate-mediated exchange contributions. These results show how ferroelectric polarization can tune magnetic interactions in an atomically defined 2D hybrid system.",
+    "authors": [
+      "J. F. Ospina",
+      "S. Di Napoli",
+      "M. A. Barral"
+    ],
+    "published": "2026-11-05T14:10:41Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "15 pages, 6 figures plus S.I. included",
+    "url": "https://arxiv.org/abs/2611.08055",
+    "pdf": "https://arxiv.org/pdf/2611.08055v1"
+  },
+  "2611.08037": {
+    "id": "2611.08037",
+    "title": "Microscopic Origin and Josephson Signatures of $d$-Wave Superconductivity in Monolayer FeSe",
+    "abstract": "Monolayer FeSe on SrTiO$_3$ exhibits high-temperature superconductivity with an electron-only Fermi surface, raising fundamental questions about its unconventional pairing mechanism. Motivated by recent Josephson scanning tunneling microscopy evidence for nodeless $d$-wave superconductivity, we investigate the microscopic role of the Fe $d_{xy}$ orbital using an experimentally constrained multiorbital theory. A tight-binding model fitted to quasiparticle interference and angle-resolved photoemission spectroscopy reveals substantial $d_{xy}$ character near the Fermi level and dominant nearest-neighbor hopping, in contrast to the conventional kinetic-frustration picture of iron-based superconductors. Both itinerant spin-fluctuation calculations and strong-coupling exchange approaches favor a robust $d$-wave pairing state, whose interband pairing components allow a fully gapped quasiparticle spectrum. We further establish a symmetry-based selection rule for spatial Josephson tunneling, revealing characteristic bond-centered maxima and mirror-enforced interference zeros that distinguish $d$-wave pairing from competing $s$-wave states. These symmetry-enforced nodal lines survive near Fe-site impurities, while a pronounced contrast between the $d$- and $s$-wave Josephson patterns persists around vortices despite the loss of mirror protection. Our results connect the unconventional $d_{xy}$ electronic structure to nodeless $d$-wave superconductivity and demonstrate the power of spatial Josephson interference for resolving pairing symmetry in multiorbital superconductors.",
+    "authors": [
+      "Jiong Mei",
+      "Lili Wang",
+      "Yu-Jie Sun",
+      "Kun Jiang"
+    ],
+    "published": "2026-11-05T13:54:03Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "7 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.08037",
+    "pdf": "https://arxiv.org/pdf/2611.08037v1"
+  },
+  "2611.08399": {
+    "id": "2611.08399",
+    "title": "Scaling Up Analog CIM: A Simulation Framework for Topology-Aware Mapping",
+    "abstract": "Analog compute-in-memory (CIM) enables energy-efficient AI inference by performing in-situ matrix multiplication. The growing demand for deploying larger models motivates chiplet integration to expand CIM capacity. However, simulation abstractions based on local operator costs and aggregate communication metrics obscure the impact of weight-mapping topology when CIM system scales up. We develop a phase analysis that quantifies how strongly mapping topology affects system performance across hardware configurations and how mapping optimization translates into latency gains. To evaluate and exploit this design space, we present Isobar, a simulation platform integrating CIM decompositions, heterogeneous execution, and resource modeling. Validated against silicon measurements and cycle-accurate simulation, Isobar provides reliable cost estimates that enable effective mapping search across model and hardware configurations. For Gemma-7B prefill, Isobar-guided mapping reduces communication time by 23.3% and end-to-end latency by 18.6% relative to the strongest baseline. Isobar's system-level modeling show that analog CIM retains energy-efficiency potential relative to GPU when scaled to thousands of dies, and identify topology-aware mapping as a key design dimension for efficient execution.",
+    "authors": [
+      "Yuxin Ren",
+      "Danella Zhao",
+      "Huanrui Yang"
+    ],
+    "published": "2026-11-05T18:11:00Z",
+    "primary": "cs.AR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08399",
+    "pdf": "https://arxiv.org/pdf/2611.08399v1"
+  },
+  "2611.08370": {
+    "id": "2611.08370",
+    "title": "Modelling and analysis of a cocktail phage therapy with coinfection",
+    "abstract": "We analyze a delay differential model for phage therapy in which a cocktail of $n$ different types of bacteriophages, each with its own latency period, is administered and coinfection is allowed. We prove the global existence, uniqueness and nonnegativity of solutions, and the existence of an invariant region, under suitable conditions, in which the bacteria are eradicated exponentially fast. We determine the stability of the bacteria-free equilibrium in terms of the administered doses and give sufficient conditions for the nonexistence of coexistence equilibria, showing that coinfection may allow bacteria and phages to coexist even when the doses are large. For a cocktail of two phage types with the same latency period, we obtain a complete description of the biologically feasible coexistence equilibria, which may be zero, one or two. Numerical simulations illustrate the theoretical results.",
+    "authors": [
+      "Xavier Bardina",
+      "Marc Cano",
+      "Silvia Cuadrado"
+    ],
+    "published": "2026-11-05T17:49:24Z",
+    "primary": "math.DS",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08370",
+    "pdf": "https://arxiv.org/pdf/2611.08370v1"
+  },
+  "2611.08200": {
+    "id": "2611.08200",
+    "title": "Zirah: A Post-Quantum True Random Number Generator Hardware Signer With an Avalanche Noise",
+    "abstract": "Zirah is a hardware signer built around an STM32F407 microcontroller, and its purpose is to find out, on inexpensive hardware, where a post-quantum signing key is exposed and what actually protects it. The device draws every random bit from a reverse-biased 2N3904 junction in avalanche breakdown, amplified by an LM358 and screened by SP 800-90B health tests, computes ML-DSA-65 (FIPS 204, hedged) on the STM32 with two-share arithmetic masking of the secret-key multiplications, and adds ECDSA P-256 from an ATECC608 secure element over the same digest, once a person has matched an eight-digit digest prefix on its OLED with the PC and pressed a button. A desktop application and a command-line tool drive the board and verify its output, and because only a 32-byte manifest digest reaches the device, it signs files of any type and size, returning signed copies for PDF, Office Open XML, ZIP, PNG and JPEG files and detached records for every other format. NIST's SP 800-90B tool rejected the IID assumption for 1,000,000 raw samples and assessed 6.898 bits of min-entropy per byte on the non-IID track, against the 1 bit the firmware credits, while spectral lines near 116 Hz that hold about 5 % of the variance remain unexplained. At 168 MHz the masked signature took a median of 157 ms over 20 runs and a complete signing operation under 0.8 s, and the signer matched the pq-crystals reference in 1,976 checks natively and on an emulated Cortex-M4. The ATECC608 can neither store the 4,032-byte ML-DSA-65 key nor compute with it, so that key sits in ordinary flash behind readout protection, and on an earlier board, before that protection was enabled, a debugger copied it out and the copy produced a valid ML-DSA-65 signature without the device, although the leakage results come from an instruction-level emulator and nothing here is certified.",
+    "authors": [
+      "Muhammad Shaheer Bin Junaid"
+    ],
+    "published": "2026-11-05T15:54:05Z",
+    "primary": "cs.CR",
+    "comment": "28 pages, 13 figures, 10 tables. Hardware designs, firmware, host software and measurement data: https://doi.org/10.5281/zenodo.23982873",
+    "url": "https://arxiv.org/abs/2611.08200",
+    "pdf": "https://arxiv.org/pdf/2611.08200v1"
+  },
+  "2611.08427": {
+    "id": "2611.08427",
+    "title": "Quantum enhanced beam displacement estimation: sensitivity limits, optimal probes, and measurement schemes",
+    "abstract": "We investigate the ultimate sensitivity limits for measuring small transverse beam displacements and identify optimal strategies that attain them, using the framework of mode parameter estimation. We contrast two families of states with different resource constraints, using Hermite-Gauss and Laguerre-Gauss mode pairs. First, for fixed total photon number states, the optimal state is identified and we show that it asymptotically approaches a rotated NOON state. The sensitivity bound is compared to that of an asymptotically optimal pure Gaussian state with fixed average photon number. Finally, we propose concrete measurement schemes using the method of moments and show that the twin-Fock state may provide a viable alternative to the rotated NOON state for this task. Our work provides a broader benchmark for developing practical strategies for spatial sensing at the quantum limit.",
+    "authors": [
+      "Balázs Novák",
+      "Pau Colomer",
+      "Joseph Zhang",
+      "Emre Köse",
+      "Manuel Gessner"
+    ],
+    "published": "2026-11-05T18:22:09Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08427",
+    "pdf": "https://arxiv.org/pdf/2611.08427v1"
+  },
+  "2611.08049": {
+    "id": "2611.08049",
+    "title": "When Molecular Dimerization Induces Magnetic Bi-Stability at the Metal-Organic Interface",
+    "abstract": "We present a method to create metal-organic dimer complexes by on-surface assembly on a metal substrate using low-temperature scanning tunneling microscopy (STM) and spectroscopy (STS). We demonstrate that a dimer of Mn-Phthalocyanine (MnPc)2 on a Ag(111) surface can be switched between two stable configurations upon a small conformational change controlled by STM manipulation. By means of density-functional theory calculations, it is found that the two conformations correspond to an antiferromagnetic (AFM) and a ferromagnetic (FM) state respectively. Directly coordinated Mn atoms of the dimer lead to an AFM-coupling whereas indirectly coordinated (shifted) Mn atoms lead to a FM-coupling. Rarely seen in a molecular- dimers with transition-metal atoms, the FM-AFM-FM transition is thus readily on-surface accessible. Furthermore, the two configurations of the switch are easily identified by their Kondo states, opening interesting routes in terms of both, writing (FM versus AFM states) and reading. These results pave the experimental route toward dimer-based materials with complex magnetic structures of potential interest for application in spintronics, logics and computing.",
+    "authors": [
+      "Rouzhaji Tuerhong",
+      "Franck Ngassam",
+      "Mebarek Alouani",
+      "Jean-Pierre Bucher"
+    ],
+    "published": "2026-11-05T14:03:38Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "41 pages (including SI)",
+    "url": "https://arxiv.org/abs/2611.08049",
+    "pdf": "https://arxiv.org/pdf/2611.08049v1"
+  },
+  "2611.08424": {
+    "id": "2611.08424",
+    "title": "Disorder-blind Mpemba acceleration of quantum state preparation",
+    "abstract": "Using the strong Mpemba effect to accelerate relaxation by initial-state design requires suppressing the slowest mode, which typically needs prior knowledge of the system. However, in disordered systems, this mode is sample-dependent, so a fixed preparation generally retains a slow-mode overlap. We show that a ``blind'' preparation, designed from the clean chain without knowledge of the disorder realisation or its distribution, can start farther from stationarity yet overtake a reference in typical samples of a dephased disordered XX chain. It requires only the chain geometry and the particle number. At strong dephasing, the density dynamics maps to a resistor chain, and an exact inverse-generator identity links the residual overlap to the spatial resistance profile. We find two distinct thresholds: a finite mean resistance suffices for diffusion, but the residual overlap decays as $L^{-1/2}$ with chain length $L$ only when the resistance variance is finite; rare weak links slow this decay. We predict the fraction of samples in which the blind preparation wins, which is an ensemble-level measure of its reliability. Finite-size calculations support both scaling regimes with interactions at strong dephasing. We give preparation circuits and a density readout for the residual overlap.",
+    "authors": [
+      "M Nishanth",
+      "Shreyas Sadugol",
+      "Payman Mahmoudi",
+      "Alexander Yosifov",
+      "Aditya Iyer",
+      "Roopayan Ghosh",
+      "Jinzhao Sun"
+    ],
+    "published": "2026-11-05T18:20:53Z",
+    "primary": "quant-ph",
+    "comment": "21 pages, 10 figures",
+    "url": "https://arxiv.org/abs/2611.08424",
+    "pdf": "https://arxiv.org/pdf/2611.08424v1"
+  },
+  "2611.08151": {
+    "id": "2611.08151",
+    "title": "Machine learning quantum data to accelerate quantum Monte Carlo",
+    "abstract": "Simulating strongly correlated electrons in molecules and materials remains a central goal for quantum computing. A promising strategy uses quantum processors to prepare trial wavefunctions that guide classical quantum Monte Carlo (QMC). However, the enormous computational cost of repeatedly processing quantum measurements has severely limited the practical scalability of this approach. Here, we overcome this bottleneck by compressing quantum measurement data into machine-learning models that efficiently provide the wavefunction overlaps needed by QMC. This accelerates quantum-classical QMC by orders of magnitude, enabling chemically accurate simulations on up to 40 qubits, more than doubling the scale of previous hardware demonstrations with comparable accuracy. We demonstrate our approach on hydrogen chains and strongly correlated iron-sulfur clusters using measurements from Google's Willow processor. By enabling efficient reuse of quantum-state information on the classical coprocessor, our framework addresses a fundamental bottleneck in hybrid quantum algorithms that will persist even into the fault-tolerant era.",
+    "authors": [
+      "Tong Jiang",
+      "Andrew Zhao",
+      "Shashwat Kumar",
+      "Jigyasa Nigam",
+      "Eliott Rosenberg",
+      "Ryan Babbush",
+      "Andrew D. Baczewski",
+      "William J. Huggins",
+      "Joonho Lee"
+    ],
+    "published": "2026-11-05T15:10:10Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08151",
+    "pdf": "https://arxiv.org/pdf/2611.08151v1"
+  },
+  "2611.08421": {
+    "id": "2611.08421",
+    "title": "Data-driven discovery of intrinsic Lie point symmetries of differential equation systems",
+    "abstract": "Discovering continuous symmetries directly from differential-equation data can reveal geometric structure for model reduction and scientific machine learning without symbolic determining equations or a closed-form representation of the governing system. We formulate intrinsic Lie point-symmetry discovery as an operator-theoretic problem on sampled jet-space data. Admissible generators are identified from a sampled determining operator and separated from redundant, solution-dependent, and geometrically trivial directions. The framework combines prolongation, sequential subspace restrictions, and a fixed nonlinear dictionary linear in trainable coefficients. A rank-stabilization preflight test diagnoses systems whose represented intrinsic symmetry algebra does not stabilize under dictionary refinement. On a controlled differential-equation benchmark with an analytically known 11-dimensional represented intrinsic symmetry algebra, the method recovers the complete represented generator set, reproduces its Lie-bracket structure to numerical precision, and approximates a known generator beyond the training domain. Here we show that explicit intrinsic continuous-symmetry generators can be recovered from data obtained from exact or approximate differential systems.",
+    "authors": [
+      "Ilker Gurcan",
+      "Kadir Ustun",
+      "Ramazan Gokberk Cinbis"
+    ],
+    "published": "2026-11-05T18:19:28Z",
+    "primary": "cs.LG",
+    "comment": "63 pages, 10 figures. Code and data availability statements are included in the manuscript",
+    "url": "https://arxiv.org/abs/2611.08421",
+    "pdf": "https://arxiv.org/pdf/2611.08421v1"
   }
 }
