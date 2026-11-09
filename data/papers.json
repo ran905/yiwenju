@@ -2,6 +2,663 @@
   "count": 80,
   "papers": [
     {
+      "id": "2611.08819",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-11-06",
+      "title_en": "Reflexive polytopes can have doubly exponentially many vertices",
+      "title_zh": "反射多面体的顶点数可以双指数级增长",
+      "one_liner": "推翻了一个20年的猜想：8维及以上反射多面体的顶点数可以多到双指数级，而不是原来猜的指数级。",
+      "why": "多面体是高中立体几何的常客，但高维空间里的多面体却藏着反直觉的秘密。这篇论文用反例推翻了长期猜想，还展示了AI辅助数学发现的可能性，能让你看到数学猜想如何被检验和推翻。",
+      "sections": {
+        "background": "反射多面体是一种特殊的格点多面体，在代数几何和组合数学中很重要。2004年有数学家根据低维观察猜测，d维反射多面体的顶点数最多是6的d/2次方，即指数增长。但高维情况一直难以验证，因为例子太少。",
+        "method": "作者构造了高维反例，主要工具是“直积”和“直和”操作，把低维多面体组合成高维的，并仔细计算顶点数。他们还借助了GPT-6.1 Sol来辅助搜索和验证构造。",
+        "finding": "在8维及以上，存在反射多面体顶点数远超6^{d/2}，甚至达到理论最大可能——双指数级。比如在足够大的维度d，顶点数可以像2^{2^d}那样增长，彻底推翻原猜想。",
+        "impact": "这说明高维凸几何比想象中更复杂，原有基于低维的直觉不可靠。同时展示了AI在数学构造中的潜力，可能改变未来数学研究的方式。"
+      },
+      "analogy": "就像你根据几个小样本猜一个规律，结果有人找到反例，发现规律完全不对。而且这个反例是用AI帮忙找到的，就像用探测器发现了新物种。",
+      "terms": [
+        {
+          "t": "反射多面体",
+          "d": "一种格点多面体，包含原点且对偶多面体也是格点多面体。论文研究其顶点数的增长。"
+        },
+        {
+          "t": "格点多面体",
+          "d": "顶点都在整数坐标上的多面体。反射多面体是其中特殊的一类。"
+        },
+        {
+          "t": "对偶多面体",
+          "d": "由原多面体的面定义的多面体，交换顶点和面。反射多面体要求对偶也是格点多面体。"
+        },
+        {
+          "t": "双指数增长",
+          "d": "形如2^{2^d}的增长，比指数增长快得多。论文证明顶点数可达双指数级。"
+        },
+        {
+          "t": "直积",
+          "d": "两个多面体笛卡尔积，维度相加，顶点数相乘。构造高维反例的基本操作。"
+        },
+        {
+          "t": "直和",
+          "d": "另一种组合多面体的方式，用于构造具有特定性质的多面体。"
+        },
+        {
+          "t": "GPT-6.1 Sol",
+          "d": "一个AI模型，用于辅助搜索和验证数学构造。论文用它帮助发现反例。"
+        }
+      ],
+      "tags": [
+        "组合数学",
+        "多面体",
+        "反例"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Johannes Hofscheier",
+        "Benjamin Nill"
+      ],
+      "abstract": "Reflexive polytopes are lattice polytopes containing the origin in their interior such that also the dual polytope is a lattice polytope. On the basis of low-dimensional observations and of bounds known for special classes of reflexive polytopes, the second author conjectured in 2004 that the number of vertices of $d$-dimensional reflexive polytopes is bounded from above by $6^{d/2}$. In this note, we present counterexamples showing that this conjecture is false in every dimension $d \\ge 8$. In fact, rather surprisingly, in sufficiently large dimensions $d$ the number of vertices (equivalently, by duality, the number of facets) can be as large as theoretically possible, namely doubly exponential in $d$. These results were found using GPT-6.1 Sol.",
+      "url": "https://arxiv.org/abs/2611.08819",
+      "pdf": "https://arxiv.org/pdf/2611.08819v1"
+    },
+    {
+      "id": "2611.08835",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CG",
+      "published": "2026-11-06",
+      "title_en": "Containment Problems in Convex Sets",
+      "title_zh": "平面点集中总能找到两个点，任何包含它们的凸集都覆盖至少1/5的点",
+      "one_liner": "证明在平面点集中，存在两个点，使得任何包含它们的凸集缩放平移后至少覆盖1/5的点（严格凸时）。",
+      "why": "这个问题像几何版的“找朋友”：两个点就能“代表”整个点集的一部分。它联系到凸集、缩放平移等课本概念，结论清晰，还能动手画图试试，非常适合高中生感受组合几何的趣味。",
+      "sections": {
+        "background": "在计算几何中，经常需要找代表性子集。之前人们研究过用凸集覆盖点集的问题，但反过来，给定凸集形状，找两个点使得任何包含它们的凸集都覆盖固定比例的点，这个问题最近才被提出。",
+        "method": "作者用几何概率和组合方法。对于严格凸集，通过分析点集的凸包和随机采样，证明存在一对点满足比例1/5。对于一般凸集，用更精细的覆盖论证得到1/6e。还讨论了三角形等特殊情况。",
+        "finding": "严格凸集时比例至少1/5；一般凸集至少1/6e（约0.061）；三角形至少1/12；若允许旋转则1/768。还给出了算法找这对点。",
+        "impact": "为几何覆盖问题提供了新思路，可能用于机器学习中的核心集选择或传感器网络覆盖。算法方面也有实际意义。"
+      },
+      "analogy": "就像在一个班级里找两个同学，任何包含他们的“兴趣小组”（形状固定但可缩放平移）都能覆盖至少五分之一的学生。这两个人就像班级的“代表”。",
+      "terms": [
+        {
+          "t": "凸集",
+          "d": "集合中任意两点的连线仍在集合内。论文中C是凸集，用来覆盖点。"
+        },
+        {
+          "t": "缩放平移",
+          "d": "将图形按比例放大缩小并移动位置。论文考虑C的所有缩放平移副本。"
+        },
+        {
+          "t": "严格凸",
+          "d": "边界没有平直段，如圆。论文对严格凸集得到1/5的比例。"
+        },
+        {
+          "t": "凸包",
+          "d": "包含点集的最小凸集。论文用凸包分析点的分布。"
+        },
+        {
+          "t": "e",
+          "d": "自然对数的底，约2.718。论文中比例1/6e约等于0.061。"
+        },
+        {
+          "t": "算法",
+          "d": "计算机解决问题的步骤。论文讨论了如何找到这对点。"
+        }
+      ],
+      "tags": [
+        "组合几何",
+        "凸集",
+        "算法"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Prosenjit Bose",
+        "Bobby Miraftab",
+        "Tyler Tuttle"
+      ],
+      "abstract": "Let $P$ be a set of $n$ points in the plane, and let $C$ be a compact, convex subset of the plane that contains the origin in its interior. We study the problem of finding two points $p$ and $q$ of $P$ with the property that any homothet of $C$ that contains $p$ and $q$ must contain at least a constant fraction of the points of $P$. We give proofs for several cases. When $C$ is strictly convex we achieve a fraction of $1/5$, and when $C$ is a general convex region we achieve a fraction of $1/6e$. We show how the ideas of this second bound can be used to prove a lower bound for a version of the problem in $\\mathbb{R}^d$ when $C$ is a $d$-ball. We also consider a few special cases. When $C$ is a triangle we get a lower bound of $1/12$, and when we allow that triangle to be rotated by $π$ radians in addition to being scaled and translated we get a lower bound of $1/768$. In proving this last result, we improve the state of the art on the version of this problem in three dimensions, where $C$ is a parallelepiped. We also consider the algorithmic aspects of finding such a pair of points.",
+      "url": "https://arxiv.org/abs/2611.08835",
+      "pdf": "https://arxiv.org/pdf/2611.08835v1"
+    },
+    {
+      "id": "2611.08851",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-06",
+      "title_en": "Conformationally frustrated epitaxy at heteromolecular interface",
+      "title_zh": "分子在模板上“站不直”：柔性分子外延生长中的构象挫折",
+      "one_liner": "研究柔性分子BTB在分子模板上的外延生长，发现分子构象变化与基底相互作用竞争，导致“构象挫折”，影响外延排列。",
+      "why": "分子外延生长是制造有机电子器件和分子机器的基础技术。这篇论文研究一个有趣的问题：当分子不是刚性的，而是像面条一样能弯曲时，它如何在模板上排列？这连接了课本上的分子结构和材料制备，展示了微观世界的“妥协”艺术。",
+      "sections": {
+        "background": "分子外延是在基底上生长有序分子薄膜的技术，对有机电子学很重要。过去研究多用刚性分子，但实际分子常有柔性侧链或可旋转键。柔性如何影响外延匹配尚不清楚。BTB分子有一个中心苯环和三个羧基苯基，可以旋转，是研究柔性影响的理想模型。",
+        "method": "研究者在Ag(111)表面先制备一层完全去质子化的BTB分子作为模板，再在上面沉积完整的BTB分子。他们用扫描隧道显微镜（STM）看分子排列和单个分子形状，用低能电子显微镜和衍射看长程有序，用X射线光电子能谱看化学状态，并用密度泛函理论（DFT）计算分子间和分子-基底相互作用。",
+        "finding": "他们发现，分子间 bonding 模式在模板上保留，但晶格参数和分子构象与在银表面不同。STM下单个分子呈现不同外观，理论计算表明这是位点依赖的构象变化。分子-基底相互作用与构象能的竞争导致不同的妥协几何，产生构象挫折。将BTB限制为平面会改变优先吸附位点，证明柔性直接修改外延注册的能量偏好。",
+        "impact": "这项研究揭示了分子柔性在外延生长中的关键作用，说明设计分子器件时必须考虑构象自由度。未来可能帮助人们通过控制分子柔性来定制薄膜结构，或利用“构象挫折”创造新型纳米结构。"
+      },
+      "analogy": "就像让一群柔软的面条人在一个网格地板上排队，地板上有粘性点。面条人想站直（平面构象）但地板粘性点位置不合适，他们只好扭曲身体（非平面构象）去够粘性点，结果队伍虽然整齐但每个人姿势都别扭。",
+      "terms": [
+        {
+          "t": "外延生长",
+          "d": "在基底上生长有序晶体薄膜的过程，论文研究分子在模板上的外延。"
+        },
+        {
+          "t": "构象",
+          "d": "分子通过单键旋转形成的不同空间形状，论文中BTB的构象影响其吸附和排列。"
+        },
+        {
+          "t": "扫描隧道显微镜（STM）",
+          "d": "用原子级尖锐探针扫描表面，通过隧道电流成像分子，论文用来看分子排列和形状。"
+        },
+        {
+          "t": "密度泛函理论（DFT）",
+          "d": "一种量子力学计算方法，用于计算分子和固体的电子结构，论文用来模拟分子吸附。"
+        },
+        {
+          "t": "构象挫折",
+          "d": "分子因构象能与其与基底相互作用竞争而无法达到理想构象的状态，论文的核心概念。"
+        },
+        {
+          "t": "去质子化",
+          "d": "分子失去质子（H+），论文中BTB失去羧基上的质子形成模板层。"
+        },
+        {
+          "t": "晶格参数",
+          "d": "描述晶体周期性结构的长度和角度，论文比较模板和银表面上的晶格参数变化。"
+        }
+      ],
+      "tags": [
+        "分子外延",
+        "表面科学",
+        "柔性分子",
+        "纳米材料"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Jakub Planer",
+        "Pavel Procházka",
+        "Tomáš Krajňák",
+        "Veronika Stará",
+        "Daniela Hrubá",
+        "Zdeněk Endstrasser",
+        "Tomáš Skála",
+        "Jan Čechal"
+      ],
+      "abstract": "Precise control of molecular heteroepitaxy offers a route to multilayer architectures with well-defined interfaces. However, the role of intramolecular flexibility in epitaxial matching remains insufficiently understood. Here, we investigate the heteroepitaxy of intact 1,3,5-tris(4-carboxyphenyl)benzene (BTB) on a molecular $δ$-layer composed of fully deprotonated BTB molecules on Ag(111). Combining scanning tunneling microscopy, low-energy electron microscopy and diffraction, X-ray photoelectron spectroscopy, and density functional theory, we identify the key interactions controlling molecular packing and epitaxial growth. We show that intermolecular bonding motifs are preserved on the molecular template, but their lattice parameters and molecular conformations change as compared to a silver surface. Individual molecules exhibit distinct appearances in scanning tunneling microscopy, consistent with site-dependent conformational variations identified by theory. Our calculations reveal that the competition between molecule-substrate interactions and conformational energy produces different compromise geometries, resulting in conformational frustration at the epitaxial interface. Crucially, constraining BTB into a planar geometry changes the preferred lateral adsorption positions, demonstrating that molecular flexibility directly modifies the energetic preferences for epitaxial registry. Comparison with more rigid molecular overlayers further supports this interpretation. Our findings reveal that molecular flexibility contributes to epitaxial matching by allowing unfavorable molecule-substrate interactions to be compensated by energetically favorable conformations while preserving the intermolecular network.",
+      "url": "https://arxiv.org/abs/2611.08851",
+      "pdf": "https://arxiv.org/pdf/2611.08851v1"
+    },
+    {
+      "id": "2611.08862",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-11-06",
+      "title_en": "Jaeger conjecture and Jaeger-Zhang conjecture",
+      "title_zh": "平面图的奇围长与圆色数：证明Jaeger猜想",
+      "one_liner": "证明了每个奇围长至少4k+3的平面图都能映射到奇圈C_{2k+1}，解决了Jaeger猜想。",
+      "why": "平面图是高中图论入门内容，但圆色数和同态是进阶概念。这篇论文解决了一个著名猜想，结论简洁优美，能让你体会图论中“围长”和“染色”的深刻联系。",
+      "sections": {
+        "background": "Jaeger猜想（1980年代）断言奇围长足够大的平面图可以映射到小奇圈。之前只知道一些特殊情况，一般情况悬而未决。圆色数是推广的染色概念，与流和同态紧密相关。",
+        "method": "作者基于Jafari关于圆流的最新结果，用平面对偶将流问题转化为染色问题。关键是一个“小修正引理”，通过生成树的分布来调整边。还用了拆分技巧处理奇偶度。",
+        "finding": "证明了对任意k≥1，奇围长至少4k+3的平面图G满足圆色数χ_c(G) < (2k+1)/k，从而存在到C_{2k+1}的同态。这证实了Jaeger猜想。",
+        "impact": "解决了图论中一个长期猜想，统一了流和染色的视角。方法可能推广到其他图类，促进圆色数理论发展。"
+      },
+      "analogy": "就像给地图染色，但颜色是连续变化的圆环上的点。论文证明只要地图的“奇圈”足够大，就能用很少的“颜色”染好，而且颜色可以连续调节。",
+      "terms": [
+        {
+          "t": "平面图",
+          "d": "可以画在平面上且边不相交的图。论文主要研究平面图。"
+        },
+        {
+          "t": "围长",
+          "d": "图中最短圈的长度。奇围长指最短奇圈的长度。"
+        },
+        {
+          "t": "圆色数",
+          "d": "一种推广的色数，取值可为实数，反映图到圆的同态性质。"
+        },
+        {
+          "t": "同态",
+          "d": "保持边关系的映射。论文证明存在到奇圈的同态。"
+        },
+        {
+          "t": "圆流",
+          "d": "与圆色数对偶的概念，涉及边定向和流量。Jafari的结果关于圆流。"
+        },
+        {
+          "t": "平面对偶",
+          "d": "平面图的对偶图，面变成顶点。用于将流问题转化为染色问题。"
+        },
+        {
+          "t": "生成树",
+          "d": "包含所有顶点的树。论文用生成树上的分布来构造修正。"
+        }
+      ],
+      "tags": [
+        "图论",
+        "平面图",
+        "染色"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Reza Naserasr"
+      ],
+      "abstract": "We prove that every signed planar graph $\\widehat G$ of negative girth at least $\\ell\\geq 3$ satisfies $χ_c(\\widehat G)<\\frac{2\\ell}{\\ell-2}$. As a consequence, for every integer $k\\geq 1$, every planar graph $G$ of odd girth at least $4k+3$ satisfies $χ_c(G)<\\frac{2k+1}{k}$ and hence admits a homomorphism to $C_{2k+1}$. Our proofs build on recent results of Jafari on circular flows. In particular, Jafari proved that every $(4k+2)$-edge-connected graph has circular flow number strictly less than $2+\\frac{1}{k}$. We revisit his theorem, providing an alternative proof that emphasizes the underlying graph-theoretic ideas. We also extend the result to signed graphs and weaken the connectivity assumption by imposing a lower bound only on the size of negative cuts. The key step is a small-correction lemma associated with a distribution on spanning trees. A splitting argument first gives the required correction in an even-degree graph; doubling the edges removes the degree-parity assumption. Plane duality then gives the coloring theorem. We discuss tightness of bounds in the end.",
+      "url": "https://arxiv.org/abs/2611.08862",
+      "pdf": "https://arxiv.org/pdf/2611.08862v1"
+    },
+    {
+      "id": "2611.08874",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · physics.chem-ph",
+      "published": "2026-11-06",
+      "title_en": "Fortuitous Cancellation of Competing Effects in the Free Energy of Water Autoionization: Long-Range Electrostatics, System Size, and Nuclear Quantum Effects",
+      "title_zh": "水为什么自己电离？计算机模拟揭示背后多种效应相互抵消",
+      "one_liner": "用机器学习模拟水分子，发现水的电离自由能受长程静电、系统大小和核量子效应共同影响，且这些效应会相互抵消，导致pKw难以精确计算。",
+      "why": "水是生命之源，水自己电离出氢离子和氢氧根是酸碱化学的基础。这篇论文用最前沿的计算机模拟方法研究这个看似简单却极其复杂的过程，能让你理解课本上“水是弱电解质”背后的微观机制，以及为什么精确计算一个平衡常数如此困难。",
+      "sections": {
+        "background": "水会自动电离成H+和OH-，平衡常数Kw约为10^-14，这个数字决定了所有水溶液的酸碱性质。但为什么电离需要这么多能量？实验很难直接观测单个水分子的电离过程，而计算机模拟又因为水分子间复杂的相互作用（尤其是长程静电和量子效应）而难以精确。之前的研究往往只考虑部分因素，无法给出与实验一致的pKw值。",
+        "method": "研究者使用机器学习原子间势（MLIP）来模拟水分子的相互作用，这种势能基于量子力学计算训练，精度接近第一性原理但速度快得多。他们结合谱自适应偏置力增强采样技术，让模拟能够跨越电离能垒，并追踪质子转移和“水线”构型。他们还系统改变了长程静电处理、系统大小、温度和核量子效应，观察这些因素如何影响自由能曲线。",
+        "finding": "他们发现，长程静电会提高离子间距超过3埃时的自由能；不同力误差相近的模型给出的自由能曲线差异很大；增大系统尺寸会降低计算出的pKw，而核量子效应则使pKw更接近实验值。这些效应相互竞争又部分抵消，导致精确确定pKw需要模拟更长的水线。接触离子对不稳定，溶剂分离离子对仅弱亚稳。",
+        "impact": "这项研究说明，即使使用先进的机器学习势，水的电离自由能计算仍然对模型细节高度敏感，多种效应相互抵消使得精确预测pKw非常困难。这提醒我们，对于复杂化学过程，单一因素的解释可能不够，需要综合考虑多种物理效应。未来可能帮助改进水溶液化学的模拟方法。"
+      },
+      "analogy": "就像你想精确计算一群人合作完成一项任务需要多少时间，但每个人的工作效率受心情、环境、合作方式等多种因素影响，而且这些因素有时会互相抵消——有人心情好但环境差，有人环境好但合作不畅。最终总时间很难预测，必须把所有因素都考虑进去。",
+      "terms": [
+        {
+          "t": "自电离",
+          "d": "水分子自发分解成H+和OH-的过程，是酸碱平衡的基础，论文研究其自由能代价。"
+        },
+        {
+          "t": "机器学习原子间势（MLIP）",
+          "d": "用机器学习方法拟合量子力学数据得到的势函数，能快速模拟分子间相互作用，论文用它来模拟水。"
+        },
+        {
+          "t": "自由能",
+          "d": "系统在恒温下能做功的能量，论文计算电离过程的自由能变化以确定pKw。"
+        },
+        {
+          "t": "核量子效应",
+          "d": "原子核的量子涨落效应，尤其对轻原子如氢重要，论文发现它使pKw更接近实验值。"
+        },
+        {
+          "t": "溶剂分离离子对（SSIP）",
+          "d": "电离后H+和OH-被水分子隔开的状态，论文发现它仅弱亚稳。"
+        },
+        {
+          "t": "pKw",
+          "d": "水自电离平衡常数的负对数，室温下约为14，论文试图从模拟中计算它。"
+        },
+        {
+          "t": "增强采样",
+          "d": "一种加速分子模拟中罕见事件的技术，论文用谱自适应偏置力方法研究电离。"
+        }
+      ],
+      "tags": [
+        "水",
+        "计算化学",
+        "机器学习",
+        "酸碱平衡"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": true,
+      "authors": [
+        "Samuel Varner",
+        "Yinan Xu",
+        "Yezhi Jin",
+        "Gustavo R. Pérez-Lemus",
+        "Pablo F. Zubieta Rico",
+        "Zhiying Yi",
+        "Joan M. Montes de Oca",
+        "Paul F. Nealey",
+        "Seth B. Darling",
+        "Zhen-Gang Wang",
+        "Juan J. de Pablo"
+      ],
+      "abstract": "Few molecular processes are more fundamental to chemistry than the autoionization of water, whose equilibrium constant, $K_w \\approx 10^{-14}$, underlies acid-base equilibria and the chemistry of life. Yet the molecular origins of the free energy cost of forming and separating ions remain incompletely understood. Efforts to explain it have been limited by the difficulty of modeling water reactivity in sufficient detail. Here we combine machine learning interatomic potentials (MLIPs) with spectral adaptive biasing force enhanced sampling to connect proton transfer and water wire configurations to the underlying free energy landscape. We identify competing influences of long-range electrostatics, system size, temperature, and nuclear quantum motion on the predicted ionization thermodynamics. The free energy surface extends from neutral water to ions separated beyond the solvent-separated ion pair (SSIP). It reveals a transition state in which a proton is shared between the second and third molecules of a three-membered water wire. The contact ion pair is unstable and the SSIP only weakly metastable, so determining pK$_w$ requires sampling longer wires. Long-range electrostatics raise the free energy at ion separations beyond $3\\,\\mathrm{\\mathring{A}}$. Models with comparable force errors give substantially different free energy profiles in this region. Increasing system size lowers the calculated pK$_w$, while nuclear quantum effects bring it closer to experiment and reproduce the higher pK$_w$ of D$_2$O relative to H$_2$O. These results establish a baseline for interpreting thermodynamic results from MLIP simulations in which charged and polar groups react and diffuse in finite cells. Our analysis also explains how cancellation among competing effects can yield ionization constants close to experiment even when simulations omit several physical contributions.",
+      "url": "https://arxiv.org/abs/2611.08874",
+      "pdf": "https://arxiv.org/pdf/2611.08874v1"
+    },
+    {
+      "id": "2611.08881",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-06",
+      "title_en": "Limits of Lorenz number estimation from the temperature-dependent Seebeck coefficient",
+      "title_zh": "西贝克系数能唯一确定洛伦兹数吗？答案可能是否定的",
+      "one_liner": "通过线性规划分析，发现即使知道多个温度下的西贝克系数和电导率，也不能唯一确定洛伦兹数，从而无法分离电子和晶格热导率。",
+      "why": "热电材料能把废热变成电能，评估其性能需要知道电子和晶格各自贡献多少热导率。通常用洛伦兹数来分离，但这项研究表明，常用的方法可能不可靠。这让你看到，课本上的公式在真实材料中可能遇到根本性的限制。",
+      "sections": {
+        "background": "热电材料的热导率由电子和晶格两部分组成，要优化性能需分别知道它们。常用方法是测量西贝克系数，假设一个能带和散射模型来估算洛伦兹数，再根据维德曼-弗兰兹定律求电子热导率。但模型假设是否可靠？西贝克系数到底能提供多少独立信息？之前缺乏系统分析。",
+        "method": "研究者把洛伦兹数的可能范围表述为线性规划问题，在固定的有限谱表示下，假设化学势已知，且每个候选谱在各观测温度下有共同的能量依赖。他们用单能带和同号双能带模型生成参考西贝克系数，然后看增加观测温度数量（从1到5）能多大程度缩小洛伦兹数的区间。",
+        "finding": "将观测温度从1个增加到5个，洛伦兹数区间宽度缩小约97.6%和97.8%。但单能带例子在400K时区间仍为[1.46453,2.37037]×10^-8 WΩK^-2。即使电导率精确已知，若谱幅度可随温度独立变化，区间也不缩小。因此，即使有5个温度下的精确西贝克系数和电导率，也不能唯一确定400K的电子热导率。",
+        "impact": "这项研究警告说，基于西贝克系数估算洛伦兹数的方法有根本局限，可能误导热电材料性能评估。未来需要更直接的测量或额外信息来分离热导率。对材料科学和能源技术有重要启示。"
+      },
+      "analogy": "就像你想知道一个蛋糕里糖和面粉各多少，你尝了5个不同温度下的蛋糕（西贝克系数），还称了总重量（电导率），但发现还是不能唯一确定糖的量，因为糖和面粉的配方可能随温度变化，你尝到的甜度可以有很多种组合。",
+      "terms": [
+        {
+          "t": "西贝克系数",
+          "d": "材料两端温差产生电压的比例，反映载流子类型和浓度，论文用它来估算洛伦兹数。"
+        },
+        {
+          "t": "洛伦兹数",
+          "d": "联系电导率和电子热导率的比例常数，论文研究其可确定性的极限。"
+        },
+        {
+          "t": "热导率",
+          "d": "材料传导热量的能力，论文关注电子和晶格热导率的分离。"
+        },
+        {
+          "t": "线性规划",
+          "d": "在约束条件下优化线性目标的方法，论文用它找洛伦兹数的最小最大值。"
+        },
+        {
+          "t": "化学势",
+          "d": "系统中添加一个粒子所需的能量，论文假设其已知。"
+        },
+        {
+          "t": "能带模型",
+          "d": "描述电子能量随动量变化的模型，论文用单能带和双能带模型生成数据。"
+        },
+        {
+          "t": "维德曼-弗兰兹定律",
+          "d": "电子热导率与电导率之比正比于温度，比例系数为洛伦兹数，论文间接相关。"
+        }
+      ],
+      "tags": [
+        "热电材料",
+        "输运性质",
+        "洛伦兹数",
+        "线性规划"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Naoki Sato",
+        "Takao Mori"
+      ],
+      "abstract": "Separating electronic and lattice thermal conductivity often relies on a Lorenz number estimated from the Seebeck coefficient using an assumed band and scattering model. We ask how much information about the Lorenz number comes from temperature-dependent Seebeck coefficients rather than the assumed model. We formulate compatible minimum and maximum Lorenz numbers as linear programs in a fixed finite spectral representation, assuming known chemical potentials and a common energy dependence across observation temperatures for each candidate spectrum. Reference Seebeck coefficients are generated by single-band and same-sign two-band models. Increasing the prescribed observations from one to five temperatures reduces the Lorenz interval widths by approximately 97.6% and 97.8%, respectively. Nevertheless, the single-band example retains an attained interval of approximately $[1.46453,2.37037]\\times10^{-8}$ W $Ω$ K$^{-2}$ at 400 K. Exact electrical conductivity values do not narrow these ranges when spectral amplitudes can vary independently with temperature. Thus, even exact Seebeck coefficients and electrical conductivities at all five temperatures need not uniquely determine electronic thermal conductivity at 400 K. For the same single-band example, known ratios of spectral amplitudes across temperatures allow electrical conductivity values to confine all compatible Lorenz numbers to an enclosing interval less than 1% as wide as the five-temperature free-amplitude interval. Temperature-dependent Seebeck data strongly narrow the compatible range, while conductivity provides further spectral constraints when the temperature dependence of spectral amplitudes is independently restricted.",
+      "url": "https://arxiv.org/abs/2611.08881",
+      "pdf": "https://arxiv.org/pdf/2611.08881v1"
+    },
+    {
+      "id": "2611.08887",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CV",
+      "published": "2026-11-06",
+      "title_en": "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction",
+      "title_zh": "用小鼠大脑活动“回放”它看过的电影",
+      "one_liner": "研究者从小鼠视觉皮层数千个神经元的活动出发，用生成式AI重建它看过的自然电影片段，识别准确率达81.4%。",
+      "why": "我们常觉得“心里想什么，别人不可能知道”，但这篇论文展示：只记录大脑视觉区域一群神经元的活动，就能用AI把看到的画面大致“还原”出来。它把神经科学和人工智能结合，让高中生看到大脑如何编码视觉信息，也看到“读心术”离现实有多远。实验对象是小鼠，但原理和人类视觉系统有相通之处。",
+      "sections": {
+        "background": "神经解码——从大脑活动反推外部刺激——是神经科学的中心挑战之一。用钙成像记录神经元活动时，信号噪声大、时间上被滤波，而且同时记录神经活动和视频的数据很少。以往方法多针对电生理数据或简单刺激，对自然电影这类复杂动态场景，重建效果有限。如何从大规模、有噪声的群体活动中提取空间布局和语义信息，是难点。",
+        "method": "研究者提出Ca2REAL框架，把钙成像得到的神经活动转换成视频生成模型能理解的控制信号：一路控制“布局”（画面中物体在哪），一路控制“语义”（画面里是什么）。他们先用一只小鼠的7,863个V1神经元（初级视觉皮层神经元）在观看自然电影时的反应训练，再在由11个独立数据集构建的虚拟群体（116,705个神经元）上做扰动和消融实验，检验重建依赖哪些信息。",
+        "finding": "在留出的自然电影片段上，Ca2REAL重建的视频能以81.4%的准确率在所有候选片段中识别出正确刺激，明显优于确定性基线。消融实验显示，重建依赖分布式、刺激特异的群体结构，布局和语义通路提供互补信息。时间分析还表明，重建片段能较好保留语义动态变化。",
+        "impact": "这项工作说明，大规模皮层群体活动约束着自然视觉体验的空间、语义和时间结构，为高保真神经重建提供了生成式框架。未来可能帮助理解大脑如何表征世界，也可能为脑机接口提供新思路。不过，目前只在小鼠上验证，人类应用还有距离。"
+      },
+      "analogy": "就像你只听到一场足球赛的解说员零星的喊声（神经元活动），却能借助一个懂足球的AI，把比赛画面大致画出来：它知道球大概在哪个区域（布局），也知道是哪两支球队（语义）。",
+      "terms": [
+        {
+          "t": "钙成像",
+          "d": "一种记录神经元活动的方法，通过检测细胞内钙离子浓度变化来推断神经元是否放电。论文用它记录小鼠视觉皮层数千个神经元的活动，作为重建视频的输入。"
+        },
+        {
+          "t": "V1",
+          "d": "初级视觉皮层，大脑处理视觉信息的第一站。论文记录小鼠V1神经元活动，用来重建它看到的电影画面。"
+        },
+        {
+          "t": "神经解码",
+          "d": "从大脑活动反推外部刺激或内部意图的过程。论文的目标是从钙成像信号解码出自然电影的画面。"
+        },
+        {
+          "t": "生成式模型",
+          "d": "能根据输入生成新内容（如图像、视频）的人工智能模型。论文用预训练视频扩散模型作为生成器，把神经活动翻译成视频。"
+        },
+        {
+          "t": "扩散模型",
+          "d": "一类生成式模型，通过逐步去噪从随机噪声中生成数据。论文用它作为视频生成 backbone，根据神经活动控制信号生成电影片段。"
+        },
+        {
+          "t": "消融实验",
+          "d": "故意去掉模型的某一部分，看性能如何变化，以判断该部分的作用。论文用消融实验检验布局和语义通路对重建的贡献。"
+        },
+        {
+          "t": "刺激识别准确率",
+          "d": "给定重建视频，从多个候选刺激中挑出正确原片的比例。论文中所有候选对比较的准确率为81.4%。"
+        },
+        {
+          "t": "编码模型",
+          "d": "预测神经元对给定刺激如何响应的模型。论文用编码模型预测的响应构建虚拟神经元群体，以扩大数据规模。"
+        }
+      ],
+      "tags": [
+        "神经科学",
+        "脑机接口",
+        "生成式AI"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Yukai Huang",
+        "Haoyu Albert Wang",
+        "Jiawei Zhang",
+        "Jialun Ma",
+        "Jiayao Ding",
+        "Yiran Lin",
+        "Xingyu Chen",
+        "Ziqi Gao",
+        "Yuguo Yu"
+      ],
+      "abstract": "Reconstructing natural visual experience from cortical population activity is a central challenge in neural decoding, particularly for calcium imaging, where signals are noisy, temporally filtered, and paired neural-video data are limited. Here we present Ca2REAL (Calcium Activity to Reconstruct Events, Appearance, and Layout), a neural-to-video framework that conditions a pretrained video diffusion model through separate layout and semantic controls derived from calcium activity. Using measured responses from 7,863 V1 neurons in one mouse, Ca2REAL reconstructed held-out natural-movie clips with 81.4% all-pairs stimulus-identification accuracy, with its clearest gains over deterministic baselines in perceptual and semantic measures. We further evaluated the framework in a stimulus-aligned virtual population of 116,705 neurons assembled from encoding-model-predicted responses across 11 independently recorded datasets. Perturbation and ablation analyses showed that reconstruction depends on distributed, stimulus-specific population structure, with layout and semantic pathways providing complementary spatial and identity information. Temporal analyses further showed improved preservation of semantic dynamics across reconstructed clips. These results show that large-scale cortical population activity constrains the spatial, semantic, and temporal structure of natural visual experience, providing a generative framework for high-fidelity neural reconstruction of dynamic visual scenes.",
+      "url": "https://arxiv.org/abs/2611.08887",
+      "pdf": "https://arxiv.org/pdf/2611.08887v1"
+    },
+    {
+      "id": "2611.08899",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · hep-ph",
+      "published": "2026-11-06",
+      "title_en": "Spiral momentum spectra and spin asymmetry in vacuum pair production driven by phase-modulated elliptically polarized electric fields",
+      "title_zh": "相位调制让真空产生电子对出现螺旋动量谱",
+      "one_liner": "用相位调制椭圆偏振电场从真空中产生正负电子对时，余弦调制可将环形动量分布扭曲成螺旋形，且自旋产额偏向与场手性一致的方向。",
+      "why": "真空不是空的，强电场能把虚粒子对“拉”成真实粒子。这篇论文讨论如何用激光的相位和偏振控制产生粒子的动量图案和自旋，就像用模具塑造粒子。它联系到激光技术、粒子物理和量子场论，适合对“从无到有”好奇的高中生。",
+      "sections": {
+        "background": "量子电动力学预言，足够强的电场可以从真空中激发出正负电子对，这叫真空对产生。但实验尚未直接观测到，因为需要极强电场。理论研究表明，激光的偏振和相位可以影响产生粒子的分布。此前对相位调制椭圆偏振场的研究较少，尤其是自旋分辨的动量谱。",
+        "method": "作者用量子动理学方程模拟真空中电子-正负电子对的产生。他们考虑相位调制的椭圆偏振电场，调制形式包括余弦型和正弦型，变化调制幅度、频率、椭圆率和调制形式，计算自旋分辨的动量谱和自旋不对称度。",
+        "finding": "余弦型调制可以把环形的动量分布扭曲成螺旋图案，这种变形对调制幅度和频率的依赖是非单调的，在圆偏振时最明显。在横向动量平面，自旋分辨的产额偏向与场手性一致的自旋通道；反转场手性会反转偏好通道，但总产额不变。正弦型调制基本保持环形和镜像对称谱，但自旋不对称对调制幅度的依赖更强。",
+        "impact": "这表明相位调制和椭圆率可以控制真空对产生的动量谱图案和自旋不对称度，为未来激光实验提供理论指导。如果实验实现，可能帮助理解强场量子电动力学和自旋效应，但需要极高强度的激光。"
+      },
+      "analogy": "就像往水里扔石头会激起圆形波纹，但如果你按特定节奏晃动石头，波纹会变成螺旋形。论文发现，用特定相位调制的激光“晃动”真空，产生的电子对也会形成螺旋图案，而且自旋方向会跟着激光的“拧劲”走。",
+      "terms": [
+        {
+          "t": "真空对产生",
+          "d": "强电场从真空中激发出正负电子对的过程，是量子电动力学的预言。论文研究如何用激光控制它。"
+        },
+        {
+          "t": "椭圆偏振",
+          "d": "电场矢量端点画椭圆的光偏振状态。论文用相位调制改变椭圆偏振场来影响粒子产生。"
+        },
+        {
+          "t": "量子动理学方程",
+          "d": "描述量子系统中粒子分布随时间演化的方程。论文用它模拟电子对的产生过程。"
+        },
+        {
+          "t": "自旋不对称",
+          "d": "不同自旋方向的粒子产额不相等。论文发现自旋产额偏向与场手性一致的方向。"
+        },
+        {
+          "t": "手性",
+          "d": "像左手和右手一样镜像不对称的性质。论文中反转场手性会反转自旋偏好通道。"
+        },
+        {
+          "t": "相位调制",
+          "d": "改变光波相位随时间的变化方式。论文用余弦型和正弦型调制来塑造动量谱。"
+        },
+        {
+          "t": "动量谱",
+          "d": "粒子动量分布的图案。论文发现余弦调制能把环形谱变成螺旋形。"
+        }
+      ],
+      "tags": [
+        "量子电动力学",
+        "强场物理",
+        "激光"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Li-Yi Yang",
+        "Hong-Hao Fan",
+        "Jing-He Huang",
+        "Shuo Yang",
+        "Bai-Song Xie"
+      ],
+      "abstract": "We study vacuum electron--positron pair production in phase-modulated elliptically polarized electric fields using the quantum kinetic equations. We analyze how the modulation amplitude, frequency, ellipticity, and modulation form affect the spin-resolved momentum spectra and the spin asymmetry. Cosine-type modulation can deform ring-shaped momentum distributions into spiral patterns. This deformation depends nonmonotonically on the modulation amplitude and frequency and is most pronounced for circular polarization. In the transverse momentum plane, the spin-resolved yields favor the spin channel along the direction of field handedness. Reversing the field handedness would reverse the favored channel while leaving the total yield unchanged. Sine-type modulation preserves ring-shaped and mirror-symmetric spectra approximately, however, it leads to a stronger dependence of the spin asymmetry on the modulation amplitude than cosine-type modulation does. These results show that phase modulation and ellipticity can control the momentum spectra patterns in vacuum pair production. Moreover, phase modulation can also affect the degree of spin asymmetry.",
+      "url": "https://arxiv.org/abs/2611.08899",
+      "pdf": "https://arxiv.org/pdf/2611.08899v1"
+    },
+    {
+      "id": "2611.08906",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-11-06",
+      "title_en": "Quantum Fluctuations in Noether's Theorem",
+      "title_zh": "量子涨落如何修正诺特定理中的守恒量",
+      "one_liner": "从路径积分出发，推导出量子粒子偏离经典路径会导致诺特流出现涨落，其大小等于负的哈密顿量在偏离处的值，并验证了能量-时间不确定关系。",
+      "why": "诺特定理是物理学中最优美的定理之一：对称性导致守恒量。这篇论文讨论量子粒子不沿经典路径运动时，守恒量会怎样“晃动”。它把费曼路径积分和诺特定理联系起来，让高中生看到量子世界如何修正经典定律，适合对理论物理好奇的读者。",
+      "sections": {
+        "background": "经典力学中，诺特定理说每一种连续对称性对应一个守恒量，比如时间平移对称对应能量守恒。推导时会出现一个正比于欧拉-拉格朗日方程式的项，经典路径满足方程所以该项为零。但量子粒子走所有可能路径，不满足经典方程，因此该项不为零，代表量子涨落。此前少有工作系统计算这个涨落。",
+        "method": "作者从路径积分表述出发，保留诺特流推导中通常被丢弃的欧拉-拉格朗日项，将其解释为量子涨落。对于时间平移对称性，他们计算这个涨落的泛函形式，发现它等于负的哈密顿量在偏离经典路径的距离y处的值。然后用单谐振子为例，计算量子能量涨落。",
+        "finding": "对于时间不变系统，量子涨落ΔE = -H(y)，其中y是偏离经典路径的距离，H是哈密顿量。在短时间极限下，这个结果回到能量-时间不确定关系ΔEΔt ~ ħ；在长时间极限下，回到量子谐振子的零点能。这给出了诺特定理在量子层面的修正。",
+        "impact": "这项工作把诺特定理和路径积分联系起来，为理解量子涨落提供了新视角。它可能影响量子热力学和量子场论中守恒量的定义，但目前只是理论框架，实际应用还需进一步研究。"
+      },
+      "analogy": "经典粒子像火车沿铁轨走，诺特定理说“直走时能量不变”。量子粒子像醉汉，可能偏离铁轨，这时能量就会上下晃动。论文算出了晃动的幅度，并发现短时间晃动符合不确定性原理，长时间晃动回到零点能。",
+      "terms": [
+        {
+          "t": "诺特定理",
+          "d": "物理中关于对称性与守恒量关系的定理：每一种连续对称性对应一个守恒量。论文研究量子情形下该定理的修正。"
+        },
+        {
+          "t": "路径积分",
+          "d": "费曼提出的量子力学表述，粒子从A到B的概率是所有可能路径的贡献之和。论文用它计算量子涨落。"
+        },
+        {
+          "t": "欧拉-拉格朗日方程",
+          "d": "经典力学中使作用量取极值的路径满足的方程。论文中该项在量子情形下不为零，代表涨落。"
+        },
+        {
+          "t": "哈密顿量",
+          "d": "系统总能量的算符。论文发现量子涨落等于负的哈密顿量在偏离处的值。"
+        },
+        {
+          "t": "零点能",
+          "d": "量子谐振子在最低能级仍具有的能量，不为零。论文在长时间极限下恢复了这个结果。"
+        },
+        {
+          "t": "能量-时间不确定关系",
+          "d": "ΔEΔt ≥ ħ/2，表示能量和时间的测量精度存在权衡。论文在短时间极限下恢复了这个关系。"
+        },
+        {
+          "t": "谐振子",
+          "d": "像弹簧振子一样的系统，是量子力学中最简单的模型之一。论文用它作为例子验证结果。"
+        }
+      ],
+      "tags": [
+        "量子力学",
+        "诺特定理",
+        "路径积分"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "J. A. Crosse"
+      ],
+      "abstract": "When deriving the expression for the Noether's current one obtains a term that is an integral over the Euler-Lagrange equation. This term vanishes along the classical path and so does not contribute to the current. However, quantum particles do not necessarily follow the classical path; this concept is the basis of Feynman's path integral quantization formalism. Thus, for a quantum system, the Euler-Lagrange term does not vanish and, hence, corresponds to a quantum fluctuation of the Noether's current owing to the system deviating from the classical path. Here, we compute this quantum fluctuation from Noether's theorem and the path integral formalism. We find that, for a time invariant system, the expression for the quantum fluctuations is give by minus the functional expression for the Hamiltonian, $ΔE = -H(y)$, evaluated at the distance from the classical path, $y$. As an example we evaluate quantum energy fluctuations of a single Harmonic oscillator. In the short time limit we recover the energy-time uncertainty relation and in the long time limit we recover the zero point energy of the quantum harmonic oscillator.",
+      "url": "https://arxiv.org/abs/2611.08906",
+      "pdf": "https://arxiv.org/pdf/2611.08906v1"
+    },
+    {
+      "id": "2611.08907",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-11-06",
+      "title_en": "Shared Lookups and Lazy Residues: Fewer Toffoli Gates for Factoring RSA-2048",
+      "title_zh": "量子计算机分解RSA-2048所需量子门减少近半",
+      "one_liner": "通过共享查找表和惰性余数计算，将分解RSA-2048所需的Toffoli门数量减少15%到46%，最少只需25.5亿个。",
+      "why": "RSA加密是保护网络支付和隐私的核心技术，而量子计算机能破解它。这篇论文直接优化了破解所需的资源，让高中生看到课本里的质因数分解如何与最前沿的量子计算和网络安全挂钩，理解数学和物理如何共同影响现实世界。",
+      "sections": {
+        "background": "RSA加密依赖大数分解的困难性：把两个大质数相乘容易，但要从乘积反推出质数极其困难。1994年Shor算法证明量子计算机能高效分解大数，但实际运行需要极多量子门。此前最优方案（2025年Gidney）分解RSA-2048需约30亿个Toffoli门和大量逻辑量子比特，门数量是实用化的主要瓶颈。",
+        "method": "作者改进了Shor算法中的模幂运算电路。他们利用余数数制中不同质数共享相同地址的特点，一次查找返回多个质数的表项，减少查找次数；同时保留中间余数而不是立即计算掉，避免清理时重新计算，并允许惰性算术——只在最后做一次模约减。用开源基准测试在参考模拟器上估计资源。",
+        "finding": "在相同逻辑量子比特预算下，1461个量子比特时Toffoli门减少15%（每次分解5.08×10^9个），1806个量子比特时减少46%（2.55×10^9个）。消融实验显示，固定窗口和检查点设置时，三质数共享贡献了28.8%的门减少。实际运行时间节省取决于具体硬件架构。",
+        "impact": "这使量子计算机破解RSA-2048所需的量子门数量大幅下降，可能加速实用化量子计算机对现有加密体系的威胁。同时也提醒我们，后量子密码学的迁移需要加快。不过，论文只优化了门数量，实际运行还受纠错和硬件速度限制。"
+      },
+      "analogy": "就像你要查五个朋友的电话号码，如果他们的号码存在同一个地址簿的同一页，你翻一次就能全看到，不用翻五次。论文就是让量子计算机查表时“一次看一页”，省下大量重复动作。",
+      "terms": [
+        {
+          "t": "RSA加密",
+          "d": "一种广泛使用的公钥加密算法，安全性基于大数分解的困难性。论文的目标就是让量子计算机更快分解RSA-2048。"
+        },
+        {
+          "t": "Shor算法",
+          "d": "量子计算机上分解大数的算法，核心是模幂运算和量子傅里叶变换。论文优化了其中的模幂运算电路。"
+        },
+        {
+          "t": "Toffoli门",
+          "d": "量子计算中的一种基本逻辑门，类似经典电路中的与门但可逆。论文用Toffoli门数量衡量资源消耗。"
+        },
+        {
+          "t": "逻辑量子比特",
+          "d": "经过量子纠错编码的量子比特，比物理量子比特更稳定。论文比较了不同逻辑量子比特数下的门数量。"
+        },
+        {
+          "t": "余数数制",
+          "d": "用一组两两互质的模数表示一个数，每个模数下的余数独立运算。论文利用它共享查找表。"
+        },
+        {
+          "t": "模幂运算",
+          "d": "计算a^b mod N的运算，是Shor算法的核心步骤。论文优化了它的电路实现。"
+        },
+        {
+          "t": "惰性算术",
+          "d": "推迟模约减等昂贵操作，直到必要时才做。论文用保留中间余数来减少重复计算。"
+        }
+      ],
+      "tags": [
+        "量子计算",
+        "密码学",
+        "算法优化"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": true,
+      "authors": [
+        "Monit Sharma",
+        "Hoong Chuin Lau"
+      ],
+      "abstract": "Gidney's 2025 construction for factoring RSA-2048 with few logical qubits spends most of its Toffoli gates on discrete-log table lookups and residue uncomputation. We reduce both costs. Shared lookups return entries for several primes of a residue number system at once because they have the same address. Retained intermediate residues remove recomputation during cleanup and enable lazy arithmetic with a single final modular reduction. We prove output preservation and estimate resources with an open benchmark built on the reference simulator. Against the best reference setting within the same logical-qubit budget, using the published model for the reference and benchmark counts for our circuits, we obtain $15\\%$ fewer Toffolis at $1{,}461$ qubits ($5.08 \\times 10^{9}$ per factoring) and $46\\%$ fewer at $1{,}806$ qubits ($2.55 \\times 10^{9}$). A matched ablation finds $28.8\\%$ fewer Toffolis from three-prime sharing at fixed window and checkpoint settings. Architecture-specific timing determines how much becomes a runtime saving.",
+      "url": "https://arxiv.org/abs/2611.08907",
+      "pdf": "https://arxiv.org/pdf/2611.08907v1"
+    },
+    {
       "id": "2611.07265",
       "field": "bio",
       "source": "arXiv",
@@ -2413,6 +3070,73 @@
       "pdf": "https://arxiv.org/pdf/2611.08460v1"
     },
     {
+      "id": "2611.08469",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.LG",
+      "published": "2026-11-05",
+      "title_en": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+      "title_zh": "行为相同，内部机制可能不同：有限实验能测出多少“整合信息”",
+      "one_liner": "研究者用小型随机网络检验“整合信息φ”能否从有限实验数据中可靠测量，发现行为相同但内部机制可能完全不同，部分观测会带来无法消除的精度下限。",
+      "why": "这篇论文讨论一个很根本的问题：我们能不能通过实验判断一个系统（比如大脑或AI）内部到底是怎么计算的？它用简单的四五个单元的网络做“思想实验”，说明只看输入输出可能完全看不出内部差异。对喜欢哲学、人工智能和脑科学交叉的高中生来说，能训练批判性思维：别被“行为一样”骗了，内部机制可能天差地别。",
+      "sections": {
+        "background": "可解释性、AI审计和机器意识评估越来越依赖“机制层面”的量——描述系统如何计算，而不是只输出什么。但实验只能通过有限、部分、有噪声的干预来观察系统。一个关键问题是：这些量能否从实验可及的数据中唯一确定（可识别），并且能从有限数据中可靠估计（可认证）？整合信息论中的φ就是这样一个量，但它是否可测一直有争议。",
+        "method": "研究者在一个刻意严苛的设定下精确回答这个问题：使用已知真实机制的4个和5个单元的随机网络，计算φ，并模拟不同实验条件——只观察部分单元、只做一步干预、不同试验次数等。他们检查在什么条件下φ能被识别和认证，并分析φ定义中的“划分选择”带来的不连续性。",
+        "finding": "行为可能“沉默”：一个循环网络和一个前馈网络在响应延迟上输入输出完全相同，但φ分别为0.28比特和0比特，内部记录在4到53次试验内就能区分它们。部分观测也可能“失明”：一步记录中漏掉的单元会带来0.30到1.02比特的精度下限，再多样本也无法降低。φ还有“锐边”：在随机网络中约99%的边上，机制的微小变化会让φ改变25%到100%。",
+        "impact": "这项研究提醒我们，从有限实验推断内部机制需要非常小心：行为相同不代表机制相同，部分观测可能永远看不到某些差异。它对AI审计、意识评估和神经科学实验设计都有警示意义，也可能推动更严谨的测量标准。"
+      },
+      "analogy": "就像两辆车外观、加速、刹车表现完全一样，但一辆是燃油车、一辆是电动车。只看路试（行为）分不出来，得打开发动机舱（内部记录）才能发现根本区别。",
+      "terms": [
+        {
+          "t": "整合信息φ",
+          "d": "整合信息论中衡量系统“整合”程度的量，单位为比特，试图刻画系统内部因果结构。论文检验这个量能否从有限实验数据中可靠测量。"
+        },
+        {
+          "t": "可识别性",
+          "d": "指一个量能否从实验可获取的数据中唯一确定。论文问：在有限干预下，φ是否可识别。"
+        },
+        {
+          "t": "干预",
+          "d": "主动改变系统某一部分的状态，观察对其他部分的影响。论文通过有限、部分、有噪声的干预来模拟实验观测。"
+        },
+        {
+          "t": "前馈网络",
+          "d": "信息单向流动、没有反馈回路的网络。论文中前馈网络的φ为0比特，与行为相同的循环网络形成对比。"
+        },
+        {
+          "t": "循环网络",
+          "d": "神经元之间有反馈连接、信息可以循环流动的网络。论文用它展示即使输入输出行为相同，内部机制也可能不同。"
+        },
+        {
+          "t": "精度下限",
+          "d": "由于观测不完整而无法通过增加样本量消除的误差下限。论文发现漏掉单元会带来0.30到1.02比特的精度下限。"
+        },
+        {
+          "t": "划分",
+          "d": "整合信息论中把系统分成部分的方式，φ基于某种划分来定义。论文指出φ选择划分的标准和报告的标准不一致，导致不连续。"
+        },
+        {
+          "t": "替代模型",
+          "d": "用来近似真实系统行为的简化模型。论文提到约1%的替代模型能拟合数据，但内部机制可能不同。"
+        }
+      ],
+      "tags": [
+        "神经科学",
+        "人工智能",
+        "意识研究"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Linqian Wu",
+        "Diaoxuan He"
+      ],
+      "abstract": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transition law that describe how it computes, not what it outputs. Experiments see that law only through finite, partial and noisy interventions. We ask when such a quantity is identifiable from an experiment's access, continuous in the mechanism and certifiable from finite data, and answer exactly for a deliberately demanding case - the integrated information $\\varphi$ of integrated information theory - in stochastic networks of four and five units with known ground truth. Behavior can be silent: a recurrent and a feed-forward network with identical input-output laws at their response delay carry 0.28 and 0 bits, yet internal recordings separate them within 4-53 trials. Partial access can be just as blind: in our examples, units left out of a one-step recording impose precision floors of 0.30-1.02 bits that no sample size lowers, and in all-but-self parity networks, recordings of any length see several hidden units only through the product of their fidelities - a symmetry that one intervention broke in exact checks. The measure has sharp edges: because $\\varphi$ selects a partition, and the cause and effect it specifies, by one criterion and reports another, infinitesimal changes of mechanism that cross an edge change it by 25-100% at 99% of the edges we found in random networks, and about 1% of surrogate models that fit interventional data almost perfectly misreport it by more than 20%. One-sided claims survive: the same data certify a lower bound on both sides of an edge, and we prove $\\varphi>1.004$ bits throughout a 64-dimensional region of mechanisms and certify it from about $10^7$ controlled transitions with false-certificate probability at most $α$. Measurability is thus a design question with computable answers.",
+      "url": "https://arxiv.org/abs/2611.08469",
+      "pdf": "https://arxiv.org/pdf/2611.08469v1"
+    },
+    {
       "id": "2611.08475",
       "field": "physics",
       "source": "arXiv",
@@ -2540,6 +3264,277 @@
       "abstract": "The dispersion measures (DMs) of fast radio bursts (FRBs) trace ionised baryons along the line of sight, probing baryonic feedback. Two complementary observables can be constructed from an FRB catalogue: the DM-redshift (Macquart) relation of host-identified FRBs, and the angular power spectrum of the DM field of the full catalogue. Their joint analysis requires their cross-covariance. We derive it within the halo model and show it is a super-sample effect: only the monopole of an individual DM correlates with the angular power spectrum, yielding an exact, model-independent bound on the correlation coefficient. We validate the calculation against log-normal forward simulations of $10^4$ FRBs. For individual DMs, the correlation with the bandpowers is at the per cent level. Neglecting the cross-covariance changes the width of the $χ^2$ distribution by only 0.8 per cent, so the two observables can be treated as effectively independent for wide-area surveys. In a joint forecast with an LSST-like weak lensing survey, adding the Macquart relation tightens constraints on the physical baryon density by 32 per cent and on the mean host contribution by a factor of 4.1, while improving baryonification parameters by only about 5 per cent, indirectly through the host contribution. Finally, we show that the redshift distribution of FRBs without identified hosts, which enters every DM power spectrum, can be reconstructed by inverting their DMs with the jointly fitted mean relation without biasing the inferred parameters, whereas a 20 per cent error in the mean relation biases the DM power spectrum by up to 2$σ$ per band for $5\\times 10^5$ FRBs.",
       "url": "https://arxiv.org/abs/2611.08481",
       "pdf": "https://arxiv.org/pdf/2611.08481v1"
+    },
+    {
+      "id": "2611.08568",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.QM",
+      "published": "2026-11-05",
+      "title_en": "Personalized health coaching via coachable health age and counterfactual wearable trajectories",
+      "title_zh": "可穿戴设备算出“健康年龄”，还能预测改变习惯后的效果",
+      "one_liner": "研究者用可穿戴设备数据构建“可教练健康年龄”指标，并训练模型预测生活方式改变后数周内的生理反应，帮助制定个性化健康计划。",
+      "why": "这篇论文和每个人的生活都直接相关：手环、手表每天都在记录你的步数、心率、睡眠，但除了看数字，这些数据还能干什么？研究告诉我们，可以算出一个“健康年龄”，还能模拟“如果你每天多走2000步，12周后身体会怎样”。对想了解大数据和健康结合的高中生来说，既贴近生活又能看到人工智能在医疗健康中的实际应用。",
+      "sections": {
+        "background": "可穿戴设备已经能连续记录心率、步数、睡眠等数据，但大多数产品只是把这些数据汇总成图表，告诉你“昨天走了多少步”“平均心率多少”，却很难回答“如果我改变某个习惯，几周后身体会有什么变化”。个性化健康建议往往依赖医生经验，缺乏量化工具。而且，每个人的身体反应不同，同样的运动计划对张三有效，对李四可能效果甚微。如何从被动记录走向主动预测，是这个领域卡住的地方。",
+        "method": "研究者首先用三个大型队列（共约2.7万人）的数据，从可穿戴设备能测到的、可改变的行为和生理信号中，构建了一个“可教练健康年龄”（CHA）指标——它像“健康年龄”一样直观，但只依赖你能改变的因素。然后，他们开发了一个“传感器世界模型”（SensorWM），用约10万名参与者、超过220万“人-周”的纵向数据预训练，学习“行为改变→生理反应”的规律。最后，把CHA和SensorWM结合成一个能提出假设的教练系统，生成12周个性化计划，并请专业教练盲评。",
+        "finding": "CHA与已知的心血管代谢健康指标一致，并且在预测未来心血管和代谢疾病方面，比单纯用年龄、性别、体重指数（BMI）更准。SensorWM能较好预测多周生理变化，R²=0.664（R²越接近1说明预测越准），优于通用时间序列模型。在盲评中，认证生活方式教练更喜欢基于“反事实模拟”生成的计划，而不是仅基于历史数据的计划：整体质量偏好71.4%，预期依从性偏好71.0%（P<0.001）。",
+        "impact": "这项工作把可穿戴设备从“记录仪”变成“模拟器”，让健康建议可以基于“如果……会怎样”的量化预测，而不是泛泛而谈。未来可能帮助普通人更科学地规划运动、睡眠和饮食，也可能辅助医生和教练制定个性化方案。不过，模型预测的准确性仍需在更多人群和真实干预中验证。"
+      },
+      "analogy": "就像导航软件不仅显示你现在的位置，还能根据实时路况预测“如果你现在出发，走哪条路最快到家”。可穿戴设备记录的是“当前位置”，这项研究想做的，是给你一条基于你身体数据的“个性化路线”。",
+      "terms": [
+        {
+          "t": "可穿戴设备",
+          "d": "能戴在身上的传感器，如手环、手表，连续记录心率、步数、睡眠等。论文用它被动采集参与者的生理和行为数据，作为健康年龄和预测模型的输入。"
+        },
+        {
+          "t": "健康年龄",
+          "d": "用生理指标估算身体状态相当于多少岁，比实际年龄更能反映健康水平。论文构建的“可教练健康年龄”只使用可改变的因素，以便指导行为改变。"
+        },
+        {
+          "t": "世界模型",
+          "d": "在人工智能中，指学习环境如何随动作变化的内部模拟器。论文的SensorWM是一个“传感器世界模型”，能预测不同生活方式改变后多周内的生理反应。"
+        },
+        {
+          "t": "反事实",
+          "d": "指“如果做了不同选择，结果会怎样”的假设情景。论文用反事实模拟来生成“如果你改变习惯，身体会如何变化”的 coaching 计划。"
+        },
+        {
+          "t": "R²",
+          "d": "决定系数，衡量模型预测值与真实值吻合程度的指标，越接近1越好。论文中SensorWM预测多周生理反应的R²=0.664，说明有一定预测能力。"
+        },
+        {
+          "t": "BMI",
+          "d": "身体质量指数，用体重（千克）除以身高（米）的平方，粗略衡量胖瘦。论文把它作为传统健康指标，比较新指标是否提供额外预测力。"
+        },
+        {
+          "t": "盲评",
+          "d": "评价者不知道方案来源的情况下进行比较，以减少偏见。论文请教练盲评两种 coaching 计划，发现反事实计划更受偏好。"
+        },
+        {
+          "t": "纵向数据",
+          "d": "对同一批人长期多次跟踪记录的数据。论文用纵向Fitbit数据来验证健康年龄指标和预测模型。"
+        }
+      ],
+      "tags": [
+        "可穿戴设备",
+        "健康管理",
+        "人工智能"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Simon A. Lee",
+        "Zeinab Esmaeilpour",
+        "Menglian Zhou",
+        "Marius Guerard",
+        "Sohrab Sidhu",
+        "Alexandru Solot",
+        "Hamid Palangi",
+        "Pramod Rudrapatna",
+        "Ming-Zher Poh",
+        "Max A. Xu",
+        "Daniel McDuff",
+        "Dimitrios Antos",
+        "Yuzhe Yang",
+        "Jeffrey N. Chiang",
+        "Anthony Z. Faranesh",
+        "Lindsey Sunden",
+        "Mark Malhotra",
+        "Shwetak Patel",
+        "A. Ali Heydari",
+        "Ahmed A. Metwally"
+      ],
+      "abstract": "Personalized health coaching requires moving beyond retrospective wearable summaries toward quantitative, actionable behavioral prescriptions. We introduce Coachable Health Age (CHA), an interpretable health-age metric built from modifiable physiological and behavioral signals passively captured by consumer wearables. Across the WEAR-ME (N=2,780), All of Us (N=22,748), and longitudinal Fitbit (N=1,464) cohorts, CHA aligns with established cardiometabolic health constructs and improves prognostic discrimination for incident cardiovascular and metabolic disease beyond age, sex, and body mass index. To enable prospective behavioral optimization, we developed Sensor World Model (SensorWM), an action-conditioned wearable world model pretrained on over 2.2 million person-weeks of longitudinal sensor data from approximately 100,000 participants. SensorWM accurately forecasts multi-week physiological responses to candidate lifestyle changes ($R^2=0.664$), outperforming generic time-series foundation models while preserving downstream clinical signal for diabetes, hypertension, and other health outcomes. Finally, we integrate CHA and SensorWM into an agentic counterfactual coaching system to synthesize personalized 12-week coaching plans. In blinded paired reviews, certified lifestyle coaches preferred counterfactual-grounded plans over plans grounded in wearable history alone for overall quality (71.4%, P < 0.001) and anticipated adherence (71.0%, P < 0.001), and board-certified clinicians judged 99.2% of counterfactual-grounded plans to meet clinical safety criteria (vs. 97.6% of comparison plans). Automated evaluations across the full cohort (N=2,780) also favored counterfactual-grounded plans. By closing the loop between longitudinal tracking, trajectory prediction, and counterfactual coaching, our framework provides a scalable path to systematically improve cardiometabolic health.",
+      "url": "https://arxiv.org/abs/2611.08568",
+      "pdf": "https://arxiv.org/pdf/2611.08568v1"
+    },
+    {
+      "id": "2611.08693",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-11-05",
+      "title_en": "Enabling Retraining-Free Accurate Inference in Analog Compute in Memory Accelerators",
+      "title_zh": "模拟存内计算芯片：不用重新训练也能准确推理",
+      "one_liner": "提出一种校准方法，让预训练神经网络在模拟存内计算芯片上无需重新训练就能接近浮点精度，恢复视觉模型和大语言模型的准确率。",
+      "why": "存内计算是芯片领域的热门方向，它把计算和存储合二为一，有望大幅省电。但模拟电路有误差，模型直接跑会崩。这篇论文用巧妙的数学变换解决了问题，让高中生看到如何用基础数学（旋转、中心化）解决实际工程难题，体会跨学科思维。",
+      "sections": {
+        "background": "模拟存内计算（CIM）直接在存储阵列里做矩阵乘法，省去了数据搬运，能效极高。但模拟器件和转换器有误差，预训练模型直接部署会严重失准，通常需要昂贵的硬件感知重新训练。如何低成本地让现成模型在模拟芯片上准确运行，是个难题。",
+        "method": "作者发现模拟误差取决于每层在阵列上的表示方式，而表示可以离线改变。他们对输入做中心化，并施加为模拟阵列设计的Hadamard旋转，让共享参考误差分散，同时把输入混合限制在每个阵列内。这样无需训练任何权重，就能校准。",
+        "finding": "在PCM和ReRAM上测试CNN、视觉Transformer和最大140亿参数的大语言模型。在6位ADC的ReRAM上，ViT-B/16准确率从37.4%恢复到82.9%，Phi-4从27.0%恢复到72.2%，均与浮点精度相差不到2.2个百分点，匹配或接近已发表的硬件感知训练效果。",
+        "impact": "该方法免去重新训练的成本，让预训练模型能直接部署在模拟存内计算芯片上，可能加速低功耗AI硬件的实用化，尤其适合边缘设备。"
+      },
+      "analogy": "就像用一台有误差的秤称东西，与其重新标定每个砝码，不如把物品摆放方式变一下，让误差相互抵消，称出来就准了。",
+      "terms": [
+        {
+          "t": "模拟存内计算",
+          "d": "在存储阵列里直接做模拟计算，省去数据搬运，能效高但精度受器件误差影响。本文用它来加速神经网络推理。"
+        },
+        {
+          "t": "矩阵向量乘法",
+          "d": "神经网络的核心运算，将输入向量与权重矩阵相乘。模拟存内计算直接在阵列中完成此操作。"
+        },
+        {
+          "t": "模数转换器",
+          "d": "将模拟信号转为数字信号的电路，其位数影响精度。本文用6位ADC测试，误差较大。"
+        },
+        {
+          "t": "Hadamard旋转",
+          "d": "一种数学变换，将向量旋转到不同基上。本文用它分散误差，使模拟计算更准确。"
+        },
+        {
+          "t": "视觉Transformer",
+          "d": "一种用于图像处理的神经网络架构，基于自注意力机制。本文用它测试方法有效性。"
+        },
+        {
+          "t": "大语言模型",
+          "d": "参数规模巨大的语言模型，如Phi-4。本文在模拟芯片上部署并恢复其准确率。"
+        },
+        {
+          "t": "浮点精度",
+          "d": "数字计算中常用的高精度表示。本文以浮点精度为基准，衡量模拟计算恢复后的差距。"
+        }
+      ],
+      "tags": [
+        "存内计算",
+        "AI芯片",
+        "模拟计算"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "George Karfakis",
+        "Puneet Gupta"
+      ],
+      "abstract": "Analog compute-in-memory (CIM) accelerators compute matrix-vector products directly inside memory arrays, eliminating weight movement and promising order-of-magnitude gains in inference efficiency. However, converter and device errors make pretrained models unusable on these arrays, and hardware-aware retraining is costly. We enable retraining-free, accurate inference of pretrained models on simple analog arrays with low-cost, shared calibration. Our key observation is that analog error depends on how each layer is represented on the array, and that this representation can be changed offline without changing the computation. We center the inputs and apply Hadamard rotations designed for analog arrays, which keep shared reference errors spread and confine input mixing to each array. Across CNNs, vision transformers and LLMs up to 14B parameters on PCM and ReRAM, the method brings vision models and larger LLMs within a few points of floating-point accuracy and matches or approaches published hardware-aware training without training any weights. On ReRAM with 6-bit ADCs, it restores ViT-B/16 from 37.4% to 82.9% and Phi-4 from 27.0% to 72.2%, both within 2.2 points of floating-point accuracy.",
+      "url": "https://arxiv.org/abs/2611.08693",
+      "pdf": "https://arxiv.org/pdf/2611.08693v1"
+    },
+    {
+      "id": "2611.08697",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.DC",
+      "published": "2026-11-05",
+      "title_en": "CPU Micro-Architectural Characteristic Sensitivity Study on CPU-Side Agentic Task Latency",
+      "title_zh": "CPU频率对AI代理任务延迟的影响",
+      "one_liner": "研究CPU微架构特性对AI代理任务延迟的影响，发现提高P核频率从2.5到5.5 GHz可使单代理提速1.154倍，八代理提速1.341倍。",
+      "why": "AI代理（如自动执行任务的智能体）正变得流行，但本地运行需要好硬件。这篇论文实测了CPU频率、核心数等对代理任务速度的影响，结论直接：提高频率最有效。高中生可以了解硬件参数如何影响实际AI应用，与攒机经验联系起来。",
+      "sections": {
+        "background": "小型企业和个人为了成本和隐私，倾向于在本地运行AI代理。但边缘CPU的微架构特性如何影响代理任务延迟尚不清楚，缺乏系统的基准测试和优化指南。",
+        "method": "作者在英特尔边缘CPU上设计八组实验，改变P核频率、非核心频率、活跃物理核心数和对称多线程，用TerminalBench测试单代理和多代理配置下的任务延迟，并开源了基准测试框架和数据集。",
+        "finding": "P核频率对中位延迟改善最大：从2.5 GHz提高到5.5 GHz，单代理提速1.154倍，八个并发代理提速1.341倍。其他参数影响较小。这是首次用TerminalBench表征单/多代理配置的硬件微架构关系。",
+        "impact": "为本地AI代理的硬件选型和CPU设计提供了实测依据，提示提高频率比增加核心数更能降低代理延迟，可能影响边缘计算设备的优化方向。"
+      },
+      "analogy": "就像开车送快递，提高发动机转速（频率）比增加货车数量（核心数）更能缩短单个包裹的送达时间，尤其当包裹需要串行处理时。",
+      "terms": [
+        {
+          "t": "AI代理",
+          "d": "能自主执行任务的智能程序，如自动订票。本文研究其本地运行延迟。"
+        },
+        {
+          "t": "微架构",
+          "d": "CPU内部的设计结构，如流水线、缓存。本文研究其特性对延迟的影响。"
+        },
+        {
+          "t": "P核",
+          "d": "性能核心，负责高负载任务。本文发现提高其频率最有效。"
+        },
+        {
+          "t": "非核心频率",
+          "d": "CPU中缓存、内存控制器等部分的频率。本文测试其对代理延迟的影响。"
+        },
+        {
+          "t": "对称多线程",
+          "d": "让一个物理核心模拟两个逻辑核心的技术。本文评估其对代理任务的作用。"
+        },
+        {
+          "t": "TerminalBench",
+          "d": "一种评估AI代理在终端任务上性能的基准测试。本文用它测量延迟。"
+        }
+      ],
+      "tags": [
+        "CPU",
+        "AI代理",
+        "边缘计算"
+      ],
+      "difficulty": 1,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Jack Adiletta",
+        "Shixin Ji",
+        "Zhuoping Yang",
+        "Peipei Zhou"
+      ],
+      "abstract": "We perform a novel study of CPU micro-architectural characteristics on how they affect agentic AI CPU side latency. Small enterprises and individual users looking to reduce costs and seeking data privacy benefit from running agents locally, motivating an investigation into the optimal performance characteristics of an edge CPU to improve user experience. We investigate the relationship between CPU core frequency, CPU uncore frequency, active physical cores, and symmetric multi threading with agentic task latency in single and multi agent configurations. Across eight experiments on an Intel edge CPU, we find that P-core frequency produces the largest median latency improvement among the evaluated parameters. Increasing P-core frequency from 2.5 to 5.5 GHz yields a 1.154$\\times$ speedup for a single agent and a 1.341$\\times$ speedup for eight concurrent agents. We are the first to characterize hardware micro-architectural relationships on single and multi agent configurations with TerminalBench; we also provide an open source framework and dataset for repeatable CPU side latency agentic benchmarking.",
+      "url": "https://arxiv.org/abs/2611.08697",
+      "pdf": "https://arxiv.org/pdf/2611.08697v1"
+    },
+    {
+      "id": "2611.08774",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CR",
+      "published": "2026-11-05",
+      "title_en": "Gain-Dependent Entropy Characterization of a Zener Avalanche Noise TRNG via Dual NIST Standards: Toward Low-Cost Hardware Entropy for ICS Deployments",
+      "title_zh": "五美元的真随机数发生器：增益如何影响熵质量",
+      "one_liner": "系统测试了基于齐纳击穿噪声的真随机数发生器，发现最佳增益配置下成本低于五美元，熵质量满足NIST标准。",
+      "why": "随机数在密码学、物联网安全中至关重要。这篇论文用廉价元件做出符合标准的真随机数发生器，还分析了电路参数如何影响随机性。高中生可以从中看到物理噪声如何变成数字随机数，以及如何用统计测试验证质量，贴近生活且实用。",
+      "sections": {
+        "background": "真随机数发生器利用物理噪声产生不可预测的随机数，但基于齐纳击穿噪声的低成本方案中，放大器增益、耦合电容与熵质量的关系在现行NIST标准下尚未被系统表征。工业控制和物联网边缘设备需要低成本、高安全的熵源。",
+        "method": "作者搭建基于运算放大器的齐纳击穿噪声发生器，测试五种增益配置和两种耦合电容值，每种配置采集14.4亿原始比特，用NIST SP 800-22统计测试套件和SP 800-90B熵源评估标准进行分析。还做了直流替代实验，用稳定电压源替换齐纳二极管。",
+        "finding": "发现所有增益下存在三阶段自相关结构，归因于比较器饱和恢复动态。直流替代实验使开关活动减少约97%，证实齐纳击穿噪声是必要熵源。较小耦合电容改善熵、吞吐量和偏置。最佳增益配置获得完美统计测试分数、符合NIST的最小熵，物料成本低于五美元。",
+        "impact": "为低成本物联网设备提供了实用的真随机数发生器设计指南，有助于在工业控制系统中部署轻量级硬件安全。"
+      },
+      "analogy": "就像用麦克风录下雪花的静电声来生成随机密码，但得调整好音量和滤波器，才能得到纯净、不可预测的噪声。",
+      "terms": [
+        {
+          "t": "真随机数发生器",
+          "d": "利用物理噪声产生随机数的硬件，用于密码学。本文用齐纳击穿噪声实现低成本TRNG。"
+        },
+        {
+          "t": "齐纳击穿噪声",
+          "d": "齐纳二极管反向击穿时产生的电噪声，本质随机。本文将其作为熵源。"
+        },
+        {
+          "t": "NIST SP 800-22",
+          "d": "美国国家标准与技术研究院的随机数统计测试套件，评估随机性。本文用它检验输出比特。"
+        },
+        {
+          "t": "最小熵",
+          "d": "衡量随机源不可预测性的指标，NIST SP 800-90B要求。本文评估熵源质量。"
+        },
+        {
+          "t": "自相关",
+          "d": "信号与自身延迟版本的相似性，反映随机性缺陷。本文发现三阶段自相关结构。"
+        },
+        {
+          "t": "耦合电容",
+          "d": "连接噪声源与放大器的电容，影响信号传输。本文发现较小电容改善熵质量。"
+        },
+        {
+          "t": "比较器",
+          "d": "将模拟信号转为数字信号的电路，其饱和恢复动态影响自相关。本文分析其作用。"
+        }
+      ],
+      "tags": [
+        "硬件安全",
+        "随机数",
+        "物联网"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Rishabh Das"
+      ],
+      "abstract": "True random number generators based on Zener avalanche noise offer a low-cost entropy source for industrial control system and IoT edge devices, yet the relationship between amplifier gain, coupling capacitance, and entropy quality remains uncharacterized under current NIST standards. This paper presents a comprehensive entropy assessment of an op-amp-based Zener avalanche noise generator across five gain configurations and two coupling capacitor values, evaluated against the NIST SP 800-22 statistical test suite and the SP~800-90B entropy source assessment using 1.44 billion raw bits per configuration. We identify a three-phase autocorrelation structure, attributed to comparator saturation-recovery dynamics, consistent across all gain settings. A direct-current substitution experiment, replacing the Zener diode with a stable voltage source at the same bias point, reduces switching activity by approximately 97%, confirming that Zener avalanche noise, rather than amplifier self-excitation, is the necessary entropy source. The coupling capacitor is further shown to govern comparator overdrive and entropy quality independent of this source mechanism, with the smaller capacitance improving entropy, throughput, and bias. The combined results identify an optimal gain configuration achieving a perfect statistical test score, NIST-compliant min-entropy, and peak entropy throughput at a bill-of-materials cost under five dollars, offering practical design guidance for low-cost entropy sources in industrial and embedded deployments.",
+      "url": "https://arxiv.org/abs/2611.08774",
+      "pdf": "https://arxiv.org/pdf/2611.08774v1"
     },
     {
       "id": "2611.05810",
@@ -4258,998 +5253,6 @@
       "abstract": "Large language models (LLM) have been the key focus of recent machine learning breakthroughs. As the model size grows exponentially, the computation needed for training is astronomical. A GPU can do a huge amount of arithmetic. However, the data its compute units need is not always available when they are ready. This data may still be in slow memory or on another GPU. While the chip waits, expensive compute sits idle, and at scale even a small drop in utilization translates into substantial cost. In this paper, we treat this waiting time as the primary bottleneck. We focus on hardware features designed for explicit data movement. These features load data from off-chip memory onto the chip, rearrange it into the layout the computation requires as it is loaded, and transfer it between GPUs. By orchestrating them, we keep a steady pipeline of data flowing to the compute units so that they remain busy. We present kernel and framework implementations that address this bottleneck using three key data-movement instructions and hardware features. The Tensor Data Mover (TDM) moves tensor data from high-bandwidth memory (HBM) into on-chip memory. Transpose-load instructions transpose tensor data into the layout that LLM computations require as it is loaded on-chip. Finally, System DMA (SDMA) and Remote DMA (RDMA) move data between GPUs over the scale-up and scale-out networks, respectively. Our results show that TDM and transpose-load provide on average 1.88x and 1.19x speedup at the kernel level, respectively. The SDMA and RDMA lead to on average 1.16x and 1.33x speedup for computation overlapped with communication. This is the first AMD LLM training system to utilize all the GPU data pipelining features. Our implementation has been integrated into open source framework and library for AMD GPUs. https://github.com/AMD-AGI/Primus-Turbo https://github.com/AMD-AGI/Primus",
       "url": "https://arxiv.org/abs/2611.05751",
       "pdf": "https://arxiv.org/pdf/2611.05751v1"
-    },
-    {
-      "id": "2611.03071",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.NC",
-      "published": "2026-11-02",
-      "title_en": "Intrinsic network dynamics catalyze switching in functional connectivity states of the brain",
-      "title_zh": "大脑网络切换前，两个网络在“换岗”",
-      "one_liner": "用新框架追踪全脑连接状态切换，发现切换前突显网络贡献上升、默认模式网络下降，且不同切换动态能预测工作记忆成绩。",
-      "why": "这项研究把大脑看作一张会动态重组的网络，用“相位相干”追踪它什么时候切换状态。高中生可以联系到注意、走神和工作记忆等日常经验，也能理解功能核磁共振和网络指标这些课本外的概念，看到脑科学如何用数学描述“状态”。",
-      "sections": {
-        "background": "大脑在静息时也不是铁板一块，功能连接会随时间重组，这叫动态功能连接。但此前很难说清状态切换在时间上怎么组织、哪些网络在背后推动。传统方法多看滑动窗口的相关性，对快速切换和全脑协调不够敏感。",
-        "method": "他们提出功能连接状态切换框架（FCSS），基于相位相干性追踪全脑主导连接配置的多尺度变化。用人类连接组计划（HCP）的功能核磁共振数据，分析认知任务切换和静息时的自发切换，并把切换事件与工作记忆成绩、网络贡献做时间锁定分析。",
-        "finding": "FCSS能被认知状态和条件切换强烈触发，不同切换动态对工作记忆成绩的预测也不同。静息时，切换前网络分离、整合和跨网络交流逐渐变化；锁定到自发切换事件后发现，突显网络贡献上升而默认模式网络贡献下降，像两个网络在“换岗”。这种此消彼长可能是自发重组的网络级机制。",
-        "impact": "这为理解大脑如何灵活切换状态提供了可量化的框架，未来可能帮助评估注意力缺陷、走神倾向或认知灵活性差异。不过目前是相关性观察，因果机制还不确定，也不能直接当诊断工具。"
-      },
-      "analogy": "就像一支球队在攻防转换前，前锋开始回撤、后卫开始压上——不是等球权变了才动，而是提前换位。大脑在连接状态切换前，突显网络和默认模式网络也在提前“换岗”。",
-      "terms": [
-        {
-          "t": "动态功能连接",
-          "d": "大脑不同区域之间的同步关系随时间变化的现象。论文研究的就是这种连接状态什么时候切换。"
-        },
-        {
-          "t": "相位相干",
-          "d": "用脑区信号波动的相位是否同步来衡量连接强弱。论文的FCSS框架用它追踪全脑连接配置。"
-        },
-        {
-          "t": "突显网络",
-          "d": "负责挑出重要刺激、引导注意的网络。论文发现它在切换前贡献上升，像“提醒该换状态了”。"
-        },
-        {
-          "t": "默认模式网络",
-          "d": "人在走神、休息时活跃的一组脑区。论文发现它在切换前贡献下降，与突显网络此消彼长。"
-        },
-        {
-          "t": "功能核磁共振",
-          "d": "通过血流变化间接测量脑活动的技术。论文用HCP的fMRI数据追踪连接状态切换。"
-        },
-        {
-          "t": "工作记忆",
-          "d": "短时间内记住并操作信息的能力。论文发现不同切换动态能预测工作记忆成绩。"
-        },
-        {
-          "t": "网络分离与整合",
-          "d": "分离指网络内部连接紧密、彼此独立；整合指跨网络交流增多。论文用它们描述切换前的渐进变化。"
-        }
-      ],
-      "tags": [
-        "脑网络",
-        "功能核磁共振",
-        "认知"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Steven S. Kang",
-        "Dae-Jin Kim"
-      ],
-      "abstract": "Dynamic functional connectivity (dFC) reflects ongoing reconfiguration of large-scale brain networks, but the temporal organization and network processes underlying spontaneous state transitions remain poorly understood. We developed functional connectivity state switching (FCSS), a phase-coherence-based framework that tracks multiscale changes in dominant whole-brain connectivity configurations. In Human Connectome Project fMRI, FCSS was strongly evoked by cognitive state and condition switches, and distinct transition dynamics differentially predicted working-memory performance. During rest, spontaneous FCSS was characterized by progressive changes in network segregation, integration, and cross-network communication as connectivity approached a switching event. Critically, event-related analysis time-locked to spontaneous FCSS revealed opposing pre-switch dynamics: salience-network contribution increased while default-mode-network contribution decreased, suggesting coordinated engagement and disengagement of these networks before switching. This reciprocal reweighting may provide a network-level mechanism for spontaneous FC reconfiguration. Together, these findings identify both global reorganization and network-specific processes underlying spontaneous and task-evoked brain-state transitions in the human brain.",
-      "url": "https://arxiv.org/abs/2611.03071",
-      "pdf": "https://arxiv.org/pdf/2611.03071v1"
-    },
-    {
-      "id": "2611.03806",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.GN",
-      "published": "2026-11-02",
-      "title_en": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
-      "title_zh": "AI设计DNA的能力到底有多强？新测试给出答案",
-      "one_liner": "新基准BEND 2.0测试基因组AI模型，发现它们能预测DNA变化效果并指导设计，但在复杂任务上仍有很大提升空间。",
-      "why": "这篇论文评估AI设计DNA的能力，与高中生物中基因突变、基因编辑等知识相关。学生可以了解人工智能在生物技术中的应用现状和局限，思考AI如何帮助解决实际生物学问题，培养对前沿技术的理性认识。",
-      "sections": {
-        "background": "基因组基础模型越来越多地被用来提出DNA序列和编辑方案，但成功设计DNA需要的能力，现有基准测试并未覆盖。以往测试多关注模型预测平均效果的能力，忽略了预测DNA变化效果和指导序列设计的能力，导致我们不清楚这些模型到底有多实用。",
-        "method": "研究者推出BEND 2.0基准，包含基于五个实验数据集的八个任务，测试模型预测DNA变化效果以及这些预测能否指导序列设计。他们比较了不同模型和读取表示的方式，包括在冻结表示上拟合线性读出，以及功能后训练。还测试了预测在实验和基因间的迁移能力。",
-        "finding": "模型选择和表示读取方式都影响性能。线性读出可以匹配或超过模型原生输出，功能后训练显著提升能力。线性读出在实验和基因间迁移良好，说明模型捕捉了功能模式。但强预测平均效果可能掩盖对上下文特定效果的弱预测，准确预测组合突变效果不意味着准确预测相互作用。在设计任务中，模型预测能减少候选序列数量，但仍有很大改进空间。",
-        "impact": "该基准揭示了基因组模型已显示出通用性迹象，但即使在简单任务上也未饱和。这为未来模型开发指明了方向，特别是在上下文特定和多细胞目标的设计上。对生物技术和医学应用有潜在影响，比如基因治疗和合成生物学。"
-      },
-      "analogy": "就像用导航软件规划路线，它能预测哪条路堵车（平均效果），但到了具体路口，它可能不知道你能否左转（上下文特定效果）。导航能帮你少走弯路，但还不能完全替代老司机的经验。",
-      "terms": [
-        {
-          "t": "基因组基础模型",
-          "d": "在海量DNA序列上预训练的大型AI模型，能学习基因组的通用模式。论文中评估这些模型设计DNA序列的能力。"
-        },
-        {
-          "t": "基准测试",
-          "d": "一套标准化的任务和数据集，用于公平比较不同模型的性能。论文中BEND 2.0就是这样一个测试平台。"
-        },
-        {
-          "t": "线性读出",
-          "d": "在模型冻结的表示上训练一个简单的线性分类器。论文中发现线性读出能匹配或超过模型原生输出，说明表示已包含丰富信息。"
-        },
-        {
-          "t": "功能后训练",
-          "d": "在预训练后，用功能实验数据进一步训练模型。论文中这种训练显著提升了模型预测DNA变化效果的能力。"
-        },
-        {
-          "t": "上下文特定效果",
-          "d": "DNA变化的效果依赖于周围的序列环境。论文指出模型强于预测平均效果，但弱于预测这种上下文相关效果。"
-        },
-        {
-          "t": "组合突变",
-          "d": "多个DNA突变同时发生。论文发现模型能准确预测组合效果，但不一定能预测突变间的相互作用。"
-        }
-      ],
-      "tags": [
-        "人工智能",
-        "基因组学",
-        "生物技术"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Andreas Bjerregaard",
-        "Rachael DeVries",
-        "Dionysia Danai Brilli",
-        "Panagiotis Antoniadis",
-        "Yan Li",
-        "Anders Krogh",
-        "Wouter Boomsma",
-        "Ole Winther",
-        "Frederikke Isa Marin"
-      ],
-      "abstract": "Genomic foundation models are increasingly used to propose DNA sequences and edits. But successful design requires capabilities that current benchmarks do not measure. Here we introduce BEND 2.0 (BENchmark for DNA language models), which tests how well models predict the effects of DNA changes and whether these predictions can guide sequence design. Across eight tasks built on five experimental datasets, we find that model choice and how representations are accessed both affect performance. Linear readouts fitted to frozen representations can match or exceed models' native outputs, and functional post-training substantially improves the models' capabilities. Linear readouts transfer well across experimental assays and genes, suggesting that models capture functional patterns beyond the data used to fit individual predictors. At the same time, strong prediction of average effects can conceal weaker prediction of context-specific effects, and accurate prediction of combined mutation effects does not imply accurate prediction of their interactions. In design tasks, model predictions can reduce the number of candidates needed to find a desired response, but still leave substantial room for better design choices, particularly for context-specific and multi-cell objectives. Our benchmark reveals that genomic models now display signs of general utility but have yet to saturate on performance in even simple tasks.",
-      "url": "https://arxiv.org/abs/2611.03806",
-      "pdf": "https://arxiv.org/pdf/2611.03806v1"
-    },
-    {
-      "id": "2611.03841",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.NC",
-      "published": "2026-11-02",
-      "title_en": "Evolved Spiking Neural Networks for EEG Seizure Detection: Calcium Dynamics and Delay Mechanics",
-      "title_zh": "让神经元自己“长”出钙电流，癫痫检测更准",
-      "one_liner": "给演化算法中的脉冲神经元加上可变的钙电流，癫痫检测的MCC从0.592提到0.726，误报率从0.17降到0.10。",
-      "why": "这项研究用“演化”而不是“训练”来设计神经网络，像养一窝会自己变异的电子宠物，看谁最会认癫痫。高中生能借此理解生物启发计算、脑电图和假阳性这些概念，也能看到“让每个神经元有自己的参数”为什么比“大家共用一套”更有效。",
-      "sections": {
-        "background": "癫痫检测常靠脑电图（EEG），但不同病人波形差异大，手工设计检测网络很难。EONS框架用演化算法自动搜索脉冲神经网络的拓扑、权重、阈值和延迟，不需要梯度。此前这类网络里的神经元都是简单的积分-放电模型，没有考虑真实神经元中钙离子对兴奋性的调节。",
-        "method": "他们给积分-放电神经元加了一个活动依赖的钙电流，变成Ca-IF神经元，并比较三种设置：钙参数固定、整个网络共用一套、每个神经元自己演化一套。在CHB-MIT数据集上训练，用10个训练时没见过的病人做测试，跑20次独立实验，看记录级MCC（马修斯相关系数，综合衡量准和全的指标）和误报率。",
-        "finding": "每个神经元独立演化钙参数时，MCC从0.592升到0.726（p=0.008），误报率从0.17降到0.10；固定或共用钙参数没有显著提升。让突触延迟在1到3个时间步内演化也有类似提升（p=0.005），但轴突延迟没有。在Siena数据集上，两个病人不重叠的划分分别提升+0.096（p=0.011）和+0.059（p=0.052）。",
-        "impact": "这说明给演化搜索更多“可调旋钮”（每个神经元自己的钙参数和突触延迟）能让它找到更紧凑、更准的癫痫检测网络。未来可能用于可穿戴脑电监测或神经形态芯片，减少误报带来的骚扰。但还需要更多病人数据和真实硬件验证。"
-      },
-      "analogy": "就像做菜时盐、糖、火候每个灶眼都能单独调，而不是整个厨房共用一个调味罐。每个神经元有自己的钙参数，演化算法就能针对不同脑电模式“因材施教”，做出更合口味的检测器。",
-      "terms": [
-        {
-          "t": "脉冲神经网络",
-          "d": "用离散“脉冲”传递信息的人工网络，更像真实神经元。论文用它做癫痫检测，因为它的计算方式适合低功耗硬件。"
-        },
-        {
-          "t": "积分-放电神经元",
-          "d": "一种简化神经元模型：输入累积到阈值就发一个脉冲，然后重置。论文在它基础上加钙电流。"
-        },
-        {
-          "t": "钙电流",
-          "d": "真实神经元里钙离子流入细胞形成的电流，会改变神经元的兴奋性。论文把它做成可演化参数，让每个神经元自己调节。"
-        },
-        {
-          "t": "神经演化",
-          "d": "不用梯度下降，而是靠变异和选择来优化网络结构和参数。论文用EONS框架演化脉冲网络。"
-        },
-        {
-          "t": "脑电图",
-          "d": "在头皮上贴电极记录大脑电活动的技术。论文用CHB-MIT和Siena的脑电数据训练和测试模型。"
-        },
-        {
-          "t": "马修斯相关系数",
-          "d": "综合衡量分类准不准的指标，1是完美，0是随机。论文用它比较不同网络的癫痫检测性能。"
-        },
-        {
-          "t": "误报率",
-          "d": "没有癫痫时错误报警的比例。论文关心它，因为误报太多会让监测设备没法用。"
-        },
-        {
-          "t": "突触延迟",
-          "d": "信号从一个神经元传到下一个所需的时间步。论文发现让突触延迟演化也能提升检测效果。"
-        }
-      ],
-      "tags": [
-        "神经演化",
-        "脑电图",
-        "癫痫检测"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Tuba Aksoy"
-      ],
-      "abstract": "Neuroevolution can discover compact network designs that are hard to specify by hand. The EONS framework evolves the topology, weights, thresholds and delays of neuromorphic spiking networks without gradients. We tested whether giving integrate-and-fire (IF) neurons an activity-dependent calcium current (Ca-IF neurons) improves evolved networks for EEG seizure detection, with calcium parameters fixed, shared across a network, or evolved for each neuron. On 10 held-out CHB-MIT patients never seen in training, per-neuron calcium raised the record-level Matthews correlation coefficient (MCC) from 0.592 to 0.726 over 20 independent runs (p = 0.008) and lowered the false-alarm rate from 0.17 to 0.10. Fixed or per-network calcium gave no significant benefit. IF networks with evolved synaptic delays of 1-3 ticks gave a similar gain (p = 0.005), whereas axonal delays did not. On Siena, with unchanged settings, per-neuron calcium gained +0.096 MCC over IF in one patient-disjoint split (p = 0.011) and +0.059 in the other (p = 0.052). These results suggest that calcium and delays may make the evolutionary search more effective, and motivate testing on more data and in neuromorphic hardware.",
-      "url": "https://arxiv.org/abs/2611.03841",
-      "pdf": "https://arxiv.org/pdf/2611.03841v1"
-    },
-    {
-      "id": "2611.03897",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.NC",
-      "published": "2026-11-02",
-      "title_en": "Fly Whiskers Meet LiDAR: Robust Navigation under Sensor Failure",
-      "title_zh": "给机器苍蝇装上激光雷达，视觉失灵也能飞",
-      "one_liner": "研究者把激光雷达接到模拟果蝇大脑的神经网络上，视觉全失时导航成功率从45.2%升到64.6%。",
-      "why": "这项研究把神经科学和机器人结合，用果蝇大脑的接线图造出小得多的导航网络，还测试了传感器坏掉时怎么办。高中生可以从中看到课本里的反射弧、感觉整合如何变成工程方案，也能理解为什么“简单”有时比“复杂”更可靠。",
-      "sections": {
-        "background": "机器人导航通常靠摄像头，但强光、遮挡或镜头脏了会让视觉失效。此前有团队按果蝇大脑连接组造了一个叫FLYNN的网络，能靠“漏积分”神经元处理视觉并控制转向，但它只依赖视觉，传感器一坏就抓瞎。如何在不增加大量计算的前提下让系统多一种感官，是这项研究想解决的问题。",
-        "method": "他们给FLYNN加了一个32线2D激光雷达，扫描前方270度、最远8米，把距离信息反转成“接近度”信号，直接注入到37个头部刚毛神经元（Bristle Mechanosensory neurons，简称BM Vib），只用一个标量增益调节强度，没有训练额外的融合层。然后在四种视觉状态（全视觉、左眼关、右眼关、全关）下，与三个能接激光雷达的基线模型做24组配对比较。",
-        "finding": "FLYNN-LiDAR赢了17组，5组无显著差异，只输2组（都是左眼关闭时输给MobileNet）。全视觉时成功率达96.6%；视觉全失时，加激光雷达把成功率从45.2%提到64.6%，而基线模型在44.6%到56.6%之间。在训练分布外的纹理下，它是唯一加激光雷达后成功率还上升的模型（44.2%到58.4%），两个CNN直接掉到0%。每步计算量3.93M乘加，比EfficientNet和MobileNet分别省4.60倍和2.94倍。",
-        "impact": "这说明按生物大脑接线图造的网络可以用极低代价接入新传感器，并在视觉失效时提供冗余。未来可能用于小型无人机、灾后搜救机器人等对功耗和可靠性要求高的场景。不过目前只在模拟环境验证，真实硬件上的表现还不确定。"
-      },
-      "analogy": "就像你蒙上眼睛走路，手里多了一根盲杖——不需要重新学走路，只要把杖尖碰到的距离直接“喂”给平衡感，就能少摔跤。而且这根杖只花很少力气，比另装一套视觉系统便宜得多。",
-      "terms": [
-        {
-          "t": "连接组",
-          "d": "一张标出大脑里每个神经元和它们之间连接的地图。论文用它来“接线”人工网络，让网络结构照抄果蝇大脑。"
-        },
-        {
-          "t": "漏积分神经元",
-          "d": "一种人工神经元，输入信号会随时间慢慢泄漏，像漏水的桶。论文用它模拟果蝇神经元的累积和衰减行为。"
-        },
-        {
-          "t": "激光雷达",
-          "d": "向四周发射激光并接收反射，测出物体距离的传感器。论文用它给网络提供视觉之外的“接近度”信息。"
-        },
-        {
-          "t": "头部刚毛神经元",
-          "d": "果蝇头部感受气流和触碰的感觉神经元。论文把激光雷达信号注入这37个神经元，相当于给苍蝇加了一根“电子胡须”。"
-        },
-        {
-          "t": "基线模型",
-          "d": "用来对比的已有模型，比如MobileNet和EfficientNet。论文用它们衡量FLYNN-LiDAR到底好多少。"
-        },
-        {
-          "t": "分布外纹理",
-          "d": "训练时没见过的图像花纹。论文用它测试模型遇到陌生环境时会不会失灵。"
-        },
-        {
-          "t": "乘加运算",
-          "d": "神经网络里最常见的计算，一次乘法和一次加法。论文用它比较不同模型每步要花多少计算量。"
-        },
-        {
-          "t": "余弦相似度",
-          "d": "衡量两个向量方向有多接近的指标，1表示完全同向。论文用0.9955说明视觉和激光雷达信号几乎线性叠加。"
-        }
-      ],
-      "tags": [
-        "神经科学",
-        "机器人",
-        "传感器融合"
-      ],
-      "difficulty": 2,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Ali Mahzarnia",
-        "Homayoun Jamshidi"
-      ],
-      "abstract": "We extend FLYNN, a leaky integrator recurrent network wired on the Drosophila melanogaster connectome, with a 32-ray 2D LiDAR interface that requires no learned fusion layer beyond a scalar input gain. A 270 degree frontal scan at 8 m range is injected as inverted proximity into the 37 BM Vib head-bristle neurons. Across 24 paired comparisons in a four- state vision matrix with LiDAR on or off, FLYNN-LiDAR has 17 significant wins, 5 nonsignificant comparisons, and 2 significant losses against three LiDAR-capable baselines. Both losses are to MobileNet with the left eye off. With full vision, FLYNN- LiDAR reaches 96.6% success. Under total vision loss, the scan raises success from 45.2% to 64.6%; the baselines reach 44.6% to 56.6% with the scan on. Under out of distribution textures, it is the only LiDAR-capable model whose success improves with the scan (44.2% to 58.4%); both CNNs score 0%, and SmallWorld declines from 26.8% to 7.4%. Under periodic vision dropout, FLYNN-LiDAR achieves 93.6% and 89.6% success at 25% and 50% duty with fewer collisions. Profiling the evaluated forward paths gives 3.93M multiply accumulate operations per step; EfficientNet and MobileNet require 4.60x and 2.94x as many. Final- state analysis shows near-linear sensory superposition (cosine 0.9955).",
-      "url": "https://arxiv.org/abs/2611.03897",
-      "pdf": "https://arxiv.org/pdf/2611.03897v1"
-    },
-    {
-      "id": "2611.03929",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mtrl-sci",
-      "published": "2026-11-02",
-      "title_en": "Early-age formation of MgO-SiO$_2$ binders and the effect of hydromagnesite and dehydrated hydromagnesite: An in situ synchrotron X-ray diffraction and pair distribution function study",
-      "title_zh": "镁基水泥里藏着什么？原位X射线看清早期反应",
-      "one_liner": "用同步辐射X射线跟踪MgO-SiO₂胶凝材料最初24小时的反应，发现一种无序的镁硅酸盐水合物在45分钟内就出现，且添加碳酸镁能加速MgO溶解。",
-      "why": "水泥生产排放大量二氧化碳，镁基胶凝材料是低碳替代品，还能封存CO₂。但这材料早期几小时里到底生成了什么，一直看不清。这篇论文用超亮X射线实时追踪，发现一种X射线“看不见”的无序产物其实很早就形成了。高中生能从中看到化学如何帮助解决气候问题。",
-      "sections": {
-        "background": "传统硅酸盐水泥（波特兰水泥）生产排放全球约8%的CO₂。MgO-SiO₂胶凝材料用氧化镁和二氧化硅反应，生成类似水泥的粘结相，还能吸收CO₂形成碳酸镁，因此被视为低碳替代品。但它的早期水化产物——尤其是无序的镁硅酸盐水合物（M-S-H）——很难用常规X射线衍射检测，因为这种物质内部原子排列太乱，衍射信号弥散。过去对最初几小时发生了什么几乎一无所知。",
-        "method": "研究者把MgO和SiO₂调成浆体，分别加入两种碳酸镁：水菱镁矿（HY）和脱水水菱镁矿（DHY，325°C加热去水）。然后送到同步辐射光源，用高亮度X射线做原位衍射和“对分布函数”分析——后者能探测无序材料中原子间的距离。从混合开始连续测24小时，再在42天内做离线测量。",
-        "finding": "在每一份浆体的第一次扫描（约45分钟）就检测到了M-S-H，比任何氢氧化镁或含水碳酸镁相都早。在纯MgO-SiO₂浆体中，42天时存在的M-S-H有一半在24小时内已经形成，但常规X射线衍射全程都看不到它，因为M-S-H本身太无序。加入HY或DHY都加快了MgO溶解：24小时就检测不到未反应的MgO，而纯浆体需要超过7天。不过DHY在最初6小时反而比纯浆体慢一点。",
-        "impact": "这项研究揭示了低碳镁基水泥早期强度的来源，并说明碳酸镁添加剂能显著加速反应。理解这些过程有助于设计更高效、更低碳的建筑材料，也可能让水泥生产过程中封存更多CO₂。对无序相的原位观测方法也可用于其他复杂材料。"
-      },
-      "analogy": "就像用普通相机拍一群乱飞的小鸟，只能拍到模糊一片；但用高速连拍加上分析每只鸟的间距，就能发现它们其实很早就成群了。M-S-H就是那群“乱飞的小鸟”，常规X射线看不清，但同步辐射的对分布函数能捕捉到它们的存在。",
-      "terms": [
-        {
-          "t": "MgO-SiO₂胶凝材料",
-          "d": "由氧化镁和二氧化硅反应形成的一类粘结材料，被视为低碳水泥替代品，还能封存CO₂。本文研究它的早期水化过程。"
-        },
-        {
-          "t": "水化",
-          "d": "物质与水反应生成水合物的过程。本文追踪MgO-SiO₂浆体在水中的早期水化产物。"
-        },
-        {
-          "t": "同步辐射X射线衍射",
-          "d": "用电子同步加速器产生的超强X射线照射样品，根据衍射图案判断晶体结构。本文用它实时跟踪物相变化。"
-        },
-        {
-          "t": "对分布函数（PDF）",
-          "d": "一种分析原子间距离分布的方法，能探测无序材料的结构。本文用PDF发现常规衍射看不到的M-S-H。"
-        },
-        {
-          "t": "M-S-H",
-          "d": "镁硅酸盐水合物，是MgO-SiO₂胶凝材料的主要粘结相，结构无序。本文发现它在反应45分钟内就出现。"
-        },
-        {
-          "t": "水菱镁矿（HY）",
-          "d": "一种含水碳酸镁矿物，化学式Mg₅(CO₃)₄(OH)₂·4H₂O。本文把它作为添加剂，看它如何影响水化。"
-        },
-        {
-          "t": "脱水水菱镁矿（DHY）",
-          "d": "水菱镁矿加热到325°C去掉部分水后的产物。本文对比它与原矿对反应的影响。"
-        },
-        {
-          "t": "brucite（氢氧化镁）",
-          "d": "Mg(OH)₂，纯MgO-SiO₂浆体中常见的结晶产物。本文发现加入碳酸镁后它被无序的含水碳酸镁相取代。"
-        }
-      ],
-      "tags": [
-        "低碳水泥",
-        "同步辐射",
-        "材料化学"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Jordan Mravca-Bailey",
-        "Claire E. White"
-      ],
-      "abstract": "MgO-SiO$_2$ binders are promising low-CO$_2$ alternatives to Portland cement that can permanently store CO$_2$ by incorporating magnesium carbonate phases. Adding a magnesium carbonate such as nesquehonite or hydromagnesite is known to change the initial hydration product from crystalline brucite (Mg(OH)$_2$) to disordered hydrous carbonate-containing brucite (HCB), yet how these binders evolve during the initial hours of reaction remains largely unknown. Here, in situ synchrotron X-ray diffraction (XRD) and pair distribution function (PDF) analysis follows an MgO-SiO$_2$ paste with and without hydromagnesite (HY, Mg$_5$(CO$_3$)$_4$(OH)$_2$$\\cdot$4H$_2$O) or dehydrated hydromagnesite (DHY, HY heated at 325 °C to remove water) over the first 24 h, with ex situ measurements to 42 days. Real space phase quantification reveals that magnesium-silicate-hydrate (M-S-H) is detected in the first scan (~45 min) of every paste, before formation of any brucite or HCB. The PDF results also show that in the neat MgO-SiO$_2$ paste, half of the M-S-H present at 42 days has formed by 24 h, while no M-S-H is detected by XRD at any age due to the intrinsic disorder present in this phase. Both carbonate sources (HY and DHY) are found to increase the extent of MgO dissolution, where no unreacted MgO is detected at 24 h in contrast with >7 days for the neat paste. However, DHY is seen to slow the initial stages of MgO dissolution (prior to ~6 h) compared with the neat paste, a period during which significant DHY rehydration is seen to occur without any HCB formation. Hence, this investigation shows that the onset of HCB precipitation in MgO-SiO$_2$-(D)HY paste is influenced by the hydration state of the DHY phase, where precipitation is delayed while DHY is rehydrating.",
-      "url": "https://arxiv.org/abs/2611.03929",
-      "pdf": "https://arxiv.org/pdf/2611.03929v1"
-    },
-    {
-      "id": "2611.04008",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mtrl-sci",
-      "published": "2026-11-02",
-      "title_en": "Triboelectric nanogenerators across length scales: linking materials, multiscale modelling and applications",
-      "title_zh": "摩擦纳米发电机：从分子到器件的跨尺度设计",
-      "one_liner": "这篇综述系统梳理了摩擦纳米发电机从材料、接触力学到电路的多尺度建模，指出真实接触面积和电荷产生/衰减是连接界面行为与电输出的关键。",
-      "why": "摩擦纳米发电机能把走路、心跳这样的低频机械能变成电，给传感器供电。但为什么有的材料发电多、有的少？这篇综述把分子模拟、粗糙表面接触力学和电路设计串起来，还指出当前模型常忽略“真实接触面积在变”这个关键。高中生能从中看到能量收集技术如何跨学科。",
-      "sections": {
-        "background": "摩擦纳米发电机（TENG）利用两种材料接触分离时产生的静电电荷来发电，理论上能给物联网传感器自供电。但器件性能受材料性质、表面粗糙度、接触力学、电荷产生与衰减、外部电路等多因素交织影响，过去的研究常各管一摊：材料学家测电荷，力学家算接触，电子工程师设计电路，缺乏跨尺度的统一理解。尤其“表面电荷密度”常被当作固定输入，但实际接触时真实接触面积是动态变化的。",
-        "method": "作者综述了聚合物、无机物、复合材料和天然材料在电荷产生与保持、机械柔顺性、耐久性等方面的表现。建模手段覆盖分子动力学和第一性原理计算（原子尺度）、粗糙表面接触力学（微米尺度）、器件级静电学和等效电路（宏观尺度）。他们评估每种方法需要什么输入、能预测什么、用什么实验验证，并特别关注“预设表面电荷密度”“理想化几何”“名义接触面积”等假设如何限制预测能力。",
-        "finding": "综述指出，真实接触面积随加载变化、以及接触相关的电荷产生与衰减，是连接界面行为和电输出的关键环节，但当前模型常把它们简化掉。作者按宏观、毫米、微米三种器件尺寸整理了应用需求，并提出一套分阶段验证策略：先验证接触力学，再验证静电学，最后验证器件性能。文章没有给出单一新数字，而是系统梳理了领域现状和缺口。",
-        "impact": "这篇综述为摩擦纳米发电机的理性设计提供了路线图：要准确预测器件性能，必须把材料、力学和电路放在同一框架下，并重视动态接触面积。这可能推动自供电传感器、可穿戴设备等应用从试错走向设计。对高中生来说，它展示了化学、物理和工程如何在一个问题上交汇。"
-      },
-      "analogy": "就像设计一双跑鞋：只研究鞋底橡胶的配方（材料）不够，还要知道脚落地时鞋底纹路实际接触地面的面积（接触力学），以及跑步时脚如何发力（电路负载）。三者不放在一起，就说不清为什么这双鞋抓地好。",
-      "terms": [
-        {
-          "t": "摩擦纳米发电机（TENG）",
-          "d": "利用两种材料接触分离产生静电来发电的器件，能把低频机械能转为电能。本文综述其多尺度建模与设计。"
-        },
-        {
-          "t": "表面电荷密度",
-          "d": "单位面积上积累的静电电荷量。本文指出它常被当作固定值，但实际随接触状态变化。"
-        },
-        {
-          "t": "接触力学",
-          "d": "研究两个表面接触时力与变形如何分布的学科。本文用它描述粗糙表面真实接触面积的变化。"
-        },
-        {
-          "t": "分子动力学（MD）",
-          "d": "用计算机模拟原子运动的方法。本文用它从原子尺度理解电荷产生和材料行为。"
-        },
-        {
-          "t": "第一性原理计算",
-          "d": "不依赖经验参数、直接求解量子力学方程的计算方法。本文用它研究材料本身的电子性质。"
-        },
-        {
-          "t": "等效电路",
-          "d": "把器件简化为电阻、电容等电路元件组合的模型。本文用它描述TENG的宏观电输出。"
-        },
-        {
-          "t": "真实接触面积",
-          "d": "两个粗糙表面实际接触的微观点面积总和，远小于名义面积。本文强调它动态变化，是预测电输出的关键。"
-        }
-      ],
-      "tags": [
-        "摩擦纳米发电机",
-        "多尺度建模",
-        "能量收集"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "MD Tanzib Ehsan Sanglap",
-        "Ans Al Rashid",
-        "Abdullah Sayam",
-        "Injamamul Arief",
-        "Andrei G. Shvarts",
-        "Lukasz Kaczmarczyk",
-        "Muammer Koc",
-        "Mokarram Hossain"
-      ],
-      "abstract": "Triboelectric nanogenerators (TENGs) convert low-frequency mechanical energy into electricity and enable self-powered sensing. Their performance depends on interactions among material properties, surface morphology, contact mechanics, charge generation and external circuits. This review examines these interactions across length scales to assess how material and interface descriptions support predictive device design. Polymeric, inorganic, composite and natural materials are discussed in relation to charge generation and retention, mechanical compliance, durability and application requirements. Modelling approaches span molecular dynamics and first-principles calculations, rough-surface contact mechanics, device-scale electrostatics and equivalent circuits. Their capabilities are assessed through the inputs they require, the quantities they predict and the experimental evidence used for validation. Particular attention is given to prescribed surface charge density, idealised geometries and nominal contact-area assumptions, which constrain predictions under realistic loading conditions. Applications are organised by macroscale, milliscale and microscale device dimensions to examine requirements for materials, architecture and integration. The review identifies evolving real contact area and contact-dependent charge generation and decay as critical links between interfacial behaviour and electrical output. A staged validation strategy is proposed for contact mechanics, electrostatics and circuit response, with independent testing beyond calibration conditions. These priorities guide the development of multiscale models and reliable TENG systems.",
-      "url": "https://arxiv.org/abs/2611.04008",
-      "pdf": "https://arxiv.org/pdf/2611.04008v1"
-    },
-    {
-      "id": "2611.04037",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.GN",
-      "published": "2026-11-02",
-      "title_en": "Visualization and Characterization of Gene Group Distribution Patterns Across Genomes",
-      "title_zh": "基因家族成员在染色体上如何分布？",
-      "one_liner": "通过分析八种生物基因组，发现同一基因家族的成员在染色体上的距离分为短距离和长距离两类，短距离聚集是真实信号。",
-      "why": "这篇论文用直观的基因组可视化工具，揭示基因在染色体上的排列规律，与高中生物中基因、染色体、基因家族等概念直接相关。学生可以了解科学家如何用统计方法区分真实信号和随机现象，培养科学思维。",
-      "sections": {
-        "background": "同一基因家族的成员往往在染色体上靠得很近，但成员之间到底隔多远、间距是否有规律，一直缺乏跨物种的系统测量。以往研究多关注基因顺序，很少定量分析基因家族成员间的距离分布，也不清楚观察到的模式是生物功能所致还是随机产生。",
-        "method": "研究者开发了一个交互式网页应用，把果蝇的1,396个基因家族成员标在染色体模式图上，并列出每个成员的邻居。通过浏览数据，他们发现了一些间距几乎相等的基因集。随后，他们统计了相邻成员之间的距离，并扩展到人类、小鼠、斑马鱼等七种模式生物，用随机对照检验距离分布是否显著。",
-        "finding": "在果蝇中，RAB GTPase基因家族有两个间距为5.08 Mb的间隔，仅差634 bp。相邻成员距离分为短距离（中位数1.8 kb）和长距离（中位数2.4 Mb）两类。随机对照表明，长距离分布和均匀间距主要来自随机，但短距离聚集是真实信号。八种真核生物都呈现这两种距离分布，且混合曲线在不同基因组中表现不同。",
-        "impact": "这项研究首次跨物种定量描述了基因家族成员的距离分布，为理解基因组结构演化提供了新视角。短距离聚集可能反映基因复制或功能关联，长距离分布可能与染色体结构有关。未来可能帮助理解基因调控和疾病相关基因簇。"
-      },
-      "analogy": "就像城市里同一连锁品牌的店铺，有的开在隔壁（短距离），有的分散在城市各处（长距离）。随机开店也会出现远近不一，但扎堆开在隔壁更可能是总部的刻意安排。",
-      "terms": [
-        {
-          "t": "基因家族",
-          "d": "一组来源相同、结构相似的基因，通常由基因复制产生。论文中研究同一家族成员在染色体上的距离分布。"
-        },
-        {
-          "t": "染色体",
-          "d": "细胞核中承载遗传信息的线状结构，基因排列其上。论文中分析基因家族成员在染色体上的位置关系。"
-        },
-        {
-          "t": "模式图",
-          "d": "染色体上划分区带的示意图，用于定位基因。论文中把基因家族成员标注在果蝇染色体的模式图上进行观察。"
-        },
-        {
-          "t": "RAB GTPase",
-          "d": "一类调控细胞内物质运输的蛋白质家族。论文中发现该家族在果蝇中有两个几乎等距的成员，作为对称分布的典型例子。"
-        },
-        {
-          "t": "随机对照",
-          "d": "通过随机打乱数据生成对照分布，检验观察到的模式是否显著。论文中用随机对照判断短距离聚集是否真实存在。"
-        },
-        {
-          "t": "真核生物",
-          "d": "细胞具有细胞核的生物，包括动物、植物和真菌。论文分析了八种真核生物的基因组，发现距离分布规律普遍存在。"
-        }
-      ],
-      "tags": [
-        "基因组学",
-        "生物信息学",
-        "进化"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Yanying Wu"
-      ],
-      "abstract": "Genes of the same family often lie close together on a chromosome, yet how far apart family members sit, and whether their spacing follows any pattern, has rarely been measured consistently across genomes. We built an interactive web application that places the members of any of the 1,396 FlyBase gene groups on the banded ideogram of the fruit fly (Drosophila melanogaster) and lists each member's neighbours. While browsing it, we found strikingly symmetric gene sets in which consecutive members are almost evenly spaced. In the RAB GTPases, two 5.08 Mb spacings differ by only 634 bp. We also found that distances between neighbouring members fall into two populations: short-range (median 1.8 kb) and long-range (median 2.4 Mb). Although an arm-matched random control suggests that the even spacing (without a minimum-distance filter) as well as the long-range population arise largely by chance, the short-range population turns out to be a genuine clustering signal. We then extended the analysis to human and six other model organisms (mouse, zebrafish, Caenorhabditis elegans, Saccharomyces cerevisiae, Arabidopsis thaliana and maize), and every genome showed the same two populations. The mixture curve of the two is nearly constant across chromosomes in some genomes (Type I: fly, maize, Arabidopsis, C. elegans) but varies across chromosomes in others (Type II: human, mouse, zebrafish, yeast). Thus, across eight eukaryotes, family members lie in two distance populations. The scale of the short-range population follows the spacing of genes in each genome, and the long-range population matches random placement in fly and is consistent with it in the other genomes. Our results also show that visual patterns such as even spacing must be tested against chance before they are interpreted. Our tool and approach give a simple way to explore and compare gene clustering across species.",
-      "url": "https://arxiv.org/abs/2611.04037",
-      "pdf": "https://arxiv.org/pdf/2611.04037v1"
-    },
-    {
-      "id": "2611.00550",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.AI",
-      "published": "2026-10-31",
-      "title_en": "Governing Equations of Human Sleep Macro-Structure:Symbolic Discovery from 1,106 Nights",
-      "title_zh": "人类睡眠的数学规律：从1106个夜晚中找出简单公式",
-      "one_liner": "分析1106个夜晚的睡眠数据，发现睡眠周期长度、REM时长等四个指标能用简单公式描述，并验证了这些公式的稳健性。",
-      "why": "睡眠是每个人每天都经历的事，但背后的规律一直只是定性描述。这篇论文用大量数据找出简洁的数学公式，让高中生看到复杂生命现象也能用简单规律概括，体会数据科学和数学建模的魅力，还能联系到课本上的周期变化和指数衰减。",
-      "sections": {
-        "background": "人类睡眠由几个周期组成，每个周期包含深睡、浅睡和REM（快速眼动）睡眠。过去我们知道深睡多在前半夜、REM在后半夜变长，但这些规律只是文字描述，没有精确的数学公式。从大规模数据中提炼出闭式公式（即用简单函数表示的公式）一直是个难题，因为睡眠数据个体差异大、噪声多，而且缺乏统一的分析框架。",
-        "method": "研究者用了两个公开睡眠数据集：Sleep-EDF（153夜）和SHHS（953夜），共1106夜。他们把每夜睡眠按REM出现的位置切分成周期，然后统计每个周期的长度、REM时长、深睡连续时长和浅睡连续时长。接着用可微分拟合和符号回归（一种自动搜索数学公式的方法）来寻找描述这些统计量的公式，并用自助法（重采样整夜数据）检验公式的稳健性。",
-        "finding": "他们发现四个简单公式能很好地描述睡眠结构：周期长度随周期数线性下降（R²=0.996）；REM时长呈倒U形（R²=0.873）；深睡连续时长指数衰减（R²=0.987），时间常数为2.94个周期；浅睡连续时长呈U形（R²=0.956）。这些公式在142/142和773/773个夜晚的拟合中都收敛，符号回归也得到相同形式，且自助法置信区间均不包含零，说明结果稳健。",
-        "impact": "这是首次从大规模数据中提炼出睡眠宏观结构的闭式公式，可能帮助医生更简单地评估睡眠健康，也为睡眠研究提供了可检验的定量模型。对高中生来说，它展示了如何用数学描述生物节律，激发对跨学科研究的兴趣。"
-      },
-      "analogy": "就像发现每次考试后，你复习的时间会随着考试次数增加而线性减少，而休息时间先增后减，这些规律可以用简单公式写出来，而不是每次都要重新观察。",
-      "terms": [
-        {
-          "t": "REM睡眠",
-          "d": "快速眼动睡眠，做梦多发生在此阶段。论文中作为划分睡眠周期的锚点，并研究其时长变化规律。"
-        },
-        {
-          "t": "闭式公式",
-          "d": "用有限个基本运算和函数表示的数学表达式。论文用它来精确描述睡眠指标随周期变化的规律。"
-        },
-        {
-          "t": "符号回归",
-          "d": "一种自动搜索数学公式的机器学习方法。论文用它独立验证了拟合得到的公式形式。"
-        },
-        {
-          "t": "R²",
-          "d": "决定系数，衡量公式拟合数据的好坏，越接近1越好。论文用R²表示每个公式的拟合优度。"
-        },
-        {
-          "t": "自助法",
-          "d": "通过反复重采样数据来估计统计量不确定性的方法。论文用它对整夜数据重采样，检验公式的稳健性。"
-        },
-        {
-          "t": "时间常数",
-          "d": "指数衰减中表示衰减快慢的参数。论文中深睡时长的时间常数为2.94个周期，意味着每经过一个周期深睡减少约63%。"
-        },
-        {
-          "t": "倒U形",
-          "d": "先上升后下降的曲线形状。论文中REM时长随周期数呈倒U形，即中间周期最长。"
-        },
-        {
-          "t": "U形",
-          "d": "先下降后上升的曲线形状。论文中浅睡连续时长呈U形，即前半夜和后半夜较长。"
-        }
-      ],
-      "tags": [
-        "睡眠科学",
-        "数据建模",
-        "数学公式"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Junhui Gao"
-      ],
-      "abstract": "Human sleep is organized into a small number of cycles per night: deep sleep dominates early cycles, REM lengthens toward morning, and light sleep clusters at cycle boundaries. These regularities have long been described qualitatively but never distilled into closed-form laws from large-scale data. A total of 1,106 nights (Sleep-EDF 153 + SHHS 953) are segmented into REM-anchored cycles, and four cycle-indexed statistics follow simple closed-form equations: cycle length declines nearly linearly (R^2=0.996), REM duration follows an inverted U (R^2=0.873), deep-sleep (N3) run length decays exponentially (R^2=0.987) with a time constant of 2.94 cycles, consistent with the homeostatic Process S of the two-process model, and light-sleep (N1) run length follows a U shape (R^2=0.956), confirming a \"long-short-long\" pattern across the night. The laws are reproduced by per-night differentiable fitting (142/142 and 773/773 nights converge), by unconstrained symbolic regression (PySR), and by a 500-night generative synthesizer built from them. Their robustness is established against the two main methodological threats: bootstrap CIs computed by resampling whole nights (1,000 replications) exclude zero for every shape term, and a five-level scan of the REM-merge segmentation threshold preserves every qualitative form. These appear to be the first closed-form laws governing the macro-structure of sleep, distilled and tested across an age-mixed sample (healthy young adults and community-based older adults).",
-      "url": "https://arxiv.org/abs/2611.00550",
-      "pdf": "https://arxiv.org/pdf/2611.00550v1"
-    },
-    {
-      "id": "2611.00849",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · physics.app-ph",
-      "published": "2026-10-31",
-      "title_en": "What Is the Dynamic Capacitance of a Memristor?",
-      "title_zh": "忆阻器的动态电容到底是什么",
-      "one_liner": "区分了忆阻器中存储电容和动态电容两种电容，用 CALM 模型证明动态电容是阶跃电压后瞬态电导的积分，其符号由电导随电压增大而增或减决定。",
-      "why": "忆阻器是下一代存储和计算硬件的候选器件，但它的电容测量常出现巨大甚至负值，让人困惑。这篇论文把两种电容区分清楚，解释了负电容的来源。高中生可以从中看到‘电容’不一定是储存电荷，也可能来自电流的延迟响应，与课本的电容概念形成有趣对比。",
-      "sections": {
-        "background": "在阻抗谱测量中，忆阻器、纳米流体通道和钙钛矿器件常出现低频电容比任何合理存储电荷大几个数量级，或者变成负值并伴随电感环。以前人们容易把这种电容都当成存储电荷的电容，导致对器件行为的误解。",
-        "method": "作者用 conductance-activated quasi-linear memristor（CALM）模型和一般忆阻器模型（内部状态控制电导）进行分析。他们施加小电压阶跃，计算瞬态差分电导对时间的积分，并减去最终值，得到动态电容。对于单个弛豫状态，动态电容等于弛豫电导乘以弛豫时间，再取负号。",
-        "finding": "动态电容在零偏压时为零，其符号取决于稳态电导随电压幅度是增大还是减小。增强（potentiation）给出负电容和化学电感，减弱（depression）给出正电容，容易被误认为存储电荷。在锥形多孔纳米流体膜中，阻抗和电压脉冲得到的动态电容在零偏压处符号变化一致，并达到很大数值。",
-        "impact": "这项分析澄清了忆阻器阻抗谱中电容异常的来源，为正确表征这类器件提供了判据。未来可能帮助工程师区分真实的存储电荷和动态响应，避免误读器件特性，对神经形态计算和存储器的开发有指导意义。"
-      },
-      "analogy": "就像水龙头突然打开，水流不会立刻达到最大，而是逐渐增加。如果你只看水龙头的‘容量’，会以为它很大，其实那是水流延迟造成的‘动态容量’。忆阻器的动态电容就是这种延迟效应，而不是真的存了很多电荷。",
-      "terms": [
-        {
-          "t": "忆阻器",
-          "d": "一种电阻值可由历史电压或电流改变的记忆器件。论文研究其阻抗谱中电容异常的来源。"
-        },
-        {
-          "t": "阻抗谱",
-          "d": "测量器件对不同频率交流电的响应，得到电容、电感等参数。论文用它观察忆阻器的电容行为。"
-        },
-        {
-          "t": "动态电容",
-          "d": "由传导电流延迟响应产生的等效电容，不是储存电荷。论文证明它等于瞬态电导的积分并解释其符号。"
-        },
-        {
-          "t": "存储电容",
-          "d": "由实际储存电荷变化产生的电容。论文将其与动态电容区分，避免混淆。"
-        },
-        {
-          "t": "CALM模型",
-          "d": "一种电导激活的准线性忆阻器模型。论文用它推导动态电容的表达式。"
-        },
-        {
-          "t": "负电容",
-          "d": "电容值为负的等效行为，常伴随电感环。论文指出它可由电导增强产生，并非存储电荷。"
-        },
-        {
-          "t": "弛豫时间",
-          "d": "内部状态恢复到稳态所需的时间尺度。论文中动态电容与弛豫时间成正比。"
-        },
-        {
-          "t": "纳米流体膜",
-          "d": "内部有纳米级孔道、可让离子通过的薄膜。论文用其验证动态电容理论。"
-        }
-      ],
-      "tags": [
-        "忆阻器",
-        "电容",
-        "器件物理"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Juan Bisquert",
-        "Gonzalo Rivera-Sierra"
-      ],
-      "abstract": "Impedance spectroscopy of memristors, nanofluidic channels and halide perovskite devices often shows a low-frequency capacitance that is orders of magnitude larger than any plausible stored charge, or that becomes negative and appears together with an inductive loop. We distinguish two kinds of capacitance that enter the impedance in the same way: a storage capacitance, the derivative of a stored charge, and a dynamic capacitance, produced by the delayed response of a conduction current. Using the conductance-activated quasi-linear memristor (CALM) model, and a general memristor in which an internal state controls the conductance, we show that the dynamic capacitance is the time integral of the transient differential conductance after a small voltage step, measured from its final value. For a single relaxing state it is the product of a relaxing conductance and a relaxation time, with a negative sign. It vanishes at zero bias, and its sign is set by whether the stationary conductance increases or decreases with the magnitude of the voltage. Potentiation gives a negative capacitance and a chemical inductor, and depression gives a positive capacitance that is easily mistaken for stored charge. The analysis gives an explicit formulation of the time-domain criterion for negative capacitance of Jonscher and Ershov. In conical multipore nanofluidic membranes, the dynamic capacitance obtained from impedance and from voltage pulses shows the same sign change at zero bias and reaches values several hundred times larger than the membrane capacitance. The same picture accounts for the capacitive and inductive regimes of halide perovskite memristors.",
-      "url": "https://arxiv.org/abs/2611.00849",
-      "pdf": "https://arxiv.org/pdf/2611.00849v1"
-    },
-    {
-      "id": "2611.00889",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · physics.app-ph",
-      "published": "2026-10-31",
-      "title_en": "Lithography-free, apodized thickness-shear LiNbO3 resonators for piezoelectric DC-DC power conversion",
-      "title_zh": "无需光刻的压电谐振器做直流电源转换",
-      "one_liner": "报道一种无需光刻的、变迹的 163° Y 切铌酸锂厚度剪切谐振器，通过弯曲不对称外形减少杂散模式，实现 53.57% 机电耦合和 1146 品质因数，用于紧凑直流-直流电源转换。",
-      "why": "手机和电脑里有很多电源转换电路，传统电感又大又重。压电谐振器可以替代电感做小型化电源，但杂散振动会捣乱。这篇论文用简单的外形设计（不用昂贵光刻）就压制了杂散模式，让高中生看到几何形状如何影响振动，贴近物理课本的振动和共振知识。",
-      "sections": {
-        "background": "压电谐振器有希望成为紧凑高频直流-直流电源转换器的储能元件，但实际应用需要同时具备高机电耦合系数、高品质因数和低阻抗波动。杂散的兰姆波和横向模式会减少可用电感频率范围，让转换器在变负载下难以工作。",
-        "method": "作者设计了一种无需光刻的变迹 163° Y 切铌酸锂厚度剪切谐振器。他们用有限元模拟发现方形板在主要剪切共振附近激发许多横向杂散模式，而弯曲不对称板轮廓能重新分布横向声学边界条件，减少电学可见的杂散响应。实验中测试了多种轮廓、互连方案和器件面积。",
-        "finding": "代表性 560 mm² 器件在 3.67 MHz 附近有串联共振，有效机电耦合系数为 53.57%，串联品质因数为 1146，串联共振优值为 614。用改进的 Butterworth-van Dyke 等效电路模型拟合，测量与模型高度一致，最大偏差很小。",
-        "impact": "这种无需光刻的谐振器设计简化了制造，同时保持高耦合和高品质因数，可能推动压电电源转换器的小型化和实用化。未来手机充电器或芯片供电模块可能变得更小、更高效。"
-      },
-      "analogy": "就像敲钟时希望声音纯净，但方形钟会发出很多杂音。把钟的边缘做成弯曲不对称，杂音就少了，主音更清晰。谐振器也一样，弯曲外形让振动更集中在一个模式上。",
-      "terms": [
-        {
-          "t": "压电谐振器",
-          "d": "利用压电材料在电场下振动、在共振时储存能量的器件。论文用它替代电感做电源转换。"
-        },
-        {
-          "t": "厚度剪切模式",
-          "d": "压电板沿厚度方向剪切振动的模式。论文利用这种模式实现高机电耦合。"
-        },
-        {
-          "t": "机电耦合系数",
-          "d": "衡量电能与机械能相互转换效率的参数，越高越好。论文器件达到 53.57%。"
-        },
-        {
-          "t": "品质因数",
-          "d": "衡量谐振器能量损耗的指标，越高损耗越小。论文器件串联品质因数为 1146。"
-        },
-        {
-          "t": "杂散模式",
-          "d": "除了所需共振外多余振动模式，会干扰工作。论文用弯曲外形减少杂散响应。"
-        },
-        {
-          "t": "变迹",
-          "d": "通过改变器件外形或电极形状来抑制不需要的模式。论文采用弯曲不对称板轮廓实现变迹。"
-        },
-        {
-          "t": "铌酸锂",
-          "d": "一种压电材料，常用于声波器件。论文使用 163° Y 切铌酸锂板。"
-        },
-        {
-          "t": "直流-直流转换器",
-          "d": "把一种直流电压变成另一种直流电压的电路。论文的谐振器用于这种转换器储能。"
-        }
-      ],
-      "tags": [
-        "压电",
-        "谐振器",
-        "电源"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Xu Zhao",
-        "Shun Yao",
-        "Roy H. Olsson"
-      ],
-      "abstract": "Piezoelectric resonators have emerged as promising energy-storage elements for compact high-frequency DC-DC power converters. Still, practical implementation requires simultaneously high k_t^2 (electromechanical coupling), Q (high quality factor) and low resistance/impedance fluctuations. Spurious Lamb-wave and lateral modes are particularly problematic because they reduce the usable inductive frequency span and complicate converter operation over variable loads. Here we report a lithography-free, apodized 163° Y-cut lithium niobate thickness-shear resonator with reduced electrically visible spurious responses while preserving the intrinsically large coupling of the thickness-shear mode. Finite-element simulations show that a square plate excites numerous lateral spurious modes near the principal shear resonance. In contrast, a curved asymmetric plate outline redistributes the lateral acoustic boundary conditions and reduces electrically visible spurious responses. Experiments on multiple resonator outlines, interconnection schemes, and device areas are performed to characterize the device responses. The representative 560 mm^2 device exhibits a series resonance near 3.67 MHz, an effective electromechanical coupling coefficient of 53.57%, a series quality factor of 1146, and a series resonance figure of merit of 614. A representative device fitted with a modified Butterworth-van Dyke equivalent circuit model shows excellent agreement between measurement and model, with a maximum Bode quality factor of 2896. These results support lateral-boundary apodization as a practical approach to high-coupling lithium niobate resonators with reduced electrically visible spurious responses for piezoelectric power converters.",
-      "url": "https://arxiv.org/abs/2611.00889",
-      "pdf": "https://arxiv.org/pdf/2611.00889v1"
-    },
-    {
-      "id": "2611.00895",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mtrl-sci",
-      "published": "2026-10-31",
-      "title_en": "Radiofrequency plasma spheroidization of lightweight complex concentrated superalloy Al10Nb20Ta15Ti30V5Zr20",
-      "title_zh": "用射频等离子体把难熔高熵合金变成3D打印球形粉末",
-      "one_liner": "研究者用机械合金化加射频等离子体球化，造出适合3D打印的球形难熔高熵合金粉末，并分析了它的微观结构。",
-      "why": "3D打印金属零件需要球形粉末，但难熔高熵合金熔点高、易氧化，传统方法做不好。这篇论文展示了一条从“磨粉”到“球化”的完整路线，还用了原子探针等高级表征，能让你看到材料制造中“成分—工艺—结构”是如何环环相扣的。",
-      "sections": {
-        "background": "难熔高熵合金由多种高熔点金属按近等比例混合，有望在高温下保持高强度，但它们的熔点往往超过2000°C，且化学活性高，用常规熔炼和雾化法很难制成细小的球形粉末。增材制造（3D打印）又偏偏需要流动性好的球形粉末，否则铺粉不均、打印件缺陷多。因此，如何高效制备成分均匀、球形度好的难熔高熵合金粉末，一直是材料制造领域的难题。",
-        "method": "研究者先通过机械合金化——用高能球磨把元素粉末反复冷焊、破碎——得到成分均匀的合金粉末，再用射频 inductively coupled plasma（射频电感耦合等离子体）对粉末进行球化处理：粉末被送入高温等离子体炬中瞬间熔化，表面张力使其收缩成球，随后快速凝固。他们用X射线衍射和电子显微镜观察相组成，并用三维原子探针 tomography（原子探针层析）分析碳化物的分布。",
-        "finding": "得到的粉末球形度高，适合增材制造。微观结构以体心立方（BCC）相为主，局部有B2相，还形成了复杂的碳化物。三维原子探针显示碳化物在纳米尺度上分布。论文没有给出具体的球形度数值或打印件性能，但强调该粉末“适合AM工艺”。",
-        "impact": "这项工作为难熔高熵合金的增材制造提供了一种可扩展的粉末制备方案，可能推动这类高温材料在航空航天等领域的应用。不过，粉末的打印性能、最终零件的力学性能还需要进一步验证。"
-      },
-      "analogy": "就像把一堆形状不规则的碎石，先磨成细粉，再送进一个超高温的“火球”里瞬间熔化，表面张力让每颗液滴缩成 perfect 小球，冷却后就成了3D打印机爱用的“金属沙”。",
-      "terms": [
-        {
-          "t": "难熔高熵合金",
-          "d": "由多种高熔点金属近等比例组成的合金，熔点高、强度大，但难加工；本文用它作为粉末材料。"
-        },
-        {
-          "t": "增材制造",
-          "d": "即3D打印，逐层堆积材料制造零件；本文的目标是制备适合它的球形粉末。"
-        },
-        {
-          "t": "机械合金化",
-          "d": "用高能球磨使粉末反复变形、冷焊、破碎，达到原子级混合；本文用它先制得成分均匀的合金粉。"
-        },
-        {
-          "t": "射频等离子体球化",
-          "d": "用高频电磁场产生高温等离子体，使粉末瞬间熔化并在表面张力下成球；本文的核心球化步骤。"
-        },
-        {
-          "t": "BCC/B2相",
-          "d": "BCC是体心立方结构，B2是有序体心立方结构；本文发现粉末以BCC为主，局部有B2。"
-        },
-        {
-          "t": "原子探针层析",
-          "d": "一种三维原子尺度成分分析技术；本文用它研究碳化物的分布。"
-        }
-      ],
-      "tags": [
-        "材料制造",
-        "3D打印",
-        "高熵合金"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "František Lukáč",
-        "Jakub Klečka",
-        "Jiří Kozlík",
-        "Kristína Bartha",
-        "Jozef Veselý",
-        "Kateřina Ficková",
-        "Jakub Minařík",
-        "Jan Čížek",
-        "Josef Stráský"
-      ],
-      "abstract": "Recent advances in additive manufacturing (AM) have significantly increased the demand for high-quality metal powders with tailored composition. For refractory complex concentrated alloys (RCCA) preparing such powders by conventional metallurgical method remains challenging due to their high melting point and chemical reactivity. In this paper, we present a method to produce spherical RCCA powders (here Al10Nb20Ta15Ti30V5Zr20) via mechanical alloying followed by radio-frequency inductively coupled plasma spheroidization. The resulting powder is suitable for AM processes because of its spherical morphology and a microstructure consisting of major BCC phases with local B2 phase. Complex carbide formation was studied by 3D atom probe tomography.",
-      "url": "https://arxiv.org/abs/2611.00895",
-      "pdf": "https://arxiv.org/pdf/2611.00895v1"
-    },
-    {
-      "id": "2611.00915",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.AR",
-      "published": "2026-10-31",
-      "title_en": "Elastic Precision: Software-Hardware Co-Design of a Mixed-Precision Architecture for Long-Context LLM Inference",
-      "title_zh": "给大模型推理省算力的混合精度芯片",
-      "one_liner": "提出一种软硬件协同的混合精度架构 Coffee，根据两个输入矩阵的统计信息动态分配位宽，在相同平均位宽下降低大模型困惑度并提升长上下文推理吞吐量。",
-      "why": "大模型（如 ChatGPT）运行很耗电，这篇论文设计了一种芯片架构，让模型推理时用更少的比特数表示数字，从而省电提速。它结合了算法和硬件，能让你看到课本里的二进制位宽如何影响实际计算效率，也涉及长上下文（比如读长文章）这种热门应用。",
-      "sections": {
-        "background": "大语言模型推理时，数据搬运和计算开销很大。低比特量化（用更少的二进制位表示数字）能减少这些开销，但所有数字用同样位宽会浪费精度、降低模型质量。已有的混合精度方法在选择一个输入的位宽时，没有充分考虑另一个输入对输出误差的影响，因此精度分配不够准。",
-        "method": "作者设计了一个运行时精度分配架构 Coffee。它同时利用当前两个输入矩阵的统计信息，估计在不同候选位宽下输出误差的大小，然后为每个子阵列选择两个输入的位宽，把更多比特分配给能更大降低误差的地方。硬件支持所选位宽的数据访问和计算，并把误差估计和位宽选择与数据传输、计算重叠起来，减少停顿。",
-        "finding": "在相同平均位宽预算下，Coffee 比评估的量化基线有更低的困惑度和更高的零样本准确率，长上下文检索召回率也高于 PLENA。对于长上下文解码，系统建模预测吞吐量可达重新配置的 PLENA 基线的 2.55 倍，能效达 2.61 倍；与另一个基线相比，分别可达 4.96 倍和 12.56 倍。",
-        "impact": "这项工作展示了算法与硬件协同设计可以更高效地运行大模型，尤其是在需要处理长文本的场景。未来可能让手机或边缘设备也能运行更强大的语言模型，减少对云端算力的依赖，同时降低能耗。"
-      },
-      "analogy": "就像给不同难度的题目分配不同的草稿纸：简单的题用小块纸，难题用大块纸。Coffee 会同时看题目和答案的草稿，决定每道题该用多大纸，而不是所有题都用一样大的纸，这样既省纸又保证准确率。",
-      "terms": [
-        {
-          "t": "大语言模型（LLM）",
-          "d": "像 ChatGPT 这样能理解和生成文本的 AI 模型。论文中它是被推理加速的对象，需要大量计算和内存。"
-        },
-        {
-          "t": "量化",
-          "d": "用更少的二进制位表示数字，以减少存储和计算量。论文用混合精度量化来平衡模型质量和速度。"
-        },
-        {
-          "t": "混合精度",
-          "d": "不同部分用不同位宽表示数字。论文根据输入动态选择位宽，以在相同平均位宽下降低误差。"
-        },
-        {
-          "t": "GEMM",
-          "d": "通用矩阵乘法，是神经网络中最常见的计算操作。论文在 GEMM  tile 级别分配精度。"
-        },
-        {
-          "t": "困惑度",
-          "d": "衡量语言模型预测文本好坏的指标，越低越好。论文用它比较不同量化方法的模型质量。"
-        },
-        {
-          "t": "零样本准确率",
-          "d": "模型在没有见过任务示例的情况下直接答题的准确率。论文用它评估量化后模型的泛化能力。"
-        },
-        {
-          "t": "长上下文",
-          "d": "模型一次能处理的文本长度很长，比如整本书。论文针对长上下文推理优化吞吐量和能效。"
-        },
-        {
-          "t": "吞吐量",
-          "d": "单位时间内能完成的推理任务数量。论文用系统建模预测 Coffee 的吞吐量提升倍数。"
-        }
-      ],
-      "tags": [
-        "大模型",
-        "芯片架构",
-        "量化"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Boyang Chen",
-        "Xiao Wu",
-        "Haoran Wu",
-        "Yiren Zhao"
-      ],
-      "abstract": "Low-bit quantization reduces the data movement and computation costs of large language model (LLM) inference, but uniform widths can waste precision and degrade model quality. Existing mixed-precision methods do not fully account for how the other input of the current GEMM tile affects output error when selecting one input's width. Using both inputs to guide precision introduces additional estimation and selection overheads on conventional hardware. We propose Coffee, a runtime precision allocation architecture for long-context LLM inference. Under a fixed average bit-width budget, Coffee combines statistics from both current input matrices to estimate output errors at candidate widths and select each subarray's two input widths, allocating more bits where they yield greater estimated error reductions. Its mixed-precision hardware supports the selected widths in data access and computation, while overlapping error estimation and width selection with transfers and computation to limit stalls. The same read path supports attention-guided KV reads during decoding, reducing memory traffic. Coffee achieves lower perplexity and higher average zero-shot accuracy than the evaluated quantization baselines, and higher long-context retrieval recall than PLENA. For long-context decoding, system modeling projects up to $2.55\\times$ the throughput and $2.61\\times$ the energy efficiency of the reconfigured PLENA baseline, and up to $4.96\\times$ and $12.56\\times$, respectively, compared with the B200 GPU baseline.",
-      "url": "https://arxiv.org/abs/2611.00915",
-      "pdf": "https://arxiv.org/pdf/2611.00915v1"
-    },
-    {
-      "id": "2611.01214",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-10-31",
-      "title_en": "Cooling-path-selected self-assembly of telecom InAsP quantum dots",
-      "title_zh": "冷却路径决定通信波段量子点的自组装",
-      "one_liner": "研究者发现，在磷化铟衬底上，冷却路径和砷供应共同决定能否形成InAsP量子点，并实现1.2-1.6微米发光。",
-      "why": "量子点是人造原子，能单个发射光子，是量子通信的光源。但要在通信波段（光纤损耗最小的1.3-1.55微米）可控制造量子点很难。这篇论文把“冷却”这个看似被动的步骤变成主动的设计工具，展示了工艺路径如何决定材料结构，适合对纳米材料和量子技术感兴趣的同学。",
-      "sections": {
-        "background": "外延量子点通常靠晶格失配让材料自发形成三维小岛，但InP衬底上的InAsP量子点形成窗口很窄，发光波长难以预测，重复性差。通信波段的量子点尤其难做，因为波长对尺寸和成分极其敏感。此前，人们主要调整沉积量和温度，但冷却过程往往被忽视。",
-        "method": "研究者在InP(001)衬底上，先高温通砷，使表面发生As-P交换，形成一层很薄的近表面InAsP层，然后控制冷却路径和继续供砷。他们用表面敏感光谱观察表面砷富集，用截面扫描透射电镜和电子能量损失谱分析岛的结构和成分，并测试了20片晶圆的发光波长。",
-        "finding": "冷却路径决定是否形成三维岛：高温砷暴露形成近表面InAsP层，冷却时继续供砷才能成岛。封帽后的发光体覆盖1.2-1.6微米，在高达100 K仍能观察到单光子发射。20片晶圆的数据表明，表面有效交换剂量D可以作为标定发光波长中位数的实用参数。",
-        "impact": "这项研究把冷却步骤变成控制量子点形成和波长的主动手段，可能提高通信波段量子点光源的重复性和可预测性，为量子通信和光量子计算提供更可靠的光源。"
-      },
-      "analogy": "就像做糖画：熬好的糖浆（近表面InAsP层）在冷却时，如果继续加一点“引子”（砷），糖就会结晶成小球（量子点）；冷却的快慢和引子的多少决定了小球的大小，从而决定它发什么颜色的光。",
-      "terms": [
-        {
-          "t": "量子点",
-          "d": "纳米尺度的半导体晶体，能像原子一样离散地发光；本文的目标是制造通信波段的量子点光源。"
-        },
-        {
-          "t": "外延",
-          "d": "在单晶衬底上逐层生长单晶薄膜的技术；本文用外延在InP上生长InAsP量子点。"
-        },
-        {
-          "t": "磷化铟（InP）",
-          "d": "一种半导体衬底材料；本文在其上生长量子点，以实现通信波段发光。"
-        },
-        {
-          "t": "As-P交换",
-          "d": "砷原子替换表面磷原子的过程；本文中高温通砷形成近表面InAsP层。"
-        },
-        {
-          "t": "单光子发射",
-          "d": "一次只发射一个光子的光源特性；本文在100 K下观测到，是量子应用的关键。"
-        },
-        {
-          "t": "扫描透射电镜（STEM）",
-          "d": "用电子束扫描薄样品成像的显微镜；本文用它观察量子点的截面结构。"
-        },
-        {
-          "t": "电子能量损失谱（EELS）",
-          "d": "通过测量电子损失的能量来分析成分；本文用它确认岛内砷的梯度分布。"
-        }
-      ],
-      "tags": [
-        "量子点",
-        "半导体",
-        "外延生长"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Yiteng Zhang",
-        "Doaa Abdelbarey",
-        "Markus Etzkorn",
-        "Zenghui Jiang",
-        "Ankita Choudhary",
-        "Andreas Schaate",
-        "Tom Fandrich",
-        "Xin Cao",
-        "Chenxi Ma",
-        "Arijit Chakraborty",
-        "Eddy Patrick Rugeramigabo",
-        "Michael Zopf",
-        "Fei Ding"
-      ],
-      "abstract": "Epitaxial quantum dots are leading solid-state sources of quantum light, but reproducible growth on indium phosphide (InP) remains challenging because dot-formation windows are narrow and emission wavelengths are difficult to predict. Here we report a new epitaxial route for InAsP quantum dots on InP(001), in which the cooling path selects the final morphology without intentional deposition of group-III dot material. High-temperature As exposure forms a shallow near-surface InAsP layer through As-P exchange; the cooling path and continued As supply determine whether three-dimensional islands form. Surface-sensitive spectroscopy shows near-surface As enrichment, while cross-sectional STEM/EELS identifies graded, As-rich InAsP islands. The capped emitters span 1.2-1.6 micrometers, with single-photon emission observed up to 100 K. Across 20 wafers, the surface-effective exchange dose D provides a practical calibration for targeting the median emission wavelength. These results establish cooling as an active epitaxial step for telecom InAsP quantum-dot formation and wavelength control.",
-      "url": "https://arxiv.org/abs/2611.01214",
-      "pdf": "https://arxiv.org/pdf/2611.01214v1"
-    },
-    {
-      "id": "2611.01238",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-10-31",
-      "title_en": "Persistence of Fractal Structures in Iterated Quantum Protocols: Robustness to Preparation and Gate Errors",
-      "title_zh": "量子协议中的分形结构：误差下仍稳健",
-      "one_liner": "迭代量子协议产生的分形收敛边界对制备噪声和门误差有稳健性，且准朱利亚边界维度约等于纯态维度加一。",
-      "why": "分形是数学中迷人的几何，这篇论文展示量子协议中也能出现分形，且对误差有一定抵抗力。高中生可以联系分形、迭代和量子门，感受数学与物理的交汇。",
-      "sections": {
-        "background": "迭代量子协议通过重复纠缠门、测量和后选择，使未测量量子比特经历非线性演化，其收敛边界呈现分形（朱利亚集）。但实际中制备噪声和门误差不可避免，分形结构是否稳健尚不清楚。",
-        "method": "作者研究n个量子比特通过CNOT门耦合、后选择n-1个、对幸存者施加单比特酉操作的协议。用盒计数维度映射纯态朱利亚集，并引入混合初态、去极化噪声和相干误差，数值分析维度变化。",
-        "finding": "适度制备噪声下，边界维度的主要趋势在大部分参数范围内保持；三维准朱利亚边界维度约等于纯态朱利亚集维度加一。弱误差下估计维度与理想值一致，即使收敛区域明显变形；ZZ误差在旋转参数下与理想协议精确共轭。",
-        "impact": "表明分形结构对实验误差有内在稳健性，为量子协议的可实现性提供信心，并连接量子混沌与分形几何。"
-      },
-      "analogy": "就像用模糊的相机拍分形图案，虽然细节模糊，但整体轮廓和维度仍可辨认，不会完全失真。",
-      "terms": [
-        {
-          "t": "量子比特",
-          "d": "量子信息的基本单位，本文用多个量子比特进行迭代协议。"
-        },
-        {
-          "t": "纠缠门",
-          "d": "使两个量子比特产生纠缠的量子操作，如CNOT门，本文用于耦合。"
-        },
-        {
-          "t": "后选择",
-          "d": "测量后只保留特定结果，丢弃其他，本文用于诱导非线性。"
-        },
-        {
-          "t": "朱利亚集",
-          "d": "复平面上迭代函数产生分形边界的集合，本文映射其维度。"
-        },
-        {
-          "t": "盒计数维度",
-          "d": "衡量分形复杂度的维度，本文用于量化边界。"
-        },
-        {
-          "t": "去极化噪声",
-          "d": "一种简化误差模型，使量子态随机化，本文模拟门误差。"
-        },
-        {
-          "t": "布洛赫球",
-          "d": "表示单量子比特状态的球面，本文讨论其三维边界。"
-        },
-        {
-          "t": "CNOT门",
-          "d": "受控非门，两量子比特纠缠门，本文协议的核心组件。"
-        }
-      ],
-      "tags": [
-        "量子信息",
-        "分形",
-        "误差稳健性"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Attila Portik",
-        "Orsolya Kálmán",
-        "Tamás Kiss"
-      ],
-      "abstract": "Repeatedly combining entangling gates on an ensemble of qubits with measurement and postselection on a part of them induces a nonlinear evolution of the unmeasured qubits' state, whose fractal convergence boundaries make the outcome sensitive to the initial state. We study a family of iterated protocols in which $n$ identical qubits are coupled by CNOT gates, $n-1$ of them are postselected, and a parametrized single-qubit unitary acts on the survivor. For orders $n=2$ to $5$, we map the box-counting dimension of the pure-state Julia sets over the complex parameter plane and identify the symmetries that constrain it. Allowing mixed initial states, we find that moderate preparation noise preserves the main parameter-dependent trends of the boundary dimension over much of the studied range, and that the three-dimensional quasi-Julia boundary in the Bloch ball has a dimension that is approximately equal to the dimension of the pure-state Julia set plus one. We further model gate imperfections by an effective depolarizing channel and by fixed coherent interactions. Weak errors leave the estimated dimensions consistent with their ideal values even where the convergence regions visibly deform, and $ZZ$ errors are shown to be exactly conjugate to the ideal protocol at a rotated parameter. Finally, we analyze the postselection and storage cost of an implementation and propose a diagnostic test combining conditional fidelity with acceptance statistics, which we demonstrate on IQM Emerald and Rigetti Cepheus-1-108Q.",
-      "url": "https://arxiv.org/abs/2611.01238",
-      "pdf": "https://arxiv.org/pdf/2611.01238v1"
-    },
-    {
-      "id": "2611.01243",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-10-31",
-      "title_en": "Halving Partitions and Hyperbinary Expansions",
-      "title_zh": "折半拆分与超二进制展开",
-      "one_liner": "研究反复将整数折半（向上或向下取整）得到的序列，何时这些序列的和等于原整数，并给出计数和结构。",
-      "why": "问题从简单的折半操作出发，却与二进制表示和 Stern 数列等经典对象联系，适合喜欢探索数字规律的高中生。",
-      "sections": {
-        "background": "把一个整数不断折半，每次可以向上或向下取整，会得到一串数。自然的问题是：这些数加起来能等于原来的整数吗？这样的序列有多少？以前对这类折半过程的研究不多，而它与超二进制展开（每个 2 的幂最多出现两次的表示）有隐藏联系。",
-        "method": "作者发现一个平衡恒等式，把折半时的取整选择转化为超二进制展开，从而用展开的计数来回答折半序列的问题。他们还利用整数的二进制数字刻画等号成立的条件，并给出递归计数算法。",
-        "finding": "他们得到按长度精确计数，并证明折半拆分的数量不超过 Stern 数列（一个经典整数序列）的项数。当允许总和变化时，链计数最终等于 Stern 数，并确定了精确阈值。此外，三个长度类模 3 的计数差不超过 1。",
-        "impact": "这项工作揭示了折半操作与二进制表示之间的新联系，可能为组合数论提供新工具，并激发对整数表示的兴趣。"
-      },
-      "analogy": "就像把一块巧克力反复掰成两半，每次可以选择保留较大或较小的一半，问最后所有小块的总和能否等于原来的整块。",
-      "terms": [
-        {
-          "t": "超二进制展开",
-          "d": "一种整数表示，每个 2 的幂最多出现两次，例如 6 = 4+2 或 2+2+2。在论文中用来转化折半问题。"
-        },
-        {
-          "t": "Stern 数列",
-          "d": "一个整数序列，由类似辗转相除的规则生成，计数超二进制展开。论文用它来界定折半拆分的数量。"
-        },
-        {
-          "t": "折半拆分",
-          "d": "从整数开始，反复折半并取整，得到一串数。论文研究这些数的和等于原整数的条件。"
-        },
-        {
-          "t": "平衡恒等式",
-          "d": "论文中建立的一个等式，将折半选择与超二进制展开对应起来，是核心工具。"
-        },
-        {
-          "t": "二进制数字",
-          "d": "整数在二进制下的各位数字（0 或 1）。论文用奇部的二进制数字刻画等号成立。"
-        },
-        {
-          "t": "递归计数算法",
-          "d": "通过递归关系计算折半拆分数量的一种方法，论文给出了简短算法。"
-        }
-      ],
-      "tags": [
-        "数论",
-        "组合",
-        "二进制"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Max A. Alekseyev"
-      ],
-      "abstract": "Starting from a positive integer, repeatedly halve the current value, rounding up or down. Which resulting sequences have terms that add to the starting integer? A simple balance identity turns the rounding choices into hyperbinary expansions, in which each power of two occurs at most twice. This correspondence gives exact counts by length and an injection into the expansions counted by Stern's diatomic sequence. We characterize equality in the resulting bound by the binary digits of the odd part of the integer. We also determine the unique longest partition and give a short recursive counting algorithm. When the required total is allowed to vary, the chain counts eventually equal Stern's number, and we determine the exact threshold. A direct proof shows that the counts of hyperbinary expansions in the three length classes modulo three differ by at most one. For sufficiently long halving partitions, the counts by length first weakly increase and then weakly decrease, although the full sequence need not do so.",
-      "url": "https://arxiv.org/abs/2611.01243",
-      "pdf": "https://arxiv.org/pdf/2611.01243v1"
     }
   ]
 }

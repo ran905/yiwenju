@@ -3131,5 +3131,258 @@
     "comment": "63 pages, 10 figures. Code and data availability statements are included in the manuscript",
     "url": "https://arxiv.org/abs/2611.08421",
     "pdf": "https://arxiv.org/pdf/2611.08421v1"
+  },
+  "2611.08907": {
+    "id": "2611.08907",
+    "title": "Shared Lookups and Lazy Residues: Fewer Toffoli Gates for Factoring RSA-2048",
+    "abstract": "Gidney's 2025 construction for factoring RSA-2048 with few logical qubits spends most of its Toffoli gates on discrete-log table lookups and residue uncomputation. We reduce both costs. Shared lookups return entries for several primes of a residue number system at once because they have the same address. Retained intermediate residues remove recomputation during cleanup and enable lazy arithmetic with a single final modular reduction. We prove output preservation and estimate resources with an open benchmark built on the reference simulator. Against the best reference setting within the same logical-qubit budget, using the published model for the reference and benchmark counts for our circuits, we obtain $15\\%$ fewer Toffolis at $1{,}461$ qubits ($5.08 \\times 10^{9}$ per factoring) and $46\\%$ fewer at $1{,}806$ qubits ($2.55 \\times 10^{9}$). A matched ablation finds $28.8\\%$ fewer Toffolis from three-prime sharing at fixed window and checkpoint settings. Architecture-specific timing determines how much becomes a runtime saving.",
+    "authors": [
+      "Monit Sharma",
+      "Hoong Chuin Lau"
+    ],
+    "published": "2026-11-06T02:46:54Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08907",
+    "pdf": "https://arxiv.org/pdf/2611.08907v1"
+  },
+  "2611.08835": {
+    "id": "2611.08835",
+    "title": "Containment Problems in Convex Sets",
+    "abstract": "Let $P$ be a set of $n$ points in the plane, and let $C$ be a compact, convex subset of the plane that contains the origin in its interior. We study the problem of finding two points $p$ and $q$ of $P$ with the property that any homothet of $C$ that contains $p$ and $q$ must contain at least a constant fraction of the points of $P$. We give proofs for several cases. When $C$ is strictly convex we achieve a fraction of $1/5$, and when $C$ is a general convex region we achieve a fraction of $1/6e$. We show how the ideas of this second bound can be used to prove a lower bound for a version of the problem in $\\mathbb{R}^d$ when $C$ is a $d$-ball. We also consider a few special cases. When $C$ is a triangle we get a lower bound of $1/12$, and when we allow that triangle to be rotated by $π$ radians in addition to being scaled and translated we get a lower bound of $1/768$. In proving this last result, we improve the state of the art on the version of this problem in three dimensions, where $C$ is a parallelepiped. We also consider the algorithmic aspects of finding such a pair of points.",
+    "authors": [
+      "Prosenjit Bose",
+      "Bobby Miraftab",
+      "Tyler Tuttle"
+    ],
+    "published": "2026-11-06T00:43:06Z",
+    "primary": "cs.CG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08835",
+    "pdf": "https://arxiv.org/pdf/2611.08835v1"
+  },
+  "2611.08819": {
+    "id": "2611.08819",
+    "title": "Reflexive polytopes can have doubly exponentially many vertices",
+    "abstract": "Reflexive polytopes are lattice polytopes containing the origin in their interior such that also the dual polytope is a lattice polytope. On the basis of low-dimensional observations and of bounds known for special classes of reflexive polytopes, the second author conjectured in 2004 that the number of vertices of $d$-dimensional reflexive polytopes is bounded from above by $6^{d/2}$. In this note, we present counterexamples showing that this conjecture is false in every dimension $d \\ge 8$. In fact, rather surprisingly, in sufficiently large dimensions $d$ the number of vertices (equivalently, by duality, the number of facets) can be as large as theoretically possible, namely doubly exponential in $d$. These results were found using GPT-6.1 Sol.",
+    "authors": [
+      "Johannes Hofscheier",
+      "Benjamin Nill"
+    ],
+    "published": "2026-11-06T00:21:24Z",
+    "primary": "math.CO",
+    "comment": "12 pages, 1 figure",
+    "url": "https://arxiv.org/abs/2611.08819",
+    "pdf": "https://arxiv.org/pdf/2611.08819v1"
+  },
+  "2611.08568": {
+    "id": "2611.08568",
+    "title": "Personalized health coaching via coachable health age and counterfactual wearable trajectories",
+    "abstract": "Personalized health coaching requires moving beyond retrospective wearable summaries toward quantitative, actionable behavioral prescriptions. We introduce Coachable Health Age (CHA), an interpretable health-age metric built from modifiable physiological and behavioral signals passively captured by consumer wearables. Across the WEAR-ME (N=2,780), All of Us (N=22,748), and longitudinal Fitbit (N=1,464) cohorts, CHA aligns with established cardiometabolic health constructs and improves prognostic discrimination for incident cardiovascular and metabolic disease beyond age, sex, and body mass index. To enable prospective behavioral optimization, we developed Sensor World Model (SensorWM), an action-conditioned wearable world model pretrained on over 2.2 million person-weeks of longitudinal sensor data from approximately 100,000 participants. SensorWM accurately forecasts multi-week physiological responses to candidate lifestyle changes ($R^2=0.664$), outperforming generic time-series foundation models while preserving downstream clinical signal for diabetes, hypertension, and other health outcomes. Finally, we integrate CHA and SensorWM into an agentic counterfactual coaching system to synthesize personalized 12-week coaching plans. In blinded paired reviews, certified lifestyle coaches preferred counterfactual-grounded plans over plans grounded in wearable history alone for overall quality (71.4%, P < 0.001) and anticipated adherence (71.0%, P < 0.001), and board-certified clinicians judged 99.2% of counterfactual-grounded plans to meet clinical safety criteria (vs. 97.6% of comparison plans). Automated evaluations across the full cohort (N=2,780) also favored counterfactual-grounded plans. By closing the loop between longitudinal tracking, trajectory prediction, and counterfactual coaching, our framework provides a scalable path to systematically improve cardiometabolic health.",
+    "authors": [
+      "Simon A. Lee",
+      "Zeinab Esmaeilpour",
+      "Menglian Zhou",
+      "Marius Guerard",
+      "Sohrab Sidhu",
+      "Alexandru Solot",
+      "Hamid Palangi",
+      "Pramod Rudrapatna",
+      "Ming-Zher Poh",
+      "Max A. Xu",
+      "Daniel McDuff",
+      "Dimitrios Antos",
+      "Yuzhe Yang",
+      "Jeffrey N. Chiang",
+      "Anthony Z. Faranesh",
+      "Lindsey Sunden",
+      "Mark Malhotra",
+      "Shwetak Patel",
+      "A. Ali Heydari",
+      "Ahmed A. Metwally"
+    ],
+    "published": "2026-11-05T17:52:57Z",
+    "primary": "q-bio.QM",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08568",
+    "pdf": "https://arxiv.org/pdf/2611.08568v1"
+  },
+  "2611.08469": {
+    "id": "2611.08469",
+    "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+    "abstract": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transition law that describe how it computes, not what it outputs. Experiments see that law only through finite, partial and noisy interventions. We ask when such a quantity is identifiable from an experiment's access, continuous in the mechanism and certifiable from finite data, and answer exactly for a deliberately demanding case - the integrated information $\\varphi$ of integrated information theory - in stochastic networks of four and five units with known ground truth. Behavior can be silent: a recurrent and a feed-forward network with identical input-output laws at their response delay carry 0.28 and 0 bits, yet internal recordings separate them within 4-53 trials. Partial access can be just as blind: in our examples, units left out of a one-step recording impose precision floors of 0.30-1.02 bits that no sample size lowers, and in all-but-self parity networks, recordings of any length see several hidden units only through the product of their fidelities - a symmetry that one intervention broke in exact checks. The measure has sharp edges: because $\\varphi$ selects a partition, and the cause and effect it specifies, by one criterion and reports another, infinitesimal changes of mechanism that cross an edge change it by 25-100% at 99% of the edges we found in random networks, and about 1% of surrogate models that fit interventional data almost perfectly misreport it by more than 20%. One-sided claims survive: the same data certify a lower bound on both sides of an edge, and we prove $\\varphi>1.004$ bits throughout a 64-dimensional region of mechanisms and certify it from about $10^7$ controlled transitions with false-certificate probability at most $α$. Measurability is thus a design question with computable answers.",
+    "authors": [
+      "Linqian Wu",
+      "Diaoxuan He"
+    ],
+    "published": "2026-11-05T18:55:31Z",
+    "primary": "cs.LG",
+    "comment": "30 pages, 7 figures. Code available as ancillary files",
+    "url": "https://arxiv.org/abs/2611.08469",
+    "pdf": "https://arxiv.org/pdf/2611.08469v1"
+  },
+  "2611.08862": {
+    "id": "2611.08862",
+    "title": "Jaeger conjecture and Jaeger-Zhang conjecture",
+    "abstract": "We prove that every signed planar graph $\\widehat G$ of negative girth at least $\\ell\\geq 3$ satisfies $χ_c(\\widehat G)<\\frac{2\\ell}{\\ell-2}$. As a consequence, for every integer $k\\geq 1$, every planar graph $G$ of odd girth at least $4k+3$ satisfies $χ_c(G)<\\frac{2k+1}{k}$ and hence admits a homomorphism to $C_{2k+1}$. Our proofs build on recent results of Jafari on circular flows. In particular, Jafari proved that every $(4k+2)$-edge-connected graph has circular flow number strictly less than $2+\\frac{1}{k}$. We revisit his theorem, providing an alternative proof that emphasizes the underlying graph-theoretic ideas. We also extend the result to signed graphs and weaken the connectivity assumption by imposing a lower bound only on the size of negative cuts. The key step is a small-correction lemma associated with a distribution on spanning trees. A splitting argument first gives the required correction in an even-degree graph; doubling the edges removes the degree-parity assumption. Plane duality then gives the coloring theorem. We discuss tightness of bounds in the end.",
+    "authors": [
+      "Reza Naserasr"
+    ],
+    "published": "2026-11-06T01:42:52Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08862",
+    "pdf": "https://arxiv.org/pdf/2611.08862v1"
+  },
+  "2611.08774": {
+    "id": "2611.08774",
+    "title": "Gain-Dependent Entropy Characterization of a Zener Avalanche Noise TRNG via Dual NIST Standards: Toward Low-Cost Hardware Entropy for ICS Deployments",
+    "abstract": "True random number generators based on Zener avalanche noise offer a low-cost entropy source for industrial control system and IoT edge devices, yet the relationship between amplifier gain, coupling capacitance, and entropy quality remains uncharacterized under current NIST standards. This paper presents a comprehensive entropy assessment of an op-amp-based Zener avalanche noise generator across five gain configurations and two coupling capacitor values, evaluated against the NIST SP 800-22 statistical test suite and the SP~800-90B entropy source assessment using 1.44 billion raw bits per configuration. We identify a three-phase autocorrelation structure, attributed to comparator saturation-recovery dynamics, consistent across all gain settings. A direct-current substitution experiment, replacing the Zener diode with a stable voltage source at the same bias point, reduces switching activity by approximately 97%, confirming that Zener avalanche noise, rather than amplifier self-excitation, is the necessary entropy source. The coupling capacitor is further shown to govern comparator overdrive and entropy quality independent of this source mechanism, with the smaller capacitance improving entropy, throughput, and bias. The combined results identify an optimal gain configuration achieving a perfect statistical test score, NIST-compliant min-entropy, and peak entropy throughput at a bill-of-materials cost under five dollars, offering practical design guidance for low-cost entropy sources in industrial and embedded deployments.",
+    "authors": [
+      "Rishabh Das"
+    ],
+    "published": "2026-11-05T22:51:58Z",
+    "primary": "cs.CR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08774",
+    "pdf": "https://arxiv.org/pdf/2611.08774v1"
+  },
+  "2611.08906": {
+    "id": "2611.08906",
+    "title": "Quantum Fluctuations in Noether's Theorem",
+    "abstract": "When deriving the expression for the Noether's current one obtains a term that is an integral over the Euler-Lagrange equation. This term vanishes along the classical path and so does not contribute to the current. However, quantum particles do not necessarily follow the classical path; this concept is the basis of Feynman's path integral quantization formalism. Thus, for a quantum system, the Euler-Lagrange term does not vanish and, hence, corresponds to a quantum fluctuation of the Noether's current owing to the system deviating from the classical path. Here, we compute this quantum fluctuation from Noether's theorem and the path integral formalism. We find that, for a time invariant system, the expression for the quantum fluctuations is give by minus the functional expression for the Hamiltonian, $ΔE = -H(y)$, evaluated at the distance from the classical path, $y$. As an example we evaluate quantum energy fluctuations of a single Harmonic oscillator. In the short time limit we recover the energy-time uncertainty relation and in the long time limit we recover the zero point energy of the quantum harmonic oscillator.",
+    "authors": [
+      "J. A. Crosse"
+    ],
+    "published": "2026-11-06T02:46:44Z",
+    "primary": "quant-ph",
+    "comment": "5 pages (Manuscript) + 8 pages (Supplementary Information)",
+    "url": "https://arxiv.org/abs/2611.08906",
+    "pdf": "https://arxiv.org/pdf/2611.08906v1"
+  },
+  "2611.08881": {
+    "id": "2611.08881",
+    "title": "Limits of Lorenz number estimation from the temperature-dependent Seebeck coefficient",
+    "abstract": "Separating electronic and lattice thermal conductivity often relies on a Lorenz number estimated from the Seebeck coefficient using an assumed band and scattering model. We ask how much information about the Lorenz number comes from temperature-dependent Seebeck coefficients rather than the assumed model. We formulate compatible minimum and maximum Lorenz numbers as linear programs in a fixed finite spectral representation, assuming known chemical potentials and a common energy dependence across observation temperatures for each candidate spectrum. Reference Seebeck coefficients are generated by single-band and same-sign two-band models. Increasing the prescribed observations from one to five temperatures reduces the Lorenz interval widths by approximately 97.6% and 97.8%, respectively. Nevertheless, the single-band example retains an attained interval of approximately $[1.46453,2.37037]\\times10^{-8}$ W $Ω$ K$^{-2}$ at 400 K. Exact electrical conductivity values do not narrow these ranges when spectral amplitudes can vary independently with temperature. Thus, even exact Seebeck coefficients and electrical conductivities at all five temperatures need not uniquely determine electronic thermal conductivity at 400 K. For the same single-band example, known ratios of spectral amplitudes across temperatures allow electrical conductivity values to confine all compatible Lorenz numbers to an enclosing interval less than 1% as wide as the five-temperature free-amplitude interval. Temperature-dependent Seebeck data strongly narrow the compatible range, while conductivity provides further spectral constraints when the temperature dependence of spectral amplitudes is independently restricted.",
+    "authors": [
+      "Naoki Sato",
+      "Takao Mori"
+    ],
+    "published": "2026-11-06T02:17:22Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "25 pages including Supplemental Material; 7 figures and 8 tables",
+    "url": "https://arxiv.org/abs/2611.08881",
+    "pdf": "https://arxiv.org/pdf/2611.08881v1"
+  },
+  "2611.08874": {
+    "id": "2611.08874",
+    "title": "Fortuitous Cancellation of Competing Effects in the Free Energy of Water Autoionization: Long-Range Electrostatics, System Size, and Nuclear Quantum Effects",
+    "abstract": "Few molecular processes are more fundamental to chemistry than the autoionization of water, whose equilibrium constant, $K_w \\approx 10^{-14}$, underlies acid-base equilibria and the chemistry of life. Yet the molecular origins of the free energy cost of forming and separating ions remain incompletely understood. Efforts to explain it have been limited by the difficulty of modeling water reactivity in sufficient detail. Here we combine machine learning interatomic potentials (MLIPs) with spectral adaptive biasing force enhanced sampling to connect proton transfer and water wire configurations to the underlying free energy landscape. We identify competing influences of long-range electrostatics, system size, temperature, and nuclear quantum motion on the predicted ionization thermodynamics. The free energy surface extends from neutral water to ions separated beyond the solvent-separated ion pair (SSIP). It reveals a transition state in which a proton is shared between the second and third molecules of a three-membered water wire. The contact ion pair is unstable and the SSIP only weakly metastable, so determining pK$_w$ requires sampling longer wires. Long-range electrostatics raise the free energy at ion separations beyond $3\\,\\mathrm{\\mathring{A}}$. Models with comparable force errors give substantially different free energy profiles in this region. Increasing system size lowers the calculated pK$_w$, while nuclear quantum effects bring it closer to experiment and reproduce the higher pK$_w$ of D$_2$O relative to H$_2$O. These results establish a baseline for interpreting thermodynamic results from MLIP simulations in which charged and polar groups react and diffuse in finite cells. Our analysis also explains how cancellation among competing effects can yield ionization constants close to experiment even when simulations omit several physical contributions.",
+    "authors": [
+      "Samuel Varner",
+      "Yinan Xu",
+      "Yezhi Jin",
+      "Gustavo R. Pérez-Lemus",
+      "Pablo F. Zubieta Rico",
+      "Zhiying Yi",
+      "Joan M. Montes de Oca",
+      "Paul F. Nealey",
+      "Seth B. Darling",
+      "Zhen-Gang Wang",
+      "Juan J. de Pablo"
+    ],
+    "published": "2026-11-06T02:01:16Z",
+    "primary": "physics.chem-ph",
+    "comment": "Main text has 15 pages and 5 figures. Supporting information has 21 pages, 10 figures, and 3 tables",
+    "url": "https://arxiv.org/abs/2611.08874",
+    "pdf": "https://arxiv.org/pdf/2611.08874v1"
+  },
+  "2611.08899": {
+    "id": "2611.08899",
+    "title": "Spiral momentum spectra and spin asymmetry in vacuum pair production driven by phase-modulated elliptically polarized electric fields",
+    "abstract": "We study vacuum electron--positron pair production in phase-modulated elliptically polarized electric fields using the quantum kinetic equations. We analyze how the modulation amplitude, frequency, ellipticity, and modulation form affect the spin-resolved momentum spectra and the spin asymmetry. Cosine-type modulation can deform ring-shaped momentum distributions into spiral patterns. This deformation depends nonmonotonically on the modulation amplitude and frequency and is most pronounced for circular polarization. In the transverse momentum plane, the spin-resolved yields favor the spin channel along the direction of field handedness. Reversing the field handedness would reverse the favored channel while leaving the total yield unchanged. Sine-type modulation preserves ring-shaped and mirror-symmetric spectra approximately, however, it leads to a stronger dependence of the spin asymmetry on the modulation amplitude than cosine-type modulation does. These results show that phase modulation and ellipticity can control the momentum spectra patterns in vacuum pair production. Moreover, phase modulation can also affect the degree of spin asymmetry.",
+    "authors": [
+      "Li-Yi Yang",
+      "Hong-Hao Fan",
+      "Jing-He Huang",
+      "Shuo Yang",
+      "Bai-Song Xie"
+    ],
+    "published": "2026-11-06T02:40:12Z",
+    "primary": "hep-ph",
+    "comment": "22 pages, 8 figures, 4 Tabels",
+    "url": "https://arxiv.org/abs/2611.08899",
+    "pdf": "https://arxiv.org/pdf/2611.08899v1"
+  },
+  "2611.08887": {
+    "id": "2611.08887",
+    "title": "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction",
+    "abstract": "Reconstructing natural visual experience from cortical population activity is a central challenge in neural decoding, particularly for calcium imaging, where signals are noisy, temporally filtered, and paired neural-video data are limited. Here we present Ca2REAL (Calcium Activity to Reconstruct Events, Appearance, and Layout), a neural-to-video framework that conditions a pretrained video diffusion model through separate layout and semantic controls derived from calcium activity. Using measured responses from 7,863 V1 neurons in one mouse, Ca2REAL reconstructed held-out natural-movie clips with 81.4% all-pairs stimulus-identification accuracy, with its clearest gains over deterministic baselines in perceptual and semantic measures. We further evaluated the framework in a stimulus-aligned virtual population of 116,705 neurons assembled from encoding-model-predicted responses across 11 independently recorded datasets. Perturbation and ablation analyses showed that reconstruction depends on distributed, stimulus-specific population structure, with layout and semantic pathways providing complementary spatial and identity information. Temporal analyses further showed improved preservation of semantic dynamics across reconstructed clips. These results show that large-scale cortical population activity constrains the spatial, semantic, and temporal structure of natural visual experience, providing a generative framework for high-fidelity neural reconstruction of dynamic visual scenes.",
+    "authors": [
+      "Yukai Huang",
+      "Haoyu Albert Wang",
+      "Jiawei Zhang",
+      "Jialun Ma",
+      "Jiayao Ding",
+      "Yiran Lin",
+      "Xingyu Chen",
+      "Ziqi Gao",
+      "Yuguo Yu"
+    ],
+    "published": "2026-11-06T02:23:18Z",
+    "primary": "cs.CV",
+    "comment": "24 pages, 6 figures, 2 tables; 11-page supplementary information included as ancillary file",
+    "url": "https://arxiv.org/abs/2611.08887",
+    "pdf": "https://arxiv.org/pdf/2611.08887v1"
+  },
+  "2611.08851": {
+    "id": "2611.08851",
+    "title": "Conformationally frustrated epitaxy at heteromolecular interface",
+    "abstract": "Precise control of molecular heteroepitaxy offers a route to multilayer architectures with well-defined interfaces. However, the role of intramolecular flexibility in epitaxial matching remains insufficiently understood. Here, we investigate the heteroepitaxy of intact 1,3,5-tris(4-carboxyphenyl)benzene (BTB) on a molecular $δ$-layer composed of fully deprotonated BTB molecules on Ag(111). Combining scanning tunneling microscopy, low-energy electron microscopy and diffraction, X-ray photoelectron spectroscopy, and density functional theory, we identify the key interactions controlling molecular packing and epitaxial growth. We show that intermolecular bonding motifs are preserved on the molecular template, but their lattice parameters and molecular conformations change as compared to a silver surface. Individual molecules exhibit distinct appearances in scanning tunneling microscopy, consistent with site-dependent conformational variations identified by theory. Our calculations reveal that the competition between molecule-substrate interactions and conformational energy produces different compromise geometries, resulting in conformational frustration at the epitaxial interface. Crucially, constraining BTB into a planar geometry changes the preferred lateral adsorption positions, demonstrating that molecular flexibility directly modifies the energetic preferences for epitaxial registry. Comparison with more rigid molecular overlayers further supports this interpretation. Our findings reveal that molecular flexibility contributes to epitaxial matching by allowing unfavorable molecule-substrate interactions to be compensated by energetically favorable conformations while preserving the intermolecular network.",
+    "authors": [
+      "Jakub Planer",
+      "Pavel Procházka",
+      "Tomáš Krajňák",
+      "Veronika Stará",
+      "Daniela Hrubá",
+      "Zdeněk Endstrasser",
+      "Tomáš Skála",
+      "Jan Čechal"
+    ],
+    "published": "2026-11-06T01:15:50Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08851",
+    "pdf": "https://arxiv.org/pdf/2611.08851v1"
+  },
+  "2611.08697": {
+    "id": "2611.08697",
+    "title": "CPU Micro-Architectural Characteristic Sensitivity Study on CPU-Side Agentic Task Latency",
+    "abstract": "We perform a novel study of CPU micro-architectural characteristics on how they affect agentic AI CPU side latency. Small enterprises and individual users looking to reduce costs and seeking data privacy benefit from running agents locally, motivating an investigation into the optimal performance characteristics of an edge CPU to improve user experience. We investigate the relationship between CPU core frequency, CPU uncore frequency, active physical cores, and symmetric multi threading with agentic task latency in single and multi agent configurations. Across eight experiments on an Intel edge CPU, we find that P-core frequency produces the largest median latency improvement among the evaluated parameters. Increasing P-core frequency from 2.5 to 5.5 GHz yields a 1.154$\\times$ speedup for a single agent and a 1.341$\\times$ speedup for eight concurrent agents. We are the first to characterize hardware micro-architectural relationships on single and multi agent configurations with TerminalBench; we also provide an open source framework and dataset for repeatable CPU side latency agentic benchmarking.",
+    "authors": [
+      "Jack Adiletta",
+      "Shixin Ji",
+      "Zhuoping Yang",
+      "Peipei Zhou"
+    ],
+    "published": "2026-11-05T20:53:53Z",
+    "primary": "cs.DC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.08697",
+    "pdf": "https://arxiv.org/pdf/2611.08697v1"
+  },
+  "2611.08693": {
+    "id": "2611.08693",
+    "title": "Enabling Retraining-Free Accurate Inference in Analog Compute in Memory Accelerators",
+    "abstract": "Analog compute-in-memory (CIM) accelerators compute matrix-vector products directly inside memory arrays, eliminating weight movement and promising order-of-magnitude gains in inference efficiency. However, converter and device errors make pretrained models unusable on these arrays, and hardware-aware retraining is costly. We enable retraining-free, accurate inference of pretrained models on simple analog arrays with low-cost, shared calibration. Our key observation is that analog error depends on how each layer is represented on the array, and that this representation can be changed offline without changing the computation. We center the inputs and apply Hadamard rotations designed for analog arrays, which keep shared reference errors spread and confine input mixing to each array. Across CNNs, vision transformers and LLMs up to 14B parameters on PCM and ReRAM, the method brings vision models and larger LLMs within a few points of floating-point accuracy and matches or approaches published hardware-aware training without training any weights. On ReRAM with 6-bit ADCs, it restores ViT-B/16 from 37.4% to 82.9% and Phi-4 from 27.0% to 72.2%, both within 2.2 points of floating-point accuracy.",
+    "authors": [
+      "George Karfakis",
+      "Puneet Gupta"
+    ],
+    "published": "2026-11-05T20:49:55Z",
+    "primary": "cs.AR",
+    "comment": "21 pages, 18 figures, 11 tables",
+    "url": "https://arxiv.org/abs/2611.08693",
+    "pdf": "https://arxiv.org/pdf/2611.08693v1"
   }
 }
