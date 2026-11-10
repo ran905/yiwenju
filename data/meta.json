@@ -3384,5 +3384,267 @@
     "comment": "21 pages, 18 figures, 11 tables",
     "url": "https://arxiv.org/abs/2611.08693",
     "pdf": "https://arxiv.org/pdf/2611.08693v1"
+  },
+  "2611.11405": {
+    "id": "2611.11405",
+    "title": "Industrial RPCVD growth of high-purity 28Si epilayers with 29Si content below 30 ppm for high-fidelity electron spin qubits",
+    "abstract": "Silicon quantum-dot spin qubits are among the most promising routes to large-scale quantum computation, but the residual 29Si nuclear spins in natural silicon impose a hyperfine dephasing limit that must be overcome by isotopic purification. Here, we report the epitaxial growth of high-purity 28Si on float-zone silicon using an industrial reduced-pressure chemical vapor deposition (RPCVD) system. Secondary-ion mass spectrometry (SIMS) confirms an 28Si isotopic purity of 99.997%, with the 29Si concentration below 30 ppm. Through a systematic vacuum annealing matrix (850-1150 C), combined with atomic force microscopy and SIMS, we investigate the defect-mediated decomposition of the native oxide and the injection of non-equilibrium vacancies. We identify a thermal-budget window below 950 C within which the thin-layer structure of 28Si remains intact. At 1.5 K, magnetotransport measurements reveal a peak Hall mobility of 12,858 cm^2 V^-1 s^-1 and a quantum scattering lifetime of 0.659 ps, corresponding to a single-particle level broadening of 499 micro-eV. A double quantum dot fabricated on this platform exhibits a T2* of 0.62 us, a Hahn-echo coherence time of 28.8 us, and single-qubit gate fidelities of up to 99.9% measured by randomized benchmarking. Our results establish industrial RPCVD as a promising route toward high-coherence, high-fidelity silicon spin qubits.",
+    "authors": [
+      "Zhenzhen Kong",
+      "Weizhu Liao",
+      "Ning Chu",
+      "Yiwen Zhang",
+      "Ying Zhang",
+      "Jixuan Li",
+      "Changyang Xu",
+      "Yongliang Hao",
+      "Yi Zhou",
+      "Yanpeng Song",
+      "Xiaomeng Liu",
+      "Hailing Wang",
+      "Xiangsheng Wang",
+      "Jinbiao Liu",
+      "Chao Zhao",
+      "Hao Meng",
+      "Gang Cao",
+      "Guo-Ping Guo",
+      "Hai-Ou Li",
+      "Guilei Wang"
+    ],
+    "published": "2026-11-08T14:20:18Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.11405",
+    "pdf": "https://arxiv.org/pdf/2611.11405v1"
+  },
+  "2611.11302": {
+    "id": "2611.11302",
+    "title": "A Rule That's Made to be Broken? Reframing the Arrhenius Law for Ionic Transport",
+    "abstract": "The Arrhenius law is ubiquitous in the physical sciences. It describes how an observable property scales with temperature, $T$, as $\\exp(\\pm E_A/k_BT)$ for a constant $E_A$, the 'activation energy'. Fitting to the Arrhenius law is a common procedure for both experimental and computational data. However, the physical significance of any 'activation energy' calculated is unclear. Here we focus on self-diffusion coefficients for potential solid electrolytes, and by identifying the individual 'diffusive steps' within the system, show how a physically significant activation energy can be extracted. There are also many examples of non-Arrhenius behaviour including `super-Arrhenius' curvature, where the effective activation energy appears to increase with decreasing temperature. We demonstrate how it is still possible to extract the underlying Arrhenius law, by quantifying self-correlations such as back-and-forth motion. The methodology described here is material-agnostic and can be utilised to analyse the molecular dynamics trajectories of both ordered and disordered materials.",
+    "authors": [
+      "Vanessa K. Ward",
+      "Karen E. Johnston"
+    ],
+    "published": "2026-11-08T10:53:47Z",
+    "primary": "cond-mat.soft",
+    "comment": "9 pages, 5 figures (SI - 4 pages, 5 figures)",
+    "url": "https://arxiv.org/abs/2611.11302",
+    "pdf": "https://arxiv.org/pdf/2611.11302v1"
+  },
+  "2611.11446": {
+    "id": "2611.11446",
+    "title": "One Bit, Many Records: Information Replication in Quantum Many-Body Dynamics",
+    "abstract": "Information replication occurs when a single locally encoded classical bit becomes simultaneously readable across extensively many disjoint regions of a quantum many-body system. Here we identify dynamical selection as a mechanism for generating these records, whereby an unperturbed nonthermal reference remains locally recognizable while its locally perturbed counterpart spreads and relaxes under the same Hamiltonian. We establish an entropy-capacity criterion showing that a uniform area-law reference paired with a volume-law perturbed branch guarantees extensive records at a fixed, nonzero information threshold. An embedded-dimer chain demonstrates both record proliferation and increasing readout reliability with fragment size, while stabilized PXP dynamics extends the mechanism to a coherently recurrent reference. These results characterize information spreading through the spatial multiplicity of accessible records and provide experimental signatures measurable via fixed local readouts.",
+    "authors": [
+      "Dan-Bo Zhang",
+      "Yan-Ming Chen"
+    ],
+    "published": "2026-11-08T15:17:37Z",
+    "primary": "quant-ph",
+    "comment": "6 pages of main text, 3 figures, comments are welcome",
+    "url": "https://arxiv.org/abs/2611.11446",
+    "pdf": "https://arxiv.org/pdf/2611.11446v1"
+  },
+  "2611.11430": {
+    "id": "2611.11430",
+    "title": "High-sensitivity sensing technology of 10 MHz radio frequency electric field based on Rydberg atoms",
+    "abstract": "To address the pressing need for high-sensitivity, miniaturized electric field sensors in the short-wave communication band (3-30 MHz), this study proposes and demonstrates a radio frequency electric field quantum sensing scheme based on cesium atomic Rydberg states and the electromagnetically induced transparency (EIT) effect. The scheme employs an all-infrared optical design, utilizing 852 nm probe light, 1470 nm dressing light, and 780 nm coupling light to efficiently prepare the 49P3/2 Rydberg state in a room-temperature cesium vapor cell, which is then probed non-destructively via ladder-type four-level EIT spectroscopy.",
+    "authors": [
+      "Yulong Han",
+      "Zhengye Shan",
+      "Kan Zhang",
+      "Jinfang Sun",
+      "Lihua Zhang",
+      "Bang Liu",
+      "Dongsheng Ding"
+    ],
+    "published": "2026-11-08T14:51:10Z",
+    "primary": "physics.atom-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.11430",
+    "pdf": "https://arxiv.org/pdf/2611.11430v1"
+  },
+  "2611.11418": {
+    "id": "2611.11418",
+    "title": "Monotonicity of Erdős sums",
+    "abstract": "For $k \\geq 1$ let $f_k = \\sum_{Ω(n)=k} 1/(n\\log n)$, where $Ω$ counts prime factors with multiplicity, and let $g_k$ be the same sum restricted to odd $n$. Lichtman showed that $f_k \\to 1$, with a global minimum at $k=6$, and Gorodetsky, Lichtman and Wong that $f_k = 1 - 2^{-k}(a_1 k^2 + O(k \\log(k+1)))$. We prove that $f_k < f_{k+1}$ for every $k \\geq 6$, and that $g_k > g_{k+1}$ for every $k \\geq 1$. The two statements come from one analytic distinction. Writing $\\sum_k P_k(s) z^k = ζ(s)^z H(s,z)$, at $s=1$ the point $z=2$ lies on the first singular circle of $H$, and strictly inside the first singular circle of the product with the prime $2$ removed. We show that this distinction decides the direction in general. If the complement of a set of primes $\\mathcal{P}$ is thin and its least element is at least $3$, the corresponding sums eventually decrease, so the second theorem is one case of a general phenomenon. The inequalities used at the last step of the first theorem are certified by interval arithmetic.",
+    "authors": [
+      "Jaideep Sai Padhi"
+    ],
+    "published": "2026-11-08T14:32:21Z",
+    "primary": "math.NT",
+    "comment": "28 pages. Interval-arithmetic certificates and verification scripts at https://github.com/jaideepsaipadhi/erdos-sums-almost-primes",
+    "url": "https://arxiv.org/abs/2611.11418",
+    "pdf": "https://arxiv.org/pdf/2611.11418v1"
+  },
+  "2611.10694": {
+    "id": "2611.10694",
+    "title": "Perception, Not Reasoning, Limits Visual Theory of Mind",
+    "abstract": "Vision-language models pass text-based false-belief probes at near-human levels but drop by over twenty percentage points on abstract panels the moment the same problem is conveyed visually. The consensus diagnosis is conceptual, prescribing new belief-reasoning modules. We argue the dominant bottleneck is perceptual: not what the model cannot reason about, but what it cannot see. We propose a five-condition dissociation protocol that holds the reasoning task constant while varying perceptual fidelity from visual only to text only, and quantify the result with the Perceptual Contribution Ratio, the share of the visual-to-text gap a given fidelity closes. We test this on two kinds of scenes: abstract 2D panels in the Heider--Simmel tradition, and naturalistic 3D game scenes from MuMA-ToM and MindPower. The evaluation covers seven VLMs and roughly 159,000 API calls. Ground-truth scaffolds substantially close the gap in every setting, and on the abstract panels and MuMA-ToM they match or exceed the text-only reasoning. Whereas scaffolds built by automatic parsers, including frontier VLMs, fail. The most common error in the visual-only condition is \\emph{reality bias}, which accounts for 60\\% of false-belief failures. Models report where an object actually is, not where an absent agent believes it is. This points to a perceptual front-end that fails to track which agents were present at each moment. Under the evaluated protocol, structured visual scene-state extraction, rather than belief inference, is the dominant bottleneck for visual ToM.",
+    "authors": [
+      "Mohamed Rayan Barhdadi",
+      "Syed Talal Wasim",
+      "Juergen Gall",
+      "Erchin Serpedin",
+      "Hasan Kurban"
+    ],
+    "published": "2026-11-07T12:25:18Z",
+    "primary": "cs.CV",
+    "comment": "36 pages, 6 figures. Accepted to NeurIPS 2026 (E&D). Code and dataset: https://kurbanintelligencelab.github.io/perception-not-reasoning/",
+    "url": "https://arxiv.org/abs/2611.10694",
+    "pdf": "https://arxiv.org/pdf/2611.10694v1"
+  },
+  "2611.10565": {
+    "id": "2611.10565",
+    "title": "Pixels over Symbols: Sensory Realism Improves Behavioral Alignment in Models of Cognition",
+    "abstract": "Computational models of cognition have traditionally relied on abstract symbolic inputs that approximate sensory experiences with simplified vector representations. This simplification reflects historical computational constraints and a long-held assumption that the details of sensory realism are incidental to the study of cognitive processes. Recent advances have enabled the development of sensory-realistic models capable of performing diverse cognitive tasks, yet whether sensory realism meaningfully shapes cognition has not been formally established. We address this gap through a large-scale empirical comparison of abstract and sensory-realistic neural network models trained on a battery of memory-dependent decision-making tasks. Our results show that sensory-realistic models mirror human behavioral response patterns significantly more than their abstract counterparts, though a substantial gap to human internal behavioral consistency remains even for the best tested models. By analyzing the internal dynamics of these systems, we find that the learned recurrent weights are not the main source of this divergence. In fact, frozen abstract-trained weights driven by sensory-realistic inputs recover the human consistency of sensory-realistic models. The resulting dynamics are also within the seed-to-seed variability of sensory-realistic models. Together, our findings argue that across a broad set of visual working-memory tasks, sensory realism accounts for a substantial portion of the model-human behavioral agreement, more than the choice of sequence architecture and comparable to the choice of vision encoder. These results suggest that findings obtained from abstract task models in neuroscience should be more carefully interpreted in light of their potential behavioral limitations.",
+    "authors": [
+      "Hao Yuan Bai",
+      "Xiaoxuan Lei",
+      "Zihan Weng",
+      "Motahareh Pourrahimi",
+      "Lucas Gomez",
+      "Pouya Bashivan"
+    ],
+    "published": "2026-11-07T08:13:37Z",
+    "primary": "q-bio.NC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.10565",
+    "pdf": "https://arxiv.org/pdf/2611.10565v1"
+  },
+  "2611.11414": {
+    "id": "2611.11414",
+    "title": "The strong cylinder conjecture and Rédei's factorization conjecture in three dimensions",
+    "abstract": "In this paper, we prove the strong cylinder conjecture, that is, for every prime $p$, a set of $p^2$ points in $\\mathbb F_p^3$ that meets every affine plane in a multiple of $p$ points is a union of $p$ distinct parallel affine lines. We use this result to resolve Rédei's 1970 factorization conjecture in three dimensions: if $A,B\\subseteq\\mathbb F_p^3$ contain zero and every vector in $\\mathbb F_p^3$ has a unique expression $a+b$ with $a\\in A$ and $b\\in B$, then one of the two sets is contained in a plane through zero.",
+    "authors": [
+      "Haihua Deng",
+      "Weicong Li",
+      "Weiye Zhang"
+    ],
+    "published": "2026-11-08T14:27:49Z",
+    "primary": "math.CO",
+    "comment": "44 pages, comments are welcome",
+    "url": "https://arxiv.org/abs/2611.11414",
+    "pdf": "https://arxiv.org/pdf/2611.11414v1"
+  },
+  "2611.11276": {
+    "id": "2611.11276",
+    "title": "Strain Controlled Hydrogen Interstitial Site Preference and Hydride Phase Suppression in Epitaxial Vanadium",
+    "abstract": "Understanding hydrogen behavior in transition metals is crucial for energy storage and sensing technologies. Here we combine density functional theory (DFT) calculations with in-situ electrical measurements to reveal how epitaxial strain governs hydrogen interstitial site selection and phase stability in vanadium. Our calculations demonstrate a robust thermodynamic preference for tetrahedral (T) over octahedral (O) sites, with the energy difference modulated by lattice anisotropy through strain-tunable H 1s-V 3d orbital hybridization. Experimentally, epitaxial V films on MgO(001) exhibit a critical thickness-dependent crossover: 50 nm films show characteristic first-order alpha-beta hydride transitions, while 10 nm films display continuous solid-solution behavior with complete transition suppression. This crossover is governed by the progressive relaxation of epitaxial strain with increasing film thickness: the 10 nm films retain strong coherent strain that flattens the free-energy landscape and suppresses hydride nucleation, whereas the 50 nm films approach the strain-relaxed bulk limit where long-range elastic interactions restore first-order phase behavior. Finite-size truncation of elastic fields and interfacial electronic reconstruction further reinforce this dimensional crossover. Our work establishes a unified framework connecting atomic-scale orbital physics to mesoscopic phase thermodynamics, providing design principles for strain-engineered metal-hydride systems.",
+    "authors": [
+      "Xin Xiao"
+    ],
+    "published": "2026-11-08T10:02:16Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.11276",
+    "pdf": "https://arxiv.org/pdf/2611.11276v1"
+  },
+  "2611.11225": {
+    "id": "2611.11225",
+    "title": "Electron cooling mediated by transverse optical phonons in doped SrTiO$_3$",
+    "abstract": "Soft transverse optical (TO) phonons in doped SrTiO$_3$ couple to electrons through the polarization field, quadratically in the paraelectric phase and, additionally, linearly in the polar phase due to the onset of spontaneous polarization. We investigate heat flow between a three-dimensional electron gas and soft TO phonons. For two-TO-phonon scattering, the heat flow of hot electrons crosses over from $T^5$ to $T^3$ at the Bloch-Gruneisen temperature. In the polar phase, an additional one-TO-phonon channel emerges, yielding a softer temperature dependence of the heat flow, $T^3$ at low and $T$ at high temperatures, with the spectral weight set by the spontaneous polarization. This channel may dominate at low temperatures and leads to a nonmonotonic temperature dependence of the heat flow in the vicinity of the polar transition.",
+    "authors": [
+      "A. A. Zyuzin"
+    ],
+    "published": "2026-11-08T08:16:09Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "5 pages, 1 figure",
+    "url": "https://arxiv.org/abs/2611.11225",
+    "pdf": "https://arxiv.org/pdf/2611.11225v1"
+  },
+  "2611.11098": {
+    "id": "2611.11098",
+    "title": "Efficient VLA Inference via Retrieval-Based Speculation and Hardware Acceleration",
+    "abstract": "Vision-language-action (VLA) models enable robots to understand and execute complex instructions, but their autoregressive (AR) action generation introduces significant latency on resource-constrained robotic platforms. Speculative decoding can accelerate AR-based inference by parallelizing action generation and verification; however, existing approaches rely on costly draft models, which are inefficient on edge platforms. In this paper, we propose Zora, a hardware-software co-design framework for accelerating AR-based VLA inference. Specifically, Zora introduces a lightweight retrieval-augmented generation (RAG)-based draft model that exploits robotic dynamics without additional neural draft models. We further reduce batch verification overhead through a kinematics-guided action-acceptance strategy and a KV-cache-sharing attention mechanism. To address the retrieval overhead introduced by RAG-based drafting, we co-design dedicated hardware support, Zora core, to address the memory irregularity in RAG-based drafting. We evaluate Zora on four VLA models with the LIBERO benchmark. Zora retains comparable accuracy while achieving up to 3.4$\\times$ speedup with software-only optimization and up to 7.6$\\times$ speedup with hardware support over GPUs.",
+    "authors": [
+      "Zhengyang Cheng",
+      "He Zhu",
+      "Zeyu Guo",
+      "Zihan Liu",
+      "Anbang Wu",
+      "Yiming Gan",
+      "Jingwen Leng",
+      "Yu Feng",
+      "Minyi Guo"
+    ],
+    "published": "2026-11-08T03:28:09Z",
+    "primary": "cs.AR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.11098",
+    "pdf": "https://arxiv.org/pdf/2611.11098v1"
+  },
+  "2611.11395": {
+    "id": "2611.11395",
+    "title": "High-Dimensional Maximally Entangled OAM States by Joint Pump and Modal-Space Engineering",
+    "abstract": "Spontaneous parametric down-conversion (SPDC) generates correlated photon pairs that inherently exhibit high-dimensional spatial entanglement in orbital angular momentum (OAM) modes. In practice, the resulting two-photon states are typically not maximally entangled due to a highly non-uniform distribution of generated OAM modes. Although pump-beam engineering has emerged as a tool to prepare high-dimensional entangled states, it has usually been restricted to low-dimensional subspaces, i.e., small sets of selected OAM modes for each photon within the full infinite-dimensional two-photon Hilbert space. A general understanding of the requirements for the generation of maximally entangled states (MESs) for any dimensionality $d$ with $d>2$ is lacking. Here, we demonstrate how pump engineering enables the generation of high-dimensional MESs for arbitrary $d$ defined in $d \\times d$ subspaces. By identifying the interplay between the spatial pump structure and the choice of OAM subspace, the required pump profile for a target MES is directly determined. Our results reveal that maximal entanglement with OAM requires a careful and nontrivial design of the effective high-dimensional Hilbert subspace.",
+    "authors": [
+      "Richard Bernecker",
+      "Baghdasar Baghdasaryan",
+      "Fabian Steinlechner",
+      "Stephan Fritzsche"
+    ],
+    "published": "2026-11-08T14:04:41Z",
+    "primary": "quant-ph",
+    "comment": "15 pages, 9 figures",
+    "url": "https://arxiv.org/abs/2611.11395",
+    "pdf": "https://arxiv.org/pdf/2611.11395v1"
+  },
+  "2611.11476": {
+    "id": "2611.11476",
+    "title": "On the Complexity of Extending Prescribed Linear Forests to Hamiltonian Cycles in Hypercubes",
+    "abstract": "Let $Q_n$ be the $n$-dimensional hypercube, and let $P\\subseteq E(Q_n)$ be a set of prescribed edges. It is known that, for $n\\ge 2$, every such set $P$ with $|P|\\leq 2n-3$ whose edges form a linear forest is contained in a Hamiltonian cycle of $Q_n$. This bound is sharp for general linear forests. The computational complexity of deciding whether a prescribed edge set of a hypercube can be extended to a Hamiltonian cycle was posed as an open question by Dvořák [SIAM J. Discrete Math. 19 (2005) 135--144]. We prove that the problem is NP-complete even when the prescribed edges form a spanning linear forest with no isolated vertices. We give a polynomial-time reduction from a restricted 3-SAT problem, using local spanning path-forest gadgets for variables and clauses that are uniformly embedded in the hypercube. The same reduction therefore establishes NP-hardness of two versions of Hamiltonian-cycle extension problems for general prescribed edge sets.",
+    "authors": [
+      "Huazhong Lü",
+      "Tingzeng Wu"
+    ],
+    "published": "2026-11-08T16:15:14Z",
+    "primary": "cs.CC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.11476",
+    "pdf": "https://arxiv.org/pdf/2611.11476v1"
+  },
+  "2611.11118": {
+    "id": "2611.11118",
+    "title": "When gene summaries reveal the answers: Gene Ontology circularity in gene embedding benchmarks",
+    "abstract": "A gene summary can contain the very annotations used to evaluate an embedding of its text. The Alliance of Genome Resources converts Gene Ontology (GO) annotations into sentences, which NCBI Gene displays and GenePT includes in its input. These summaries covered 6,172 of 19,256 human protein-coding genes (32.1%), including 58% of genes with one to ten linked publications. We embedded the same corpus with and without the generated summaries and refitted a function-prediction probe on each version. Among genes with one to ten publications, removal reduced the reported per-gene area under the receiver operating characteristic curve (AUROC) by 0.078 with a linear probe (95% bootstrap interval 0.072-0.084) and by 0.033 with a multilayer perceptron. These estimates use a historical GO scorer that mishandled ties. The original predictions are unavailable for rescoring. A simple TF-IDF encoder also benefited from the summaries, as did models evaluated only on experimental annotations. Replacing generated summaries with UniProt function descriptions recovered much of the lost performance despite little verbatim overlap. UniProt also curates many of the evaluation labels. In mouse and yeast, we found a similar dependence on the source of the description. We introduce GeneProv to compare encoders on matched text and to examine how representation rankings change across GO recovery, non-GO endpoints and co-essentiality.",
+    "authors": [
+      "Jiawei Wu",
+      "Huishu Wang",
+      "Junlin Chen",
+      "Hongyi Wang"
+    ],
+    "published": "2026-11-08T04:05:52Z",
+    "primary": "cs.LG",
+    "comment": "31 pages, including supplementary material. GeneProv benchmark and leaderboard: https://hwang595.github.io/gene-embedding-exposure/",
+    "url": "https://arxiv.org/abs/2611.11118",
+    "pdf": "https://arxiv.org/pdf/2611.11118v1"
+  },
+  "2611.11042": {
+    "id": "2611.11042",
+    "title": "$>3\\text{ W/mm}$ Output Power $\\mathrm{Al}_{0.61}\\mathrm{Ga}_{0.39}\\mathrm{N}$ Channel HEMT with $24.4\\%$ Associated PAE at $10\\text{ GHz}$",
+    "abstract": "In this work, an ultra-wide bandgap (UWBG) high-electron-mobility transistor (HEMT) was fabricated using an $\\mathrm{Al}_{0.76}\\mathrm{Ga}_{0.24}\\mathrm{N}$ barrier and an $\\mathrm{Al}_{0.61}\\mathrm{Ga}_{0.39}\\mathrm{N}$ channel with thick $\\mathrm{SiO}_2$ passivation. The device demonstrated low current collapse at $40\\text{ V}$ drain bias. At $10\\text{ GHz}$, the device exhibited an output power of $3.07\\text{ W/mm}$ with an associated power-added efficiency (PAE) of $24.4\\%$. A peak PAE of $33.9\\%$ was achieved at an associated output power of $2.14\\text{ W/mm}$. This excellent large-signal performance highlights the strong potential of UWBG $\\mathrm{AlGaN}$ channel devices for X-band applications.",
+    "authors": [
+      "Meherab Hossain",
+      "Ruixin Bai",
+      "Swarnav Mukhopadhyay",
+      "Brahmani Challa",
+      "Kuan Chang Pan",
+      "Ryan Gilbert",
+      "Guangying Wang",
+      "Surjava Sanyal",
+      "Chuang Ye",
+      "Md Tahmidul Alam",
+      "Khush Gohel",
+      "Ahmad E. Islam",
+      "Andrew J. Green",
+      "Shubhra S. Pasayat",
+      "Chirag Gupta"
+    ],
+    "published": "2026-11-08T00:45:24Z",
+    "primary": "physics.app-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.11042",
+    "pdf": "https://arxiv.org/pdf/2611.11042v1"
   }
 }
