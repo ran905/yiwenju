@@ -3646,5 +3646,257 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.11042",
     "pdf": "https://arxiv.org/pdf/2611.11042v1"
+  },
+  "2611.12855": {
+    "id": "2611.12855",
+    "title": "AI-based characterization of lymphoid structures and the tumor microenvironment reveals lower mature tertiary lymphoid structures, lymph-node follicles, and plasma cells after neoadjuvant therapy in lung squamous cell carcinoma",
+    "abstract": "Mature, germinal centre-bearing tertiary lymphoid structures (TLS) and mature lymph node follicles (secondary lymphoid structures, SLS) sustain the plasma cell response that shapes outcome and immunotherapy benefit in lung cancer. How this loco-regional axis differs between neoadjuvant-treated and therapy-naive tumors is poorly defined. We analyzed H&E whole-slide images of resected tumors and paired proximal and distal lymph nodes from matched neoadjuvant-treated (neoLUSC, n=20) and therapy-naive (naivLUSC, n=20) lung squamous cell carcinoma (LUSC) patients. Aignostics Atlas H&E Tissue Analysis (HETA) models quantified cell densities per tissue compartment and cell-cell co-localization; a dedicated deep-learning model validated against pathologist annotations detected TLS and SLS and graded their maturity. Prognostic value was tested in an independent cohort (n=458; 46 treated). In neoLUSC tumors, stromal plasma cell density was 72% (p=0.004) and stromal lymphocyte density 48% (p=0.015) lower than in naivLUSC; macrophages and granulocytes did not differ significantly. Total and immature TLS did not differ, whereas mature TLS in the tumor (p=0.034) and mature SLS in the tumor-distal lymph node (p=0.003) were lower in neoLUSC patients. Peri-TLS plasma cell density correlated with tumor lymphocyte density in naivLUSC (rho=0.54, p=0.017) but not in neoLUSC tumors (rho=0.07). In the validation cohort, stromal plasma cell density (HR 0.69, p=0.011) and lymphocyte-plasma cell co-localization (HR 0.66, p=0.004) were associated with longer survival, and neoadjuvant status with shorter survival (HR 1.50, p=0.026). Neoadjuvant therapy is thus associated with fewer mature lymphoid structures and weaker coupling of the humoral compartment to the tumor rather than uniformly lower immune readouts. The stromal plasma cell/co-localization axis is a candidate prognostic biomarker.",
+    "authors": [
+      "Arne Schmidt",
+      "Justin Nieder",
+      "Cornelius Boehm",
+      "Julika Ribbat-Idel",
+      "Marius Teodorescu",
+      "Marie-Lisa Eich",
+      "Simon Schallenberg",
+      "Gabriel Dernbach",
+      "Katja Lingelbach",
+      "Miriam Haegele",
+      "Timo Milbich",
+      "Adam Narai",
+      "Maria Stoelben",
+      "Hans Pinckaers",
+      "Lukas Ruff",
+      "Kai Standvoss",
+      "Christian Watermann",
+      "Christiane Kuempers",
+      "Sven Perner",
+      "Verena Sailer",
+      "Jasmin Tiebach",
+      "Torsten Goldmann",
+      "Sebastian Marwitz",
+      "Johannes Braegelmann",
+      "Frederick Klauschen",
+      "Marija Pezer",
+      "Rosemarie Krupar"
+    ],
+    "published": "2026-11-09T18:45:06Z",
+    "primary": "cs.CV",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.12855",
+    "pdf": "https://arxiv.org/pdf/2611.12855v1"
+  },
+  "2611.13447": {
+    "id": "2611.13447",
+    "title": "Double-quantum enhanced coherent control and magnetic sensing of spin defects in hexagonal boron nitride",
+    "abstract": "The negatively charged boron vacancy ($V_{\\mathrm{B}}^{-}$) in hexagonal boron nitride (hBN) is a promising spin defect for quantum sensing in two-dimensional material systems. Previous hBN experiments have mainly exploited the two spin-triplet ground-state single-quantum transitions separately. Here we implement a double-quantum driving scheme based on simultaneous resonant microwave excitation of both ground-state single-quantum transitions, establishing coherent control of the $Δm_s=2$ manifold in a $V_{\\mathrm{B}}^{-}$ ensemble. We compare the resulting double-quantum response with the corresponding single-quantum protocol under identical experimental conditions. The double-quantum protocol enhances the optical readout contrast and yields a 2.6-fold signal-to-noise improvement in AC magnetometry. We further use the double-quantum relaxation channel as a differential probe of electric-field and strain noise, showing that the present data are compatible with correlated-surface or volume-distributed fluctuations, while short-range uncorrelated surface-noise models are disfavored within the assumptions of our analysis. These results establish double-quantum coherent control and frequency-resolved AC magnetometry in hBN spin ensembles, and identify the sample-dependent measurements needed to determine the microscopic origin of the dominant relaxation channels.",
+    "authors": [
+      "Shihao Ru",
+      "Abdullah Rasmita",
+      "Jiakai Chen",
+      "Yuzhe Yang",
+      "Xiaodan Lyu",
+      "Robert Cernansky",
+      "Edwin Hang Tong Teo",
+      "Jesús Zúñiga-Pérez",
+      "Fedor Jelezko",
+      "Weibo Gao"
+    ],
+    "published": "2026-11-10T01:47:03Z",
+    "primary": "quant-ph",
+    "comment": "13 Pages, 9 figures, accepted in Phys. Rev. Applied",
+    "url": "https://arxiv.org/abs/2611.13447",
+    "pdf": "https://arxiv.org/pdf/2611.13447v1"
+  },
+  "2611.13398": {
+    "id": "2611.13398",
+    "title": "The Dose Makes the Poison: Exposure-Aware Evaluation of Generative Drug Design",
+    "abstract": "Generative models are increasingly used to propose molecules for drug discovery. They can produce far more candidates than can be experimentally tested, making computational selection essential. Most selection methods rely on predicted molecular properties, such as potency and toxicity, but overlook how these properties translate into drug exposure at a given dose. As a result, molecules that appear promising on paper may require impractical doses or raise safety concerns. We investigate this gap by using physiologically based pharmacokinetic (PBPK) simulations to re-evaluate molecules selected from three PARP1-targeted generative pipelines. Of 60 shortlisted molecules, seven fail to achieve sufficient target exposure, while 28% of the remaining candidates show predicted safety risks at their required dose. Moreover, 85% of candidates with an achievable dose are outperformed by molecules overlooked during static selection. These findings suggest that accounting for dose and exposure can substantially change which generated molecules are considered promising for drug development.",
+    "authors": [
+      "Maria Franz",
+      "N. Benjamin Erichson"
+    ],
+    "published": "2026-11-10T00:20:01Z",
+    "primary": "q-bio.QM",
+    "comment": "14 pages, 3 figures. Accepted at the AI4DD workshop (AI for Drug Discovery: Bridging the Translation Gap), NeurIPS 2026",
+    "url": "https://arxiv.org/abs/2611.13398",
+    "pdf": "https://arxiv.org/pdf/2611.13398v1"
+  },
+  "2611.13373": {
+    "id": "2611.13373",
+    "title": "PriorTilt: Decoding quantum LDPC codes with sparse perturbations of belief propagation priors",
+    "abstract": "Although belief propagation (BP) is a widely adopted decoder for classical low-density parity-check (LDPC) codes, its accuracy is limited in the quantum setting. We introduce \\PriorTilt{}, a variant of BP obtained by selectively perturbing a small fraction of its prior log-likelihood ratios using offsets determined by recent posterior and outgoing-message statistics, while preserving the same message-passing rules. We compare \\PriorTilt{} with Relay-BP and beam search decoders for circuit-level decoding of three benchmark codes. \\PriorTilt{} achieves a lower logical error rate (LER) than both baselines at every tested data point. For the $[[144,12,12]]$ Gross code BB144 at noise rate $p=10^{-3}$, the LER reductions reach $4.3\\times$ relative to Relay-BP and $3.1\\times$ relative to the beam search decoder. At $p=10^{-3}$, \\PriorTilt{} has lower mean decoding times than Relay-BP on all three codes and achieves mean decoding speedups of approximately $2.6\\times$--$3.0\\times$ over the beam search decoder. For BB144 at $p=10^{-3}$, \\PriorTilt{} achieves an LER approximately $610\\times$ lower than the standard min-sum BP decoder with the same iteration budget, while perturbing fewer than $0.5\\%$ of its priors per round on average.",
+    "authors": [
+      "Min Ye",
+      "Nicolas Delfosse"
+    ],
+    "published": "2026-11-09T23:47:50Z",
+    "primary": "quant-ph",
+    "comment": "The implementation source code is available at https://github.com/ionq-publications/PriorTiltDecoder",
+    "url": "https://arxiv.org/abs/2611.13373",
+    "pdf": "https://arxiv.org/pdf/2611.13373v1"
+  },
+  "2611.13439": {
+    "id": "2611.13439",
+    "title": "Claw-free minimal bricks",
+    "abstract": "A graph $G$ is called a \\emph{brick} if it is $3$-connected and $G-\\{u,v\\}$ has a perfect matching for every pair of distinct vertices $u,v\\in V(G)$. A brick is \\emph{minimal} if deleting any edge results in a graph that is no longer a brick. A graph is \\emph{claw-free} if it contains no induced $K_{1,3}$. Plummer proved that every $3$-connected claw-free graph of even order is a brick. In this paper, we completely characterize all claw-free minimal bricks. Apart from $K_4$ and the six-vertex wheel $W_5$, they are precisely the line graphs of graphs obtained from loopless $3$-edge-connected cubic multigraphs by subdividing every edge outside a matching of even size exactly once. Consequently, every claw-free minimal brick of order $n$ contains at least $4n/5$ cubic vertices and at least $4n/5$ edges joining cubic vertices. Both bounds are sharp. This establishes the conjectures of Norine and Thomas and of Lovász for claw-free minimal bricks in sharp quantitative forms. We also show that, for a claw-free minimal brick of order at least $8$, deleting an edge leaves a matching covered graph if and only if the edge lies in a triangle.",
+    "authors": [
+      "Guantao Chen",
+      "Yuying Ma"
+    ],
+    "published": "2026-11-10T01:26:44Z",
+    "primary": "math.CO",
+    "comment": "11 pages",
+    "url": "https://arxiv.org/abs/2611.13439",
+    "pdf": "https://arxiv.org/pdf/2611.13439v1"
+  },
+  "2611.13417": {
+    "id": "2611.13417",
+    "title": "The Isomorphism Problem for Cayley Graphs on Monogenic Semigroups",
+    "abstract": "In this paper, we investigate the structural properties of Cayley graphs of monogenic semigroups and present a complete characterization of their weakly connected components. Several essential properties of these components are rigorously proven. Building upon these structural results, we introduce the notion of labelled colour-permuting isomorphisms between Cayley graphs. Using this new isomorphism framework, we address the Cayley graph isomorphism problem for monogenic semigroups, commonly known as the CI problem. In particular, we establish the necessary and sufficient conditions under which two Cayley graphs over monogenic semigroups are labelled colour-permuting isomorphic.",
+    "authors": [
+      "Lu Li",
+      "Yong Shao",
+      "Lingli Zeng"
+    ],
+    "published": "2026-11-10T00:52:18Z",
+    "primary": "math.CO",
+    "comment": "22 pages, 5 figures",
+    "url": "https://arxiv.org/abs/2611.13417",
+    "pdf": "https://arxiv.org/pdf/2611.13417v1"
+  },
+  "2611.13143": {
+    "id": "2611.13143",
+    "title": "Autonomous Optimization of Numerical Algorithms by an AI Agent: Application to Atomistic Simulation",
+    "abstract": "Coding agents built on large language models, run in automated improvement loops, can discover more efficient algorithms. We present AIOA, a framework that brings this approach to the numerical algorithms of atomistic simulation: an agent improves an algorithm against a pre-specified metric in a loop guarded by verifiers it cannot alter. Applied to ASE, a widely used atomistic simulation library, AIOA targets two facets of an algorithm: its implementation, rewritten to run faster with unchanged results, and the method itself, redesigned to converge with fewer force evaluations. Agents made six kernels 22-24 times faster on average in Python with NumPy and SciPy. On unseen problems, optimizers from the best configuration needed 3.1-3.4 times fewer force evaluations than L-BFGS for structure relaxation and 4.6-17 times fewer than standard climbing-image nudged elastic band calculations for reaction paths. The agents' optimizers also contain two algorithmic components we did not find in the literature.",
+    "authors": [
+      "Jeheon Woo"
+    ],
+    "published": "2026-11-09T19:23:39Z",
+    "primary": "physics.chem-ph",
+    "comment": "29 pages, 5 figures, 1 table; Supplementary Information included",
+    "url": "https://arxiv.org/abs/2611.13143",
+    "pdf": "https://arxiv.org/pdf/2611.13143v1"
+  },
+  "2611.13076": {
+    "id": "2611.13076",
+    "title": "Hidden Spin-Supercurrent Counterflow in Conventional Superconductors",
+    "abstract": "Resistive spin currents conventionally vary in space through spin relaxation or torque, which removes angular momentum from the transported spin. We here demonstrate a qualitatively different mechanism in a conventional superconductor exposed to a spin-splitting field. Spin injection across a spin-mixing interface activates a spin-supercurrent contribution, allowing the resistive spin current to vary spatially while the total spin current remains conserved. Even without a net spin-bias across the superconductor, finite and oppositely directed resistive and condensate spin currents arise. This produces a hidden spin-supercurrent counterflow with vanishing total spin and charge currents. The mechanism persists away from exact compensation and remains sizable over broad parameter ranges. The counterflow may be accessible through spin-to-charge conversion, either as a modification of the electrical response of spin-Hall injectors or through a local quasiparticle inverse spin-Hall signal. Our results establish condensate-mediated spin-current compensation as a previously overlooked alternative to spin relaxation.",
+    "authors": [
+      "Johanne Bratland Tjernshaugen",
+      "Jacob Linder"
+    ],
+    "published": "2026-11-09T19:00:01Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "6+2 pages, 3+2 figures",
+    "url": "https://arxiv.org/abs/2611.13076",
+    "pdf": "https://arxiv.org/pdf/2611.13076v1"
+  },
+  "2611.13495": {
+    "id": "2611.13495",
+    "title": "The Largest Ground Set for Sunflower-Free Systems",
+    "abstract": "We construct the largest $r$-flower-free system of $k$-uniform sets for $k=3, r=4$ where every element of the ground set $G$ is used at least once. The goal is to maximize $|G|$, also called the span. We define $\\mathrm{sp}(k, r)$ to be the maximum $|G|$ for such a system. We show that $\\mathrm{sp}(3, 4) = 39$, which yields an improved upper bound $f(3, 4) \\leq 130$, improving upon the Erdős--Rado bound of $f(3, 4) \\leq 162$.",
+    "authors": [
+      "Kyle Wood"
+    ],
+    "published": "2026-11-10T03:08:19Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.13495",
+    "pdf": "https://arxiv.org/pdf/2611.13495v1"
+  },
+  "2611.13319": {
+    "id": "2611.13319",
+    "title": "Multicomponent Isotope Engineering of Phonon Polaritons in Hexagonal Boron Nitride",
+    "abstract": "Isotopic enrichment provides a non-invasive means of tuning the vibrational and optical properties of van der Waals crystals (vdW) without altering their lattice structure. We investigate two doubly enriched hexagonal boron nitride (hBN) compositions, h10B15N and h11B15N, to determine how isotope substitution on both sublattices modifies mid-infrared hyperbolic phonon polaritons (HPhPs). Polarization-resolved room temperature and cryogenic far-field reflectance measurements reveal optical-phonon blue shifts of approximately 35 cm-1 in h10B15N relative h11B15N, translating both Reststrahlen bands (RBs) and their polariton dispersions. For the upper RB, the combined accessible range expands from 1360-1614 cm-1 in natural hBN to 1356-1640 cm-1 across the B- enriched 14N crystals and 1339-1640 cm-1 when the 15N enriched crystals are included. Near-field imaging confirms deeply sub-diffractional propagation and shows that both crystals exhibit lower polariton damping and longer lifetimes than natural hBN, with performance comparable to monoisotopically enriched crystals. Further, we compare the conventional reduced-mass description with a phenomenological two-component inverse-mass model that captures the isotope dependence of the phonon frequencies and LO-TO coupling while resolving the contributions of the individual sublattices. These results establish multicomponent isotope engineering as a materials design strategy for positioning the HPhPs spectral range while preserving low-loss propagation in polar vdW crystals.",
+    "authors": [
+      "Nihar Ranjan Sahoo",
+      "Byung-Il Noh",
+      "Brandon Stephanie",
+      "Hossein Zandipour",
+      "Eli Janzen",
+      "James H. Edgar",
+      "Siyuan Dai",
+      "Thomas G. Folland"
+    ],
+    "published": "2026-11-09T22:40:51Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.13319",
+    "pdf": "https://arxiv.org/pdf/2611.13319v1"
+  },
+  "2611.13277": {
+    "id": "2611.13277",
+    "title": "Pulsatile Endocrine Regulation with a Releasable Hormone Pool: Impulsive Feedback Model",
+    "abstract": "An impulsive model of endocrine regulation equipped with frequency- and amplitude-modulated pulsatile feedback is extended to study the dynamical effects pertaining to limitations due to the releasable hormone pool. The model describes a three-hormone regulatory loop and is applicable to endocrine systems such as the reproductive, stress, and growth hormone axes. Conditions guaranteeing the existence and uniqueness of a periodic solution with a single feedback-triggered impulse per period (a 1-cycle) are derived, together with monotonicity properties of its characteristics. An explicit Jacobian formula is obtained to assess local orbital stability. Model analysis demonstrates that a reduced hormone-pool replenishment rate produces a lower-amplitude, higher-frequency 1-cycle. This behavior is consistent with experimentally observed alterations in testosterone regulation in aging human males.",
+    "authors": [
+      "Anton V. Proskurnikov",
+      "Alexander Medvedev"
+    ],
+    "published": "2026-11-09T21:42:14Z",
+    "primary": "eess.SY",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.13277",
+    "pdf": "https://arxiv.org/pdf/2611.13277v1"
+  },
+  "2611.13157": {
+    "id": "2611.13157",
+    "title": "Mimicking the zero-field Josephson diode effect with remanent magnetization and self-field",
+    "abstract": "A Josephson junction whose critical current is larger in one direction than in the other is a diode. With a magnetized barrier, a junction can be a diode at zero applied field, and this is commonly attributed to an intrinsic Josephson diode effect, in which the magnetic barrier breaks time-reversal symmetry. Here we show that the same signatures arise from two ordinary ingredients: the magnetic field of the bias current in the electrodes and the remanent magnetization of the barrier. In cross-type Nb/Pd$_{89}$Ni$_{11}$/Nb junctions, the self-field displaces the interference patterns of the two current polarities in opposite directions. An in-plane remanent magnetization translates the pattern and brings the resulting asymmetry to zero field, where the junction mimics a nonvolatile diode with an asymmetry of 10 to 12% and a polarity set by the magnetization direction. Reversing the current or the field cannot distinguish this mimic from an intrinsic effect, but the wiring can: moving the current lead to the other arm of the electrode across the field reverses the self-field diode, in applied field and at zero field alike, whereas an intrinsic diode would be unchanged. This gives a simple dc test for Josephson diodes in the current-perpendicular-to-plane geometry.",
+    "authors": [
+      "Nathan Satchell",
+      "Arjun Sapkota",
+      "Pukar Sedai",
+      "Kurt Lorenzen",
+      "Juan Gomez"
+    ],
+    "published": "2026-11-09T19:41:12Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "16 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.13157",
+    "pdf": "https://arxiv.org/pdf/2611.13157v1"
+  },
+  "2611.13475": {
+    "id": "2611.13475",
+    "title": "Quantum-walk transport oracles and amplitude estimation of a scalar range statistic in proton therapy",
+    "abstract": "Quantum amplitude estimation (QAE) promises a quadratic reduction in the sampling cost of Monte Carlo (MC) particle transport, but two obstacles have kept it from radiotherapy physics: the lack of an efficient unitary encoding of charged-particle transport, and the mismatch between QAE's single-scalar output and the per-voxel structure of dose calculation. We address both. We construct a discrete-time quantum-walk transport oracle for protons in which an energy register is driven by an energy-dependent coin encoding a continuous-slowing-down surrogate of the stopping power, so that stochastic energy loss and range straggling follow from the circuit dynamics. The oracle is unitary, with one fresh coin qubit per step, and its gate count grows linearly in the number of energy levels. On it we formulate a scalar range statistic, the probability that a proton penetrates beyond a distal depth threshold, as a directly marked amplitude, and estimate it by maximum-likelihood amplitude estimation (MLQAE) with Grover iterations and finite shots. The oracle reproduces a Bragg-shaped depth-deposit profile agreeing with a classical MC of identical rules to within 0.27%, and Grover amplification matches $\\sin^2((2k+1)θ)$ to machine precision up to $k=32$. At matched budget the MLQAE error falls as $N^{-0.93}$ against $N^{-0.49}$ for sampling, 4.8 times smaller at the largest budget. A three-gate resource analysis (output structure, amortization, error-corrected wall-clock) finds full dose maps structurally unfavourable irrespective of hardware, and the scalar statistic short of a wall-clock crossover at clinical scale: the oracle's derived cost of $1.0 \\times 10^6$ logical gates per call ($3.5 \\times 10^7$ with rotation synthesis), dominated by the multiplexed coin, is 160 to 5400 times the permitted budget. We report the reduction that would be required and identify the term responsible for it.",
+    "authors": [
+      "Kwangzoo Chung"
+    ],
+    "published": "2026-11-10T02:33:48Z",
+    "primary": "physics.med-ph",
+    "comment": "22 pages, 5 figures. Submitted to Physics in Medicine & Biology",
+    "url": "https://arxiv.org/abs/2611.13475",
+    "pdf": "https://arxiv.org/pdf/2611.13475v1"
+  },
+  "2611.13242": {
+    "id": "2611.13242",
+    "title": "Molecular Gas Optics Using Vibrational Population Density Refraction",
+    "abstract": "Gas optics holds promise for development of advanced optical elements with 2-3 orders of magnitude higher damage threshold than any solid-state optics. Here, we demonstrate a new concept for refracting the laser beam using vibrationally excited molecules as gas optics instead of traditional control of thermodynamic gas temperature. The transient, vibrational population density grating is formed in a CO2 gas by interfering two mid-IR lasers to imprint spatial modulation in the linear refractive index (Delta n0 >=2x10-5) of the neutral gas via enhancement of the molecular polarizability. It is increased by pumping the asymmetric stretching mode of CO2 at optimal wavelengths to resonantly produce a highly nonequilibrium state that increases the effective vibrational mode temperature to greater than 2000 K in a room temperature gas. The measured beam steering efficiency of such a volume gas grating exceeds 90% that makes this approach a candidate for producing other large-aperture, high-throughput molecular optics elements, with expected damage thresholds 0.5-1 kJ/cm2, much-needed for future ultrahigh-power lasers.",
+    "authors": [
+      "Daniel Matteo",
+      "Sergei Tochitsky",
+      "Chan Joshi"
+    ],
+    "published": "2026-11-09T21:13:02Z",
+    "primary": "physics.optics",
+    "comment": "8 pages manuscript (4 figures), 2 pages supplemental information (1 figure)",
+    "url": "https://arxiv.org/abs/2611.13242",
+    "pdf": "https://arxiv.org/pdf/2611.13242v1"
+  },
+  "2611.12840": {
+    "id": "2611.12840",
+    "title": "High Pressure Material Phase Identification with Gaussian Kernel Neural Networks",
+    "abstract": "Phase identification is a computational task involving the classification of material structure using the positions of atoms. Using data from Molecular Dynamics (MD) simulations, our task is to identify the material phase of a set of atoms, based on how the simulations predict their positioning relative to each other. By leveraging existing research on mechanistic neural network theory, particularly Neural Tangent Kernels (NTK), we develop a new and efficient method for classifying simulated material samples. Our method involves defining a set of \"atom detectors\" that are given positions around the origin in cartesian coordinates. The sum of Gaussians centered at each atom is calculated at each atom detector, and is used as the input to a neural network. We present theoretical and experimental evidence to show that this method is highly effective and efficient at the task. Our method obtains better or similar accuracy scores to commonly used methods while having a major computational speedup.",
+    "authors": [
+      "Cameron Ryan",
+      "Yasantha Pasindu Hetti Kankanamalage",
+      "Shuai Zhang"
+    ],
+    "published": "2026-11-09T18:37:53Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.12840",
+    "pdf": "https://arxiv.org/pdf/2611.12840v1"
   }
 }
