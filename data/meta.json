@@ -3898,5 +3898,268 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.12840",
     "pdf": "https://arxiv.org/pdf/2611.12840v1"
+  },
+  "2611.14444": {
+    "id": "2611.14444",
+    "title": "Dimensional Crossover and Correlated Spin Dynamics in the Chain-Like van der Waals Antiferromagnet AgCrP$_2$S$_6$",
+    "abstract": "We report a comprehensive investigation of the magnetic properties and spin dynamics of the chain-like van der Waals antiferromagnet AgCrP$_2$S$_6$ using magnetization, magnetic susceptibility, and $^{31}$P nuclear magnetic resonance (NMR). The magnetic susceptibility exhibits a broad maximum near 250 K, characteristic of strong short-range antiferromagnetic correlations in a low-dimensional system. A classical Fisher-chain analysis gives an effective intrachain exchange scale $J/k_B\\approx 140$ K, while a quantum $S=3/2$ nearest-neighbor-chain calculation yields $J/k_B\\approx 114$ K. A constrained AF-FM zig-zag-chain calculation is also compatible with the susceptibility, supporting a dominant quasi one dimensional antiferromagnetic exchange scale of order 100 K. $^{31}$P NMR measurements provide microscopic insight into both static and dynamic spin correlations. The $K-χ$ relation displays two distinct linear regimes separated near $T^\\ast\\approx 250$ K, with different slopes indicating a change in the effective transferred hyperfine couplings. Below $T_{N}$, the relaxation follows $1/T_1\\propto T^5$, consistent with magnon-mediated relaxation in the ordered state. The temperature dependence of the internal hyperfine field yields a critical exponent $β\\approx 0.36$, consistent with three-dimensional universality. Together, these results establish AgCrP$_2$S$_6$ as a quasi-one-dimensional $S=3/2$ antiferromagnet embedded in a layered van der Waals host, in which local probes directly resolve the crossover from correlated intrachain spin dynamics to anisotropic three-dimensional magnetic order. More broadly, AgCrP$_2$S$_6$ provides a useful van der Waals platform for studying dimensional crossover, correlated spin dynamics, and hyperfine-coupling evolution in low-dimensional antiferromagnets.",
+    "authors": [
+      "C. S. Saramgi",
+      "Y. Shemerliuk",
+      "S. Selter",
+      "S. Aswartham",
+      "B. Buechner",
+      "H. -J. Grafe",
+      "K. M. Ranjith"
+    ],
+    "published": "2026-11-10T18:14:07Z",
+    "primary": "cond-mat.str-el",
+    "comment": "15 pages, 10 figures",
+    "url": "https://arxiv.org/abs/2611.14444",
+    "pdf": "https://arxiv.org/pdf/2611.14444v1"
+  },
+  "2611.14422": {
+    "id": "2611.14422",
+    "title": "The energetic cost of loading classical data in quantum computers",
+    "abstract": "Quantum algorithms for machine learning, chemistry, and cryptanalysis often assume coherent access to classical data at negligible physical cost. We instead treat data loading as a hardware process and quantify the dynamic energetic cost of a quantum random access memory (QRAM) query on a superconducting processor. Using the metric-noise-resource framework, we relate query fidelity and power to gate duration, relative two-qubit drive strength, and the distribution of attenuation across a multi-stage refrigerator, while accounting for thermal photons and gate errors. We analyze the linear-depth multiplexer and the noise-resilient bucket-brigade architectures, adapting the latter to a native superconducting gate set and refining its fidelity analysis using the fully decomposed gate schedule. For a representative bucket-brigade QRAM query with a $12$-qubit address register we obtain a query fidelity of $0.969$. The query consumes $3.51\\times10^{-4}\\,\\mathrm{J}$ of dynamic energy, corresponding to an average dynamic power of $4.38\\,\\mathrm{W}$ and a peak of $64.4\\,\\mathrm{W}$. Our optimization shows that, at fixed target fidelity, the operating point and attenuation profile can change the average power by a factor of two or more.",
+    "authors": [
+      "Joao F. Doriguello",
+      "Alessandro Luongo",
+      "Harshit Verma"
+    ],
+    "published": "2026-11-10T18:00:05Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14422",
+    "pdf": "https://arxiv.org/pdf/2611.14422v1"
+  },
+  "2611.14165": {
+    "id": "2611.14165",
+    "title": "Universal Multichannel Coherence-Mediated Thermal Transport in Carbon Allotropes: Experimental Evidence and Scaling Laws",
+    "abstract": "Understanding thermal transport in structurally disordered carbon materials remains a fundamental challenge because conventional models based on a single coherence contribution cannot accurately describe heat conduction over a broad temperature range. In this work, the thermal conductivity of graphene oxide (GO), thermally reduced graphene oxide (trGO), GO-hydrated fullerene composites (GO-HyFn), expanded graphite (EG), and EG-multiwalled carbon nanotube (MWCNT) composites was measured between 4.5 and 300 K. Despite substantial differences in density, porosity, graphitic ordering, and microstructure, all materials exhibit glass-like temperature dependence of thermal conductivity. The experimental results demonstrate that the conventional two-channel model, comprising a Peierls contribution and a single thermally activated coherence term, systematically fails to reproduce the observed temperature dependence. To resolve this discrepancy, we propose a generalized multichannel phenomenological model in which the coherence contribution consists of up to three Arrhenius-type channels with distinct activation energies. Depending on the structural state, two or three coherence channels are required to accurately describe the thermal conductivity. A key finding is the reproducible hierarchy of activation energies across diverse carbon allotropes, following approximately (E2 ~ 4E1 and E3 ~ (12-25)E1). While the channel amplitudes increase with material density, the activation energies remain nearly invariant, indicating universal vibrational energy scales. The proposed framework also consistently describes published data for other disordered carbon materials. These results provide experimental evidence for multichannel coherence-mediated heat transport and establish a unified phenomenological bridge between structural hierarchy with thermal transport in disordered carbon solids.",
+    "authors": [
+      "A. Jeżowski",
+      "A. I. Krivchikov",
+      "O. A. Korolyuk",
+      "V. V. Sagan",
+      "Y. V. Horbatenko",
+      "S. V. Cherednychenko",
+      "A. V. Dolbin",
+      "N. A. Vinnikov",
+      "O. Bezkrovnyi",
+      "D. Szewczyk"
+    ],
+    "published": "2026-11-10T14:49:54Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "29 pages, 7 figures, 2 tables; experimental and theoretical analysis of thermal transport in carbon allotropes",
+    "url": "https://arxiv.org/abs/2611.14165",
+    "pdf": "https://arxiv.org/pdf/2611.14165v1"
+  },
+  "2611.14067": {
+    "id": "2611.14067",
+    "title": "Evidence of anomalous Hall crystals in moiré rhombohedral graphene",
+    "abstract": "An anomalous Hall crystal (AHC) is a quantum state of matter, in which spontaneous electron crystallization leads to a quantized Hall effect without a magnetic field. The state can emerge in materials with strong Coulomb interaction and large Berry curvatures, such as few-layer rhombohedral graphene. Although the idea of AHCs has been invoked to explain some of the observed Chern insulators in moiré rhombohedral graphene (mRG), direct experimental evidence of AHCs has been missing so far. Here, we report experimental evidence of AHCs in hole-doped mRG through combined electrical transport and noise measurements. We identify a series of distinct Chern insulators spanning a broad and continuous range of doping densities incommensurate with the underlying moiré lattice; the states exhibit current-induced broadband noise and memory effects as well as pronounced gate hysteresis. Systematic magnetic field, temperature and gate dependence studies further support the emergence of a spontaneously charge-ordered state that acts as a parental state for the observed Chern insulators. The absence of Chern insulators at nearby integer fillings also distinguishes the observed state from the reported reentrant or extended quantum (anomalous) Hall states. Altogether, our results establish experimental evidence of AHCs in mRG and open the door for further exploration of the collective dynamics in this new state of matter.",
+    "authors": [
+      "Hongyuan Li",
+      "Zuhan Geng",
+      "Annika Weber",
+      "Chenxi Xu",
+      "Yifan Jiang",
+      "Jiabin Xie",
+      "Lujin Min",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Kenji Yasuda",
+      "Xiaomeng Liu",
+      "Jie Shan",
+      "Kin Fai Mak"
+    ],
+    "published": "2026-11-10T13:31:11Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14067",
+    "pdf": "https://arxiv.org/pdf/2611.14067v1"
+  },
+  "2611.14495": {
+    "id": "2611.14495",
+    "title": "SkipLane: Write-Once, Conflict-Free Accumulation for Zero-Skipping CNN Engines on FPGAs",
+    "abstract": "Skipping zero activations saves multiplications in CNN accelerators, but it complicates accumulation: the products in a compressed input window belong to different output columns and must be merged. In our earlier engine, this merging was done by read-modify-write (RMW) of a row buffer, which made sparse inputs slower than dense ones even at 87% sparsity. Existing designs either merge kernel rows through RMW or reduce bank conflicts with extra hardware, without eliminating them. SkipLane makes the entire accumulation path write-once. Each kernel row is processed in its own lane, which holds partial sums in three registers and retires up to three finished columns per cycle into memory banks that cannot conflict. Lanes and input channels are summed only at readout, so no partial sum is ever read back. Multipliers left idle by zero weights compute a second filter in the same pass. In RTL simulation, the engine stays within 0.5% of its frontend bound up to 70% sparsity and is 1.10-1.26$\\times$ faster than an SCNN-style scatter accumulator with 18 banks and ideal RMW at 50-80% sparsity. Six engines meet 140 MHz on a PYNQ-Z2 using 21.1k LUTs and run LeNet-5 bit-exact on the board. For conv1, the engine needs 1.94$\\times$ fewer cycles than a dense engine (1.26$\\times$ faster end to end); for conv2, whose rows are only 13 pixels wide, it reaches 0.87$\\times$ the dense speed.",
+    "authors": [
+      "Aditya Saboo",
+      "Pratibha Verma"
+    ],
+    "published": "2026-11-10T18:50:51Z",
+    "primary": "cs.AR",
+    "comment": "5 pages, 5 figures, 5 tables",
+    "url": "https://arxiv.org/abs/2611.14495",
+    "pdf": "https://arxiv.org/pdf/2611.14495v1"
+  },
+  "2611.14287": {
+    "id": "2611.14287",
+    "title": "ANTIOCH-VS: From Sequence to Hits with Modular, Open-Source Ensemble Virtual Screening",
+    "abstract": "Structure-based virtual screening needs a receptor conformation that fits the ligand class, but for most targets no ligand-bound crystal is available -- and a single predicted model or an apo structure often misses the binding-competent state. We present ANTIOCH-VS, an open-source framework that runs an entire in silico screening campaign, from a protein sequence to a ranked shortlist of candidate binders, as one plug-and-play workflow. It first builds a conformational ensemble by reduced-MSA subsampling with ColabFold, then uses AlphaFold2-RAVE (AF2RAVE) -- short molecular-dynamics simulations with State Predictive Information Bottleneck analysis -- to pick out docking-ready, Boltzmann-weighted metastable states. It then detects the binding pocket, prepares receptors and ligands, docks the library across the ensemble with DOCK6 or AutoDock Vina, builds a consensus ranking, and triages the top hits by physics-based metadynamics (CTMD). We benchmark it on two very different targets, JAK2 kinase and ADRB2 GPCR, using their DUD-E benchmark sets of known binders and property-matched decoys. Starting from sequence alone -- no ligand-bound crystal, no manual intervention -- the AF2RAVE ensembles gave top-20 shortlists strongly enriched for true binders: a 20% hit rate for JAK2 and 60% for ADRB2 (random ~1-2%), on par with ligand-bound crystals and, for the kinase, above single AF2 models and an apo crystal. The full pipeline runs end to end on a workstation or HPC from a single command, or each module can be run on its own with user-supplied inputs. ANTIOCH-VS is freely available at https://github.com/tiwarylab/antioch-vs",
+    "authors": [
+      "Hale S. Hasdemir",
+      "Venkata Sai Sreyas Adury",
+      "Pratyush Tiwary"
+    ],
+    "published": "2026-11-10T16:27:14Z",
+    "primary": "physics.chem-ph",
+    "comment": "34 pages, 19 figures (6 main text, 13 supplementary); code available at https://github.com/tiwarylab/antioch-vs",
+    "url": "https://arxiv.org/abs/2611.14287",
+    "pdf": "https://arxiv.org/pdf/2611.14287v1"
+  },
+  "2611.14498": {
+    "id": "2611.14498",
+    "title": "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion",
+    "abstract": "Biological visual systems compute reliably under tight metabolic and wiring constraints, whereas artificial vision systems consume far more energy and can be sensitive to adversarial perturbations. Whether networks with brain-like wiring are more robust at lower computational cost is unclear. We address this by benchmarking a task-optimized, continuous-time recurrent neural network of the fly visual system constrained by its synaptic connectome (FlyNet) against artificial neural networks. We compare it against CNNs, RAFT, and continuous-time recurrent neural networks without detailed connectome constraints (sCTRNN, CTRNN) on a collision-detection task within a differentiable 3D rendering pipeline. FlyNet is adversarially vulnerable but, relative to its compute, more robust to common video corruptions than RAFT, while using up to five orders of magnitude fewer FLOPs. The CTRNNs remain more robust than FlyNet across almost all tested perturbations, suggesting that connectome constraints benefit efficiency, through their low edge count, over robustness. Recurrence improves robustness to white-box attacks in RAFT and temporal context improves robustness to common corruptions. FlyNet's position and velocity representations degrade under adversarial textures but recover under counterfactual textures that restore correct classification while staying equally far from training, ruling out unfamiliar textures as the cause of failure. The reverse-phi illusion similarly disrupts these representations and inverts the same low-level motion statistic as the adversarial textures. Optimizing this input statistic alone, without access to the network, suffices to induce classification failure, attributing both perturbations to the same circuit vulnerability. Connectome-constrained models can thus surface adversarial failure mechanisms as testable hypotheses about biological perceptual vulnerabilities.",
+    "authors": [
+      "Alexandre Garcia-Duran",
+      "Alejandro Rodriguez-Garcia",
+      "Manuel Molano-Mazón",
+      "Alexandre Hyafil",
+      "Srikanth Ramaswamy",
+      "Janne K. Lappalainen"
+    ],
+    "published": "2026-11-10T18:51:31Z",
+    "primary": "cs.CV",
+    "comment": "39 pages, 24 figures, 2 tables, Accepted at 40th Conference on Neural Information Processing Systems (NeurIPS 2026)",
+    "url": "https://arxiv.org/abs/2611.14498",
+    "pdf": "https://arxiv.org/pdf/2611.14498v1"
+  },
+  "2611.14292": {
+    "id": "2611.14292",
+    "title": "Nanostructuring Semiconductor Surfaces Using Self-Assembled Metal Nanoparticles for Optoelectronic Applications",
+    "abstract": "Semiconductor nanostructures are key light-management elements because their geometry can strengthen light-matter interaction, suppress reflection, and enhance optical coupling. Yet their adoption across material platforms is constrained by lithography, multistep pattern transfer, persistent masks, and material-specific etching. Here, we introduce a lithography-free two-step strategy in which thermally evaporated self-assembled Ga nanoparticles act as self-consuming masks during Ar inductively coupled plasma reactive-ion etching. Correlated transmission electron microscopy on GaAs reveals the formation mechanism. Comparable erosion of the Ga nanoparticles and exposed substrate progressively converts Ga-capped pedestals into pure semiconductor nanocones while preserving crystalline order. Nanocone dimensions extend from tens to hundreds of nanometres, and surface coverage is tunable through Ga deposition and plasma power. The same process produces nanocones on GaP and Si and dense nanostructures on polycrystalline hybrid metal-halide perovskite without detectable PbI2 formation. During nanostructuring, the sun-weighted reflectance reaches minima of 11-15% on the monocrystalline substrates, whereas the perovskite achieves 0.5% after complete mask consumption. The approach therefore combines a self-assembled mask, its consumption, and pattern transfer in a single physical etching step, providing a simple route to light-coupling surfaces for III-V, Si, and perovskite optoelectronics.",
+    "authors": [
+      "S. Catalán-Gomez",
+      "M. Ibáñez",
+      "P. Guo",
+      "V. Braza",
+      "B. Vázquez",
+      "R. Sun",
+      "F. Li",
+      "P. Ibáñez",
+      "Y. K. Ryu",
+      "M. Vila",
+      "J. Bartolomé",
+      "D. F. Reyes",
+      "J. Martínez",
+      "D. González",
+      "H. Wang",
+      "J. M. Ulloa",
+      "A. Hierro"
+    ],
+    "published": "2026-11-10T16:30:30Z",
+    "primary": "physics.app-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14292",
+    "pdf": "https://arxiv.org/pdf/2611.14292v1"
+  },
+  "2611.14513": {
+    "id": "2611.14513",
+    "title": "Online Graph Coloring: Competitive Ratios Separating Randomized and Deterministic Algorithms",
+    "abstract": "We study online coloring, focusing on the competitive ratio. The best previously known results were (1) a lower bound of $Ω(n / \\log^2 n)$ for both deterministic and randomized algorithms by Halldórsson and Szegedy (1994), (2) an upper bound of $O(n / \\log n)$ for randomized algorithms by Halldórsson (1997), and (3) an upper bound of $O(n / \\log \\log n)$ for deterministic algorithms by Kawarabayashi, Yoneda, and Yoneda (2025). In this paper, we improve these results as follows: 1. A new lower bound of $Ω(n / \\log n)$ for deterministic algorithms. 2. A new upper bound of $O(n (\\log \\log n)^2 / \\log^2 n)$ for randomized algorithms. 3. A new upper bound of $O(n / (\\log \\log n)^{2-\\varepsilon})$ for deterministic algorithms for every fixed $\\varepsilon>0$. For randomized algorithms, we nearly close the gap between the lower and upper bounds; the remaining gap is only $O((\\log \\log n)^2)$. We establish the asymptotic separation between randomized and deterministic online graph coloring. Against an oblivious adversary, a polynomial-time randomized algorithm achieves a competitive ratio asymptotically smaller than any deterministic algorithm can guarantee, even with unlimited computation.",
+    "authors": [
+      "Ken-ichi Kawarabayashi",
+      "Hirotaka Yoneda",
+      "Masataka Yoneda"
+    ],
+    "published": "2026-11-10T18:58:28Z",
+    "primary": "cs.DS",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14513",
+    "pdf": "https://arxiv.org/pdf/2611.14513v1"
+  },
+  "2611.14475": {
+    "id": "2611.14475",
+    "title": "Explicit restricted isometries with $k=m^{2/3-o(1)}$",
+    "abstract": "We construct an explicit family of real $m\\times n$ restricted isometries with $m\\to\\infty$, $m/n\\to 0$, $δ_k\\to 0$, and $k=m^{2/3-o(1)}$. We combine Gershgorin's circle theorem with a flat RIP estimate to reduce the problem to choosing a large vertex set in a strongly regular graph with the property that every small subset spans few edges. We select this vertex set using an incidence geometric result due to Zahl. The proof only uses the entrywise absolute value of the Gram matrix despite the conventional wisdom that such proof techniques exhibit a barrier of $m^{1/2}$. We prove that this barrier is actually $m^{2/3}$, and we show that our particular construction exhibits the same barrier.",
+    "authors": [
+      "Christian Kümmerle",
+      "Dustin G. Mixon"
+    ],
+    "published": "2026-11-10T18:37:57Z",
+    "primary": "math.FA",
+    "comment": "16 pages",
+    "url": "https://arxiv.org/abs/2611.14475",
+    "pdf": "https://arxiv.org/pdf/2611.14475v1"
+  },
+  "2611.14484": {
+    "id": "2611.14484",
+    "title": "Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor",
+    "abstract": "Electric flux strings underpin confinement in gauge theories. In two spatial dimensions, their evolution involves competing processes of charge motion, pair creation, and transverse deformation. Accessing these dynamics beyond perturbative limits challenges classical approaches, as entanglement growth restricts the times accessible to tensor-network simulations. Here we use quantum simulation to investigate a (2+1)D Z2 lattice gauge theory with dynamical matter and an explicit magnetic plaquette interaction, spanning strongly confined and nonperturbative deconfined regimes. Using 63 superconducting qubits, including 12 ancillas, we evolve initially localized strings with static or dynamical endpoint charges. Spatially resolved measurements reveal rapid charge and flux spreading in the deconfined regime, enhanced matter occupation in the string interior near the pair-creation resonance, and suppressed spreading at strong electric fields. String-path occupations further probe transverse rearrangements between configurations connected by plaquette operations. Retaining separate matter and gauge degrees of freedom makes local Gauss-law constraints directly accessible for error detection. Combining these constraints with ancilla checks and noise rescaling, we measure dynamics in circuits containing up to 15 second-order Trotter steps. Our results establish quantum simulation as a practical approach to exploring nonperturbative string dynamics in two spatial dimensions, with gauge redundancy serving as an experimental resource.",
+    "authors": [
+      "Sanziana Stelea",
+      "Anthony Gandon",
+      "Francesco Tacchino",
+      "Jad C. Halimeh",
+      "Ivano Tavernelli"
+    ],
+    "published": "2026-11-10T18:45:36Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14484",
+    "pdf": "https://arxiv.org/pdf/2611.14484v1"
+  },
+  "2611.13964": {
+    "id": "2611.13964",
+    "title": "Design of Self-Folding Origami Architectures for Biomedical Implants: A Finite Element Simulation Framework",
+    "abstract": "Minimally invasive brain implants require compact deployment geometries and controlled shape transformation for delivery through confined vessels. Origami-inspired structures enable large shape changes from compact to tailored deployed configurations, but implementation at microscale dimensions remains challenging, as conventional designs rely on predefined mountain and valley folds that become increasingly difficult to fabricate and assemble as unit-cell size is reduced to meet clinical requirements. To address this, we propose a self-folding methodology based on thermally induced stresses in thin-film bimetallic composites. Pairing the shape memory alloy Nitinol (NiTi) with molybdenum or stainless steel (SS316L) exploits their differing thermal expansion coefficients to generate localized hinge bending, enabling deterministic, autonomous folding into prescribed mountain and valley configurations. Using finite element simulations, we systematically optimize hinge length, layer thickness, width, and shape, identifying a hinge geometry achieving a ~50% reduction in unit-cell dimensions relative to previously reported designs. Integration into a complete waterbomb origami unit cell confirms that the strip-level folding mechanism scales to produce coordinated, self-folding deformation across the tessellated structure. These results demonstrate the feasibility of stress-induced, self-folding thin-film origami architectures built from clinically established biomaterials, providing a scalable design framework for next-generation, active neurovascular implants with integrated sensing and monitoring functionality.",
+    "authors": [
+      "Suhas Chandrashekar",
+      "Thomas Stieglitz",
+      "Prasanth Velvaluri"
+    ],
+    "published": "2026-11-10T12:02:40Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "20 pages, 7 figures",
+    "url": "https://arxiv.org/abs/2611.13964",
+    "pdf": "https://arxiv.org/pdf/2611.13964v1"
+  },
+  "2611.14511": {
+    "id": "2611.14511",
+    "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+    "abstract": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.",
+    "authors": [
+      "Megha Srivastava",
+      "Michael H. Lim",
+      "Allison M. Keys",
+      "Pranav Murugan",
+      "Nate Gruver"
+    ],
+    "published": "2026-11-10T18:56:32Z",
+    "primary": "cs.LG",
+    "comment": "32 pages, Agentic AI for Biological Discovery Workshop (NeurIPS 2026)",
+    "url": "https://arxiv.org/abs/2611.14511",
+    "pdf": "https://arxiv.org/pdf/2611.14511v1"
+  },
+  "2611.14486": {
+    "id": "2611.14486",
+    "title": "The distribution of small gaps between zeros of the Riemann zeta function",
+    "abstract": "Let $0<γ_1\\leq γ_2\\leq \\cdots$ be the ordinates of the non-trivial zeros $ρ_n$ of the Riemann zeta function in the upper half-plane, counted with multiplicity. Selberg proved unconditionally that there exists $λ_0<1$ such that a positive proportion of the zeros $ρ_n$ satisfy $γ_{n+1}-γ_n\\leq 2πλ_0/\\log γ_n$. Simonič, Trudgian and Turnage-Butterbaugh were the first to obtain an explicit value in Selberg's theorem, showing that $λ_0=1- 10^{-3\\cdot 10^{13}}$ is admissible. This was considerably improved by Zhao who showed that $λ_0= 1-2.36\\cdot 10^{-6}$ is admissible. In this paper, we use a different approach, based on an unconditional variant of Montgomery's pair correlation method, to obtain a substantial improvement of these results, showing unconditionally that $λ_0=0.7892<4/5$ is admissible.",
+    "authors": [
+      "Youness Lamzouri"
+    ],
+    "published": "2026-11-10T18:46:37Z",
+    "primary": "math.NT",
+    "comment": "11 pages",
+    "url": "https://arxiv.org/abs/2611.14486",
+    "pdf": "https://arxiv.org/pdf/2611.14486v1"
+  },
+  "2611.14145": {
+    "id": "2611.14145",
+    "title": "Energetic costs of reaching the physical limits of sensing",
+    "abstract": "Cells sense chemical gradients by absorbing ligand molecules, a nonequilibrium process that necessarily produces entropy. But how many molecules must a cell absorb, and therefore energy dissipate, to approach the physical limits of sensing? We derive closed-form expressions relating gradient sensing uncertainty to the number of absorbed molecules, which we link to entropy production. Unlike concentration sensing, which depends only on the total count, gradient sensing must resolve the angular asymmetry of the absorbed flux, adding a bounded dipole-contrast factor set by how strongly the cell absorbs. In the strong-signal regime, cells approach peak chemotactic alignment while absorbing a small fraction of the diffusion-limited uptake, with the required number of uptake events set by the relative concentration change across the cell. Re-analysis of Dictyostelium chemotaxis places the cell at 0.25% of that limit with a minor metabolic load, suggesting that sensing is limited by counting noise rather than by energetic cost.",
+    "authors": [
+      "Albert Alonso",
+      "Julius B. Kirkegaard",
+      "Robert G. Endres"
+    ],
+    "published": "2026-11-10T14:31:36Z",
+    "primary": "physics.bio-ph",
+    "comment": "27 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.14145",
+    "pdf": "https://arxiv.org/pdf/2611.14145v1"
   }
 }
