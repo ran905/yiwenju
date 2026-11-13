@@ -4161,5 +4161,267 @@
     "comment": "27 pages, 4 figures",
     "url": "https://arxiv.org/abs/2611.14145",
     "pdf": "https://arxiv.org/pdf/2611.14145v1"
+  },
+  "2611.14814": {
+    "id": "2611.14814",
+    "title": "Mind-wandering preserves word-level coupling while disrupting comprehension",
+    "abstract": "Readers can move their eyes through a page but retain little of its meaning when their minds wander. We tested whether word properties still guide their eyes during these lapses. We analyzed public eye-tracking and electroencephalography (EEG) data from 44 adults who read articles. They marked the text read during each lapse they noticed. We linked these spans to the sentences needed for later comprehension questions. Word frequency, length and surprisal still predicted which words readers skipped and how long they looked at them. Compared with on-task reading, these effects met equivalence bounds of $\\pm$10% for skipping and $\\pm$20% for gaze duration. Readers spent 14.6% longer on words during lapses. Yet readers answered less accurately when lapses covered sentences needed for a later question. The adjusted difference was 25.7 percentage points for lapses covering all versus none of these sentences. The fixation-related EEG response was 42.7% smaller during lapses. At left posterior-lateral sensor P7, the median increase in alpha power was 10.0%. Occipital sensor Oz showed no reliable increase. These results suggest that word properties can guide the eyes while readers fail to form or retain a useful representation of the text.",
+    "authors": [
+      "Anirudh Natarajan",
+      "Paul Sajda"
+    ],
+    "published": "2026-11-10T22:57:21Z",
+    "primary": "q-bio.NC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14814",
+    "pdf": "https://arxiv.org/pdf/2611.14814v1"
+  },
+  "2611.14776": {
+    "id": "2611.14776",
+    "title": "SlipStream: Enabling HBF for GPU Systems by Mitigating the Latency and SRAM Overheads",
+    "abstract": "Large language model (LLM) inference demands ever more memory capacity for larger models and batch sizes. High-Bandwidth Flash (HBF) replaces the DRAM dies of HBM with NAND flash and provides up to 16x the capacity at comparable read bandwidth. However, HBF can incur a read latency of nearly 20$μ$s, 20x that of HBM, so on-demand HBF accesses slow inference by up to 12.8x. Conventional cache-line prefetchers require 20x more in-flight tracking state to cover this latency. Tensor-streaming designs, such as H3, follow virtual-address order as opposed to kernel-demand order, and therefore need hundreds of megabytes of buffering. We propose SlipStream, a software-hardware co-designed prefetcher that turns prefetching into a demand-paced producer-consumer pipeline. In software, SlipStream profiles the repeatable weight-page demand order of data-independent LLM kernels and inserts a staging warp that replays this order with non-blocking STAGE instructions. In hardware, the staging warp acts as the producer and the work warps as consumers. Our key insight is to retire each STAGE tracking entry only when demand first accesses the page, as opposed to when the page returns from HBF. Demand thus paces staging and bounds how far staging leads consumption. SlipStream tracks 4 KB pages instead of cache lines and allocates buffer slots only when pages return, which decouples the buffer size from outstanding traffic. Across seven dense models spanning 16-800 GB, SlipStream with a 40 MB staging buffer achieves 92.4% of the performance of an ideal HBF with HBM-like latency. H3 achieves only 43.1%, even with a 320 MB buffer. The buffer sizing of SlipStream is independent of HBF latency and workload. SlipStream with 16 MB buffer, 20x smaller than that of H3, performs within 4% of SlipStream-40MB. SlipStream also supports Mixture-of-Experts models and reaches 91.2% of ideal performance (40 MB buffer).",
+    "authors": [
+      "Anish Saxena",
+      "Hritvik Taneja",
+      "Christos Kozyrakis",
+      "Aamer Jaleel"
+    ],
+    "published": "2026-11-10T22:08:10Z",
+    "primary": "cs.AR",
+    "comment": "To appear in 2027 IEEE International Symposium on High-Performance Computer Architecture (HPCA)",
+    "url": "https://arxiv.org/abs/2611.14776",
+    "pdf": "https://arxiv.org/pdf/2611.14776v1"
+  },
+  "2611.14722": {
+    "id": "2611.14722",
+    "title": "Fatigue crack growth without plasticity under cyclically reversed shear",
+    "abstract": "We show that cyclic fatigue can occur in a system whose elements behave elastically up to an irreversible failure threshold, without plasticity, friction, or any time-dependent process. The model represents a weak interface between two elastic bodies loaded in shear. Under sufficiently large cyclic loading below the static failure threshold, a pre-existing flaw advances progressively, by a few lattice spacings per cycle. Two conditions are needed for this behavior: each bond fails more easily under one sense of the shear than the opposite, and the shear must be reversed during the cycle by an amount large enough to break bonds that have not yet failed. The model thus identifies the minimal conditions for an intrinsic, plasticity-free fatigue mechanism. Such conditions may be met at interfaces and weak planes subjected to strongly reversed shear, as in fretting, rolling contact, and reversed torsion, or in cyclic shear of cemented granular materials.",
+    "authors": [
+      "E. A. Jagla"
+    ],
+    "published": "2026-11-10T20:29:09Z",
+    "primary": "cond-mat.soft",
+    "comment": "10 pages, 10 figures",
+    "url": "https://arxiv.org/abs/2611.14722",
+    "pdf": "https://arxiv.org/pdf/2611.14722v1"
+  },
+  "2611.14687": {
+    "id": "2611.14687",
+    "title": "High-Fidelity In Silico Dataset of Ordered Binary and Ternary MXenes with Predictive Synthesis Guidance",
+    "abstract": "Despite their promise, the targeted synthesis of novel MXenes remains challenging due to their vast structural and compositional space and the lack of reliable stability descriptors that account for synthesis conditions. To address this gap, we utilized density functional theory (DFT) with the r$^2$SCAN functional to develop a high-fidelity dataset of 1,040 ordered binary and ternary bare delaminated MXenes, including mono-transition metal MXenes, in-plane ordered double-transition metal MXenes, in-plane ordered metal-divacancy MXenes, and out-of-plane ordered double-transition-metal MXenes. For each structure, we calculated formation and decomposition Gibbs energies, decomposition products, layer symmetry groups, and energies above the hull. We find that all MXenes are thermodynamically inaccessible under equilibrium conditions. However, 115 predominantly carbide MXenes become thermodynamically stabilized at elevated temperatures (500--2000 K), and 23 are stabilized under high pressure (10 GPa). Additionally, three MXenes in the Mn--Fe--C chemical space are stabilized within an experimentally feasible range of carbon chemical potentials. These findings reveal stability trends across the MXene space and identify synthesis strategies that can guide experimental efforts. Our dataset provides a robust foundation for developing machine-learned stability descriptors and for guiding experimental efforts toward novel MXene discovery. By identifying synthesizable candidates along with their synthesis conditions, this work bridges a critical gap in data-driven approaches to MXene discovery and lays the foundation for future autonomous experimental workflows.",
+    "authors": [
+      "Ahmed H. Biby",
+      "Charles B. Musgrave"
+    ],
+    "published": "2026-11-10T19:45:55Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14687",
+    "pdf": "https://arxiv.org/pdf/2611.14687v1"
+  },
+  "2611.15021": {
+    "id": "2611.15021",
+    "title": "Reducing TLS Losses in Superconducting Circuits Using Solid Neon",
+    "abstract": "Two level systems (TLSs) are a major source of loss in superconducting devices, limiting the performance of qubits, detectors, and resonators. These defects arise from a range of sources, including surface oxides, crystal defects, as well as fabrication residues which are often difficult to remove. Using NbTiN coplanar waveguide resonators, we show that depositing and subsequently removing a solid neon film can significantly improve device performance. Analysis of the temperature and power dependence indicates that this enhancement arises from reduced TLS dissipation, which we attribute to the redistribution and removal of surface contaminants during neon deposition and evaporation. Atomic force microscopy images of contaminated hexagonal boron nitride flakes before and after neon exposure show that neon treatment can redistribute and remove surface residues. These results demonstrate a simple, non-destructive approach for mitigating TLS losses in superconducting devices and other sensitive materials that cannot withstand aggressive cleaning processes.",
+    "authors": [
+      "A. Palmer",
+      "K. Matkovic",
+      "P. Russell",
+      "E. Helgemo",
+      "L. Delventhal",
+      "Y. Ashlea Alava",
+      "K. Zuo",
+      "S. N. Coppersmith",
+      "M. C. Cassidy"
+    ],
+    "published": "2026-11-11T04:29:02Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.15021",
+    "pdf": "https://arxiv.org/pdf/2611.15021v1"
+  },
+  "2611.14968": {
+    "id": "2611.14968",
+    "title": "Nitride crystalline barrier epitaxial SIS Josephson junctions by MBE",
+    "abstract": "Superconductor-insulator-superconductor Josephson junctions with crystalline tunnel barriers have remained elusive by epitaxial techniques such as MOCVD or MBE that produce the junction materials and devices powering today's electronic and photonic systems like transistors and lasers. Here, we overcome the key materials hurdle to realize the first functional nitride crystalline barrier Josephson junctions by MBE. Despite an AlN barrier thickness of approximately 4.5 nm, the NbN/AlN/NbN trilayers exhibit coherent Josephson tunneling with critical current densities of approximately 17 A/cm2, an IcRn product of approximately 2.5 mV, and a superconducting gap voltage of approximately 3.7 mV with a BCS-like gap evolution with temperature. Hysteretic current-voltage characteristics and Fraunhofer current modulation with magnetic field establish underdamped SIS Josephson behavior. The realization of crystalline barrier Josephson junctions by MBE opens the doors to a richer materials palette with alloys and superlattice electrodes and tunnel barriers, as well as potential monolithic integration of superconducting quantum circuits with active electronic and photonic devices such as HEMTs and lasers.",
+    "authors": [
+      "Manas Verma",
+      "Anand Ithepalli",
+      "Amit Rohan Rajapurohita",
+      "Eegene Clara Chung",
+      "David A. Garcia-Wetten",
+      "Naomi Pieczulewski",
+      "Danqing Wang",
+      "John G. Wright",
+      "Archit Shah",
+      "Jimy Encomendero",
+      "Rishabh Singh",
+      "Chandrashekar Savant",
+      "Hangwang Yang",
+      "Anthony Hyatt",
+      "Jaehong Choi",
+      "Thomas Varghese",
+      "Kushagra Aggarwal",
+      "Paul B. Welander",
+      "Apurva Mehta",
+      "David Schuster",
+      "Valla Fatemi",
+      "Gregory D. Fuchs",
+      "Michael C. Hamilton",
+      "Hong X. Tang",
+      "David A. Muller",
+      "Huili Grace Xing",
+      "Debdeep Jena"
+    ],
+    "published": "2026-11-11T03:28:40Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14968",
+    "pdf": "https://arxiv.org/pdf/2611.14968v1"
+  },
+  "2611.14913": {
+    "id": "2611.14913",
+    "title": "Exact Values and Bounds for Four Color Quadratic Polynomial van der Waerden Numbers",
+    "abstract": "For a nonzero polynomial $P(x)\\in\\mathbb{Z}[x]$ with $P(0)=0$, let $W(P(x);4)$ denote the least integer $N$ such that every four coloring of $[N]$ contains distinct integers $u,v$ of the same color with $v-u=P(d)$ for some integer $d$. The best known general upper bounds for polynomial van der Waerden numbers are primitive recursive but remain enormous compared with the few known exact values. In this paper we determine the exact four color polynomial van der Waerden numbers for \\[ \\begin{gathered} x^2+x,\\quad 2x^2+x,\\quad 3x^2+x,\\\\ x^2+7x,\\quad 2x^2+7x,\\quad 3x^2+7x,\\\\ x^2+9x,\\quad 2x^2+9x,\\quad 3x^2+11x. \\end{gathered} \\] We derive upper bounds using combinatorial proofs and lower bounds using constructions of explicit colorings of $[N]$ found using the alternative computing inspired method of simulated annealing. More generally, we also prove that the four color polynomial van der Waerden numbers for the entire family of nonzero polynomials $ex^2+fx$ grow only linearly in the magnitude of their coefficients \\[ W(ex^2+fx;4)=Θ(|e|+|f|). \\]",
+    "authors": [
+      "Ishan Kumthekar",
+      "William Gasarch",
+      "William Regli",
+      "Ian Whitehouse"
+    ],
+    "published": "2026-11-11T02:11:37Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14913",
+    "pdf": "https://arxiv.org/pdf/2611.14913v1"
+  },
+  "2611.14381": {
+    "id": "2611.14381",
+    "title": "Optimization principles, revisited",
+    "abstract": "The brain solves a wide range of problems, and some of these solutions are very good indeed. It is an old idea that, in some cases, these solutions may be as good as possible given the relevant constraints. If this is true we can promote this notion of optimization to a principle from which aspects of function and mechanism can be derived, ideally with no free parameters. Optimization principles are powerful and have had many successes, but they remain controversial. We start with a reminder of a classic example---diffraction limited optics in insect eyes---and then a summary of why you should worry about optimization as a more general principle. Next we turn to recent progress on the theory of optimal motion estimation in fly vision, and finally summarize recent results on the landscape for optimization, arguing that (contrary to widely held intuitions) optimal performance need not require the underlying mechanisms to have finely tuned parameters. I hope to convince you that this is a moment to take optimization seriously as the basis for theories of neural coding and computation. This is based on a rather informal lecture at the summer school LASCON X in Sao Paulo, and I have tried to preserve that tone here; pointers are given to more detailed and technical discussions.",
+    "authors": [
+      "William Bialek"
+    ],
+    "published": "2026-11-10T17:36:48Z",
+    "primary": "q-bio.NC",
+    "comment": "Based on a lecture at LASCON X, https://sisne.org/en/lascon-x/",
+    "url": "https://arxiv.org/abs/2611.14381",
+    "pdf": "https://arxiv.org/pdf/2611.14381v1"
+  },
+  "2611.13876": {
+    "id": "2611.13876",
+    "title": "Influence of the branching geometry on SPION propagation: coupling of experiment and simulation",
+    "abstract": "Magnetic Drug Targeting (MDT) is an emerging therapeutic concept in cancer medicine, where superparamagnetic iron oxide nanoparticles (SPIONs) are used as carriers for medication. Their magnetic properties allow for the manipulation of particle transport within the vascular structure and thus targeted delivery to the tumor site. To develop effective concepts for particle steering and accumulation, a detailed understanding of the particle--flow interaction, especially at asymmetric vascular bifurcations, is needed. Based on hierarchical scaling laws, generalized bifurcation geometries with varying degrees of asymmetry were derived and additively manufactured. The particle distribution was investigated by in situ optical measurements under different flow conditions and magnetic field configurations and compared with Lagrangian particle and Volume of Fluid Simulations (VoFS). While the particle mass partition followed the hydraulic flow split in asymmetric bifurcations, density-driven stratification dominated in the symmetric bifurcation, where one daughter branch received only a minor fraction of the particle mass at low flow rates despite carrying half of the flow. The Lagrangian model reproduced the predominantly advective propagation, whereas only the VoFS approach captured the stratification-induced asymmetry. Magnetic actuation counteracted the stratification, reversed the passive branch preference and increased particle retention. From a molecular communication perspective, bifurcation geometry, collective volume effects and magnetic actuation thus jointly determine the received particle signal at vascular bifurcations.",
+    "authors": [
+      "Daniel Fleischhauer",
+      "Luiz C. P. Wille",
+      "Stefan Lyer",
+      "Jens Kirchner",
+      "Dietmar Drummer"
+    ],
+    "published": "2026-11-10T10:36:01Z",
+    "primary": "cs.ET",
+    "comment": "6 pages, 4 figures; submitted to IEEE ICC for review; Funded by DFG - GRK2950",
+    "url": "https://arxiv.org/abs/2611.13876",
+    "pdf": "https://arxiv.org/pdf/2611.13876v1"
+  },
+  "2611.15008": {
+    "id": "2611.15008",
+    "title": "The Merino-Welsh conjecture for sparse and dense graphs",
+    "abstract": "The Merino-Welsh conjecture states that the Tutte polynomial $T_G(x,y)$ of a loopless and bridgeless graph $G$ satisfies the inequality $\\max\\{T_G(2,0),T_G(0,2)\\}\\geq T_G(1,1).$ It is known to hold for several graph classes, among them sufficiently sparse and sufficiently dense graphs. In this paper, we improve the previously known sufficient density conditions and show that the multiplicative version of the conjecture also holds for sufficiently sparse and sufficiently dense graphs. In particular, we show that for a connected graph $G$ with $m$ edges and $n$ vertices, the Merino-Welsh conjecture holds if either $m\\leq1.64(n-1)$ and $G$ is loopless or $m\\geq2.55(n-1)$ and $G$ is bridgeless, and the multiplicative conjecture holds if $G$ is loopless and bridgeless with $m\\leq1.21(n-1)$ or $m\\geq5.62(n-1)$.",
+    "authors": [
+      "Benedek Váli"
+    ],
+    "published": "2026-11-11T04:07:02Z",
+    "primary": "math.CO",
+    "comment": "7 pages",
+    "url": "https://arxiv.org/abs/2611.15008",
+    "pdf": "https://arxiv.org/pdf/2611.15008v1"
+  },
+  "2611.14944": {
+    "id": "2611.14944",
+    "title": "CSS Circuits: useful quantum circuits that can be simulated with $O(1)$ cost per gate",
+    "abstract": "\"CSS circuits\" are quantum circuits generated by $X$, $Z$, $M_X$, $M_Z$, and CNOT gates. Although CSS circuits are extremely restrictive, they can implement important quantum protocols like teleportation, error correction, and entanglement purification. We present a simple CSS circuit simulator that uses $O(1)$ work per gate. The simulator corresponds to a local hidden variable model, so we use Bell inequalities to prove the simulator can't also support Hadamard gates, CZ gates, or S gates. We note that CSS circuits appear ideal for benchmarking quantum error correction in the presence of atom loss errors.",
+    "authors": [
+      "Craig Gidney",
+      "Cody Jones"
+    ],
+    "published": "2026-11-11T02:48:44Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14944",
+    "pdf": "https://arxiv.org/pdf/2611.14944v1"
+  },
+  "2611.14906": {
+    "id": "2611.14906",
+    "title": "The frustration index of fully frustrated hypercubes",
+    "abstract": "The frustration index of a signed graph is the minimum number of edges meeting every negative cycle. Let $F_n$ be the frustration index of the signed $n$-cube $Q_n$ in which every square is negative. Using signings constructed from weighted cubes, we prove that for every positive integer $r$, \\[ F_{r^2+1}=(r^2-r+1)2^{r^2-1}. \\] When $4\\mid r$, our construction also gives the exact value $F_n=(n-r-p/4)2^{n-2}$ in the six dimensions $n=r^2+1+pr/2$, $p\\in\\{\\pm1,\\pm2,\\pm3\\}$. In dimension nine an argument with integral eigenvectors gives $F_9=772$. By varying one weight in the construction for $r^2+1$, we obtain $F_n=(n-\\sqrt n+O(n^{-1/2}))2^{n-2}$ for arbitrary $n$. The values at $n=r^2+1$ show that the error term has the best possible order. Taking the positive edges of an optimal signing gives a square-free subgraph of $Q_n$ with at least $(n+\\sqrt n-O(n^{-1/2}))2^{n-2}$ edges whose complement is also square-free.",
+    "authors": [
+      "Lujia Wang"
+    ],
+    "published": "2026-11-11T01:54:22Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14906",
+    "pdf": "https://arxiv.org/pdf/2611.14906v1"
+  },
+  "2611.14729": {
+    "id": "2611.14729",
+    "title": "SunLightBots: Turning sunlight into self-sustained, high-power motion in soft robots",
+    "abstract": "Soft robots built from active materials can directly convert environmental stimuli into motion, offering a route to energy autonomy and embodied control. However, environmental energy is generally harvested at low power, whereas rapid, mechanically demanding actions require high mechanical output power. Reconciling this mismatch while sustaining self-regulated cyclic actuation is challenging, particularly at the subgram scale, where limited payload capacity constrains the integration of conventional power and control hardware. Here, we present SunLightBots, a class of subgram, sunlight-powered, untethered soft robots that achieve autonomous locomotion under continuous illumination near 1 Sun (100 mW/cm2). Their operation is enabled by a self-resetting snapping (SRS) mechanism that integrates liquid crystal elastomers (LCEs) with snap-through instability to accumulate solar energy supplied at low power, release it as rapid, high-power motion, and reset through photothermal-mechanical feedback. Through coordinated optimization of the LCE actuation temperature, photothermal conversion, actuation stress, and structural energy barrier, the system operates near 1 Sun and achieves a peak mass-specific mechanical power of 89 W/kg. At this irradiance, the optimized LCE generates an actuation stress of 0.1 MPa at approximately 60 deg C. SunLightBots demonstrate sustained swimming, crawling, and repeated impulsive jumping. Under 1.5 Suns, the swimmer advances more than three body lengths per cycle. This work provides a materials-mechanics route toward autonomous soft robots powered entirely by the environment.",
+    "authors": [
+      "Yoo Jin Lee",
+      "Melanie Torres Crespo",
+      "Zhongxiao Deng",
+      "Andrew Tejada-Vega",
+      "Rebecca Kramer-Bottiglio",
+      "Wenzhong Yan",
+      "Yimin Luo"
+    ],
+    "published": "2026-11-10T20:45:10Z",
+    "primary": "cs.RO",
+    "comment": "17 pages, 7 figures",
+    "url": "https://arxiv.org/abs/2611.14729",
+    "pdf": "https://arxiv.org/pdf/2611.14729v1"
+  },
+  "2611.14653": {
+    "id": "2611.14653",
+    "title": "Establishing Standards for Assessment and Reporting of SNSPD Performance",
+    "abstract": "Superconducting nanowire single-photon detectors (SNSPDs) can be made sensitive to single photons with near-unity detection efficiency, ultra-low dark-count rates, and sub-nanosecond timing jitter over a broad wavelength range. However, many studies report data inconsistently, often emphasizing a single performance metric without considering overall device performance. This inconsistent data reporting limits the field, as it makes it difficult to determine which device characteristics are most important. Different applications require functionalities that may conflict with one another; for example, longer-wavelength operation may require lower operating temperatures. Moreover, there is no universally accepted metric for defining the figures of merit of an SNSPD. In this work, we amass a dataset representing the state of the art of SNSPD fabrication, including operating temperature, operating wavelength, photon count rates (PCR), and dark count rates (DCR). We fit the PCR curves and suggest using the saturation plateau length to gauge the SNSPD's sensitivity. We then fit the DCR and compare the PCR and DCR. Using this approach, we establish a quantitative framework to determine the optimal biasing condition for a given device and to determine the device's sensitivity at that optimal biasing condition, enabling meaningful comparisons across disparate devices. Additionally, we offer concrete benchmarks for measuring device performance.",
+    "authors": [
+      "Ari N. Willner",
+      "Alejandro Simon",
+      "Reed A. Foster",
+      "Francesca Incalza",
+      "Ava A. Brule",
+      "Philip Donald Keathley",
+      "Karl K. Berggren"
+    ],
+    "published": "2026-11-10T19:06:15Z",
+    "primary": "physics.ins-det",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14653",
+    "pdf": "https://arxiv.org/pdf/2611.14653v1"
+  },
+  "2611.14957": {
+    "id": "2611.14957",
+    "title": "Improving Nonequilibrium Thermal Conduction in CaF2 by Breaking the Phonon Bottleneck Effect",
+    "abstract": "Heat dissipation in laser optical materials depends not only on their thermal conductivity but also on how absorbed energy is redistributed among various phonon modes. In calcium fluoride (CaF2), rapid energy transfer from hot electrons to weakly propagating longitudinal optical (LO) phonons can create a nonequilibrium phonon bottleneck effect that limits efficient heat removal. Here, we propose selective phonon excitation as an effective strategy to break this bottleneck. Combining electron-phonon scattering calculations, phonon Boltzmann transport analysis, and nonequilibrium molecular dynamics simulations, we identify LO phonons as the primary modes that preferentially receive energy from hot carriers, leading to energy accumulation due to their inefficient transport and relaxation. Guided by three-phonon scattering phase-space analysis, selective excitation of transverse acoustic (TA) modes can accelerate LO relaxation and promote energy transfer toward heat-carrying acoustic modes. While sustained LO-phonon excitation reduces the thermal conductivity by approximately 12%, additional TA-mode excitation improves heat conduction by approximately 21% compared to the state limited by the LO-phonon bottleneck, surpassing the unexcited value. These findings demonstrate that controlling interbranch energy redistribution can counteract phonon-bottleneck-induced heat accumulation and reveal a working route for active thermal management in laser optical materials through selective control of phonon populations.",
+    "authors": [
+      "Mingde Qu",
+      "Minghuan Song",
+      "Yuxing Wang",
+      "Wudi Wang",
+      "Chenbo Zhang",
+      "Jiamin Quan",
+      "Jun Xu",
+      "Zhongwei Zhang",
+      "Jie Chen"
+    ],
+    "published": "2026-11-11T03:06:23Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.14957",
+    "pdf": "https://arxiv.org/pdf/2611.14957v1"
   }
 }
