@@ -2,6 +2,1360 @@
   "count": 80,
   "papers": [
     {
+      "id": "2611.16757",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.QM",
+      "published": "2026-11-12",
+      "title_en": "A risk-aware individualized blood pressure target to avoid hypotension in surgery",
+      "title_zh": "手术中避免低血压的个体化血压目标",
+      "one_liner": "新方法为手术患者个体化选择血压目标和去甲肾上腺素剂量，在虚拟队列中把低血压风险从25%降到6.9%。",
+      "why": "手术中血压过低很危险，但每个患者的安全血压目标不同。这篇论文提出一种在线方法，根据患者数据推荐个体化的血压目标和药物剂量，在虚拟患者中大幅降低了低血压风险。这展示了数学和医学结合如何提高手术安全，高中生能理解其实际意义。",
+      "sections": {
+        "background": "手术中低血压（平均动脉压低于65毫米汞柱）会增加器官损伤风险。临床上常设定一个固定目标（如70毫米汞柱），但患者个体差异大，固定目标可能不适合所有人。如何为每个患者找到既安全又不过度治疗的目标，是一个难题。",
+        "method": "研究者提出一种在线方法：从患者短期的平均动脉压和去甲肾上腺素给药记录中，拟合一个简化的药代动力学/药效学模型，并用局部高斯近似来传播不确定性到未来的血压读数。他们搜索最低的血压目标，使得在升压阶段后至少一次血压低于65毫米汞柱的预测概率在限定范围内。如果找不到，就交由临床医生决定。",
+        "finding": "在4096名虚拟患者中，该方法为74%的患者推荐了剂量，名义风险为5%。在接受推荐的患者中，只有6.9%出现血压低于65毫米汞柱的情况。而固定目标70毫米汞柱应用于整个虚拟队列时，低血压发生率为25%。",
+        "impact": "这种方法可能帮助医生更安全地管理手术中的血压，减少低血压相关并发症。它展示了个体化医疗的潜力，未来可能集成到临床决策支持系统中。"
+      },
+      "analogy": "就像给每个人定制合脚的鞋，而不是所有人都穿同一个尺码。固定血压目标就像均码鞋，可能不合脚；新方法根据每个人的脚型（生理数据）推荐最合适的尺码（血压目标）。",
+      "terms": [
+        {
+          "t": "平均动脉压",
+          "d": "一个心动周期中动脉血压的平均值，论文中用作监测指标，低于65毫米汞柱视为低血压。"
+        },
+        {
+          "t": "去甲肾上腺素",
+          "d": "一种升压药物，论文中用于维持血压，方法同时推荐其剂量。"
+        },
+        {
+          "t": "药代动力学/药效学模型",
+          "d": "描述药物在体内吸收、分布、代谢和效应的数学模型，论文用简化版预测血压。"
+        },
+        {
+          "t": "局部高斯近似",
+          "d": "一种近似不确定性分布的方法，论文用它传播未来血压的预测不确定性。"
+        },
+        {
+          "t": "虚拟患者",
+          "d": "计算机模拟的患者，论文用4096名虚拟患者评估方法效果。"
+        },
+        {
+          "t": "低血压",
+          "d": "血压过低，论文定义为平均动脉压低于65毫米汞柱，是手术中的风险。"
+        }
+      ],
+      "tags": [
+        "医学",
+        "个体化治疗",
+        "数学建模"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Simon Bur{é}",
+        "Jona Joachim",
+        "Florent Di Meglio"
+      ],
+      "abstract": "We propose an online method for choosing both a blood pressure target and a norepinephrine dose for an individual surgical patient. From a short record of mean arterial pressure (MAP) and norepinephrine delivery, the method fits a reduced pharmacokinetic/pharmacodynamic model and uses a local Gaussian approximation to propagate uncertainty to future MAP readings. It searches for the lowest target for which a bolus and constant infusion keep the predicted probability of at least one MAP reading below 65 mmHg after the rise phase within a prescribed limit. If no such target is found, the decision returns to the clinician. We assess calibration of the predicted minimum MAP on retrospective surgical records under the doses actually administered. In a cohort of 4,096 virtual patients, the method recommended a dose for 74 % of patients at a nominal risk of 5 %. Among the patients receiving a recommendation, 6.9 % had a reading below 65 mmHg. A fixed target of 70 mmHg yielded a rate of 25 % when applied to the full virtual cohort.",
+      "url": "https://arxiv.org/abs/2611.16757",
+      "pdf": "https://arxiv.org/pdf/2611.16757v1"
+    },
+    {
+      "id": "2611.16915",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · math.OC",
+      "published": "2026-11-12",
+      "title_en": "On the minimum energy required to trigger a spike",
+      "title_zh": "触发一次神经脉冲最少需要多少能量？",
+      "one_liner": "用数学模型算出触发神经脉冲所需的最小能量，最佳刺激波形是先超极化再去极化，与实验吻合。",
+      "why": "神经脉冲是大脑传递信息的基本方式，但触发它需要多少能量一直不清楚。这篇论文用数学优化找到了最小能量的刺激波形，竟然和实验测得的乌贼巨轴突最佳刺激一致，展示了理论如何解释生物现象，适合对神经科学和物理感兴趣的高中生。",
+      "sections": {
+        "background": "神经元通过产生动作电位（脉冲）来传递信号。触发脉冲需要给细胞膜一定的电刺激，但什么形状的刺激最节能？实验上曾找到乌贼巨轴突的最佳刺激，但缺乏理论解释。这个问题涉及神经元的兴奋性和能量优化，之前没有系统的数学研究。",
+        "method": "研究者建立了一个三维的基于电导的兴奋性模型，描述神经元膜电位的变化。他们寻找一条状态轨迹，使得在膜端口提供的累积功的峰值最小，同时能到达脉冲区域边界。他们将电压历史近似为实指数函数的和，把问题转化为有限维优化问题，用数值方法求解。",
+        "finding": "找到的最佳电压波形包括一个超极化阶段（膜电位变得更负）紧接着一个去极化阶段（膜电位变正）。这个波形似乎与实验确定的乌贼巨轴突最佳刺激相匹配。这表明最小能量刺激具有特定的两阶段结构。",
+        "impact": "这项研究为理解神经脉冲的能量效率提供了理论框架，可能有助于设计更节能的神经刺激设备，比如脑起搏器。它也连接了数学优化和神经生理学，展示了跨学科方法的力量。"
+      },
+      "analogy": "就像推一辆陷在泥里的车，如果先往后拉一点再猛向前推，可能比直接推更省力。神经元触发脉冲也需要先“蓄力”再“爆发”，这样最节能。",
+      "terms": [
+        {
+          "t": "神经脉冲",
+          "d": "神经元产生的电信号，用于传递信息，论文研究触发它所需的最小能量。"
+        },
+        {
+          "t": "动作电位",
+          "d": "神经脉冲的另一种叫法，是膜电位快速变化的过程。"
+        },
+        {
+          "t": "超极化",
+          "d": "膜电位变得更负的过程，论文发现最佳刺激先有这一阶段。"
+        },
+        {
+          "t": "去极化",
+          "d": "膜电位变得更正的过程，触发脉冲的关键阶段。"
+        },
+        {
+          "t": "电导模型",
+          "d": "描述神经元膜电导变化的数学模型，论文用它模拟神经元。"
+        },
+        {
+          "t": "变分表述",
+          "d": "一种数学优化方法，寻找使某个量最小化的轨迹，论文用它找最小能量。"
+        },
+        {
+          "t": "乌贼巨轴突",
+          "d": "一种常用的神经实验材料，其最佳刺激与论文结果吻合。"
+        }
+      ],
+      "tags": [
+        "神经科学",
+        "能量优化",
+        "数学建模"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Guanchun Tong",
+        "Rodolphe Sepulchre"
+      ],
+      "abstract": "We formulate and numerically study the problem of finding the minimum energy required to trigger a spike in a three-dimensional conductance-based excitable model. The variational formulation seeks a state trajectory that reaches the boundary of the spiking region with the least \\textit{peak} cumulative work supplied through the membrane port. We approximate voltage histories by sums of real exponentials, reducing the problem to a finite-dimensional optimization. The best-found voltage waveform consists of a hyperpolarization phase followed by a depolarization phase, which seems to match the experimentally determined optimal stimulus in squid giant axons.",
+      "url": "https://arxiv.org/abs/2611.16915",
+      "pdf": "https://arxiv.org/pdf/2611.16915v1"
+    },
+    {
+      "id": "2611.17001",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mes-hall",
+      "published": "2026-11-12",
+      "title_en": "Reflection Zeros Set the Scattering Invariant of Finite Majorana Wires",
+      "title_zh": "反射零点决定有限马约拉纳线的散射不变量",
+      "one_liner": "证明零能反射系数符号 Q 计数无反射态，并联系到电导测量，帮助判断马约拉纳模式是否真的存在。",
+      "why": "马约拉纳粒子是它自己的反粒子，听起来像科幻，但它是拓扑量子计算的候选。这篇论文解决怎么在实验上确认它，和高中物理的反射、电导概念挂钩，能让学生看到基础概念如何用于前沿。",
+      "sections": {
+        "background": "马约拉纳模式在超导线的两端出现，可能用来存储不怕干扰的量子信息。但普通束缚态也能在零电压下产生电导峰，冒充马约拉纳信号，所以是否观测到一直有争议。长线的拓扑相有一个反射符号 Q，但有限器件里 Q 到底证明什么不清楚。",
+        "method": "他们理论分析有限长度超导线两端接电极的散射，计算零能反射系数，并推导 Q 与无反射态、电导的关系。",
+        "finding": "Q 计数无反射态：当奇数个无反射态位于复能量下半平面时 Q=-1。在有限线中，这意味着两个马约拉纳模式的分裂小于它们与电极的耦合。等电极时，Q 每次变号都是一个例外点，两个态合并，透射最平坦。零温下，Q=-1 恰好对应零偏压电导超过 e²/h。",
+        "impact": "这给出了从电导测量读取拓扑不变量的方法，帮助实验判断马约拉纳器件，推动拓扑量子计算的可信验证。"
+      },
+      "analogy": "就像检查一根绳子两端有没有打结：普通结和特殊结看起来都鼓个包。这篇论文找到一个更准的检查方法，看绳子中间波怎么传，从而区分真假。",
+      "terms": [
+        {
+          "t": "马约拉纳模式",
+          "d": "超导线中零能量的激发，自己是自己的反粒子。论文研究如何确认它存在。"
+        },
+        {
+          "t": "拓扑相",
+          "d": "由整体性质而非局部细节决定的物质状态。论文用 Q 标记拓扑相。"
+        },
+        {
+          "t": "反射系数",
+          "d": "波遇到界面时反射回来的比例。论文关注零能电子的反射符号 Q。"
+        },
+        {
+          "t": "电导",
+          "d": "衡量电流通过能力的物理量。论文把 Q 和零偏压电导联系起来。"
+        },
+        {
+          "t": "无反射态",
+          "d": "从一个电极进入、完全从另一个电极出去的波。论文证明 Q 计数这类态。"
+        },
+        {
+          "t": "例外点",
+          "d": "非厄米系统中两个本征值合并的点。论文中 Q 变号处出现例外点。"
+        },
+        {
+          "t": "e²/h",
+          "d": "电导量子，约 1/25812 西门子。论文用零偏压电导是否超过它判断 Q=-1。"
+        }
+      ],
+      "tags": [
+        "量子计算",
+        "超导",
+        "拓扑物理"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Alex Krasnok"
+      ],
+      "abstract": "Majorana modes, zero-energy excitations of superconducting wires that are their own antiparticles, could store quantum information protected from local noise. In transport experiments, however, ordinary bound states mimic their signature, a conductance peak at zero voltage, and whether Majorana modes have been observed remains debated. A sign, $Q$, of the electron reflection at zero energy marks the topological phase of a long wire, but what $Q$ certifies in a finite device has been unclear. Here we show for the first time that $Q$ counts reflectionless states, waves that enter through one contact and leave entirely through the other: $Q=-1$ when an odd number of them lie in the lower half of the complex energy plane. In a finite wire this means that the two Majorana modes are split by less than their coupling to the contacts. With equal contacts, every sign change of $Q$, including the bulk topological transition, is an exceptional point at which two such states merge and transmission is maximally flat. At zero temperature, $Q=-1$ exactly when the zero-bias conductance measured at a contact exceeds $e^2/h$. These results show what transport can certify about a Majorana device and how to read the invariant from conductance.",
+      "url": "https://arxiv.org/abs/2611.17001",
+      "pdf": "https://arxiv.org/pdf/2611.17001v1"
+    },
+    {
+      "id": "2611.17011",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-11-12",
+      "title_en": "Random Exploration is Random",
+      "title_zh": "随机探索真的是随机的吗？",
+      "one_liner": "分析1392人超127万次选择，发现即使神经网络模型也解释不了探索时的随机性，说明随机探索确实很随机。",
+      "why": "这篇论文研究的是我们每天做选择时的“探索”行为——比如尝试新餐厅还是去常去的店。它用大规模数据和机器学习模型，回答了“随机探索是不是真的随机”这个有趣问题，和心理学、经济学都相关，高中生能从中看到科学如何研究人类行为。",
+      "sections": {
+        "background": "决策时我们常要在“利用”已知好选项和“探索”未知选项之间平衡。一种探索策略是随机探索，即选择变得更多变、更不依赖当前最佳选项。但之前不清楚这种多变是真正的随机，还是背后有传统认知模型没捕捉到的确定性规律。",
+        "method": "研究者用了Horizon Task，一个测试探索行为的经典实验。他们汇总了1392名参与者、超过127万次试验的数据。在这个任务中，未来选择越多，探索越有价值，选择的多变性也越高。他们用更复杂的神经网络模型来尝试从这种多变性中找出确定性结构，并与传统模型对比。",
+        "finding": "虽然神经网络整体上比传统模型拟合得更好，但在长视野（未来选择多）条件下，选择仍然比短视野条件下更不可预测。这说明模型表达能力的限制不能完全解释随机探索带来的多变性，随机探索在很大程度上确实是随机的。",
+        "impact": "这项研究挑战了“所有行为都有隐藏确定性规律”的观点，表明随机性可能是探索行为的真实成分。这可能会影响我们如何建立人类决策模型，以及如何理解大脑在探索时的机制。"
+      },
+      "analogy": "就像你决定周末是去常去的公园还是探索新地方。即使你用了很复杂的策略（比如考虑天气、心情），最终的选择可能还是有一部分是真正随机的，就像掷骰子一样，不是所有事情都能用规则完全预测。",
+      "terms": [
+        {
+          "t": "随机探索",
+          "d": "一种探索策略，选择变得更多变、更不依赖当前最佳选项，在这篇论文里是核心研究对象。"
+        },
+        {
+          "t": "利用",
+          "d": "选择已知的好选项以获取确定回报，与探索相对，是决策平衡的另一端。"
+        },
+        {
+          "t": "Horizon Task",
+          "d": "一种实验任务，通过改变未来选择的数量来研究探索行为，论文用它收集数据。"
+        },
+        {
+          "t": "神经网络模型",
+          "d": "一种机器学习模型，能拟合复杂行为，论文用它检验能否从数据中找出确定性结构。"
+        },
+        {
+          "t": "传统认知模型",
+          "d": "以往用来描述决策的简单数学模型，论文将其与神经网络对比。"
+        },
+        {
+          "t": "选择变异性",
+          "d": "选择的不一致程度，随机探索时变异性增加，论文测量了这一点。"
+        }
+      ],
+      "tags": [
+        "决策",
+        "探索",
+        "机器学习"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Yingkang Luo",
+        "Hua-Dong Xiong",
+        "Hanbo Xie",
+        "Caroline Phelps",
+        "Madeline Harms",
+        "Ryan Smith",
+        "James Waltz",
+        "Robert Wilson"
+      ],
+      "abstract": "Decision making often requires balancing exploitation of familiar options with exploration of uncertain alternatives. One strategy for exploration is random exploration, in which choices become more variable and less tied to the option that currently appears best. However, it remains unclear whether this variability reflects genuine stochasticity or instead a deterministic structure that traditional cognitive models fail to capture. We examined this question using the Horizon Task in an aggregated dataset of 1,392 participants completing over 1,270,695 trials. In this task, exploration becomes more valuable when participants have more future choices, and choice variability increases under longer horizons. We tested whether more expressive neural network models could recover deterministic structure from this additional variability. Although neural networks provided better overall fits to behavior than the traditional model, long-horizon choices remained consistently less predictable than short-horizon choices. These findings show that limited model expressiveness cannot fully account for the increased variability associated with random exploration, suggesting random exploration truly is substantially random.",
+      "url": "https://arxiv.org/abs/2611.17011",
+      "pdf": "https://arxiv.org/pdf/2611.17011v1"
+    },
+    {
+      "id": "2611.17042",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-11-12",
+      "title_en": "Infrastructure for Verifiable AI: Where Proof Costs Go and How Hardware Can Help",
+      "title_zh": "可验证 AI 的证明成本与硬件加速",
+      "one_liner": "测量零知识证明生成 AI 计算的开销，发现主要成本随证明系统和输入长度变化，并指出硬件加速方向。",
+      "why": "AI 服务说它按规矩算了，你怎么信？这篇论文讨论用密码学证明来验证 AI 计算，就像给 AI 发个“诚信证书”。高中生能从中看到数学、密码学和硬件的交叉，也能理解信任是怎么被“算”出来的。",
+      "sections": {
+        "background": "用户需要确信 AI 服务没有偷换模型或数据，但直接公开模型会泄露隐私。零知识证明可以证明计算正确而不暴露输入，但生成证明非常慢，尤其对大型 transformer 模型，整体成本不清楚，硬件加速往往只测单个密码操作。",
+        "method": "他们建立一个四层框架，把可验证 AI 工作负载、证明系统、密码学内核和硬件平台连起来，综述文献并实测六种证明系统和七种内核，找出实际中哪些成本占主导。",
+        "finding": "主要成本随证明系统和输入长度变化。在低秩微调中，固定权重的承诺打开成本在输入长度 64 到 2048 时几乎不变，而中间值的成本增长。一个 130 亿参数微调配置超出 40 GB 显卡容量，但能在 80 GB 设备上完成。内核分析还发现指令发射和同步限制，只靠带宽模型会漏掉。",
+        "impact": "这为设计更高效的验证硬件指明方向，可能让 AI 服务在保护隐私的同时提供可验证的诚信保证，推动可信 AI 基础设施。"
+      },
+      "analogy": "就像你请人算账，不想看他的账本，但想确认他没算错。零知识证明就是让他给你一个密码学收据，你验算收据就知道账对了。这篇论文研究开收据要花多少功夫。",
+      "terms": [
+        {
+          "t": "零知识证明",
+          "d": "一种密码学方法，能证明某个陈述为真而不泄露秘密。论文用它验证 AI 计算正确。"
+        },
+        {
+          "t": "Transformer",
+          "d": "当前大语言模型的主流架构，基于注意力机制。论文关注这类模型的可验证性。"
+        },
+        {
+          "t": "证明系统",
+          "d": "生成和验证零知识证明的具体算法方案。论文比较了六种证明系统的成本。"
+        },
+        {
+          "t": "密码学内核",
+          "d": "证明系统中反复使用的基础运算，如哈希、承诺。论文实测七种内核的耗时。"
+        },
+        {
+          "t": "承诺",
+          "d": "密码学中把数据锁住但 later 可打开验证的机制。论文测量打开权重承诺的成本。"
+        },
+        {
+          "t": "低秩微调",
+          "d": "一种只训练少量参数的模型微调方法。论文用它作为测试场景。"
+        },
+        {
+          "t": "指令发射",
+          "d": "处理器每周期取出并开始执行指令的过程。论文发现它可能成为瓶颈。"
+        },
+        {
+          "t": "带宽",
+          "d": "单位时间能传输的数据量。论文指出只考虑带宽会漏掉其他瓶颈。"
+        }
+      ],
+      "tags": [
+        "AI 安全",
+        "密码学",
+        "硬件加速"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Yihan Xia",
+        "Wenxin Xu",
+        "Taotao Wang"
+      ],
+      "abstract": "Users of artificial intelligence services, including those powered by large language models and other transformer-based models, need assurance that inference and training follow the declared computation without exposing private models or data. Zero-knowledge proofs can provide this assurance, but proof generation remains expensive. Hardware acceleration research often reports gains for individual cryptographic operations, leaving their effect on the full cost of proving neural-network workloads, particularly large transformer models, unclear. We introduce a four-layer framework linking verifiable AI workloads, proof systems, cryptographic kernels and hardware platforms, use it to review the literature, and add original measurements of six provers and seven kernels to identify which costs matter in practice. Our measurements show that the dominant cost changes with the proof system and input length. In low-rank fine-tuning, the cost of opening commitments to fixed model weights remains nearly constant across input lengths from 64 to 2048, while the work associated with intermediate values grows. A 13-billion-parameter fine-tuning configuration exceeds the capacity of a 40-gigabyte graphics processor but completes on an 80-gigabyte device, showing why capacity must be assessed alongside execution time. Our kernel profiling further identifies instruction issue and synchronization limits that a bandwidth-only model misses. We use these findings to assess graphics processors, reconfigurable logic, custom chips and existing artificial intelligence accelerators. The resulting research agenda connects proof-friendly numeric formats, reuse of fixed-weight commitments, heterogeneous execution and shared benchmarks to the measured bottlenecks. Effective acceleration requires selecting hardware and proof-system optimizations around the cost profile of the target workload.",
+      "url": "https://arxiv.org/abs/2611.17042",
+      "pdf": "https://arxiv.org/pdf/2611.17042v1"
+    },
+    {
+      "id": "2611.17108",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.LG",
+      "published": "2026-11-12",
+      "title_en": "LazyWeights: Decode-on-Demand Edge LLMs",
+      "title_zh": "懒权重：让边缘设备按需解码大模型",
+      "one_liner": "提出 LazyWeights 方法，压缩大模型权重并在需要时解码，让边缘设备跑大模型更快更省电。",
+      "why": "高中生天天用手机语音助手、翻译软件，背后是大模型在跑。这篇论文讲怎么让大模型在内存小的设备上也能跑得动，和日常体验直接相关。它用到的压缩、解码思想，课本里信息编码的影子也能看到。",
+      "sections": {
+        "background": "大模型通常要几十 GB 内存，手机、开发板根本装不下。常见做法是把权重压成低精度整数，但现有格式对每个整数码用同样多的比特，而实际码的分布很不均匀，浪费空间。边缘设备要么内存不够，要么带宽不够，跑起来又慢又费电。",
+        "method": "他们保留现有压缩格式，但调整 GPTQ 量化方法让码更集中，再用霍夫曼编码无损压缩，并在内存和缓存之间加一个小解码单元，按需解码。GPU 计算部分不用改，内存只搬运压缩后的字节。",
+        "finding": "在 1% 和 3.5% 困惑度预算下，压缩后的模型比最好的 llama.cpp 格式小 5.7% 到 31.4%。一个 0.21 平方毫米的专用解码芯片在 7 纳米工艺下，把 Orin 设备的延迟和能耗分别降低最多 36% 和 38%。在 Nano 上，每 token 时间减少 58% 到 64%，能耗减少 53% 到 57%，流式运行 Mistral-7B 快 6.6 倍。",
+        "impact": "这意味着以后手机、摄像头、机器人等边缘设备能本地跑更大的模型，不用都传到云端，响应更快、隐私更好。也可能推动专用解码硬件的发展。"
+      },
+      "analogy": "就像搬家时把衣服抽真空压缩，箱子装得更多；到了新家要穿哪件再拆开。LazyWeights 就是给模型权重抽真空，用的时候再解压。",
+      "terms": [
+        {
+          "t": "大语言模型（LLM）",
+          "d": "能理解和生成文字的 AI 模型，比如聊天机器人。论文要把它塞进小设备。"
+        },
+        {
+          "t": "边缘设备",
+          "d": "指手机、开发板等靠近用户的设备，内存和算力有限。论文的目标平台。"
+        },
+        {
+          "t": "量化",
+          "d": "把模型权重从高精度小数换成低精度整数，减小体积。论文保留量化格式但改进编码。"
+        },
+        {
+          "t": "霍夫曼编码",
+          "d": "一种无损压缩方法，给出现多的码短编码、少的码长编码。论文用它压缩量化后的权重。"
+        },
+        {
+          "t": "困惑度",
+          "d": "衡量语言模型预测下一个词的不确定程度，越低越好。论文用困惑度预算控制压缩损失。"
+        },
+        {
+          "t": "ASIC",
+          "d": "专用集成电路，为特定任务定制的芯片。论文设计了一个解码专用小芯片。"
+        },
+        {
+          "t": "DRAM",
+          "d": "动态随机存储器，就是常见的内存。论文要减少 DRAM 和缓存之间的数据搬运。"
+        },
+        {
+          "t": "比特",
+          "d": "信息的最小单位，0 或 1。论文用比特数衡量压缩后权重的大小。"
+        }
+      ],
+      "tags": [
+        "大模型",
+        "边缘计算",
+        "芯片设计"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Arnab Sanyal",
+        "Gourav Datta",
+        "Sandeep P. Chinchali"
+      ],
+      "abstract": "Memory decides which LLMs an edge device runs, and how fast: capacity on a $4$ GB Jetson Nano, bandwidth on an $8$ GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, $\\texttt{llama.cpp}$'s K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. $\\texttt{LazyWeights}$ keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At $1\\%$ and $3.5\\%$ perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are $5.7-31.4\\%$ smaller than the best $\\texttt{llama.cpp}$ format. A bit-exact $0.21$ mm$^2$ ASIC decoder unit ($1$ GHz, $7$ nm) cuts Orin latency and energy per token by up to $36\\%$ and $38\\%$ ($54\\%$ and $44\\%$ with prompt-lookup speculation). On the Nano, $\\texttt{LazyWeights}$ needs $58-64\\%$ less time and $53-57\\%$ less energy per token than CPU $\\texttt{llama.cpp}$, and runs a streamed Mistral-7B 6.6$\\times$ faster at $3.89$ bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).",
+      "url": "https://arxiv.org/abs/2611.17108",
+      "pdf": "https://arxiv.org/pdf/2611.17108v1"
+    },
+    {
+      "id": "2611.17130",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · physics.chem-ph",
+      "published": "2026-11-12",
+      "title_en": "Library of peptides: Analysis of a complex reactive mixture with the use of statistical physics and inference",
+      "title_zh": "用统计物理从 13 个重叠峰里解出 81 种肽的浓度",
+      "one_liner": "把蛋白质折叠的 Potts 模型和化学平衡结合，从部分光谱数据推断动态组合肽库中全部 81 种肽的浓度，发现侧向耦合主导组装能量。",
+      "why": "化学家能造出含几百种分子的混合物，却很难知道里面每种有多少。这篇论文用统计物理和少量光谱数据‘反推’组成，像破案一样。适合对化学、数据分析和交叉学科感兴趣的同学。",
+      "sections": {
+        "background": "动态组合库（DCL）是让分子自组装成大量不同产物的混合物，可用于筛选药物或材料。但产物浓度分布复杂，色谱和光谱信号严重重叠，传统解卷积忽略反应网络导致的浓度关联，难以准确解析。如何从有限数据中还原全貌是分析化学的挑战。",
+        "method": "作者借鉴蛋白质折叠的 Potts 模型，把每种肽的化学势写成 building block（构件）自身能量和相邻构件耦合项的函数。结合质量作用定律，预测整个反应网络的平衡浓度。然后用这些浓度计算光谱信号，与实验测得的 13 个重叠峰拟合，推断模型参数。",
+        "finding": "对含 81 种肽的 DCL，仅用 13 个重叠峰就解析出全部组成。拟合显示侧向耦合（相邻构件相互作用）主导组装能量，而非单个构件自身能量。方法可扩展到其他自组装体系。",
+        "impact": "提供了一种从部分数据解析复杂混合物的通用框架，可能加速动态组合库在药物发现和材料筛选中的应用。也展示了统计物理概念如何解决化学分析问题。"
+      },
+      "analogy": "就像只听到合唱团里 13 个模糊的和声，却能推断出 81 个歌手各自唱得多大声——因为你知道他们按乐谱（反应网络）互相配合，用模型反推每个人的音量。",
+      "terms": [
+        {
+          "t": "动态组合库",
+          "d": "让构件可逆地自组装成大量不同产物的混合物。论文用它作为模型体系，包含 81 种肽。"
+        },
+        {
+          "t": "Potts 模型",
+          "d": "统计物理中描述多个状态相互作用的模型，原用于蛋白质折叠。论文用它把肽的化学势参数化。"
+        },
+        {
+          "t": "质量作用定律",
+          "d": "化学反应平衡时产物和反应物浓度的关系。论文用它从化学势计算平衡浓度。"
+        },
+        {
+          "t": "解卷积",
+          "d": "从重叠信号中分离出各个组分贡献的方法。论文用模型拟合代替传统解卷积。"
+        },
+        {
+          "t": "化学势",
+          "d": "描述物质进入或离开某相趋势的热力学量。论文把每种肽的化学势写成构件能量和耦合项。"
+        },
+        {
+          "t": "侧向耦合",
+          "d": "肽链中相邻构件之间的相互作用能。论文发现它主导组装能量。"
+        },
+        {
+          "t": "光谱重叠峰",
+          "d": "不同分子信号在谱图上叠在一起无法直接区分。论文用 13 个重叠峰反推 81 种浓度。"
+        }
+      ],
+      "tags": [
+        "化学",
+        "统计物理",
+        "数据分析"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Laura Messio",
+        "Taleen Peker",
+        "Roba Moumné",
+        "Hélène Berthoumieux"
+      ],
+      "abstract": "Self-assembled mixtures enable the exploration of vast chemical diversity, yet characterizing the hundreds of coexisting species they contain remains a major challenge. Standard analytical techniques such as chromatography and spectroscopy produce overlapping signals that cannot be resolved by conventional deconvolution methods, which neglect the concentration correlations imposed by the reactive network. Here, we introduce a framework that bridges statistical physics and analytical chemistry to deconvolute complex self-assembled mixtures from partial spectral data. Inspired by Potts models of protein folding, we express the chemical potential of each compound as a function of a reduced set of parameters-intrinsic building-block energies and pairwise coupling terms between neighboring building blocks in the sequence. Coupling this model with the law of mass action yields equilibrium concentrations across the entire reactive network. The model parameters can be infered by fitting predicted spectroscopic signals to experimentally measured partial data. We demonstrate this approach using dynamic combinatorial libraries (DCLs) of peptides as a model system. Applied to a DCL of 81 peptides, our method resolves the full mixture composition from just 13 overlapping peaks, revealing that lateral couplings dominate the assembly energetics. Beyond DCLs, this strategy offers a general route for analyzing self-assembled systems from partial data and extends naturally to target-driven identification of high-affinity binders.",
+      "url": "https://arxiv.org/abs/2611.17130",
+      "pdf": "https://arxiv.org/pdf/2611.17130v1"
+    },
+    {
+      "id": "2611.17222",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-12",
+      "title_en": "Circular phonons generate negligible magnetization in insulators",
+      "title_zh": "圆偏振声子产生的磁化其实小到可以忽略",
+      "one_liner": "用中红外激光驱动碳化硅晶体中的圆偏振声子，内部偏振旋转看似巨大，但外部 stray 磁场测量表明真实磁化小于 0.001 特斯拉，几乎为零。",
+      "why": "科学新闻常报道‘用光让材料产生磁性’，但这篇论文用直接测量外部磁场的办法，澄清了一个争议：之前看到的巨大信号可能不是真磁性。它教我们如何区分假象和真实，适合喜欢物理和批判性思维的同学。",
+      "sections": {
+        "background": "圆偏振声子是指晶格原子做圆周运动的一种集体振动。理论预言它可能产生合成磁场或真实磁化，实验也观测到激光驱动下材料内部偏振旋转变大，似乎对应强磁性。但偏振旋转也可能来自非线性光学效应或法拉第效应的误读，导致争议。",
+        "method": "作者用 5 MV/cm 的中红外激光脉冲驱动碳化硅晶体，同时测量两种信号：一是材料内部偏振旋转（用探测光穿过样品），二是样品外部附近的 stray 磁场（用靠近的法拉第探测器）。通过对比内部信号和外部磁场，判断真实磁化大小。",
+        "finding": "内部偏振旋转确实很大，若按某些假设可对应高达 0.3 T 的磁化；但外部 stray 磁场测量给出磁化上限仅 0.001 T，比内部推断小几百倍。说明内部偏振旋转主要不是由真实磁化引起，圆偏振声子产生的磁化可忽略。",
+        "impact": "提醒领域内重新审视‘声子磁性’实验的解释，避免把光学假象当成新物态。对想用声子控制磁性的应用来说，可能需要寻找其他机制。也展示了直接测量 stray 磁场是判别真磁性的可靠手段。"
+      },
+      "analogy": "就像看一个旋转的陀螺，内部看起来转得飞快，但用手在外部感受不到任何风——说明它并没有带动周围空气。内部偏振旋转大不代表外部有真实磁场。",
+      "terms": [
+        {
+          "t": "圆偏振声子",
+          "d": "晶格原子做圆周运动的一种集体振动模式。论文用激光驱动它，检验它是否产生真实磁化。"
+        },
+        {
+          "t": "法拉第效应",
+          "d": "光在磁场中传播时偏振方向发生旋转的现象。论文用偏振旋转来推断磁化，但需排除其他来源。"
+        },
+        {
+          "t": "stray 磁场",
+          "d": "磁性材料在外部空间产生的磁场。论文直接测量样品外部的 stray 磁场来判断真实磁化。"
+        },
+        {
+          "t": "磁化",
+          "d": "单位体积内磁矩的密度，用 μ0M 表示（μ0 是真空磁导率）。论文测得 μ0M < 0.001 T。"
+        },
+        {
+          "t": "非线性光学效应",
+          "d": "强光下材料产生的非线性的偏振变化，可能冒充磁光信号。论文指出这是混淆因素之一。"
+        },
+        {
+          "t": "中红外驱动",
+          "d": "用波长在中红外波段的强激光脉冲激发声子。论文用 5 MV/cm 的场强驱动碳化硅。"
+        }
+      ],
+      "tags": [
+        "物理",
+        "磁性",
+        "光学"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "C-C. Wu",
+        "M. Buzzi",
+        "A. Iudica",
+        "R. Romero",
+        "G. De Vecchi",
+        "R. Merlin",
+        "A. Cavalleri"
+      ],
+      "abstract": "The optical excitation of circular phonons has opened up non-equilibrium phenomena with no equilibrium counterparts, ranging from the generation of synthetic magnetic fields to the control of topological order or the manipulation of ferroaxial states. In this area, significant controversy has arisen on whether sizeable \"true\" magnetizations accompany circular phonons. Several confounding factors cloud the interpretation of the experiments, which are based on probing polarization rotation in the driven material. These range from the interpretation of the Faraday effect in non-equilibrium conditions to spurious nonlinear optical contributions in pump probe experiments. Here we resolve these ambiguities by measuring both polarization rotation inside the driven material and the stray magnetic field generated outside it with a proximate Faraday detector. For a 5 MV/cm mid-infrared drive, we observe a colossal polarization rotation inside a driven SiC crystal, similar to what was reported in previous work. Depending on the assumptions made, this could correspond to magnetizations as high as $μ_0 M = 0.3 T$ or as low as 4 $μT$. However, when measuring the magnetic stray field outside the driven sample we unambiguously determine that the magnetization in SiC is negligibly small ($μ_0 M \\lt 0.001 T$).",
+      "url": "https://arxiv.org/abs/2611.17222",
+      "pdf": "https://arxiv.org/pdf/2611.17222v1"
+    },
+    {
+      "id": "2611.17237",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-11-12",
+      "title_en": "Permutation patterns and higher connectivity in inversion graphs",
+      "title_zh": "排列的逆序图：高连通性需要多少逆序？",
+      "one_liner": "论文证明：若排列的逆序图是 k-连通的，则逆序数至少为 (k+1)n/2 - C，并刻画了使界改进的排列模式。",
+      "why": "排列和逆序是高中组合数学内容，逆序图将排列转化为图，直观有趣。论文给出逆序数与图连通性的定量关系，并刻画避免某些模式时界更优，展示组合数学中‘模式避免’的典型思路，适合对排列组合感兴趣的高中生。",
+      "sections": {
+        "background": "排列的逆序图以排列元素为顶点，逆序对为边。图的连通性反映排列的‘混合’程度。一般 k-连通图至少有 kn/2 条边，但逆序图受排列结构限制，可能突破此下界。此前 Linusson 和 Verkama 对 1324-避免排列得到 2n-C 的下界，但未系统研究。",
+        "method": "作者利用排列模式避免理论，分析逆序图的结构。通过组合论证，证明若逆序图 k-连通，则逆序数至少 (k+1)n/2 - C。进一步，刻画使界改进为 kn-C 的排列模式集合为 Av(321,2341,4123)，即避免这三个模式的排列。",
+        "finding": "得到逆序图 k-连通时逆序数下界 (k+1)n/2 - C，优于一般图的 kn/2。当排列避免 321、2341、4123 时，下界提升到 kn-C。该模式集合与 k≥2 无关。",
+        "impact": "该工作建立了排列模式与图连通性的定量联系，推广了 Linusson-Verkama 的结果，并为逆序图的极值问题提供新工具。可能启发对其它图参数与排列模式的关联研究。"
+      },
+      "analogy": "就像一群人排队，逆序图记录谁排在谁前面但顺序颠倒。如果这个关系网很‘连通’（删掉少数人仍连通），则颠倒次数必须足够多。论文找出最少颠倒次数的精确估计，并发现某些排队模式需要更多颠倒。",
+      "terms": [
+        {
+          "t": "逆序图",
+          "d": "以排列元素为顶点，若 i<j 但 π(i)>π(j) 则连边的图。论文研究其连通性与逆序数的关系。"
+        },
+        {
+          "t": "k-连通",
+          "d": "删除任意 k-1 个顶点后图仍连通。论文要求逆序图 k-连通，推出逆序数下界。"
+        },
+        {
+          "t": "逆序数",
+          "d": "排列中满足 i<j 但 π(i)>π(j) 的对数。论文给出其与连通度的定量关系。"
+        },
+        {
+          "t": "排列模式",
+          "d": "一个排列是另一个排列的模式，若后者包含与前者同构的子序列。论文刻画使界改进的模式。"
+        },
+        {
+          "t": "模式避免",
+          "d": "排列不包含某个模式作为子序列。论文研究避免特定模式时逆序数下界的改进。"
+        },
+        {
+          "t": "Av(321,2341,4123)",
+          "d": "同时避免模式 321、2341、4123 的排列集合。论文证明这些排列使下界提升到 kn-C。"
+        }
+      ],
+      "tags": [
+        "组合数学",
+        "排列模式",
+        "图连通性"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Emil Verkama"
+      ],
+      "abstract": "We prove that any permutation $π\\in S_n$ whose inversion graph is $k$-connected has at least $\\frac{k+1}{2}n - C$ inversions, where $C$ depends only on $k$. In particular, inversion graphs beat the general lower bound $\\frac{kn}{2}$ for the number of edges in a $k$-connected graph. Furthermore, we characterize the permutation patterns $σ$ having the property that if $π$ avoids $σ$, then the bound improves to $kn - C$. The collection of patterns is $\\mathrm{Av}(321, 2341, 4123)$, and it is independent of $k \\geq 2$. This work is motivated by a result of Linusson and Verkama (2025) that can be reinterpreted as stating that any $1324$-avoiding permutation whose inversion graph satisfies a certain weaker notion of $2$-connectivity must have at least $2n - C$ inversions. Our final result gives a characterization of the patterns having this stronger property.",
+      "url": "https://arxiv.org/abs/2611.17237",
+      "pdf": "https://arxiv.org/pdf/2611.17237v1"
+    },
+    {
+      "id": "2611.17252",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CC",
+      "published": "2026-11-12",
+      "title_en": "Sowing the Seeds of Intractability: Kalah is PSPACE-complete",
+      "title_zh": "播棋游戏 Kalah 的计算复杂度被证明为 PSPACE 完全",
+      "one_liner": "论文证明：在棋盘大小可变时，判断 Kalah 游戏先手能否必胜是 PSPACE 完全问题，即计算上极难。",
+      "why": "Kalah 是真实存在的播棋类游戏，规则简单，但论文揭示其计算复杂度极高。高中生能亲手玩，感受‘简单规则产生复杂计算’，理解计算机科学中‘难’的含义，与算法课内容直接挂钩。",
+      "sections": {
+        "background": "Kalah 是两人播棋游戏，计算机已解出若干标准尺寸开局，但棋盘变大后复杂度未知。理论计算机科学用 PSPACE 完全刻画‘需要多项式空间才能判定’的问题，类似棋类游戏如围棋、黑白棋的复杂度研究。此前 Kalah 的复杂度悬而未决。",
+        "method": "作者将 Kalah 推广为每边坑数可变的游戏，并引入中间问题‘Line Kalah’——在一条线上移动石子，石子出线即消失，爱丽丝需在鲍勃捕获前拯救目标坑。然后用量化布尔公式（QBF）归约到 Line Kalah，再归约到 Kalah，证明其 PSPACE 困难。",
+        "finding": "证明 Kalah 的胜负判定是 PSPACE 完全，即使双方存储为空、爱丽丝先手，且无论采用哪种捕获规则或奖励规则都成立。这意味着不存在高效算法（除非 P=PSPACE），且硬实例需要指数级时间。",
+        "impact": "该结果终结了 Kalah 复杂度的开放问题，为播棋类游戏的计算难度提供基准。也可能启发对其它播棋游戏复杂度的研究，并帮助理解‘简单规则为何导致计算爆炸’。"
+      },
+      "analogy": "就像搭积木：几块积木能搭出稳定结构，但积木数量增多，预测能否搭成目标形状就变得极其困难，需要尝试海量组合。Kalah 的棋盘变大后，每一步选择都引发连锁反应，预测胜负如同大海捞针。",
+      "terms": [
+        {
+          "t": "PSPACE 完全",
+          "d": "一类计算问题，用多项式空间可解，且任何此类问题都能归约到它，被认为极难。论文用它刻画 Kalah 胜负判定的复杂度。"
+        },
+        {
+          "t": "归约",
+          "d": "将一个问题转化为另一个问题的过程，若后者可解则前者可解。论文用量化布尔公式归约到 Line Kalah，再归约到 Kalah。"
+        },
+        {
+          "t": "量化布尔公式",
+          "d": "带‘任意’和‘存在’量词的逻辑公式，判定其真假是 PSPACE 完全问题。论文用它作为归约起点。"
+        },
+        {
+          "t": "Line Kalah",
+          "d": "论文设计的中间游戏，在一条线上移动石子，石子出线消失，爱丽丝需拯救目标坑。作为归约的桥梁。"
+        },
+        {
+          "t": "播棋",
+          "d": "一类两人游戏，玩家从坑中取石子逐个播撒。Kalah 是其中一种，论文研究其计算复杂度。"
+        },
+        {
+          "t": "多项式空间",
+          "d": "计算机解决问题所需内存随输入规模多项式增长。PSPACE 完全问题被认为需要大量内存。"
+        }
+      ],
+      "tags": [
+        "计算复杂性",
+        "组合游戏",
+        "PSPACE"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Ethan Dickey",
+        "Ethan Mader"
+      ],
+      "abstract": "Kalah is a classic two-player game in the mancala family of sowing games. Computers have solved several standard-size starting positions, but the complexity of the game on boards of growing size has remained open. We study the natural generalization in which the number of pits per side is part of the input and an arbitrary position is given, with the stone counts given in unary. We show that deciding whether a designated player can force a win from such a position is PSPACE-complete. The hard positions have Alice to move first and both stores initially empty. The same positions are hard under either common convention for capture opposite an empty pit, and with or without the bonus rule, which gives a player another turn when the last stone is sown into their own store. We introduce Line Kalah as an intermediate problem, a game on a line in which stones that leave the line effectively disappear and Alice must save each of her target pits before Bob captures it, and we reduce quantified Boolean formulas to it. The reduction uses a set of sequential timer piles whose last stones approach a group of targets, forcing Alice to choose between two captures in order to set the truth value of a variable, and a final capture gadget to test a clause chosen by Bob (only one is needed adversarially). Since either player may move any pile at any time, the stages are placed so that premature timer firings protect earlier potential targets. For a true formula, Alice's strategy against arbitrary opposing play either gains enough time to save the remaining targets (after Bob deviates from the intended play) or reaches the final test with a correctly encoded, protected input. Finally, the line positions are embedded in Kalah with both stores empty. A separate Bob pit holds the score adjustment, so the winner takes a strict majority of the stones.",
+      "url": "https://arxiv.org/abs/2611.17252",
+      "pdf": "https://arxiv.org/pdf/2611.17252v1"
+    },
+    {
+      "id": "2611.17259",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-11-12",
+      "title_en": "Triameter, distance packings, and vertex connectivity",
+      "title_zh": "图的 triameter 上界：用距离填充和点连通度刻画",
+      "one_liner": "论文证明图的 triameter 被 k-填充数和点连通度线性控制，并确认 Das 与 Abdioğlu 的猜想。",
+      "why": "图论是高中信息学竞赛常见内容，triameter 是三个顶点间距离和的最大值，概念直观。论文用填充和连通度给出上界，并解决猜想，展示组合数学中‘猜想-证明’的模式，适合对图论感兴趣的高中生。",
+      "sections": {
+        "background": "triameter 是图中任意三个顶点间两两距离之和的最大值，用于衡量图的‘分散程度’。此前 Das 和 Abdioğlu 猜想 triameter 被顶点数和最小度线性控制，但未证明。距离填充和点连通度是图论基本概念，但它们与 triameter 的联系尚不明确。",
+        "method": "作者将图投影到蜘蛛图（一个中心点连若干路径）或单圈图，保持三个指定顶点间距离不变。利用投影后的结构，用 k-填充数（两两距离至少 k 的顶点集大小）和点连通度建立 triameter 的线性上界，并构造极图证明紧性。",
+        "finding": "对任意正整数 k，triameter 被 k-填充数的线性函数控制，且对所有参数紧。作为推论，确认 Das-Abdioğlu 猜想：triameter 不超过顶点数加最小度的线性函数。还给出给定顶点数和点连通度时 triameter 的最大值及极图。",
+        "impact": "该工作统一了 triameter 的多个上界，解决了猜想，并引入投影工具可能用于其它图参数研究。对理解图的结构与距离关系有理论意义。"
+      },
+      "analogy": "就像在一个城市群中，任意三个城市间两两距离之和的最大值，受限于城市分布的稀疏程度（填充数）和道路连通性（连通度）。论文找到这种限制的精确数学表达。",
+      "terms": [
+        {
+          "t": "triameter",
+          "d": "图中任意三个顶点间两两距离之和的最大值，衡量图的分散程度。论文研究其上界。"
+        },
+        {
+          "t": "k-填充数",
+          "d": "图中两两距离至少为 k 的顶点集合的最大大小。论文用它线性控制 triameter。"
+        },
+        {
+          "t": "点连通度",
+          "d": "使图不连通所需删除的最少顶点数，反映图的连通稳健性。论文用它刻画 triameter 上界。"
+        },
+        {
+          "t": "蜘蛛图",
+          "d": "一个中心顶点连接若干条路径的图。论文将一般图投影到蜘蛛图以保持三点距离。"
+        },
+        {
+          "t": "单圈图",
+          "d": "恰有一个圈的连通图。论文用其作为投影目标之一。"
+        },
+        {
+          "t": "极图",
+          "d": "达到给定参数下 triameter 最大值的图。论文描述了这些图的结构。"
+        }
+      ],
+      "tags": [
+        "图论",
+        "距离",
+        "连通度"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Artem Hak",
+        "Sergiy Kozerenko"
+      ],
+      "abstract": "We study upper bounds for the triameter of a connected graph in terms of distance packings and vertex connectivity. For any positive integer $k$, we bound the triameter of a graph by a linear function of its $k$-packing number and show that this bound is tight for all values of the parameters. As a corollary, we confirm the conjecture of Das and Abdioğlu on the upper bound for the triameter in terms of the order and the minimum degree of a graph. We also find the maximum triameter among graphs with given order and vertex connectivity, and describe the extremal graphs. Our main tool is a projection of a graph onto a spider or a unicyclic graph which preserves the distances between three prescribed vertices.",
+      "url": "https://arxiv.org/abs/2611.17259",
+      "pdf": "https://arxiv.org/pdf/2611.17259v1"
+    },
+    {
+      "id": "2611.17283",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-12",
+      "title_en": "SiC-BN composites with extreme thermal and environmental stability",
+      "title_zh": "碳化硅与氮化硼混合陶瓷：1500°C 火焰下的超级盾牌",
+      "one_liner": "把碳化硅和氮化硼等比例混合烧结，得到一种轻质陶瓷，能扛住超过 1500°C 的高速火焰和热循环，而纯原料早已碎裂。",
+      "why": "陶瓷碗摔一下就碎，但航天器头锥要承受上千度高温气流。这篇论文用两种常见陶瓷粉混合，造出既轻又耐烧的新材料，还解释了它为什么能自我保护。适合对材料、航天感兴趣的同学，也能看到‘微观结构决定性能’的课本思想。",
+      "sections": {
+        "background": "极端环境（如火箭喷管、高超音速飞行器前缘）需要材料同时耐高温、抗氧化、抗热震。纯碳化硅高温下会氧化失效，纯氮化硼虽耐热但强度低、易侵蚀。过去简单混合往往在热循环中开裂，因为两相热膨胀不匹配。如何让陶瓷在剧烈温度变化下不碎，是材料科学的老大难。",
+        "method": "作者用放电等离子烧结（一种通电加压快速烧结粉末的技术）把等重量的六方碳化硅和六方氮化硼压成块体。然后用高速氧燃料喷枪（温度超 1500°C 的火焰）直接烧样品表面，并反复加热冷却。同时用有限元分析模拟热流，用 ReaxFF 分子动力学（一种能模拟化学键断裂重组的计算方法）观察界面原子如何重排。",
+        "finding": "混合陶瓷在火焰下长时间加热和热循环后仍保持完整，而纯碳化硅和纯氮化硼很快碎裂或侵蚀。表面形成多相二氧化硅层，进一步阻挡氧气。有限元显示孔隙缓解热应力；模拟揭示高温下界面形成富硅氮/碳硼的键合网络，增强结合。热导率在很宽温度范围内几乎不变。",
+        "impact": "这种陶瓷轻且易加工，可能用于极端环境的结构件，比如航天热防护、高温炉具。它展示了‘多相复合+界面设计’如何把两种普通材料的优点结合，为设计更耐用的陶瓷提供思路。"
+      },
+      "analogy": "就像用钢筋和混凝土混合成钢筋混凝土：单独钢筋易弯，单独混凝土易裂，混合后既能承重又抗裂。这里碳化硅和氮化硼在高温下‘长’出互相咬合的界面，像钢筋网一样把材料锁住。",
+      "terms": [
+        {
+          "t": "放电等离子烧结",
+          "d": "一种把粉末装进模具，通脉冲电流并加压，几分钟内烧结成块体的技术。论文用它制备混合陶瓷，避免长时间高温导致晶粒长大。"
+        },
+        {
+          "t": "六方碳化硅/氮化硼",
+          "d": "碳化硅和氮化硼的层状晶体结构，类似石墨的六边形网。论文用它们作原料，因为耐高温且可加工。"
+        },
+        {
+          "t": "热震",
+          "d": "材料在温度急剧变化时因内外收缩不一致而开裂。论文用火焰反复加热冷却来测试材料抗热震能力。"
+        },
+        {
+          "t": "有限元分析",
+          "d": "把材料切成小网格，用计算机解热和力的方程。论文用它模拟热流分布，说明孔隙如何缓解热应力。"
+        },
+        {
+          "t": "ReaxFF 分子动力学",
+          "d": "一种能模拟化学键形成和断裂的分子模拟方法。论文用它观察高温下界面原子如何重排成键。"
+        },
+        {
+          "t": "二氧化硅层",
+          "d": "硅被氧化后形成的玻璃态保护层。论文中它覆盖在表面，阻挡氧气继续向内扩散。"
+        },
+        {
+          "t": "热导率",
+          "d": "材料传导热量的能力。论文发现混合陶瓷的热导率随温度变化很小，有利于均匀散热。"
+        }
+      ],
+      "tags": [
+        "材料",
+        "陶瓷",
+        "极端环境"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Abhijit Biswas",
+        "Eugenio Garcia-Granados",
+        "Saman Zare",
+        "Mozhdeh Mirakhory",
+        "JungHun Park",
+        "Shuvodeep De",
+        "Jessica Reyes",
+        "Hunter B. Schonfeld",
+        "Noah A. Burke",
+        "William Riffe",
+        "Michael S. Lafferty",
+        "Sudaice Kazibwe",
+        "Maryam Amiri",
+        "Shreyasi Chattopadhyay",
+        "Mingrui Xu",
+        "Gelu Costin",
+        "Tanguy Terlier",
+        "Jianhua Li",
+        "Ching-Wu Chu",
+        "Liangzi Deng",
+        "Bharat K. Jasthi",
+        "Manoj Tripathi",
+        "Venkataramana Gadhamshetty",
+        "Gi-Dong Sim",
+        "Kathy Lu",
+        "Adri C. T. van Duin",
+        "Patrick E. Hopkins",
+        "Sanjay Sampath",
+        "Pulickel M. Ajayan"
+      ],
+      "abstract": "Ceramic materials that maintain structural integrity and resist thermal-shock under extreme conditions are critical for many applications. Here we show that spark plasma sintered composites containing equal weight fractions of hexagonal silicon carbide (6H-SiC) and boron nitride (h-BN) exhibit exceptional stability under extreme high-temperature oxidizing conditions and unusually stable temperature-independent thermal conductivity across a broad temperature range. Under high-velocity oxygen-fuel torch exposure in air, it withstands prolonged heating and thermal-cycling at surface temperatures reaching >1500 °C, whereas pure 6H-SiC and h-BN rapidly fractures or erodes. Microstructural evaluation shows the formation of a multi-phase surface silica layer that further protects the material from oxidation. Finite-element analysis heat-flux map shows that intrinsic porosity mitigates thermal stress, while ReaxFF molecular dynamics simulations reveal thermally driven interfacial reconstruction and the formation of a Si-N/C-B-rich bonding network, enhancing the interfacial cohesion at elevated temperatures. This lightweight, easily machinable ceramic composite will be a promising structural material in extreme environment applications.",
+      "url": "https://arxiv.org/abs/2611.17283",
+      "pdf": "https://arxiv.org/pdf/2611.17283v1"
+    },
+    {
+      "id": "2611.17305",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · astro-ph.IM",
+      "published": "2026-11-12",
+      "title_en": "Euclid data release 1 (DR1) - SIR spectroscopic calibration",
+      "title_zh": "欧几里得卫星DR1光谱校准",
+      "one_liner": "欧几里得空间望远镜首次数据发布中，近红外光谱仪的校准流程和结果，提供了超过1.7亿条验证光谱。",
+      "why": "这篇论文讲的是欧几里得卫星——一个正在探测暗能量和暗物质的大项目——如何校准其光谱数据。高中生可以了解大型空间任务如何保证数据质量，以及暗能量研究的基础。",
+      "sections": {
+        "background": "欧几里得卫星通过测量星系光谱来研究宇宙膨胀历史，从而揭示暗能量的性质。但无缝光谱数据非常复杂，无法用科学流程自校准，必须依赖专门的校准流程。之前缺乏对校准流程的详细描述。",
+        "method": "他们开发了SIR校准流程，使用特定的指向序列和观测场，对整个焦平面进行全局建模，确保光谱在波长和流量上的准确性。校准产品用于科学流程处理数据发布1（DR1）。",
+        "finding": "DR1提供了超过1.7亿条验证光谱，覆盖红蓝两种光栅模式。校准精度满足要求，保证了光谱的波长和流量定标。",
+        "impact": "这些校准产品是欧几里得科学产出的基础，确保暗能量研究的可靠性。未来数据释放将依赖这些校准。"
+      },
+      "analogy": "就像给一台超级相机做全面校准，确保拍出的每张照片颜色和尺寸都准确，这样才能用来绘制精确的宇宙地图。",
+      "terms": [
+        {
+          "t": "欧几里得卫星",
+          "d": "欧洲空间局的任务，旨在通过观测星系研究暗能量和暗物质。论文处理其数据。"
+        },
+        {
+          "t": "暗能量",
+          "d": "导致宇宙加速膨胀的未知能量。欧几里得卫星的主要科学目标。"
+        },
+        {
+          "t": "无缝光谱",
+          "d": "不通过狭缝，直接对天体进行光谱观测的技术。论文校准此类数据。"
+        },
+        {
+          "t": "SIR",
+          "d": "光谱近红外处理功能，负责校准近红外光谱仪数据。论文描述其校准流程。"
+        },
+        {
+          "t": "焦平面",
+          "d": "望远镜成像的平面，包含探测器阵列。论文对焦平面进行全局建模。"
+        },
+        {
+          "t": "DR1",
+          "d": "第一次数据发布，包含超过1.7亿条光谱。论文介绍其校准。"
+        },
+        {
+          "t": "光栅模式",
+          "d": "光谱仪中光栅的工作方式，分红色和蓝色模式。论文涉及两种模式的数据。"
+        }
+      ],
+      "tags": [
+        "天体物理",
+        "宇宙学",
+        "空间任务"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Euclid Collaboration",
+        "M. Fumana",
+        "Y. Copin",
+        "P. N. Appleton",
+        "J. Jacobson",
+        "D. C. Masters",
+        "S. Hemmati",
+        "D. Tavagnacco",
+        "A. Gargiulo",
+        "C. Mancini",
+        "A. Carle",
+        "G. Herzog",
+        "A. Alavi",
+        "R. Chary",
+        "S. Conseil",
+        "I. Das",
+        "A. L. Faisst",
+        "W. Gillard",
+        "V. Le Brun",
+        "C. Scarlata",
+        "N. R. Stickley",
+        "H. I. Teplitz",
+        "Q. Xie",
+        "M. Scodeggio",
+        "B. Altieri",
+        "S. Andreon",
+        "N. Auricchio",
+        "H. Aussel",
+        "C. Baccigalupi",
+        "M. Baldi",
+        "A. Balestra",
+        "S. Bardelli",
+        "P. Battaglia",
+        "A. N. Belikov",
+        "A. Biviano",
+        "E. Branchini",
+        "M. Brescia",
+        "J. Brinchmann",
+        "S. Camera",
+        "G. Cañas-Herrera",
+        "V. Capobianco",
+        "C. Carbone",
+        "J. Carretero",
+        "F. J. Castander",
+        "M. Castellano",
+        "G. Castignani",
+        "S. Cavuoti",
+        "K. C. Chambers",
+        "A. Cimatti",
+        "C. Colodro-Conde",
+        "G. Congedo",
+        "C. J. Conselice",
+        "L. Conversi",
+        "A. Costille",
+        "F. Courbin",
+        "H. M. Courtois",
+        "J. -G. Cuby",
+        "A. Da Silva",
+        "R. da Silva",
+        "H. Degaudenzi",
+        "S. de la Torre",
+        "G. De Lucia",
+        "A. M. Di Giorgio",
+        "H. Dole",
+        "F. Dubath",
+        "X. Dupac",
+        "S. Dusini",
+        "S. Escoffier",
+        "M. Farina",
+        "R. Farinelli",
+        "S. Ferriol",
+        "S. Fotopoulou",
+        "N. Fourmanoit",
+        "M. Frailis",
+        "E. Franceschi",
+        "P. Franzetti",
+        "L. Gabarra",
+        "S. Galeotta",
+        "K. George",
+        "B. Gillis",
+        "C. Giocoli",
+        "J. Gracia-Carpio",
+        "B. R. Granett",
+        "A. Grazian",
+        "F. Grupp",
+        "L. Guzzo",
+        "W. G. Hartley",
+        "S. V. H. Haugan",
+        "G. Helou",
+        "H. Hoekstra",
+        "W. Holmes",
+        "F. Hormuth",
+        "A. Hornstrup",
+        "M. Huertas-Company",
+        "K. Jahnke",
+        "M. Jhabvala",
+        "S. Kermiche",
+        "A. Kiessling",
+        "R. Kohley",
+        "B. Kubik",
+        "M. Kümmel",
+        "M. Kunz",
+        "H. Kurki-Suonio",
+        "A. M. C. Le Brun",
+        "S. Ligori",
+        "P. B. Lilje",
+        "V. Lindholm",
+        "I. Lloro",
+        "M. Magliocchetti",
+        "G. Mainetti",
+        "O. Mansutti",
+        "S. Marcin",
+        "O. Marggraf",
+        "K. Markovic",
+        "M. Martinelli",
+        "N. Martinet",
+        "F. Marulli",
+        "R. J. Massey",
+        "N. Mauri",
+        "E. Medinaceli",
+        "S. Mei",
+        "M. Meneghetti",
+        "E. Merlin",
+        "G. Meylan",
+        "P. Monaco",
+        "A. Mora",
+        "M. Moresco",
+        "C. Moretti",
+        "L. Moscardini",
+        "C. Neissner",
+        "R. C. Nichol",
+        "S. -M. Niemi",
+        "C. Padilla",
+        "S. Paltani",
+        "F. Pasian",
+        "W. J. Percival",
+        "V. Pettorino",
+        "A. Pezzotta",
+        "S. Pires",
+        "G. Polenta",
+        "M. Poncet",
+        "L. A. Popa",
+        "L. Pozzetti",
+        "F. Raison",
+        "A. Refregier",
+        "A. Renzi",
+        "J. Rhodes",
+        "G. Riccio",
+        "I. Risso",
+        "F. Rizzo",
+        "E. Romelli",
+        "M. Roncarelli",
+        "C. Rosset",
+        "B. Rusholme",
+        "R. Saglia",
+        "Z. Sakr",
+        "A. G. Sánchez",
+        "D. Sapone",
+        "B. Sartoris",
+        "M. Sauvage",
+        "M. Schirmer",
+        "P. Schneider",
+        "T. Schrabback",
+        "A. Secroun",
+        "E. Sefusatti",
+        "E. Sihvola",
+        "P. Simon",
+        "C. Sirignano",
+        "G. Sirri",
+        "L. Stanco",
+        "P. Tallada-Crespí",
+        "A. N. Taylor",
+        "I. Tereno",
+        "N. Tessore",
+        "S. Toft",
+        "R. Toledo-Moreo",
+        "F. Torradeflot",
+        "I. Tutusaus",
+        "J. Valiviita",
+        "T. Vassallo",
+        "A. Veropalumbo",
+        "D. Vibert",
+        "Y. Wang",
+        "J. Weller",
+        "A. Zacchei",
+        "G. Zamorani",
+        "F. M. Zerbi",
+        "I. A. Zinchenko",
+        "E. Zucca",
+        "V. Allevato",
+        "I. T. Andika",
+        "M. Ballardini",
+        "P. Bergamini",
+        "S. Borgani",
+        "E. Bozzo",
+        "C. Burigana",
+        "R. Cabanac",
+        "M. Calabrese",
+        "A. Cappi",
+        "F. Caro",
+        "T. Castro",
+        "G. Daste",
+        "D. Di Ferdinando",
+        "J. A. Escartin Vigo",
+        "G. Fabbian",
+        "J. García-Bellido",
+        "T. Gasparetto",
+        "A. Gregorio",
+        "C. M. Gutierrez",
+        "A. Hall",
+        "Y. Kang",
+        "A. Loureiro",
+        "J. Macias-Perez",
+        "R. Maoli",
+        "R. B. Metcalf",
+        "M. Pöntinen",
+        "E. Sarpa",
+        "V. Scottez",
+        "M. Sereno",
+        "K. Tanidis",
+        "M. Tenti",
+        "M. Tucci",
+        "M. Viel",
+        "M. Wiesmann",
+        "J. A. Acevedo Barroso",
+        "Y. Akrami",
+        "G. Angora",
+        "S. Anselmi",
+        "M. Archidiacono",
+        "F. Atrio-Barandela",
+        "M. Aubert",
+        "M. Baes",
+        "L. Bazzanini",
+        "J. R. Bermejo-Climent",
+        "D. Bertacca",
+        "M. Bethermin",
+        "F. Beutler",
+        "A. Blanchard",
+        "F. Bouchè",
+        "M. L. Brown",
+        "S. Bruton",
+        "A. Calabro",
+        "B. Camacho Quevedo",
+        "P. Carrilho",
+        "C. S. Carvalho",
+        "Y. Charles",
+        "F. Cogato",
+        "T. E. Collett",
+        "A. R. Cooray",
+        "P. Corcho-Caballero",
+        "M. Correnti",
+        "B. Csizi",
+        "O. Cucciati",
+        "S. Davini",
+        "T. de Boer",
+        "F. De Paolis",
+        "G. Desprez",
+        "A. Díaz-Sánchez",
+        "S. Di Domizio",
+        "J. M. Diego",
+        "F. Dufresne",
+        "V. Duret",
+        "A. Enia",
+        "Y. Fang",
+        "A. Farina",
+        "A. M. N. Ferguson",
+        "A. Finoguenov",
+        "A. Franco",
+        "A. Fumagalli",
+        "Y. Fu",
+        "K. Ganga",
+        "E. Gaztanaga",
+        "Z. Ghaffari",
+        "F. Giacomini",
+        "F. Gianotti",
+        "G. Gozaliasl",
+        "A. Gruppuso",
+        "M. Guidi",
+        "C. Hernández-Monteagudo",
+        "T. Heuberger",
+        "H. Hildebrandt",
+        "J. Hjorth",
+        "S. Hosseini",
+        "M. Jauzac",
+        "S. Joudaki",
+        "J. J. E. Kajava",
+        "V. Kansal",
+        "D. Karagiannis",
+        "J. Kim",
+        "C. C. Kirkpatrick",
+        "A. Kovács",
+        "I. Kova{č}i{ć}",
+        "K. Koyama",
+        "S. Kruk",
+        "M. C. Lam",
+        "M. Lattanzi",
+        "S. Lee",
+        "L. Legrand",
+        "M. Lembo",
+        "M. D. Lepinzan",
+        "J. Lesgourgues",
+        "T. I. Liaudat",
+        "L. Linke",
+        "S. J. Liu",
+        "G. Maggio",
+        "F. Mannucci",
+        "F. R. Marleau",
+        "C. J. A. P. Martins",
+        "M. Miluzio",
+        "S. Nadathur",
+        "K. Naidoo",
+        "P. Natoli",
+        "A. Navarro-Alsina",
+        "S. Nesseris",
+        "L. Nicastro",
+        "F. Oppizzi",
+        "F. Pace",
+        "E. Palazzi",
+        "D. Paoletti",
+        "F. Passalacqua",
+        "K. Paterson",
+        "L. Patrizii",
+        "C. Pattison",
+        "A. Pisani",
+        "L. Pizzuti",
+        "D. Potter",
+        "M. Poulain",
+        "G. W. Pratt",
+        "S. Quai",
+        "M. Radovich",
+        "F. Ricci",
+        "G. Rodighiero",
+        "W. Roster",
+        "M. Sahlén",
+        "D. B. Sanders",
+        "A. Schneider",
+        "M. Schultheis",
+        "D. Sciotti",
+        "E. Sellentin",
+        "S. Serjeant",
+        "L. C. Smith",
+        "J. G. Sorce",
+        "I. Szapudi",
+        "M. Talia",
+        "G. Testera",
+        "R. Teyssier",
+        "S. Tosi",
+        "A. Troja",
+        "C. Uhlemann",
+        "C. Valieri",
+        "A. Venhola",
+        "D. Vergani",
+        "E. Vilenius",
+        "S. Vinciguerra",
+        "M. von Wietersheim-Kramsta",
+        "N. A. Walton",
+        "A. H. Wright",
+        "L. Zalesky",
+        "D. Scott"
+      ],
+      "abstract": "The Euclid space mission is dedicated to probing the nature of dark energy and dark matter, through a comprehensive mapping of the Universe's large-scale structure. Central to these cosmological goals are the spectra produced by the Near-Infrared Spectrometer and Photometer (NISP) and reduced by the scientific pipelines of the SIR (Spectral near InfraRed) processing function. Due to the intrinsic complexity of slitless spectroscopic data, scientific observations cannot be self-calibrated by the science pipelines. Consequently, the development of dedicated SIR calibration pipelines, utilising specific pointing sequences and observation fields, is essential. The resulting calibration products are fundamental to ensuring that reduced spectra are characterised within requirements in both wavelength and flux. This paper provides a detailed description of the SIR calibration pipelines responsible for generating the products utilised by the science pipelines for Data Release 1 (DR1). A significant challenge in these calibration tasks arises from the requirement to model the entire focal plane as a unified entity. Such a global modelling approach is critical for maintaining astrometric and spectroscopic continuity across the entire field of view. DR1 provides more than 170 millions validated spectra in both red- and blue-grism modes. The accuracy of the reduced spectra is strictly dependent on the performance of the calibration pipelines. Comprehensive analyses of the calibration products and the resulting science spectra demonstrate that current outputs successfully meet the mission requirements. Nevertheless, specific areas for optimisation have been identified; ongoing development is focused on addressing these critical points to further enhance data quality for future data releases.",
+      "url": "https://arxiv.org/abs/2611.17305",
+      "pdf": "https://arxiv.org/pdf/2611.17305v1"
+    },
+    {
+      "id": "2611.17310",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-11-12",
+      "title_en": "Quantum Metrology and Quantum Battery in a Hyperfine-Coupled Spin System",
+      "title_zh": "超精细耦合自旋系统中的量子计量与量子电池",
+      "one_liner": "研究氢原子超精细结构启发的电子-质子自旋系统，同时估计磁场和超精细耦合强度，并分析其作为量子电池的能量存储性能。",
+      "why": "这篇论文把量子计量（如何更精确测量）和量子电池（如何存储能量）结合在一个简单的自旋模型上，和课本里的氢原子超精细结构有关。高中生可以了解量子技术的前沿应用，且模型直观。",
+      "sections": {
+        "background": "量子计量利用量子效应提高测量精度，量子电池则研究如何在量子系统中存储和提取能量。超精细耦合是电子自旋和核自旋的相互作用，氢原子基态就存在这种耦合。但之前很少同时研究这种系统的多参数估计和能量存储性能。",
+        "method": "他们考虑一个电子-质子自旋系统，在外磁场和超精细耦合作用下，计算量子Fisher信息矩阵，得到同时估计磁场和耦合强度的精度极限。另外，他们用幺正充电协议给系统充电，计算ergotropy（可提取功）、反ergotropy、存储容量和相干性等能量指标。",
+        "finding": "他们发现尽管两个参数的对称对数导数不对易，但弱对易条件满足，因此可以同时达到量子Cramér-Rao界。能量指标随磁场、耦合强度、温度和充电时间变化，展示了该系统作为量子传感器和储能平台的潜力。",
+        "impact": "这项研究为基于自旋的量子传感和能量存储提供了理论依据，可能推动微型量子电池和高精度磁场传感器的开发。"
+      },
+      "analogy": "就像同时用两个旋钮调收音机，一个调频率一个调音量，虽然旋钮相互影响，但巧妙操作可以同时调准；同时，这个收音机还能当充电宝用，存一点电。",
+      "terms": [
+        {
+          "t": "超精细结构",
+          "d": "原子中电子自旋与核自旋相互作用导致的能级分裂。论文用其作为自旋系统的灵感来源。"
+        },
+        {
+          "t": "量子Fisher信息",
+          "d": "衡量量子态对参数变化敏感度的量，决定测量精度极限。论文计算其矩阵用于多参数估计。"
+        },
+        {
+          "t": "Cramér-Rao界",
+          "d": "参数估计精度的理论下限。论文建立量子版本，说明同时估计的精度极限。"
+        },
+        {
+          "t": "ergotropy",
+          "d": "从量子态中可提取的最大功。论文用它衡量量子电池的充电性能。"
+        },
+        {
+          "t": "幺正充电",
+          "d": "通过幺正演化给量子系统充电，不丢失信息。论文采用这种协议研究能量存储。"
+        },
+        {
+          "t": "弱对易条件",
+          "d": "多参数估计中，对称对数导数近似对易的条件。论文验证该条件满足，使同时估计可行。"
+        },
+        {
+          "t": "量子电池",
+          "d": "利用量子系统存储能量的装置。论文分析自旋系统的储能性能。"
+        }
+      ],
+      "tags": [
+        "量子计量",
+        "量子电池",
+        "自旋系统"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Omar Bachain",
+        "Mohamed Amazioug",
+        "Rachid Ahl Laamara"
+      ],
+      "abstract": "We investigate multiparameter quantum metrology and the energetic properties of an effective electron--proton spin system inspired by the hyperfine structure of the hydrogen atom. Considering the external magnetic field $\\mathcal B$ and the hyperfine coupling strength $Λ$ as unknown parameters, we derive the quantum Fisher information matrix and establish the corresponding quantum Cramér--Rao bounds for their simultaneous estimation. We analyze the estimation precision and the correlations between the two parameters, showing that the weak-commutativity condition is satisfied despite the noncommutativity of the associated symmetric logarithmic derivatives. Independently, we explore the energetic properties of the system under a unitary charging protocol, characterizing its ergotropy, anti-ergotropy, storage capacity, and energy-basis coherence. We investigate the dependence of these quantities on the magnetic field, hyperfine coupling, temperature, and charging time. Our results provide a comprehensive characterization of the metrological properties and energetic performance of a hyperfine spin-based quantum system, highlighting its potential as a platform for quantum sensing and energy storage.",
+      "url": "https://arxiv.org/abs/2611.17310",
+      "pdf": "https://arxiv.org/pdf/2611.17310v1"
+    },
+    {
+      "id": "2611.17335",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.str-el",
+      "published": "2026-11-12",
+      "title_en": "Long-lived light-driven bimagnons at finite momentum in NiO",
+      "title_zh": "NiO中光驱动的长寿命双磁振子",
+      "one_liner": "用中红外光激发NiO晶体，产生寿命长达28皮秒的双磁振子，比之前报道的退相干时间长了两个数量级以上。",
+      "why": "这篇论文研究光如何影响磁性材料中的集体激发，和手机存储、磁传感器等技术有关。它展示了如何用超快激光“操控”磁序而不破坏它，结论清晰，数字对比强烈，适合对物理和材料感兴趣的高中生。",
+      "sections": {
+        "background": "在反铁磁体（相邻原子磁矩反平行排列的材料）中，光可以激发磁振子——磁矩集体振荡的量子。单个磁振子的寿命研究得比较清楚，但两个磁振子绑在一起形成的双磁振子，其寿命和衰变机制一直不清楚。之前的测量显示双磁振子信号很宽或很快退相干（约200飞秒），很难实际利用。",
+        "method": "研究人员用中红外激光脉冲照射NiO晶体，光子能量远低于材料的带隙，不会产生自由电子。他们用时间分辨共振非弹性X射线散射（RIXS）探测激发后不同时刻的磁动力学，测量磁振子能量和线宽的变化。",
+        "finding": "激发后，单磁振子的线宽和能量基本不变，说明长程磁序没有被破坏。在能量增益侧出现双磁振子信号，其强度在泵浦后4皮秒达到峰值，表明磁振子对在布里渊区中重新分布。该信号以28±11皮秒的时间常数衰减，比之前报道的双磁振子退相干时间（约200飞秒）长了两个数量级以上。",
+        "impact": "这表明光可以产生长寿命的双磁振子关联，为超快磁存储和磁振子学提供了新可能。长寿命意味着信息有更多时间被操控或读取，但实际应用还需要进一步研究。"
+      },
+      "analogy": "就像敲钟后，单个钟声很快消失，但两个钟的合鸣却持续了很久，而且合鸣的强度先增大后缓慢减弱。",
+      "terms": [
+        {
+          "t": "反铁磁体",
+          "d": "相邻原子磁矩反平行排列的材料，整体不显磁性。NiO是典型反铁磁体，论文研究其磁激发。"
+        },
+        {
+          "t": "磁振子",
+          "d": "磁矩集体振荡的量子化激发，像声子之于晶格振动。论文区分单磁振子和双磁振子。"
+        },
+        {
+          "t": "双磁振子",
+          "d": "两个磁振子关联形成的激发，可理解为磁振子对。论文重点研究其产生和寿命。"
+        },
+        {
+          "t": "退相干",
+          "d": "量子系统失去相位关联的过程，导致信号衰减。论文对比双磁振子的退相干时间。"
+        },
+        {
+          "t": "RIXS",
+          "d": "共振非弹性X射线散射，用X射线探测材料中元激发的能量和动量。论文用其时间分辨版本观测磁动力学。"
+        },
+        {
+          "t": "布里渊区",
+          "d": "晶体中波矢的空间，描述激发动量。论文提到磁振子对在布里渊区中重新分布。"
+        },
+        {
+          "t": "皮秒",
+          "d": "时间单位，1皮秒=10^-12秒。论文中双磁振子寿命为28皮秒。"
+        },
+        {
+          "t": "飞秒",
+          "d": "时间单位，1飞秒=10^-15秒。之前双磁振子退相干时间约200飞秒。"
+        }
+      ],
+      "tags": [
+        "凝聚态物理",
+        "超快磁学",
+        "反铁磁体"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": true,
+      "authors": [
+        "Xian P. Yang",
+        "Christopher T. Parzyck",
+        "Martin Cross",
+        "Ella Blake",
+        "Octave Duros",
+        "Yinchuan Lv",
+        "Hari Paudyal",
+        "Che-Min Lin",
+        "Sharon S. Philip",
+        "Lingjia Shen",
+        "Daniel Jost",
+        "Giacomo Coslovich",
+        "Joshua J. Turner",
+        "Choongwon Seo",
+        "Elyse Schriber",
+        "Michael E. Flatté",
+        "Xiaoqin Li",
+        "Yuri Suzuki",
+        "Durga Paudyal",
+        "Harold Y. Hwang",
+        "Georgi L. Dakovski",
+        "Matthias C. Hoffmann",
+        "Wei-Sheng Lee",
+        "Alexander H. Reid"
+      ],
+      "abstract": "Light can manipulate magnetic order and its excitations on ultrafast timescales, including through resonantly driven phonons. In antiferromagnets, light can also create correlated magnon pairs, or bimagnons. Unlike single magnons, whose damping has been measured and modeled in detail, little is known about the lifetime, interactions and decay of such correlated pairs: prior two-magnon measurements show broad linewidths or coherences that dephase within 200 fs. Here we pump the phonon-assisted two-magnon absorption of NiO with mid-infrared pulses, far below its bandgap, and probe the resulting magnetic dynamics at finite momentum with time-resolved resonant inelastic X-ray scattering (RIXS). Upon photoexcitation, the one-magnon linewidth and energy are essentially unchanged, indicating that the long-range magnetic order is preserved without the photocarrier-induced demagnetization characteristic of above-bandgap excitation. A pump-induced two-magnon signal appears on the energy-gain (anti-Stokes) side of the spectrum. Its spectral weight peaks 4 ps after the pump, well beyond our 0.5 ps time resolution, indicative of a delayed growth likely due to momentum redistribution of the light-induced magnon pairs across the Brillouin zone. This two-magnon signal decays with a time constant of $28\\pm11$ ps, exceeding the previously reported two-magnon dephasing time by more than two orders of magnitude. These results establish long-lived light-driven bimagnon correlations beyond the one-magnon state, akin to the higher-order correlations measured in ultracold gases.",
+      "url": "https://arxiv.org/abs/2611.17335",
+      "pdf": "https://arxiv.org/pdf/2611.17335v1"
+    },
+    {
       "id": "2611.14906",
       "field": "math",
       "source": "arXiv",
@@ -4269,991 +5623,6 @@
       "abstract": "Few molecular processes are more fundamental to chemistry than the autoionization of water, whose equilibrium constant, $K_w \\approx 10^{-14}$, underlies acid-base equilibria and the chemistry of life. Yet the molecular origins of the free energy cost of forming and separating ions remain incompletely understood. Efforts to explain it have been limited by the difficulty of modeling water reactivity in sufficient detail. Here we combine machine learning interatomic potentials (MLIPs) with spectral adaptive biasing force enhanced sampling to connect proton transfer and water wire configurations to the underlying free energy landscape. We identify competing influences of long-range electrostatics, system size, temperature, and nuclear quantum motion on the predicted ionization thermodynamics. The free energy surface extends from neutral water to ions separated beyond the solvent-separated ion pair (SSIP). It reveals a transition state in which a proton is shared between the second and third molecules of a three-membered water wire. The contact ion pair is unstable and the SSIP only weakly metastable, so determining pK$_w$ requires sampling longer wires. Long-range electrostatics raise the free energy at ion separations beyond $3\\,\\mathrm{\\mathring{A}}$. Models with comparable force errors give substantially different free energy profiles in this region. Increasing system size lowers the calculated pK$_w$, while nuclear quantum effects bring it closer to experiment and reproduce the higher pK$_w$ of D$_2$O relative to H$_2$O. These results establish a baseline for interpreting thermodynamic results from MLIP simulations in which charged and polar groups react and diffuse in finite cells. Our analysis also explains how cancellation among competing effects can yield ionization constants close to experiment even when simulations omit several physical contributions.",
       "url": "https://arxiv.org/abs/2611.08874",
       "pdf": "https://arxiv.org/pdf/2611.08874v1"
-    },
-    {
-      "id": "2611.08881",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mtrl-sci",
-      "published": "2026-11-06",
-      "title_en": "Limits of Lorenz number estimation from the temperature-dependent Seebeck coefficient",
-      "title_zh": "西贝克系数能唯一确定洛伦兹数吗？答案可能是否定的",
-      "one_liner": "通过线性规划分析，发现即使知道多个温度下的西贝克系数和电导率，也不能唯一确定洛伦兹数，从而无法分离电子和晶格热导率。",
-      "why": "热电材料能把废热变成电能，评估其性能需要知道电子和晶格各自贡献多少热导率。通常用洛伦兹数来分离，但这项研究表明，常用的方法可能不可靠。这让你看到，课本上的公式在真实材料中可能遇到根本性的限制。",
-      "sections": {
-        "background": "热电材料的热导率由电子和晶格两部分组成，要优化性能需分别知道它们。常用方法是测量西贝克系数，假设一个能带和散射模型来估算洛伦兹数，再根据维德曼-弗兰兹定律求电子热导率。但模型假设是否可靠？西贝克系数到底能提供多少独立信息？之前缺乏系统分析。",
-        "method": "研究者把洛伦兹数的可能范围表述为线性规划问题，在固定的有限谱表示下，假设化学势已知，且每个候选谱在各观测温度下有共同的能量依赖。他们用单能带和同号双能带模型生成参考西贝克系数，然后看增加观测温度数量（从1到5）能多大程度缩小洛伦兹数的区间。",
-        "finding": "将观测温度从1个增加到5个，洛伦兹数区间宽度缩小约97.6%和97.8%。但单能带例子在400K时区间仍为[1.46453,2.37037]×10^-8 WΩK^-2。即使电导率精确已知，若谱幅度可随温度独立变化，区间也不缩小。因此，即使有5个温度下的精确西贝克系数和电导率，也不能唯一确定400K的电子热导率。",
-        "impact": "这项研究警告说，基于西贝克系数估算洛伦兹数的方法有根本局限，可能误导热电材料性能评估。未来需要更直接的测量或额外信息来分离热导率。对材料科学和能源技术有重要启示。"
-      },
-      "analogy": "就像你想知道一个蛋糕里糖和面粉各多少，你尝了5个不同温度下的蛋糕（西贝克系数），还称了总重量（电导率），但发现还是不能唯一确定糖的量，因为糖和面粉的配方可能随温度变化，你尝到的甜度可以有很多种组合。",
-      "terms": [
-        {
-          "t": "西贝克系数",
-          "d": "材料两端温差产生电压的比例，反映载流子类型和浓度，论文用它来估算洛伦兹数。"
-        },
-        {
-          "t": "洛伦兹数",
-          "d": "联系电导率和电子热导率的比例常数，论文研究其可确定性的极限。"
-        },
-        {
-          "t": "热导率",
-          "d": "材料传导热量的能力，论文关注电子和晶格热导率的分离。"
-        },
-        {
-          "t": "线性规划",
-          "d": "在约束条件下优化线性目标的方法，论文用它找洛伦兹数的最小最大值。"
-        },
-        {
-          "t": "化学势",
-          "d": "系统中添加一个粒子所需的能量，论文假设其已知。"
-        },
-        {
-          "t": "能带模型",
-          "d": "描述电子能量随动量变化的模型，论文用单能带和双能带模型生成数据。"
-        },
-        {
-          "t": "维德曼-弗兰兹定律",
-          "d": "电子热导率与电导率之比正比于温度，比例系数为洛伦兹数，论文间接相关。"
-        }
-      ],
-      "tags": [
-        "热电材料",
-        "输运性质",
-        "洛伦兹数",
-        "线性规划"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Naoki Sato",
-        "Takao Mori"
-      ],
-      "abstract": "Separating electronic and lattice thermal conductivity often relies on a Lorenz number estimated from the Seebeck coefficient using an assumed band and scattering model. We ask how much information about the Lorenz number comes from temperature-dependent Seebeck coefficients rather than the assumed model. We formulate compatible minimum and maximum Lorenz numbers as linear programs in a fixed finite spectral representation, assuming known chemical potentials and a common energy dependence across observation temperatures for each candidate spectrum. Reference Seebeck coefficients are generated by single-band and same-sign two-band models. Increasing the prescribed observations from one to five temperatures reduces the Lorenz interval widths by approximately 97.6% and 97.8%, respectively. Nevertheless, the single-band example retains an attained interval of approximately $[1.46453,2.37037]\\times10^{-8}$ W $Ω$ K$^{-2}$ at 400 K. Exact electrical conductivity values do not narrow these ranges when spectral amplitudes can vary independently with temperature. Thus, even exact Seebeck coefficients and electrical conductivities at all five temperatures need not uniquely determine electronic thermal conductivity at 400 K. For the same single-band example, known ratios of spectral amplitudes across temperatures allow electrical conductivity values to confine all compatible Lorenz numbers to an enclosing interval less than 1% as wide as the five-temperature free-amplitude interval. Temperature-dependent Seebeck data strongly narrow the compatible range, while conductivity provides further spectral constraints when the temperature dependence of spectral amplitudes is independently restricted.",
-      "url": "https://arxiv.org/abs/2611.08881",
-      "pdf": "https://arxiv.org/pdf/2611.08881v1"
-    },
-    {
-      "id": "2611.08887",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.CV",
-      "published": "2026-11-06",
-      "title_en": "Decoding spatial and semantic information from large-scale visual cortical activity for natural-movie reconstruction",
-      "title_zh": "用小鼠大脑活动“回放”它看过的电影",
-      "one_liner": "研究者从小鼠视觉皮层数千个神经元的活动出发，用生成式AI重建它看过的自然电影片段，识别准确率达81.4%。",
-      "why": "我们常觉得“心里想什么，别人不可能知道”，但这篇论文展示：只记录大脑视觉区域一群神经元的活动，就能用AI把看到的画面大致“还原”出来。它把神经科学和人工智能结合，让高中生看到大脑如何编码视觉信息，也看到“读心术”离现实有多远。实验对象是小鼠，但原理和人类视觉系统有相通之处。",
-      "sections": {
-        "background": "神经解码——从大脑活动反推外部刺激——是神经科学的中心挑战之一。用钙成像记录神经元活动时，信号噪声大、时间上被滤波，而且同时记录神经活动和视频的数据很少。以往方法多针对电生理数据或简单刺激，对自然电影这类复杂动态场景，重建效果有限。如何从大规模、有噪声的群体活动中提取空间布局和语义信息，是难点。",
-        "method": "研究者提出Ca2REAL框架，把钙成像得到的神经活动转换成视频生成模型能理解的控制信号：一路控制“布局”（画面中物体在哪），一路控制“语义”（画面里是什么）。他们先用一只小鼠的7,863个V1神经元（初级视觉皮层神经元）在观看自然电影时的反应训练，再在由11个独立数据集构建的虚拟群体（116,705个神经元）上做扰动和消融实验，检验重建依赖哪些信息。",
-        "finding": "在留出的自然电影片段上，Ca2REAL重建的视频能以81.4%的准确率在所有候选片段中识别出正确刺激，明显优于确定性基线。消融实验显示，重建依赖分布式、刺激特异的群体结构，布局和语义通路提供互补信息。时间分析还表明，重建片段能较好保留语义动态变化。",
-        "impact": "这项工作说明，大规模皮层群体活动约束着自然视觉体验的空间、语义和时间结构，为高保真神经重建提供了生成式框架。未来可能帮助理解大脑如何表征世界，也可能为脑机接口提供新思路。不过，目前只在小鼠上验证，人类应用还有距离。"
-      },
-      "analogy": "就像你只听到一场足球赛的解说员零星的喊声（神经元活动），却能借助一个懂足球的AI，把比赛画面大致画出来：它知道球大概在哪个区域（布局），也知道是哪两支球队（语义）。",
-      "terms": [
-        {
-          "t": "钙成像",
-          "d": "一种记录神经元活动的方法，通过检测细胞内钙离子浓度变化来推断神经元是否放电。论文用它记录小鼠视觉皮层数千个神经元的活动，作为重建视频的输入。"
-        },
-        {
-          "t": "V1",
-          "d": "初级视觉皮层，大脑处理视觉信息的第一站。论文记录小鼠V1神经元活动，用来重建它看到的电影画面。"
-        },
-        {
-          "t": "神经解码",
-          "d": "从大脑活动反推外部刺激或内部意图的过程。论文的目标是从钙成像信号解码出自然电影的画面。"
-        },
-        {
-          "t": "生成式模型",
-          "d": "能根据输入生成新内容（如图像、视频）的人工智能模型。论文用预训练视频扩散模型作为生成器，把神经活动翻译成视频。"
-        },
-        {
-          "t": "扩散模型",
-          "d": "一类生成式模型，通过逐步去噪从随机噪声中生成数据。论文用它作为视频生成 backbone，根据神经活动控制信号生成电影片段。"
-        },
-        {
-          "t": "消融实验",
-          "d": "故意去掉模型的某一部分，看性能如何变化，以判断该部分的作用。论文用消融实验检验布局和语义通路对重建的贡献。"
-        },
-        {
-          "t": "刺激识别准确率",
-          "d": "给定重建视频，从多个候选刺激中挑出正确原片的比例。论文中所有候选对比较的准确率为81.4%。"
-        },
-        {
-          "t": "编码模型",
-          "d": "预测神经元对给定刺激如何响应的模型。论文用编码模型预测的响应构建虚拟神经元群体，以扩大数据规模。"
-        }
-      ],
-      "tags": [
-        "神经科学",
-        "脑机接口",
-        "生成式AI"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Yukai Huang",
-        "Haoyu Albert Wang",
-        "Jiawei Zhang",
-        "Jialun Ma",
-        "Jiayao Ding",
-        "Yiran Lin",
-        "Xingyu Chen",
-        "Ziqi Gao",
-        "Yuguo Yu"
-      ],
-      "abstract": "Reconstructing natural visual experience from cortical population activity is a central challenge in neural decoding, particularly for calcium imaging, where signals are noisy, temporally filtered, and paired neural-video data are limited. Here we present Ca2REAL (Calcium Activity to Reconstruct Events, Appearance, and Layout), a neural-to-video framework that conditions a pretrained video diffusion model through separate layout and semantic controls derived from calcium activity. Using measured responses from 7,863 V1 neurons in one mouse, Ca2REAL reconstructed held-out natural-movie clips with 81.4% all-pairs stimulus-identification accuracy, with its clearest gains over deterministic baselines in perceptual and semantic measures. We further evaluated the framework in a stimulus-aligned virtual population of 116,705 neurons assembled from encoding-model-predicted responses across 11 independently recorded datasets. Perturbation and ablation analyses showed that reconstruction depends on distributed, stimulus-specific population structure, with layout and semantic pathways providing complementary spatial and identity information. Temporal analyses further showed improved preservation of semantic dynamics across reconstructed clips. These results show that large-scale cortical population activity constrains the spatial, semantic, and temporal structure of natural visual experience, providing a generative framework for high-fidelity neural reconstruction of dynamic visual scenes.",
-      "url": "https://arxiv.org/abs/2611.08887",
-      "pdf": "https://arxiv.org/pdf/2611.08887v1"
-    },
-    {
-      "id": "2611.08899",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · hep-ph",
-      "published": "2026-11-06",
-      "title_en": "Spiral momentum spectra and spin asymmetry in vacuum pair production driven by phase-modulated elliptically polarized electric fields",
-      "title_zh": "相位调制让真空产生电子对出现螺旋动量谱",
-      "one_liner": "用相位调制椭圆偏振电场从真空中产生正负电子对时，余弦调制可将环形动量分布扭曲成螺旋形，且自旋产额偏向与场手性一致的方向。",
-      "why": "真空不是空的，强电场能把虚粒子对“拉”成真实粒子。这篇论文讨论如何用激光的相位和偏振控制产生粒子的动量图案和自旋，就像用模具塑造粒子。它联系到激光技术、粒子物理和量子场论，适合对“从无到有”好奇的高中生。",
-      "sections": {
-        "background": "量子电动力学预言，足够强的电场可以从真空中激发出正负电子对，这叫真空对产生。但实验尚未直接观测到，因为需要极强电场。理论研究表明，激光的偏振和相位可以影响产生粒子的分布。此前对相位调制椭圆偏振场的研究较少，尤其是自旋分辨的动量谱。",
-        "method": "作者用量子动理学方程模拟真空中电子-正负电子对的产生。他们考虑相位调制的椭圆偏振电场，调制形式包括余弦型和正弦型，变化调制幅度、频率、椭圆率和调制形式，计算自旋分辨的动量谱和自旋不对称度。",
-        "finding": "余弦型调制可以把环形的动量分布扭曲成螺旋图案，这种变形对调制幅度和频率的依赖是非单调的，在圆偏振时最明显。在横向动量平面，自旋分辨的产额偏向与场手性一致的自旋通道；反转场手性会反转偏好通道，但总产额不变。正弦型调制基本保持环形和镜像对称谱，但自旋不对称对调制幅度的依赖更强。",
-        "impact": "这表明相位调制和椭圆率可以控制真空对产生的动量谱图案和自旋不对称度，为未来激光实验提供理论指导。如果实验实现，可能帮助理解强场量子电动力学和自旋效应，但需要极高强度的激光。"
-      },
-      "analogy": "就像往水里扔石头会激起圆形波纹，但如果你按特定节奏晃动石头，波纹会变成螺旋形。论文发现，用特定相位调制的激光“晃动”真空，产生的电子对也会形成螺旋图案，而且自旋方向会跟着激光的“拧劲”走。",
-      "terms": [
-        {
-          "t": "真空对产生",
-          "d": "强电场从真空中激发出正负电子对的过程，是量子电动力学的预言。论文研究如何用激光控制它。"
-        },
-        {
-          "t": "椭圆偏振",
-          "d": "电场矢量端点画椭圆的光偏振状态。论文用相位调制改变椭圆偏振场来影响粒子产生。"
-        },
-        {
-          "t": "量子动理学方程",
-          "d": "描述量子系统中粒子分布随时间演化的方程。论文用它模拟电子对的产生过程。"
-        },
-        {
-          "t": "自旋不对称",
-          "d": "不同自旋方向的粒子产额不相等。论文发现自旋产额偏向与场手性一致的方向。"
-        },
-        {
-          "t": "手性",
-          "d": "像左手和右手一样镜像不对称的性质。论文中反转场手性会反转自旋偏好通道。"
-        },
-        {
-          "t": "相位调制",
-          "d": "改变光波相位随时间的变化方式。论文用余弦型和正弦型调制来塑造动量谱。"
-        },
-        {
-          "t": "动量谱",
-          "d": "粒子动量分布的图案。论文发现余弦调制能把环形谱变成螺旋形。"
-        }
-      ],
-      "tags": [
-        "量子电动力学",
-        "强场物理",
-        "激光"
-      ],
-      "difficulty": 3,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Li-Yi Yang",
-        "Hong-Hao Fan",
-        "Jing-He Huang",
-        "Shuo Yang",
-        "Bai-Song Xie"
-      ],
-      "abstract": "We study vacuum electron--positron pair production in phase-modulated elliptically polarized electric fields using the quantum kinetic equations. We analyze how the modulation amplitude, frequency, ellipticity, and modulation form affect the spin-resolved momentum spectra and the spin asymmetry. Cosine-type modulation can deform ring-shaped momentum distributions into spiral patterns. This deformation depends nonmonotonically on the modulation amplitude and frequency and is most pronounced for circular polarization. In the transverse momentum plane, the spin-resolved yields favor the spin channel along the direction of field handedness. Reversing the field handedness would reverse the favored channel while leaving the total yield unchanged. Sine-type modulation preserves ring-shaped and mirror-symmetric spectra approximately, however, it leads to a stronger dependence of the spin asymmetry on the modulation amplitude than cosine-type modulation does. These results show that phase modulation and ellipticity can control the momentum spectra patterns in vacuum pair production. Moreover, phase modulation can also affect the degree of spin asymmetry.",
-      "url": "https://arxiv.org/abs/2611.08899",
-      "pdf": "https://arxiv.org/pdf/2611.08899v1"
-    },
-    {
-      "id": "2611.08906",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-06",
-      "title_en": "Quantum Fluctuations in Noether's Theorem",
-      "title_zh": "量子涨落如何修正诺特定理中的守恒量",
-      "one_liner": "从路径积分出发，推导出量子粒子偏离经典路径会导致诺特流出现涨落，其大小等于负的哈密顿量在偏离处的值，并验证了能量-时间不确定关系。",
-      "why": "诺特定理是物理学中最优美的定理之一：对称性导致守恒量。这篇论文讨论量子粒子不沿经典路径运动时，守恒量会怎样“晃动”。它把费曼路径积分和诺特定理联系起来，让高中生看到量子世界如何修正经典定律，适合对理论物理好奇的读者。",
-      "sections": {
-        "background": "经典力学中，诺特定理说每一种连续对称性对应一个守恒量，比如时间平移对称对应能量守恒。推导时会出现一个正比于欧拉-拉格朗日方程式的项，经典路径满足方程所以该项为零。但量子粒子走所有可能路径，不满足经典方程，因此该项不为零，代表量子涨落。此前少有工作系统计算这个涨落。",
-        "method": "作者从路径积分表述出发，保留诺特流推导中通常被丢弃的欧拉-拉格朗日项，将其解释为量子涨落。对于时间平移对称性，他们计算这个涨落的泛函形式，发现它等于负的哈密顿量在偏离经典路径的距离y处的值。然后用单谐振子为例，计算量子能量涨落。",
-        "finding": "对于时间不变系统，量子涨落ΔE = -H(y)，其中y是偏离经典路径的距离，H是哈密顿量。在短时间极限下，这个结果回到能量-时间不确定关系ΔEΔt ~ ħ；在长时间极限下，回到量子谐振子的零点能。这给出了诺特定理在量子层面的修正。",
-        "impact": "这项工作把诺特定理和路径积分联系起来，为理解量子涨落提供了新视角。它可能影响量子热力学和量子场论中守恒量的定义，但目前只是理论框架，实际应用还需进一步研究。"
-      },
-      "analogy": "经典粒子像火车沿铁轨走，诺特定理说“直走时能量不变”。量子粒子像醉汉，可能偏离铁轨，这时能量就会上下晃动。论文算出了晃动的幅度，并发现短时间晃动符合不确定性原理，长时间晃动回到零点能。",
-      "terms": [
-        {
-          "t": "诺特定理",
-          "d": "物理中关于对称性与守恒量关系的定理：每一种连续对称性对应一个守恒量。论文研究量子情形下该定理的修正。"
-        },
-        {
-          "t": "路径积分",
-          "d": "费曼提出的量子力学表述，粒子从A到B的概率是所有可能路径的贡献之和。论文用它计算量子涨落。"
-        },
-        {
-          "t": "欧拉-拉格朗日方程",
-          "d": "经典力学中使作用量取极值的路径满足的方程。论文中该项在量子情形下不为零，代表涨落。"
-        },
-        {
-          "t": "哈密顿量",
-          "d": "系统总能量的算符。论文发现量子涨落等于负的哈密顿量在偏离处的值。"
-        },
-        {
-          "t": "零点能",
-          "d": "量子谐振子在最低能级仍具有的能量，不为零。论文在长时间极限下恢复了这个结果。"
-        },
-        {
-          "t": "能量-时间不确定关系",
-          "d": "ΔEΔt ≥ ħ/2，表示能量和时间的测量精度存在权衡。论文在短时间极限下恢复了这个关系。"
-        },
-        {
-          "t": "谐振子",
-          "d": "像弹簧振子一样的系统，是量子力学中最简单的模型之一。论文用它作为例子验证结果。"
-        }
-      ],
-      "tags": [
-        "量子力学",
-        "诺特定理",
-        "路径积分"
-      ],
-      "difficulty": 3,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "J. A. Crosse"
-      ],
-      "abstract": "When deriving the expression for the Noether's current one obtains a term that is an integral over the Euler-Lagrange equation. This term vanishes along the classical path and so does not contribute to the current. However, quantum particles do not necessarily follow the classical path; this concept is the basis of Feynman's path integral quantization formalism. Thus, for a quantum system, the Euler-Lagrange term does not vanish and, hence, corresponds to a quantum fluctuation of the Noether's current owing to the system deviating from the classical path. Here, we compute this quantum fluctuation from Noether's theorem and the path integral formalism. We find that, for a time invariant system, the expression for the quantum fluctuations is give by minus the functional expression for the Hamiltonian, $ΔE = -H(y)$, evaluated at the distance from the classical path, $y$. As an example we evaluate quantum energy fluctuations of a single Harmonic oscillator. In the short time limit we recover the energy-time uncertainty relation and in the long time limit we recover the zero point energy of the quantum harmonic oscillator.",
-      "url": "https://arxiv.org/abs/2611.08906",
-      "pdf": "https://arxiv.org/pdf/2611.08906v1"
-    },
-    {
-      "id": "2611.08907",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-06",
-      "title_en": "Shared Lookups and Lazy Residues: Fewer Toffoli Gates for Factoring RSA-2048",
-      "title_zh": "量子计算机分解RSA-2048所需量子门减少近半",
-      "one_liner": "通过共享查找表和惰性余数计算，将分解RSA-2048所需的Toffoli门数量减少15%到46%，最少只需25.5亿个。",
-      "why": "RSA加密是保护网络支付和隐私的核心技术，而量子计算机能破解它。这篇论文直接优化了破解所需的资源，让高中生看到课本里的质因数分解如何与最前沿的量子计算和网络安全挂钩，理解数学和物理如何共同影响现实世界。",
-      "sections": {
-        "background": "RSA加密依赖大数分解的困难性：把两个大质数相乘容易，但要从乘积反推出质数极其困难。1994年Shor算法证明量子计算机能高效分解大数，但实际运行需要极多量子门。此前最优方案（2025年Gidney）分解RSA-2048需约30亿个Toffoli门和大量逻辑量子比特，门数量是实用化的主要瓶颈。",
-        "method": "作者改进了Shor算法中的模幂运算电路。他们利用余数数制中不同质数共享相同地址的特点，一次查找返回多个质数的表项，减少查找次数；同时保留中间余数而不是立即计算掉，避免清理时重新计算，并允许惰性算术——只在最后做一次模约减。用开源基准测试在参考模拟器上估计资源。",
-        "finding": "在相同逻辑量子比特预算下，1461个量子比特时Toffoli门减少15%（每次分解5.08×10^9个），1806个量子比特时减少46%（2.55×10^9个）。消融实验显示，固定窗口和检查点设置时，三质数共享贡献了28.8%的门减少。实际运行时间节省取决于具体硬件架构。",
-        "impact": "这使量子计算机破解RSA-2048所需的量子门数量大幅下降，可能加速实用化量子计算机对现有加密体系的威胁。同时也提醒我们，后量子密码学的迁移需要加快。不过，论文只优化了门数量，实际运行还受纠错和硬件速度限制。"
-      },
-      "analogy": "就像你要查五个朋友的电话号码，如果他们的号码存在同一个地址簿的同一页，你翻一次就能全看到，不用翻五次。论文就是让量子计算机查表时“一次看一页”，省下大量重复动作。",
-      "terms": [
-        {
-          "t": "RSA加密",
-          "d": "一种广泛使用的公钥加密算法，安全性基于大数分解的困难性。论文的目标就是让量子计算机更快分解RSA-2048。"
-        },
-        {
-          "t": "Shor算法",
-          "d": "量子计算机上分解大数的算法，核心是模幂运算和量子傅里叶变换。论文优化了其中的模幂运算电路。"
-        },
-        {
-          "t": "Toffoli门",
-          "d": "量子计算中的一种基本逻辑门，类似经典电路中的与门但可逆。论文用Toffoli门数量衡量资源消耗。"
-        },
-        {
-          "t": "逻辑量子比特",
-          "d": "经过量子纠错编码的量子比特，比物理量子比特更稳定。论文比较了不同逻辑量子比特数下的门数量。"
-        },
-        {
-          "t": "余数数制",
-          "d": "用一组两两互质的模数表示一个数，每个模数下的余数独立运算。论文利用它共享查找表。"
-        },
-        {
-          "t": "模幂运算",
-          "d": "计算a^b mod N的运算，是Shor算法的核心步骤。论文优化了它的电路实现。"
-        },
-        {
-          "t": "惰性算术",
-          "d": "推迟模约减等昂贵操作，直到必要时才做。论文用保留中间余数来减少重复计算。"
-        }
-      ],
-      "tags": [
-        "量子计算",
-        "密码学",
-        "算法优化"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Monit Sharma",
-        "Hoong Chuin Lau"
-      ],
-      "abstract": "Gidney's 2025 construction for factoring RSA-2048 with few logical qubits spends most of its Toffoli gates on discrete-log table lookups and residue uncomputation. We reduce both costs. Shared lookups return entries for several primes of a residue number system at once because they have the same address. Retained intermediate residues remove recomputation during cleanup and enable lazy arithmetic with a single final modular reduction. We prove output preservation and estimate resources with an open benchmark built on the reference simulator. Against the best reference setting within the same logical-qubit budget, using the published model for the reference and benchmark counts for our circuits, we obtain $15\\%$ fewer Toffolis at $1{,}461$ qubits ($5.08 \\times 10^{9}$ per factoring) and $46\\%$ fewer at $1{,}806$ qubits ($2.55 \\times 10^{9}$). A matched ablation finds $28.8\\%$ fewer Toffolis from three-prime sharing at fixed window and checkpoint settings. Architecture-specific timing determines how much becomes a runtime saving.",
-      "url": "https://arxiv.org/abs/2611.08907",
-      "pdf": "https://arxiv.org/pdf/2611.08907v1"
-    },
-    {
-      "id": "2611.07265",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.LG",
-      "published": "2026-11-05",
-      "title_en": "How Deep is the Signal? Time-Context up to 30 Years for Colorectal Cancer Prediction in a Primary-Care EHR Model",
-      "title_zh": "肠癌预测需要看多少年病历？",
-      "one_liner": "用英国基层医疗电子病历训练AI预测结直肠癌，发现回溯18年病史时预测最准，但大部分提升在10年内就已获得。",
-      "why": "这篇论文直接回答一个很实际的问题：医生和AI要了解一个人多久的健康记录，才能较好地预判癌症风险。它用几十年的真实数据说话，结论清楚，还能让高中生体会到“时间窗口”这种设计思路在医学AI里的重要性。",
-      "sections": {
-        "background": "电子病历里藏着一个人多年的就诊记录，但AI模型通常只读固定长度的一段，比如最近几次看病。到底该往回看多少年才能抓住癌症最早的信号，此前没人系统研究过。看太短可能漏掉早期线索，看太长又增加计算负担，还可能引入无关信息。",
-        "method": "研究者用伦敦西北部360万基层患者的14亿条编码医疗事件，训练了一个小型Transformer模型（3460万参数），专门预测12个月后是否确诊结直肠癌。他们锁定1008名病例和9582名对照，这些人都有至少30年病历，然后从2年到30年设了15个回溯窗口，在相同患者身上比较不同窗口的预测效果。",
-        "finding": "预测准确度（AUROC，一种衡量排序能力的指标，0.5等于瞎猜）从2年的0.551升到18年的0.590，之后不再明显上升；约80%的提升在10年内就已拿到。另一个传统模型XGBoost也停在0.589左右。模拟还提示，默认位置编码在超过约20年后会“混淆”时间，需要调整参数。",
-        "impact": "这项研究把“时间上下文”变成一个可以测量、应该报告的设计参数，提醒做临床预测模型的人：不是上下文越长越好，10到18年可能是性价比最高的区间。对医疗AI的开发者来说，这能帮助节省计算资源，也让模型更可解释。"
-      },
-      "analogy": "就像你要判断一个人会不会迟到，看他过去10年的出行记录已经足够，再往前翻到20年前，信息量增加很少，反而浪费精力。",
-      "terms": [
-        {
-          "t": "电子病历（EHR）",
-          "d": "医院和诊所记录患者就诊、诊断、用药等信息的数字化档案。这篇论文用它作为模型输入，预测未来癌症发生。"
-        },
-        {
-          "t": "Transformer",
-          "d": "一种擅长处理序列数据的神经网络结构，是很多大语言模型的基础。这里用来读患者按时间排列的医疗事件。"
-        },
-        {
-          "t": "AUROC",
-          "d": "衡量二分类模型排序能力的指标，0.5相当于随机猜，1.0是完美。论文用AUROC比较不同回溯窗口的预测准确度。"
-        },
-        {
-          "t": "回溯窗口",
-          "d": "从预测时间点往前看多少年的病历。论文系统改变这个窗口长度，看它对癌症预测有多大影响。"
-        },
-        {
-          "t": "XGBoost",
-          "d": "一种常用的机器学习模型，基于决策树提升。这里作为基线，用来对比Transformer模型的表现。"
-        },
-        {
-          "t": "位置编码（RoPE）",
-          "d": "给序列中每个位置加一个标识，让模型知道先后顺序。论文发现默认设置下超过约20年时间信息会混淆。"
-        },
-        {
-          "t": "结直肠癌",
-          "d": "发生在结肠或直肠的恶性肿瘤。论文的预测目标，模型要在确诊前12个月给出风险评分。"
-        }
-      ],
-      "tags": [
-        "医学AI",
-        "电子病历",
-        "癌症预测"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Achille Raviez",
-        "Lan Wang",
-        "Brendan Delaney"
-      ],
-      "abstract": "EHR foundation models read medical events within a fixed context window, and long context has so far been measured only in tokens. How far back in time a model must look to capture the earliest predictive signal is unknown. We introduce time-context, the calendar lookback window before the prediction point, and provide, to our knowledge, the first systematic evaluation of decade-scale time-context for an EHR foundation model. We pretrained a decoder-only transformer (34.6M parameters) on 1.4B coded events from 3.6M primary-care patients in North West London and fine-tuned it to predict incident colorectal cancer under a 12-month pre-diagnostic buffer. A frozen cohort of 1,008 cases and 9,582 matched controls, all registered for at least 30 years, was evaluated at 15 nested lookback windows from 2 to 30 years, so that every truncation is compared within the same patients. Discrimination rose from an AUROC of 0.551 at 2 years to 0.590 at 18 years, then plateaued, with about 80% of the gain reached within 10 years; an XGBoost baseline converged to the same level (peak AUROC 0.589). A simulation further suggests that rotary position embeddings (RoPE) over elapsed time alias beyond about 20 years at the default base frequency, motivating a retuned $θ$. Time-context is a measurable design axis for clinical prediction models, distinct from token-context, and should be reported.",
-      "url": "https://arxiv.org/abs/2611.07265",
-      "pdf": "https://arxiv.org/pdf/2611.07265v1"
-    },
-    {
-      "id": "2611.07302",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.supr-con",
-      "published": "2026-11-05",
-      "title_en": "Electrically tunable superconducting dimensionality in stripe-ordered monolayer MoTe$_2$",
-      "title_zh": "单层二碲化钼中电可调的超导维度",
-      "one_liner": "在单层二碲化钼中，条纹电荷密度波将电子态限制在一维通道，加电压可削弱横向绝缘，实现从一维到二维超导的转变。",
-      "why": "超导是电阻为零的神奇现象，而维度（一维还是二维）会影响它能否稳定存在。这篇论文展示了如何用电场在同一个材料里“切换”超导的维度，把课本里的维度概念和实际材料联系了起来。",
-      "sections": {
-        "background": "超导需要电子配对并保持相位一致，维度越低，相位涨落越厉害，超导越难稳定。通常材料的维度由晶体结构决定，很难改变。但有些材料会出现电荷密度波——电子密度周期性起伏，可能把电子态限制在特定方向，从而改变有效维度。",
-        "method": "研究团队用拉曼光谱和扫描隧道显微镜确认了单层二碲化钼中存在条纹状的电荷密度波。然后他们制作了输运器件，测量不同方向的电导和隧道谱，并通过静电掺杂（加栅极电压）来改变电子浓度，观察超导行为的变化。",
-        "finding": "他们发现超导关联只出现在条纹方向，垂直方向则表现为绝缘。当增加栅极电压削弱横向绝缘后，系统转变为具有相位相干性的二维超导。这表明条纹电荷序可以重构超导维度，并且这种维度是电可调的。",
-        "impact": "这项研究提供了一种在单一材料中用电场控制超导维度的新方法，可能为设计可调超导器件提供思路。不过目前还是在极低温度下观察到的，离应用尚远。"
-      },
-      "analogy": "就像一条多车道高速公路，平时车只能沿车道直行（一维），但如果你把车道之间的隔离带拆掉（加电压），车就可以在整个路面自由变道（二维），交通（超导）就更顺畅了。",
-      "terms": [
-        {
-          "t": "超导",
-          "d": "电子配对后无电阻地流动的现象。论文研究的是二维超导能否在单层材料中稳定存在。"
-        },
-        {
-          "t": "电荷密度波",
-          "d": "电子密度在空间上周期性起伏的状态。论文中它形成条纹，把电子态限制在一维通道。"
-        },
-        {
-          "t": "单层二碲化钼（MoTe₂）",
-          "d": "一种二维材料，由一层钼原子和两层碲原子组成。论文用它来研究维度对超导的影响。"
-        },
-        {
-          "t": "拉曼光谱",
-          "d": "通过测量光与材料相互作用后的频率变化来识别材料结构和振动模式。论文用它确认了条纹电荷序。"
-        },
-        {
-          "t": "扫描隧道显微镜（STM）",
-          "d": "用原子级针尖扫描表面，获得原子分辨的图像。论文用它直接看到了条纹图案。"
-        },
-        {
-          "t": "静电掺杂",
-          "d": "通过加电场来改变材料中的电子浓度。论文用这种方法调节超导维度。"
-        },
-        {
-          "t": "相位相干",
-          "d": "超导态中电子对保持步调一致的性质。论文中二维超导的出现意味着相位相干在横向建立。"
-        },
-        {
-          "t": "准一维通道",
-          "d": "电子只能沿一个方向自由运动的结构。论文中条纹电荷波创造了这样的通道。"
-        }
-      ],
-      "tags": [
-        "超导",
-        "二维材料",
-        "电荷密度波"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Tianyu Qiu",
-        "Ziyi Han",
-        "Fei Yang",
-        "Keyu Wei",
-        "Liguo Dou",
-        "Yong Zhang",
-        "Dekun Yang",
-        "Kenji Watanabe",
-        "Takashi Taniguchi",
-        "Xuefeng Wang",
-        "Fucong Fei",
-        "Fengqi Song",
-        "Yanyan Shangguan",
-        "Shaochun Li",
-        "Jinsheng Wen",
-        "Hong Yao",
-        "Chaoxing Liu",
-        "Binghai Yan",
-        "Lin He",
-        "Xiaoxiang Xi"
-      ],
-      "abstract": "Dimensionality governs the stability of collective quantum states, including whether Cooper pairs can establish the phase coherence required for superconductivity. In solids, however, electronic dimensionality is usually encoded in the crystal structure and is difficult to control reversibly. Here we show evidence that monolayer 1$T^{\\prime}$-MoTe$_2$ develops a stripe charge-density wave that reorganizes its low-energy electronic states into quasi-one-dimensional channels. Raman spectroscopy and scanning tunneling microscopy identify the stripe order, whereas directional transport and tunneling spectroscopy reveal superconducting correlations confined to the stripe direction and insulating behavior perpendicular to it. Electrostatic doping weakens the transverse insulating response and drives the system into phase-coherent two-dimensional superconductivity. These results show that stripe charge order can reconfigure superconducting dimensionality and make it electrically tunable within a single crystalline layer.",
-      "url": "https://arxiv.org/abs/2611.07302",
-      "pdf": "https://arxiv.org/pdf/2611.07302v1"
-    },
-    {
-      "id": "2611.07303",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-11-05",
-      "title_en": "Gaps in the Most Frequent Sizes of Integer Sumsets",
-      "title_zh": "整数和集最常见大小的间隔规律",
-      "one_liner": "证明对于k元整数集合，其h重和集最常见的大小之间相差的是(k-2)维 simplex 数。",
-      "why": "从两个数相加开始，探索反复相加后‘和’的可能个数。论文揭示了这些个数之间的间隔有规律，像三角形数一样。高中生能动手算小例子，感受组合数论的趣味。",
-      "sections": {
-        "background": "给定一个整数集合A，它的h重和集hA是所有h个元素（可重复）之和的集合。Nathanson观察到，对于4元集合，hA最常出现的大小之间间隔是三角形数。Senger证明了这一点并猜测对更大集合也成立。本文对k元集合（k≥3）证明了这个模式。",
-        "method": "作者考虑{1,…,q}的k元子集，当q很大时，几乎每个集合的h重和集达到最大可能大小，而例外集合的大小与最大值的差是h-1个显式值之一。通过组合计数和结构分析，证明这些差值之间的间隔是连续的(k-2)维单纯形数。",
-        "finding": "对于固定的k≥3和h（或h增长慢于q^{1/(2k-1)}），当q→∞时，几乎所有k元子集的h重和集大小达到最大值，例外的大小与最大值相差h-1个特定值，这些值之间的差是连续的(k-2)维单纯形数。这推广了Nathanson和Senger的结果。",
-        "impact": "这个结果揭示了整数和集大小分布的精细结构，把组合数论与离散几何中的单纯形数联系起来。它可能启发更多关于和集大小间隔的研究，也展示了‘几乎全部’现象在组合中的威力。"
-      },
-      "analogy": "就像掷骰子，多次投掷后总点数最常见的结果之间，间隔不是随机的，而是按照某种固定模式（比如三角形数）排列。",
-      "terms": [
-        {
-          "t": "和集",
-          "d": "集合A中元素相加得到的所有可能和的集合。h重和集是h个元素相加。"
-        },
-        {
-          "t": "h重和集",
-          "d": "从A中取h个元素（可重复）相加，所有可能和组成的集合，记作hA。"
-        },
-        {
-          "t": "三角形数",
-          "d": "形如1,3,6,10,…的数，是连续整数之和。本文中4元集合的间隔是三角形数。"
-        },
-        {
-          "t": "单纯形数",
-          "d": "三角形数在高维的推广。k-2维单纯形数是组合数C(n+k-2,k-2)。"
-        },
-        {
-          "t": "几乎全部",
-          "d": "当q趋于无穷时，满足某性质的集合占绝大多数，例外只有少数。"
-        },
-        {
-          "t": "k元子集",
-          "d": "从{1,…,q}中选出的恰好k个不同整数组成的集合。"
-        },
-        {
-          "t": "间隔",
-          "d": "两个相邻的最常见大小之间的差。本文证明这些差是连续的单纯形数。"
-        }
-      ],
-      "tags": [
-        "组合数论",
-        "和集",
-        "离散几何"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Saad A. Awan",
-        "Steven J. Miller",
-        "Linh Nguyen",
-        "Steven Senger",
-        "Elvis Wong"
-      ],
-      "abstract": "Nathanson observed that, for four-element sets $A$ of integers, the most frequent sizes of the iterated sumset $hA$ are separated by triangular numbers. Senger proved this and suggested an analogue for larger sets. We establish this pattern for $k$-element subsets of $\\{1,\\ldots,q\\}$, for every fixed $k\\geq3$, where $h\\geq2$ is either fixed or grows slower than $q^{1/(2k-1)}$. As $q\\to\\infty$, almost every such set has the largest possible $h$-fold sumset, and almost every exception has one of $h-1$ explicit smaller sizes. The differences between consecutive sizes among these $h$ values are consecutive $(k-2)$-dimensional simplex numbers.",
-      "url": "https://arxiv.org/abs/2611.07303",
-      "pdf": "https://arxiv.org/pdf/2611.07303v1"
-    },
-    {
-      "id": "2611.07314",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-11-05",
-      "title_en": "On the number of edges in quasiplanar graphs",
-      "title_zh": "准平面图的边数上限被简化证明",
-      "one_liner": "用简化自洽的证明，验证了准平面图边数不超过顶点数常数倍的猜想。",
-      "why": "这个问题来自画图游戏：怎样画线避免太多交叉？它把‘不能有k条边两两交叉’这种直观条件，变成图论中边数上界的漂亮结论。高中生能看懂问题，也能体会数学证明的严谨。",
-      "sections": {
-        "background": "在图论中，平面图可以画在平面上且边不交叉，它最多有3n-6条边。如果允许一些交叉，但禁止k条边两两交叉，这样的图叫k-准平面图。Pach、Shahrokhi和Szegedy猜想这类图的边数仍然只与n成正比，即O_k(n)。这个猜想长期未解决，最近ChatGPT给出了一个证明，本文把它简化成自洽版本。",
-        "method": "作者把ChatGPT的证明重新整理，去掉不必要的技术细节，用更初等的组合论证展示：对于固定的k，任何k-准平面图都可以通过删除少量边变成平面图，或者用其他结构控制边数。关键是把交叉模式分类，并利用平面图的边数上界进行归纳。",
-        "finding": "论文证明：对每个固定的k，存在常数C_k，使得任何n个顶点的k-准平面图至多有C_k n条边。这证实了Pach-Shahrokhi-Szegedy猜想。证明是自洽的，不依赖复杂工具，适合作为教学材料。",
-        "impact": "这个结果解决了组合几何中长期未决的问题，也展示了AI辅助数学证明的可能性。简化后的证明可能被写进教材，帮助理解‘禁止局部交叉模式’如何控制全局边数。"
-      },
-      "analogy": "就像在一个城市里修路，规定不能有k条路两两交叉（比如不能有4条路互相穿过），那么路的总数最多只能是城市大小的常数倍，不会无限多。",
-      "terms": [
-        {
-          "t": "图",
-          "d": "由顶点和连接顶点的边组成的数学对象，用来表示网络或关系。本文研究图的边数上界。"
-        },
-        {
-          "t": "平面图",
-          "d": "能画在平面上且边不相交的图。它最多有3n-6条边，是本文比较的基准。"
-        },
-        {
-          "t": "k-准平面图",
-          "d": "画在平面上且没有k条边两两交叉的图。本文证明它的边数最多是顶点数的常数倍。"
-        },
-        {
-          "t": "边数",
-          "d": "图中边的总数。本文的核心就是估计这个数随顶点数n增长的速度。"
-        },
-        {
-          "t": "顶点",
-          "d": "图中的点，代表对象。n表示顶点个数，边数上界用n的常数倍表示。"
-        },
-        {
-          "t": "常数因子",
-          "d": "与n无关但可能依赖k的固定数。本文证明边数不超过C_k乘以n。"
-        },
-        {
-          "t": "猜想",
-          "d": "数学中尚未证明的命题。本文验证了Pach-Shahrokhi-Szegedy猜想。"
-        }
-      ],
-      "tags": [
-        "图论",
-        "组合几何",
-        "边数上界"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "János Pach",
-        "Gábor Tardos",
-        "Ji Zeng"
-      ],
-      "abstract": "A $k$-quasiplanar graph is a graph drawn in the plane with no $k$ pairwise crossing edges. Pach, Shahrokhi, and Szegedy conjectured that every such graph on $n$ vertices has $O_k(n)$ edges. ChatGPT produced a proof of this conjecture. Here, we present a simplified, self-contained version of that proof.",
-      "url": "https://arxiv.org/abs/2611.07314",
-      "pdf": "https://arxiv.org/pdf/2611.07314v1"
-    },
-    {
-      "id": "2611.07358",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.AR",
-      "published": "2026-11-05",
-      "title_en": "A Synchronized Tri-Modality Wireless System for Multi-Point Non-Contact Cardiac Monitoring",
-      "title_zh": "同步三模态无线系统用于多点非接触心脏监测",
-      "one_liner": "研究者搭建了一套整合心电图、心震图和雷达多普勒心动图的无线系统，能同步记录心脏的电活动、机械振动和胸壁运动，为雷达监测提供可靠对照。",
-      "why": "心脏监测是生物医学工程的热点，而雷达可以非接触地感知心跳。这篇论文用工程思维解决了“如何验证雷达测得到底准不准”的问题，适合对电子、医疗交叉感兴趣的同学。",
-      "sections": {
-        "background": "雷达心脏监测（多普勒心动图）通过探测胸壁微动来推断心脏活动，但缺乏直接的机械参照，难以验证其准确性。以往系统通常只对比心电图（电活动）或粗略参考，无法精细评估雷达输出。因此，需要一个能同时记录电、机械和雷达信号的硬件平台。",
-        "method": "团队集成了微型可穿戴的心电图和心震图模块，以及高分辨率毫米波雷达模块，在统一框架下实现时间对齐的同步采集。他们用线性运动平台验证位移测量精度，并进行了人体实验，从多模态数据中提取特征。",
-        "finding": "实验显示，雷达（DCG）和心震图（SCG）得到的位移信号高度一致，验证了雷达测量的准确性。人体研究进一步展示了系统在多点胸部采集和跨模态同步方面的能力，为雷达心脏监测提供了可靠的验证工具。",
-        "impact": "这是首个整合心电图、心震图和雷达的系统，为雷达心脏监测研究提供了研究级硬件平台。未来可能推动非接触式心脏监测在家庭健康、远程医疗中的应用，但还需更多临床验证。"
-      },
-      "analogy": "就像要验证一个新型体重秤准不准，你不仅需要它自己的读数，还需要同时用标准秤和卷尺测量身高来交叉验证。这套系统就是给雷达心脏监测配上了“标准秤”和“卷尺”。",
-      "terms": [
-        {
-          "t": "心电图（ECG）",
-          "d": "记录心脏电活动的信号。论文中作为电生理参考，与雷达和心震图同步记录。"
-        },
-        {
-          "t": "心震图（SCG）",
-          "d": "记录心脏机械振动（如心肌收缩）的信号。论文中提供机械参照，用于验证雷达测量的胸壁位移。"
-        },
-        {
-          "t": "多普勒心动图（DCG）",
-          "d": "用雷达多普勒效应探测胸壁运动来推断心脏活动。论文中是被验证的对象。"
-        },
-        {
-          "t": "毫米波雷达",
-          "d": "工作频率在毫米波段的雷达，能高精度探测微小位移。论文中用于非接触感知胸壁振动。"
-        },
-        {
-          "t": "时间对齐",
-          "d": "让不同设备采集的信号在时间上精确同步。论文中确保三种模态的数据可以逐点比较。"
-        },
-        {
-          "t": "跨模态同步",
-          "d": "不同模态（电、机械、雷达）信号在时间上保持一致。论文实现了精确同步以进行可靠对比。"
-        },
-        {
-          "t": "位移测量",
-          "d": "测量物体位置的变化。论文中雷达和心震图都用于测量胸壁位移，并相互验证。"
-        },
-        {
-          "t": "可穿戴",
-          "d": "可以穿戴在身上的设备。论文中的心电图和心震图模块是微型可穿戴的。"
-        }
-      ],
-      "tags": [
-        "生物医学工程",
-        "雷达",
-        "可穿戴设备"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Wei Ren",
-        "Kaili Zhao",
-        "Huansheng Yi",
-        "Miaoyang Hu",
-        "Jianqi Wang",
-        "Canhua Xu",
-        "Fugui Qi"
-      ],
-      "abstract": "Cardiac physiological monitoring is fundamental to evaluating cardiovascular health and diagnosing related diseases. Non-contact radar sensing can capture chest-wall vibrations with spatial specificity, enabling localized physiological monitoring and cardiac assessment. Progress, however, has been limited by the absence of a reliable, research-grade hardware platform for rigorous validation of radar-based methods. Prior systems typically pair radar, namely Doppler cardiography (DCG), with only electrocardiography (ECG) or other coarse references, providing no direct mechanical ground truth and thus constraining fine-grained evaluation of radar outputs. We present a tri-modality wireless system that integrates ECG, seismocardiography (SCG), and DCG under a unified acquisition and control framework for time-aligned recording and analysis. The tri-modality system combines miniaturized wearable ECG/SCG modules with a high-resolution mmWave radar module, supporting spatially resolved sensing and subsequent feature extraction. To our knowledge, this is the first integrated ECG--SCG--DCG hardware system for comprehensive cardiac monitoring; it enables multi-point thoracic acquisition, achieves precise cross-modal synchronization, and maintains specifications suitable for wearable operation. Experiments on a linear-motion platform show close agreement between DCG- and SCG-derived displacements, confirming accurate displacement measurement. Human-subject studies further demonstrate cross-modal consistency and robust extraction of feature points, establishing ECG as the electrical anchor and SCG as the mechanical ground truth for DCG. Overall, the system provides a rigorous, spatially resolved validation platform that advances non-contact cardiac sensing and supports next-generation radar-based monitoring.",
-      "url": "https://arxiv.org/abs/2611.07358",
-      "pdf": "https://arxiv.org/pdf/2611.07358v1"
-    },
-    {
-      "id": "2611.07401",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-05",
-      "title_en": "Higher-order topological quantum battery",
-      "title_zh": "高阶拓扑量子电池：完美充电与能量同步",
-      "one_liner": "一种基于二阶拓扑绝缘体的量子电池，在存在损耗和增益时仍能实现完美功提取，并让两个电池同步充电。",
-      "why": "量子电池是下一代储能技术，利用量子叠加和相干性。这篇论文把拓扑材料（内部绝缘、边界导电）和量子电池结合，展示了拓扑保护如何让充电更完美。你能看到课本中的“拓扑”概念如何用于能源，且结论清晰：拓扑相中 ergotropy（可提取功）达到量子化最大值。",
-      "sections": {
-        "background": "量子电池旨在利用量子效应提升充电功率和容量，但实际系统总有损耗和噪声，会破坏量子性。拓扑材料具有受对称性保护的稳健边缘态，可能抵抗这些干扰。然而，如何将高阶拓扑（如二阶拓扑，边界态在棱上）用于量子电池，并实现完美能量提取，此前尚未深入研究。",
-        "method": "作者设计了一个二阶拓扑量子电池，耦合到描述呼吸Kagome晶格的光子晶体。所有格点有光学损耗，但在输出位点选择性引入非线性增益。在这种非厄米条件下，系统表现出拓扑相变，体现在ergotropy（可提取功）和充电功率上。他们还分析三角形几何如何将能量相干地分配到两个量子电池，并研究镜像对称保护的相位同步。",
-        "finding": "在拓扑相中，ergotropy的最大值被量子化，成为拓扑相的指标，并实现完美功提取。两个量子电池通过镜像对称保护的相位同步，实现集体能量存储。这些结果在存在损耗和增益的现实非厄米条件下依然成立。",
-        "impact": "这项工作将拓扑保护引入量子电池，可能提高量子储能设备的稳健性和效率。它也为研究多体量子系统中的能量传输和同步提供了新平台。"
-      },
-      "analogy": "就像一条有护栏的高速公路，拓扑保护让能量传输不受路边干扰（损耗）的影响，从而让两个电池像并排行驶的汽车一样同步到达终点，完成完美充电。",
-      "terms": [
-        {
-          "t": "量子电池",
-          "d": "利用量子叠加和相干性存储能量的装置。论文提出一种拓扑量子电池。"
-        },
-        {
-          "t": "拓扑绝缘体",
-          "d": "内部绝缘但边界导电的材料。论文利用二阶拓扑绝缘体，边界态在棱上。"
-        },
-        {
-          "t": "ergotropy",
-          "d": "从量子态中可提取的最大功。论文中其最大值量子化，作为拓扑相指标。"
-        },
-        {
-          "t": "非厄米",
-          "d": "描述开放系统，有增益和损耗。论文在非厄米条件下研究量子电池。"
-        },
-        {
-          "t": "呼吸Kagome晶格",
-          "d": "一种由六边形和三角形组成的晶格，有交替的键长。论文用其描述光子晶体。"
-        },
-        {
-          "t": "相位同步",
-          "d": "两个振荡器相位锁定。论文中镜像对称保护相位同步，实现集体储能。"
-        }
-      ],
-      "tags": [
-        "量子电池",
-        "拓扑材料",
-        "能量存储"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Motohiko Ezawa"
-      ],
-      "abstract": "A quantum battery is a next-generation energy-storage device that exploits genuinely quantum properties such as superposition and coherence. We propose a second-order topological quantum battery coupled to a photonic crystal described by the breathing-Kagome model, where optical loss is present on all lattice sites while nonlinear gains are introduced selectively at the output sites. Under these realistic non-Hermitian conditions, the system exhibits a clear topological phase transition manifested in both the ergotropy and the charging power. Remarkably, perfect work extraction is realized in the topological phase, where the maximum value of the ergotropy is quantized and acts as a good topological-phase indicator. The triangular geometry coherently distributes energy into two quantum batteries, where mirror-symmetry-protected phase synchronization gives rise to collective energy storage.",
-      "url": "https://arxiv.org/abs/2611.07401",
-      "pdf": "https://arxiv.org/pdf/2611.07401v1"
-    },
-    {
-      "id": "2611.07407",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-11-05",
-      "title_en": "The Higman-Sims graph and a geometric construction of the Steiner system $S(3,6,22)$",
-      "title_zh": "Higman-Sims图与Steiner系统S(3,6,22)的几何构造",
-      "one_liner": "用Steiner系统S(3,6,22)的几何构造，证明Higman-Sims图唯一的距离正则反对称双覆盖就是它的二部双覆盖。",
-      "why": "Higman-Sims图是一个有100个顶点、每个顶点连22条边的对称图，像数学中的宝石。论文用组合设计构造它，让高中生看到抽象图与具体几何设计的联系。",
-      "sections": {
-        "background": "Higman-Sims图是强正则图，参数(100,22,0,6)，即100个顶点，每个顶点度22，相邻顶点无公共邻点，非相邻顶点有6个公共邻点。它唯一。距离正则图是更一般的对称图。本文研究它的距离正则反对称双覆盖，即一种保持距离性质的二重覆盖。",
-        "method": "作者用Steiner系统S(3,6,22)的几何构造：S(3,6,22)是一个22个点的设计，每3个点恰好在6个区组中，每区组6个点。通过这个设计构造Higman-Sims图，并分析其双覆盖的距离正则性。",
-        "finding": "论文证明：Higman-Sims图的唯一距离正则反对称双覆盖就是它的二部双覆盖（即把图变成二分图的标准构造）。关键工具是Steiner系统S(3,6,22)的几何构造，这给出了图的一种显式描述。",
-        "impact": "这个结果加深了对Higman-Sims图对称性的理解，也展示了组合设计在构造特殊图中的力量。可能对距离正则图分类有贡献。"
-      },
-      "analogy": "就像用一套积木（Steiner系统）搭出一座对称的城堡（Higman-Sims图），然后证明城堡的唯一一种‘双层’扩建方式就是最简单的上下复制。",
-      "terms": [
-        {
-          "t": "强正则图",
-          "d": "一种对称图，任意两个相邻顶点有相同公共邻点数，非相邻也有相同公共邻点数。本文研究Higman-Sims图。"
-        },
-        {
-          "t": "Higman-Sims图",
-          "d": "参数为(100,22,0,6)的唯一强正则图，有100个顶点，每个顶点度22。"
-        },
-        {
-          "t": "Steiner系统S(3,6,22)",
-          "d": "22个点的组合设计，每3个点恰好在6个区组中，每区组6个点。本文用它构造图。"
-        },
-        {
-          "t": "距离正则图",
-          "d": "一种图，从任一顶点出发，到其他顶点的距离分布只依赖于距离。本文研究其双覆盖。"
-        },
-        {
-          "t": "双覆盖",
-          "d": "把图的每个顶点复制成两个，边相应连接，形成两层覆盖。本文证明唯一距离正则的是二部双覆盖。"
-        },
-        {
-          "t": "二部双覆盖",
-          "d": "把图变成二分图的标准构造：每个顶点复制成两个，原边连接不同层。本文证明它是唯一的距离正则双覆盖。"
-        },
-        {
-          "t": "区组",
-          "d": "Steiner系统中的子集，每个区组有6个点。每3个点恰好在6个区组中。"
-        }
-      ],
-      "tags": [
-        "组合设计",
-        "代数图论",
-        "强正则图"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Mahdi Ebrahimi"
-      ],
-      "abstract": "The Higman-Sims graph is the unique strongly regular graph with parameters $(100,22,0,6)$. In this paper, we show that the only distance-regular antipodal double cover of the Higman-Sims graph is its bipartite double cover. Our main tool is a geometric construction of the Steiner system $S(3,6,22)$.",
-      "url": "https://arxiv.org/abs/2611.07407",
-      "pdf": "https://arxiv.org/pdf/2611.07407v1"
-    },
-    {
-      "id": "2611.07435",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mes-hall",
-      "published": "2026-11-05",
-      "title_en": "Supermoiré Formation and Robust Topological Edge State in Helical Trilayer Graphene",
-      "title_zh": "三层石墨烯中的超莫尔域与稳固拓扑边缘态",
-      "one_liner": "在扭转约1.7度的三层石墨烯中，科学家直接看到了由“超莫尔”图案分隔的绝缘区域和导电边界，并证实这些边界受拓扑保护。",
-      "why": "石墨烯是课本里常提到的神奇材料，这篇论文把它玩出了新花样：通过精确扭转角度，让材料内部自发形成规则图案，并且边界能导电。这能让你直观感受“结构决定性质”在纳米尺度上的威力。",
-      "sections": {
-        "background": "莫尔条纹是两层材料叠在一起时因晶格轻微失配而产生的周期性图案，就像两层纱窗错开一点会看到新的花纹。近年来，人们发现扭转石墨烯能产生许多奇特电子态。但更复杂的“超莫尔”——两个莫尔图案再叠加——此前很少被直接观测，其电子性质更是未知。",
-        "method": "研究团队用扫描隧道显微镜（STM）在原子尺度上观察三层石墨烯的表面，同时用扫描隧道谱（STS）测量不同位置的电子能谱。他们特别关注了扭转角约1.7度的样品，并对比了理论计算，以确认观察到的图案和电子特征。",
-        "finding": "他们发现样品确实形成了超莫尔域：每个域内都有平坦的能带，与周围能带隔开约40毫电子伏特的能隙。域的边界则表现出均匀的导电边缘态，与理论预言的“谷保护拓扑边缘模”高度吻合。此外，他们还通过成像子晶格极化的反转，直接看到了拓扑性质在边界处的改变。",
-        "impact": "这项研究首次在原子尺度上证实了超莫尔域及其拓扑边缘态的存在，为在石墨烯体系中探索拓扑物理提供了新平台。未来可能用于设计低功耗电子器件或量子计算元件，但离实际应用还有距离。"
-      },
-      "analogy": "就像两块花纹几乎一样的桌布叠在一起，会形成新的条纹图案；如果再叠上第三块，图案会变得更复杂，形成“超图案”。而图案的交界处就像拉链一样，能特别顺畅地导电。",
-      "terms": [
-        {
-          "t": "莫尔条纹",
-          "d": "两层周期性结构叠加时产生的新的周期性图案，就像两层纱窗错开一点会看到新花纹。在这篇论文里，它是形成超莫尔的基础。"
-        },
-        {
-          "t": "超莫尔",
-          "d": "两个莫尔图案再叠加形成的更大尺度图案，由规则区域和边界组成。论文观察的就是这种超莫尔域及其电子性质。"
-        },
-        {
-          "t": "拓扑绝缘体",
-          "d": "内部绝缘但表面或边界能导电的材料。论文中每个超莫尔域就是一个拓扑绝缘体，边界则是导电的拓扑边缘态。"
-        },
-        {
-          "t": "扫描隧道显微镜（STM）",
-          "d": "用一根极细的针尖在材料表面扫描，通过隧道电流感知原子排列。论文用它直接看到了超莫尔域的原子级图案。"
-        },
-        {
-          "t": "扫描隧道谱（STS）",
-          "d": "在STM基础上测量不同位置的电子能谱，能看出材料局部是绝缘还是导电。论文用它确认了域内能隙和边界导电性。"
-        },
-        {
-          "t": "平坦能带",
-          "d": "电子能量几乎不随动量变化的能带，电子容易被“卡”住。论文中每个超莫尔域都拥有这样的平坦能带。"
-        },
-        {
-          "t": "拓扑边缘态",
-          "d": "存在于拓扑材料边界上的导电通道，受对称性保护不易被破坏。论文中域边界就存在这种态，且沿边界均匀导电。"
-        },
-        {
-          "t": "子晶格极化",
-          "d": "石墨烯有两个子晶格，电子波函数偏向其中一个的程度。论文通过成像其反转来揭示拓扑性质的变化。"
-        }
-      ],
-      "tags": [
-        "石墨烯",
-        "拓扑材料",
-        "扫描隧道显微镜"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Hong Li",
-        "Huandong Chen",
-        "Seongyeon Youn",
-        "Kenji Watanabe",
-        "Takashi Taniguchi",
-        "Trithep Devakul",
-        "Kazuhiro Fujita",
-        "Abhay Narayan Pasupathy"
-      ],
-      "abstract": "When two materials with nearly matched lattice constants meet, they form commensurate domains separated by incommensurate domain walls that absorb the mismatch. Recently, this picture has been extended to moiré lattices: when two moiré superlattices have nearly equal periodicities, they can form a \"supermoiré\" consisting of commensurate moiré domains separated by domain walls. Helical trilayer graphene (HTG) is a particularly interesting example: theory predicts that its commensurate domains are distinct topological insulators, separated by a network of conducting domain walls. Here, we use scanning tunneling microscopy and spectroscopy to visualize supermoiré domains and their electronic properties in HTG at a twist angle of $\\sim1.7^\\circ$. We find atomic-scale evidence of relaxation into supermoiré domains, each hosting flat bands separated from remote bands by large gaps of $\\sim40$ meV. Domain walls exhibit spectrally uniform edge states along their length, in excellent agreement with calculations for valley-protected topological edge modes. The topological character of the flat bands is intimately tied to wavefunction localization on a graphene sublattice, and we reveal the topological change across a domain boundary by imaging the reversal of sublattice polarization.",
-      "url": "https://arxiv.org/abs/2611.07435",
-      "pdf": "https://arxiv.org/pdf/2611.07435v1"
-    },
-    {
-      "id": "2611.07440",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-05",
-      "title_en": "Information flow control in hybrid quantum networks",
-      "title_zh": "混合量子网络中的信息流控制",
-      "one_liner": "通过调节量子网络中的纠缠分布，可以控制经典集体行为，实现信息流的平衡。",
-      "why": "网络科学和量子信息都是现代科技热点。这篇论文研究如何用长距离纠缠（量子连接）来影响经典网络的动力学，比如抑制不想要的集体行为。它把量子资源和网络控制联系起来，能让你理解量子技术如何改变传统网络，且结论有明确的纠缠阈值。",
-      "sections": {
-        "background": "传统网络由经典节点和连接组成，其集体行为（如同步）可能 undesirable。量子资源如纠缠可以改变网络的有效连接，但如何利用纠缠来控制经典信息流，以及需要多少纠缠才能实现控制，此前并不清楚。这涉及量子网络和经典动力学的交叉。",
-        "method": "作者考虑一个混合量子网络，其中节点间共享纠缠。他们分析两种控制方法：线性响应控制和Lyapunov泛函可控性。通过改变初始分布的纠缠，研究其对经典集体行为的影响，并推导出实现控制所需的纠缠阈值。",
-        "finding": "研究表明，经典集体行为可以通过调整纠缠分布来平衡。对于两种控制方法，他们给出了具体的纠缠阈值。这意味着，只要纠缠超过某个临界值，就能有效控制信息流，抑制不想要的经典动力学。",
-        "impact": "这项工作为设计量子增强的网络控制提供了理论基础，可能应用于量子通信网络和分布式量子计算。它展示了量子资源如何超越传统网络控制的极限。"
-      },
-      "analogy": "就像在社交网络中，某些关键人物之间的秘密热线（纠缠）可以改变整个群体的行为。只要热线足够多（超过阈值），就能引导舆论走向，抑制谣言传播。",
-      "terms": [
-        {
-          "t": "量子网络",
-          "d": "由量子节点和量子信道组成的网络，能传输量子信息。论文研究混合量子网络中的信息流。"
-        },
-        {
-          "t": "纠缠",
-          "d": "量子粒子间的非经典关联。论文中长距离纠缠用于控制经典网络行为。"
-        },
-        {
-          "t": "线性响应控制",
-          "d": "一种控制方法，通过小扰动分析系统响应。论文用其推导纠缠阈值。"
-        },
-        {
-          "t": "Lyapunov泛函",
-          "d": "用于判断系统稳定性的函数。论文用其研究可控性并给出纠缠阈值。"
-        },
-        {
-          "t": "集体行为",
-          "d": "网络中节点整体表现出的动力学模式，如同步。论文关注如何用纠缠平衡集体行为。"
-        }
-      ],
-      "tags": [
-        "量子网络",
-        "纠缠",
-        "网络控制"
-      ],
-      "difficulty": 3,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Michael Siomau"
-      ],
-      "abstract": "Quantum resources can change the dynamical features and operational behaviors of conventional networks. Long-distance entanglement supports information transfer between nodes lacking a direct connection. This entanglement link not only modifies the stationary effective connectivity of the network but can also be used to suppress undesirable classical dynamics. By examining information flow control mechanism, we demonstrate that classical collective behavior can be well-balanced by altering the initially distributed entanglement. We show the entanglement thresholds for two distinct control approaches: linear response control and Lyapunov functional controllability.",
-      "url": "https://arxiv.org/abs/2611.07440",
-      "pdf": "https://arxiv.org/pdf/2611.07440v1"
-    },
-    {
-      "id": "2611.07447",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · gr-qc",
-      "published": "2026-11-05",
-      "title_en": "Demystifying Graviton Detection",
-      "title_zh": "单个引力子探测不再遥不可及",
-      "one_liner": "新方案利用宏观物体的整体质量吸收引力波能量，让单个引力子的探测从“需要木星大小探测器”变为可能。",
-      "why": "引力波是课本里爱因斯坦预言的时空涟漪，2015年才被直接探测到。这篇论文讨论如何更进一步，探测单个引力子——引力波的量子。它把“不可能”变成“可能”，能让你感受前沿物理如何突破极限，并与中学的波和能量量子化知识联系起来。",
-      "sections": {
-        "background": "引力子一直是个理论概念，从未被单独探测到。过去认为探测单个引力子需要极其巨大的探测器，因为常用的电子电离过程效率极低，信号太弱。这就像用漏勺舀水，大部分都漏掉了。因此，几十年来，单引力子探测被视为天方夜谭。",
-        "method": "作者提出，不用电子电离，而是让整个宏观物体（比如一块材料）通过其质量四极矩吸收引力波的能量。选择在LIGO频段（人类已能探测引力波的频率范围）工作，这样有已知的引力波源，且噪声可控。结合量子声学中单能量量子的分辨技术，就能从经过的引力波中提取引力子，并由经典引力波观测来预告事件。",
-        "finding": "论文指出，早期估计需要木星大小的探测器，是因为依赖低效的电子电离；而利用宏观系统的整体质量吸收，探测变得可行。在LIGO频段，可以提取单个引力子，且探测事件可由经典引力波观测来“预告”。这为首次探测单个引力子、实验检验线性化量子引力打开了现实路径。",
-        "impact": "如果实现，将是首次直接探测到单个引力子，验证引力波的量子本质，并可能开启引力子计数统计的研究，加深对量子引力的理解。它也可能推动量子声学等精密测量技术的发展。"
-      },
-      "analogy": "就像用整个足球场去接雨滴，而不是用一根细针。过去用电子电离好比细针，效率太低；现在用宏观物体的整体质量，好比足球场，能接住更多雨滴，从而探测到单个雨滴（引力子）。",
-      "terms": [
-        {
-          "t": "引力子",
-          "d": "传递引力相互作用的假想量子粒子，类似光子传递电磁力。论文探讨如何探测单个引力子。"
-        },
-        {
-          "t": "引力波",
-          "d": "时空的涟漪，由加速的质量产生。论文利用经过的引力波作为引力子源。"
-        },
-        {
-          "t": "LIGO",
-          "d": "激光干涉引力波天文台，已直接探测到引力波。论文选择其频段以利用已知波源和噪声控制。"
-        },
-        {
-          "t": "四极矩",
-          "d": "描述质量分布偏离球对称的物理量。论文利用宏观物体的质量四极矩吸收引力波能量。"
-        },
-        {
-          "t": "量子声学",
-          "d": "研究声子（声波量子）的量子行为。论文借助其单量子分辨技术来探测引力子。"
-        },
-        {
-          "t": "半经典理论",
-          "d": "引力场经典而物质量子化的理论。论文用它说明粒子探测的局限性。"
-        }
-      ],
-      "tags": [
-        "引力波",
-        "量子引力",
-        "实验物理"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Igor Pikovski"
-      ],
-      "abstract": "Detecting single gravitons is possible through the extraction of discrete energy quanta from passing gravitational waves. For decades, this was considered hopeless, with estimates suggesting a detector the size of Jupiter. Here, I explain how these earlier estimates relied on the highly inefficient electron ionization process, while the absorption through the full mass quadrupole of a macroscopic system can bring graviton detection within experimental reach. Operating in the LIGO frequency band solves the challenges of graviton sources and noise suppression, allowing gravitons to be extracted from known passing gravitational waves and detection events to be heralded by classical gravitational-wave observations. Combined with the ability to resolve single energy quanta in macroscopic systems, such as in quantum acoustics, this opens a realistic path toward graviton detection. I also discuss the general limitations of particle detection in establishing an underlying quantum theory, illustrated by an energy-nonconserving semiclassical alternative. Nevertheless, the semiclassical alternative is not standard classical wave physics, and extracting $E=\\hbarω$ from a passing wave constitutes bona fide particle detection. This opens the way not only to the first detection of individual gravitons, but also to experimentally probing linearized quantum gravity and the graviton counting statistics of gravitational waves.",
-      "url": "https://arxiv.org/abs/2611.07447",
-      "pdf": "https://arxiv.org/pdf/2611.07447v1"
     }
   ]
 }
