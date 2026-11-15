@@ -2,6 +2,72 @@
   "count": 80,
   "papers": [
     {
+      "id": "2611.16241",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · physics.bio-ph",
+      "published": "2026-11-12",
+      "title_en": "Stretched bilayer-cytoskeleton links hold echinocytes in a model splenic slit",
+      "title_zh": "红细胞变刺球后为何难挤过脾脏",
+      "one_liner": "用模型模拟红细胞通过脾脏狭缝，发现变成棘状的红细胞需要大得多的压力才能挤过去，关键在细胞膜与骨架之间的连接被拉紧。",
+      "why": "这篇论文和献血、输血、血液储存直接相关。高中生学过细胞膜和细胞骨架，能直观理解红细胞变形能力的重要性。它把‘细胞为什么能挤过比自身还细的血管’这个具体问题讲得很清楚，还能联系到脾脏过滤血液的功能。",
+      "sections": {
+        "background": "红细胞在血管里旅行时需要挤过比自己直径还小的缝隙，比如脾脏里的狭缝。储存的血液中，红细胞会逐渐变成表面带刺的‘棘状红细胞’，脾脏会把它们清除掉。但一直以来，人们不清楚：仅仅长出刺，是否就足以让红细胞挤不过去？形状变化和面积变化总是同时发生，很难单独研究刺的作用。",
+        "method": "研究者建立了一个双组分模型：细胞膜和细胞骨架，其中骨架会收缩，从而让细胞表面长出刺。他们让面积和体积相同的正常红细胞与不同阶段的棘状红细胞，通过一个模拟脾脏狭缝的微流控装置，测量需要多大的压力差才能挤过去。同时，他们还改变细胞膜与骨架之间连接的拉伸程度，看能否让卡住的红细胞释放。",
+        "finding": "随着棘状程度加重，通过狭缝所需的压力差上升。最严重的阶段III棘状红细胞，需要的压力差是正常红细胞的37到50倍。这些细胞是被接近完全拉伸的膜-骨架连接卡住的；把连接长度增加约两倍，就能让卡住的红细胞释放。而毛细血管大小的通道区分各阶段的能力差得多。在储存血液的各种形状中，只有储存诱导的微型红细胞在高压差下被卡住，而人类脾脏灌注能清除大部分这类细胞。",
+        "impact": "这项研究提示，棘状红细胞除了膜丢失外，刺本身也可能决定哪些储存红细胞会被脾脏保留。这可能帮助改进血液储存条件，或解释为什么某些输血后的红细胞清除得更快。不过这是模型研究，人体内的真实情况可能更复杂。"
+      },
+      "analogy": "就像穿了一件带硬刺的外套挤过窄门：刺越多，外套和身体之间的连接被拉得越紧，你就越难钻过去；如果把连接放松一点，反而能滑过去。",
+      "terms": [
+        {
+          "t": "棘状红细胞",
+          "d": "表面长出多个小刺状突起的红细胞，常出现在储存血液中。论文用它代表变形能力下降的细胞，测试其通过脾脏狭缝的难度。"
+        },
+        {
+          "t": "脾脏狭缝",
+          "d": "脾脏内壁内皮细胞之间的窄缝，红细胞需挤过以过滤老化细胞。论文用模型狭缝测量不同形状红细胞通过所需的压力差。"
+        },
+        {
+          "t": "细胞骨架",
+          "d": "细胞膜内侧的蛋白质纤维网络，支撑细胞形状。论文中骨架收缩导致棘状突起形成，并影响膜-骨架连接的张力。"
+        },
+        {
+          "t": "膜-骨架连接",
+          "d": "把细胞膜和下方骨架连在一起的蛋白质桥梁。论文发现这些连接被拉紧时卡住红细胞，放松连接可释放细胞。"
+        },
+        {
+          "t": "压力差",
+          "d": "驱动流体通过狭缝的压强差。论文用通过狭缝所需压力差衡量红细胞变形和挤过的难易程度。"
+        },
+        {
+          "t": "微流控装置",
+          "d": "在芯片上制造微小通道来模拟血管或脾脏狭缝的实验平台。论文用它测量红细胞通过窄缝所需的压力。"
+        },
+        {
+          "t": "微型红细胞",
+          "d": "储存血液中体积较小、球形化的红细胞。论文发现只有这类细胞在高压差下被模型狭缝卡住，与脾脏清除现象一致。"
+        }
+      ],
+      "tags": [
+        "红细胞",
+        "脾脏",
+        "生物力学"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Zhaojie Chai",
+        "Jianlu Zheng",
+        "He Li",
+        "Ming Dao",
+        "George Em Karniadakis"
+      ],
+      "abstract": "Stored red blood cells become echinocytes, growing spicules before losing membrane; the spleen clears the resulting small, spherical cells. Whether spicules alone hinder splenic passage is unknown. Shape and area change together. In a two-component model whose shrinking cytoskeleton raises spicules, we drove a discocyte and stage I to III echinocytes of equal area and volume through a model splenic slit. The pressure drop needed to pass rose with stage; stage III echinocytes were held at 37 to 50 times the pressure drop that passed the discocyte. Bilayer-cytoskeleton links stretched near full extension held these cells; lengthening them about twofold released a held cell. Capillary-sized channels, as in our device, separated the stages far less. Of the shape classes in stored blood, the model held at high pressure drops only storage-induced microerythrocytes, which perfused human spleens clear most. Spicules, besides membrane loss, may decide which stored cells the spleen retains.",
+      "url": "https://arxiv.org/abs/2611.16241",
+      "pdf": "https://arxiv.org/pdf/2611.16241v1"
+    },
+    {
       "id": "2611.16757",
       "field": "bio",
       "source": "arXiv",
@@ -60,6 +126,185 @@
       "abstract": "We propose an online method for choosing both a blood pressure target and a norepinephrine dose for an individual surgical patient. From a short record of mean arterial pressure (MAP) and norepinephrine delivery, the method fits a reduced pharmacokinetic/pharmacodynamic model and uses a local Gaussian approximation to propagate uncertainty to future MAP readings. It searches for the lowest target for which a bolus and constant infusion keep the predicted probability of at least one MAP reading below 65 mmHg after the rise phase within a prescribed limit. If no such target is found, the decision returns to the clinician. We assess calibration of the predicted minimum MAP on retrospective surgical records under the doses actually administered. In a cohort of 4,096 virtual patients, the method recommended a dose for 74 % of patients at a nominal risk of 5 %. Among the patients receiving a recommendation, 6.9 % had a reading below 65 mmHg. A fixed target of 70 mmHg yielded a rate of 25 % when applied to the full virtual cohort.",
       "url": "https://arxiv.org/abs/2611.16757",
       "pdf": "https://arxiv.org/pdf/2611.16757v1"
+    },
+    {
+      "id": "2611.16773",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-12",
+      "title_en": "Large Pockels Effect in Multiaxial Ferroelectrics Induced by Polarization Reorientation",
+      "title_zh": "多轴铁电体里“转个方向”就能大幅增强光学效应",
+      "one_liner": "理论预测多轴铁电体中极化方向重新取向可显著增强线性电光效应，在单层SnSe和块体KNbO3中得到验证。",
+      "why": "手机屏幕、光通信器件都依赖电光效应——用电场控制光。这篇论文提出一种不靠材料“变软”的新思路：让铁电体的极化方向转动。高中生可以联系到铁电体和光学的基本概念，感受材料设计中的几何直觉。",
+      "sections": {
+        "background": "线性电光效应（泡克尔斯效应）指电场能改变材料的折射率，用于高速光调制器。传统增强方法靠结构“软”——比如相界、畴壁或应变，让材料容易变形。但这类方法往往伴随损耗或稳定性问题。能否换一种机制增强效应，是光子材料设计的难题。",
+        "method": "作者建立唯象理论，分析多轴铁电体中极化方向（方位角）与外电场的关系，发现两者存在滞回关系，并预测在特定极化方位角下电光系数可能发散。随后用第一性原理计算模拟单层SnSe和块体KNbO3，验证极化重取向对电光系数的增强。",
+        "finding": "理论表明多轴铁电体的极化方位角随电场变化有滞回，电光系数在合适角度可能显著增大。第一性原理计算证实，极化重取向能大幅提升单层SnSe和块体KNbO3的电光系数，验证了策略的合理性。",
+        "impact": "这提出了一种不依赖结构软化的新设计思路，可能为节能光电器件（如光调制器、光开关）开辟新材料平台。多轴铁电体因此成为有前景的候选。"
+      },
+      "analogy": "就像调节百叶窗的角度来控制进光量，传统方法是把叶片做软，新方法是让整排叶片一起转动方向——转动本身就能大幅改变透光效果。",
+      "terms": [
+        {
+          "t": "铁电体",
+          "d": "具有自发极化且极化方向可被外电场翻转的材料。本文研究多轴铁电体中极化重取向对光学效应的影响。"
+        },
+        {
+          "t": "泡克尔斯效应",
+          "d": "线性电光效应，指材料折射率随外加电场线性变化。本文的目标是增强这种效应以用于光器件。"
+        },
+        {
+          "t": "极化重取向",
+          "d": "铁电体中极化方向在外场作用下发生转动。本文提出这是增强电光效应的新机制。"
+        },
+        {
+          "t": "第一性原理计算",
+          "d": "不依赖经验参数、直接求解量子力学方程来预测材料性质的方法。本文用它验证理论预测。"
+        },
+        {
+          "t": "唯象理论",
+          "d": "用宏观变量（如极化、电场）描述现象而不深入微观机制的理论框架。本文用它推导极化与电场的关系。"
+        },
+        {
+          "t": "电光系数",
+          "d": "衡量电场改变折射率强弱的物理量。本文预测极化重取向可显著提高该系数。"
+        }
+      ],
+      "tags": [
+        "铁电体",
+        "光学材料",
+        "第一性原理"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Zhijun Jiang",
+        "Jinyang Ni",
+        "Hong Jian Zhao"
+      ],
+      "abstract": "Materials with large linear electro-optic (Pockels) effect have significant potential for fabricating energy-efficient photonic devices. Previous strategies have mostly relied on structural softness---associated with phase boundary, domain wall, or strain induced phase transition---to create large Pockels effect in ferroelectrics. In this Letter, we show that polarization reorientation in multiaxial ferroelectrics may create structural softness and thus induce large Pockels effect. By developing a phenomenological theory, we find that multiaxial ferroelectrics exhibit a hysteretic relationship between the azimuth angles of the polarization and the electric field, and a possible divergence of the linear electro-optic coefficient may occur at an appropriate polarization azimuth angle. This suggests a brand-new strategy for engineering large Pockels effect in multiaxial ferroelectrics. We perform first-principles simulations on several multiaxial ferroelectrics and predict that polarization reorientation can significantly enhance the electro-optic coefficients in monolayer SnSe and bulk KNbO$_3$. This validates the soundness of our strategy and emphasizes multiaxial ferroelectrics as promising platforms toward large Pockels effect.",
+      "url": "https://arxiv.org/abs/2611.16773",
+      "pdf": "https://arxiv.org/pdf/2611.16773v1"
+    },
+    {
+      "id": "2611.16792",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-12",
+      "title_en": "Systematic Evaluation of Training Data Generation Strategies for Machine Learning-Based Molecular and Materials Property Prediction",
+      "title_zh": "训练机器学习模型，挑数据比堆数据更重要",
+      "one_liner": "系统比较多种挑选训练数据的策略，发现基于不确定性的主动学习通常更省标签且预测更准。",
+      "why": "机器学习预测分子性质听起来很酷，但模型靠数据“喂”出来。这篇论文告诉你：不是数据越多越好，怎么挑数据有讲究。高中生可以联系到“刷题要刷错题”的学习经验，理解主动学习的直觉。",
+      "sections": {
+        "background": "用机器学习预测分子或材料性质，需要大量带标签的数据（比如实验测得的能量、带隙）。但做实验或高精度计算很贵，标签有限。随机采样可能漏掉关键区域，导致模型在重要地方不准。如何用最少的标签达到最好效果，是数据驱动材料发现的核心难题。",
+        "method": "作者在多个数据集、多种模型和表示方法上，系统比较了从随机采样到各种主动学习策略的数据获取方法。主动学习让模型自己挑“最不确定”的样本去标注，而不是随机选。他们评估不同策略在固定标签预算下的预测性能。",
+        "finding": "数据获取策略的效果强烈依赖于模型、数据集和预测任务的组合，没有万能药。但总体而言，基于不确定性的采样通常优于其他策略。作者据此给出了在不同标签预算下选择策略的指南。",
+        "impact": "这项研究帮助材料发现和药物设计团队更聪明地使用有限的实验或计算资源，避免盲目堆数据。它强调主动学习可能成为标准工具，但需要根据具体问题调整。"
+      },
+      "analogy": "就像备考时，与其把整本练习册从头做到尾，不如让老师挑出你最没把握的题来练——主动学习就是让模型自己举手说“这题我不确定”。",
+      "terms": [
+        {
+          "t": "主动学习",
+          "d": "让机器学习模型主动挑选最有价值的未标注样本去询问标签，以最少数据达到最好效果。本文比较了多种主动学习策略。"
+        },
+        {
+          "t": "标签",
+          "d": "数据对应的目标性质值，如能量或带隙，通常通过实验或高精度计算获得。本文关注在有限标签预算下如何选择样本。"
+        },
+        {
+          "t": "不确定性采样",
+          "d": "主动学习的一种策略，优先标注模型预测最不确定的样本。本文发现它通常优于随机采样。"
+        },
+        {
+          "t": "分子表示",
+          "d": "把分子结构转换成模型能处理的数字形式，如指纹或图。本文比较了不同表示对数据策略效果的影响。"
+        },
+        {
+          "t": "预测性能",
+          "d": "模型在未见数据上的准确度，通常用误差衡量。本文用固定标签预算下的性能来评价数据获取策略。"
+        }
+      ],
+      "tags": [
+        "机器学习",
+        "主动学习",
+        "材料发现"
+      ],
+      "difficulty": 1,
+      "minutes": 3,
+      "pick": false,
+      "authors": [
+        "Minh Nghia Nguyen",
+        "Beate Paulus",
+        "Akhil S. Nair"
+      ],
+      "abstract": "Machine-learning (ML) models for molecular and materials property prediction are often trained on large datasets curated through arbitrary or generic sampling strategies. Such approaches can lead to the over- or under-representation of regions of chemical and materials space that are most relevant to the prediction task. An important challenge is therefore how to efficiently curate training data to maximize predictive performance while minimising the number of labelled examples required. Here, we systematically compare training data acquisition strategies for molecular and materials property prediction, ranging from random sampling to various active learning approaches. We evaluate their performance across different model classes, representations, datasets, and target properties. Our results show that the effectiveness of data acquisition strategies depend strongly on the interplay between the model, dataset, and prediction task, although uncertainty-based sampling generally outperforms alternative strategies. Based on these findings, we derive guidelines for selecting data acquisition strategies under a given labelling budget.",
+      "url": "https://arxiv.org/abs/2611.16792",
+      "pdf": "https://arxiv.org/pdf/2611.16792v1"
+    },
+    {
+      "id": "2611.16881",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.QM",
+      "published": "2026-11-12",
+      "title_en": "Protein Language Models Fail To Capture Contact Predictions Under Invariant Relabeling",
+      "title_zh": "蛋白质语言模型靠字母认残基，而非共进化",
+      "one_liner": "给氨基酸字母重新贴标签后，蛋白质语言模型预测的接触图崩溃，而传统共进化模型不变，说明前者依赖残基的‘标准身份’而非纯统计。",
+      "why": "这篇论文用了一个很巧的‘换字母’实验，像给密码本换字母表，来检验AI是否真的学到了物理规律。高中生学过蛋白质由氨基酸组成，也接触过AI，能理解‘模型可能走捷径’这个重要警示，对科学思维很有启发。",
+      "sections": {
+        "background": "蛋白质语言模型（pLM）能从单条氨基酸序列高精度预测哪些残基在空间上接触。人们常认为这说明模型隐式学到了共进化统计——即序列中两个位置协同变化，暗示空间接触。经典方法如Potts模型基于多序列比对，确实利用共进化信号。但pLM是否真的依赖共进化，还是用了其他捷径，一直不清楚。",
+        "method": "研究者设计了一个诊断框架：对氨基酸字母表做全局双射重命名，即把20种氨基酸的字母任意置换，但保持所有比对层面的信息、列熵和成对编辑距离不变。经典Potts模型和逆协方差估计器在这种变换下理论上不变，而pLM则被测试。他们测试了多种架构（ESM-2、MSA Transformer、AMPLIFY）和规模（8M到3B参数），并用Hamming距离控制和生化分组干预来隔离原因。",
+        "finding": "pLM的接触图在任意重命名下崩溃，而经典模型不变。增大模型规模会让模型对生化类别更敏感，但性能在重命名下仍然下降。这表明pLM依赖显式的、标准的残基身份，即‘字母锚定’，而不是纯共进化统计。换句话说，模型把氨基酸字母本身当成了重要线索，而不是只从协同变化中推断接触。",
+        "impact": "这项工作提醒我们，AI模型的高准确率不一定证明它学到了我们以为的物理规律。它可能抓住数据中的表面特征。这对蛋白质工程和疾病变异解读有影响：如果模型依赖字母身份，换一种表示就可能失效。也提醒研究者设计更严格的诊断测试，防止过度解读模型能力。"
+      },
+      "analogy": "就像一个人靠字母形状记单词，而不是靠词义。你把字母表打乱重排，他就认不出单词了；而真正懂词义的人，换字体也照样认识。",
+      "terms": [
+        {
+          "t": "蛋白质语言模型",
+          "d": "用大量蛋白质序列训练、能根据氨基酸序列预测结构或功能的AI模型。论文检验它是否真的学到了共进化规律。"
+        },
+        {
+          "t": "接触图",
+          "d": "标出蛋白质序列中哪些残基在三维空间里彼此靠近的图。论文用接触图预测的准确性来评判模型。"
+        },
+        {
+          "t": "共进化",
+          "d": "不同位置的氨基酸在进化中协同变化的现象，常暗示空间接触。经典方法依赖它预测接触。"
+        },
+        {
+          "t": "Potts模型",
+          "d": "一种基于多序列比对统计氨基酸成对关系的经典模型。论文中它作为对照，在重命名下保持不变。"
+        },
+        {
+          "t": "双射重命名",
+          "d": "把20种氨基酸字母一一对应地换成另一套字母，不改变任何比对信息。论文用它检验模型是否依赖字母身份。"
+        },
+        {
+          "t": "字母锚定",
+          "d": "模型依赖氨基酸的具体字母身份而非纯共进化统计的倾向。论文发现这是pLM在重命名下崩溃的原因。"
+        },
+        {
+          "t": "Hamming距离",
+          "d": "两个等长字符串在相同位置上不同字符的个数。论文用它控制重命名前后序列差异，排除干扰。"
+        }
+      ],
+      "tags": [
+        "蛋白质",
+        "人工智能",
+        "共进化"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Paarth Batra",
+        "Aryan Keluskar"
+      ],
+      "abstract": "Protein language models (pLMs) produce highly accurate contact maps from single-sequence inputs. People often take this accuracy as proof that these models implicitly learn invariant coevolutionary statistics, extracting the same signals as classical alignment-based methods like Potts. In this work, we introduce a diagnostic framework around a global bijective relabeling of the amino-acid alphabet. This transformation permutes residue letters while leaving all alignment-level information, column entropies, and pairwise edit distances unchanged. Pseudolikelihood Potts models and inverse-covariance estimators remain invariant under this transformation, but pLMs fail the test. Across multiple architectures (ESM-2, MSA Transformer, AMPLIFY) and model scales (8M to 3B parameters), pLM contact maps collapse under arbitrary relabeling. Using Hamming distance controls and biochemical grouping interventions, we attempt to isolate what likely causes this degradation and find that these models rely on explicit, canonical residue identities (``alphabet anchoring'') rather than pure coevolutionary statistics. Increasing scale makes models more responsive to biochemical classes, but their performance still degrades under relabeling. Our findings show a gap between how pLMs and classical coevolutionary models compute contacts. More broadly, our work shows how diagnostic perturbations that leave classical models provably unchanged can expose hidden representation biases and prevent over-reliance on neural black boxes in biological modeling.",
+      "url": "https://arxiv.org/abs/2611.16881",
+      "pdf": "https://arxiv.org/pdf/2611.16881v1"
     },
     {
       "id": "2611.16915",
@@ -123,6 +368,70 @@
       "abstract": "We formulate and numerically study the problem of finding the minimum energy required to trigger a spike in a three-dimensional conductance-based excitable model. The variational formulation seeks a state trajectory that reaches the boundary of the spiking region with the least \\textit{peak} cumulative work supplied through the membrane port. We approximate voltage histories by sums of real exponentials, reducing the problem to a finite-dimensional optimization. The best-found voltage waveform consists of a hyperpolarization phase followed by a depolarization phase, which seems to match the experimentally determined optimal stimulus in squid giant axons.",
       "url": "https://arxiv.org/abs/2611.16915",
       "pdf": "https://arxiv.org/pdf/2611.16915v1"
+    },
+    {
+      "id": "2611.16924",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mes-hall",
+      "published": "2026-11-12",
+      "title_en": "Squeezed terahertz light from nonlinear diamagnetism in ultrastrongly coupled two-dimensional electrons",
+      "title_zh": "二维电子气在太赫兹腔中产生压缩光",
+      "one_liner": "发现二维电子气的能带非抛物线性可把太赫兹腔变成量子克尔振荡器，预测现有样品可产生1.8到2.4分贝的压缩太赫兹光。",
+      "why": "压缩光是量子技术里的重要资源，通常需要复杂装置。这篇论文说，一种成熟的半导体结构——二维电子气——本身就能产生压缩太赫兹光，而且用现有样品就能做到。高中生可以从中看到课本里的能带、谐振腔和量子噪声如何连在一起。",
+      "sections": {
+        "background": "二维电子气放在太赫兹腔里，是研究光与物质超强耦合的成熟平台，但过去人们用线性模型描述它，认为它只像普通弹簧一样响应。最近实验发现电子能带不是完美抛物线，这种非线性会带来非线性磁性。作者想知道，这种非线性能否让系统产生量子压缩光。",
+        "method": "他们建立了一个不采用旋转波近似的理论，配合与超强耦合一致的输入输出关系、第一性原理的腔浴模型和电子加热的自洽模型。用这些工具计算输出光的压缩程度，并分析电子升温如何限制压缩，最后给出腔品质因数与耦合强度的设计规则。",
+        "finding": "预测在现有GaAs样品、弱限制腔和约100的品质因数下，输出压缩可达1.8到2.4分贝；如果迁移率或腔频率稍有改善，可提高到约9分贝。载流子加热会通过一个材料品质因数设限，最优腔品质因数与超强耦合强度成反比。",
+        "impact": "这为太赫兹压缩光提供了一条可能更简单的路，不需要复杂的光学参量装置。太赫兹波段在成像、通信和光谱学中有用，压缩光可能帮助提高测量灵敏度。论文也给出了设计规则，可能指导后续实验。"
+      },
+      "analogy": "就像秋千本来按线性摆动，但绳子长度会随摆幅轻微变化，于是摆动变得非线性。这种非线性可以把普通推动变成有量子特性的压缩摆动，让噪声在一个方向上被压小。",
+      "terms": [
+        {
+          "t": "二维电子气",
+          "d": "电子被限制在二维平面内运动的半导体结构。论文把它作为产生压缩太赫兹光的核心材料平台。"
+        },
+        {
+          "t": "太赫兹光",
+          "d": "频率在0.1到10万亿赫兹之间的电磁波。论文研究如何在这种波段产生量子压缩光。"
+        },
+        {
+          "t": "压缩光",
+          "d": "一种量子光，某个物理量的噪声低于真空噪声。论文预测二维电子气可输出压缩太赫兹光。"
+        },
+        {
+          "t": "超强耦合",
+          "d": "光与物质相互作用强到不能忽略反旋转波项。论文的理论必须考虑这种耦合才能正确描述系统。"
+        },
+        {
+          "t": "克尔振荡器",
+          "d": "频率随振幅变化的非线性振荡器。论文说明二维电子气的非线性使它表现为量子克尔振荡器。"
+        },
+        {
+          "t": "品质因数",
+          "d": "描述谐振腔存能本领的数值，越高越不易漏能。论文用它给出压缩光优化的设计规则。"
+        },
+        {
+          "t": "能带非抛物线性",
+          "d": "电子能量与动量关系偏离完美抛物线的程度。论文指出这种非线性是产生压缩的根源。"
+        }
+      ],
+      "tags": [
+        "量子光学",
+        "太赫兹",
+        "二维材料"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Dasom Kim",
+        "Junichiro Kono",
+        "Stephen Hughes"
+      ],
+      "abstract": "Two-dimensional electron gases in terahertz cavities are among the most mature platforms for ultrastrong light--matter coupling, yet their collective response is captured by the linear Hopfield model, which has an exact classical correspondence. We show that the intrinsic band nonparabolicity of the electrons, recently revealed through nonlinear diamagnetism, turns this system into a quantum Kerr oscillator that squeezes terahertz light. Using a non-rotating-wave theory with ultrastrong-coupling-consistent input--output, an ab initio cavity bath, and a self-consistent model of electron heating, we predict output squeezing of 1.8--2.4\\,dB with present GaAs samples in weakly confined cavities with quality factors of order $10^2$, and up to $\\approx9$\\,dB with modest improvements in mobility or cavity frequency. Carrier heating sets limits through a material figure of merit, which yields a simple design rule that the optimal cavity quality factor scales inversely with the ultrastrong-coupling strength.",
+      "url": "https://arxiv.org/abs/2611.16924",
+      "pdf": "https://arxiv.org/pdf/2611.16924v1"
     },
     {
       "id": "2611.17001",
@@ -320,6 +629,71 @@
       "pdf": "https://arxiv.org/pdf/2611.17042v1"
     },
     {
+      "id": "2611.17097",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-11-12",
+      "title_en": "Broadcast, Don't Replicate: Eliminating Weight HBM in Datacenter LLM Serving",
+      "title_zh": "用光纤广播代替内存复制，让大模型服务更省内存",
+      "one_liner": "提出光学广播内存架构，把大模型权重从中心服务器通过光纤广播给计算节点，省去数万台加速器里重复存储的权重内存。",
+      "why": "大模型推理是当前芯片和数据中心最热的话题，这篇论文直接挑战“每个计算卡都要存一份模型”的常识。高中生能从中看到内存带宽、光通信和系统架构如何共同决定AI成本，也能理解“广播”这个简单想法在工程上的威力。",
+      "sections": {
+        "background": "今天运行大语言模型时，模型权重是只读的，但每台加速器都要在本地内存里存一份完整副本。在数万台加速器规模的数据中心，这会造成巨大的内存开销和能耗。之前有人提出用光纤环作为延迟线存储器来共享权重，但环形结构必须容纳整个模型，环长随模型增大而变长，而且难以高效支持混合专家模型。",
+        "method": "作者提出光学广播内存：一个中心内存服务器持续把权重数据流通过光纤广播出去，各个推理节点用只接收的光模块从数据流中“分接”自己需要的数据，直接送给计算单元，不需要中间缓存。他们还设计了动态大小的缓冲区间，来适应长度变化很大的上下文，并说明这种开放结构如何高效服务混合专家模型。",
+        "finding": "在8万台加速器的数据中心规模下评估，光学广播内存可以消除数PB的HBM内存，同时性能有竞争力。它突破了光纤环必须容纳整个模型的限制，能灵活支持现代混合专家模型的大规模部署。论文给出的关键数字是“8万台加速器”和“数PB HBM”，说明节省的内存规模非常可观。",
+        "impact": "如果这种架构可行，未来数据中心的资本支出和静态功耗可能明显下降，大模型服务的单位成本也可能降低。它还可能推动光通信与计算芯片更紧密地结合，让“内存放在远处、用光来广播”成为一种新的系统设计思路。"
+      },
+      "analogy": "就像教室里每个学生都买一套同样的教材，又贵又占地方；改成老师用广播统一念，学生只带一个接收器，听到需要的内容就记下来。光纤就是那个广播喇叭，计算节点就是学生。",
+      "terms": [
+        {
+          "t": "HBM",
+          "d": "高带宽内存，一种堆叠在加速器芯片旁边的高速内存。论文里指每台加速器本地重复存储模型权重的那部分内存，是主要节省对象。"
+        },
+        {
+          "t": "大语言模型推理",
+          "d": "让训练好的大模型回答问题的过程。论文研究的是数据中心里大规模部署这种推理服务时，如何减少内存开销。"
+        },
+        {
+          "t": "混合专家模型",
+          "d": "一种大模型结构，每次只激活部分子网络。论文用它说明新架构能灵活支持这种权重布局复杂的模型。"
+        },
+        {
+          "t": "延迟线存储器",
+          "d": "让数据在光纤环里循环流动来暂存信息的方式。论文用它对比自己的广播方案，说明环形结构扩展性差。"
+        },
+        {
+          "t": "共封装光学",
+          "d": "把光收发模块和计算芯片封装在一起的技术。论文里节点用只接收的共封装光学器件从广播流中分接数据。"
+        },
+        {
+          "t": "加速器",
+          "d": "专门加速AI计算的芯片，比如GPU。论文以8万台加速器为规模评估新架构能省多少内存。"
+        },
+        {
+          "t": "权重",
+          "d": "大模型里训练好的参数，只读且所有副本相同。论文的核心观察是权重不必在每个节点重复存储。"
+        }
+      ],
+      "tags": [
+        "数据中心",
+        "光通信",
+        "大模型推理"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Hannah Atmer",
+        "Yuan Yao",
+        "Thiemo Voigt",
+        "Stefanos Kaxiras"
+      ],
+      "abstract": "Large language model (LLM) inference at datacenter scale is fundamentally bottlenecked by memory capacity and bandwidth limits. Because model weights are read-only and identical across instances, conventional architectures that replicate these parameters across the local DRAM of tens of thousands of accelerators incur massive capital expenditures, significant static power dissipation, and redundant memory-fetch energy. A recent proposal to use optical fiber loops as delay-line memory alleviates these issues, but its recirculating loop must hold the whole model: loop length grows with model size, slack is fixed when the ring is built, and the layouts that serve modern Mixture of Experts (MoE) models efficiently do not fit in it. We propose Optical Broadcast Memory (OBM), an open-ended hierarchical Tap-and-Amplify fiber architecture that generalizes and replaces the optical ring paradigm. A centralized memory server continuously broadcasts weights to distributed inference nodes that passively tap the data stream using receive-only co-packaged optics, delivering parameters directly to compute units without intermediate buffering. To overcome the limitations of continuous weight streaming, we use dynamically-sized slack to accommodate large and variable context lengths. We show how removing the restrictions of the optical ring allows OBM to efficiently serve MoE models. Evaluated at a datacenter scale of 80,000 accelerators, OBM eliminates petabytes of HBM while being competitive or better in throughput and energy per token than an HBM-based system.",
+      "url": "https://arxiv.org/abs/2611.17097",
+      "pdf": "https://arxiv.org/pdf/2611.17097v1"
+    },
+    {
       "id": "2611.17108",
       "field": "chip",
       "source": "arXiv",
@@ -386,6 +760,68 @@
       "abstract": "Memory decides which LLMs an edge device runs, and how fast: capacity on a $4$ GB Jetson Nano, bandwidth on an $8$ GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, $\\texttt{llama.cpp}$'s K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. $\\texttt{LazyWeights}$ keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At $1\\%$ and $3.5\\%$ perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are $5.7-31.4\\%$ smaller than the best $\\texttt{llama.cpp}$ format. A bit-exact $0.21$ mm$^2$ ASIC decoder unit ($1$ GHz, $7$ nm) cuts Orin latency and energy per token by up to $36\\%$ and $38\\%$ ($54\\%$ and $44\\%$ with prompt-lookup speculation). On the Nano, $\\texttt{LazyWeights}$ needs $58-64\\%$ less time and $53-57\\%$ less energy per token than CPU $\\texttt{llama.cpp}$, and runs a streamed Mistral-7B 6.6$\\times$ faster at $3.89$ bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).",
       "url": "https://arxiv.org/abs/2611.17108",
       "pdf": "https://arxiv.org/pdf/2611.17108v1"
+    },
+    {
+      "id": "2611.17112",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mes-hall",
+      "published": "2026-11-12",
+      "title_en": "Acoustically driven motion of single molecules at hBN surfaces",
+      "title_zh": "用声波在氮化硼表面推动单个DNA分子",
+      "one_liner": "把表面声波和六方氮化硼结合，无需接触就能定向推动DNA分子，声波功率越大，分子运动越偏向直线。",
+      "why": "在芯片上操控单个生物分子是测序和纳米流体技术的核心难题。这篇论文用声波和一种原子级平整的材料，让DNA自己“滑”起来，不需要电极或磁场。高中生可以联系到声波、材料表面和分子运动，看到跨学科思路如何解决具体问题。",
+      "sections": {
+        "background": "单分子成像和传感已经能观察生物分子在界面上的运动，但要在表面上主动运输、定位和控制分子仍然很难。现有方法往往要求分子具有特定电学、介电或磁学性质，或者表面不够平整导致分子粘住。这限制了单分子器件的实现。",
+        "method": "作者搭建了一个表面声波与六方氮化硼结合的平台。六方氮化硼表面原子级平整，DNA可以在上面保持面内移动；表面声波则提供无接触的驱动力。他们用轨迹分析和跳跃分析，研究不同声波功率下DNA分子的位移偏向和运动路径。",
+        "finding": "提高声波功率会让DNA分子在声波传播方向上的位移偏向更大，运输速度更高，轨迹也越来越接近直线。这说明表面声波可以可调地定向运输限制在六方氮化硼表面的DNA分子。论文没有给出具体速度数值，但展示了功率与直线性的明确趋势。",
+        "impact": "这为芯片上的生物分子操控提供了一种新方法，可能用于单分子测序平台和纳米流体系统。因为不需要分子具备特定电磁性质，它可能适用于更广泛的生物分子。未来或可与其他微流控器件集成。"
+      },
+      "analogy": "就像把一张纸放在光滑桌面上，用音箱的振动让纸片朝一个方向滑。桌面越光滑，纸片越不容易卡住；振动越强，纸片走得越直。",
+      "terms": [
+        {
+          "t": "表面声波",
+          "d": "沿材料表面传播的声波，像地震波沿地面跑。论文用它作为无接触推动DNA的驱动力。"
+        },
+        {
+          "t": "六方氮化硼",
+          "d": "一种原子级平整的二维材料，表面很光滑。论文用它作为DNA分子可以滑动的平台。"
+        },
+        {
+          "t": "DNA分子",
+          "d": "携带遗传信息的长链分子。论文研究如何在芯片表面定向运输单个DNA分子。"
+        },
+        {
+          "t": "纳米流体",
+          "d": "在纳米尺度通道里操控流体的技术。论文的成果可能用于这种系统中的生物分子操纵。"
+        },
+        {
+          "t": "单分子测序",
+          "d": "直接读取单个DNA分子序列的技术。论文提到其平台可能帮助开发这类测序平台。"
+        },
+        {
+          "t": "面内移动",
+          "d": "分子在材料表面平面内滑动而不是离开表面。论文强调六方氮化硼能让DNA保持这种移动。"
+        }
+      ],
+      "tags": [
+        "生物芯片",
+        "声波操控",
+        "二维材料"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Hande N. Açıkgöz",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Peter G. Steeneken",
+        "Sabina Caneva"
+      ],
+      "abstract": "Developments in single-molecule imaging and sensing techniques have enabled direct observation of biomolecular dynamics at interfaces, which has important implications for the fields of membrane biophysics, nanofluidic sensing and transport. However, integrating active surface transport, localization and control over molecule motion remains challenging, limiting further progress in the realization of single-molecule devices. Here, we introduce an integrated surface acoustic wave (SAW)-hexagonal boron nitride (hBN) platform as a contactless actuation platform for directional transport of biomolecules over hBN surfaces. hBN provides an atomically flat surface on which DNA can be confined and still retain in-plane mobility, whereas SAW actuation enables active and guided transport without requiring specific electrical, dielectric or magnetic properties of the biomolecules. Trajectory- and jump-based analyses show that increasing the SAW power leads to higher displacement bias in the streaming direction, resulting in transport velocities along increasingly more linearized trajectories. We thus demonstrate that SAWs can induce tunable directional transport of DNA molecules confined on hBN surfaces, providing a new approach for the on-chip manipulation of biomolecules in nanofluidic systems. Our findings have important implications for the development of advanced single-molecule sequencing platforms and other technologies for biomolecular manipulation and analysis.",
+      "url": "https://arxiv.org/abs/2611.17112",
+      "pdf": "https://arxiv.org/pdf/2611.17112v1"
     },
     {
       "id": "2611.17130",
@@ -634,6 +1070,68 @@
       "pdf": "https://arxiv.org/pdf/2611.17252v1"
     },
     {
+      "id": "2611.17255",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.NT",
+      "published": "2026-11-12",
+      "title_en": "The lifting problem for Galois representations of global fields",
+      "title_zh": "模2伽罗瓦表示总能提升到模4",
+      "one_liner": "证明整体域的所有模2伽罗瓦表示都能提升到模4，但对每个奇素数p都存在不能提升到模p^2的例子。",
+      "why": "伽罗瓦表示是数论的核心概念，但通常很抽象。这篇论文用“提升”这个具体问题——能否从模2升级到模4——来展示数论中的基本思想。结论清晰对比：2很特殊，奇素数不行。高中生能从中体会“模运算”和“表示”的含义，并看到现代数论如何研究对称性。",
+      "sections": {
+        "background": "伽罗瓦表示是把伽罗瓦群（描述方程根的对称性）的元素对应到矩阵，从而用线性代数研究数论。一个自然的问题是：给定模p的表示，能否找到模p^2的表示，使得模p后得到原来的表示？这称为提升问题。对于p=2，之前知道一些特殊情况，但一般整体域上是否总能提升未知。对于奇素数p，人们猜测可能存在反例，但缺乏构造。这个问题与费马大定理的证明方法密切相关。",
+        "method": "作者使用伽罗瓦上同调——一种研究提升障碍的工具。提升的障碍属于一个上同调群，他们通过计算这个群来证明对于p=2障碍总是消失。对于奇素数p，他们构造具体的整体域和模p表示，使得障碍非零，从而不能提升。此外，他们利用群论分类：一个有限群称为可提升的，如果它的每个模p表示都能提升。他们证明广义四元数群可提升，从而补全了Khare和Merkurjev开始的分类。",
+        "finding": "主要结论：对于任何整体域，所有模2伽罗瓦表示都能提升到模4。相反，对于每个奇素数p，都存在模p表示不能提升到模p^2。他们还证明了广义四元数群是可提升的，从而完成了可提升有限群的分类。这些结果揭示了p=2的独特性，并给出了提升问题的完整图景。",
+        "impact": "这项工作解决了提升问题的一个基本情形，加深了对伽罗瓦表示形变理论的理解。可提升群的分类完成可能对朗兰兹纲领中的自守表示提升有影响。对于高中生，它展示了模算术和对称性如何在现代数论中交织，并说明有时“2”是特殊的。"
+      },
+      "analogy": "就像问：能否把一张黑白照片（模2）升级成彩色照片（模4），使得黑白版本不变？对于2，总能做到；但对于其他素数，有时做不到。这就像不同的滤镜系统，有的允许无损升级，有的不允许。",
+      "terms": [
+        {
+          "t": "伽罗瓦表示",
+          "d": "把伽罗瓦群的元素对应到矩阵的映射，用来研究数论中的对称性。本文研究其提升问题。"
+        },
+        {
+          "t": "整体域",
+          "d": "如有理数域或有限域上的函数域，是数论的基本研究对象。本文的结论适用于所有整体域。"
+        },
+        {
+          "t": "模p表示",
+          "d": "矩阵元素在模p意义下的表示，即只关心除以p的余数。本文讨论模2和模p的表示。"
+        },
+        {
+          "t": "提升",
+          "d": "从一个模p表示构造一个模p^2表示，使得模p后得到原表示。本文核心问题。"
+        },
+        {
+          "t": "上同调",
+          "d": "一种代数工具，用来衡量提升的障碍。本文用上同调群计算障碍。"
+        },
+        {
+          "t": "广义四元数群",
+          "d": "一类有限群，本文证明它们可提升，从而完成分类。"
+        },
+        {
+          "t": "可提升群",
+          "d": "如果群的所有模p表示都能提升，则称可提升。本文补全了可提升群的分类。"
+        }
+      ],
+      "tags": [
+        "数论",
+        "伽罗瓦表示",
+        "模形式"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": true,
+      "authors": [
+        "Federico Scavia"
+      ],
+      "abstract": "We prove that all mod $2$ Galois representations of a global field lift modulo $4$. In contrast, for every odd prime $p$, we exhibit examples of global Galois representations modulo $p$ that do not lift modulo $p^2$. Our methods also allow us to prove liftability of generalized quaternion groups and hence to complete the classification of liftable finite groups initiated by Khare and Merkurjev.",
+      "url": "https://arxiv.org/abs/2611.17255",
+      "pdf": "https://arxiv.org/pdf/2611.17255v1"
+    },
+    {
       "id": "2611.17259",
       "field": "math",
       "source": "arXiv",
@@ -691,6 +1189,128 @@
       "abstract": "We study upper bounds for the triameter of a connected graph in terms of distance packings and vertex connectivity. For any positive integer $k$, we bound the triameter of a graph by a linear function of its $k$-packing number and show that this bound is tight for all values of the parameters. As a corollary, we confirm the conjecture of Das and Abdioğlu on the upper bound for the triameter in terms of the order and the minimum degree of a graph. We also find the maximum triameter among graphs with given order and vertex connectivity, and describe the extremal graphs. Our main tool is a projection of a graph onto a spider or a unicyclic graph which preserves the distances between three prescribed vertices.",
       "url": "https://arxiv.org/abs/2611.17259",
       "pdf": "https://arxiv.org/pdf/2611.17259v1"
+    },
+    {
+      "id": "2611.17277",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.DS",
+      "published": "2026-11-12",
+      "title_en": "On $L^p$ density of self-similar measures and Bernoulli convolutions",
+      "title_zh": "自相似测度的L^p密度与伯努利卷积",
+      "one_liner": "证明绝对连续的自相似测度具有某个p>1的L^p密度，并构造出具有连续密度的伯努利卷积例子。",
+      "why": "自相似和分形是高中生感兴趣的话题，伯努利卷积是概率论中的经典对象。这篇论文讨论测度的密度能否更“光滑”（属于L^p空间），结论正面且构造具体。高中生可以从中看到分析学如何研究分形测度，并理解L^p空间是衡量函数“大小”的工具。",
+      "sections": {
+        "background": "自相似测度是满足某种缩放不变性的概率分布，例如康托尔测度。伯努利卷积是随机变量∑±λ^n的分布，当λ接近1时可能绝对连续。一个自然的问题是：绝对连续的自相似测度，其密度函数有多好？是否属于某个L^p空间（p>1）？此前已知一些例子密度无界，但一般性结果未知。伯努利卷积的密度连续性也是长期未决问题。",
+        "method": "作者使用傅里叶变换和测度的卷积性质。对于自相似测度，他们分析其傅里叶变换的衰减，并利用L^p密度的等价条件（通过傅里叶变换的L^q有界性）。对于伯努利卷积，他们通过显式构造参数λ，使得密度函数连续，可能利用无穷卷积的收敛性。关键工具是调和分析中的插值定理和测度卷积的平滑效应。",
+        "finding": "主要结果：任何绝对连续的自相似测度都具有某个p>1的L^p密度。此外，他们给出了伯努利卷积具有连续密度的显式例子，即存在具体的λ值使得密度连续。这扩展了之前只知道密度存在但可能无界的结果。",
+        "impact": "这项工作推进了对自相似测度正则性的理解，并为伯努利卷积的密度连续性提供了新例子。可能对分形几何和概率论有影响。对于高中生，它展示了分析学如何用傅里叶变换研究分形，并说明“密度”可以有不同的光滑程度。"
+      },
+      "analogy": "就像研究一幅分形画的“颜色浓度”是否均匀。L^p密度就像说浓度不会在某些地方无限大，而是有控制。论文证明这类画的总能有一定的均匀性，并给出了具体画法。",
+      "terms": [
+        {
+          "t": "自相似测度",
+          "d": "在缩放变换下保持某种不变性的概率分布，如康托尔测度。本文研究其密度性质。"
+        },
+        {
+          "t": "绝对连续",
+          "d": "测度可以用密度函数关于勒贝格测度积分表示。本文假设测度绝对连续。"
+        },
+        {
+          "t": "L^p密度",
+          "d": "密度函数的p次幂可积，p>1。本文证明存在某个p>1使密度属于L^p。"
+        },
+        {
+          "t": "伯努利卷积",
+          "d": "随机变量∑±λ^n的分布，是分形测度的经典例子。本文构造其连续密度例子。"
+        },
+        {
+          "t": "傅里叶变换",
+          "d": "将函数分解为频率的工具。本文用傅里叶变换分析测度的衰减。"
+        },
+        {
+          "t": "卷积",
+          "d": "两个函数或测度的结合，表示随机变量和的分布。伯努利卷积是无穷卷积。"
+        }
+      ],
+      "tags": [
+        "分析",
+        "分形",
+        "概率"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Samuel Kittle",
+        "Constantin Kogler"
+      ],
+      "abstract": "We prove that an absolutely continuous self-similar measure has an $L^p$ density for some $p>1$. Moreover, explicit examples of Bernoulli convolutions with a continuous density are established.",
+      "url": "https://arxiv.org/abs/2611.17277",
+      "pdf": "https://arxiv.org/pdf/2611.17277v1"
+    },
+    {
+      "id": "2611.17278",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · physics.chem-ph",
+      "published": "2026-11-12",
+      "title_en": "Active-space construction in single-fragment coupled-cluster embedding for chemical reactions",
+      "title_zh": "给分子反应“划重点”：量子嵌入法如何省算力又保精度",
+      "one_liner": "把高精度计算只用在分子反应的关键部位，其余部分用简单方法处理，对60个有机反应的能量误差可低于0.3 kcal/mol。",
+      "why": "化学反应的精确计算通常要花大量计算资源，这篇论文展示如何“偷懒”而不失准头。高中生能从中理解计算化学的基本思路：哪些电子重要、哪些可以简化，以及为什么反应路径的中间状态比起点终点更难算准。",
+      "sections": {
+        "background": "用量子力学精确计算分子反应，需要同时处理所有电子之间的相互作用，计算量随分子变大爆炸式增长。化学家于是想：反应通常只涉及一小块区域，能不能只对这块区域用高精度方法，其余部分用近似？这就是量子嵌入的思路。但“关键区域”怎么选、选多大，一直缺少系统比较，选不好误差就大。",
+        "method": "作者测试了多种构建“活跃空间”的方法——也就是决定哪些电子轨道进入高精度计算。他们用CCSD(T)（一种高精度电子相关方法）只处理选中的片段，其余轨道冻结在Hartree-Fock（最简单的平均场近似）水平。在60个有机反应的能量和三个反应路径上，比较不同轨道选择方案的误差。",
+        "finding": "基于密度矩阵嵌入理论的区域嵌入法，在占据和虚轨道上都表现稳健。虚轨道用片段自然轨道也不错，但空间更大。复合MP2修正带来最大改进：结合片段自然轨道后，平均反应能误差低于0.3 kcal/mol，所有单个误差低于1 kcal/mol（对比全系统CCSD(T)）。但反应路径显示，端点能量准不代表能垒准，能垒误差可能很大。",
+        "impact": "这项研究给出了选择活跃空间的实用指南，让大分子反应的精确计算更可行。它提醒人们：只检查反应物和产物能量不够，过渡态能垒才是真正的挑战。对药物设计、催化机理研究可能有帮助。"
+      },
+      "analogy": "就像拍一张集体照，只给主角打高光，背景用普通光。但如果你只检查照片两端的人脸是否清晰，可能忽略中间有人闭眼——反应路径的能垒就是那个“闭眼”的瞬间。",
+      "terms": [
+        {
+          "t": "量子嵌入",
+          "d": "把大系统切成小块，只对关键块用高精度量子化学计算，其余用近似处理。本文用它来降低反应能量计算的成本。"
+        },
+        {
+          "t": "CCSD(T)",
+          "d": "一种高精度电子相关计算方法，考虑单、双激发和微扰三激发。本文把它作为“金标准”来检验近似方法的误差。"
+        },
+        {
+          "t": "活跃空间",
+          "d": "选出来做高精度计算的那组电子轨道。本文比较不同选法对反应能量精度的影响。"
+        },
+        {
+          "t": "Hartree-Fock",
+          "d": "最简单的量子化学近似，把每个电子看成在其余电子平均场中运动。本文用它处理不重要的轨道。"
+        },
+        {
+          "t": "密度矩阵嵌入理论",
+          "d": "一种系统构造活跃空间的方法，通过密度矩阵把环境的影响压缩到小块中。本文的区域嵌入法就基于它。"
+        },
+        {
+          "t": "MP2",
+          "d": "二阶莫勒-普莱塞特微扰理论，一种中等精度的电子相关修正。本文用复合MP2修正来弥补冻结轨道的误差。"
+        },
+        {
+          "t": "反应能垒",
+          "d": "反应路径上能量最高点与反应物之间的能量差，决定反应快慢。本文发现端点能量准不代表能垒准。"
+        }
+      ],
+      "tags": [
+        "计算化学",
+        "量子嵌入",
+        "反应能量"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Ardavan Farahvash",
+        "Timothy C. Berkelbach"
+      ],
+      "abstract": "We benchmark single-fragment quantum embedding, in which electron correlation---at the level of coupled-cluster theory with single, double, and perturbative triple excitations [CCSD(T)]---is restricted to orbitals associated with a chosen molecular fragment, and the remaining orbitals are frozen at the Hartree-Fock level. We compare several methods for constructing fragment active spaces, and we test their performance on 60 organic reaction energies and three reaction profiles. A common fragment projection operator is used to relate several of the tested orbital constructions. Regional embedding, based on density matrix embedding theory, is shown to give accurate and robust performance when used for both the occupied and virtual active orbitals. For virtual orbitals, fragment-centered projected atomic orbitals and fragment natural orbitals (defined by eigenvectors of a fragment MP2 density matrix) also perform well, but the latter typically retains larger virtual spaces. Composite MP2 corrections yield the largest improvement: combined with fragment natural orbitals, they give average reaction energy errors below 0.3 kcal/mol relative to full-system CCSD(T), with all individual errors below 1 kcal/mol. Reaction profiles show that accurate endpoint energies can conceal substantial barrier errors, emphasizing the importance of approximating omitted correlation.",
+      "url": "https://arxiv.org/abs/2611.17278",
+      "pdf": "https://arxiv.org/pdf/2611.17278v1"
     },
     {
       "id": "2611.17283",
@@ -781,6 +1401,143 @@
       "abstract": "Ceramic materials that maintain structural integrity and resist thermal-shock under extreme conditions are critical for many applications. Here we show that spark plasma sintered composites containing equal weight fractions of hexagonal silicon carbide (6H-SiC) and boron nitride (h-BN) exhibit exceptional stability under extreme high-temperature oxidizing conditions and unusually stable temperature-independent thermal conductivity across a broad temperature range. Under high-velocity oxygen-fuel torch exposure in air, it withstands prolonged heating and thermal-cycling at surface temperatures reaching >1500 °C, whereas pure 6H-SiC and h-BN rapidly fractures or erodes. Microstructural evaluation shows the formation of a multi-phase surface silica layer that further protects the material from oxidation. Finite-element analysis heat-flux map shows that intrinsic porosity mitigates thermal stress, while ReaxFF molecular dynamics simulations reveal thermally driven interfacial reconstruction and the formation of a Si-N/C-B-rich bonding network, enhancing the interfacial cohesion at elevated temperatures. This lightweight, easily machinable ceramic composite will be a promising structural material in extreme environment applications.",
       "url": "https://arxiv.org/abs/2611.17283",
       "pdf": "https://arxiv.org/pdf/2611.17283v1"
+    },
+    {
+      "id": "2611.17295",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-11-12",
+      "title_en": "Traces of Vacuum Squeezing: A Superconducting Transmission-Line Analogue of Cosmological Particle Creation",
+      "title_zh": "超导电路模拟宇宙粒子创生",
+      "one_liner": "用超导传输线电路模拟早期宇宙的粒子创生，理论证明电路模式方程与辐射主导宇宙的粒子创生方程相同，并提出了可观测的压缩信号。",
+      "why": "这篇论文把宇宙学中一个无法直接实验验证的现象——早期宇宙的粒子创生——搬到了实验室的电路里。高中生可以从中看到，不同物理系统可以遵循相同的数学方程，从而用桌面实验模拟宇宙。这既有趣又体现了物理的统一性。",
+      "sections": {
+        "background": "在早期宇宙，时空的快速膨胀会从真空中“拉出”粒子对，这叫宇宙粒子创生。但这个过程发生在宇宙极早期，我们无法直接观测或实验。物理学家一直想在地球上找到能模拟它的系统，但需要找到数学上完全等价的物理模型。",
+        "method": "作者设计了一种超导传输线电路，线上周期性地加载直流SQUID（超导量子干涉器件）。他们推导出电路的模式方程，发现它和辐射主导的平坦宇宙中标量场的模式方程完全相同，都归结为韦伯方程。他们还分析了模拟成立的条件，比如脉冲持续时间、调制均匀性和SQUID对称性之间的平衡。",
+        "finding": "电路的模式方程与宇宙学方程完全一致，粒子谱呈指数抑制。他们提出用每个模式的“反常矩”作为压缩的见证：对于任何热态它为零，而且能在耗散下存活。结合光子数和纯度，可以判断真空产生的粒子对是否占主导。耗散不会抹掉宇宙学信号。",
+        "impact": "这为在实验室模拟宇宙学现象提供了具体方案，可能帮助人们更直观地理解粒子创生和量子压缩。未来或许能用超导电路检验早期宇宙理论的某些预言，也可能推动量子模拟技术发展。"
+      },
+      "analogy": "就像用振动的水面模拟声波：虽然水和空气是不同东西，但波动方程相同，所以水波能展示声波的很多特性。超导电路就是那个“水面”，宇宙真空是“空气”。",
+      "terms": [
+        {
+          "t": "超导传输线",
+          "d": "一种能低损耗传输微波信号的电路，类似光纤导光。在这篇论文里，它被用来模拟宇宙空间中的场。"
+        },
+        {
+          "t": "SQUID",
+          "d": "超导量子干涉器件，一种对磁场极敏感的环形结构。这里用作可调元件，周期性地改变电路性质，模拟宇宙膨胀。"
+        },
+        {
+          "t": "标量场",
+          "d": "一种在空间中每点只有一个数值的场，比如温度场。宇宙学中暴胀场就是标量场，这里用来类比电路中的电磁模式。"
+        },
+        {
+          "t": "辐射主导宇宙",
+          "d": "早期宇宙中辐射（光子等）能量密度占主导的阶段。此时宇宙膨胀规律简单，适合与电路类比。"
+        },
+        {
+          "t": "韦伯方程",
+          "d": "一个二阶微分方程，解为抛物柱函数。它出现在这篇论文中，因为电路和宇宙的模式方程都化成了它。"
+        },
+        {
+          "t": "压缩",
+          "d": "量子态的一种性质，表示某个物理量的不确定性被减小到低于真空涨落。这里指粒子对产生时出现的量子压缩。"
+        },
+        {
+          "t": "反常矩",
+          "d": "描述量子态偏离热态的一个量，对热态为零。论文用它作为压缩的见证，因为它能在耗散下存活。"
+        },
+        {
+          "t": "耗散",
+          "d": "能量逐渐损失到环境中的过程。论文证明即使有耗散，宇宙学信号（压缩）也不会被完全抹掉。"
+        }
+      ],
+      "tags": [
+        "量子模拟",
+        "宇宙学",
+        "超导电路"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": true,
+      "authors": [
+        "Paula I. Villar",
+        "Federico Guglielmucci Nazar",
+        "Elián Urtubey",
+        "Fernando C. Lombardo"
+      ],
+      "abstract": "Particle creation in time-dependent quantum fields is a central phenomenon in early-universe cosmology, yet it remains experimentally inaccessible in its original context. We show theoretically that superconducting circuits based on a waveguide-like transmission line loaded with dc-SQUIDs can provide a direct analogue of a scalar field in a radiation-dominated Friedmann--Robertson--Walker universe in conformal time. The mode equation of the circuit reduces to the Weber equation, the same equation governing cosmological particle creation in a radiation-dominated background, admitting an exact solution in terms of parabolic cylinder functions and an exponentially suppressed particle spectrum. We analyse the conditions under which the analogy holds, which require a compromise between the duration of the pulse, the uniformity of the modulation and the symmetry of the SQUIDs, and show that dissipation does not erase the cosmological signal. We use the anomalous moment of each mode as a witness of the Bogoliubov mixing: it vanishes for any thermal state and survives dissipation, and, together with the photon number, it certifies squeezing, and with the purity of the state, it identifies whether the pairs created from the vacuum dominate.",
+      "url": "https://arxiv.org/abs/2611.17295",
+      "pdf": "https://arxiv.org/pdf/2611.17295v1"
+    },
+    {
+      "id": "2611.17299",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · astro-ph.CO",
+      "published": "2026-11-12",
+      "title_en": "Simulation-Based Priors and BAO Shifts from the Lyman-$α$ Forest at the Field Level",
+      "title_zh": "莱曼α森林的BAO位移精确预测",
+      "one_liner": "基于立方微扰理论构建莱曼α森林通量场的解析前向模型，在模拟中精度达5%，并预测BAO缩放参数有亚百分比位移。",
+      "why": "这篇论文关于宇宙学，研究如何用遥远星系的光（莱曼α森林）来测量宇宙膨胀。它提高了理论模型的精度，能帮助科学家更准确地理解暗能量。高中生可以从中看到，理论计算和模拟如何结合来探索宇宙。",
+      "sections": {
+        "background": "莱曼α森林是遥远类星体光被沿途氢云吸收形成的谱线森林。它携带了宇宙大尺度结构的信息，可以用来测量重子声学振荡（BAO）——宇宙早期声波留下的印记。但非线性演化会使BAO位置发生偏移，需要精确的理论模型来修正。",
+        "method": "作者发展了基于立方阶有效场论微扰理论的解析前向模型，用来描述莱曼α森林通量场。他们在两组流体动力学模拟（小体积的CAMELS和大体积的Sherwood）上验证了模型，并利用场级方法减少宇宙方差，精确测量了莱曼α森林的偏置参数，进而预测BAO位移。",
+        "finding": "模型在功率谱层面将模拟的三维通量功率谱复现到约5%的精度（直到k~1-1.5 h/Mpc），比之前的二次模型改进了高达40%。他们发现BAO缩放参数在径向和横向都有亚百分比的位移，并且依赖于宇宙学参数和红移。",
+        "impact": "这项研究提供了更精确的莱曼α森林分析工具，有助于未来用DESI、DES等巡天数据测量暗能量。基于模拟的先验也可以用于当前和未来的宇宙学分析，提高参数约束的可靠性。"
+      },
+      "analogy": "就像用回声定位：你发出声音，听回声来测距离。但回声会被墙壁（非线性结构）扭曲，你需要一个精确的模型来修正扭曲，才能准确知道墙的位置。莱曼α森林就是宇宙中的“回声”。",
+      "terms": [
+        {
+          "t": "莱曼α森林",
+          "d": "遥远类星体光谱中由氢云吸收形成的密集吸收线，像森林一样。它记录了宇宙大尺度结构的信息。"
+        },
+        {
+          "t": "BAO",
+          "d": "重子声学振荡，宇宙早期声波留下的特征尺度，约1.5亿光年。它像一把标准尺，用来测量宇宙膨胀。"
+        },
+        {
+          "t": "微扰理论",
+          "d": "一种近似方法，把复杂的非线性问题拆成小修正逐级计算。这里用来描述莱曼α森林的密度和速度场。"
+        },
+        {
+          "t": "有效场论",
+          "d": "一种系统处理小尺度物理对大规模观测影响的理论框架。这里用来构建更精确的前向模型。"
+        },
+        {
+          "t": "前向模型",
+          "d": "从理论参数出发，预测观测量的模型。这里指从宇宙学参数预测莱曼α森林通量场。"
+        },
+        {
+          "t": "功率谱",
+          "d": "描述场在不同空间尺度上涨落强弱的统计量。这里用来比较模型和模拟。"
+        },
+        {
+          "t": "宇宙方差",
+          "d": "由于我们只能观测一个宇宙而产生的统计不确定性。场级方法利用不同模式的相关性来减少它。"
+        },
+        {
+          "t": "偏置参数",
+          "d": "描述莱曼α森林通量场与暗物质密度场之间关系的参数。这里通过场级拟合精确测量。"
+        }
+      ],
+      "tags": [
+        "宇宙学",
+        "莱曼α森林",
+        "BAO"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Divij Sharma",
+        "Roger de Belsunce",
+        "Mikhail M. Ivanov"
+      ],
+      "abstract": "We present an analytic forward model for the Lyman-alpha (Ly-alpha) forest flux field based on cubic-order large-scale structure perturbation theory (effective field theory) calculations. We validate our cubic model on two sets of hydrodynamic simulations spanning $2 \\leq z \\leq 4$: the small-volume CAMELS suite, which spans a wide range of cosmological and astrophysical parameters, and the large-volume, high-resolution Sherwood simulations. We find qualitatively similar results for both at the power-spectrum level. The perturbative model reproduces the three-dimensional flux power spectrum of the simulations to $\\sim 5\\%$ down to $k \\simeq 1$-$1.5\\,h\\,{\\rm Mpc}^{-1}$, depending on the redshift. This improves compared to previous quadratic perturbative forward models by up to 40%. Exploiting cosmic-variance cancellation in the field-level approach, we carry out precision measurements of the Lyman-alpha forest bias parameters from the CAMELS simulation suite. We use these measurements to analytically predict the shifts in the Baryon Acoustic Oscillations (BAO) scaling parameters induced by nonlinearities in the three-dimensional Lyman-alpha forest clustering as a function of cosmological parameters. We find sub-percent shifts in both the radial and transverse directions with a noticeable dependence on cosmology and redshift. Finally, from the field-level fits we construct simulation-based priors that can be used for cosmological analyses of the Lyman-alpha forest with the currently observing Dark Energy Spectroscopic Instrument (DESI). In addition, our cubic model captures the connected four-point function (trispectrum) of the forest, which opens up novel opportunities for accurate covariance matrix estimation for DESI and its successor, DESI-II.",
+      "url": "https://arxiv.org/abs/2611.17299",
+      "pdf": "https://arxiv.org/pdf/2611.17299v1"
     },
     {
       "id": "2611.17305",
@@ -1265,6 +2022,70 @@
       "abstract": "We investigate multiparameter quantum metrology and the energetic properties of an effective electron--proton spin system inspired by the hyperfine structure of the hydrogen atom. Considering the external magnetic field $\\mathcal B$ and the hyperfine coupling strength $Λ$ as unknown parameters, we derive the quantum Fisher information matrix and establish the corresponding quantum Cramér--Rao bounds for their simultaneous estimation. We analyze the estimation precision and the correlations between the two parameters, showing that the weak-commutativity condition is satisfied despite the noncommutativity of the associated symmetric logarithmic derivatives. Independently, we explore the energetic properties of the system under a unitary charging protocol, characterizing its ergotropy, anti-ergotropy, storage capacity, and energy-basis coherence. We investigate the dependence of these quantities on the magnetic field, hyperfine coupling, temperature, and charging time. Our results provide a comprehensive characterization of the metrological properties and energetic performance of a hyperfine spin-based quantum system, highlighting its potential as a platform for quantum sensing and energy storage.",
       "url": "https://arxiv.org/abs/2611.17310",
       "pdf": "https://arxiv.org/pdf/2611.17310v1"
+    },
+    {
+      "id": "2611.17333",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.stat-mech",
+      "published": "2026-11-12",
+      "title_en": "Discrete Time Crystals from Anti-Unitary Floquet Driving and Dynamical Freezing",
+      "title_zh": "反幺正驱动稳定时间晶体",
+      "one_liner": "理论表明，用反幺正周期性驱动可以稳定离散时间晶体，通过动力学冻结机制，磁化强度成为涌现守恒量，且无限长链模拟中信号不衰减。",
+      "why": "时间晶体是一种在时间上自发重复运动的新奇物态，曾被认为不可能稳定。这篇论文提出一种新方法，用反幺正驱动让时间晶体更稳定，而且给出了实验实现方案。高中生可以从中了解对称性和守恒律如何影响物质状态。",
+      "sections": {
+        "background": "时间晶体是周期驱动系统的一种状态，它响应的周期是驱动周期的整数倍，就像时钟一样。但这类状态容易被加热破坏，很难稳定。之前的方法需要复杂的多体相互作用，而且衰减问题一直存在。",
+        "method": "作者提出用反幺正周期性驱动（一种与时间反演相关的驱动）来实现动力学冻结。他们通过理论分析证明，在这种驱动下，磁化强度成为一个涌现的守恒量，并且两个周期的准能量精确配对，从而锁定亚谐波响应。他们还进行了无限长链的数值模拟，并设计了实验方案。",
+        "finding": "动力学冻结使有效哈密顿量保持准局域，无限长链模拟显示，对于任何有限磁化的普通态，亚谐波响应都没有可检测的衰减。这意味着时间晶体可以稳定存在，而且不依赖于复杂的长程相互作用。",
+        "impact": "这为时间晶体的实验实现提供了更简单的途径，可能推动量子存储和精密测量应用。同时，反幺正驱动是一种新工具，可能用于设计其他稳定的量子态。"
+      },
+      "analogy": "就像推秋千：如果你每次在秋千荡回时推一下（周期驱动），秋千会以固定节奏摆动。但普通推法容易乱，而反幺正驱动像是一种“智能推法”，让秋千的节奏自动稳定，不会越推越乱。",
+      "terms": [
+        {
+          "t": "离散时间晶体",
+          "d": "一种在周期驱动下，响应周期是驱动周期整数倍的物态。它像时钟一样在时间上重复，但需要特殊条件才能稳定。"
+        },
+        {
+          "t": "反幺正驱动",
+          "d": "一种周期性驱动，其操作包含时间反演或类似的反幺正变换。在这篇论文里，它被用来稳定时间晶体。"
+        },
+        {
+          "t": "动力学冻结",
+          "d": "一种机制，使系统的某些性质在驱动下几乎不变化，从而保护时间晶体响应。这里它让磁化强度成为守恒量。"
+        },
+        {
+          "t": "磁化强度",
+          "d": "描述材料磁化程度的物理量，等于单位体积的磁矩。在这篇论文里，它成为涌现的守恒量，帮助锁定时间晶体响应。"
+        },
+        {
+          "t": "准能量",
+          "d": "周期驱动系统的能量类似物，定义在一个驱动周期内。两个周期的准能量配对，保证了亚谐波响应。"
+        },
+        {
+          "t": "亚谐波响应",
+          "d": "系统响应频率是驱动频率的整数分之一，比如一半。这是时间晶体的标志性特征。"
+        },
+        {
+          "t": "准局域",
+          "d": "指相互作用在空间上衰减很快，但并非严格局域。这里说明有效哈密顿量保持准局域，避免加热。"
+        }
+      ],
+      "tags": [
+        "时间晶体",
+        "量子物态",
+        "周期驱动"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Anirban Das",
+        "Asmi Haldar",
+        "Arnab Das"
+      ],
+      "abstract": "We show anti-unitary periodic drive paves a direct path for stabilizing a Discrete Time-Crystal by Dynamical Freezing (DF). The magnetization appears as an emergent conserved operator, and an exact pairing of two-cycle quasi-energies pins the subharmonic response. DF keeps the effective Hamiltonian $\\textit{quasi-local}$; infinite-chain simulations show no detectable decay for a generic state with any finite magnetization. We outline an experimental realization of the anti-unitary drive.",
+      "url": "https://arxiv.org/abs/2611.17333",
+      "pdf": "https://arxiv.org/pdf/2611.17333v1"
     },
     {
       "id": "2611.17335",
@@ -1822,6 +2643,65 @@
       "abstract": "Two level systems (TLSs) are a major source of loss in superconducting devices, limiting the performance of qubits, detectors, and resonators. These defects arise from a range of sources, including surface oxides, crystal defects, as well as fabrication residues which are often difficult to remove. Using NbTiN coplanar waveguide resonators, we show that depositing and subsequently removing a solid neon film can significantly improve device performance. Analysis of the temperature and power dependence indicates that this enhancement arises from reduced TLS dissipation, which we attribute to the redistribution and removal of surface contaminants during neon deposition and evaporation. Atomic force microscopy images of contaminated hexagonal boron nitride flakes before and after neon exposure show that neon treatment can redistribute and remove surface residues. These results demonstrate a simple, non-destructive approach for mitigating TLS losses in superconducting devices and other sensitive materials that cannot withstand aggressive cleaning processes.",
       "url": "https://arxiv.org/abs/2611.15021",
       "pdf": "https://arxiv.org/pdf/2611.15021v1"
+    },
+    {
+      "id": "2611.16057",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-11-11",
+      "title_en": "Pyramidal Columns Acting as Attention Heads",
+      "title_zh": "大脑皮层柱能否充当Transformer的注意力头",
+      "one_liner": "论文探讨大脑后颞叶语言区的锥体柱群是否可能构成Transformer注意力头的生物学实现，提出对应关系但尚未验证。",
+      "why": "这篇论文把当前最火的AI架构（Transformer）和大脑皮层结构联系起来，容易激发对神经科学和AI交叉领域的好奇。高中生学过神经元和大脑皮层，也听说过ChatGPT，能理解‘注意力头’是Transformer的基本计算单元，适合作为讨论科学假设的案例。",
+      "sections": {
+        "background": "Transformer中的注意力头是一种数学计算结构，能让模型关注输入的不同部分。大脑皮层由许多锥体柱组成，柱内和柱间的神经元有复杂的信号传递和调制。此前，注意力头是纯粹的人工计算概念，很少有人认真问：大脑里有没有类似的结构？这篇论文试图从功能组织层面寻找对应，但明确说这是假设，需要实验检验。",
+        "method": "作者先对Transformer注意力头做机械-结构描述：把它看作由简单神经网络通过输出-输入和输出-权重互连组成的系统。然后分析注意力头的功能组织及其产生的输入依赖变换，再考察这些处理关系如何在生物神经组织中构建。他们识别出锥体柱内和柱间可能支持这种构建的候选神经机制，如信号传递和调制，并提出一个假设：后颞叶语言区中适当组织的锥体柱群可能构成注意力头的神经形态实现。",
+        "finding": "论文没有报告实验数据，而是提出理论对应：注意力头的功能组织可以与锥体柱内和柱间的神经机制对应起来。作者认为，一组适当组织的锥体柱可能构成注意力头的生物学构建。但他们也指出，这种所需的功能组织是否真的存在于后颞叶语言区，尚待验证。因此，这是一个有待检验的假设，而非已证实的结论。",
+        "impact": "如果未来实验支持这一假设，可能帮助理解大脑语言处理的計算原理，也可能为设计更像大脑的AI架构提供灵感。但目前它只是理论探讨，距离应用还很远。对高中生来说，它展示了如何用已知的神经结构去思考人工计算单元的生物可能性，是跨学科思考的练习。"
+      },
+      "analogy": "就像看到乐高积木搭的城堡，猜想真实的石头城堡是不是也用类似的模块拼的。论文找到了可能的对应模块，但还没去现场挖开石头验证。",
+      "terms": [
+        {
+          "t": "Transformer",
+          "d": "一种广泛用于语言模型的神经网络架构，核心是注意力机制。论文讨论它的注意力头能否在大脑中找到生物对应物。"
+        },
+        {
+          "t": "注意力头",
+          "d": "Transformer中的基本计算单元，能让模型对输入的不同部分分配不同关注度。论文试图用锥体柱群来构建它。"
+        },
+        {
+          "t": "锥体柱",
+          "d": "大脑皮层中由锥体神经元纵向排列组成的柱状结构，是皮层的基本功能模块。论文假设其群体可能实现注意力头功能。"
+        },
+        {
+          "t": "后颞叶语言区",
+          "d": "大脑后颞叶中参与语言处理的区域。论文推测这里的锥体柱群可能是注意力头的生物构建地点。"
+        },
+        {
+          "t": "神经形态实现",
+          "d": "用生物神经组织或类脑硬件实现某种计算功能。论文讨论注意力头的神经形态实现可能性。"
+        },
+        {
+          "t": "功能组织",
+          "d": "神经元或脑区之间如何分工协作完成计算。论文比较注意力头和锥体柱的功能组织是否对应。"
+        }
+      ],
+      "tags": [
+        "大脑皮层",
+        "Transformer",
+        "神经科学"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Fabrizia Giulia Garavaglia",
+        "Marco Giunti"
+      ],
+      "abstract": "Can the functional architecture of a Transformer attention head be given a biological construction? More specifically, could a suitable group of pyramidal columns in posterior temporal language regions (PTLRs) constitute the biological construction of a neuromorphic mechanical realization of an attention head, under a mathematical instantiation that need not coincide with its standard Transformer instantiation? This paper investigates this hypothesis by examining possible correspondences between the functional organization of attention heads and neurophysiological mechanisms operating within and across pyramidal columns involved in human language processing. Our analysis builds on a mechanical-structural description of Transformer attention heads as systems of simple neural networks linked through output-input and output-weight interconnections. We examine the functional organization of an attention head and the input-dependent transformations it produces, and ask how the corresponding processing relations could be constructed in biological neural tissue. We then identify candidate neural mechanisms of signal transmission and modulation within and across pyramidal columns that may jointly support such a construction. On this basis, we propose that a suitably organized group of pyramidal columns in PTLRs could constitute a biological construction of a neuromorphic mechanical realization of an attention head. Whether the required functional organization actually exists in PTLRs remains an open empirical question. The hypothesis does not require the biological system to reproduce the standard mathematical instantiation of Transformer attention: the same functional architecture may be mechanically realized and mathematically instantiated in a different way, consistent with its biological construction.",
+      "url": "https://arxiv.org/abs/2611.16057",
+      "pdf": "https://arxiv.org/pdf/2611.16057v1"
     },
     {
       "id": "2611.13398",
@@ -4700,929 +5580,6 @@
       "abstract": "The Arrhenius law is ubiquitous in the physical sciences. It describes how an observable property scales with temperature, $T$, as $\\exp(\\pm E_A/k_BT)$ for a constant $E_A$, the 'activation energy'. Fitting to the Arrhenius law is a common procedure for both experimental and computational data. However, the physical significance of any 'activation energy' calculated is unclear. Here we focus on self-diffusion coefficients for potential solid electrolytes, and by identifying the individual 'diffusive steps' within the system, show how a physically significant activation energy can be extracted. There are also many examples of non-Arrhenius behaviour including `super-Arrhenius' curvature, where the effective activation energy appears to increase with decreasing temperature. We demonstrate how it is still possible to extract the underlying Arrhenius law, by quantifying self-correlations such as back-and-forth motion. The methodology described here is material-agnostic and can be utilised to analyse the molecular dynamics trajectories of both ordered and disordered materials.",
       "url": "https://arxiv.org/abs/2611.11302",
       "pdf": "https://arxiv.org/pdf/2611.11302v1"
-    },
-    {
-      "id": "2611.11395",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-08",
-      "title_en": "High-Dimensional Maximally Entangled OAM States by Joint Pump and Modal-Space Engineering",
-      "title_zh": "工程化泵浦和模式空间造高维最大纠缠态",
-      "one_liner": "通过设计泵浦光束和选择模式子空间，可以按需生成任意维度d的最大纠缠轨道角动量态。",
-      "why": "量子纠缠是量子计算和量子通信的核心资源，维度越高信息量越大。这篇论文给出了一个“配方”，告诉实验家怎么调泵浦光就能造出高维最大纠缠态，和课本里的光的干涉、角动量概念都能挂钩。",
-      "sections": {
-        "background": "自发参量下转换（SPDC）能产生纠缠光子对，但产生的轨道角动量（OAM）模式分布很不均匀，所以纠缠不是最大的。以前用泵浦光工程只能在小维度子空间里修修补补，缺乏对任意维度d的通用理解。",
-        "method": "他们从理论上分析泵浦光的空间结构和OAM子空间选择的相互影响，找出生成目标最大纠缠态所需的泵浦光剖面。然后通过联合调控泵浦和模式空间，在d×d子空间里实现任意d的最大纠缠。",
-        "finding": "研究表明，要得到OAM的最大纠缠，必须精心设计有效的高维希尔伯特子空间，而不是随便选几个模式。他们给出了直接确定泵浦光剖面的方法，适用于任意d>2。",
-        "impact": "这为高维量子信息实验提供了可操作的指导，可能推动高维量子通信和量子计算的发展。也让人们更理解高维纠缠的资源特性。"
-      },
-      "analogy": "就像做蛋糕：以前只能在小模具里做，现在知道了面粉（泵浦光）和模具（模式空间）怎么搭配，就能做出任意尺寸的完美蛋糕（最大纠缠态）。",
-      "terms": [
-        {
-          "t": "轨道角动量（OAM）",
-          "d": "光子的一种空间自由度，表现为螺旋波前，可编码高维信息，这里用来承载纠缠。"
-        },
-        {
-          "t": "自发参量下转换（SPDC）",
-          "d": "一种非线性光学过程，一个泵浦光子分裂成一对纠缠光子，是产生纠缠光的常用方法。"
-        },
-        {
-          "t": "最大纠缠态",
-          "d": "纠缠程度达到理论上限的量子态，这里指在d×d空间中各模式均匀分布。"
-        },
-        {
-          "t": "泵浦工程",
-          "d": "通过设计泵浦光的空间形状来控制产生的纠缠态，是本文的核心手段。"
-        },
-        {
-          "t": "希尔伯特空间",
-          "d": "量子态所在的数学空间，这里指OAM模式张成的无限维空间，需选择子空间。"
-        },
-        {
-          "t": "模式空间",
-          "d": "由不同OAM模式组成的空间，本文通过选择特定子空间来实现最大纠缠。"
-        },
-        {
-          "t": "维度d",
-          "d": "每个光子可用的OAM模式数，d×d表示两个光子各d个模式，本文实现任意d。"
-        }
-      ],
-      "tags": [
-        "量子光学",
-        "纠缠",
-        "高维量子信息"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Richard Bernecker",
-        "Baghdasar Baghdasaryan",
-        "Fabian Steinlechner",
-        "Stephan Fritzsche"
-      ],
-      "abstract": "Spontaneous parametric down-conversion (SPDC) generates correlated photon pairs that inherently exhibit high-dimensional spatial entanglement in orbital angular momentum (OAM) modes. In practice, the resulting two-photon states are typically not maximally entangled due to a highly non-uniform distribution of generated OAM modes. Although pump-beam engineering has emerged as a tool to prepare high-dimensional entangled states, it has usually been restricted to low-dimensional subspaces, i.e., small sets of selected OAM modes for each photon within the full infinite-dimensional two-photon Hilbert space. A general understanding of the requirements for the generation of maximally entangled states (MESs) for any dimensionality $d$ with $d>2$ is lacking. Here, we demonstrate how pump engineering enables the generation of high-dimensional MESs for arbitrary $d$ defined in $d \\times d$ subspaces. By identifying the interplay between the spatial pump structure and the choice of OAM subspace, the required pump profile for a target MES is directly determined. Our results reveal that maximal entanglement with OAM requires a careful and nontrivial design of the effective high-dimensional Hilbert subspace.",
-      "url": "https://arxiv.org/abs/2611.11395",
-      "pdf": "https://arxiv.org/pdf/2611.11395v1"
-    },
-    {
-      "id": "2611.11405",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mes-hall",
-      "published": "2026-11-08",
-      "title_en": "Industrial RPCVD growth of high-purity 28Si epilayers with 29Si content below 30 ppm for high-fidelity electron spin qubits",
-      "title_zh": "工业级提纯硅造出高保真量子比特",
-      "one_liner": "用工业设备生长出极纯的硅-28薄膜，把残留的硅-29降到30ppm以下，造出的量子比特保真度最高达99.9%。",
-      "why": "量子计算机听起来很遥远，但这篇论文用的是芯片厂里常见的化学气相沉积设备，把材料提纯到99.997%。它把“量子比特”和“硅材料”连了起来，高中生能从中看到课本里的同位素、半导体和量子相干性如何在同一块芯片上相遇。",
-      "sections": {
-        "background": "硅量子比特利用电子自旋来存储信息，但天然硅里约4.7%是硅-29，它的原子核像小磁铁一样会干扰电子自旋，让量子信息很快丢失。过去用特殊方法提纯硅-28，但产量小、成本高，很难和工业芯片制造兼容。所以，如何用工业级设备稳定生长高纯度硅-28，同时不破坏薄膜质量，一直是难题。",
-        "method": "研究者在工业减压化学气相沉积（RPCVD）系统中，在浮区硅衬底上外延生长硅-28薄膜。他们用二次离子质谱（SIMS）确认同位素纯度，并通过850到1150摄氏度的真空退火实验，结合原子力显微镜观察表面，找出既能去除自然氧化层又不破坏薄膜的温度窗口。最后在1.5开尔文下测量电学性质和量子比特性能。",
-        "finding": "硅-28纯度达到99.997%，硅-29浓度低于30ppm。在1.5K下，霍尔迁移率峰值达12858 cm²/V·s，量子散射寿命0.659皮秒。用这种材料做的双量子点，T2*（自由感应衰减时间）为0.62微秒，哈恩回波相干时间28.8微秒，单量子比特门保真度最高99.9%。退火实验还确认，低于950摄氏度时薄膜结构保持完好。",
-        "impact": "这项工作说明，工业级RPCVD可能成为制造高相干硅自旋量子比特的可行路线。它把量子材料制备从实验室特制推向可批量生产的芯片工艺，为将来把量子比特和经典电路集成在同一芯片上提供了材料基础。不过，目前还只是单个器件的结果，距离大规模量子处理器还有距离。"
-      },
-      "analogy": "天然硅像一锅混了不同豆子的杂粮，硅-29就是那种会“捣乱”的豆子，让电子自旋没法安静待着。研究者用工业级筛子把杂粮筛到只剩0.003%的捣乱豆，量子比特就能安静地保持状态更久。",
-      "terms": [
-        {
-          "t": "量子比特",
-          "d": "量子计算的基本信息单元，像经典比特的0和1，但可以同时处于叠加态。本文用它来衡量硅材料做量子器件的性能。"
-        },
-        {
-          "t": "自旋",
-          "d": "电子像小磁针一样的内部属性，有向上和向下两种状态。硅量子比特就是用电子自旋来编码0和1。"
-        },
-        {
-          "t": "同位素",
-          "d": "同种元素但原子核中子数不同的原子，比如硅-28和硅-29。硅-29的核自旋会干扰电子自旋，所以要去除。"
-        },
-        {
-          "t": "化学气相沉积",
-          "d": "把气体原料在高温下分解，在衬底上沉积出薄膜的工艺。本文用工业级RPCVD生长高纯硅-28薄膜。"
-        },
-        {
-          "t": "迁移率",
-          "d": "电子在材料中移动的难易程度，越高说明电子跑得越顺畅。本文用霍尔迁移率来评价硅-28薄膜的电学质量。"
-        },
-        {
-          "t": "相干时间",
-          "d": "量子态能保持叠加而不被环境破坏的时间。T2*和哈恩回波相干时间越长，量子比特越好用。"
-        },
-        {
-          "t": "保真度",
-          "d": "量子门操作实际结果和理想结果的接近程度，99.9%意味着每千次操作约错一次。本文用它衡量单量子比特门的质量。"
-        },
-        {
-          "t": "二次离子质谱",
-          "d": "用离子束轰击样品，分析溅射出来的二次离子来确定成分的方法。本文用它确认硅-29的浓度低于30ppm。"
-        }
-      ],
-      "tags": [
-        "量子计算",
-        "半导体材料",
-        "硅芯片"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Zhenzhen Kong",
-        "Weizhu Liao",
-        "Ning Chu",
-        "Yiwen Zhang",
-        "Ying Zhang",
-        "Jixuan Li",
-        "Changyang Xu",
-        "Yongliang Hao",
-        "Yi Zhou",
-        "Yanpeng Song",
-        "Xiaomeng Liu",
-        "Hailing Wang",
-        "Xiangsheng Wang",
-        "Jinbiao Liu",
-        "Chao Zhao",
-        "Hao Meng",
-        "Gang Cao",
-        "Guo-Ping Guo",
-        "Hai-Ou Li",
-        "Guilei Wang"
-      ],
-      "abstract": "Silicon quantum-dot spin qubits are among the most promising routes to large-scale quantum computation, but the residual 29Si nuclear spins in natural silicon impose a hyperfine dephasing limit that must be overcome by isotopic purification. Here, we report the epitaxial growth of high-purity 28Si on float-zone silicon using an industrial reduced-pressure chemical vapor deposition (RPCVD) system. Secondary-ion mass spectrometry (SIMS) confirms an 28Si isotopic purity of 99.997%, with the 29Si concentration below 30 ppm. Through a systematic vacuum annealing matrix (850-1150 C), combined with atomic force microscopy and SIMS, we investigate the defect-mediated decomposition of the native oxide and the injection of non-equilibrium vacancies. We identify a thermal-budget window below 950 C within which the thin-layer structure of 28Si remains intact. At 1.5 K, magnetotransport measurements reveal a peak Hall mobility of 12,858 cm^2 V^-1 s^-1 and a quantum scattering lifetime of 0.659 ps, corresponding to a single-particle level broadening of 499 micro-eV. A double quantum dot fabricated on this platform exhibits a T2* of 0.62 us, a Hahn-echo coherence time of 28.8 us, and single-qubit gate fidelities of up to 99.9% measured by randomized benchmarking. Our results establish industrial RPCVD as a promising route toward high-coherence, high-fidelity silicon spin qubits.",
-      "url": "https://arxiv.org/abs/2611.11405",
-      "pdf": "https://arxiv.org/pdf/2611.11405v1"
-    },
-    {
-      "id": "2611.11414",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-11-08",
-      "title_en": "The strong cylinder conjecture and Rédei's factorization conjecture in three dimensions",
-      "title_zh": "三维强圆柱猜想与Rédei分解猜想获证",
-      "one_liner": "证明了强圆柱猜想：在三维有限几何中，若点集与每个平面相交点数都是p的倍数，则它必是p条平行线的并；并由此解决Rédei 1970年的分解猜想。",
-      "why": "这个问题来自初中就学过的平面几何，但搬到了有限个点的世界里，结论出奇地整齐。它展示了纯数学如何用简单规则推出深刻结构，适合对几何和逻辑感兴趣的同学。",
-      "sections": {
-        "background": "在普通空间里，直线和平面的关系很直观。但数学家喜欢把坐标换成“模p”的有限数，得到只有p^3个点的有限空间。这里很多几何直觉失效，比如“直线”只有p个点。Rédei在1970年提出：如果两个集合A、B能唯一地表示空间中每个点（每个点恰好一种方式写成a+b），那么其中一个集合必须被一个过原点的平面压扁。这个猜想几十年没解决，难点在于有限空间里没有连续工具，只能靠组合计数。",
-        "method": "作者先证明一个更一般的“强圆柱猜想”：在p^3个点的空间里，如果一个点集与每个平面相交的点数都是p的倍数，那么这个点集一定是p条平行线的并。证明用了多项式方法和组合计数，把点集与平面的交点数转化为多项式在有限域上的取值。然后利用这个结构定理，把Rédei猜想中的集合A、B与平面相交的情况分类，证明若A、B都不被平面压扁，就会违反强圆柱猜想。",
-        "finding": "强圆柱猜想对任意素数p成立：满足“每个平面交p的倍数个点”的p^2点集，恰好是p条平行线的并。由此推出Rédei猜想在三维成立：若A、B唯一分解整个空间，则A或B必包含在一个过原点的平面中。这解决了自1970年悬置的问题，而且证明对任意素数一致，没有例外。",
-        "impact": "这项工作把两个看似不同的猜想联系起来，展示了有限几何中“计数条件”能强制“结构条件”。它可能推动高维类似猜想的研究，也为组合数论提供了新工具。对高中生来说，它说明初等的几何想法在抽象世界里依然有力。"
-      },
-      "analogy": "想象一个p×p×p的魔方，每个小格是一个点。如果有一个点集，它和魔方里每一层切片相交的格子数都是p的倍数，那么这些点必须排成p条平行的直线——就像把p根签子平行插进魔方。",
-      "terms": [
-        {
-          "t": "有限域",
-          "d": "只有有限个元素的数系，比如模p的整数。论文中所有坐标都取自这样的域，使得空间只有p^3个点，便于计数。"
-        },
-        {
-          "t": "仿射平面",
-          "d": "有限空间中的“平面”，由所有满足一个线性方程的点组成，包含p^2个点。论文用与平面的交点数来刻画点集结构。"
-        },
-        {
-          "t": "强圆柱猜想",
-          "d": "论文证明的核心命题：若p^2个点与每个平面交p的倍数个点，则这些点是p条平行线的并。它是解决Rédei猜想的钥匙。"
-        },
-        {
-          "t": "Rédei分解猜想",
-          "d": "1970年提出的猜想：若两个集合A、B唯一表示整个空间，则其中一个被过原点的平面包含。论文在三维证明了它。"
-        },
-        {
-          "t": "唯一表示",
-          "d": "空间中每个点恰好有一种方式写成a+b（a∈A，b∈B）。这是Rédei猜想的条件，类似因式分解的唯一性。"
-        },
-        {
-          "t": "多项式方法",
-          "d": "用多项式函数表示点集，通过多项式次数和零点个数推出组合性质。论文用它把几何条件转化为代数条件。"
-        }
-      ],
-      "tags": [
-        "有限几何",
-        "组合数学",
-        "猜想证明"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Haihua Deng",
-        "Weicong Li",
-        "Weiye Zhang"
-      ],
-      "abstract": "In this paper, we prove the strong cylinder conjecture, that is, for every prime $p$, a set of $p^2$ points in $\\mathbb F_p^3$ that meets every affine plane in a multiple of $p$ points is a union of $p$ distinct parallel affine lines. We use this result to resolve Rédei's 1970 factorization conjecture in three dimensions: if $A,B\\subseteq\\mathbb F_p^3$ contain zero and every vector in $\\mathbb F_p^3$ has a unique expression $a+b$ with $a\\in A$ and $b\\in B$, then one of the two sets is contained in a plane through zero.",
-      "url": "https://arxiv.org/abs/2611.11414",
-      "pdf": "https://arxiv.org/pdf/2611.11414v1"
-    },
-    {
-      "id": "2611.11418",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.NT",
-      "published": "2026-11-08",
-      "title_en": "Monotonicity of Erdős sums",
-      "title_zh": "Erdős和式的单调性：从第6项开始递增",
-      "one_liner": "证明了Erdős和式f_k从k=6起严格递增，而只取奇数的版本g_k严格递减，并揭示两者差异源于素数2的奇点位置。",
-      "why": "这个问题从整数分解出发，却和复分析中的奇点挂钩，展示了数学不同分支的意外联系。高中生学过素数和级数，能理解问题本身，而结论的简洁性很有吸引力。",
-      "sections": {
-        "background": "Erdős和式f_k是对所有恰好有k个素因子的n，求和1/(n log n)。Lichtman发现f_k在k=6处取全局最小，之后趋向1。但f_k是否从k=6开始一直递增？之前只知道极限和最小值，中间是否会有波动不清楚。另一个版本g_k只对奇数求和，行为相反。这两个和式看似初等，但证明需要解析数论工具，因为涉及素数分布和ζ函数的性质。",
-        "method": "作者把f_k和g_k写成生成函数，利用ζ(s)^z的分解。关键观察是：在s=1处，z=2这个点对于包含素数2的生成函数恰好落在第一个奇点圆上，而对于去掉素数2的版本则严格在圆内。这个解析位置的差异决定了和式随k的增减方向。作者进一步推广：如果去掉的素数集合很稀疏且最小素数至少3，则对应的和式最终递减。最后用区间算术严格验证了第一步所需的不等式。",
-        "finding": "f_k < f_{k+1}对所有k≥6成立，所以f_k从k=6的最小值开始严格递增。而g_k > g_{k+1}对所有k≥1成立，即g_k严格递减。两者行为相反的原因在于素数2：包含2时z=2在奇点圆上，去掉2后z=2在圆内。这解释了为什么奇数版本会递减，并且是更一般现象的特例。",
-        "impact": "这个结果澄清了Erdős和式的全局形状，把初等的整数分解问题与解析奇点联系起来。它可能启发更多关于素数集合如何影响和式单调性的研究。对高中生来说，它展示了“小素数2”如何造成大差异，以及不同数学工具如何联手。"
-      },
-      "analogy": "就像比较两锅汤的味道：一锅加了盐（素数2），另一锅没加。盐让汤在某个浓度点刚好达到临界，而没盐的汤早就过了临界点，所以两锅汤随浓度变化的趋势相反。",
-      "terms": [
-        {
-          "t": "Erdős和式",
-          "d": "对恰好有k个素因子的整数n求和1/(n log n)。论文研究它随k如何变化，是数论中的经典对象。"
-        },
-        {
-          "t": "素因子个数Ω(n)",
-          "d": "把n分解质因数后，所有质因数个数之和（重复的算多次）。它决定了n属于哪个和式f_k。"
-        },
-        {
-          "t": "生成函数",
-          "d": "把数列f_k打包成函数∑f_k z^k，通过分析这个函数的奇点来推断数列性质。论文用它连接数论与复分析。"
-        },
-        {
-          "t": "奇点",
-          "d": "函数值趋于无穷或失去解析性的点。论文中z=2是否为奇点决定了和式的增减方向。"
-        },
-        {
-          "t": "ζ函数",
-          "d": "黎曼ζ函数，定义为∑1/n^s。它的性质深刻影响素数分布，论文用ζ(s)^z的分解来研究生成函数。"
-        },
-        {
-          "t": "区间算术",
-          "d": "用区间而不是单点进行计算，保证误差范围。论文用它严格验证最后一步的不等式，避免数值误差。"
-        }
-      ],
-      "tags": [
-        "数论",
-        "解析数论",
-        "单调性"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Jaideep Sai Padhi"
-      ],
-      "abstract": "For $k \\geq 1$ let $f_k = \\sum_{Ω(n)=k} 1/(n\\log n)$, where $Ω$ counts prime factors with multiplicity, and let $g_k$ be the same sum restricted to odd $n$. Lichtman showed that $f_k \\to 1$, with a global minimum at $k=6$, and Gorodetsky, Lichtman and Wong that $f_k = 1 - 2^{-k}(a_1 k^2 + O(k \\log(k+1)))$. We prove that $f_k < f_{k+1}$ for every $k \\geq 6$, and that $g_k > g_{k+1}$ for every $k \\geq 1$. The two statements come from one analytic distinction. Writing $\\sum_k P_k(s) z^k = ζ(s)^z H(s,z)$, at $s=1$ the point $z=2$ lies on the first singular circle of $H$, and strictly inside the first singular circle of the product with the prime $2$ removed. We show that this distinction decides the direction in general. If the complement of a set of primes $\\mathcal{P}$ is thin and its least element is at least $3$, the corresponding sums eventually decrease, so the second theorem is one case of a general phenomenon. The inequalities used at the last step of the first theorem are certified by interval arithmetic.",
-      "url": "https://arxiv.org/abs/2611.11418",
-      "pdf": "https://arxiv.org/pdf/2611.11418v1"
-    },
-    {
-      "id": "2611.11430",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · physics.atom-ph",
-      "published": "2026-11-08",
-      "title_en": "High-sensitivity sensing technology of 10 MHz radio frequency electric field based on Rydberg atoms",
-      "title_zh": "用里德堡原子造高灵敏无线电波传感器",
-      "one_liner": "研究者用铯原子的里德堡态和电磁诱导透明效应，造出能灵敏探测10 MHz无线电波的传感器。",
-      "why": "无线电波传感器我们天天用（手机、Wi-Fi），但短波频段的高灵敏小型化传感器很难做。这篇论文用原子本身当“天线”，把量子技术用到实际测量上，和课本里的原子能级、光的吸收都有联系。",
-      "sections": {
-        "background": "短波通信（3-30 MHz）需要灵敏、小巧的电场传感器，但传统天线尺寸受波长限制，很难小型化。里德堡原子——被激光激发到很高能级的原子——对外界电场极其敏感，而且尺寸只有原子大小，理论上可以做成微型传感器。难点在于如何用简单的激光系统稳定地制备里德堡态并读出信号。",
-        "method": "他们用三束红外激光（852 nm探测光、1470 nm修饰光、780 nm耦合光）照射室温铯原子蒸气，通过阶梯型四能级电磁诱导透明（EIT）效应，把原子制备到49P3/2里德堡态。当10 MHz射频电场作用时，EIT光谱会发生移动，通过测量光谱变化反推电场强度。",
-        "finding": "实验演示了该方案对10 MHz射频电场的灵敏探测。虽然摘要没给具体灵敏度数字，但展示了全红外光路、室温工作的可行性，为短波频段提供了一种小型化量子传感方案。",
-        "impact": "这种传感器可能用于无线电监测、通信和电磁兼容测试。用原子代替传统天线，有望让传感器更小、更灵敏，也展示了量子技术走出实验室的可能。"
-      },
-      "analogy": "就像用一把极敏感的“原子尺”去量电波的振动：电波一推，原子的能级就微微移动，我们看光谱就知道电波多强。",
-      "terms": [
-        {
-          "t": "里德堡态",
-          "d": "原子中电子被激发到很高能级的状态，对外电场极敏感，在这里用作传感介质。"
-        },
-        {
-          "t": "电磁诱导透明（EIT）",
-          "d": "激光使原子对探测光变得透明的一种量子干涉现象，这里用来读出电场引起的能级变化。"
-        },
-        {
-          "t": "铯原子蒸气池",
-          "d": "装有铯原子气体的玻璃池，室温下提供大量原子，是传感器的核心工作物质。"
-        },
-        {
-          "t": "射频电场",
-          "d": "频率在无线电波段的交变电场，这里指10 MHz的短波信号，是被测量的对象。"
-        },
-        {
-          "t": "探测光",
-          "d": "852 nm的激光，用来探测原子状态，其透射率反映电场大小。"
-        },
-        {
-          "t": "耦合光",
-          "d": "780 nm的激光，与探测光共同形成EIT阶梯能级，帮助制备里德堡态。"
-        },
-        {
-          "t": "修饰光",
-          "d": "1470 nm的激光，用于微调原子能级，优化里德堡态的激发。"
-        }
-      ],
-      "tags": [
-        "量子传感",
-        "原子物理",
-        "无线电"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Yulong Han",
-        "Zhengye Shan",
-        "Kan Zhang",
-        "Jinfang Sun",
-        "Lihua Zhang",
-        "Bang Liu",
-        "Dongsheng Ding"
-      ],
-      "abstract": "To address the pressing need for high-sensitivity, miniaturized electric field sensors in the short-wave communication band (3-30 MHz), this study proposes and demonstrates a radio frequency electric field quantum sensing scheme based on cesium atomic Rydberg states and the electromagnetically induced transparency (EIT) effect. The scheme employs an all-infrared optical design, utilizing 852 nm probe light, 1470 nm dressing light, and 780 nm coupling light to efficiently prepare the 49P3/2 Rydberg state in a room-temperature cesium vapor cell, which is then probed non-destructively via ladder-type four-level EIT spectroscopy.",
-      "url": "https://arxiv.org/abs/2611.11430",
-      "pdf": "https://arxiv.org/pdf/2611.11430v1"
-    },
-    {
-      "id": "2611.11446",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-08",
-      "title_en": "One Bit, Many Records: Information Replication in Quantum Many-Body Dynamics",
-      "title_zh": "量子多体动力学中的信息复制",
-      "one_liner": "研究发现，在量子多体系统中，一个局域比特的信息可以通过动力学选择机制同时复制到许多不相交区域。",
-      "why": "信息在量子系统中如何传播是个基本问题，也跟量子计算纠错有关。这篇论文提出一种让信息“多处备份”的机制，概念新颖但不需要高深数学，适合对量子信息感兴趣的同学。",
-      "sections": {
-        "background": "量子信息不能克隆，但可以在多个区域产生关联记录。以前的研究多关注信息如何 scramble（扰乱），但如何让一个比特的信息同时被许多区域读取还不清楚。难点在于需要一种机制，既让信息扩散，又保持可读性。",
-        "method": "他们提出“动力学选择”机制：比较一个未受扰动的非热参考态和它的局域扰动版本，在相同哈密顿量下演化。参考态保持局域可识别，而扰动版本扩散弛豫。通过熵-容量判据分析，证明面积律参考态加体积律扰动分支能保证大量记录。",
-        "finding": "他们证明，当参考态满足面积律、扰动分支满足体积律时，在固定的非零信息阈值下，记录数量随系统大小线性增长。在嵌入二聚体链模型中演示了记录增殖，且读出可靠性随碎片尺寸增加。还推广到PXP动力学。",
-        "impact": "这提供了信息传播的新视角——通过空间多重性来刻画，并给出可通过固定局域测量检验的实验信号。可能对量子纠错和量子热化研究有启发。"
-      },
-      "analogy": "就像一份文件被复印到许多个互不相连的抽屉里，每个抽屉都能独立读出内容，即使文件原件已经模糊。",
-      "terms": [
-        {
-          "t": "量子多体系统",
-          "d": "由大量相互作用的粒子组成的量子系统，如自旋链，这里研究信息在其中的传播。"
-        },
-        {
-          "t": "信息复制",
-          "d": "指一个局域编码的经典比特同时被许多不相交区域读取，不同于量子克隆。"
-        },
-        {
-          "t": "动力学选择",
-          "d": "本文提出的机制：未扰动参考态保持可识别，扰动版本扩散，从而产生记录。"
-        },
-        {
-          "t": "面积律",
-          "d": "纠缠熵随区域边界面积增长而非体积增长，这里指参考态的纠缠特性。"
-        },
-        {
-          "t": "体积律",
-          "d": "纠缠熵随区域体积增长，这里指扰动分支的纠缠特性，与面积律对比。"
-        },
-        {
-          "t": "PXP动力学",
-          "d": "一种理想化的量子自旋模型，约束相邻自旋不能同时翻转，这里用来扩展机制。"
-        },
-        {
-          "t": "熵-容量判据",
-          "d": "本文建立的判据，用熵和容量关系保证大量记录存在。"
-        }
-      ],
-      "tags": [
-        "量子信息",
-        "多体物理",
-        "动力学"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Dan-Bo Zhang",
-        "Yan-Ming Chen"
-      ],
-      "abstract": "Information replication occurs when a single locally encoded classical bit becomes simultaneously readable across extensively many disjoint regions of a quantum many-body system. Here we identify dynamical selection as a mechanism for generating these records, whereby an unperturbed nonthermal reference remains locally recognizable while its locally perturbed counterpart spreads and relaxes under the same Hamiltonian. We establish an entropy-capacity criterion showing that a uniform area-law reference paired with a volume-law perturbed branch guarantees extensive records at a fixed, nonzero information threshold. An embedded-dimer chain demonstrates both record proliferation and increasing readout reliability with fragment size, while stabilized PXP dynamics extends the mechanism to a coherently recurrent reference. These results characterize information spreading through the spatial multiplicity of accessible records and provide experimental signatures measurable via fixed local readouts.",
-      "url": "https://arxiv.org/abs/2611.11446",
-      "pdf": "https://arxiv.org/pdf/2611.11446v1"
-    },
-    {
-      "id": "2611.11476",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.CC",
-      "published": "2026-11-08",
-      "title_en": "On the Complexity of Extending Prescribed Linear Forests to Hamiltonian Cycles in Hypercubes",
-      "title_zh": "超立方体中预设边扩展成哈密顿圈是NP完全的",
-      "one_liner": "证明了在超立方体中判断一组预设边能否扩展成哈密顿圈是NP完全问题，即使预设边构成无孤立点的生成线性森林。",
-      "why": "这个问题把计算机科学中著名的“NP完全”概念和超立方体这个直观结构结合，高中生能想象超立方体，也能理解“找一条经过所有点的圈”的难度。它展示了理论计算机科学如何给问题分类。",
-      "sections": {
-        "background": "超立方体Q_n有2^n个顶点，每个顶点用n位二进制表示，相邻顶点只差一位。哈密顿圈是经过每个顶点恰好一次的圈。已知如果预设边数不超过2n-3且构成线性森林（每个点至多连两条边且无圈），则一定能扩展成哈密顿圈。但判断任意预设边集能否扩展，Dvořák在2005年提为开放问题。难点在于预设边可能很复杂，而扩展问题要同时满足所有预设边，组合爆炸。",
-        "method": "作者从受限的3-SAT问题（每个变量出现次数受限）出发，构造多项式时间归约。他们设计“变量 gadget”和“子句 gadget”，都是超立方体中的生成路径森林，并统一嵌入超立方体。这些gadget的局部结构使得预设边能扩展成哈密顿圈当且仅当3-SAT公式可满足。归约保持NP完全性，并且预设边恰好构成无孤立点的生成线性森林。",
-        "finding": "该扩展问题是NP完全的，即使预设边是生成线性森林且无孤立点。这意味着不存在多项式时间算法（除非P=NP）。作者还指出同样的归约能证明更一般的预设边集扩展问题的NP困难性。这回答了Dvořák的开放问题，并给出了第一个NP完全性证明。",
-        "impact": "这个结果明确了超立方体中哈密顿圈扩展问题的计算难度，为图论中的扩展问题提供了新例子。它可能帮助理解其他网络中的类似问题。对高中生来说，它展示了“NP完全”如何被证明，以及组合结构如何编码逻辑。"
-      },
-      "analogy": "就像给一个魔方（超立方体）预设一些必须经过的边，问能否走一条经过所有顶点一次的闭合路线。这个问题被证明和“解数独”一样难，没有快速通用算法。",
-      "terms": [
-        {
-          "t": "超立方体Q_n",
-          "d": "顶点是n位二进制串，相邻顶点只差一位的图。它有2^n个顶点，是论文研究的主要对象。"
-        },
-        {
-          "t": "哈密顿圈",
-          "d": "经过图中每个顶点恰好一次的闭合路径。论文问预设边能否被包含在这样一个圈中。"
-        },
-        {
-          "t": "线性森林",
-          "d": "由若干条互不相交的路径组成的图，每个顶点度数至多2且无圈。论文中预设边构成这种结构。"
-        },
-        {
-          "t": "NP完全",
-          "d": "一类计算问题，目前没有快速算法，且所有NP问题都能归约到它。论文证明扩展问题是NP完全的。"
-        },
-        {
-          "t": "多项式时间归约",
-          "d": "把一个问题A的实例在多项式时间内转化为问题B的实例，使得答案相同。论文用3-SAT归约到扩展问题。"
-        },
-        {
-          "t": "3-SAT",
-          "d": "判断一个由三元子句组成的逻辑公式是否可满足的问题，是经典的NP完全问题。论文用它作为归约起点。"
-        },
-        {
-          "t": "gadget",
-          "d": "归约中用来模拟变量或子句的小型图结构。论文设计了变量和子句gadget并嵌入超立方体。"
-        }
-      ],
-      "tags": [
-        "计算复杂性",
-        "图论",
-        "超立方体"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Huazhong Lü",
-        "Tingzeng Wu"
-      ],
-      "abstract": "Let $Q_n$ be the $n$-dimensional hypercube, and let $P\\subseteq E(Q_n)$ be a set of prescribed edges. It is known that, for $n\\ge 2$, every such set $P$ with $|P|\\leq 2n-3$ whose edges form a linear forest is contained in a Hamiltonian cycle of $Q_n$. This bound is sharp for general linear forests. The computational complexity of deciding whether a prescribed edge set of a hypercube can be extended to a Hamiltonian cycle was posed as an open question by Dvořák [SIAM J. Discrete Math. 19 (2005) 135--144]. We prove that the problem is NP-complete even when the prescribed edges form a spanning linear forest with no isolated vertices. We give a polynomial-time reduction from a restricted 3-SAT problem, using local spanning path-forest gadgets for variables and clauses that are uniformly embedded in the hypercube. The same reduction therefore establishes NP-hardness of two versions of Hamiltonian-cycle extension problems for general prescribed edge sets.",
-      "url": "https://arxiv.org/abs/2611.11476",
-      "pdf": "https://arxiv.org/pdf/2611.11476v1"
-    },
-    {
-      "id": "2611.10565",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.NC",
-      "published": "2026-11-07",
-      "title_en": "Pixels over Symbols: Sensory Realism Improves Behavioral Alignment in Models of Cognition",
-      "title_zh": "给认知模型喂“真实像素”比喂符号更像人",
-      "one_liner": "在记忆决策任务中，用真实感官图像训练的神经网络比用抽象符号训练的模型更接近人类行为，但仍有差距。",
-      "why": "这篇论文用实验回答一个根本问题：研究认知时，感官细节到底重不重要？结果说重要，而且关键不在网络连接权重，而在输入的真实感。高中生能借此理解“模拟”与“真实”的差别，以及如何用对照实验检验假设。",
-      "sections": {
-        "background": "认知的计算模型长期用抽象符号输入，比如把图像简化为向量，理由是感官细节对认知过程不重要，且过去算力有限。近年能处理真实感官输入的模型出现了，但“感官真实感是否实质影响认知”一直没被严格检验。如果没影响，简化就合理；如果有影响，以往结论可能需要重新审视。",
-        "method": "作者大规模比较两类神经网络：一类用抽象符号输入，一类用感官真实的图像输入，训练它们完成一系列依赖记忆的决策任务。然后比较模型与人类行为反应模式的一致性。还分析内部动态，特别是循环连接权重的作用，并做替换实验：把抽象训练的网络权重固定，只换真实感官输入，看行为一致性是否恢复。",
-        "finding": "感官真实模型比抽象模型显著更接近人类行为模式，但最好的模型与人类内部行为一致性仍有不小差距。分析发现，学习到的循环权重不是差异主因；把抽象训练好的权重固定、只喂真实感官输入，就能恢复感官真实模型与人类的一致性，且波动在种子间变异范围内。说明输入的真实感贡献了相当大一部分行为对齐。",
-        "impact": "研究提示，认知建模中感官细节并非可有可无，简化输入可能扭曲结论。对 AI 与认知科学的交叉研究有方法学意义：评估模型时需考虑输入真实感。但实验限于视觉工作记忆任务，其他认知领域是否同样成立还需更多工作。"
-      },
-      "analogy": "好比学做菜，只看菜谱文字（抽象符号）和看真实食材在锅里变化（感官真实）是两回事。后者让你更接近大厨的实际操作，但就算给你同样的锅和食材，火候把握仍可能差一截。",
-      "terms": [
-        {
-          "t": "认知计算模型",
-          "d": "用计算机程序模拟人类思维过程的模型。论文比较这类模型在抽象输入和真实感官输入下的行为像不像人。"
-        },
-        {
-          "t": "抽象符号输入",
-          "d": "把感官信息简化为数字向量等符号的输入方式。论文用它作为对照，检验简化是否丢失重要信息。"
-        },
-        {
-          "t": "感官真实输入",
-          "d": "保留图像等真实感官细节的输入。论文发现用这种输入训练的模型行为更接近人类。"
-        },
-        {
-          "t": "循环神经网络",
-          "d": "带反馈连接的神经网络，能利用过去信息。论文分析其循环权重是否是模型与人类差异的主因。"
-        },
-        {
-          "t": "行为一致性",
-          "d": "模型反应模式与人类反应模式的吻合程度。论文用它衡量哪种输入方式训练出的模型更像人。"
-        },
-        {
-          "t": "工作记忆",
-          "d": "短时间内保持和操作信息的认知系统。论文用依赖工作记忆的决策任务来比较模型与人类。"
-        },
-        {
-          "t": "种子间变异",
-          "d": "同一模型用不同随机初始条件训练产生的差异。论文用它判断替换实验的结果是否在正常波动内。"
-        }
-      ],
-      "tags": [
-        "认知科学",
-        "神经网络",
-        "工作记忆"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Hao Yuan Bai",
-        "Xiaoxuan Lei",
-        "Zihan Weng",
-        "Motahareh Pourrahimi",
-        "Lucas Gomez",
-        "Pouya Bashivan"
-      ],
-      "abstract": "Computational models of cognition have traditionally relied on abstract symbolic inputs that approximate sensory experiences with simplified vector representations. This simplification reflects historical computational constraints and a long-held assumption that the details of sensory realism are incidental to the study of cognitive processes. Recent advances have enabled the development of sensory-realistic models capable of performing diverse cognitive tasks, yet whether sensory realism meaningfully shapes cognition has not been formally established. We address this gap through a large-scale empirical comparison of abstract and sensory-realistic neural network models trained on a battery of memory-dependent decision-making tasks. Our results show that sensory-realistic models mirror human behavioral response patterns significantly more than their abstract counterparts, though a substantial gap to human internal behavioral consistency remains even for the best tested models. By analyzing the internal dynamics of these systems, we find that the learned recurrent weights are not the main source of this divergence. In fact, frozen abstract-trained weights driven by sensory-realistic inputs recover the human consistency of sensory-realistic models. The resulting dynamics are also within the seed-to-seed variability of sensory-realistic models. Together, our findings argue that across a broad set of visual working-memory tasks, sensory realism accounts for a substantial portion of the model-human behavioral agreement, more than the choice of sequence architecture and comparable to the choice of vision encoder. These results suggest that findings obtained from abstract task models in neuroscience should be more carefully interpreted in light of their potential behavioral limitations.",
-      "url": "https://arxiv.org/abs/2611.10565",
-      "pdf": "https://arxiv.org/pdf/2611.10565v1"
-    },
-    {
-      "id": "2611.10694",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.CV",
-      "published": "2026-11-07",
-      "title_en": "Perception, Not Reasoning, Limits Visual Theory of Mind",
-      "title_zh": "视觉版“心理理论”卡在感知而非推理",
-      "one_liner": "视觉语言模型在文字版错误信念任务上接近人类，但换成图片就掉二十多个百分点，瓶颈在“看不清”而非“想不通”。",
-      "why": "这篇论文直接挑战“AI 不会推理”的流行说法，用实验说明很多失败其实是感知前端没把场景看全。高中生能从中体会“先看清再思考”的道理，也能了解如何设计对照实验来区分两种原因。",
-      "sections": {
-        "background": "“心理理论”指推测他人信念的能力，经典测试是错误信念任务：小明把巧克力放抽屉后离开，妈妈挪到柜子，小明回来会去哪找？过去用文字描述，视觉语言模型得分接近人类；但换成图片呈现同一情节，模型准确率骤降。大家原先以为是推理模块不行，纷纷设计新模块，却没人系统检验感知环节是否拖了后腿。",
-        "method": "作者设计五条件分离协议：保持推理任务不变，只改变感知信息的保真度，从纯视觉到纯文字。用“感知贡献比”量化每种条件弥补了多少视觉与文字间的差距。测试两类场景：抽象二维面板和自然三维游戏画面，覆盖七个视觉语言模型，约十五万九千次接口调用。还分析错误类型，看模型到底错在哪。",
-        "finding": "提供真实场景结构信息后，差距大幅缩小，在抽象面板和 MuMA-ToM 场景中甚至达到或超过纯文字推理。自动解析器生成的辅助信息则无效。纯视觉条件下最常见的错误是“现实偏差”，占错误信念失败的 60%：模型报告物体实际位置，而非缺席者所以为的位置。这说明感知前端没能追踪每个时刻哪些角色在场。",
-        "impact": "研究提示，提升多模态模型在类似任务上的表现，可能优先改进视觉场景的结构化提取，而非一味增加推理模块。对理解人类认知也有启发：感知与推理的边界可能比想象中模糊。不过结论基于特定实验协议，能否推广到更开放场景仍需验证。"
-      },
-      "analogy": "好比一个学生做几何题，公式都会，但图看错了——把虚线当实线、漏看一个点，结果全错。老师若只补解题技巧没用，得先让他把图看准。这篇论文就是发现 AI 的“看图”环节出了问题。",
-      "terms": [
-        {
-          "t": "心理理论",
-          "d": "推测他人想法和信念的能力。论文用它指模型判断“别人以为东西在哪”的任务，是衡量社会认知的经典测试。"
-        },
-        {
-          "t": "错误信念任务",
-          "d": "测试是否理解“别人可能持有错误想法”的实验。论文用它比较模型在文字和图片两种呈现下的表现差异。"
-        },
-        {
-          "t": "视觉语言模型",
-          "d": "能同时处理图像和文字的 AI 模型。论文测试了七个这类模型，看它们在看图版任务中为何失败。"
-        },
-        {
-          "t": "感知贡献比",
-          "d": "论文提出的指标，衡量某种感知条件弥补了多少视觉与文字间的准确率差距。用来判断瓶颈是否在感知。"
-        },
-        {
-          "t": "现实偏差",
-          "d": "模型报告物体实际位置而非他人所以为的位置。论文发现这是纯视觉条件下最主要的错误类型，占 60%。"
-        },
-        {
-          "t": "结构化场景提取",
-          "d": "从图像中提取出谁在何时何地等结构化信息。论文发现提供这种信息能大幅缩小视觉与文字的差距。"
-        },
-        {
-          "t": "分离协议",
-          "d": "保持任务不变、只改变一个因素（此处为感知保真度）的实验设计。用来分离感知和推理各自的贡献。"
-        }
-      ],
-      "tags": [
-        "AI",
-        "认知科学",
-        "心理理论"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Mohamed Rayan Barhdadi",
-        "Syed Talal Wasim",
-        "Juergen Gall",
-        "Erchin Serpedin",
-        "Hasan Kurban"
-      ],
-      "abstract": "Vision-language models pass text-based false-belief probes at near-human levels but drop by over twenty percentage points on abstract panels the moment the same problem is conveyed visually. The consensus diagnosis is conceptual, prescribing new belief-reasoning modules. We argue the dominant bottleneck is perceptual: not what the model cannot reason about, but what it cannot see. We propose a five-condition dissociation protocol that holds the reasoning task constant while varying perceptual fidelity from visual only to text only, and quantify the result with the Perceptual Contribution Ratio, the share of the visual-to-text gap a given fidelity closes. We test this on two kinds of scenes: abstract 2D panels in the Heider--Simmel tradition, and naturalistic 3D game scenes from MuMA-ToM and MindPower. The evaluation covers seven VLMs and roughly 159,000 API calls. Ground-truth scaffolds substantially close the gap in every setting, and on the abstract panels and MuMA-ToM they match or exceed the text-only reasoning. Whereas scaffolds built by automatic parsers, including frontier VLMs, fail. The most common error in the visual-only condition is \\emph{reality bias}, which accounts for 60\\% of false-belief failures. Models report where an object actually is, not where an absent agent believes it is. This points to a perceptual front-end that fails to track which agents were present at each moment. Under the evaluated protocol, structured visual scene-state extraction, rather than belief inference, is the dominant bottleneck for visual ToM.",
-      "url": "https://arxiv.org/abs/2611.10694",
-      "pdf": "https://arxiv.org/pdf/2611.10694v1"
-    },
-    {
-      "id": "2611.08819",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-11-06",
-      "title_en": "Reflexive polytopes can have doubly exponentially many vertices",
-      "title_zh": "反射多面体的顶点数可以双指数级增长",
-      "one_liner": "推翻了一个20年的猜想：8维及以上反射多面体的顶点数可以多到双指数级，而不是原来猜的指数级。",
-      "why": "多面体是高中立体几何的常客，但高维空间里的多面体却藏着反直觉的秘密。这篇论文用反例推翻了长期猜想，还展示了AI辅助数学发现的可能性，能让你看到数学猜想如何被检验和推翻。",
-      "sections": {
-        "background": "反射多面体是一种特殊的格点多面体，在代数几何和组合数学中很重要。2004年有数学家根据低维观察猜测，d维反射多面体的顶点数最多是6的d/2次方，即指数增长。但高维情况一直难以验证，因为例子太少。",
-        "method": "作者构造了高维反例，主要工具是“直积”和“直和”操作，把低维多面体组合成高维的，并仔细计算顶点数。他们还借助了GPT-6.1 Sol来辅助搜索和验证构造。",
-        "finding": "在8维及以上，存在反射多面体顶点数远超6^{d/2}，甚至达到理论最大可能——双指数级。比如在足够大的维度d，顶点数可以像2^{2^d}那样增长，彻底推翻原猜想。",
-        "impact": "这说明高维凸几何比想象中更复杂，原有基于低维的直觉不可靠。同时展示了AI在数学构造中的潜力，可能改变未来数学研究的方式。"
-      },
-      "analogy": "就像你根据几个小样本猜一个规律，结果有人找到反例，发现规律完全不对。而且这个反例是用AI帮忙找到的，就像用探测器发现了新物种。",
-      "terms": [
-        {
-          "t": "反射多面体",
-          "d": "一种格点多面体，包含原点且对偶多面体也是格点多面体。论文研究其顶点数的增长。"
-        },
-        {
-          "t": "格点多面体",
-          "d": "顶点都在整数坐标上的多面体。反射多面体是其中特殊的一类。"
-        },
-        {
-          "t": "对偶多面体",
-          "d": "由原多面体的面定义的多面体，交换顶点和面。反射多面体要求对偶也是格点多面体。"
-        },
-        {
-          "t": "双指数增长",
-          "d": "形如2^{2^d}的增长，比指数增长快得多。论文证明顶点数可达双指数级。"
-        },
-        {
-          "t": "直积",
-          "d": "两个多面体笛卡尔积，维度相加，顶点数相乘。构造高维反例的基本操作。"
-        },
-        {
-          "t": "直和",
-          "d": "另一种组合多面体的方式，用于构造具有特定性质的多面体。"
-        },
-        {
-          "t": "GPT-6.1 Sol",
-          "d": "一个AI模型，用于辅助搜索和验证数学构造。论文用它帮助发现反例。"
-        }
-      ],
-      "tags": [
-        "组合数学",
-        "多面体",
-        "反例"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Johannes Hofscheier",
-        "Benjamin Nill"
-      ],
-      "abstract": "Reflexive polytopes are lattice polytopes containing the origin in their interior such that also the dual polytope is a lattice polytope. On the basis of low-dimensional observations and of bounds known for special classes of reflexive polytopes, the second author conjectured in 2004 that the number of vertices of $d$-dimensional reflexive polytopes is bounded from above by $6^{d/2}$. In this note, we present counterexamples showing that this conjecture is false in every dimension $d \\ge 8$. In fact, rather surprisingly, in sufficiently large dimensions $d$ the number of vertices (equivalently, by duality, the number of facets) can be as large as theoretically possible, namely doubly exponential in $d$. These results were found using GPT-6.1 Sol.",
-      "url": "https://arxiv.org/abs/2611.08819",
-      "pdf": "https://arxiv.org/pdf/2611.08819v1"
-    },
-    {
-      "id": "2611.08835",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.CG",
-      "published": "2026-11-06",
-      "title_en": "Containment Problems in Convex Sets",
-      "title_zh": "平面点集中总能找到两个点，任何包含它们的凸集都覆盖至少1/5的点",
-      "one_liner": "证明在平面点集中，存在两个点，使得任何包含它们的凸集缩放平移后至少覆盖1/5的点（严格凸时）。",
-      "why": "这个问题像几何版的“找朋友”：两个点就能“代表”整个点集的一部分。它联系到凸集、缩放平移等课本概念，结论清晰，还能动手画图试试，非常适合高中生感受组合几何的趣味。",
-      "sections": {
-        "background": "在计算几何中，经常需要找代表性子集。之前人们研究过用凸集覆盖点集的问题，但反过来，给定凸集形状，找两个点使得任何包含它们的凸集都覆盖固定比例的点，这个问题最近才被提出。",
-        "method": "作者用几何概率和组合方法。对于严格凸集，通过分析点集的凸包和随机采样，证明存在一对点满足比例1/5。对于一般凸集，用更精细的覆盖论证得到1/6e。还讨论了三角形等特殊情况。",
-        "finding": "严格凸集时比例至少1/5；一般凸集至少1/6e（约0.061）；三角形至少1/12；若允许旋转则1/768。还给出了算法找这对点。",
-        "impact": "为几何覆盖问题提供了新思路，可能用于机器学习中的核心集选择或传感器网络覆盖。算法方面也有实际意义。"
-      },
-      "analogy": "就像在一个班级里找两个同学，任何包含他们的“兴趣小组”（形状固定但可缩放平移）都能覆盖至少五分之一的学生。这两个人就像班级的“代表”。",
-      "terms": [
-        {
-          "t": "凸集",
-          "d": "集合中任意两点的连线仍在集合内。论文中C是凸集，用来覆盖点。"
-        },
-        {
-          "t": "缩放平移",
-          "d": "将图形按比例放大缩小并移动位置。论文考虑C的所有缩放平移副本。"
-        },
-        {
-          "t": "严格凸",
-          "d": "边界没有平直段，如圆。论文对严格凸集得到1/5的比例。"
-        },
-        {
-          "t": "凸包",
-          "d": "包含点集的最小凸集。论文用凸包分析点的分布。"
-        },
-        {
-          "t": "e",
-          "d": "自然对数的底，约2.718。论文中比例1/6e约等于0.061。"
-        },
-        {
-          "t": "算法",
-          "d": "计算机解决问题的步骤。论文讨论了如何找到这对点。"
-        }
-      ],
-      "tags": [
-        "组合几何",
-        "凸集",
-        "算法"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Prosenjit Bose",
-        "Bobby Miraftab",
-        "Tyler Tuttle"
-      ],
-      "abstract": "Let $P$ be a set of $n$ points in the plane, and let $C$ be a compact, convex subset of the plane that contains the origin in its interior. We study the problem of finding two points $p$ and $q$ of $P$ with the property that any homothet of $C$ that contains $p$ and $q$ must contain at least a constant fraction of the points of $P$. We give proofs for several cases. When $C$ is strictly convex we achieve a fraction of $1/5$, and when $C$ is a general convex region we achieve a fraction of $1/6e$. We show how the ideas of this second bound can be used to prove a lower bound for a version of the problem in $\\mathbb{R}^d$ when $C$ is a $d$-ball. We also consider a few special cases. When $C$ is a triangle we get a lower bound of $1/12$, and when we allow that triangle to be rotated by $π$ radians in addition to being scaled and translated we get a lower bound of $1/768$. In proving this last result, we improve the state of the art on the version of this problem in three dimensions, where $C$ is a parallelepiped. We also consider the algorithmic aspects of finding such a pair of points.",
-      "url": "https://arxiv.org/abs/2611.08835",
-      "pdf": "https://arxiv.org/pdf/2611.08835v1"
-    },
-    {
-      "id": "2611.08851",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mtrl-sci",
-      "published": "2026-11-06",
-      "title_en": "Conformationally frustrated epitaxy at heteromolecular interface",
-      "title_zh": "分子在模板上“站不直”：柔性分子外延生长中的构象挫折",
-      "one_liner": "研究柔性分子BTB在分子模板上的外延生长，发现分子构象变化与基底相互作用竞争，导致“构象挫折”，影响外延排列。",
-      "why": "分子外延生长是制造有机电子器件和分子机器的基础技术。这篇论文研究一个有趣的问题：当分子不是刚性的，而是像面条一样能弯曲时，它如何在模板上排列？这连接了课本上的分子结构和材料制备，展示了微观世界的“妥协”艺术。",
-      "sections": {
-        "background": "分子外延是在基底上生长有序分子薄膜的技术，对有机电子学很重要。过去研究多用刚性分子，但实际分子常有柔性侧链或可旋转键。柔性如何影响外延匹配尚不清楚。BTB分子有一个中心苯环和三个羧基苯基，可以旋转，是研究柔性影响的理想模型。",
-        "method": "研究者在Ag(111)表面先制备一层完全去质子化的BTB分子作为模板，再在上面沉积完整的BTB分子。他们用扫描隧道显微镜（STM）看分子排列和单个分子形状，用低能电子显微镜和衍射看长程有序，用X射线光电子能谱看化学状态，并用密度泛函理论（DFT）计算分子间和分子-基底相互作用。",
-        "finding": "他们发现，分子间 bonding 模式在模板上保留，但晶格参数和分子构象与在银表面不同。STM下单个分子呈现不同外观，理论计算表明这是位点依赖的构象变化。分子-基底相互作用与构象能的竞争导致不同的妥协几何，产生构象挫折。将BTB限制为平面会改变优先吸附位点，证明柔性直接修改外延注册的能量偏好。",
-        "impact": "这项研究揭示了分子柔性在外延生长中的关键作用，说明设计分子器件时必须考虑构象自由度。未来可能帮助人们通过控制分子柔性来定制薄膜结构，或利用“构象挫折”创造新型纳米结构。"
-      },
-      "analogy": "就像让一群柔软的面条人在一个网格地板上排队，地板上有粘性点。面条人想站直（平面构象）但地板粘性点位置不合适，他们只好扭曲身体（非平面构象）去够粘性点，结果队伍虽然整齐但每个人姿势都别扭。",
-      "terms": [
-        {
-          "t": "外延生长",
-          "d": "在基底上生长有序晶体薄膜的过程，论文研究分子在模板上的外延。"
-        },
-        {
-          "t": "构象",
-          "d": "分子通过单键旋转形成的不同空间形状，论文中BTB的构象影响其吸附和排列。"
-        },
-        {
-          "t": "扫描隧道显微镜（STM）",
-          "d": "用原子级尖锐探针扫描表面，通过隧道电流成像分子，论文用来看分子排列和形状。"
-        },
-        {
-          "t": "密度泛函理论（DFT）",
-          "d": "一种量子力学计算方法，用于计算分子和固体的电子结构，论文用来模拟分子吸附。"
-        },
-        {
-          "t": "构象挫折",
-          "d": "分子因构象能与其与基底相互作用竞争而无法达到理想构象的状态，论文的核心概念。"
-        },
-        {
-          "t": "去质子化",
-          "d": "分子失去质子（H+），论文中BTB失去羧基上的质子形成模板层。"
-        },
-        {
-          "t": "晶格参数",
-          "d": "描述晶体周期性结构的长度和角度，论文比较模板和银表面上的晶格参数变化。"
-        }
-      ],
-      "tags": [
-        "分子外延",
-        "表面科学",
-        "柔性分子",
-        "纳米材料"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Jakub Planer",
-        "Pavel Procházka",
-        "Tomáš Krajňák",
-        "Veronika Stará",
-        "Daniela Hrubá",
-        "Zdeněk Endstrasser",
-        "Tomáš Skála",
-        "Jan Čechal"
-      ],
-      "abstract": "Precise control of molecular heteroepitaxy offers a route to multilayer architectures with well-defined interfaces. However, the role of intramolecular flexibility in epitaxial matching remains insufficiently understood. Here, we investigate the heteroepitaxy of intact 1,3,5-tris(4-carboxyphenyl)benzene (BTB) on a molecular $δ$-layer composed of fully deprotonated BTB molecules on Ag(111). Combining scanning tunneling microscopy, low-energy electron microscopy and diffraction, X-ray photoelectron spectroscopy, and density functional theory, we identify the key interactions controlling molecular packing and epitaxial growth. We show that intermolecular bonding motifs are preserved on the molecular template, but their lattice parameters and molecular conformations change as compared to a silver surface. Individual molecules exhibit distinct appearances in scanning tunneling microscopy, consistent with site-dependent conformational variations identified by theory. Our calculations reveal that the competition between molecule-substrate interactions and conformational energy produces different compromise geometries, resulting in conformational frustration at the epitaxial interface. Crucially, constraining BTB into a planar geometry changes the preferred lateral adsorption positions, demonstrating that molecular flexibility directly modifies the energetic preferences for epitaxial registry. Comparison with more rigid molecular overlayers further supports this interpretation. Our findings reveal that molecular flexibility contributes to epitaxial matching by allowing unfavorable molecule-substrate interactions to be compensated by energetically favorable conformations while preserving the intermolecular network.",
-      "url": "https://arxiv.org/abs/2611.08851",
-      "pdf": "https://arxiv.org/pdf/2611.08851v1"
-    },
-    {
-      "id": "2611.08862",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.CO",
-      "published": "2026-11-06",
-      "title_en": "Jaeger conjecture and Jaeger-Zhang conjecture",
-      "title_zh": "平面图的奇围长与圆色数：证明Jaeger猜想",
-      "one_liner": "证明了每个奇围长至少4k+3的平面图都能映射到奇圈C_{2k+1}，解决了Jaeger猜想。",
-      "why": "平面图是高中图论入门内容，但圆色数和同态是进阶概念。这篇论文解决了一个著名猜想，结论简洁优美，能让你体会图论中“围长”和“染色”的深刻联系。",
-      "sections": {
-        "background": "Jaeger猜想（1980年代）断言奇围长足够大的平面图可以映射到小奇圈。之前只知道一些特殊情况，一般情况悬而未决。圆色数是推广的染色概念，与流和同态紧密相关。",
-        "method": "作者基于Jafari关于圆流的最新结果，用平面对偶将流问题转化为染色问题。关键是一个“小修正引理”，通过生成树的分布来调整边。还用了拆分技巧处理奇偶度。",
-        "finding": "证明了对任意k≥1，奇围长至少4k+3的平面图G满足圆色数χ_c(G) < (2k+1)/k，从而存在到C_{2k+1}的同态。这证实了Jaeger猜想。",
-        "impact": "解决了图论中一个长期猜想，统一了流和染色的视角。方法可能推广到其他图类，促进圆色数理论发展。"
-      },
-      "analogy": "就像给地图染色，但颜色是连续变化的圆环上的点。论文证明只要地图的“奇圈”足够大，就能用很少的“颜色”染好，而且颜色可以连续调节。",
-      "terms": [
-        {
-          "t": "平面图",
-          "d": "可以画在平面上且边不相交的图。论文主要研究平面图。"
-        },
-        {
-          "t": "围长",
-          "d": "图中最短圈的长度。奇围长指最短奇圈的长度。"
-        },
-        {
-          "t": "圆色数",
-          "d": "一种推广的色数，取值可为实数，反映图到圆的同态性质。"
-        },
-        {
-          "t": "同态",
-          "d": "保持边关系的映射。论文证明存在到奇圈的同态。"
-        },
-        {
-          "t": "圆流",
-          "d": "与圆色数对偶的概念，涉及边定向和流量。Jafari的结果关于圆流。"
-        },
-        {
-          "t": "平面对偶",
-          "d": "平面图的对偶图，面变成顶点。用于将流问题转化为染色问题。"
-        },
-        {
-          "t": "生成树",
-          "d": "包含所有顶点的树。论文用生成树上的分布来构造修正。"
-        }
-      ],
-      "tags": [
-        "图论",
-        "平面图",
-        "染色"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Reza Naserasr"
-      ],
-      "abstract": "We prove that every signed planar graph $\\widehat G$ of negative girth at least $\\ell\\geq 3$ satisfies $χ_c(\\widehat G)<\\frac{2\\ell}{\\ell-2}$. As a consequence, for every integer $k\\geq 1$, every planar graph $G$ of odd girth at least $4k+3$ satisfies $χ_c(G)<\\frac{2k+1}{k}$ and hence admits a homomorphism to $C_{2k+1}$. Our proofs build on recent results of Jafari on circular flows. In particular, Jafari proved that every $(4k+2)$-edge-connected graph has circular flow number strictly less than $2+\\frac{1}{k}$. We revisit his theorem, providing an alternative proof that emphasizes the underlying graph-theoretic ideas. We also extend the result to signed graphs and weaken the connectivity assumption by imposing a lower bound only on the size of negative cuts. The key step is a small-correction lemma associated with a distribution on spanning trees. A splitting argument first gives the required correction in an even-degree graph; doubling the edges removes the degree-parity assumption. Plane duality then gives the coloring theorem. We discuss tightness of bounds in the end.",
-      "url": "https://arxiv.org/abs/2611.08862",
-      "pdf": "https://arxiv.org/pdf/2611.08862v1"
-    },
-    {
-      "id": "2611.08874",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · physics.chem-ph",
-      "published": "2026-11-06",
-      "title_en": "Fortuitous Cancellation of Competing Effects in the Free Energy of Water Autoionization: Long-Range Electrostatics, System Size, and Nuclear Quantum Effects",
-      "title_zh": "水为什么自己电离？计算机模拟揭示背后多种效应相互抵消",
-      "one_liner": "用机器学习模拟水分子，发现水的电离自由能受长程静电、系统大小和核量子效应共同影响，且这些效应会相互抵消，导致pKw难以精确计算。",
-      "why": "水是生命之源，水自己电离出氢离子和氢氧根是酸碱化学的基础。这篇论文用最前沿的计算机模拟方法研究这个看似简单却极其复杂的过程，能让你理解课本上“水是弱电解质”背后的微观机制，以及为什么精确计算一个平衡常数如此困难。",
-      "sections": {
-        "background": "水会自动电离成H+和OH-，平衡常数Kw约为10^-14，这个数字决定了所有水溶液的酸碱性质。但为什么电离需要这么多能量？实验很难直接观测单个水分子的电离过程，而计算机模拟又因为水分子间复杂的相互作用（尤其是长程静电和量子效应）而难以精确。之前的研究往往只考虑部分因素，无法给出与实验一致的pKw值。",
-        "method": "研究者使用机器学习原子间势（MLIP）来模拟水分子的相互作用，这种势能基于量子力学计算训练，精度接近第一性原理但速度快得多。他们结合谱自适应偏置力增强采样技术，让模拟能够跨越电离能垒，并追踪质子转移和“水线”构型。他们还系统改变了长程静电处理、系统大小、温度和核量子效应，观察这些因素如何影响自由能曲线。",
-        "finding": "他们发现，长程静电会提高离子间距超过3埃时的自由能；不同力误差相近的模型给出的自由能曲线差异很大；增大系统尺寸会降低计算出的pKw，而核量子效应则使pKw更接近实验值。这些效应相互竞争又部分抵消，导致精确确定pKw需要模拟更长的水线。接触离子对不稳定，溶剂分离离子对仅弱亚稳。",
-        "impact": "这项研究说明，即使使用先进的机器学习势，水的电离自由能计算仍然对模型细节高度敏感，多种效应相互抵消使得精确预测pKw非常困难。这提醒我们，对于复杂化学过程，单一因素的解释可能不够，需要综合考虑多种物理效应。未来可能帮助改进水溶液化学的模拟方法。"
-      },
-      "analogy": "就像你想精确计算一群人合作完成一项任务需要多少时间，但每个人的工作效率受心情、环境、合作方式等多种因素影响，而且这些因素有时会互相抵消——有人心情好但环境差，有人环境好但合作不畅。最终总时间很难预测，必须把所有因素都考虑进去。",
-      "terms": [
-        {
-          "t": "自电离",
-          "d": "水分子自发分解成H+和OH-的过程，是酸碱平衡的基础，论文研究其自由能代价。"
-        },
-        {
-          "t": "机器学习原子间势（MLIP）",
-          "d": "用机器学习方法拟合量子力学数据得到的势函数，能快速模拟分子间相互作用，论文用它来模拟水。"
-        },
-        {
-          "t": "自由能",
-          "d": "系统在恒温下能做功的能量，论文计算电离过程的自由能变化以确定pKw。"
-        },
-        {
-          "t": "核量子效应",
-          "d": "原子核的量子涨落效应，尤其对轻原子如氢重要，论文发现它使pKw更接近实验值。"
-        },
-        {
-          "t": "溶剂分离离子对（SSIP）",
-          "d": "电离后H+和OH-被水分子隔开的状态，论文发现它仅弱亚稳。"
-        },
-        {
-          "t": "pKw",
-          "d": "水自电离平衡常数的负对数，室温下约为14，论文试图从模拟中计算它。"
-        },
-        {
-          "t": "增强采样",
-          "d": "一种加速分子模拟中罕见事件的技术，论文用谱自适应偏置力方法研究电离。"
-        }
-      ],
-      "tags": [
-        "水",
-        "计算化学",
-        "机器学习",
-        "酸碱平衡"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Samuel Varner",
-        "Yinan Xu",
-        "Yezhi Jin",
-        "Gustavo R. Pérez-Lemus",
-        "Pablo F. Zubieta Rico",
-        "Zhiying Yi",
-        "Joan M. Montes de Oca",
-        "Paul F. Nealey",
-        "Seth B. Darling",
-        "Zhen-Gang Wang",
-        "Juan J. de Pablo"
-      ],
-      "abstract": "Few molecular processes are more fundamental to chemistry than the autoionization of water, whose equilibrium constant, $K_w \\approx 10^{-14}$, underlies acid-base equilibria and the chemistry of life. Yet the molecular origins of the free energy cost of forming and separating ions remain incompletely understood. Efforts to explain it have been limited by the difficulty of modeling water reactivity in sufficient detail. Here we combine machine learning interatomic potentials (MLIPs) with spectral adaptive biasing force enhanced sampling to connect proton transfer and water wire configurations to the underlying free energy landscape. We identify competing influences of long-range electrostatics, system size, temperature, and nuclear quantum motion on the predicted ionization thermodynamics. The free energy surface extends from neutral water to ions separated beyond the solvent-separated ion pair (SSIP). It reveals a transition state in which a proton is shared between the second and third molecules of a three-membered water wire. The contact ion pair is unstable and the SSIP only weakly metastable, so determining pK$_w$ requires sampling longer wires. Long-range electrostatics raise the free energy at ion separations beyond $3\\,\\mathrm{\\mathring{A}}$. Models with comparable force errors give substantially different free energy profiles in this region. Increasing system size lowers the calculated pK$_w$, while nuclear quantum effects bring it closer to experiment and reproduce the higher pK$_w$ of D$_2$O relative to H$_2$O. These results establish a baseline for interpreting thermodynamic results from MLIP simulations in which charged and polar groups react and diffuse in finite cells. Our analysis also explains how cancellation among competing effects can yield ionization constants close to experiment even when simulations omit several physical contributions.",
-      "url": "https://arxiv.org/abs/2611.08874",
-      "pdf": "https://arxiv.org/pdf/2611.08874v1"
     }
   ]
 }
