@@ -5264,5 +5264,284 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.17333",
     "pdf": "https://arxiv.org/pdf/2611.17333v1"
+  },
+  "2611.17885": {
+    "id": "2611.17885",
+    "title": "Goodman-type lower bounds for graph homomorphism densities",
+    "abstract": "For a finite graph $H$ with $v(H)$ vertices, chromatic number $χ(H)$, and chromatic polynomial $P_H$, define $Φ_H(p)=(1-p)^{v(H)}P_H((1-p)^{-1})$. This polynomial interpolates the homomorphism densities of $H$ in balanced complete multipartite graphons. We study the lower bound $t(H,W)\\geΦ_H(p)$ on the homomorphism density of $H$ in graphons $W$ of edge density $p>1-1/(χ(H)-1)$, which generalises Goodman's triangle bound. We prove the inequality for chordal graphs whose maximal cliques have equal size, for trivially perfect graphs, and for joins of a clique and an odd cycle. The proofs use entropy along clique trees and a convexity criterion for adding a universal vertex. We also prove that a nonbipartite graph satisfies the inequality at all sufficiently high edge densities if and only if its girth is odd. For a graph on $n$ vertices whose girth is odd, the bound holds whenever $p>1-(72n^{12})^{-1}$. The proof combines Whitney's forest expansion with a spectral comparison of cycle densities. Finally, among the $117$ nonbipartite graphs on at most six vertices with no isolated vertices or isolated edges, exactly $94$ satisfy the bound. The main results are formally verified in Lean 4.",
+    "authors": [
+      "Taeyoung Kim"
+    ],
+    "published": "2026-11-13T08:23:23Z",
+    "primary": "math.CO",
+    "comment": "35 pages, 2 figures, 1 table",
+    "url": "https://arxiv.org/abs/2611.17885",
+    "pdf": "https://arxiv.org/pdf/2611.17885v1"
+  },
+  "2611.17855": {
+    "id": "2611.17855",
+    "title": "On configurations that are nearly generalised polygons",
+    "abstract": "Payne (1972) introduced nearly generalised $n$-gons as $(s+1)$-regular bipartite graphs of girth $2n$ with small excess over the Moore bound. Biggs and Ito (1980) proved nonexistence of such graphs if $s > 1$ and $n > 3$, leaving open the existence of regular antipodal planes. We revisit this problem from several equivalent viewpoints. First we show that a regular antipodal plane of order $s$ is equivalent to a balanced weighing matrix whose support is the incidence matrix of a biplane with parameters \\[ 2-\\left(\\frac{s^2+s+2}{2},\\,s+1,\\,2\\right). \\] This gives short determinant and local-arithmetic obstructions to existence. We then formulate the question of signing a biplane as an affine linear system over $\\mathbb F_2$, and use this formulation to prove that no regular antipodal plane of order $s$ exists with $4\\le s\\le 14$. Finally, we give further equivalent formulations in terms of sharply deranged families of permutations and mutually orthogonal array-bic squares. These translations provide new computational and structural approaches to Payne's conjecture that regular antipodal planes exist only for $s=2,3$.",
+    "authors": [
+      "Sam Adriaensen",
+      "John Bamberg",
+      "Jason Williford"
+    ],
+    "published": "2026-11-13T07:39:57Z",
+    "primary": "math.CO",
+    "comment": "14 comments",
+    "url": "https://arxiv.org/abs/2611.17855",
+    "pdf": "https://arxiv.org/pdf/2611.17855v1"
+  },
+  "2611.17842": {
+    "id": "2611.17842",
+    "title": "Hardware-aware sampling and QPU-informed Monte Carlo with quantum annealers",
+    "abstract": "We study how the physical representation of a logical model affects sampling by quantum annealers and its use in corrected Monte Carlo. The square-lattice Ising model provides controlled classical references. Fixed embeddings with one physical qubit per logical spin reach $36\\times36$ spins. Comparisons with uniform two-qubit chains and mixed chain lengths show that matching mean energy leaves differences in magnetization and correlations. Extended-range conditional predictors improve the description of mixed embeddings, distinguishing their residual correlations from those of the tested uniform embeddings. Independent calibration checks and fixed-scale annealing scans show that temperature shifts alone do not determine distributional agreement. Normalized autoregressive models learned from QPU samples provide proposals with exact Metropolis--Hastings and multiple-try corrections on larger periodic lattices. These preserve the target distribution, although block updates alone relax critical magnetization slowly. Complementary direct-QPU updates reveal how block size and fitted-temperature correction affect acceptance and spin motion. Together, the results support prioritizing one-qubit representations and short uniform chains, while separating hardware sampling fidelity from the convergence of corrected Monte Carlo.",
+    "authors": [
+      "Seungyeob Jwa",
+      "Jangho Kim",
+      "Sunghee Kim",
+      "Sunkyu Lee",
+      "Weonjong Lee"
+    ],
+    "published": "2026-11-13T07:24:42Z",
+    "primary": "quant-ph",
+    "comment": "23 pages, 12 figures",
+    "url": "https://arxiv.org/abs/2611.17842",
+    "pdf": "https://arxiv.org/pdf/2611.17842v1"
+  },
+  "2611.17731": {
+    "id": "2611.17731",
+    "title": "Ultrafast Imaging Reveals Energy Transport Anisotropy Grows from Bulk to Monolayer Black Phosphorus",
+    "abstract": "Black phosphorus is an emerging low-dimensional semiconductor whose tunable band gap, high carrier mobility, and anisotropic transport make it attractive for directional energy transport in electronics and thermoelectrics. Using ultrafast stroboscopic optical scattering microscopy (stroboSCAT), we image spatiotemporal evolution of energy carriers with picosecond resolution, simultaneously resolving heat and charge transport in bulk black phosphorus and exciton transport in the monolayer. The in-plane armchair:zigzag anisotropy increases from 5.3:1 in the bulk to 6.7:1 in the monolayer, driven by enhanced armchair exciton diffusivity (45.5 cm$^2$/s) relative to bulk armchair charge carriers (16.5 cm$^2$/s). The monolayer anisotropy is smaller than the calculated exciton dispersion alone would suggest, which first-principles calculations attribute to preferential exciton-phonon scattering to large momenta along the zigzag direction. These directly measured, layer-resolved diffusivities identify armchair-aligned monolayers as the optimal geometry for directional transport and show that transport anisotropy cannot be inferred from band dispersion alone.",
+    "authors": [
+      "Stephanie M. Hart",
+      "Siddhartha Sohoni",
+      "Amal Mathew",
+      "Aidan L. O'Beirne",
+      "Bowen Hou",
+      "Reef Sweeney Ethan J. Dunsworth",
+      "Diana Y. Qiu",
+      "Tony F. Heinz",
+      "Naomi S. Ginsberg"
+    ],
+    "published": "2026-11-13T04:22:46Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.17731",
+    "pdf": "https://arxiv.org/pdf/2611.17731v1"
+  },
+  "2611.17882": {
+    "id": "2611.17882",
+    "title": "Quantum Fluctuations drive Emerging Bosonic Quantum Phases in a Moiré Flatband Superconductor",
+    "abstract": "Quantum fluctuations play a central role in superconductors by mediating the interactions that promote electron pairing and controlling the phase coherence required for macroscopic condensation. Thus far, understanding the interplay between quantum fluctuations and superconductivity remains challenging in unconventional superconductors. Here, we establish quantum phase fluctuations as the organizing principle linking superconductivity and Bose-insulating quantum criticality in a moiré flatband superconductor of alternating twisted trilayer graphene (ATTG). Superconductivity is optimal near half-filling of the moiré flatband and gives way to a density-wave-like resistance peak at high temperatures, in which we observe distinct temperature scales for the pairing (~6 K) and the condensation (~1 K). We observe compelling evidence of a bosonic superconducting quantum phase transition, driven by both out-of-plane and in-plane magnetic fields, with a universal critical resistivity of $R_c =~0.62R_Q$ and finite-temperature scaling of $zν_B = 2.3$, where $R_Q = h/4e^2$ is the quantum resistance for bosons. Strikingly, the observed bosonic insulator shows a nearly quantized resistivity of $R_Q$ that saturates at low temperatures and high magnetic fields, together with a zero-bias peak, a nearly zero Hall resistance, and a logarithmic dependence at higher temperatures. Both the superconductor and the bosonic insulator could be driven into the same critical quantum fluctuation regime dynamically under a large bias. Our results establish moiré flatband as a clean platform for studying unconventional superconductivity and bosonic quantum criticality governed by quantum fluctuations.",
+    "authors": [
+      "Yu Hong",
+      "Haiming Sun",
+      "Qixing Zhang",
+      "Le Liu",
+      "Zitian Pan",
+      "Jundong Zhu",
+      "Jingwei Dong",
+      "Kenji Watanabe",
+      "Takashi Taniguchi",
+      "Luojun Du",
+      "Dongxia Shi",
+      "Adrian Bachtold",
+      "Haiwen Liu",
+      "Guangyu Zhang",
+      "Wei Yang"
+    ],
+    "published": "2026-11-13T08:16:47Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "18 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.17882",
+    "pdf": "https://arxiv.org/pdf/2611.17882v1"
+  },
+  "2611.17833": {
+    "id": "2611.17833",
+    "title": "Probing the Activity History of Repeating Fast Radio Bursts with Cluster Lensing",
+    "abstract": "Fast radio bursts (FRBs) are millisecond duration coherent radio transients, some of whose sources repeat, but the nature and active lifetimes of their engines remain uncertain. Strong lensing by galaxy clusters provides a physical lever on this lifetime problem: a short campaign can sample emission epochs of a repeating FRB separated by years, and distinct bursts in different lensed images, given a known relative lens delay, set a lower bound on its active lifetime, whereas delayed copies of a single burst only encode the lens delay. Based on the cluster-lens model of MACS J0717.5+3745, we quantify the accessible range of emission epochs for finite activity episodes, observing windows, and discovery selection. For a source-frame episode of duration \\(100~{\\rm yr}\\) at \\(z_s=2\\) and a source-frame rate of \\(0.1\\,{\\rm h}_{\\rm src}^{-1}\\), a five year campaign conditional on discovery yields a \\(95\\%\\) gain threshold of \\(m_{95}\\simeq25.6\\), corresponding to a source-frame span of \\(L_{95}\\simeq42.6~{\\rm yr}\\). At the population level, combining distinct burst associations with same burst echoes provides a way to test specified activity durations with a finite lens catalogue, e.g., activity durations differing by an order of magnitude can be distinguished with expected Bayes factor above $20$. More broadly, these lensed source frame epochs enable applications beyond activity-duration tests, e.g., linking burst activity to the evolution of the engine and its environment. Galaxy-cluster lensing therefore provides a promising future probe for accessing otherwise unobserved source history and for distinguishing between different activity duration models.",
+    "authors": [
+      "Huan Zhou",
+      "Kai Liao",
+      "Zhengxiang Li",
+      "Cheng-Gang Shao"
+    ],
+    "published": "2026-11-13T07:13:06Z",
+    "primary": "astro-ph.HE",
+    "comment": "9 pages, 5 figures",
+    "url": "https://arxiv.org/abs/2611.17833",
+    "pdf": "https://arxiv.org/pdf/2611.17833v1"
+  },
+  "2611.17723": {
+    "id": "2611.17723",
+    "title": "uhd-rfsoc: Bringing Off-the-Shelf RFSoC Boards to Unmodified UHD Applications",
+    "abstract": "Next-generation wireless research relies on software-defined radios (SDRs) with more channels and larger bandwidth. The USRP family is one of the most widely used SDR platforms, and much of the wireless software ecosystem is built on top of the USRP hardware driver (UHD). However, each USRP model comes with a fixed channel count, bandwidth, and streaming capability. Off-the-shelf radio frequency system-on-chip (RFSoC) boards, on the other hand, integrate up to 16 analog-to-digital converters (ADCs) and 16 digital-to-analog converters (DACs) operating at several gigasamples per second (GS/s), but existing UHD applications cannot directly use them. We present uhd-rfsoc, an open-source FPGA design and host software stack that turns these boards, including the 16-channel ZCU216 and the RFSoC 4x2, into standard UHD devices without modifying UHD. Through standard UHD calls, applications can configure the carrier frequency, channel count, the per-channel I/Q sample rate, and the wire format. uhd-rfsoc combines timestamped, flow-controlled sample transport in the FPGA with data plane development kit (DPDK) packet processing and vectorized sample conversion on x86 and Arm hosts. The built bitstreams for a number of RFSoC board configurations with varying RF data converter rates, channel counts, I/Q sample rates, and wire formats all successfully pass UHD's built-in streaming benchmarks. We further demonstrate compatibility with unmodified GNU Radio flowgraphs, a custom GPU-accelerated transceiver digital signal processing pipeline, as well as the OCUDU and Duranta 5G radio access network stacks using both software and commodity user equipment.",
+    "authors": [
+      "Wei Cheng",
+      "Yiming Li",
+      "Junyao Zheng",
+      "Cheng-Bin Chen",
+      "Tingjun Chen"
+    ],
+    "published": "2026-11-13T04:12:51Z",
+    "primary": "cs.NI",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.17723",
+    "pdf": "https://arxiv.org/pdf/2611.17723v1"
+  },
+  "2611.17741": {
+    "id": "2611.17741",
+    "title": "Vision-Language Models Reproduce a Human Mental-Extrapolation Bias in the Watanabe Illusion",
+    "abstract": "Vision-language models (VLMs) are increasingly used for visual judgments, yet whether they share human perceptual biases, and where in the model such biases arise, is unclear. We addressed this with the Watanabe Illusion, a stimulus not previously studied quantitatively: an oblique segment inside a circle whose extension geometrically hits the topmost of 11 dots, yet human observers (n = 131) reported a dot near the middle of the column. Five VLMs (Qwen2.5-VL-32B and 7B, Claude Sonnet 4.6, GPT-5.5 Instant, Gemini 3.5 Flash), given the identical stimulus and wording, all deviated in the same direction. In the open-weight Qwen2.5-VL-32B, linear probes on the vision encoder recovered the line angle and the target dot six to eight times more accurately than its behavioral responses. A layer-wise logit lens showed that the correct answer dominates in the middle layers of the language model and is overwritten in late layers only under a visual-judgment frame. Naming the illusion, requesting suppression of prior knowledge, forcing a visual chain of thought, and 390 semantic preambles left the response center unchanged; only disclosing the correct answer moved it. VLMs may therefore carry human perceptual biases at the language-generation stage, where they resist declarative correction.",
+    "authors": [
+      "Eiji Watanabe",
+      "Kyohei Ueda",
+      "Kagayaki Kato",
+      "Masaki Watabe",
+      "Akiyoshi Kitaoka"
+    ],
+    "published": "2026-11-13T04:47:00Z",
+    "primary": "q-bio.NC",
+    "comment": "44 pages, 4 figures, 4 appendices. Code and data: https://doi.org/10.5281/zenodo.23096369",
+    "url": "https://arxiv.org/abs/2611.17741",
+    "pdf": "https://arxiv.org/pdf/2611.17741v1"
+  },
+  "2611.17615": {
+    "id": "2611.17615",
+    "title": "Data-driven exploration of the strength-ductility synergy in refractory high-entropy alloys",
+    "abstract": "Refractory high-entropy alloys (RHEAs) have attracted increasing attention for their exceptional ability to retain strength at high temperatures. However, current research mainly concentrates on compositions close to equimolar alloys, leaving a large part of the composition space unexplored. Here, we develop a multiscale framework based on a data-driven dislocation genome method that constructs energy landscapes for edge dislocation motion across various compositions. The local configurational force derived from the energy landscape is incorporated into dislocation dynamics simulations, revealing a scaling law connecting macroscale strength and atomic-scale local resistance governed by fluctuations in the local configurational force. Based on this scaling law, a new solid-solution strengthening model for edge dislocation in BCC alloys is developed, followed by a data-driven exploration of refractory alloys considering both strength and ductility. The developed method and theory are adaptable, allowing for extension to other BCC alloy systems and guiding high-throughput alloy design.",
+    "authors": [
+      "Feng Zhao",
+      "Jingya Zhang",
+      "Yin Zhang",
+      "Huiling Duan"
+    ],
+    "published": "2026-11-13T00:31:02Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.17615",
+    "pdf": "https://arxiv.org/pdf/2611.17615v1"
+  },
+  "2611.17795": {
+    "id": "2611.17795",
+    "title": "Striatal Optogenetic Modulation Shifts Seizure Onset Timing: A Survival-Analysis Reanalysis with Effect Sizes, Permutation Validation, and Sensitivity Analysis",
+    "abstract": "We present a worked methods vignette, not a novel biological claim: a reanalysis of the public dataset accompanying Hyder and colleagues' report that optogenetic activation and inhibition of the dorsal striatum bidirectionally control seizures, applying a time-to-event framework to the pilocarpine-induced status epilepticus (SE) arm, the only arm with genuine per-animal event-level data rather than aggregate statistics. The original study compared latencies with a Mann-Whitney U test (ChR2 vs GFP: p = 0.0125; ArchT vs GFP: p = 0.0025). We first directly replicate that test on the same data (p = 0.0151 and p = 0.0025), confirming we analyze the same numbers, then designate the log-rank test as this reanalysis's pre-specified primary comparison, with a Cox model, a label-permutation test, a bootstrap confidence interval, and a leave-one-out analysis serving as validation checks rather than co-equal findings. ChR2 activation delays SE onset relative to its paired GFP control (hazard ratio 0.338, 95% CI 0.128-0.895; log-rank p = 0.023), and ArchT inhibition accelerates it (hazard ratio 9.18, 95% CI 1.91-44.09; log-rank p = 0.0011); a Schoenfeld-residual check found no significant proportional-hazards violation, though this check has limited power at n = 8-11 per group. Both results are confirmed by a 2,000-shuffle permutation test and survive leave-one-out, though the ChR2 comparison loses significance in 2 of 20 leave-one-out iterations, a fragility we report rather than omit. We do not claim this demonstrates anything the field did not already believe; its value is methodological, a reusable survival-analysis template with a Cox-derived effect size and documented sensitivity, extending naturally to future datasets with genuine censoring, which this one does not have.",
+    "authors": [
+      "Siddhardha Nanda"
+    ],
+    "published": "2026-11-13T06:17:13Z",
+    "primary": "q-bio.NC",
+    "comment": "8 pages, 1 figure, 1 table",
+    "url": "https://arxiv.org/abs/2611.17795",
+    "pdf": "https://arxiv.org/pdf/2611.17795v1"
+  },
+  "2611.17698": {
+    "id": "2611.17698",
+    "title": "Pressure-driven evolution of crystal and molecular structures reshapes excited-state competition in coronene",
+    "abstract": "Molecular nanocarbons exhibit unique optoelectronic properties and considered as promising candidates for organic device applications, however, understanding how molecular geometry and crystal packing jointly govern physical properties remains a fundamental challenge in π-conjugated molecular materials. Here, we demonstrate how these structural factors modulate the photoluminescence of coronene under high pressure. Combining high-pressure single-crystal X-ray diffraction, Raman spectroscopy, optical spectroscopy, and density functional theory calculations, we establish a relationship between distinct structural changes and the evolution of competing emissive states. Our results reveal that crystal polymorphism modifies the balance between free-exciton (FE) and self-trapped-exciton (STE) emission, while pressure-induced molecular bending is associated with a nonmonotonic evolution of STE emission. As intermolecular distances shorten, enhanced intermolecular electronic interactions give rise to excimer-related emission, introducing an additional emissive pathway. Although pressure-dependent optical properties of coronene have been linked to changes in crystal packing, our findings highlight that the optical response of a molecular solid is not governed by molecular deformation or crystal packing alone, but emerges from their interplay with intermolecular electronic coupling. By directly resolving molecular bending alongside changes in excited-state emission, this work provides insight into how distinct structural degrees of freedom can reshape the photophysical behavior of π-conjugated molecular solids.",
+    "authors": [
+      "Wenju Zhou",
+      "Shuhua Yuan",
+      "Dominique Laniel",
+      "Yoshifumi Hashikawa",
+      "Philip Dalladay-Simpson",
+      "Jun Deng",
+      "Jianbo Zhang",
+      "Xinyu Wang",
+      "Kejun Bu",
+      "Akun Liang",
+      "Simon Parsons",
+      "Dominik Daisenberger",
+      "Egor Koemets",
+      "Hirofumi Ishii",
+      "Weiwei Dong",
+      "Huiyang Gou",
+      "Qingyang Hu",
+      "Yang Ding",
+      "Martina Vrankić",
+      "Takeshi Nakagawa"
+    ],
+    "published": "2026-11-13T03:24:47Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.17698",
+    "pdf": "https://arxiv.org/pdf/2611.17698v1"
+  },
+  "2611.17532": {
+    "id": "2611.17532",
+    "title": "Astrocyte Biocomputing: Astrocytic Contributions to Neural Network Computation",
+    "abstract": "Conductors are critical for the performance of an orchestra even though they do not emit sound. Basic research and clinical studies in the last decade are revealing that astrocytes may be the \"conductors\" of the \"orchestra\" that is the brain network: astrocytes make up approximately $50\\%$ of all brain cells but do not emit electrical signals. Nevertheless, they may play critical roles in important cognitive brain functions, specifically learning, memory, and information processing. Here we consider the implications of these discoveries for brain-inspired machine learning (ML), where analogy is typically drawn between neurons and their electrical interactions. We highlight specific algorithms for two key astrocyte characteristics. The first characteristic is the ability to link to and modulate thousands of synapses simultaneously. A model based on this characteristic yields faster training and makes the network more robust to noise, providing a supervised learning algorithm that can be applied to any existing neural network. The second characteristic we focus on is that the non-electrical communication among astrocytes includes slow, rhythmic dynamics. The rhythmic sharing algorithm we developed based on this premise yields rapid anomaly detection adaptation and prevents catastrophic forgetting. Overall, we find that astrocyte-derived algorithms outperform neurocentric algorithms significantly and remediate critical weaknesses of current state-of-the-art ML models.",
+    "authors": [
+      "Kate M. O'Neill",
+      "Ian Whitehouse",
+      "Adam N. McCaughan",
+      "Ryan O'Loughlin",
+      "Sonia Buckley",
+      "Wolfgang Losert"
+    ],
+    "published": "2026-11-12T21:35:43Z",
+    "primary": "cs.AI",
+    "comment": "11 pages, 3 figures, in journal review",
+    "url": "https://arxiv.org/abs/2611.17532",
+    "pdf": "https://arxiv.org/pdf/2611.17532v1"
+  },
+  "2611.17844": {
+    "id": "2611.17844",
+    "title": "A Helly theorem for the Bruhat-Tits building",
+    "abstract": "Let $K$ be a discretely valued field with valuation ring $\\mathcal{O}$. We show that a finite family of $\\mathcal{O}$-lattices in $K^m$ is adapted to a common basis if any subfamily of at most $m+1$ $\\mathcal{O}$-lattices is. In other words, in the Bruhat-Tits building of $\\operatorname{GL}(m)$, a finite family of simplices lies in a common apartment if and only if any subfamily of at most $m+1$ simplices does. The proof uses a version of Radon's theorem for $\\mathcal{O}$-lattices. We also give an alternative proof using truncated modules.",
+    "authors": [
+      "Rudrendra Kashyap",
+      "Kiumars Kaveh",
+      "Christopher Manon",
+      "Boris Tsvelikhovskiy"
+    ],
+    "published": "2026-11-13T07:26:59Z",
+    "primary": "math.AG",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.17844",
+    "pdf": "https://arxiv.org/pdf/2611.17844v1"
+  },
+  "2611.17679": {
+    "id": "2611.17679",
+    "title": "Electric Fields Turn Vacancy-trapping Grain Boundaries into Li-Ion Pathways in Li2O",
+    "abstract": "Ion transport in solids has conventionally been understood from equilibrium diffusion, yet ions in batteries are driven by electric fields. Does field-driven ion transport follow equilibrium behavior? We examined this question in bulk Li2O and at its grain boundaries (GBs) using electric-field molecular dynamics combining a machine learning interatomic potential with a Bader charge prediction model. Although Li diffusion in cubic Li2O is isotropic at zero field, an electric field renders it orientation dependent because Li hops along a limited set of crystallographic pathways that the field biases unequally. At GBs, this anisotropy becomes a qualitative difference: a GB that strongly traps Li vacancies but exhibits a strong field response releases them under a field, whereas a weakly responsive GB retains them despite weaker vacancy trapping. These results show that field-driven GB transport is governed not by static thermodynamics alone but by the angle between the electric field and the diffusion pathways of the constituent grains.",
+    "authors": [
+      "Youjeong Choi",
+      "Po-yen Chem",
+      "Tasuku Sugiura",
+      "Teruyasu Mizoguchi"
+    ],
+    "published": "2026-11-13T02:44:39Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "39 pages, 16 figures",
+    "url": "https://arxiv.org/abs/2611.17679",
+    "pdf": "https://arxiv.org/pdf/2611.17679v1"
+  },
+  "2611.17634": {
+    "id": "2611.17634",
+    "title": "A Unified Device-Level Physical Framework for DRAM Read Disturbance",
+    "abstract": "Read disturbance in dynamic random-access memory (DRAM) depends on both local device interactions and the electrical conditions imposed by shared array circuitry. Here, we combine DIMM-level characterization results, device measurements, and TCAD simulations to interpret RowHammer, RowPress, and ColumnDisturb within a unified device-level physical framework. We relate charge evolution at the floating storage node to three key mechanisms: trap-assisted electron migration (EM), capacitive coupling (CC), and sense-amplifier-mediated disturb (SAMD). EM is local and trap-sensitive, while CC weakens with wordline separation. SAMD extends disturbance through shared column circuitry by modifying unselected-cell leakage under rail-level bitline biases, a contribution supported by the approximately ninefold higher OFF-state leakage measured relative to retention-like conditions for a high-voltage storage state. These distinct spatial ranges account for localized RowHammer and RowPress failures and remote ColumnDisturb populations with abrupt changes at subarray boundaries. We further interpret prolonged RowPress activation as a transition from an initial RowHammer-like transient to sustained leakage driven mainly by SAMD under held wordline and bitline biases. Within this device-level framework, trap effectiveness and storage-state-dependent leakage provide an interpretation of previously puzzling failure signatures, including the earlier onset of 0-to-1 RowHammer failures despite the predominance of 1-to-0 failures at high hammer counts. The same framework explains the observed RowPress and ColumnDisturb polarities and the duration-dependent reversal of neighboring- and passing-wordline effectiveness. These results provide a physical basis for developing compact DRAM reliability models across access patterns and array configurations.",
+    "authors": [
+      "Zhaoqiang Bai",
+      "Haocong Luo",
+      "Xinhe Wang",
+      "Xujing Li",
+      "Yuelin Jiang",
+      "Xuelu Huang",
+      "Guilei Wang",
+      "Hao Meng",
+      "Ataberk Olgun",
+      "Ismail Emir Yuksel",
+      "F. Nisa Bostancı",
+      "Jikun Wang",
+      "Onur Mutlu"
+    ],
+    "published": "2026-11-13T01:08:31Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.17634",
+    "pdf": "https://arxiv.org/pdf/2611.17634v1"
   }
 }
