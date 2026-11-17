@@ -5543,5 +5543,258 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.17634",
     "pdf": "https://arxiv.org/pdf/2611.17634v1"
+  },
+  "2611.19339": {
+    "id": "2611.19339",
+    "title": "From Mutation to Medication: Characterizing Failures of Clinical LLMs to Respect Genomic Resistance",
+    "abstract": "Language models are increasingly proposed to support molecular tumour boards, but may recommend cancer therapies despite genomic evidence of resistance. We evaluated ten models on 1,464 resistance cases from five curated oncology knowledge bases, collecting 58,910 judgments. Models endorsed resisted therapies in 21.8-81.4% of cases. However, raw rates can reflect a tendency to agree rather than an ability to distinguish resistance from drug sensitivity: one open-weight model endorsed 81.4% of resistance cases and 82.3% of sensitivity controls. We therefore compared endorsement within matched gene and evidence-level groups. This analysis is exploratory because it was specified after the pre-registered analysis, which yielded null-to-weak results. Measured failures depended strongly on the reference knowledge base and evidence strength. When a second source independently confirmed resistance, four models across three vendors endorsed at most 2.4% of cases; at weaker evidence tiers, discrimination was not measurable. Models sometimes acknowledged resistance yet recommended the therapy. Repeating a model's own resistance conclusion reduced endorsement to 0.0-3.5% on cases where it had stated resistance. Falsely attributing the opposite conclusion increased endorsement above baseline for all seven hosted models, reaching 95.2% for GPT-4o; an instruction without an attributed conclusion changed endorsement by only 0.9 percentage points. Providing the correct curated evidence reduced unqualified strong recommendations to 0.3-3.5%, testing evidence use under an oracle condition rather than retrieval.",
+    "authors": [
+      "Negin Ashrafi",
+      "Roxana Daneshjou"
+    ],
+    "published": "2026-11-14T11:26:01Z",
+    "primary": "cs.AI",
+    "comment": "Accepted for publication in the Proceedings of the Machine Learning for Health (ML4H) 2026 Symposium",
+    "url": "https://arxiv.org/abs/2611.19339",
+    "pdf": "https://arxiv.org/pdf/2611.19339v1"
+  },
+  "2611.19257": {
+    "id": "2611.19257",
+    "title": "A unified cross-scale framework for the dynamic Waddington landscape",
+    "abstract": "The Waddington epigenetic landscape is a foundational concept in developmental biology, yet its quantitative formulations remain largely disconnected from the population dynamics that originally motivated the metaphor. Existing approaches typically describe either intracellular gene-regulatory dynamics or population-level cell kinetics, but rarely both within a unified framework. Here, we develop a unified PDE-integral framework that couples stochastic gene-regulatory dynamics with probability-conserving population renewal, yielding a dynamic Waddington landscape $U(\\vec{x}, t) = -\\log f(\\vec{x}, t)$ defined directly from the evolving epigenetic probability density $f(\\vec{x}, t)$. Rigorous mathematical analysis of this framework establishes its well-posedness and provides conditions for the existence and uniqueness of stationary solutions. Application to canonical gene regulatory circuits shows that proliferation is not merely a determinant of population size, but an active regulator of landscape topology. Population renewal reshapes attractor stability and transition barriers in a circuit-dependent manner, generating transient plasticity in some regulatory architectures while stabilizing progenitor states in others. Under highly proliferative conditions, these interactions further produce oscillatory ``breathing'' landscapes. Together, these results establish population renewal as an integral component of cell-fate regulation and extend the Waddington landscape from a static description of intracellular dynamics to a predictive multiscale framework linking gene regulation, cell-state dynamics, and tissue homeostasis.",
+    "authors": [
+      "Yuling Xue",
+      "Jinzhi Lei"
+    ],
+    "published": "2026-11-14T08:34:47Z",
+    "primary": "q-bio.CB",
+    "comment": "49 pages, 4 pages",
+    "url": "https://arxiv.org/abs/2611.19257",
+    "pdf": "https://arxiv.org/pdf/2611.19257v1"
+  },
+  "2611.20138": {
+    "id": "2611.20138",
+    "title": "Planar PArcK is PSPACE-complete",
+    "abstract": "Partizan Arc Kayles, or PArcK, is a partizan combinatorial game on edge colored graphs, and is a generalization of the game Domineering. Previously, PArcK was shown to be PSPACE-complete on bipartite graphs. In this paper we show that PArcK is PSPACE-complete even when restricted to planar graphs of degree at most three by a reduction from Generalized Hex.",
+    "authors": [
+      "Craig Tennenhouse",
+      "Kanae Yoshiwatari"
+    ],
+    "published": "2026-11-15T17:12:06Z",
+    "primary": "cs.CC",
+    "comment": "9 pages",
+    "url": "https://arxiv.org/abs/2611.20138",
+    "pdf": "https://arxiv.org/pdf/2611.20138v1"
+  },
+  "2611.20121": {
+    "id": "2611.20121",
+    "title": "Matching two-dimensional statistics does not certify three-dimensional transport in battery electrodes",
+    "abstract": "Three-dimensional battery electrode structures reconstructed from two-dimensional micrographs are routinely used to predict transport, assuming that matching the measured 2D statistics reproduces the relevant 3D properties. We test this premise on X-ray tomograms of three all-solid-state cathodes. With a differentiable conductivity solver, we optimise voxel structures that match the real electrode in phase fractions, boundary density, two- and three-point correlations and lineal-path functions, on all section planes, slab by slab and layer by layer, within measurement noise. Every sample has statistical twins conducting 10-88-fold less than the real electrode, robust to 5^3 majority filtering, whereas the most conductive are at most 3.3-fold above it. The twins rearrange rather than remove material, severing or funnelling through-plane paths. A classifier on 2D sections detects them, as it does current 2D-to-3D generators: the information is in the images but not in the statistics. Matching standard 2D statistics therefore does not certify 3D transport.",
+    "authors": [
+      "Maziar Raissi",
+      "Devesh Upadhyay"
+    ],
+    "published": "2026-11-15T16:50:38Z",
+    "primary": "cs.CE",
+    "comment": "13 pages, 4 figures, 4 tables; includes Supplementary Information",
+    "url": "https://arxiv.org/abs/2611.20121",
+    "pdf": "https://arxiv.org/pdf/2611.20121v1"
+  },
+  "2611.18561": {
+    "id": "2611.18561",
+    "title": "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices",
+    "abstract": "Recent advances in speech neuroprostheses have enabled new communication avenues for people who have lost the ability to speak due to neurological illness or injury. These systems can decode neural activity during attempted speech into text by relying on language priors to achieve high decoding accuracy. This performance currently comes at the cost of using a compute-intensive language modeling stack, presenting a major bottleneck for real-world use. Further, current language models incur highly variable and disruptive inference latencies, limiting communication throughput and preventing users from reliably participating in natural conversation. We introduce FETTUCCINE, an end-to-end brain-to-text framework that leverages the speed and portability of automatic speech recognition (ASR) models to address the aforementioned practical challenges, while achieving usable (<10%) word error rates (WER), efficient adaptation to neural non-stationarities, and reliable performance on mobile devices. When evaluated using publicly available data from an intracortical speech neuroprosthesis user, FETTUCCINE outperforms previous end-to-end methods, achieving as low as 4.39% WER. Most notably, our models successfully run on a commercially-available mobile device with throughput reaching up to 370x real-time, providing the first demonstration of brain-to-text decoding on a mobile device. We also show that our models can be successfully finetuned to extend usable performance to future days. Beyond performance, our approach enables localization of the neural features most relevant for decoding via gradient-based saliency maps, which we show align with well-established physiological priors across different ASR model families. Taken together, our results show that FETTUCCINE overcomes core infrastructural and computational barriers, yielding a new class of portable brain-to-text communication.",
+    "authors": [
+      "Jonathan D. McCart",
+      "Pranav I. Deevi",
+      "Mehdi Azabou",
+      "Nanda H. Krishna",
+      "Caleb A. McKinney",
+      "Nicholas S. Card",
+      "Sergey D. Stavisky",
+      "Chethan Pandarinath"
+    ],
+    "published": "2026-11-13T18:59:02Z",
+    "primary": "q-bio.NC",
+    "comment": "NeurIPS 2026",
+    "url": "https://arxiv.org/abs/2611.18561",
+    "pdf": "https://arxiv.org/pdf/2611.18561v1"
+  },
+  "2611.19915": {
+    "id": "2611.19915",
+    "title": "CHERI under Fault Injection: An Emulation-Based Security Evaluation of Capability Hardware Enhanced RISC Instructions",
+    "abstract": "Memory-safety vulnerabilities continue to dominate real-world exploit chains despite decades of research into software mitigations. CHERI is a hardware architecture that enforces spatial and temporal memory safety by augmenting pointers with hardware-checked metadata, thus preventing software-based exploitation, but its threat model explicitly excludes fault injection. This thesis investigates whether targeted fault injection can undermine CHERI's memory-safety guarantees in a pure-capability CHERI-RISC-V environment. Two fault classes are considered: bit flips corrupting capability metadata, and fault-induced check skipping on capability store instructions. We implement fault injection primitives in a QEMU-based emulation environment, which enables deterministic, repeatable experiments without specialised hardware. With them, we demonstrate four attack scenarios: buffer overflows, control-flow hijacking, data-only attacks, and use-after-free. Each succeeds with one or two targeted faults (lower bounds under the emulation-based setting). Check skipping offers an alternative route to control-flow hijacking and data-only attacks, with a minimum of one fault. These results show that CHERI's guarantees depend on the physical integrity of capability metadata, the uninterrupted execution of metadata checks, and the integrity of the revocation bitmap: a single targeted fault can circumvent spatial safety, temporal safety, or control-flow integrity. CHERI still raises the cost of exploitation, since fault injection is a prerequisite for every attack and the sentry mechanism forces an attacker to supply a valid tagged capability or spend a second fault restoring the tag. Based on these findings, we propose mitigations: ECC-protected capability memory, capability field authentication codes, redundant execution of security-critical checks, and revocation bitmap integrity verification.",
+    "authors": [
+      "Eva Sophia Schreyer"
+    ],
+    "published": "2026-11-15T10:08:16Z",
+    "primary": "cs.CR",
+    "comment": "Submitted to KTH Royal Institute on Technology as a Master Thesis",
+    "url": "https://arxiv.org/abs/2611.19915",
+    "pdf": "https://arxiv.org/pdf/2611.19915v1"
+  },
+  "2611.20170": {
+    "id": "2611.20170",
+    "title": "Stabilization of LaH$_{10}$ with Thorium: Superconductivity in (La,Th)H$_{10}$ up to 232 K near 1 Mbar",
+    "abstract": "Ternary lanthanum-based hydrides are among the best high-temperature superconductors. Here we show that substituting La with thorium stabilizes La(Th)H$_{10}$ clathrate structure at $\\sim$1 Mbar while only minimally suppressing superconductivity. The resulting cubic (La,Th)H$_{10}$ phase, synthesized from relatively air-stable La$_2$Th, La$_3$Th and La$_5$Th alloys, reaches an onset $\\textit{T$_c$}$ = 232 K at 134 GPa, as confirmed by contact resistance measurements. Superconductivity was verified by two independent methods: electrical resistance and contactless radio-frequency measurements under applied magnetic fields at various pressures. Using a record-high pulsed current of 380 mA, we investigated critical phenomena in P6$_3$/mmc-(La,Th)H$_9$ at 173 GPa, which allowed for the experimental determination of a single superconducting gap within the s-wave model: $Δ(0) = 37 \\pm 4.5$ meV and $2Δ(0)/kT_c = 4.9 \\pm 0.6$. The La-Th-H system is chemically rich: in addition to the decahydride and nonahydride mentioned above, we also identified nanocrystalline I4/mmm-(La,Th)H$_4$ (5-6 nm grain size), (La,Th)H$_6$, as well as $hP13$, $cF80$ and $A15$ phases with compositions of (La,Th)H$_{5.75-6.25}$ and $\\textit{T$_c$}$ $\\approx$ 83 K at 70-80 GPa, and a possible (La,Th)H$_{16}$ polyhydride.",
+    "authors": [
+      "Dmitrii V. Semenok",
+      "Mikhail A. Volkov",
+      "Andrey V. Sadakov",
+      "Alexander T. Daniyarkhodzhaev",
+      "Alexey S. Usoltsev",
+      "Vladimir M. Pudalov",
+      "Mikhail I. Volgin",
+      "Iurii M. Nevolin",
+      "Toni Helm",
+      "Di Zhou",
+      "Viktor V. Struzhkin",
+      "Ivan A. Troyan"
+    ],
+    "published": "2026-11-15T18:17:13Z",
+    "primary": "cond-mat.supr-con",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.20170",
+    "pdf": "https://arxiv.org/pdf/2611.20170v1"
+  },
+  "2611.20118": {
+    "id": "2611.20118",
+    "title": "A Forward Bit Makes Error Correction Dispensable for Antidegradable Amplitude-Damping Channels",
+    "abstract": "Preserving a qubit usually relies on redundant encoding over many uses of a noisy channel. We prove that for antidegradable amplitude damping, one channel use with one forward classical bit matches or beats every forward-assisted or unassisted code with any number of uses. We then show that variational circuits learn to switch from error correction to classical assistance as damping grows, beating a dual-certified bound on all unassisted three-use codes and, relative to the best unassisted see-saw, extending storage time by up to 13% at entanglement fidelity down to 0.65.",
+    "authors": [
+      "Ahmed Gamal",
+      "Yasutaka Wada",
+      "Walid Gomaa",
+      "Norhan El-Sayed",
+      "Keiji Kimura",
+      "Salem F. Hegazy",
+      "Kazunori Ueda",
+      "Ahmed El-Mahdy"
+    ],
+    "published": "2026-11-15T16:46:57Z",
+    "primary": "quant-ph",
+    "comment": "22 pages, 3 figures (main), 6 figures (supplemental materials)",
+    "url": "https://arxiv.org/abs/2611.20118",
+    "pdf": "https://arxiv.org/pdf/2611.20118v1"
+  },
+  "2611.20047": {
+    "id": "2611.20047",
+    "title": "CleanRoute: Reconciling DRC Compliance, Post-Layout Performance, and Runtime in Analog Routing",
+    "abstract": "Automated analog routing remains a long-standing challenge because design-rule checking (DRC) compliance, post-layout performance preservation, and runtime reduction are difficult to achieve together. Existing analog routers have limited coverage of joined-metal design rules, lack control over topology-induced mismatch, and face a trade-off between DRC violations and runtime on uniform routing grids. In this paper, we introduce CleanRoute, an analog router that reconciles these three targets. Hierarchical rule enforcement assigns DRC checks and repairs to stages where the required geometry is complete, covering rules both between separate metal and where metal joins. IR-drop isolation constructs supply trees from current-mirror relationships and device currents to reduce topology-induced mismatch that geometric matching cannot eliminate and voltage drops along high-current paths. A flush-line grid adds net-specific lines aligned with device-metal edges to a coarse routing grid, providing DRC-compliant connections without uniform refinement. Experiments on ten operational transconductance amplifiers (OTAs) in a commercial 40nm process show that CleanRoute produces DRC-clean and functional layouts that pass layout versus schematic (LVS) checking on all benchmarks, with the strongest overall performance preservation and a median routing runtime of 8.82s, whereas the baselines produce no DRC-clean layouts.",
+    "authors": [
+      "Bingyang Liu",
+      "Ziming Wei",
+      "Xiaohan Gao",
+      "Yang Hsu",
+      "David Z. Pan"
+    ],
+    "published": "2026-11-15T14:47:56Z",
+    "primary": "cs.AR",
+    "comment": "8 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2611.20047",
+    "pdf": "https://arxiv.org/pdf/2611.20047v1"
+  },
+  "2611.20194": {
+    "id": "2611.20194",
+    "title": "Quantum-Enhanced Passive and Active Radio-Frequency Photonic Imaging",
+    "abstract": "Radio-frequency (RF) photonics enables broadband, phase-coherent sensing beyond the reach of purely electronic architectures, yet at a given optical carrier power its sensitivity is bounded by the standard quantum limit of the optical readout. Here, we experimentally demonstrate that this limit can be surpassed in both passive and active RF imaging modalities by encoding RF signals onto a bright phase-squeezed optical carrier and recovering them via balanced homodyne detection, while the RF front end, illumination, and image reconstruction remain classical. A unified measurement model shows that phase squeezing reduces the variance of the additive readout noise by a single factor $g$, yielding peak signal-to-noise ratio (PSNR) gains of up to $2G$, where $G\\equiv10\\log_{10}(1/g)$: between $G$ and $2G$ for deterministic targets in active imaging when the classical noise of the echoes is negligible against the readout noise, and set by the ratio of scene noise to readout noise in passive imaging. We validate the model in an experiment in the 5--20 MHz band, in which synthesized RF scenes are replayed through a physical squeezed-light receiver. With 3 dB of squeezing, the PSNR improves by about 6 dB, close to $2G$, in the readout-noise-dominated regime of both modalities, and the model predicts the measured gains without free parameters. These results identify where squeezed-light readout benefits RF-photonic imaging: wherever the optical readout noise, rather than the scene or the RF front end, dominates the image error.",
+    "authors": [
+      "Visuttha Manthamkarn",
+      "Haowei Shi",
+      "Shuaifeng Guo",
+      "Christopher M. Jones",
+      "Quntao Zhuang",
+      "Zheshen Zhang"
+    ],
+    "published": "2026-11-15T18:44:59Z",
+    "primary": "quant-ph",
+    "comment": "22 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2611.20194",
+    "pdf": "https://arxiv.org/pdf/2611.20194v1"
+  },
+  "2611.20022": {
+    "id": "2611.20022",
+    "title": "The microscopic origin of the hysteretic hydrogen adsorption in Double Wall Carbon Nanotubes bundles",
+    "abstract": "In a recent study we reported large hysteretic hydrogen adsorption in samples made out of Double Wall Carbon Nanotubes (DWCNT) at supercritical temperatures (50 K, 77 K and 150 K), a physical behavior of practical interest. Here, we center our efforts in elucidate its physical origin by means of neutron diffraction (ND) and computer simulations. After a detailed theoretical modeling of the ND signal we were able to quantitatively study how the nanostructure of the material reacts to the hydrogen loads. An expansion of the bundle structure with increasing hydrogen load was found. Taking advantage of the translational symmetry of a DWCNT bundle along the nanotube axis, a two dimensional numerical analogue of the system helped us to clarify the microscopic origin of the hysteresis. Two microscopic mechanisms are identified as responsible for the metastable hydrogen adsorption, one structurally static in character, namely, H$_{2}$-load dependent effective energy barriers between interstitials, the other related to the structural deformation, namely, the opening/closing of the channels between interstitials with increasing/decreasing H$_{2}$ loads owing to the concomitant bundle expansion/contraction.",
+    "authors": [
+      "Carlos Cabrillo",
+      "Ricardo Fernández-Perea",
+      "Felix Fernández-Alonso"
+    ],
+    "published": "2026-11-15T14:09:52Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.20022",
+    "pdf": "https://arxiv.org/pdf/2611.20022v1"
+  },
+  "2611.19931": {
+    "id": "2611.19931",
+    "title": "Does synthetic pre-training pay off on a microcontroller? Accuracy, latency and energy across two MCUs",
+    "abstract": "Rendered images are cheap to label, but a microcontroller classifier must survive 8-bit integer (INT8) quantisation and compute correctly on the chip. Five models, from MobileNetV2 at 224 px to a 61K-parameter convolutional neural network (CNN), were fine-tuned on a six-class scene dataset with and without a synthetic stage, against thresholds fixed in advance, and deployed on an ESP32-S3 and an RP2040. With full real data the stage gave no detectable gain. For the main deployable model the INT8 difference was +0.312 percentage points (pp), its interval below the +1.6 pp gain recomputed from the source study; quantisation did not detectably change it, nor did model size. With 10% of the real data the stage paid off for the CNN, by +3.438 pp on one seed and +2.715 pp over three; its cause is open. On the ESP32-S3 the main model took 152.7 ms and 16.3 mJ above idle per inference, and adding the stage changed neither beyond preset bounds. The model's INT8 outputs matched TensorFlow Lite's reference kernels exactly, but only after a memory overrun in a vendor kernel was patched. On the RP2040 the same model took 1.80 s and 27.3 mJ above idle, about twelve times slower, and the largest 96 px model exceeded the board's flash-capacity limit. Neither the RP2040 nor the host interpreter used for scoring reproduced the reference arithmetic. A synthetic stage is worth adding only when real data are scarce, and on-device INT8 outputs should be checked against reference kernels, not inferred from host scores.",
+    "authors": [
+      "Achintya Yadav"
+    ],
+    "published": "2026-11-15T11:00:12Z",
+    "primary": "cs.LG",
+    "comment": "43 pages, 5 figures, 14 tables; supplementary tables, figures and notes as ancillary files. Analysis plan registered on OSF (doi:10.17605/OSF.IO/BPQGA). Under review",
+    "url": "https://arxiv.org/abs/2611.19931",
+    "pdf": "https://arxiv.org/pdf/2611.19931v1"
+  },
+  "2611.20205": {
+    "id": "2611.20205",
+    "title": "Independent set reconfiguration is hard at treewidth four",
+    "abstract": "Independent Set Reconfiguration asks whether one of two given independent sets of equal size can be transformed into the other by moving one token at a time while keeping the occupied vertices independent. In token sliding, a token moves along an edge. In token jumping, it may move to any unoccupied vertex. For both rules, the problem is solvable in polynomial time on trees and is PSPACE-complete on graphs of treewidth at most $c$ for some fixed constant $c$. For each rule, the smallest treewidth bound that suffices for hardness has long been open. We narrow this gap by proving that both versions are NP-hard on graphs of treewidth four.",
+    "authors": [
+      "Hussein Abbas",
+      "Haydar Hamieh",
+      "Amer E. Mouawad",
+      "Ali Slim"
+    ],
+    "published": "2026-11-15T19:07:23Z",
+    "primary": "cs.CC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.20205",
+    "pdf": "https://arxiv.org/pdf/2611.20205v1"
+  },
+  "2611.20136": {
+    "id": "2611.20136",
+    "title": "An isolated complex Hadamard matrix with nonzero defect",
+    "abstract": "We exhibit a complex Hadamard matrix of nonzero defect which is isolated among complex Hadamard matrices, up to Hadamard equivalence. This counterexample is realized by a Butson-type Hadamard matrix of size $13$, with entries roots of order $6$ of unity. In the language of commuting squares, this shows that the span condition, previously introduced by the second author as a sufficient condition for isolation, is not a necessary condition for isolation.",
+    "authors": [
+      "Shannon Hall",
+      "Remus Nicoara"
+    ],
+    "published": "2026-11-15T17:10:54Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.20136",
+    "pdf": "https://arxiv.org/pdf/2611.20136v1"
+  },
+  "2611.20133": {
+    "id": "2611.20133",
+    "title": "Robust Antiferromagnetic Ordering above 500 K in a Family of Bilayer van der Waals Materials",
+    "abstract": "Stabilizing magnetic order above room temperature in layered materials is highly desirable for low-dimensional spintronics applications. However, realizing room-temperature antiferromagnetism in layered magnets remains challenging. Here, we present a layered semiconducting oxyhalide material family, Sr$_3$Fe$_2$O$_5$X$_2$ ($X$ = F, Cl, Br), which exhibits robust high-temperature antiferromagnetic ordering. The two-dimensional nature and scalability of this system are demonstrated by atomically resolving the van der Waals gap of Sr$_3$Fe$_2$O$_5$Br$_2$ and synthesizing centimeter-scale single crystals of Sr$_3$Fe$_2$O$_5$Cl$_2$. Temperature-dependent neutron scattering and magnetization measurements determine their G-type magnetic structure and transition temperature. Remarkably, the Néel temperature of Sr$_3$Fe$_2$O$_5$F$_2$ ($\\sim$580 K) is the highest among all reported layered antiferromagnets. Density functional theory calculations demonstrate that strong nearest-neighbor superexchange interactions along both out-of-plane and in-plane directions, particularly the magnetic couplings along lattice $c$ direction within the bilayer motif, are primarily responsible for the high Néel temperatures in Sr$_3$Fe$_2$O$_5$X$_2$. In contrast, inter-bilayer spin couplings are negligibly weak, without much influence on the stabilization of the antiferromagnetic order. Therefore, theoretical calculations predict that this robust antiferromagnetic order could persist or even strengthens at room-temperature even at the monolayer limit. Our results highlight iron-based layered oxyhalides as a promising platform for exploring beyond-room-temperature antiferromagnetism in the two-dimensional limit, holding immense potential in areas like information storage and spin-based devices.",
+    "authors": [
+      "Tengda Rong",
+      "Linxin Wu",
+      "Xingke Fu",
+      "Anqi Huang",
+      "Feiran Shen",
+      "Zixian Dong",
+      "Jianwei Huang",
+      "Hao Li",
+      "Benyuan Cheng",
+      "Lunhua He",
+      "Long Jiang",
+      "Kun Cao",
+      "Zhen Chen",
+      "Meng Wang",
+      "Xiang Chen"
+    ],
+    "published": "2026-11-15T17:01:22Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "Accepted for publication at SCIENCE CHINA Physics, Mechanics & Astronomy",
+    "url": "https://arxiv.org/abs/2611.20133",
+    "pdf": "https://arxiv.org/pdf/2611.20133v1"
   }
 }

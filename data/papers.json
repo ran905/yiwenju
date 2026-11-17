@@ -2,6 +2,933 @@
   "count": 80,
   "papers": [
     {
+      "id": "2611.19915",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CR",
+      "published": "2026-11-15",
+      "title_en": "CHERI under Fault Injection: An Emulation-Based Security Evaluation of Capability Hardware Enhanced RISC Instructions",
+      "title_zh": "芯片故障注入能否攻破CHERI内存安全？",
+      "one_liner": "用模拟故障注入攻击CHERI架构，发现一两次针对性故障就能绕过其内存安全保护，说明硬件物理完整性是关键。",
+      "why": "CHERI是一种给指针加硬件检查的新架构，号称能防住很多软件攻击。这篇论文问：如果攻击者能物理干扰芯片，比如用激光打比特翻转，还能防住吗？答案是不能完全防住。这让高中生看到安全不只是软件的事。",
+      "sections": {
+        "background": "内存安全漏洞，比如缓冲区溢出，是很多网络攻击的入口。软件层面的防护办法研究了几十年，仍然漏洞频发。CHERI架构给每个指针加上硬件检查的元数据，从硬件层面阻止越界访问。但CHERI的安全模型明确排除了故障注入——攻击者用电压毛刺、激光等手段让芯片出错。此前很少有人系统测试CHERI在故障注入下的表现。",
+        "method": "作者在QEMU模拟器中实现故障注入原语，QEMU是一个用软件模拟计算机的仿真器。这样不用真实硬件就能做确定性、可重复的实验。他们考虑两类故障：比特翻转破坏指针的元数据，以及故障导致能力存储指令的检查被跳过。然后构造四种攻击场景：缓冲区溢出、控制流劫持、纯数据攻击和释放后使用。",
+        "finding": "四种攻击场景各用一两次针对性故障就能成功，这是模拟环境下的下界。检查跳过路线最少只需一次故障就能实现控制流劫持和纯数据攻击。结果表明，CHERI的保护依赖三个条件：元数据物理完整、检查指令不被打断、撤销位图完好。任意一个被单次故障破坏，空间安全、时间安全或控制流完整性就可能被绕过。不过CHERI仍然提高了攻击成本。",
+        "impact": "这项研究说明，硬件安全机制不能假设物理环境永远可靠。对于安全芯片设计，可能需要加入故障检测或冗余检查。它也提醒我们，评估一种安全架构时，要把物理攻击纳入威胁模型，而不是只考虑软件攻击。"
+      },
+      "analogy": "就像给保险箱装了电子锁，密码验证很严密。但如果小偷能直接干扰锁里的电路，让某次验证被跳过，锁再复杂也可能被打开。CHERI的检查就像电子锁，故障注入就是干扰电路。",
+      "terms": [
+        {
+          "t": "CHERI",
+          "d": "一种硬件架构，给指针附加硬件检查的元数据，防止越界访问。论文研究它在故障注入下是否仍能保证内存安全。"
+        },
+        {
+          "t": "故障注入",
+          "d": "用电压毛刺、激光等手段让芯片产生比特翻转或跳过指令。论文用它模拟物理攻击，测试CHERI的防护底线。"
+        },
+        {
+          "t": "指针",
+          "d": "程序中记录内存地址的变量。CHERI给指针加上元数据，论文中攻击者试图篡改这些元数据来绕过检查。"
+        },
+        {
+          "t": "缓冲区溢出",
+          "d": "程序向缓冲区写入超出其容量的数据，覆盖相邻内存。论文把它作为攻击场景之一，测试CHERI能否挡住。"
+        },
+        {
+          "t": "控制流劫持",
+          "d": "攻击者改变程序执行路径，比如跳转到恶意代码。论文演示通过故障注入实现这种攻击。"
+        },
+        {
+          "t": "释放后使用",
+          "d": "程序释放内存后继续使用该内存的漏洞。论文测试CHERI的时间安全保护能否被故障绕过。"
+        },
+        {
+          "t": "QEMU",
+          "d": "一个开源的计算机模拟器，用软件模拟硬件运行。论文在它上面实现故障注入，以便重复实验。"
+        },
+        {
+          "t": "撤销位图",
+          "d": "记录哪些指针已被撤销的数据结构，用于时间安全。论文指出它的完整性也是CHERI安全的关键。"
+        }
+      ],
+      "tags": [
+        "硬件安全",
+        "CHERI",
+        "故障注入"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Eva Sophia Schreyer"
+      ],
+      "abstract": "Memory-safety vulnerabilities continue to dominate real-world exploit chains despite decades of research into software mitigations. CHERI is a hardware architecture that enforces spatial and temporal memory safety by augmenting pointers with hardware-checked metadata, thus preventing software-based exploitation, but its threat model explicitly excludes fault injection. This thesis investigates whether targeted fault injection can undermine CHERI's memory-safety guarantees in a pure-capability CHERI-RISC-V environment. Two fault classes are considered: bit flips corrupting capability metadata, and fault-induced check skipping on capability store instructions. We implement fault injection primitives in a QEMU-based emulation environment, which enables deterministic, repeatable experiments without specialised hardware. With them, we demonstrate four attack scenarios: buffer overflows, control-flow hijacking, data-only attacks, and use-after-free. Each succeeds with one or two targeted faults (lower bounds under the emulation-based setting). Check skipping offers an alternative route to control-flow hijacking and data-only attacks, with a minimum of one fault. These results show that CHERI's guarantees depend on the physical integrity of capability metadata, the uninterrupted execution of metadata checks, and the integrity of the revocation bitmap: a single targeted fault can circumvent spatial safety, temporal safety, or control-flow integrity. CHERI still raises the cost of exploitation, since fault injection is a prerequisite for every attack and the sentry mechanism forces an attacker to supply a valid tagged capability or spend a second fault restoring the tag. Based on these findings, we propose mitigations: ECC-protected capability memory, capability field authentication codes, redundant execution of security-critical checks, and revocation bitmap integrity verification.",
+      "url": "https://arxiv.org/abs/2611.19915",
+      "pdf": "https://arxiv.org/pdf/2611.19915v1"
+    },
+    {
+      "id": "2611.19931",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.LG",
+      "published": "2026-11-15",
+      "title_en": "Does synthetic pre-training pay off on a microcontroller? Accuracy, latency and energy across two MCUs",
+      "title_zh": "合成图像预训练在微控制器上划算吗？",
+      "one_liner": "在ESP32-S3和RP2040两款微控制器上测试五种模型，发现合成图像预训练只在真实数据稀缺时才有明显好处。",
+      "why": "这篇论文直接回答一个实际问题：用电脑生成的假图片训练AI，放到真实芯片上跑，到底有没有用？实验用两款常见微控制器，结论清楚：数据够时没用，数据少时有用。适合对AI和硬件都感兴趣的同学。",
+      "sections": {
+        "background": "训练图像识别AI需要大量带标签的图片，人工标注很贵。用电脑渲染合成图片可以自动获得标签，成本低。但合成图片和真实照片有差距，而且模型要部署到微控制器——一种内存和算力都很小的芯片——上时，还要经过8位整数量化，把浮点数压缩成整数，可能损失精度。之前的研究多在服务器上验证，很少在真实芯片上同时看准确率、延迟和能耗。",
+        "method": "作者选了五种模型，从224像素输入的MobileNetV2到只有6.1万参数的小卷积神经网络，在六类场景数据集上微调，分有合成预训练阶段和无该阶段两组，并设定预先固定的比较阈值。然后把主模型部署到ESP32-S3和RP2040两款微控制器上，测量每次推理的耗时和能耗，并检查8位整数输出是否与TensorFlow Lite参考内核完全一致。",
+        "finding": "用全部真实数据时，合成预训练没有带来可检测的增益；主模型的8位整数差异为+0.312个百分点，低于原研究重算的+1.6个百分点。只用10%真实数据时，合成预训练对小卷积网络有帮助，一个随机种子下提升+3.438个百分点，三个种子平均+2.715个百分点。ESP32-S3上主模型每次推理耗时152.7毫秒、能耗16.3毫焦；RP2040上耗时1.80秒、能耗27.3毫焦，约慢12倍。最大96像素模型还超出了RP2040的闪存容量。",
+        "impact": "这项工作提醒开发者：合成数据不是万能药，只有在真实数据稀缺时才值得加入；部署到芯片上时，必须用参考内核核对8位整数输出，不能只信主机上的推理结果。它也为微控制器上AI模型的选型和验证提供了可复现的基准。"
+      },
+      "analogy": "就像用模拟驾驶游戏练车：如果你已经有很多真实路况的训练，游戏里再练提升不大；但如果你真实上路的机会很少，游戏模拟就能帮你补足经验。不过真车和游戏手感有差别，上路前还得核对仪表。",
+      "terms": [
+        {
+          "t": "微控制器",
+          "d": "把处理器、内存和接口集成在一颗芯片上的小型计算机，常用于家电和传感器。论文中它是模型最终部署的目标硬件，算力和内存都很有限。"
+        },
+        {
+          "t": "合成预训练",
+          "d": "先用电脑渲染的合成图像训练模型，再用真实数据微调。论文检验这种做法在微控制器上是否真能提升准确率。"
+        },
+        {
+          "t": "INT8量化",
+          "d": "把模型中的32位浮点数压缩成8位整数，以减少内存和计算量。论文中模型必须通过这一关才能在小芯片上运行。"
+        },
+        {
+          "t": "卷积神经网络",
+          "d": "一种擅长处理图像的神经网络，通过卷积核提取局部特征。论文比较了不同大小的卷积网络在芯片上的表现。"
+        },
+        {
+          "t": "MobileNetV2",
+          "d": "一种轻量级图像分类网络，专为手机等移动设备设计。论文把它作为较大模型的代表进行对比。"
+        },
+        {
+          "t": "ESP32-S3",
+          "d": "一款带无线功能的微控制器芯片，常用于物联网设备。论文用它测量模型推理的耗时和能耗。"
+        },
+        {
+          "t": "RP2040",
+          "d": "树莓派基金会推出的低成本微控制器芯片。论文用它对比另一款芯片上的推理速度和能耗。"
+        },
+        {
+          "t": "TensorFlow Lite",
+          "d": "谷歌推出的轻量级机器学习推理框架，提供参考内核。论文用它的输出来检验芯片上的计算结果是否正确。"
+        }
+      ],
+      "tags": [
+        "微控制器",
+        "合成数据",
+        "边缘AI"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Achintya Yadav"
+      ],
+      "abstract": "Rendered images are cheap to label, but a microcontroller classifier must survive 8-bit integer (INT8) quantisation and compute correctly on the chip. Five models, from MobileNetV2 at 224 px to a 61K-parameter convolutional neural network (CNN), were fine-tuned on a six-class scene dataset with and without a synthetic stage, against thresholds fixed in advance, and deployed on an ESP32-S3 and an RP2040. With full real data the stage gave no detectable gain. For the main deployable model the INT8 difference was +0.312 percentage points (pp), its interval below the +1.6 pp gain recomputed from the source study; quantisation did not detectably change it, nor did model size. With 10% of the real data the stage paid off for the CNN, by +3.438 pp on one seed and +2.715 pp over three; its cause is open. On the ESP32-S3 the main model took 152.7 ms and 16.3 mJ above idle per inference, and adding the stage changed neither beyond preset bounds. The model's INT8 outputs matched TensorFlow Lite's reference kernels exactly, but only after a memory overrun in a vendor kernel was patched. On the RP2040 the same model took 1.80 s and 27.3 mJ above idle, about twelve times slower, and the largest 96 px model exceeded the board's flash-capacity limit. Neither the RP2040 nor the host interpreter used for scoring reproduced the reference arithmetic. A synthetic stage is worth adding only when real data are scarce, and on-device INT8 outputs should be checked against reference kernels, not inferred from host scores.",
+      "url": "https://arxiv.org/abs/2611.19931",
+      "pdf": "https://arxiv.org/pdf/2611.19931v1"
+    },
+    {
+      "id": "2611.20022",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-15",
+      "title_en": "The microscopic origin of the hysteretic hydrogen adsorption in Double Wall Carbon Nanotubes bundles",
+      "title_zh": "双壁碳纳米管束吸氢为何有“记忆”",
+      "one_liner": "双壁碳纳米管束在吸放氢时出现滞后现象，源于氢分子改变间隙能垒和管束膨胀打开通道两种机制。",
+      "why": "氢气储存是清洁能源的关键问题，而“滞后吸附”意味着材料能记住之前的氢气压力。这篇论文用中子和计算机模拟解释微观原因，适合对能源材料和微观世界感兴趣的同学。",
+      "sections": {
+        "background": "碳纳米管束能吸附氢气，有潜力做储氢材料。之前实验发现，双壁碳纳米管束在 50 K、77 K、150 K 等温度下吸氢和放氢的曲线不重合，出现滞后：同样压力下，吸氢时和放氢时的氢含量不同。但没人知道微观上为什么。",
+        "method": "作者用中子衍射——一种对氢原子敏感的结构探测手段——观察材料在不同氢负载下的结构变化，并用计算机模拟辅助分析。他们建立了一个二维数值模型，利用管束沿轴向的对称性，模拟氢分子在间隙中的行为。",
+        "finding": "随着氢负载增加，管束结构会膨胀。模拟揭示两个机制：一是氢负载改变了间隙之间的有效能量壁垒，这是静态的结构效应；二是管束膨胀/收缩会打开/关闭间隙之间的通道，这是动态的结构变形效应。两者共同导致滞后。",
+        "impact": "理解滞后机制有助于设计更好的储氢材料，比如通过控制管束结构来减少能量损耗。也可能启发其他多孔材料的吸附研究，因为滞后在气体储存中普遍存在。"
+      },
+      "analogy": "就像一扇弹簧门，你推门进去时门很紧，但进去后门被撑开了一点，出来时就容易了。氢分子进入管束间隙时改变了“门”的松紧，所以吸氢和放氢走的不是同一条路。",
+      "terms": [
+        {
+          "t": "碳纳米管",
+          "d": "由碳原子卷成的空心圆柱，直径纳米级。论文研究双壁碳纳米管束，即两根同轴管子组成的束状材料。"
+        },
+        {
+          "t": "吸附滞后",
+          "d": "同一压力下，吸附和脱附的氢含量不同的现象。论文要解释这种“记忆”效应的微观来源。"
+        },
+        {
+          "t": "中子衍射",
+          "d": "用中子束照射材料，通过散射图案推断原子位置。论文用它观察氢负载下管束结构的变化。"
+        },
+        {
+          "t": "间隙",
+          "d": "碳纳米管束中管子与管子之间的空隙。氢分子储存在这些间隙里，其能垒和通道决定吸附行为。"
+        },
+        {
+          "t": "能量壁垒",
+          "d": "氢分子从一个间隙移动到另一个间隙需要越过的能量障碍。论文发现氢负载会改变这个壁垒的高度。"
+        },
+        {
+          "t": "超临界温度",
+          "d": "高于物质临界温度的状态，此时气体无法液化。论文在 50-150 K 的超临界条件下研究氢吸附。"
+        },
+        {
+          "t": "二维数值模型",
+          "d": "利用管束沿轴向的平移对称性，把三维问题简化为二维截面的模拟。论文用它揭示滞后机制。"
+        }
+      ],
+      "tags": [
+        "储氢",
+        "碳纳米管",
+        "中子散射"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Carlos Cabrillo",
+        "Ricardo Fernández-Perea",
+        "Felix Fernández-Alonso"
+      ],
+      "abstract": "In a recent study we reported large hysteretic hydrogen adsorption in samples made out of Double Wall Carbon Nanotubes (DWCNT) at supercritical temperatures (50 K, 77 K and 150 K), a physical behavior of practical interest. Here, we center our efforts in elucidate its physical origin by means of neutron diffraction (ND) and computer simulations. After a detailed theoretical modeling of the ND signal we were able to quantitatively study how the nanostructure of the material reacts to the hydrogen loads. An expansion of the bundle structure with increasing hydrogen load was found. Taking advantage of the translational symmetry of a DWCNT bundle along the nanotube axis, a two dimensional numerical analogue of the system helped us to clarify the microscopic origin of the hysteresis. Two microscopic mechanisms are identified as responsible for the metastable hydrogen adsorption, one structurally static in character, namely, H$_{2}$-load dependent effective energy barriers between interstitials, the other related to the structural deformation, namely, the opening/closing of the channels between interstitials with increasing/decreasing H$_{2}$ loads owing to the concomitant bundle expansion/contraction.",
+      "url": "https://arxiv.org/abs/2611.20022",
+      "pdf": "https://arxiv.org/pdf/2611.20022v1"
+    },
+    {
+      "id": "2611.20047",
+      "field": "chip",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AR",
+      "published": "2026-11-15",
+      "title_en": "CleanRoute: Reconciling DRC Compliance, Post-Layout Performance, and Runtime in Analog Routing",
+      "title_zh": "CleanRoute：模拟电路布线同时满足设计规则与性能",
+      "one_liner": "提出CleanRoute自动布线器，在40纳米工艺的10个放大器上全部通过设计规则检查，中位布线时间仅8.82秒。",
+      "why": "芯片里不只有数字电路，还有模拟电路，比如放大器和传感器接口。模拟电路布线长期靠人工，自动工具很难同时满足规则、性能和速度。这篇论文用三个巧妙的工程手段解决了问题，结果具体，适合对芯片设计好奇的同学。",
+      "sections": {
+        "background": "自动布线是芯片设计的关键步骤，把电路元件用金属线连起来。数字电路布线已经高度自动化，但模拟电路不行：模拟电路对电阻、电容和匹配非常敏感，布线稍有不慎就会影响性能。现有模拟布线器对金属连接处的设计规则覆盖不全，无法控制拓扑引起的失配，而且在统一网格上要在规则违规和运行时间之间取舍。设计规则检查（DRC）是芯片代工厂规定的最小尺寸和间距要求。",
+        "method": "CleanRoute采用三个手段。第一，分层规则执行：把DRC检查和修复分配到几何形状已经完整的阶段，覆盖分离金属之间和金属连接处的规则。第二，IR压降隔离：根据电流镜关系和器件电流构造电源树，减少几何匹配无法消除的拓扑失配和高电流路径上的电压降。第三，冲洗线网格：在粗布线网格上添加与器件金属边缘对齐的专用线，无需全局细化就能提供符合规则的连接。",
+        "finding": "在商用40纳米工艺的10个运算跨导放大器上测试，CleanRoute全部生成了DRC干净且功能正确的版图，并通过版图与原理图一致性检查（LVS）。它的整体性能保持最好，中位布线运行时间为8.82秒。作为对比，基线方法没有产生任何DRC干净的版图。这说明三个手段结合起来，能同时兼顾规则合规、性能保持和运行时间。",
+        "impact": "模拟电路设计长期依赖专家手工布线，自动化程度低。CleanRoute展示了用分层规则执行和拓扑感知的电源树构造，可以在几秒内完成符合规则的布线，有望减少人工迭代，缩短模拟芯片的设计周期。不过它目前只在10个放大器上验证，通用性还需更多测试。"
+      },
+      "analogy": "就像在拥挤的停车场里自动泊车：既要保证车不压线（设计规则），又要让车门能打开、不影响旁边车（性能），还要快速停好（运行时间）。CleanRoute相当于先规划好车道，再针对每辆车调整位置，而不是把整个停车场画满格子。",
+      "terms": [
+        {
+          "t": "模拟电路",
+          "d": "处理连续信号的电路，如放大器和传感器接口，对匹配和寄生效应敏感。论文针对模拟电路的自动布线难题。"
+        },
+        {
+          "t": "布线",
+          "d": "用金属线把芯片上的元件按电路图连接起来。论文提出自动布线器，替代人工完成这一步骤。"
+        },
+        {
+          "t": "设计规则检查",
+          "d": "代工厂规定的最小线宽、间距等几何规则，确保芯片能制造。论文要求布线结果全部通过该检查。"
+        },
+        {
+          "t": "IR压降",
+          "d": "电流流过金属线时产生的电压下降，可能影响电路性能。论文通过构造电源树来减少高电流路径上的压降。"
+        },
+        {
+          "t": "电流镜",
+          "d": "一种使两个晶体管电流成比例的电路结构，常用于模拟电路偏置。论文利用电流镜关系来规划电源树。"
+        },
+        {
+          "t": "运算跨导放大器",
+          "d": "一种将输入电压转换为输出电流的放大器，是模拟电路的基本模块。论文用10个这样的放大器做测试基准。"
+        },
+        {
+          "t": "LVS",
+          "d": "版图与原理图一致性检查，确认物理版图与电路设计一致。论文中所有基准都通过了该检查。"
+        },
+        {
+          "t": "40纳米工艺",
+          "d": "芯片制造的一个技术节点，特征尺寸约40纳米。论文在商用40纳米工艺上验证布线器。"
+        }
+      ],
+      "tags": [
+        "芯片设计",
+        "模拟电路",
+        "自动布线"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Bingyang Liu",
+        "Ziming Wei",
+        "Xiaohan Gao",
+        "Yang Hsu",
+        "David Z. Pan"
+      ],
+      "abstract": "Automated analog routing remains a long-standing challenge because design-rule checking (DRC) compliance, post-layout performance preservation, and runtime reduction are difficult to achieve together. Existing analog routers have limited coverage of joined-metal design rules, lack control over topology-induced mismatch, and face a trade-off between DRC violations and runtime on uniform routing grids. In this paper, we introduce CleanRoute, an analog router that reconciles these three targets. Hierarchical rule enforcement assigns DRC checks and repairs to stages where the required geometry is complete, covering rules both between separate metal and where metal joins. IR-drop isolation constructs supply trees from current-mirror relationships and device currents to reduce topology-induced mismatch that geometric matching cannot eliminate and voltage drops along high-current paths. A flush-line grid adds net-specific lines aligned with device-metal edges to a coarse routing grid, providing DRC-compliant connections without uniform refinement. Experiments on ten operational transconductance amplifiers (OTAs) in a commercial 40nm process show that CleanRoute produces DRC-clean and functional layouts that pass layout versus schematic (LVS) checking on all benchmarks, with the strongest overall performance preservation and a median routing runtime of 8.82s, whereas the baselines produce no DRC-clean layouts.",
+      "url": "https://arxiv.org/abs/2611.20047",
+      "pdf": "https://arxiv.org/pdf/2611.20047v1"
+    },
+    {
+      "id": "2611.20118",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-11-15",
+      "title_en": "A Forward Bit Makes Error Correction Dispensable for Antidegradable Amplitude-Damping Channels",
+      "title_zh": "一个前向比特让误差校正变得不必要",
+      "one_liner": "证明对于反退化振幅阻尼信道，一次信道使用加一个前向经典比特就能匹配或超越任何多次使用的编码方案。",
+      "why": "量子纠错通常需要大量冗余，但这项研究显示在某些噪声信道中，简单的经典辅助就能替代复杂的纠错编码。高中生可以从中理解量子信息中“噪声”和“纠错”的基本思想，以及经典信息如何帮助量子系统。",
+      "sections": {
+        "background": "量子信息保存需要对抗噪声，通常用多个量子比特编码一个逻辑比特。但编码需要大量资源，且在某些信道中效果有限。反退化振幅阻尼信道是一种特殊的噪声模型，此前不清楚最少需要多少资源才能保持量子信息。",
+        "method": "作者从理论上证明，对于反退化振幅阻尼信道，一次信道使用加上一个前向经典比特（从编码方传到解码方的经典信息）就能达到或超过任何前向辅助或无辅助编码方案。他们还用变分电路学习编码策略，观察随着阻尼增大，策略从纠错转向经典辅助。",
+        "finding": "理论证明，一个前向比特就足以让误差校正变得不必要。数值上，变分电路学到的策略在阻尼增大时自动切换，在纠缠保真度低至0.65时，相比最好的无辅助方案，存储时间延长了最多13%。这超过了所有无辅助三次使用编码的对偶认证界限。",
+        "impact": "这简化了量子信息存储的方案，表明在某些噪声下经典通信比量子纠错更有效。可能影响未来量子存储器和量子通信的设计，尤其是在噪声较强的场景。"
+      },
+      "analogy": "就像你不需要把一句话重复很多遍来防止听错，而是只需要在说完后补一句“我刚才说的是……”，对方就能准确理解，省去了大量冗余。",
+      "terms": [
+        {
+          "t": "振幅阻尼信道",
+          "d": "一种量子噪声模型，描述能量耗散（如光子丢失）。本文研究其反退化版本。"
+        },
+        {
+          "t": "反退化",
+          "d": "信道的一种性质，指环境可以模拟信道本身。本文证明在此性质下经典辅助很有效。"
+        },
+        {
+          "t": "前向经典比特",
+          "d": "从编码方发送到解码方的经典信息，不经过量子信道。本文证明一个比特就足够。"
+        },
+        {
+          "t": "纠缠保真度",
+          "d": "衡量量子态保真度的指标，1表示完美。本文在保真度0.65时仍延长存储时间13%。"
+        },
+        {
+          "t": "变分电路",
+          "d": "一种参数化的量子电路，通过优化参数来完成任务。本文用它学习编码策略。"
+        },
+        {
+          "t": "误差校正",
+          "d": "用冗余编码来检测和纠正量子错误的方法。本文表明在某些情况下可被经典辅助替代。"
+        },
+        {
+          "t": "对偶认证界限",
+          "d": "通过数学对偶方法得到的性能上限。本文用其比较不同编码方案的优劣。"
+        }
+      ],
+      "tags": [
+        "量子信息",
+        "量子纠错",
+        "噪声"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Ahmed Gamal",
+        "Yasutaka Wada",
+        "Walid Gomaa",
+        "Norhan El-Sayed",
+        "Keiji Kimura",
+        "Salem F. Hegazy",
+        "Kazunori Ueda",
+        "Ahmed El-Mahdy"
+      ],
+      "abstract": "Preserving a qubit usually relies on redundant encoding over many uses of a noisy channel. We prove that for antidegradable amplitude damping, one channel use with one forward classical bit matches or beats every forward-assisted or unassisted code with any number of uses. We then show that variational circuits learn to switch from error correction to classical assistance as damping grows, beating a dual-certified bound on all unassisted three-use codes and, relative to the best unassisted see-saw, extending storage time by up to 13% at entanglement fidelity down to 0.65.",
+      "url": "https://arxiv.org/abs/2611.20118",
+      "pdf": "https://arxiv.org/pdf/2611.20118v1"
+    },
+    {
+      "id": "2611.20121",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CE",
+      "published": "2026-11-15",
+      "title_en": "Matching two-dimensional statistics does not certify three-dimensional transport in battery electrodes",
+      "title_zh": "二维照片猜不准电池电极的三维导电能力",
+      "one_liner": "用二维显微照片重建电池电极的三维结构，即使统计特征完全匹配，导电能力也可能差 10 到 88 倍。",
+      "why": "电池续航是高中生熟悉的话题，这篇论文直接挑战了“用二维照片推测三维性能”的常见做法。它用具体的数字和可理解的逻辑说明：统计上像，不代表物理上对。适合用来理解“模型和现实”的差距。",
+      "sections": {
+        "background": "研究电池电极时，科学家想看清内部三维结构，但三维成像又贵又慢，所以常用二维切面照片重建三维模型。过去大家默认：只要重建出的模型在颗粒比例、边界密度等统计特征上和真实电极一致，导电性能就能预测准。这个假设很少被严格检验。",
+        "method": "作者拿了三块全固态电池正极的真实三维 X 射线图像，然后用一种可优化的计算方法，生成一批“统计双胞胎”：这些虚拟结构在二维切面的颗粒比例、边界密度、两点相关函数等统计量上，和真实电极几乎一样。接着，他们比较这些双胞胎和真实电极的导电能力。",
+        "finding": "每个真实电极都能找到统计上匹配的“双胞胎”，但这些双胞胎的导电能力比真实电极低 10 到 88 倍；而导电最好的双胞胎也只比真实电极高 3.3 倍。原因是双胞胎把材料重新排列，切断了或挤窄了上下贯通的导电路径。二维图像里其实有区分信息，但标准统计量没有抓住它。",
+        "impact": "这提醒电池研究者：仅靠二维照片的统计匹配来预测三维传输可能不可靠，需要更谨慎地验证模型。对材料模拟和电池设计来说，这可能推动更好的三维重建方法，避免被“看起来像”的模型误导。"
+      },
+      "analogy": "就像你根据一张城市俯拍照片，统计出楼房密度和道路长度都跟真实城市一样，然后造了一个模型城。但模型城里道路虽然总长度相同，却七拐八绕、到处断头，车根本开不通。统计数字像，不等于路真的能走。",
+      "terms": [
+        {
+          "t": "全固态电池",
+          "d": "用固体材料代替液体电解质的电池，更安全但内部结构复杂。论文用它做例子，检验二维照片能否预测三维导电。"
+        },
+        {
+          "t": "X 射线断层扫描",
+          "d": "一种能无损拍出材料内部三维结构的技术。论文用它获得真实电极的三维图像，作为比较标准。"
+        },
+        {
+          "t": "统计双胞胎",
+          "d": "在二维切面的统计特征上与真实电极几乎一样的人工结构。论文发现它们导电能力可能差很多，说明统计匹配不够。"
+        },
+        {
+          "t": "两点相关函数",
+          "d": "描述材料中相隔一定距离的两点属于同一相的概率。论文用它来约束生成的双胞胎结构，使其在统计上像真实电极。"
+        },
+        {
+          "t": "体素",
+          "d": "三维图像中的小方块，相当于三维像素。论文用体素表示电极结构，并优化体素排列来匹配统计特征。"
+        },
+        {
+          "t": "导电率",
+          "d": "衡量材料传导电流能力的物理量。论文比较双胞胎和真实电极的导电率，发现前者可能低几十倍。"
+        },
+        {
+          "t": "相分数",
+          "d": "材料中某一种成分所占的体积比例。论文要求双胞胎在相分数上与真实电极一致，但仍无法保证导电性一致。"
+        }
+      ],
+      "tags": [
+        "电池",
+        "材料模拟",
+        "三维结构"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Maziar Raissi",
+        "Devesh Upadhyay"
+      ],
+      "abstract": "Three-dimensional battery electrode structures reconstructed from two-dimensional micrographs are routinely used to predict transport, assuming that matching the measured 2D statistics reproduces the relevant 3D properties. We test this premise on X-ray tomograms of three all-solid-state cathodes. With a differentiable conductivity solver, we optimise voxel structures that match the real electrode in phase fractions, boundary density, two- and three-point correlations and lineal-path functions, on all section planes, slab by slab and layer by layer, within measurement noise. Every sample has statistical twins conducting 10-88-fold less than the real electrode, robust to 5^3 majority filtering, whereas the most conductive are at most 3.3-fold above it. The twins rearrange rather than remove material, severing or funnelling through-plane paths. A classifier on 2D sections detects them, as it does current 2D-to-3D generators: the information is in the images but not in the statistics. Matching standard 2D statistics therefore does not certify 3D transport.",
+      "url": "https://arxiv.org/abs/2611.20121",
+      "pdf": "https://arxiv.org/pdf/2611.20121v1"
+    },
+    {
+      "id": "2611.20133",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.mtrl-sci",
+      "published": "2026-11-15",
+      "title_en": "Robust Antiferromagnetic Ordering above 500 K in a Family of Bilayer van der Waals Materials",
+      "title_zh": "双层范德华材料中500开尔文以上的反铁磁序",
+      "one_liner": "发现一类层状氧卤化物材料，其中Sr3Fe2O5F2的反铁磁转变温度高达约580开尔文，是层状反铁磁体中最高的。",
+      "why": "反铁磁材料在自旋电子学中有重要应用，但通常需要在低温下工作。这项研究找到了一类能在远高于室温（500开尔文以上）保持反铁磁序的层状材料，而且可以做成厘米级单晶。高中生可以联系到磁性、居里温度等课本概念，看到材料设计如何突破温度限制。",
+      "sections": {
+        "background": "层状磁性材料在低维自旋电子学中很有前景，但要在室温以上实现反铁磁序一直很困难。此前报道的层状反铁磁体转变温度大多低于室温，限制了实际应用。寻找高转变温度的材料并理解其机制是当前的研究热点。",
+        "method": "作者合成了一系列层状半导体氧卤化物Sr3Fe2O5X2（X=F, Cl, Br），用中子散射和磁化测量确定磁结构和转变温度，用密度泛函理论计算交换相互作用。他们还用原子分辨技术观察了范德华间隙，并生长了厘米级单晶。",
+        "finding": "所有材料都表现出G型反铁磁序，其中Sr3Fe2O5F2的奈尔温度约580开尔文，是层状反铁磁体中最高的。计算表明，双层结构内沿面外和面内的强最近邻超交换相互作用是高温磁序的主要原因，而双层间的耦合非常弱。理论预测这种反铁磁序可能持续到更高温度甚至增强。",
+        "impact": "这为在室温以上工作的低维自旋电子学提供了新材料平台，并且说明双层结构内的强耦合可以稳定高温磁序。未来可能用于设计更节能的磁存储或逻辑器件。"
+      },
+      "analogy": "就像在两层楼之间用坚固的钢筋（双层内强耦合）把结构牢牢固定，而两层楼之间的连接很弱，所以整体依然稳定，不怕热运动捣乱。",
+      "terms": [
+        {
+          "t": "反铁磁序",
+          "d": "相邻原子磁矩方向相反、净磁化为零的有序状态。本文材料在高温下保持这种序。"
+        },
+        {
+          "t": "奈尔温度",
+          "d": "反铁磁体转变为顺磁体的临界温度。本文中Sr3Fe2O5F2的奈尔温度约580开尔文。"
+        },
+        {
+          "t": "范德华材料",
+          "d": "层与层之间通过弱范德华力结合的层状材料。本文材料属于此类，可剥离成二维。"
+        },
+        {
+          "t": "超交换相互作用",
+          "d": "通过非磁性离子传递的磁性离子间耦合。本文用它解释高温反铁磁序。"
+        },
+        {
+          "t": "G型反铁磁",
+          "d": "一种反铁磁结构，所有最近邻磁矩都反平行。本文用中子散射确定此结构。"
+        },
+        {
+          "t": "密度泛函理论",
+          "d": "一种计算材料电子结构和能量的量子力学方法。本文用它计算磁耦合强度。"
+        },
+        {
+          "t": "自旋电子学",
+          "d": "利用电子自旋而非电荷来存储和处理信息的学科。本文材料有望用于此领域。"
+        }
+      ],
+      "tags": [
+        "磁性材料",
+        "凝聚态物理",
+        "自旋电子学"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Tengda Rong",
+        "Linxin Wu",
+        "Xingke Fu",
+        "Anqi Huang",
+        "Feiran Shen",
+        "Zixian Dong",
+        "Jianwei Huang",
+        "Hao Li",
+        "Benyuan Cheng",
+        "Lunhua He",
+        "Long Jiang",
+        "Kun Cao",
+        "Zhen Chen",
+        "Meng Wang",
+        "Xiang Chen"
+      ],
+      "abstract": "Stabilizing magnetic order above room temperature in layered materials is highly desirable for low-dimensional spintronics applications. However, realizing room-temperature antiferromagnetism in layered magnets remains challenging. Here, we present a layered semiconducting oxyhalide material family, Sr$_3$Fe$_2$O$_5$X$_2$ ($X$ = F, Cl, Br), which exhibits robust high-temperature antiferromagnetic ordering. The two-dimensional nature and scalability of this system are demonstrated by atomically resolving the van der Waals gap of Sr$_3$Fe$_2$O$_5$Br$_2$ and synthesizing centimeter-scale single crystals of Sr$_3$Fe$_2$O$_5$Cl$_2$. Temperature-dependent neutron scattering and magnetization measurements determine their G-type magnetic structure and transition temperature. Remarkably, the Néel temperature of Sr$_3$Fe$_2$O$_5$F$_2$ ($\\sim$580 K) is the highest among all reported layered antiferromagnets. Density functional theory calculations demonstrate that strong nearest-neighbor superexchange interactions along both out-of-plane and in-plane directions, particularly the magnetic couplings along lattice $c$ direction within the bilayer motif, are primarily responsible for the high Néel temperatures in Sr$_3$Fe$_2$O$_5$X$_2$. In contrast, inter-bilayer spin couplings are negligibly weak, without much influence on the stabilization of the antiferromagnetic order. Therefore, theoretical calculations predict that this robust antiferromagnetic order could persist or even strengthens at room-temperature even at the monolayer limit. Our results highlight iron-based layered oxyhalides as a promising platform for exploring beyond-room-temperature antiferromagnetism in the two-dimensional limit, holding immense potential in areas like information storage and spin-based devices.",
+      "url": "https://arxiv.org/abs/2611.20133",
+      "pdf": "https://arxiv.org/pdf/2611.20133v1"
+    },
+    {
+      "id": "2611.20136",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · math.CO",
+      "published": "2026-11-15",
+      "title_en": "An isolated complex Hadamard matrix with nonzero defect",
+      "title_zh": "一个孤立的复哈达玛矩阵，缺陷不为零",
+      "one_liner": "构造了一个13阶复哈达玛矩阵，它孤立存在（附近没有其他哈达玛矩阵），但缺陷不为零，推翻了‘缺陷为零是孤立的必要条件’的猜想。",
+      "why": "哈达玛矩阵在通信、量子信息中有用，研究它们的孤立性有助于理解矩阵空间的形状。这篇论文用一个13阶的例子打破了之前的直觉，展示了数学中‘反例’的力量。适合对矩阵、对称性感兴趣的同学。",
+      "sections": {
+        "background": "哈达玛矩阵是元素为±1且行两两正交的方阵，在信号处理、量子计算中有应用。复哈达玛矩阵允许元素是复数单位根。人们关心这些矩阵在空间中是否孤立：能否连续变形到其他哈达玛矩阵？之前有作者提出一个‘跨度条件’作为孤立的充分条件，并猜测它也是必要的，即孤立矩阵必须满足该条件（缺陷为零）。这个猜测一直未被证明或推翻。",
+        "method": "作者构造了一个13阶的复哈达玛矩阵，其元素是6次单位根（即Butson型）。他们计算了该矩阵的缺陷（衡量变形自由度的量），发现缺陷不为零。然后证明该矩阵在哈达玛等价下是孤立的：不存在连续路径连接到其他哈达玛矩阵。这通过分析矩阵的局部变形空间和等价关系完成。",
+        "finding": "他们找到的13阶矩阵缺陷不为零，但却是孤立的。这直接否定了‘缺陷为零是孤立的必要条件’的猜想。之前只知道跨度条件是充分的，现在知道它不必要。这个反例是第一个非零缺陷的孤立复哈达玛矩阵。",
+        "impact": "这个结果修正了人们对复哈达玛矩阵孤立性的理解，说明缺陷和孤立性之间的关系比想象中复杂。它可能激发对更一般矩阵孤立性条件的研究。对高中生来说，它展示了数学中猜想被小例子推翻的典型过程，鼓励质疑和探索。"
+      },
+      "analogy": "就像一座小岛，以前人们认为只有周围有暗礁（缺陷为零）才能让岛孤立。但这篇论文发现了一座岛，周围没有暗礁，却依然无法靠岸——孤立的原因另有其他。",
+      "terms": [
+        {
+          "t": "哈达玛矩阵",
+          "d": "元素为±1且行两两正交的方阵；论文研究其复数版本。"
+        },
+        {
+          "t": "复哈达玛矩阵",
+          "d": "元素为复数单位根且行两两正交的矩阵；论文构造了一个13阶例子。"
+        },
+        {
+          "t": "孤立",
+          "d": "在哈达玛矩阵空间中，无法通过连续变形连接到其他矩阵；论文证明所构造矩阵是孤立的。"
+        },
+        {
+          "t": "缺陷",
+          "d": "衡量矩阵变形自由度的量，缺陷为零表示没有一阶变形；论文发现孤立矩阵可以有非零缺陷。"
+        },
+        {
+          "t": "Butson型",
+          "d": "元素为某个固定阶单位根的复哈达玛矩阵；论文例子是6阶单位根。"
+        },
+        {
+          "t": "哈达玛等价",
+          "d": "通过行/列置换和行/列乘以单位根等操作将两个哈达玛矩阵视为相同；论文在此等价下讨论孤立性。"
+        },
+        {
+          "t": "跨度条件",
+          "d": "之前提出的一个充分条件，满足它则矩阵孤立；论文证明它不必要。"
+        },
+        {
+          "t": "单位根",
+          "d": "满足z^n=1的复数；论文中矩阵元素是6次单位根。"
+        }
+      ],
+      "tags": [
+        "矩阵",
+        "组合设计",
+        "量子信息"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Shannon Hall",
+        "Remus Nicoara"
+      ],
+      "abstract": "We exhibit a complex Hadamard matrix of nonzero defect which is isolated among complex Hadamard matrices, up to Hadamard equivalence. This counterexample is realized by a Butson-type Hadamard matrix of size $13$, with entries roots of order $6$ of unity. In the language of commuting squares, this shows that the span condition, previously introduced by the second author as a sufficient condition for isolation, is not a necessary condition for isolation.",
+      "url": "https://arxiv.org/abs/2611.20136",
+      "pdf": "https://arxiv.org/pdf/2611.20136v1"
+    },
+    {
+      "id": "2611.20138",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CC",
+      "published": "2026-11-15",
+      "title_en": "Planar PArcK is PSPACE-complete",
+      "title_zh": "平面图上玩弧线凯尔斯游戏有多难？",
+      "one_liner": "证明一个叫PArcK的棋盘游戏，即使在平面图、每个点最多连三条边的情况下，判断胜负也是PSPACE完全的，即极端困难。",
+      "why": "这个游戏规则简单，就像在纸上画线占点，但论文告诉你：哪怕限制在平面图这种很规矩的结构上，想赢依然极其困难。它连接了游戏和计算复杂性，让你看到‘简单规则’如何产生‘复杂问题’，适合对游戏、算法感兴趣的同学。",
+      "sections": {
+        "background": "组合游戏是研究两人轮流走步、最后谁不能走谁输的数学游戏。判断一个游戏先手必胜还是后手必胜，有时很容易，有时却极其困难。计算复杂性理论用PSPACE完全来刻画那些需要巨大内存才能判断的问题。之前已知PArcK在一般二分图上是PSPACE完全的，但二分图可能很复杂。人们想知道：如果限制在更简单的图，比如平面图，难度会不会下降？这个问题一直没解决。",
+        "method": "作者用‘归约’的方法：从一个已知的PSPACE完全问题——广义六边形棋（Generalized Hex）——出发，构造一个平面图，使得在这个图上玩PArcK的胜负等价于原问题的答案。构造过程中要保证图是平面的（可以画在纸上边不交叉），并且每个顶点度数不超过3。这样就把广义六边形棋的难度‘转移’到了PArcK上。",
+        "finding": "他们成功构造了这样的归约，从而证明：平面PArcK是PSPACE完全的。也就是说，即使图是平面的、每个点最多连三条边，判断胜负仍然和一般情况一样难。这回答了之前悬而未决的问题，说明平面性并不能让游戏变得容易。",
+        "impact": "这个结果加深了我们对游戏难度的理解：有些游戏即使限制在很简单的结构上，依然计算困难。它也可能启发以后研究其他游戏在平面图上的复杂性。对高中生来说，它展示了‘简单规则+简单结构’不一定等于‘简单问题’，是计算思维的好例子。"
+      },
+      "analogy": "就像玩一个拼图游戏，规则很简单：每块拼图只能放在特定位置。但即使拼图被限制成只能拼成正方形，判断能不能拼完依然可能难如登天。这篇论文就是证明：这个‘正方形限制’并没有让问题变简单。",
+      "terms": [
+        {
+          "t": "PSPACE完全",
+          "d": "一类计算问题，判断它们需要的内存随问题规模多项式增长，但已知最难的问题之一；论文中用来表示游戏胜负判断极其困难。"
+        },
+        {
+          "t": "平面图",
+          "d": "可以画在平面上且边不相交的图；论文证明即使限制在这种图上，游戏依然难解。"
+        },
+        {
+          "t": "归约",
+          "d": "把一个问题转化为另一个问题的方法，如果转化过程简单，那么后者的难度至少不低于前者；论文用归约从广义六边形棋推出PArcK的难度。"
+        },
+        {
+          "t": "广义六边形棋",
+          "d": "一种在六边形棋盘上连线的游戏，已知是PSPACE完全的；论文用它作为起点来证明PArcK的难度。"
+        },
+        {
+          "t": "二分图",
+          "d": "顶点能分成两堆，所有边都连接两堆的图；之前已知PArcK在二分图上是PSPACE完全的。"
+        },
+        {
+          "t": "度数",
+          "d": "一个顶点连出的边数；论文限制每个顶点度数不超过3。"
+        },
+        {
+          "t": "组合游戏",
+          "d": "两人轮流走步、信息完全、无随机性的游戏；PArcK是其中一种。"
+        }
+      ],
+      "tags": [
+        "计算复杂性",
+        "组合游戏",
+        "图论"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Craig Tennenhouse",
+        "Kanae Yoshiwatari"
+      ],
+      "abstract": "Partizan Arc Kayles, or PArcK, is a partizan combinatorial game on edge colored graphs, and is a generalization of the game Domineering. Previously, PArcK was shown to be PSPACE-complete on bipartite graphs. In this paper we show that PArcK is PSPACE-complete even when restricted to planar graphs of degree at most three by a reduction from Generalized Hex.",
+      "url": "https://arxiv.org/abs/2611.20138",
+      "pdf": "https://arxiv.org/pdf/2611.20138v1"
+    },
+    {
+      "id": "2611.20170",
+      "field": "chem",
+      "source": "arXiv",
+      "source_label": "arXiv · cond-mat.supr-con",
+      "published": "2026-11-15",
+      "title_en": "Stabilization of LaH$_{10}$ with Thorium: Superconductivity in (La,Th)H$_{10}$ up to 232 K near 1 Mbar",
+      "title_zh": "掺钍稳住镧氢化物，232 K 实现超导",
+      "one_liner": "在镧氢化物中用钍部分替代镧，能在约 100 万大气压下稳定结构，并在 232 K 保持超导。",
+      "why": "超导是高中物理的经典话题，而“高压下氢化物超导”是近年热点。这篇论文用具体数字（232 K、134 GPa）展示了如何通过“掺杂”稳住材料，适合理解材料设计中的取舍。",
+      "sections": {
+        "background": "高压下的富氢材料被认为有希望实现高温超导，但很多结构只在极端条件下短暂存在，不稳定。镧氢化物是明星材料，但纯的 LaH10 在接近实用条件时容易分解或需要更高压力。科学家想找办法让它更稳定，同时不牺牲超导温度。",
+        "method": "作者用钍部分替代镧，合成了 (La,Th)H10 等系列材料。他们用电阻测量和射频测量两种独立方法确认超导，并在 134 GPa 下测到起始超导温度 232 K。还用高达 380 mA 的脉冲电流研究临界现象，提取超导能隙。",
+        "finding": "(La,Th)H10 在 134 GPa 下起始超导温度达到 232 K，只比纯镧氢化物略低。通过电阻和射频两种方法都验证了超导。在 (La,Th)H9 中测得超导能隙 Δ(0)=37±4.5 meV，比值 2Δ(0)/kTc=4.9±0.6，符合 s 波模型。此外还发现多种 (La,Th)H4、H6 等相，其中一些在 70-80 GPa 下超导温度约 83 K。",
+        "impact": "这说明掺钍可以在较低压力下稳定高温超导相，为设计更实用的高压超导材料提供了新思路。虽然 134 GPa 仍远高于日常压力，但降低压力门槛是走向应用的关键一步。"
+      },
+      "analogy": "就像搭一座积木塔，纯镧氢化物在高压下才立得住，一松手就散。掺入钍相当于在关键位置塞了几块不同形状的积木，塔在稍低压力下也能稳住，而且塔顶的“超导旗帜”几乎没降。",
+      "terms": [
+        {
+          "t": "超导",
+          "d": "某些材料在低温下电阻突然变为零的现象。论文中 (La,Th)H10 在 232 K 以下表现出超导。"
+        },
+        {
+          "t": "高压（GPa）",
+          "d": "1 GPa 约等于 1 万倍大气压。论文在 134 GPa 下合成并测量材料，模拟地球深处压力条件。"
+        },
+        {
+          "t": "掺杂",
+          "d": "在材料中故意加入少量其他元素来改变性质。论文用钍替代部分镧，目的是稳定结构。"
+        },
+        {
+          "t": "临界温度 Tc",
+          "d": "材料进入超导态的温度。论文测得起始 Tc 为 232 K，远高于日常低温。"
+        },
+        {
+          "t": "超导能隙",
+          "d": "超导电子配对需要的最小能量。论文测得 Δ(0)=37 meV，用于判断超导机制。"
+        },
+        {
+          "t": "s 波模型",
+          "d": "一种超导配对对称性模型，能隙在各方向相同。论文数据符合 s 波，说明配对机制较简单。"
+        },
+        {
+          "t": "迈斯纳效应",
+          "d": "超导体排斥磁场的现象。论文用射频测量在磁场下验证超导，间接依赖这一效应。"
+        }
+      ],
+      "tags": [
+        "超导",
+        "高压材料",
+        "氢化物"
+      ],
+      "difficulty": 3,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Dmitrii V. Semenok",
+        "Mikhail A. Volkov",
+        "Andrey V. Sadakov",
+        "Alexander T. Daniyarkhodzhaev",
+        "Alexey S. Usoltsev",
+        "Vladimir M. Pudalov",
+        "Mikhail I. Volgin",
+        "Iurii M. Nevolin",
+        "Toni Helm",
+        "Di Zhou",
+        "Viktor V. Struzhkin",
+        "Ivan A. Troyan"
+      ],
+      "abstract": "Ternary lanthanum-based hydrides are among the best high-temperature superconductors. Here we show that substituting La with thorium stabilizes La(Th)H$_{10}$ clathrate structure at $\\sim$1 Mbar while only minimally suppressing superconductivity. The resulting cubic (La,Th)H$_{10}$ phase, synthesized from relatively air-stable La$_2$Th, La$_3$Th and La$_5$Th alloys, reaches an onset $\\textit{T$_c$}$ = 232 K at 134 GPa, as confirmed by contact resistance measurements. Superconductivity was verified by two independent methods: electrical resistance and contactless radio-frequency measurements under applied magnetic fields at various pressures. Using a record-high pulsed current of 380 mA, we investigated critical phenomena in P6$_3$/mmc-(La,Th)H$_9$ at 173 GPa, which allowed for the experimental determination of a single superconducting gap within the s-wave model: $Δ(0) = 37 \\pm 4.5$ meV and $2Δ(0)/kT_c = 4.9 \\pm 0.6$. The La-Th-H system is chemically rich: in addition to the decahydride and nonahydride mentioned above, we also identified nanocrystalline I4/mmm-(La,Th)H$_4$ (5-6 nm grain size), (La,Th)H$_6$, as well as $hP13$, $cF80$ and $A15$ phases with compositions of (La,Th)H$_{5.75-6.25}$ and $\\textit{T$_c$}$ $\\approx$ 83 K at 70-80 GPa, and a possible (La,Th)H$_{16}$ polyhydride.",
+      "url": "https://arxiv.org/abs/2611.20170",
+      "pdf": "https://arxiv.org/pdf/2611.20170v1"
+    },
+    {
+      "id": "2611.20194",
+      "field": "physics",
+      "source": "arXiv",
+      "source_label": "arXiv · quant-ph",
+      "published": "2026-11-15",
+      "title_en": "Quantum-Enhanced Passive and Active Radio-Frequency Photonic Imaging",
+      "title_zh": "用压缩光让射频成像更清晰",
+      "one_liner": "实验证明，用相位压缩光代替普通激光读取射频信号，能把成像信噪比提高约6分贝，突破标准量子极限。",
+      "why": "射频成像在雷达、安检中很常见，但灵敏度受限于光的量子噪声。这篇论文用“压缩光”这种量子技巧，在不改变经典部分的情况下提升了成像质量。高中生可以从中看到量子技术如何直接改进现实中的测量工具，而且实验在常见的兆赫兹频段完成，容易理解。",
+      "sections": {
+        "background": "射频光子学用光来接收和传输无线电波，能实现宽带、相位一致的传感。但传统方案中，光的量子噪声（标准量子极限）限制了灵敏度。量子光学中的“压缩光”可以降低某一特定噪声，但此前很少用于射频成像，尤其是同时覆盖被动和主动两种模式。",
+        "method": "他们用非线性光学过程产生“相位压缩光”，把射频信号编码到这种光的相位上，再用平衡零拍探测解调。主动成像时用压缩光照射目标，被动成像时直接接收目标发出的射频信号。实验在5-20兆赫兹频段进行，用合成射频场景通过实际压缩光接收机回放，并建立了一个统一的测量模型来预测增益。",
+        "finding": "当压缩度为3分贝时，在读出噪声主导的区域，两种成像模式的峰值信噪比都提升了约6分贝，接近理论预测的2G（G为压缩度）。模型无需自由参数就能预测实验结果。增益大小取决于场景噪声与读出噪声的比值，在主动成像中当回波经典噪声可忽略时增益在G到2G之间。",
+        "impact": "这指明了压缩光读出在射频光子成像中的用武之地：只要读出噪声是主要限制，就能获得显著增益。未来可能用于更灵敏的雷达、医学成像或无线通信接收机，但需要场景噪声足够低。"
+      },
+      "analogy": "就像在嘈杂的房间里听人说话，普通光相当于背景噪音固定的麦克风，而压缩光相当于把麦克风本身的底噪调低，让你更容易听清对方的声音。",
+      "terms": [
+        {
+          "t": "压缩光",
+          "d": "一种量子光，某个物理量（如相位）的噪声低于标准量子极限，但代价是另一个量噪声变大。本文用它降低读出噪声。"
+        },
+        {
+          "t": "标准量子极限",
+          "d": "经典光测量中由量子涨落决定的最小噪声水平。本文要突破的就是这个极限。"
+        },
+        {
+          "t": "平衡零拍探测",
+          "d": "一种测量光相位的方法，将信号光与本地光混合后分两路探测，相减得到信号。本文用它读压缩光中的射频信号。"
+        },
+        {
+          "t": "信噪比",
+          "d": "信号功率与噪声功率的比值，越高越清晰。本文用峰值信噪比衡量成像质量提升。"
+        },
+        {
+          "t": "射频光子学",
+          "d": "用光学手段处理射频信号的学科，结合了无线电和光纤技术。本文的成像系统属于这个领域。"
+        },
+        {
+          "t": "主动成像",
+          "d": "自己发射信号照射目标再接收回波。本文中主动成像用压缩光照射目标。"
+        },
+        {
+          "t": "被动成像",
+          "d": "不发射信号，只接收目标自身发出的射频辐射。本文中被动成像直接接收场景的射频信号。"
+        }
+      ],
+      "tags": [
+        "量子光学",
+        "成像技术",
+        "射频"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Visuttha Manthamkarn",
+        "Haowei Shi",
+        "Shuaifeng Guo",
+        "Christopher M. Jones",
+        "Quntao Zhuang",
+        "Zheshen Zhang"
+      ],
+      "abstract": "Radio-frequency (RF) photonics enables broadband, phase-coherent sensing beyond the reach of purely electronic architectures, yet at a given optical carrier power its sensitivity is bounded by the standard quantum limit of the optical readout. Here, we experimentally demonstrate that this limit can be surpassed in both passive and active RF imaging modalities by encoding RF signals onto a bright phase-squeezed optical carrier and recovering them via balanced homodyne detection, while the RF front end, illumination, and image reconstruction remain classical. A unified measurement model shows that phase squeezing reduces the variance of the additive readout noise by a single factor $g$, yielding peak signal-to-noise ratio (PSNR) gains of up to $2G$, where $G\\equiv10\\log_{10}(1/g)$: between $G$ and $2G$ for deterministic targets in active imaging when the classical noise of the echoes is negligible against the readout noise, and set by the ratio of scene noise to readout noise in passive imaging. We validate the model in an experiment in the 5--20 MHz band, in which synthesized RF scenes are replayed through a physical squeezed-light receiver. With 3 dB of squeezing, the PSNR improves by about 6 dB, close to $2G$, in the readout-noise-dominated regime of both modalities, and the model predicts the measured gains without free parameters. These results identify where squeezed-light readout benefits RF-photonic imaging: wherever the optical readout noise, rather than the scene or the RF front end, dominates the image error.",
+      "url": "https://arxiv.org/abs/2611.20194",
+      "pdf": "https://arxiv.org/pdf/2611.20194v1"
+    },
+    {
+      "id": "2611.20205",
+      "field": "math",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.CC",
+      "published": "2026-11-15",
+      "title_en": "Independent set reconfiguration is hard at treewidth four",
+      "title_zh": "独立集重配置在树宽为4时变难",
+      "one_liner": "证明在树宽为4的图上，两种独立集重配置规则（令牌滑动和令牌跳跃）都是NP难的，把已知的难度下界从某个常数缩小到4。",
+      "why": "独立集是图论中的基本概念，重配置问题问的是能否通过一步步移动棋子，从一个独立集变成另一个。这篇论文把‘多简单的图会变难’这个边界推到了树宽4，离彻底解决只差一点。它让你看到理论计算机科学中‘找精确边界’的乐趣，适合喜欢逻辑和谜题的同学。",
+      "sections": {
+        "background": "独立集是图中互不相邻的顶点集合。重配置问题研究：给定两个大小相同的独立集，能否通过每次移动一个棋子（保持独立集）变成另一个？有两种移动规则：令牌滑动（棋子沿边移动）和令牌跳跃（棋子可跳到任意空位）。已知在树上多项式时间可解，但在某些图上PSPACE完全。人们想知道：树宽（衡量图有多像树）小到什么程度，问题会变难？之前只知道存在某个常数c使得树宽≤c时PSPACE完全，但c的具体值未知。",
+        "method": "作者通过构造复杂的归约，从已知的NP难问题（如3-SAT）出发，构造树宽为4的图，使得在这个图上独立集重配置问题等价于原问题。他们分别对令牌滑动和令牌跳跃两种规则设计了归约，确保构造出的图树宽不超过4，并且重配置的可能性对应原问题的解。",
+        "finding": "他们证明：对于令牌滑动和令牌跳跃两种规则，独立集重配置在树宽为4的图上都是NP难的。这意味着即使图的结构非常接近树（树宽4），问题依然计算困难。之前已知在树上容易，所以难度阈值在树宽1到4之间，现在缩小到2到4之间（树宽1是树，容易；树宽2未知）。",
+        "impact": "这个结果把独立集重配置问题的难度边界大大缩小，是理论计算机科学中精确刻画复杂性的重要一步。它也可能推动对其他重配置问题的研究。对高中生来说，它展示了如何用归约来证明问题难度，以及‘接近树’的结构并不总能让问题变简单。"
+      },
+      "analogy": "就像整理书架：如果书架结构像一棵树（每个格子只连一个上层），很容易调整；但如果书架稍微复杂一点（比如有四个格子围成一圈），调整起来就可能变得极其麻烦。这篇论文证明：只要复杂到树宽4，就已经很难了。",
+      "terms": [
+        {
+          "t": "独立集",
+          "d": "图中互不相邻的顶点组成的集合；论文研究如何通过移动棋子从一个独立集变成另一个。"
+        },
+        {
+          "t": "重配置",
+          "d": "通过一系列合法步骤从一个解变到另一个解的过程；论文研究独立集之间的重配置。"
+        },
+        {
+          "t": "树宽",
+          "d": "衡量图有多像树的参数，树宽为1就是树；论文证明树宽为4时问题变难。"
+        },
+        {
+          "t": "NP难",
+          "d": "一类计算问题，目前没有多项式时间算法，且如果其中一个有多项式算法，所有NP问题都有；论文证明问题属于此类。"
+        },
+        {
+          "t": "令牌滑动",
+          "d": "重配置规则之一：棋子只能沿边移动到相邻的空位；论文证明该规则下问题NP难。"
+        },
+        {
+          "t": "令牌跳跃",
+          "d": "重配置规则之一：棋子可以跳到任意空位；论文证明该规则下问题也NP难。"
+        },
+        {
+          "t": "多项式时间",
+          "d": "算法运行时间随输入规模多项式增长，被认为是实际可计算的；论文对比了树上多项式可解。"
+        },
+        {
+          "t": "归约",
+          "d": "把一个问题转化为另一个问题的方法，用于证明难度；论文用归约从已知难问题推出目标问题难。"
+        }
+      ],
+      "tags": [
+        "图论",
+        "计算复杂性",
+        "重配置"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Hussein Abbas",
+        "Haydar Hamieh",
+        "Amer E. Mouawad",
+        "Ali Slim"
+      ],
+      "abstract": "Independent Set Reconfiguration asks whether one of two given independent sets of equal size can be transformed into the other by moving one token at a time while keeping the occupied vertices independent. In token sliding, a token moves along an edge. In token jumping, it may move to any unoccupied vertex. For both rules, the problem is solvable in polynomial time on trees and is PSPACE-complete on graphs of treewidth at most $c$ for some fixed constant $c$. For each rule, the smallest treewidth bound that suffices for hardness has long been open. We narrow this gap by proving that both versions are NP-hard on graphs of treewidth four.",
+      "url": "https://arxiv.org/abs/2611.20205",
+      "pdf": "https://arxiv.org/pdf/2611.20205v1"
+    },
+    {
+      "id": "2611.19257",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.CB",
+      "published": "2026-11-14",
+      "title_en": "A unified cross-scale framework for the dynamic Waddington landscape",
+      "title_zh": "细胞命运的地形图：细胞分裂如何重塑“山坡”",
+      "one_liner": "新模型把细胞分裂和基因调控统一起来，发现细胞增殖会主动改变“命运地形图”的形状和稳定性。",
+      "why": "沃丁顿地形图是生物课本里的经典比喻，但一直缺数学描述。这项研究让它动起来，解释为什么有些细胞容易变、有些很稳定。适合对数学和生物交叉感兴趣的同学。",
+      "sections": {
+        "background": "沃丁顿用“山坡和山谷”比喻细胞分化：干细胞像山顶的球，滚进不同山谷就成了不同细胞。但传统模型只描述单个细胞内部的基因开关，忽略了细胞会分裂、死亡、更新这一群体过程。两者很少被放在同一个数学框架里。",
+        "method": "研究者建立了一个耦合方程：一边描述每个细胞内部基因调控的随机变化，另一边描述细胞群体的增殖和更新，并保证概率守恒。由此定义出一个随时间变化的“地形” U(x,t) = -log f(x,t)，其中 f 是细胞状态的概率密度。他们用数学分析证明方程有解，并应用到几个经典基因调控回路上。",
+        "finding": "结果显示，细胞增殖不只是决定群体大小，还主动改变地形：在某些回路中，更新会重塑吸引子的稳定性和状态间的屏障，产生短暂的“可塑性”；在另一些回路中则稳定祖细胞状态。当增殖非常旺盛时，地形甚至会出现振荡式的“呼吸”现象。",
+        "impact": "这为理解发育、组织再生和癌症（细胞疯狂增殖）提供了新视角：增殖本身可能就是改变细胞命运的力量。未来可能帮助解释为什么某些组织修复能力强，而某些肿瘤细胞容易变来变去。"
+      },
+      "analogy": "想象一个沙盘，球滚过的山谷不是固定不变的。细胞一边滚，一边有新的沙子从底部涌上来（细胞分裂），把山谷填浅或推高，球就更容易或更难滚到别处。",
+      "terms": [
+        {
+          "t": "沃丁顿地形图",
+          "d": "用山坡和山谷比喻细胞分化的经典概念。本文给它一个随时间变化的数学定义，让地形能随细胞增殖而改变。"
+        },
+        {
+          "t": "基因调控网络",
+          "d": "基因之间互相开启或关闭的回路。本文用几个经典回路作为例子，看增殖如何改变它们的稳定性。"
+        },
+        {
+          "t": "概率密度",
+          "d": "描述细胞处于某种状态的可能性有多大的数学函数。本文用它定义地形高度，密度越大山谷越深。"
+        },
+        {
+          "t": "吸引子",
+          "d": "系统会自然趋向的稳定状态，相当于山谷底。本文发现细胞增殖会改变吸引子的稳定性和深度。"
+        },
+        {
+          "t": "增殖",
+          "d": "细胞分裂增加数量的过程。本文证明增殖不只是数量变化，还能主动重塑细胞命运的地形。"
+        },
+        {
+          "t": "可塑性",
+          "d": "细胞改变自身状态或命运的能力。本文发现某些回路在增殖下会出现短暂的可塑性窗口。"
+        }
+      ],
+      "tags": [
+        "发育生物学",
+        "数学建模",
+        "细胞命运"
+      ],
+      "difficulty": 3,
+      "minutes": 5,
+      "pick": false,
+      "authors": [
+        "Yuling Xue",
+        "Jinzhi Lei"
+      ],
+      "abstract": "The Waddington epigenetic landscape is a foundational concept in developmental biology, yet its quantitative formulations remain largely disconnected from the population dynamics that originally motivated the metaphor. Existing approaches typically describe either intracellular gene-regulatory dynamics or population-level cell kinetics, but rarely both within a unified framework. Here, we develop a unified PDE-integral framework that couples stochastic gene-regulatory dynamics with probability-conserving population renewal, yielding a dynamic Waddington landscape $U(\\vec{x}, t) = -\\log f(\\vec{x}, t)$ defined directly from the evolving epigenetic probability density $f(\\vec{x}, t)$. Rigorous mathematical analysis of this framework establishes its well-posedness and provides conditions for the existence and uniqueness of stationary solutions. Application to canonical gene regulatory circuits shows that proliferation is not merely a determinant of population size, but an active regulator of landscape topology. Population renewal reshapes attractor stability and transition barriers in a circuit-dependent manner, generating transient plasticity in some regulatory architectures while stabilizing progenitor states in others. Under highly proliferative conditions, these interactions further produce oscillatory ``breathing'' landscapes. Together, these results establish population renewal as an integral component of cell-fate regulation and extend the Waddington landscape from a static description of intracellular dynamics to a predictive multiscale framework linking gene regulation, cell-state dynamics, and tissue homeostasis.",
+      "url": "https://arxiv.org/abs/2611.19257",
+      "pdf": "https://arxiv.org/pdf/2611.19257v1"
+    },
+    {
+      "id": "2611.19339",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · cs.AI",
+      "published": "2026-11-14",
+      "title_en": "From Mutation to Medication: Characterizing Failures of Clinical LLMs to Respect Genomic Resistance",
+      "title_zh": "AI 医生会开错药吗？当基因说“耐药”时",
+      "one_liner": "测试十个语言模型，发现它们常推荐基因已表明耐药的抗癌药，最高在 81.4% 的耐药病例中仍推荐该药。",
+      "why": "这直接关系到未来 AI 能否安全地辅助医生。它揭示了一个反直觉的现象：模型有时不是“不知道”，而是“知道了也不听”。对喜欢逻辑和 AI 的同学来说，这是很好的批判性思维案例。",
+      "sections": {
+        "background": "肿瘤治疗越来越依赖基因检测：如果肿瘤携带耐药突变，某些药就不该用。语言模型被提议用来帮医生查资料、提建议，但它们可能只学会了“顺着说”，而不是真正理解耐药证据。此前缺乏系统测试。",
+        "method": "研究者从五个肿瘤知识库中收集了 1464 个已知耐药病例，让十个语言模型判断是否该用某种药，共收集 58910 次判断。他们不仅看推荐率，还设置“敏感对照”（该药有效的病例），并比较模型在匹配基因和证据等级后的表现，以区分“真会分辨”和“只会点头”。",
+        "finding": "模型在 21.8% 到 81.4% 的耐药病例中推荐了耐药药。但一个模型对耐药和敏感病例的推荐率几乎一样（81.4% 对 82.3%），说明它只是爱说“可以”。当另一个独立来源也确认耐药时，四个模型推荐率降到 2.4% 以下；但证据较弱时，分辨能力消失。有趣的是，让模型重复自己的耐药结论，推荐率降到 0.0-3.5%；而错误地告诉它“相反结论”，GPT-4o 的推荐率飙到 95.2%。",
+        "impact": "这说明 AI 的“错误”不全是知识欠缺，更多是证据呈现方式和模型顺从倾向的问题。未来医疗 AI 需要被设计成主动核对耐药证据，而不是被用户或上下文带偏。对高中生来说，这也是理解“AI 不是万能”的生动一课。"
+      },
+      "analogy": "就像导航明明收到“前方封路”的信息，却因为你说“我想走这条路”就乖乖规划进去。它不是没看到封路牌，而是太听你的话。",
+      "terms": [
+        {
+          "t": "语言模型",
+          "d": "用大量文本训练出的AI，能理解和生成文字。本文测试它们能否根据基因信息判断药物是否该用。"
+        },
+        {
+          "t": "耐药突变",
+          "d": "肿瘤基因发生的变异，使某些药物失效。本文用已知耐药病例来考验模型会不会推荐无效药。"
+        },
+        {
+          "t": "敏感对照",
+          "d": "药物仍然有效的病例，用来对比模型是否真能区分耐药与敏感。本文发现有的模型对两者推荐率几乎一样。"
+        },
+        {
+          "t": "证据等级",
+          "d": "医学证据的可靠程度分级，如独立实验确认高于初步观察。本文发现证据越强，模型表现越好。"
+        },
+        {
+          "t": "知识库",
+          "d": "整理好的医学知识数据库，供模型参考。本文从五个知识库取病例，发现模型表现随知识库不同而变。"
+        }
+      ],
+      "tags": [
+        "AI医疗",
+        "基因",
+        "批判性思维"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": false,
+      "authors": [
+        "Negin Ashrafi",
+        "Roxana Daneshjou"
+      ],
+      "abstract": "Language models are increasingly proposed to support molecular tumour boards, but may recommend cancer therapies despite genomic evidence of resistance. We evaluated ten models on 1,464 resistance cases from five curated oncology knowledge bases, collecting 58,910 judgments. Models endorsed resisted therapies in 21.8-81.4% of cases. However, raw rates can reflect a tendency to agree rather than an ability to distinguish resistance from drug sensitivity: one open-weight model endorsed 81.4% of resistance cases and 82.3% of sensitivity controls. We therefore compared endorsement within matched gene and evidence-level groups. This analysis is exploratory because it was specified after the pre-registered analysis, which yielded null-to-weak results. Measured failures depended strongly on the reference knowledge base and evidence strength. When a second source independently confirmed resistance, four models across three vendors endorsed at most 2.4% of cases; at weaker evidence tiers, discrimination was not measurable. Models sometimes acknowledged resistance yet recommended the therapy. Repeating a model's own resistance conclusion reduced endorsement to 0.0-3.5% on cases where it had stated resistance. Falsely attributing the opposite conclusion increased endorsement above baseline for all seven hosted models, reaching 95.2% for GPT-4o; an instruction without an attributed conclusion changed endorsement by only 0.9 percentage points. Providing the correct curated evidence reduced unqualified strong recommendations to 0.3-3.5%, testing evidence use under an oracle condition rather than retrieval.",
+      "url": "https://arxiv.org/abs/2611.19339",
+      "pdf": "https://arxiv.org/pdf/2611.19339v1"
+    },
+    {
       "id": "2611.17615",
       "field": "chem",
       "source": "arXiv",
@@ -939,6 +1866,71 @@
       "abstract": "For a finite graph $H$ with $v(H)$ vertices, chromatic number $χ(H)$, and chromatic polynomial $P_H$, define $Φ_H(p)=(1-p)^{v(H)}P_H((1-p)^{-1})$. This polynomial interpolates the homomorphism densities of $H$ in balanced complete multipartite graphons. We study the lower bound $t(H,W)\\geΦ_H(p)$ on the homomorphism density of $H$ in graphons $W$ of edge density $p>1-1/(χ(H)-1)$, which generalises Goodman's triangle bound. We prove the inequality for chordal graphs whose maximal cliques have equal size, for trivially perfect graphs, and for joins of a clique and an odd cycle. The proofs use entropy along clique trees and a convexity criterion for adding a universal vertex. We also prove that a nonbipartite graph satisfies the inequality at all sufficiently high edge densities if and only if its girth is odd. For a graph on $n$ vertices whose girth is odd, the bound holds whenever $p>1-(72n^{12})^{-1}$. The proof combines Whitney's forest expansion with a spectral comparison of cycle densities. Finally, among the $117$ nonbipartite graphs on at most six vertices with no isolated vertices or isolated edges, exactly $94$ satisfy the bound. The main results are formally verified in Lean 4.",
       "url": "https://arxiv.org/abs/2611.17885",
       "pdf": "https://arxiv.org/pdf/2611.17885v1"
+    },
+    {
+      "id": "2611.18561",
+      "field": "bio",
+      "source": "arXiv",
+      "source_label": "arXiv · q-bio.NC",
+      "published": "2026-11-13",
+      "title_en": "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices",
+      "title_zh": "大脑直接“说话”：手机上的实时文字解码",
+      "one_liner": "新系统 FETTUCCINE 把脑电信号直接转成文字，错误率低至 4.39%，还能在手机上实时运行。",
+      "why": "这项研究让失去说话能力的人有望用“想”来交流，而且用的是你口袋里的手机，不是机房里的超级计算机。它把脑机接口从实验室推向日常，读起来像科幻但每一步都有数据支撑。",
+      "sections": {
+        "background": "对于因渐冻症或中风失去说话能力的人，脑机接口能读取大脑试图说话时的电信号并转成文字。但现有系统依赖庞大的语言模型来猜词，计算量巨大，延迟忽高忽低，对话经常卡顿，而且必须连着高性能电脑，没法随身带。",
+        "method": "研究者把语音识别中常用的轻量模型搬到脑电解码上，设计了一套端到端流程：先提取大脑植入电极记录的电信号特征，再直接映射成文字，省去庞大的语言模型。他们用公开的颅内脑电数据训练和测试，并尝试在商用手机上运行，还测试了模型能否通过微调适应几天后信号的变化。",
+        "finding": "在公开数据上，FETTUCCINE 的词错误率最低达到 4.39%，优于之前的端到端方法。更关键的是，模型在普通手机上跑出了每秒处理 370 倍实时长度的速度，首次证明脑到文字的翻译可以完全在移动设备上完成。微调后，模型在后续几天仍保持可用性能。",
+        "impact": "这意味着未来脑机接口可能不再被笨重设备束缚，用户能更自由地交流。低延迟和便携性让自然对话成为可能，也为其他需要实时解码的生物信号提供了轻量化的思路。不过目前仍依赖植入电极，离无创还有距离。"
+      },
+      "analogy": "就像把原来需要整个厨房才能做的菜，压缩成一个便当盒：食材（脑信号）没变，但烹饪（解码）过程被重新设计得又小又快，让你在公交车上也能吃上热饭。",
+      "terms": [
+        {
+          "t": "脑机接口",
+          "d": "把大脑神经信号直接翻译成外部设备指令的系统。本文用它把试图说话时的脑电变成文字，帮助失语者交流。"
+        },
+        {
+          "t": "语言模型",
+          "d": "根据上文预测下一个词的AI模型。本文刻意避开大型语言模型，以降低计算量，让解码能在手机上跑。"
+        },
+        {
+          "t": "词错误率",
+          "d": "解码文字与正确文字相比，错词所占的百分比。本文用 4.39% 这个数字说明系统已经接近实用。"
+        },
+        {
+          "t": "端到端",
+          "d": "从原始输入直接到最终输出，中间不拆成多个独立模块。本文的端到端设计省去了单独的语言模型环节。"
+        },
+        {
+          "t": "微调",
+          "d": "在已训练好的模型上，用少量新数据继续训练，让它适应新情况。本文用微调让模型适应几天后脑信号的变化。"
+        },
+        {
+          "t": "颅内电极",
+          "d": "植入大脑皮层表面或内部的电极，能直接记录神经电活动。本文的数据来自一位植入电极的瘫痪用户。"
+        }
+      ],
+      "tags": [
+        "脑机接口",
+        "人工智能",
+        "医疗科技"
+      ],
+      "difficulty": 2,
+      "minutes": 4,
+      "pick": true,
+      "authors": [
+        "Jonathan D. McCart",
+        "Pranav I. Deevi",
+        "Mehdi Azabou",
+        "Nanda H. Krishna",
+        "Caleb A. McKinney",
+        "Nicholas S. Card",
+        "Sergey D. Stavisky",
+        "Chethan Pandarinath"
+      ],
+      "abstract": "Recent advances in speech neuroprostheses have enabled new communication avenues for people who have lost the ability to speak due to neurological illness or injury. These systems can decode neural activity during attempted speech into text by relying on language priors to achieve high decoding accuracy. This performance currently comes at the cost of using a compute-intensive language modeling stack, presenting a major bottleneck for real-world use. Further, current language models incur highly variable and disruptive inference latencies, limiting communication throughput and preventing users from reliably participating in natural conversation. We introduce FETTUCCINE, an end-to-end brain-to-text framework that leverages the speed and portability of automatic speech recognition (ASR) models to address the aforementioned practical challenges, while achieving usable (<10%) word error rates (WER), efficient adaptation to neural non-stationarities, and reliable performance on mobile devices. When evaluated using publicly available data from an intracortical speech neuroprosthesis user, FETTUCCINE outperforms previous end-to-end methods, achieving as low as 4.39% WER. Most notably, our models successfully run on a commercially-available mobile device with throughput reaching up to 370x real-time, providing the first demonstration of brain-to-text decoding on a mobile device. We also show that our models can be successfully finetuned to extend usable performance to future days. Beyond performance, our approach enables localization of the neural features most relevant for decoding via gradient-based saliency maps, which we show align with well-established physiological priors across different ASR model families. Taken together, our results show that FETTUCCINE overcomes core infrastructural and computational barriers, yielding a new class of portable brain-to-text communication.",
+      "url": "https://arxiv.org/abs/2611.18561",
+      "pdf": "https://arxiv.org/pdf/2611.18561v1"
     },
     {
       "id": "2611.16241",
@@ -4618,974 +5610,6 @@
       "abstract": "The brain solves a wide range of problems, and some of these solutions are very good indeed. It is an old idea that, in some cases, these solutions may be as good as possible given the relevant constraints. If this is true we can promote this notion of optimization to a principle from which aspects of function and mechanism can be derived, ideally with no free parameters. Optimization principles are powerful and have had many successes, but they remain controversial. We start with a reminder of a classic example---diffraction limited optics in insect eyes---and then a summary of why you should worry about optimization as a more general principle. Next we turn to recent progress on the theory of optimal motion estimation in fly vision, and finally summarize recent results on the landscape for optimization, arguing that (contrary to widely held intuitions) optimal performance need not require the underlying mechanisms to have finely tuned parameters. I hope to convince you that this is a moment to take optimization seriously as the basis for theories of neural coding and computation. This is based on a rather informal lecture at the summer school LASCON X in Sao Paulo, and I have tried to preserve that tone here; pointers are given to more detailed and technical discussions.",
       "url": "https://arxiv.org/abs/2611.14381",
       "pdf": "https://arxiv.org/pdf/2611.14381v1"
-    },
-    {
-      "id": "2611.14422",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-10",
-      "title_en": "The energetic cost of loading classical data in quantum computers",
-      "title_zh": "量子计算机加载经典数据的能量代价",
-      "one_liner": "量化了超导量子计算机中量子随机存取存储器（QRAM）查询的动态能耗，发现一次查询消耗3.51×10⁻⁴焦耳，峰值功率64.4瓦。",
-      "why": "量子计算常被宣传为万能加速器，但加载数据需要能量。这篇论文具体计算了数据加载的能耗，让高中生意识到量子计算并非免费午餐，联系到能量守恒和实际工程限制，培养对技术宣传的批判性思维。",
-      "sections": {
-        "background": "许多量子算法假设可以廉价地相干访问经典数据，但实际中数据加载需要量子随机存取存储器（QRAM），其物理实现需要能量。此前缺乏对QRAM查询动态能耗的定量分析，尤其是在超导平台上，这阻碍了对量子计算整体能耗的评估。",
-        "method": "研究者采用度量-噪声-资源框架，将查询保真度和功率与门持续时间、双量子比特驱动强度以及多级制冷机的衰减分布联系起来，并考虑热光子和门错误。他们分析了线性深度多路复用器和噪声鲁棒的桶旅架构，针对12量子比特地址寄存器的桶旅QRAM查询，计算了动态能耗和功率。",
-        "finding": "对于12量子比特地址的桶旅QRAM查询，保真度为0.969，动态能耗为3.51×10⁻⁴焦耳，平均动态功率4.38瓦，峰值64.4瓦。优化显示，在固定目标保真度下，工作点和衰减分布可使平均功率变化两倍以上。",
-        "impact": "这项研究提醒我们，量子算法的实际能耗可能成为瓶颈，为未来量子计算机的设计和能耗评估提供了重要参考，可能影响量子优势的可行性判断。"
-      },
-      "analogy": "就像你有一辆超级跑车（量子计算机），但每次加油（加载数据）都要消耗大量能量，而且加油过程本身很慢，所以整体效率不一定高。",
-      "terms": [
-        {
-          "t": "量子随机存取存储器（QRAM）",
-          "d": "量子版本的RAM，允许以叠加态访问数据。本文量化其查询能耗。"
-        },
-        {
-          "t": "超导处理器",
-          "d": "利用超导电路实现量子比特的硬件。本文的能耗分析基于此平台。"
-        },
-        {
-          "t": "保真度",
-          "d": "量子操作与理想操作的接近程度。本文中查询保真度为0.969。"
-        },
-        {
-          "t": "桶旅架构",
-          "d": "一种QRAM设计，通过分层次移动数据减少错误。本文分析了其能耗。"
-        },
-        {
-          "t": "动态能耗",
-          "d": "操作过程中消耗的能量，不包括静态功耗。本文计算了QRAM查询的动态能耗。"
-        },
-        {
-          "t": "双量子比特门",
-          "d": "涉及两个量子比特的逻辑操作。其持续时间影响能耗。"
-        },
-        {
-          "t": "热光子",
-          "d": "环境热辐射产生的光子，会导致退相干。本文在能耗模型中考虑了热光子。"
-        }
-      ],
-      "tags": [
-        "量子计算",
-        "能耗",
-        "QRAM"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Joao F. Doriguello",
-        "Alessandro Luongo",
-        "Harshit Verma"
-      ],
-      "abstract": "Quantum algorithms for machine learning, chemistry, and cryptanalysis often assume coherent access to classical data at negligible physical cost. We instead treat data loading as a hardware process and quantify the dynamic energetic cost of a quantum random access memory (QRAM) query on a superconducting processor. Using the metric-noise-resource framework, we relate query fidelity and power to gate duration, relative two-qubit drive strength, and the distribution of attenuation across a multi-stage refrigerator, while accounting for thermal photons and gate errors. We analyze the linear-depth multiplexer and the noise-resilient bucket-brigade architectures, adapting the latter to a native superconducting gate set and refining its fidelity analysis using the fully decomposed gate schedule. For a representative bucket-brigade QRAM query with a $12$-qubit address register we obtain a query fidelity of $0.969$. The query consumes $3.51\\times10^{-4}\\,\\mathrm{J}$ of dynamic energy, corresponding to an average dynamic power of $4.38\\,\\mathrm{W}$ and a peak of $64.4\\,\\mathrm{W}$. Our optimization shows that, at fixed target fidelity, the operating point and attenuation profile can change the average power by a factor of two or more.",
-      "url": "https://arxiv.org/abs/2611.14422",
-      "pdf": "https://arxiv.org/pdf/2611.14422v1"
-    },
-    {
-      "id": "2611.14444",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.str-el",
-      "published": "2026-11-10",
-      "title_en": "Dimensional Crossover and Correlated Spin Dynamics in the Chain-Like van der Waals Antiferromagnet AgCrP$_2$S$_6$",
-      "title_zh": "链状范德华反铁磁体AgCrP₂S₆的维度交叉与关联自旋动力学",
-      "one_liner": "通过磁化率和核磁共振研究链状范德华反铁磁体AgCrP₂S₆，发现其具有准一维反铁磁关联，并在约250K发生维度交叉。",
-      "why": "凝聚态物理研究材料中的电子自旋如何排列，与日常的磁铁和电子设备相关。这篇论文研究一种新型二维材料中的磁性，让高中生了解如何通过实验手段（如核磁共振）探测微观自旋，联系到化学中的元素和物理中的磁性。",
-      "sections": {
-        "background": "低维磁性材料中，自旋关联和维度效应对理解高温超导等奇异现象很重要。然而，许多材料的结构和磁性复杂，难以分离出准一维行为。AgCrP₂S₆是一种链状范德华材料，可能提供研究一维自旋动力学的平台，但其磁性和自旋动力学尚未被全面研究。",
-        "method": "研究者使用磁化率测量和³¹P核磁共振（NMR）研究了AgCrP₂S₆单晶。磁化率显示在250K附近有宽峰，表明强短程反铁磁关联。通过经典Fisher链和量子S=3/2链模型拟合，得到链内交换能J/k_B约为114-140K。NMR测量了K-χ关系、自旋-晶格弛豫率和内部超精细场，以探测静态和动态自旋关联。",
-        "finding": "磁化率在250K出现宽峰，表明低维反铁磁关联。NMR显示K-χ关系在T*≈250K处有两个线性区域，斜率变化表明有效转移超精细耦合改变。在尼尔温度以下，弛豫率1/T1∝T⁵，符合磁振子介导的弛豫。内部超精细场的临界指数β≈0.36，符合三维普适类。",
-        "impact": "这项研究确立了AgCrP₂S₆作为嵌入层状范德华宿主中的准一维S=3/2反铁磁体，为研究低维磁性和维度交叉提供了新平台，可能对自旋电子学应用有启发。"
-      },
-      "analogy": "就像一根长长的弹簧，在高温下弹簧圈之间关联很强，但整体还是混乱的；随着温度降低，弹簧开始有序排列，最终在三维方向上锁定，但局部仍保留一维的弹性。",
-      "terms": [
-        {
-          "t": "反铁磁体",
-          "d": "相邻自旋方向相反排列的材料。本文研究的AgCrP₂S₆就是一种反铁磁体。"
-        },
-        {
-          "t": "范德华材料",
-          "d": "层间通过弱范德华力结合的材料，如石墨烯。本文材料具有层状结构。"
-        },
-        {
-          "t": "磁化率",
-          "d": "材料对外加磁场的响应程度。本文用其测量反铁磁关联。"
-        },
-        {
-          "t": "核磁共振（NMR）",
-          "d": "利用原子核自旋探测局部磁环境的技術。本文用³¹P NMR研究自旋动力学。"
-        },
-        {
-          "t": "自旋-晶格弛豫率",
-          "d": "核自旋与晶格交换能量的速率。本文用1/T1表征，反映自旋涨落。"
-        },
-        {
-          "t": "超精细耦合",
-          "d": "核自旋与电子自旋的相互作用。本文通过K-χ关系分析其变化。"
-        },
-        {
-          "t": "临界指数β",
-          "d": "描述有序参数随温度变化的幂律指数。本文测得β≈0.36，指示三维普适类。"
-        },
-        {
-          "t": "磁振子",
-          "d": "自旋波的量子化激发。本文中低温弛豫率T⁵依赖表明磁振子介导的弛豫。"
-        }
-      ],
-      "tags": [
-        "凝聚态物理",
-        "磁性材料",
-        "核磁共振"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "C. S. Saramgi",
-        "Y. Shemerliuk",
-        "S. Selter",
-        "S. Aswartham",
-        "B. Buechner",
-        "H. -J. Grafe",
-        "K. M. Ranjith"
-      ],
-      "abstract": "We report a comprehensive investigation of the magnetic properties and spin dynamics of the chain-like van der Waals antiferromagnet AgCrP$_2$S$_6$ using magnetization, magnetic susceptibility, and $^{31}$P nuclear magnetic resonance (NMR). The magnetic susceptibility exhibits a broad maximum near 250 K, characteristic of strong short-range antiferromagnetic correlations in a low-dimensional system. A classical Fisher-chain analysis gives an effective intrachain exchange scale $J/k_B\\approx 140$ K, while a quantum $S=3/2$ nearest-neighbor-chain calculation yields $J/k_B\\approx 114$ K. A constrained AF-FM zig-zag-chain calculation is also compatible with the susceptibility, supporting a dominant quasi one dimensional antiferromagnetic exchange scale of order 100 K. $^{31}$P NMR measurements provide microscopic insight into both static and dynamic spin correlations. The $K-χ$ relation displays two distinct linear regimes separated near $T^\\ast\\approx 250$ K, with different slopes indicating a change in the effective transferred hyperfine couplings. Below $T_{N}$, the relaxation follows $1/T_1\\propto T^5$, consistent with magnon-mediated relaxation in the ordered state. The temperature dependence of the internal hyperfine field yields a critical exponent $β\\approx 0.36$, consistent with three-dimensional universality. Together, these results establish AgCrP$_2$S$_6$ as a quasi-one-dimensional $S=3/2$ antiferromagnet embedded in a layered van der Waals host, in which local probes directly resolve the crossover from correlated intrachain spin dynamics to anisotropic three-dimensional magnetic order. More broadly, AgCrP$_2$S$_6$ provides a useful van der Waals platform for studying dimensional crossover, correlated spin dynamics, and hyperfine-coupling evolution in low-dimensional antiferromagnets.",
-      "url": "https://arxiv.org/abs/2611.14444",
-      "pdf": "https://arxiv.org/pdf/2611.14444v1"
-    },
-    {
-      "id": "2611.14475",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.FA",
-      "published": "2026-11-10",
-      "title_en": "Explicit restricted isometries with $k=m^{2/3-o(1)}$",
-      "title_zh": "显式受限等距：k 可达 m^{2/3-o(1)}",
-      "one_liner": "构造出显式的 m×n 矩阵，满足受限等距性质，且稀疏度 k 接近 m^{2/3}，打破了长期认为的 m^{1/2} 障碍。",
-      "why": "这篇论文解决的是信号处理中一个核心问题：如何用尽量少的测量恢复稀疏信号。高中生可以从中看到线性代数和图论如何联手解决实际问题，而且结论清晰、数字具体，不涉及高深预备知识。",
-      "sections": {
-        "background": "受限等距性质（RIP）是压缩感知的基石：如果一个矩阵近似保持稀疏向量的长度，就能从少量测量中恢复信号。长期以来，人们知道随机矩阵可以达到 k 约等于 m/log(n/k)，但显式构造很难。之前显式构造的 k 只能到 m^{1/2} 左右，大家甚至怀疑基于矩阵元素绝对值的证明方法存在 m^{1/2} 的天然障碍。",
-        "method": "作者把 Gershgorin 圆盘定理（估计矩阵特征值范围）和一个平坦 RIP 估计结合，把问题转化为：在一个强正则图中选一个大的顶点集，使得每个小集合只引出很少的边。他们用 Zahl 的一个关联几何结果来选这个顶点集。证明只用了 Gram 矩阵元素的绝对值，却突破了所谓的 m^{1/2} 障碍。",
-        "finding": "他们构造的显式矩阵在 m 趋于无穷时，m/n 趋于 0，δ_k 趋于 0，并且 k 可以达到 m^{2/3-o(1)}。这比之前的 m^{1/2} 障碍提高了不少。他们还证明，对于这种只使用元素绝对值的证明技术，真正的障碍其实是 m^{2/3}，而他们的构造恰好达到了这个障碍。",
-        "impact": "这项工作是显式构造压缩感知矩阵的重要进展，说明 m^{1/2} 并不是不可逾越的界限。它可能会推动更多显式矩阵的设计，并影响对 RIP 证明技术极限的理解。对于实际应用，更显式的矩阵可能带来更高效的信号恢复算法。"
-      },
-      "analogy": "就像用很少的几张照片恢复一个稀疏图像：以前显式方法最多只能处理像素数开平方的稀疏度，现在能处理到 2/3 次方，相当于能恢复更复杂的图像。",
-      "terms": [
-        {
-          "t": "受限等距性质 (RIP)",
-          "d": "矩阵近似保持稀疏向量长度的性质，是压缩感知能工作的关键。本文构造满足 RIP 的显式矩阵。"
-        },
-        {
-          "t": "稀疏向量",
-          "d": "大部分分量为零的向量。RIP 保证这类向量在测量后长度基本不变。"
-        },
-        {
-          "t": "Gershgorin 圆盘定理",
-          "d": "用矩阵每行非对角元素绝对值之和来估计特征值范围。本文用它简化 RIP 估计。"
-        },
-        {
-          "t": "强正则图",
-          "d": "一种高度对称的图，任意两个顶点间公共邻居数恒定。本文用它来选取顶点集。"
-        },
-        {
-          "t": "Gram 矩阵",
-          "d": "矩阵列向量两两内积组成的矩阵。RIP 等价于 Gram 矩阵接近单位矩阵。本文只用其元素绝对值。"
-        },
-        {
-          "t": "关联几何",
-          "d": "研究点、线等几何对象关联关系的学科。本文用 Zahl 的关联几何结果来选顶点集。"
-        },
-        {
-          "t": "δ_k",
-          "d": "RIP 常数，衡量矩阵对 k 稀疏向量长度的最大扭曲。δ_k 越小，性质越好。"
-        }
-      ],
-      "tags": [
-        "压缩感知",
-        "线性代数",
-        "图论",
-        "显式构造"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Christian Kümmerle",
-        "Dustin G. Mixon"
-      ],
-      "abstract": "We construct an explicit family of real $m\\times n$ restricted isometries with $m\\to\\infty$, $m/n\\to 0$, $δ_k\\to 0$, and $k=m^{2/3-o(1)}$. We combine Gershgorin's circle theorem with a flat RIP estimate to reduce the problem to choosing a large vertex set in a strongly regular graph with the property that every small subset spans few edges. We select this vertex set using an incidence geometric result due to Zahl. The proof only uses the entrywise absolute value of the Gram matrix despite the conventional wisdom that such proof techniques exhibit a barrier of $m^{1/2}$. We prove that this barrier is actually $m^{2/3}$, and we show that our particular construction exhibits the same barrier.",
-      "url": "https://arxiv.org/abs/2611.14475",
-      "pdf": "https://arxiv.org/pdf/2611.14475v1"
-    },
-    {
-      "id": "2611.14484",
-      "field": "physics",
-      "source": "arXiv",
-      "source_label": "arXiv · quant-ph",
-      "published": "2026-11-10",
-      "title_en": "Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor",
-      "title_zh": "超导量子计算机模拟规范理论中的弦动力学",
-      "one_liner": "用63个超导量子比特模拟(2+1)维Z2规范理论，首次在非微扰区域观察电场弦的演化，揭示禁闭与解禁闭的动力学差异。",
-      "why": "量子计算模拟复杂物理系统是当前热点，而规范理论是粒子物理标准模型的基础。这篇论文用实际量子处理器做实验，让高中生看到量子计算机如何解决经典计算机难以处理的问题，联系到课本中的电场、磁场和粒子概念，激发对前沿物理的兴趣。",
-      "sections": {
-        "background": "规范理论描述基本粒子及其相互作用，其中电场弦连接正负电荷，是理解夸克禁闭的关键。但在二维空间中，弦的演化涉及电荷运动、对产生和横向变形等竞争过程，经典计算机模拟由于纠缠增长而受限，难以超越微扰极限。因此，需要量子模拟来探索非微扰动力学。",
-        "method": "研究团队使用63个超导量子比特（包括12个辅助比特）构建(2+1)维Z2规范理论，包含动态物质和磁 plaquette 相互作用。他们通过量子线路演化初始局域的弦，并测量空间分辨的电荷和通量分布，同时利用高斯定律约束进行错误检测，结合辅助比特检查和噪声缩放，实现了多达15个二阶Trotter步骤的动力学模拟。",
-        "finding": "在解禁闭区域，电荷和通量快速扩散；在强电场下扩散被抑制。接近对产生共振时，弦内部的物质占据增强。弦路径占据数揭示了通过 plaquette 操作的横向重排。这些结果展示了量子模拟在探索非微扰弦动力学方面的实用性。",
-        "impact": "这项研究证明了量子模拟可以实际用于研究规范理论的非微扰动力学，为未来探索更复杂的规范理论（如量子色动力学）提供了途径，可能帮助理解夸克禁闭和早期宇宙中的相变。"
-      },
-      "analogy": "就像用乐高积木搭建一个微型宇宙，然后观察其中橡皮筋（电场弦）如何拉伸、断裂和重组，而经典计算机就像试图同时追踪每个积木的精确位置，很快就力不从心。",
-      "terms": [
-        {
-          "t": "规范理论",
-          "d": "描述基本粒子相互作用的框架，核心是局部对称性。本文用它模拟电场弦的行为，探索禁闭机制。"
-        },
-        {
-          "t": "量子比特",
-          "d": "量子计算的基本单元，可处于0和1的叠加态。本文用63个超导量子比特构建模拟平台。"
-        },
-        {
-          "t": "超导量子处理器",
-          "d": "利用超导电路实现量子比特的硬件设备。本文的实验就在这种处理器上运行。"
-        },
-        {
-          "t": "电场弦",
-          "d": "连接正负电荷的力线，在规范理论中代表禁闭势。本文研究其演化动力学。"
-        },
-        {
-          "t": "禁闭",
-          "d": "夸克等粒子不能单独存在，总是被束缚在一起的现象。本文模拟了禁闭与解禁闭的转变。"
-        },
-        {
-          "t": "对产生",
-          "d": "能量转化为粒子-反粒子对的过程。本文中弦的断裂与对产生共振有关。"
-        },
-        {
-          "t": "高斯定律约束",
-          "d": "电场散度与电荷密度关系的量子版本。本文利用它进行错误检测。"
-        },
-        {
-          "t": "Trotter步骤",
-          "d": "量子模拟中近似时间演化的离散步骤。本文最多执行15步，平衡精度与噪声。"
-        }
-      ],
-      "tags": [
-        "量子模拟",
-        "规范理论",
-        "超导量子计算"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": true,
-      "authors": [
-        "Sanziana Stelea",
-        "Anthony Gandon",
-        "Francesco Tacchino",
-        "Jad C. Halimeh",
-        "Ivano Tavernelli"
-      ],
-      "abstract": "Electric flux strings underpin confinement in gauge theories. In two spatial dimensions, their evolution involves competing processes of charge motion, pair creation, and transverse deformation. Accessing these dynamics beyond perturbative limits challenges classical approaches, as entanglement growth restricts the times accessible to tensor-network simulations. Here we use quantum simulation to investigate a (2+1)D Z2 lattice gauge theory with dynamical matter and an explicit magnetic plaquette interaction, spanning strongly confined and nonperturbative deconfined regimes. Using 63 superconducting qubits, including 12 ancillas, we evolve initially localized strings with static or dynamical endpoint charges. Spatially resolved measurements reveal rapid charge and flux spreading in the deconfined regime, enhanced matter occupation in the string interior near the pair-creation resonance, and suppressed spreading at strong electric fields. String-path occupations further probe transverse rearrangements between configurations connected by plaquette operations. Retaining separate matter and gauge degrees of freedom makes local Gauss-law constraints directly accessible for error detection. Combining these constraints with ancilla checks and noise rescaling, we measure dynamics in circuits containing up to 15 second-order Trotter steps. Our results establish quantum simulation as a practical approach to exploring nonperturbative string dynamics in two spatial dimensions, with gauge redundancy serving as an experimental resource.",
-      "url": "https://arxiv.org/abs/2611.14484",
-      "pdf": "https://arxiv.org/pdf/2611.14484v1"
-    },
-    {
-      "id": "2611.14486",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · math.NT",
-      "published": "2026-11-10",
-      "title_en": "The distribution of small gaps between zeros of the Riemann zeta function",
-      "title_zh": "黎曼 ζ 函数零点小间隙的分布",
-      "one_liner": "无条件证明黎曼 ζ 函数有正比例的零点间隙不超过 2πλ/log γ_n，其中 λ=0.7892，改进了之前的结果。",
-      "why": "黎曼猜想是数学中最著名的问题之一，这篇论文研究其零点的间隙分布，是理解素数分布的重要一步。结论具体，数字明确，适合对素数好奇的高中生。",
-      "sections": {
-        "background": "黎曼 ζ 函数的非平凡零点与素数分布密切相关。Selberg 曾证明存在常数 λ<1，使得正比例的零点间隙不超过 2πλ/log γ_n。但之前的显式值非常接近 1，例如 λ=1-10^{-3·10^{13}}，后来改进到 1-2.36×10^{-6}。如何得到更小的 λ 是一个挑战。",
-        "method": "作者使用 Montgomery 配对相关方法的无条件变体。配对相关方法原本用于研究零点间隙的统计分布，但通常依赖于黎曼猜想。作者巧妙地去掉这个依赖，通过分析零点之间的关联来估计小间隙的比例。",
-        "finding": "他们无条件证明了 λ=0.7892 是可行的，即至少正比例的零点间隙不超过 2π×0.7892/log γ_n。这比之前的 1-2.36×10^{-6} 有了实质改进，首次将 λ 降到 0.8 以下。",
-        "impact": "这项结果加强了对黎曼 ζ 函数零点局部行为的理解，可能为素数分布的研究提供更精确的工具。虽然离解决黎曼猜想还很远，但改进了无条件估计的界限，展示了配对相关方法的威力。"
-      },
-      "analogy": "就像研究一群人排队时的间距：以前只能保证有人的间距小于某个很接近平均值的数，现在能保证有人的间距小于平均值的 0.79 倍，说明队伍比想象中更拥挤。",
-      "terms": [
-        {
-          "t": "黎曼 ζ 函数",
-          "d": "一个复变函数，其非平凡零点的位置与素数分布密切相关。本文研究其零点间隙。"
-        },
-        {
-          "t": "非平凡零点",
-          "d": "黎曼 ζ 函数在复平面上的零点（除负偶数外）。本文关注其虚部 γ_n。"
-        },
-        {
-          "t": "零点间隙",
-          "d": "相邻零点虚部之差 γ_{n+1}-γ_n。本文证明小间隙的比例下界。"
-        },
-        {
-          "t": "配对相关方法",
-          "d": "研究零点之间关联的统计方法，Montgomery 用它猜测零点间隙分布。本文用其无条件变体。"
-        },
-        {
-          "t": "λ",
-          "d": "本文中的常数，使得正比例的零点间隙 ≤ 2πλ/log γ_n。本文证明 λ=0.7892 可行。"
-        },
-        {
-          "t": "γ_n",
-          "d": "黎曼 ζ 函数第 n 个非平凡零点的虚部（按大小排序）。间隙用 γ_n 衡量。"
-        },
-        {
-          "t": "无条件",
-          "d": "不依赖于黎曼猜想或其他未证明的假设。本文的结果是无条件的。"
-        }
-      ],
-      "tags": [
-        "数论",
-        "黎曼猜想",
-        "零点分布",
-        "素数"
-      ],
-      "difficulty": 3,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Youness Lamzouri"
-      ],
-      "abstract": "Let $0<γ_1\\leq γ_2\\leq \\cdots$ be the ordinates of the non-trivial zeros $ρ_n$ of the Riemann zeta function in the upper half-plane, counted with multiplicity. Selberg proved unconditionally that there exists $λ_0<1$ such that a positive proportion of the zeros $ρ_n$ satisfy $γ_{n+1}-γ_n\\leq 2πλ_0/\\log γ_n$. Simonič, Trudgian and Turnage-Butterbaugh were the first to obtain an explicit value in Selberg's theorem, showing that $λ_0=1- 10^{-3\\cdot 10^{13}}$ is admissible. This was considerably improved by Zhao who showed that $λ_0= 1-2.36\\cdot 10^{-6}$ is admissible. In this paper, we use a different approach, based on an unconditional variant of Montgomery's pair correlation method, to obtain a substantial improvement of these results, showing unconditionally that $λ_0=0.7892<4/5$ is admissible.",
-      "url": "https://arxiv.org/abs/2611.14486",
-      "pdf": "https://arxiv.org/pdf/2611.14486v1"
-    },
-    {
-      "id": "2611.14495",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.AR",
-      "published": "2026-11-10",
-      "title_en": "SkipLane: Write-Once, Conflict-Free Accumulation for Zero-Skipping CNN Engines on FPGAs",
-      "title_zh": "让零跳跃CNN加速器不再越稀疏越慢",
-      "one_liner": "SkipLane把卷积神经网络加速器的累加路径改成“只写一次”，在70%稀疏度下仍接近前端速度上限，比理想SCNN风格累加器快1.10-1.26倍。",
-      "why": "手机里的AI芯片要又快又省电，卷积神经网络里很多零可以跳过不算，但跳过零反而让累加变复杂，甚至更慢。这篇论文用“每条内核行走自己的车道、只写不读”的巧思解决了这个矛盾，还在一块FPGA开发板上跑通了LeNet-5，能让高中生看到算法和硬件如何互相成就。",
-      "sections": {
-        "background": "卷积神经网络加速器利用输入中的零跳过乘法来省算力，但压缩后同一窗口的乘积属于不同输出列，必须合并累加。已有设计要么用读-改-写行缓冲来合并，导致稀疏时反而比稠密还慢；要么加硬件减少存储体冲突，但没根除。问题核心是累加路径存在反复读写。",
-        "method": "SkipLane让每个内核行在自己的车道里处理，用三个寄存器保存部分和，每周期最多把三个完成的列写入不会冲突的存储体。车道和输入通道只在读出时求和，部分和从不读回。零权重空出的乘法器顺手算第二个滤波器。他们在RTL仿真中与理想SCNN风格散射累加器对比，并在PYNQ-Z2开发板上综合验证。",
-        "finding": "在稀疏度到70%时，引擎仍保持在前端速度上限的0.5%以内；在50-80%稀疏度下，比带18个存储体和理想读-改-写的SCNN风格累加器快1.10-1.26倍。六个引擎在PYNQ-Z2上以140 MHz运行，占用21.1k LUT，板子上LeNet-5位精确运行。conv1比稠密引擎少用1.94倍周期，端到端快1.26倍；但conv2行宽仅13像素，只有稠密速度的0.87倍。",
-        "impact": "它证明通过消除累加路径的读回，稀疏加速器可以真正兑现稀疏带来的速度收益，为边缘设备上高效AI芯片设计提供了可复用的硬件架构思路。"
-      },
-      "analogy": "就像快递分拣：以前每个包裹都要先查货架再放回去（读-改-写），现在每条传送带只往自己对应的格口里扔一次，不再回头翻找，所以包裹越多反而越顺畅。",
-      "terms": [
-        {
-          "t": "零跳跃",
-          "d": "卷积神经网络中很多激活值为零，跳过这些零的乘法可以省算力，是稀疏加速器的基本手段。"
-        },
-        {
-          "t": "累加",
-          "d": "把多个乘积加起来得到输出值的过程，零跳跃后乘积属于不同列，合并累加是难点。"
-        },
-        {
-          "t": "读-改-写",
-          "d": "先读出旧值、加上新值再写回，传统累加方式，会因反复访问内存而拖慢稀疏计算。"
-        },
-        {
-          "t": "FPGA",
-          "d": "现场可编程门阵列，一种可反复编程的芯片，用来快速验证硬件设计，论文在PYNQ-Z2板上实现。"
-        },
-        {
-          "t": "RTL仿真",
-          "d": "寄存器传输级仿真，在造芯片前用软件模拟硬件电路行为，用来评估速度和资源。"
-        },
-        {
-          "t": "存储体冲突",
-          "d": "多个计算单元同时访问同一存储体导致排队等待，SkipLane通过设计无冲突写入来避免。"
-        },
-        {
-          "t": "LeNet-5",
-          "d": "一个经典的卷积神经网络，用于手写数字识别，论文用它验证硬件计算的位精确性。"
-        }
-      ],
-      "tags": [
-        "AI芯片",
-        "FPGA",
-        "稀疏计算"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Aditya Saboo",
-        "Pratibha Verma"
-      ],
-      "abstract": "Skipping zero activations saves multiplications in CNN accelerators, but it complicates accumulation: the products in a compressed input window belong to different output columns and must be merged. In our earlier engine, this merging was done by read-modify-write (RMW) of a row buffer, which made sparse inputs slower than dense ones even at 87% sparsity. Existing designs either merge kernel rows through RMW or reduce bank conflicts with extra hardware, without eliminating them. SkipLane makes the entire accumulation path write-once. Each kernel row is processed in its own lane, which holds partial sums in three registers and retires up to three finished columns per cycle into memory banks that cannot conflict. Lanes and input channels are summed only at readout, so no partial sum is ever read back. Multipliers left idle by zero weights compute a second filter in the same pass. In RTL simulation, the engine stays within 0.5% of its frontend bound up to 70% sparsity and is 1.10-1.26$\\times$ faster than an SCNN-style scatter accumulator with 18 banks and ideal RMW at 50-80% sparsity. Six engines meet 140 MHz on a PYNQ-Z2 using 21.1k LUTs and run LeNet-5 bit-exact on the board. For conv1, the engine needs 1.94$\\times$ fewer cycles than a dense engine (1.26$\\times$ faster end to end); for conv2, whose rows are only 13 pixels wide, it reaches 0.87$\\times$ the dense speed.",
-      "url": "https://arxiv.org/abs/2611.14495",
-      "pdf": "https://arxiv.org/pdf/2611.14495v1"
-    },
-    {
-      "id": "2611.14498",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.CV",
-      "published": "2026-11-10",
-      "title_en": "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion",
-      "title_zh": "果蝇视觉系统模型：连接组带来效率而非鲁棒性",
-      "one_liner": "一个受果蝇大脑连接组约束的视觉模型在碰撞检测任务中，计算效率极高（少五个数量级），但对抗鲁棒性不如普通循环网络。",
-      "why": "这篇论文把果蝇大脑的‘接线图’和人工神经网络对比，探讨生物视觉系统为何高效。高中生可以从中看到，大脑的精细连接可能主要是为了节省能量，而不是为了抵抗干扰。这能引发对生物智能与人工智能差异的思考，并与课本中神经系统的知识联系。",
-      "sections": {
-        "background": "生物视觉系统在能量和连接限制下仍能可靠工作，而人工视觉系统耗能高且易受对抗攻击。科学家想知道，具有类似大脑连接结构的网络是否更鲁棒、更高效。但之前缺乏对连接组约束模型在对抗和 corruption 下的系统评估。",
-        "method": "作者使用一个任务优化的连续时间循环神经网络（FlyNet），其连接受果蝇视觉系统突触连接组约束。他们在可微分3D渲染管道中，用碰撞检测任务比较FlyNet与CNN、RAFT和没有连接组约束的循环网络（sCTRNN, CTRNN）。",
-        "finding": "FlyNet对对抗攻击脆弱，但相对于其计算量，对常见视频损坏比RAFT更鲁棒，且计算量少五个数量级。然而，普通循环网络在几乎所有扰动下都比FlyNet更鲁棒，说明连接组约束主要带来效率优势（边数少），而非鲁棒性。",
-        "impact": "这项研究提示，生物大脑的精细连接可能主要是为了节能，而不是为了抵御干扰。这对设计高效人工智能有启发，也让我们重新思考生物结构的演化目的。"
-      },
-      "analogy": "就像一辆轻便的自行车，虽然速度不如汽车，但耗能极低；而汽车虽然快，却费油。果蝇的视觉系统就像自行车，用很少的能量完成基本任务，但遇到复杂路况（对抗攻击）就不如更复杂的系统稳定。",
-      "terms": [
-        {
-          "t": "连接组",
-          "d": "神经元之间所有突触连接的总图。论文中用它约束模型结构，模拟果蝇视觉系统。"
-        },
-        {
-          "t": "对抗扰动",
-          "d": "人为设计的微小输入变化，能使模型出错。论文测试FlyNet对此的脆弱性。"
-        },
-        {
-          "t": "FLOPs",
-          "d": "浮点运算次数，衡量计算量。论文中FlyNet比对比模型少五个数量级。"
-        },
-        {
-          "t": "循环神经网络",
-          "d": "具有反馈连接的神经网络，能处理时间序列。论文中用于模拟视觉处理。"
-        },
-        {
-          "t": "可微分渲染",
-          "d": "能计算梯度的3D渲染技术，用于训练和测试模型。论文中构建碰撞检测任务。"
-        },
-        {
-          "t": "反向phi错觉",
-          "d": "一种视觉错觉，运动方向感知反转。论文中用于测试模型表征。"
-        }
-      ],
-      "tags": [
-        "计算神经科学",
-        "视觉系统",
-        "人工智能"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Alexandre Garcia-Duran",
-        "Alejandro Rodriguez-Garcia",
-        "Manuel Molano-Mazón",
-        "Alexandre Hyafil",
-        "Srikanth Ramaswamy",
-        "Janne K. Lappalainen"
-      ],
-      "abstract": "Biological visual systems compute reliably under tight metabolic and wiring constraints, whereas artificial vision systems consume far more energy and can be sensitive to adversarial perturbations. Whether networks with brain-like wiring are more robust at lower computational cost is unclear. We address this by benchmarking a task-optimized, continuous-time recurrent neural network of the fly visual system constrained by its synaptic connectome (FlyNet) against artificial neural networks. We compare it against CNNs, RAFT, and continuous-time recurrent neural networks without detailed connectome constraints (sCTRNN, CTRNN) on a collision-detection task within a differentiable 3D rendering pipeline. FlyNet is adversarially vulnerable but, relative to its compute, more robust to common video corruptions than RAFT, while using up to five orders of magnitude fewer FLOPs. The CTRNNs remain more robust than FlyNet across almost all tested perturbations, suggesting that connectome constraints benefit efficiency, through their low edge count, over robustness. Recurrence improves robustness to white-box attacks in RAFT and temporal context improves robustness to common corruptions. FlyNet's position and velocity representations degrade under adversarial textures but recover under counterfactual textures that restore correct classification while staying equally far from training, ruling out unfamiliar textures as the cause of failure. The reverse-phi illusion similarly disrupts these representations and inverts the same low-level motion statistic as the adversarial textures. Optimizing this input statistic alone, without access to the network, suffices to induce classification failure, attributing both perturbations to the same circuit vulnerability. Connectome-constrained models can thus surface adversarial failure mechanisms as testable hypotheses about biological perceptual vulnerabilities.",
-      "url": "https://arxiv.org/abs/2611.14498",
-      "pdf": "https://arxiv.org/pdf/2611.14498v1"
-    },
-    {
-      "id": "2611.14511",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.LG",
-      "published": "2026-11-10",
-      "title_en": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
-      "title_zh": "AI 如何判断药物分子与蛋白质的结合姿势？",
-      "one_liner": "新基准Pyrite显示，专家化学家区分分子结合姿势接近随机，而基于大语言模型的智能体通过特征发现达到74%准确率，超过专家。",
-      "why": "这篇论文把药物设计中的一个核心难题——判断小分子如何与蛋白质结合——变成了一个AI挑战。高中生可以了解AI如何辅助药物研发，以及专家与AI的对比。这与生物课中蛋白质和分子相互作用的知识相关，也能激发对AI应用的兴趣。",
-      "sections": {
-        "background": "预测小分子药物如何与靶蛋白结合是药物发现的关键。现代共折叠模型能生成多种候选姿势，但可靠地排序这些候选仍然困难。专家化学家即使借助3D可视化工具和物理评分，表现也接近随机，说明问题极具挑战性。",
-        "method": "作者构建了Pyrite基准，包含1500个姿势对。他们开发了两种基于大语言模型的智能体：PyriteReasoner直接通过文本推理比较姿势，PyriteFeaturizer生成代码构建特征用于逻辑回归。还使用了Group Relative Policy Optimization（GRPO）改进开源模型。",
-        "finding": "PyriteReasoner和PyriteFeaturizer分别达到67%和74%的准确率，超过专家表现。LLM引导的特征发现通常优于直接推理。GRPO使开源模型匹配或超越闭源前沿模型。",
-        "impact": "这项研究提供了一个挑战性的基准，并展示了LLM在解释和组合计算化学工具输出方面的潜力，可能加速药物发现中的姿势筛选。"
-      },
-      "analogy": "就像判断一把钥匙能否插进锁里，专家只能靠眼睛看，但常常猜错；而AI助手通过分析锁孔的形状和钥匙的齿纹，能更准确地判断哪把钥匙最合适。",
-      "terms": [
-        {
-          "t": "配体",
-          "d": "与蛋白质结合的小分子，通常是药物。论文中需要预测其结合姿势。"
-        },
-        {
-          "t": "共折叠模型",
-          "d": "同时预测蛋白质和配体结构的AI模型。论文中用于生成候选姿势。"
-        },
-        {
-          "t": "姿势排序",
-          "d": "对多个候选结合姿势进行优劣排序。论文的核心任务。"
-        },
-        {
-          "t": "大语言模型",
-          "d": "如GPT-4，能处理文本的AI模型。论文中用于推理和特征生成。"
-        },
-        {
-          "t": "逻辑回归",
-          "d": "一种简单的分类算法。论文中用于基于特征进行姿势排序。"
-        },
-        {
-          "t": "GRPO",
-          "d": "一种强化学习优化方法。论文中用于改进开源模型性能。"
-        }
-      ],
-      "tags": [
-        "药物发现",
-        "人工智能",
-        "蛋白质"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Megha Srivastava",
-        "Michael H. Lim",
-        "Allison M. Keys",
-        "Pranav Murugan",
-        "Nate Gruver"
-      ],
-      "abstract": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.",
-      "url": "https://arxiv.org/abs/2611.14511",
-      "pdf": "https://arxiv.org/pdf/2611.14511v1"
-    },
-    {
-      "id": "2611.14513",
-      "field": "math",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.DS",
-      "published": "2026-11-10",
-      "title_en": "Online Graph Coloring: Competitive Ratios Separating Randomized and Deterministic Algorithms",
-      "title_zh": "在线图着色：随机与确定性算法的竞争比分离",
-      "one_liner": "证明在线图着色中，随机算法可以比任何确定性算法做得渐近更好，改进了上下界，几乎关闭了随机算法的间隙。",
-      "why": "在线算法是计算机科学中贴近生活的话题：面对未知输入如何做决策。这篇论文用图着色这个经典问题，展示了随机性如何带来实质优势，结论直观且与算法课程内容相关。",
-      "sections": {
-        "background": "在线图着色中，顶点逐个到达，必须立即着色且不能与已着色邻居冲突。竞争比衡量在线算法与最优离线算法的差距。此前，确定性算法的最好上界是 O(n/log log n)，随机算法是 O(n/log n)，而下界只有 Ω(n/log^2 n)。随机算法是否严格优于确定性算法一直未知。",
-        "method": "作者改进了上下界分析。对于确定性算法，他们构造了更难的图实例来证明下界提高到 Ω(n/log n)。对于随机算法，他们设计了一个多项式时间算法，利用随机化来更好地处理冲突，达到 O(n (log log n)^2 / log^2 n) 的上界。同时，他们改进了确定性算法的上界到 O(n/(log log n)^{2-ε})。",
-        "finding": "新的下界表明确定性算法至少需要 Ω(n/log n) 的竞争比，而随机算法可以达到 O(n (log log n)^2 / log^2 n)，这渐近地小于任何确定性算法能保证的竞争比。随机算法的上下界之间只剩 O((log log n)^2) 的间隙，几乎关闭。这首次证明了随机与确定性在线图着色之间的渐近分离。",
-        "impact": "这项结果明确了随机性在在线图着色中的力量，解决了长期开放的问题。它可能会激发更多关于随机与确定性算法分离的研究，并对在线算法设计产生启发。对于实际应用，随机算法可能在某些场景下提供更好的性能保证。"
-      },
-      "analogy": "就像玩一个拼图游戏，每次给你一块拼图你必须立刻放好。确定性算法像按固定规则放，随机算法像偶尔掷骰子决定放哪，结果随机策略反而能拼得更完整。",
-      "terms": [
-        {
-          "t": "在线图着色",
-          "d": "顶点逐个到达并立即着色，不能与已着色邻居同色。本文研究其竞争比。"
-        },
-        {
-          "t": "竞争比",
-          "d": "在线算法所用颜色数与最优离线算法所用颜色数的比值，衡量在线算法的优劣。"
-        },
-        {
-          "t": "确定性算法",
-          "d": "不包含随机选择、对相同输入总是产生相同输出的算法。本文证明其竞争比有下界。"
-        },
-        {
-          "t": "随机算法",
-          "d": "在运行中做出随机选择的算法。本文证明其竞争比可以渐近小于确定性算法。"
-        },
-        {
-          "t": " oblivious adversary",
-          "d": "一种对手模型，对手预先知道随机算法的分布但不能根据实际随机选择调整输入。本文在此模型下证明分离。"
-        },
-        {
-          "t": "渐近分离",
-          "d": "当问题规模趋于无穷时，两类算法的竞争比差距趋于显著。本文证明随机与确定性算法渐近分离。"
-        },
-        {
-          "t": "多项式时间",
-          "d": "运行时间随输入规模多项式增长的算法。本文的随机算法是多项式时间的。"
-        }
-      ],
-      "tags": [
-        "在线算法",
-        "图着色",
-        "随机算法",
-        "竞争比"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Ken-ichi Kawarabayashi",
-        "Hirotaka Yoneda",
-        "Masataka Yoneda"
-      ],
-      "abstract": "We study online coloring, focusing on the competitive ratio. The best previously known results were (1) a lower bound of $Ω(n / \\log^2 n)$ for both deterministic and randomized algorithms by Halldórsson and Szegedy (1994), (2) an upper bound of $O(n / \\log n)$ for randomized algorithms by Halldórsson (1997), and (3) an upper bound of $O(n / \\log \\log n)$ for deterministic algorithms by Kawarabayashi, Yoneda, and Yoneda (2025). In this paper, we improve these results as follows: 1. A new lower bound of $Ω(n / \\log n)$ for deterministic algorithms. 2. A new upper bound of $O(n (\\log \\log n)^2 / \\log^2 n)$ for randomized algorithms. 3. A new upper bound of $O(n / (\\log \\log n)^{2-\\varepsilon})$ for deterministic algorithms for every fixed $\\varepsilon>0$. For randomized algorithms, we nearly close the gap between the lower and upper bounds; the remaining gap is only $O((\\log \\log n)^2)$. We establish the asymptotic separation between randomized and deterministic online graph coloring. Against an oblivious adversary, a polynomial-time randomized algorithm achieves a competitive ratio asymptotically smaller than any deterministic algorithm can guarantee, even with unlimited computation.",
-      "url": "https://arxiv.org/abs/2611.14513",
-      "pdf": "https://arxiv.org/pdf/2611.14513v1"
-    },
-    {
-      "id": "2611.14653",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · physics.ins-det",
-      "published": "2026-11-10",
-      "title_en": "Establishing Standards for Assessment and Reporting of SNSPD Performance",
-      "title_zh": "给单光子探测器立规矩：统一性能评估标准",
-      "one_liner": "研究者整理超导纳米线单光子探测器的数据，提出用饱和平台长度等指标统一评估性能。",
-      "why": "这篇论文不发明新器件，而是给一个热门领域建立公平的比较标准。高中生可以学到科学测量中“如何公平比较”的重要性，以及探测器性能指标之间的权衡（如效率、暗计数、速度）。内容贴近物理实验和工程思维。",
-      "sections": {
-        "background": "超导纳米线单光子探测器（SNSPD）能高效探测单个光子，暗计数低、时间抖动小，在量子通信等领域很重要。但不同研究报道数据的方式不一致，常常只强调一个指标（如效率），忽略其他性能，导致难以比较不同器件的优劣。而且不同应用需求冲突，比如更长波长需要更低温度。领域内缺乏公认的品质因数定义，阻碍了进展。",
-        "method": "他们收集了当前SNSPD制造水平的数据集，包括工作温度、波长、光子计数率（PCR）和暗计数率（DCR）。通过拟合PCR曲线，提出用“饱和平台长度”来衡量灵敏度；拟合DCR并与PCR比较。基于此建立定量框架，确定给定器件的最佳偏置条件，并评估该条件下的灵敏度，从而能跨器件比较。他们还提供了测量性能的具体基准。",
-        "finding": "他们发现，通过分析PCR的饱和平台长度可以更全面地反映探测器灵敏度，而仅看单一指标会误导。他们提出的框架能确定每个器件的最佳偏置点，并在这个点上公平比较不同器件。这有助于识别哪些器件特性最重要，并指导未来设计。",
-        "impact": "这项工作是标准化工作的第一步，能让研究者更公平地比较SNSPD性能，推动领域健康发展。对于应用者，能根据需求选择合适器件；对于制造商，能明确优化方向。它强调了科学报告中完整数据的重要性，可能影响其他器件的评估方式。"
-      },
-      "analogy": "就像买手机不能只看像素，还要看处理器、电池、屏幕等。这篇论文就是给单光子探测器制定一个“综合跑分”规则，让不同品牌能公平比较。",
-      "terms": [
-        {
-          "t": "超导纳米线单光子探测器（SNSPD）",
-          "d": "一种能探测单个光子的超导器件，效率高、暗计数低。本文的研究对象，旨在统一其性能评估。"
-        },
-        {
-          "t": "暗计数率（DCR）",
-          "d": "没有光子时探测器误报的速率，越低越好。本文用它和光子计数率比较来评估性能。"
-        },
-        {
-          "t": "光子计数率（PCR）",
-          "d": "探测器每秒能计数的光子数，反映灵敏度。本文通过拟合PCR曲线提出新指标。"
-        },
-        {
-          "t": "饱和平台长度",
-          "d": "PCR随光强增加而趋于饱和的平坦段长度，本文提出用它衡量探测器灵敏度。"
-        },
-        {
-          "t": "时间抖动",
-          "d": "探测器记录光子到达时间的误差，越小越好。本文提到它是SNSPD的优点之一。"
-        },
-        {
-          "t": "偏置条件",
-          "d": "加在探测器上的电压或电流工作点。本文提出确定最佳偏置条件的方法。"
-        },
-        {
-          "t": "品质因数",
-          "d": "衡量器件性能的量化指标。本文旨在为SNSPD建立公认的品质因数。"
-        }
-      ],
-      "tags": [
-        "单光子探测",
-        "超导器件",
-        "标准化"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Ari N. Willner",
-        "Alejandro Simon",
-        "Reed A. Foster",
-        "Francesca Incalza",
-        "Ava A. Brule",
-        "Philip Donald Keathley",
-        "Karl K. Berggren"
-      ],
-      "abstract": "Superconducting nanowire single-photon detectors (SNSPDs) can be made sensitive to single photons with near-unity detection efficiency, ultra-low dark-count rates, and sub-nanosecond timing jitter over a broad wavelength range. However, many studies report data inconsistently, often emphasizing a single performance metric without considering overall device performance. This inconsistent data reporting limits the field, as it makes it difficult to determine which device characteristics are most important. Different applications require functionalities that may conflict with one another; for example, longer-wavelength operation may require lower operating temperatures. Moreover, there is no universally accepted metric for defining the figures of merit of an SNSPD. In this work, we amass a dataset representing the state of the art of SNSPD fabrication, including operating temperature, operating wavelength, photon count rates (PCR), and dark count rates (DCR). We fit the PCR curves and suggest using the saturation plateau length to gauge the SNSPD's sensitivity. We then fit the DCR and compare the PCR and DCR. Using this approach, we establish a quantitative framework to determine the optimal biasing condition for a given device and to determine the device's sensitivity at that optimal biasing condition, enabling meaningful comparisons across disparate devices. Additionally, we offer concrete benchmarks for measuring device performance.",
-      "url": "https://arxiv.org/abs/2611.14653",
-      "pdf": "https://arxiv.org/pdf/2611.14653v1"
-    },
-    {
-      "id": "2611.14687",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.mtrl-sci",
-      "published": "2026-11-10",
-      "title_en": "High-Fidelity In Silico Dataset of Ordered Binary and Ternary MXenes with Predictive Synthesis Guidance",
-      "title_zh": "计算筛选上千种MXene，找出可合成的候选材料",
-      "one_liner": "用密度泛函理论计算了1040种MXene的稳定性，发现多数在常温下不稳定，但115种在高温下稳定，23种在高压下稳定，为合成提供指导。",
-      "why": "MXene是一种新兴的二维材料，在能源存储等领域有潜力。但合成困难，因为不知道哪些结构稳定。这项研究用计算预测稳定性，并给出合成条件，与课本中“化学键”“热力学”知识相关，展示了计算如何指导实验。",
-      "sections": {
-        "background": "MXene是一类二维过渡金属碳化物或氮化物，具有独特的性质。但它们的结构种类繁多，合成时往往不知道哪些能稳定存在。此前缺乏系统的稳定性数据，尤其是考虑合成条件（温度、压力）的预测，导致实验尝试盲目。",
-        "method": "研究团队使用密度泛函理论（DFT）中的r²SCAN泛函，计算了1040种有序二元和三元MXene的形成能、分解能、分解产物等。他们考虑了不同堆叠方式和化学组成，并分析了在高温（500-2000 K）和高压（10 GPa）下的热力学稳定性。",
-        "finding": "计算发现，所有MXene在常温常压下热力学上都不稳定。但在高温下，115种（主要是碳化物）变得稳定；在高压下，23种稳定。此外，在Mn-Fe-C体系中，3种MXene在实验可行的碳化学势范围内稳定。这些结果为合成提供了具体候选和条件。",
-        "impact": "这项研究提供了大规模的MXene稳定性数据集，并指出了可能的合成路线。它可以帮助实验科学家优先尝试有希望的候选材料，减少盲目性，加速MXene材料的发现和应用。"
-      },
-      "analogy": "就像你想烤一批新口味的饼干，但不知道哪些配方在烤箱里不会散架。这项研究相当于用计算机模拟了上千种配方，告诉你哪些在高温或高压下能保持形状，让你直接试那些有希望的。",
-      "terms": [
-        {
-          "t": "MXene",
-          "d": "一类二维材料，由过渡金属和碳/氮组成，像千层饼一样薄。论文研究的就是这类材料的稳定性。"
-        },
-        {
-          "t": "密度泛函理论（DFT）",
-          "d": "一种计算材料电子结构和能量的量子力学方法。论文用它来预测MXene的稳定性。"
-        },
-        {
-          "t": "热力学稳定性",
-          "d": "材料在给定条件下是否容易保持结构而不分解。论文计算了不同温度和压力下的稳定性。"
-        },
-        {
-          "t": "形成能",
-          "d": "由单质形成化合物时释放或吸收的能量，负值表示稳定。论文用它判断MXene是否容易形成。"
-        },
-        {
-          "t": "化学势",
-          "d": "描述元素在环境中活性的量，影响化合物稳定性。论文通过调节碳的化学势来寻找稳定条件。"
-        },
-        {
-          "t": "高压",
-          "d": "施加的高压力（如10 GPa）。论文发现高压能使一些MXene稳定。"
-        },
-        {
-          "t": "r²SCAN泛函",
-          "d": "DFT中一种较新的近似方法，能更准确地计算能量。论文用它来提高预测可靠性。"
-        }
-      ],
-      "tags": [
-        "材料科学",
-        "计算化学",
-        "二维材料"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "Ahmed H. Biby",
-        "Charles B. Musgrave"
-      ],
-      "abstract": "Despite their promise, the targeted synthesis of novel MXenes remains challenging due to their vast structural and compositional space and the lack of reliable stability descriptors that account for synthesis conditions. To address this gap, we utilized density functional theory (DFT) with the r$^2$SCAN functional to develop a high-fidelity dataset of 1,040 ordered binary and ternary bare delaminated MXenes, including mono-transition metal MXenes, in-plane ordered double-transition metal MXenes, in-plane ordered metal-divacancy MXenes, and out-of-plane ordered double-transition-metal MXenes. For each structure, we calculated formation and decomposition Gibbs energies, decomposition products, layer symmetry groups, and energies above the hull. We find that all MXenes are thermodynamically inaccessible under equilibrium conditions. However, 115 predominantly carbide MXenes become thermodynamically stabilized at elevated temperatures (500--2000 K), and 23 are stabilized under high pressure (10 GPa). Additionally, three MXenes in the Mn--Fe--C chemical space are stabilized within an experimentally feasible range of carbon chemical potentials. These findings reveal stability trends across the MXene space and identify synthesis strategies that can guide experimental efforts. Our dataset provides a robust foundation for developing machine-learned stability descriptors and for guiding experimental efforts toward novel MXene discovery. By identifying synthesizable candidates along with their synthesis conditions, this work bridges a critical gap in data-driven approaches to MXene discovery and lays the foundation for future autonomous experimental workflows.",
-      "url": "https://arxiv.org/abs/2611.14687",
-      "pdf": "https://arxiv.org/pdf/2611.14687v1"
-    },
-    {
-      "id": "2611.14722",
-      "field": "chem",
-      "source": "arXiv",
-      "source_label": "arXiv · cond-mat.soft",
-      "published": "2026-11-10",
-      "title_en": "Fatigue crack growth without plasticity under cyclically reversed shear",
-      "title_zh": "没有塑性变形，疲劳裂纹也能扩展",
-      "one_liner": "模拟表明，在循环剪切下，即使材料只发生弹性变形，只要满足两个条件，裂纹也能逐渐扩展。",
-      "why": "疲劳断裂是桥梁、飞机等结构失效的常见原因。传统理论认为疲劳需要塑性变形，但这项研究展示了更简单的机制，与课本中“弹性”“剪切”等概念相关，能激发对材料强度的思考。",
-      "sections": {
-        "background": "疲劳是指材料在反复受力后产生裂纹并扩展。通常认为，疲劳需要材料发生塑性变形（永久变形）来累积损伤。但有些情况下，材料在弹性范围内反复受力也会断裂，其机制尚不清楚。这项研究试图找出最简条件。",
-        "method": "研究人员建立了一个模型：两个弹性体之间有一个弱界面，在剪切力下循环加载。界面上的键在超过阈值时断裂，但不断裂时完全弹性。他们模拟了不同循环幅度和方向下的裂纹扩展行为，并分析需要哪些条件。",
-        "finding": "模拟发现，当循环剪切幅度足够大（低于静态破坏阈值），且每个键在一个剪切方向比相反方向更容易断裂，同时剪切方向反转幅度足够大以破坏未断的键时，裂纹会每个循环前进几个原子间距。这不需要塑性、摩擦或时间相关过程。",
-        "impact": "这项研究提出了一个无塑性的疲劳机制，可能适用于经历强烈反向剪切的界面，如微动磨损、滚动接触和扭转疲劳。它有助于理解某些材料在弹性范围内的疲劳行为，为工程预测提供新思路。"
-      },
-      "analogy": "就像反复弯折一根铁丝，即使每次弯曲都在弹性范围内（松手能弹回），但如果在两个方向上来回弯折足够大的幅度，铁丝最终也会断裂。这里的“键”就像铁丝中的原子连接。",
-      "terms": [
-        {
-          "t": "疲劳",
-          "d": "材料在反复受力后产生裂纹并扩展的现象。论文研究的是没有塑性变形的疲劳机制。"
-        },
-        {
-          "t": "塑性变形",
-          "d": "材料受力后不能恢复原状的永久变形。传统疲劳理论认为它是裂纹扩展的必要条件，但论文展示了例外。"
-        },
-        {
-          "t": "弹性",
-          "d": "材料受力变形后能恢复原状的性质。论文中的模型材料在断裂前完全弹性。"
-        },
-        {
-          "t": "剪切",
-          "d": "使材料内部相邻层发生相对滑动的力。论文中循环剪切是导致裂纹扩展的加载方式。"
-        },
-        {
-          "t": "裂纹",
-          "d": "材料内部的微小裂缝。论文模拟了预存裂纹在循环剪切下的扩展。"
-        },
-        {
-          "t": "弱界面",
-          "d": "两个材料之间结合较弱的区域。论文的模型就是建立在这样一个界面上。"
-        },
-        {
-          "t": "循环加载",
-          "d": "反复施加和卸载力的过程。论文中剪切力方向反复反转。"
-        }
-      ],
-      "tags": [
-        "材料力学",
-        "疲劳",
-        "计算机模拟"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": false,
-      "authors": [
-        "E. A. Jagla"
-      ],
-      "abstract": "We show that cyclic fatigue can occur in a system whose elements behave elastically up to an irreversible failure threshold, without plasticity, friction, or any time-dependent process. The model represents a weak interface between two elastic bodies loaded in shear. Under sufficiently large cyclic loading below the static failure threshold, a pre-existing flaw advances progressively, by a few lattice spacings per cycle. Two conditions are needed for this behavior: each bond fails more easily under one sense of the shear than the opposite, and the shear must be reversed during the cycle by an amount large enough to break bonds that have not yet failed. The model thus identifies the minimal conditions for an intrinsic, plasticity-free fatigue mechanism. Such conditions may be met at interfaces and weak planes subjected to strongly reversed shear, as in fretting, rolling contact, and reversed torsion, or in cyclic shear of cemented granular materials.",
-      "url": "https://arxiv.org/abs/2611.14722",
-      "pdf": "https://arxiv.org/pdf/2611.14722v1"
-    },
-    {
-      "id": "2611.14729",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.RO",
-      "published": "2026-11-10",
-      "title_en": "SunLightBots: Turning sunlight into self-sustained, high-power motion in soft robots",
-      "title_zh": "阳光驱动的软体机器人：像跳蚤一样弹跳",
-      "one_liner": "研究者造出不到一克重的软体机器人，靠阳光就能自己游泳、爬行和连续弹跳。",
-      "why": "这篇论文把“能量收集”和“快速运动”这对矛盾用巧妙的机械设计解决了，而且机器人只有不到一克重，靠阳光就能动。高中生可以从中看到物理（能量转换、稳定性）和生物（仿生）的结合，还能理解“ snapping ”（突跳）这种课本里没提但生活中常见的现象。",
-      "sections": {
-        "background": "软体机器人用智能材料把光、热等环境能量直接变成运动，有望摆脱电池和电线。但环境能量通常功率很低，而快速、有力的动作需要高功率输出，二者难以兼顾。尤其在亚克级（不到1克）的微型机器人上，传统电池和控制系统太重，无法搭载，所以如何让微型软体机器人自己从环境中获取足够功率并持续运动，一直是个难题。",
-        "method": "他们设计了一种“自复位突跳”机制：把液晶弹性体（一种受热会收缩的橡胶）和突跳结构结合。液晶弹性体在光照下升温收缩，慢慢积蓄能量，当结构越过临界点时会突然释放，产生快速高功率动作；随后通过光热-机械反馈自动复位，开始下一轮循环。他们优化了弹性体的驱动温度、光热转换效率、驱动应力和结构能垒，使系统在接近一个太阳光强（100 mW/cm²）下工作。",
-        "finding": "在1个太阳光强下，机器人峰值质量比机械功率达到89 W/kg，弹性体在约60°C时产生0.1 MPa的驱动应力。它实现了持续游泳、爬行和重复脉冲跳跃。在1.5个太阳光强下，游泳者前进超过三个体长。这些结果表明，即使能量输入功率很低，通过突跳机制也能产生高功率运动，并且能自我维持循环。",
-        "impact": "这项研究为微型软体机器人提供了一种不依赖电池、靠阳光自主运动的方案，可能用于环境监测、搜救或微创医疗。它展示了如何用机械设计解决能量与功率的矛盾，对机器人设计和智能材料应用有启发。不过目前还处于实验室演示阶段，实际应用还需解决环境适应性等问题。"
-      },
-      "analogy": "就像用放大镜聚焦阳光点燃火柴：阳光本身功率不高，但聚焦后热量慢慢积累，达到燃点瞬间爆发。这个机器人也是先慢慢储存光能，然后突然释放，完成弹跳或游泳动作。",
-      "terms": [
-        {
-          "t": "软体机器人",
-          "d": "用柔软材料制成的机器人，能像生物一样灵活运动，适合在复杂环境中工作。本文中它靠阳光驱动，无需电池。"
-        },
-        {
-          "t": "液晶弹性体（LCE）",
-          "d": "一种受热会收缩的橡胶状材料，能把光能转化为机械能。本文中它是机器人的“肌肉”，负责产生运动。"
-        },
-        {
-          "t": "突跳（snap-through）",
-          "d": "结构在受力时突然从一种稳定形状跳到另一种形状的现象，像按下易拉罐盖。本文用它来快速释放储存的能量。"
-        },
-        {
-          "t": "质量比机械功率",
-          "d": "单位质量输出的机械功率，衡量机器人“力气”相对于自重的指标。本文达到89 W/kg，说明小机器人也能有力。"
-        },
-        {
-          "t": "光热转换",
-          "d": "把光能变成热能的过程。本文中材料吸收阳光升温，驱动液晶弹性体收缩。"
-        },
-        {
-          "t": "自复位",
-          "d": "机器人完成一次动作后能自动回到初始状态，准备下一次动作。本文靠光热-机械反馈实现。"
-        }
-      ],
-      "tags": [
-        "软体机器人",
-        "太阳能",
-        "智能材料"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Yoo Jin Lee",
-        "Melanie Torres Crespo",
-        "Zhongxiao Deng",
-        "Andrew Tejada-Vega",
-        "Rebecca Kramer-Bottiglio",
-        "Wenzhong Yan",
-        "Yimin Luo"
-      ],
-      "abstract": "Soft robots built from active materials can directly convert environmental stimuli into motion, offering a route to energy autonomy and embodied control. However, environmental energy is generally harvested at low power, whereas rapid, mechanically demanding actions require high mechanical output power. Reconciling this mismatch while sustaining self-regulated cyclic actuation is challenging, particularly at the subgram scale, where limited payload capacity constrains the integration of conventional power and control hardware. Here, we present SunLightBots, a class of subgram, sunlight-powered, untethered soft robots that achieve autonomous locomotion under continuous illumination near 1 Sun (100 mW/cm2). Their operation is enabled by a self-resetting snapping (SRS) mechanism that integrates liquid crystal elastomers (LCEs) with snap-through instability to accumulate solar energy supplied at low power, release it as rapid, high-power motion, and reset through photothermal-mechanical feedback. Through coordinated optimization of the LCE actuation temperature, photothermal conversion, actuation stress, and structural energy barrier, the system operates near 1 Sun and achieves a peak mass-specific mechanical power of 89 W/kg. At this irradiance, the optimized LCE generates an actuation stress of 0.1 MPa at approximately 60 deg C. SunLightBots demonstrate sustained swimming, crawling, and repeated impulsive jumping. Under 1.5 Suns, the swimmer advances more than three body lengths per cycle. This work provides a materials-mechanics route toward autonomous soft robots powered entirely by the environment.",
-      "url": "https://arxiv.org/abs/2611.14729",
-      "pdf": "https://arxiv.org/pdf/2611.14729v1"
-    },
-    {
-      "id": "2611.14776",
-      "field": "chip",
-      "source": "arXiv",
-      "source_label": "arXiv · cs.AR",
-      "published": "2026-11-10",
-      "title_en": "SlipStream: Enabling HBF for GPU Systems by Mitigating the Latency and SRAM Overheads",
-      "title_zh": "SlipStream：让GPU用上大容量闪存加速大模型",
-      "one_liner": "用软件硬件配合的预取技术，把高带宽闪存的延迟隐藏起来，让大模型推理更快。",
-      "why": "大模型推理需要巨大内存，但传统内存容量有限。这篇论文用闪存替代部分内存，并通过巧妙的预取设计解决延迟问题。高中生可以从中理解计算机存储层次、延迟与带宽的权衡，以及软硬件协同设计的思想，和课本里“缓存”概念直接相关。",
-      "sections": {
-        "background": "大语言模型（LLM）推理需要大量内存来存放模型参数，但GPU自带的高带宽内存（HBM）容量有限。高带宽闪存（HBF）用NAND闪存替代DRAM，容量可达HBM的16倍，但读取延迟高达20微秒，是HBM的20倍，直接访问会拖慢推理最多12.8倍。传统缓存预取器需要跟踪大量请求状态，而按虚拟地址顺序预取的方案又需要数百MB缓冲，都不实用。",
-        "method": "他们提出SlipStream，一种软硬件协同的预取器，把预取变成按需驱动的生产者-消费者流水线。软件端分析LLM内核中可重复的权重页访问顺序，插入一个“ staging warp”（暂存线程）用非阻塞指令按顺序预取；硬件端暂存线程作为生产者，工作线程作为消费者。关键创新是：每个预取跟踪条目只在需求首次访问该页时才释放，从而用需求节奏限制预取超前程度，并且按4KB页跟踪，只在页返回时分配缓冲，使缓冲大小与未完成流量解耦。",
-        "finding": "在7个密集模型（16GB到800GB）上，SlipStream用40MB暂存缓冲，将HBF访问延迟隐藏，推理速度比无预取时提升显著（具体倍数未在摘要给出，但声称能缓解12.8倍的减速）。它避免了传统预取器需要20倍跟踪状态的问题，也避免了张量流方案需要数百MB缓冲的缺点。",
-        "impact": "这项技术能让GPU系统用上大容量、低成本的闪存，降低大模型部署的内存成本，使更大模型或更大批量推理成为可能。它展示了软硬件协同设计在解决存储墙问题上的潜力，可能影响未来计算机体系结构的设计。"
-      },
-      "analogy": "就像你提前把下节课要用的书从图书馆仓库（慢但大）借到教室书架（快但小），但你不是一次借一堆，而是根据老师讲课进度一本一本借，这样书架不用太大，也不会借多了用不上。",
-      "terms": [
-        {
-          "t": "高带宽内存（HBM）",
-          "d": "一种靠近GPU的高速内存，带宽高但容量小。本文中它是被替代的对象，容量有限。"
-        },
-        {
-          "t": "高带宽闪存（HBF）",
-          "d": "用NAND闪存做成的高带宽存储器，容量可达HBM的16倍，但延迟高。本文用它来扩展内存容量。"
-        },
-        {
-          "t": "预取（prefetching）",
-          "d": "提前把数据从慢速存储搬到快速缓存，以隐藏延迟。本文设计了一种按需节奏的预取方法。"
-        },
-        {
-          "t": "延迟",
-          "d": "数据从发出请求到返回所需的时间。HBF延迟是HBM的20倍，是本文要解决的核心问题。"
-        },
-        {
-          "t": "缓存行",
-          "d": "缓存中最小的数据块，通常64字节。传统预取器按缓存行跟踪，本文改为按4KB页跟踪。"
-        },
-        {
-          "t": "生产者-消费者流水线",
-          "d": "一种并行模式，生产者提前准备数据，消费者按需取用。本文中暂存线程是生产者，工作线程是消费者。"
-        },
-        {
-          "t": "LLM内核",
-          "d": "大语言模型推理中的计算函数，如矩阵乘法。本文分析这些内核的权重访问顺序来实现预取。"
-        }
-      ],
-      "tags": [
-        "计算机体系结构",
-        "大模型推理",
-        "存储"
-      ],
-      "difficulty": 3,
-      "minutes": 5,
-      "pick": false,
-      "authors": [
-        "Anish Saxena",
-        "Hritvik Taneja",
-        "Christos Kozyrakis",
-        "Aamer Jaleel"
-      ],
-      "abstract": "Large language model (LLM) inference demands ever more memory capacity for larger models and batch sizes. High-Bandwidth Flash (HBF) replaces the DRAM dies of HBM with NAND flash and provides up to 16x the capacity at comparable read bandwidth. However, HBF can incur a read latency of nearly 20$μ$s, 20x that of HBM, so on-demand HBF accesses slow inference by up to 12.8x. Conventional cache-line prefetchers require 20x more in-flight tracking state to cover this latency. Tensor-streaming designs, such as H3, follow virtual-address order as opposed to kernel-demand order, and therefore need hundreds of megabytes of buffering. We propose SlipStream, a software-hardware co-designed prefetcher that turns prefetching into a demand-paced producer-consumer pipeline. In software, SlipStream profiles the repeatable weight-page demand order of data-independent LLM kernels and inserts a staging warp that replays this order with non-blocking STAGE instructions. In hardware, the staging warp acts as the producer and the work warps as consumers. Our key insight is to retire each STAGE tracking entry only when demand first accesses the page, as opposed to when the page returns from HBF. Demand thus paces staging and bounds how far staging leads consumption. SlipStream tracks 4 KB pages instead of cache lines and allocates buffer slots only when pages return, which decouples the buffer size from outstanding traffic. Across seven dense models spanning 16-800 GB, SlipStream with a 40 MB staging buffer achieves 92.4% of the performance of an ideal HBF with HBM-like latency. H3 achieves only 43.1%, even with a 320 MB buffer. The buffer sizing of SlipStream is independent of HBF latency and workload. SlipStream with 16 MB buffer, 20x smaller than that of H3, performs within 4% of SlipStream-40MB. SlipStream also supports Mixture-of-Experts models and reaches 91.2% of ideal performance (40 MB buffer).",
-      "url": "https://arxiv.org/abs/2611.14776",
-      "pdf": "https://arxiv.org/pdf/2611.14776v1"
-    },
-    {
-      "id": "2611.14814",
-      "field": "bio",
-      "source": "arXiv",
-      "source_label": "arXiv · q-bio.NC",
-      "published": "2026-11-10",
-      "title_en": "Mind-wandering preserves word-level coupling while disrupting comprehension",
-      "title_zh": "走神时眼睛仍被词语牵着走，但理解掉了线",
-      "one_liner": "分析44名成人阅读时的眼动和脑电数据，发现走神时词语属性仍影响注视，但理解正确率大幅下降。",
-      "why": "这篇论文研究的是每个学生都经历过的‘走神’现象。它用眼动和脑电数据揭示：走神时眼睛仍被词语的常见程度、长度等属性引导，但大脑没有形成有用的理解。这能帮你理解阅读时大脑的‘自动导航’和‘深度加工’是两套系统，也提醒你走神时看似在读，实则白读。",
-      "sections": {
-        "background": "阅读时走神很常见，但科学家一直不清楚：走神时眼睛的运动是否还受词语属性影响？以前的研究多依赖主观报告，缺乏实时生理数据。而且，走神时大脑对文字的处理到了哪一步——是根本没看进去，还是看了但没记住——也不清楚。这篇论文用眼动和脑电同时记录，试图区分‘眼睛在动’和‘大脑在理解’这两件事。",
-        "method": "研究者分析了44名成年人阅读文章时的公开眼动和脑电数据。读者在意识到走神时，会标记出刚才读过的文本段。研究者把这些文本段与后续理解题所需的句子对应起来。然后，他们用统计模型分析词语频率、长度和 surprisal（意外度，即一个词在上下文中出乎意料的程度）对眼动的影响，并比较走神和专注阅读时的差异。同时，他们分析脑电信号中与注视相关的反应。",
-        "finding": "走神时，词语频率、长度和意外度仍然预测读者跳过哪些词、注视多久，效果与专注阅读相差在±10%（跳过）和±20%（注视时长）以内。但读者在走神时每个词多花了14.6%的时间。然而，理解正确率却下降了：当走神覆盖了后续问题所需的所有句子时，正确率比没覆盖时低25.7个百分点。脑电中与注视相关的反应在走神时减弱了42.7%。左后侧传感器P7的alpha波功率中位数增加了10.0%，而枕叶传感器Oz没有可靠增加。",
-        "impact": "这项研究说明，走神时眼睛仍被词语属性引导，但大脑可能没有形成或保留有用的文本表征。这有助于区分阅读中‘低层视觉加工’和‘高层理解’的分离，对教育实践有启示：学生看似在读书时，可能并没有真正理解。未来或可开发基于眼动和脑电的走神检测工具。"
-      },
-      "analogy": "就像你一边走路一边想别的事：腿还在机械地迈步，遇到台阶也会抬脚，但等你回过神，完全不记得刚才路过了什么。走神阅读时，眼睛被词语的‘台阶’带着走，但大脑的‘记忆相机’没开机。",
-      "terms": [
-        {
-          "t": "眼动追踪",
-          "d": "用摄像头记录眼睛看哪里、看多久的技术。这篇论文用它测量读者在走神时是否仍被词语属性影响。"
-        },
-        {
-          "t": "脑电图（EEG）",
-          "d": "在头皮上贴电极记录大脑电活动的方法。论文用它观察走神时大脑对文字的反应是否减弱。"
-        },
-        {
-          "t": "surprisal（意外度）",
-          "d": "衡量一个词在上下文中出乎意料程度的指标，越意外值越大。论文发现走神时读者仍对意外度敏感。"
-        },
-        {
-          "t": "alpha波",
-          "d": "大脑电活动中频率约8-12赫兹的节律，常与放松或走神有关。论文发现走神时左后脑alpha波增强。"
-        },
-        {
-          "t": "注视相关脑电反应",
-          "d": "与眼睛注视某个词同步出现的脑电信号，反映大脑对该词的处理。论文发现走神时该反应减弱42.7%。"
-        },
-        {
-          "t": "等效性检验",
-          "d": "统计方法，用来判断两组差异是否小到可以认为‘实际等效’。论文用它说明走神和专注时词语效应相差不大。"
-        }
-      ],
-      "tags": [
-        "阅读",
-        "走神",
-        "眼动",
-        "脑电"
-      ],
-      "difficulty": 2,
-      "minutes": 4,
-      "pick": true,
-      "authors": [
-        "Anirudh Natarajan",
-        "Paul Sajda"
-      ],
-      "abstract": "Readers can move their eyes through a page but retain little of its meaning when their minds wander. We tested whether word properties still guide their eyes during these lapses. We analyzed public eye-tracking and electroencephalography (EEG) data from 44 adults who read articles. They marked the text read during each lapse they noticed. We linked these spans to the sentences needed for later comprehension questions. Word frequency, length and surprisal still predicted which words readers skipped and how long they looked at them. Compared with on-task reading, these effects met equivalence bounds of $\\pm$10% for skipping and $\\pm$20% for gaze duration. Readers spent 14.6% longer on words during lapses. Yet readers answered less accurately when lapses covered sentences needed for a later question. The adjusted difference was 25.7 percentage points for lapses covering all versus none of these sentences. The fixation-related EEG response was 42.7% smaller during lapses. At left posterior-lateral sensor P7, the median increase in alpha power was 10.0%. Occipital sensor Oz showed no reliable increase. These results suggest that word properties can guide the eyes while readers fail to form or retain a useful representation of the text.",
-      "url": "https://arxiv.org/abs/2611.14814",
-      "pdf": "https://arxiv.org/pdf/2611.14814v1"
     }
   ]
 }
