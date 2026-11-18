@@ -5796,5 +5796,245 @@
     "comment": "Accepted for publication at SCIENCE CHINA Physics, Mechanics & Astronomy",
     "url": "https://arxiv.org/abs/2611.20133",
     "pdf": "https://arxiv.org/pdf/2611.20133v1"
+  },
+  "2611.22357": {
+    "id": "2611.22357",
+    "title": "Topological Timing of Bound States by Spacetime Mass Windings",
+    "abstract": "Topology usually determines where a wave is trapped. Here we show that it can also determine when a trapped state brightens or dims. We consider a dimerized photonic lattice in which a real Dirac mass, varying in space, binds a Jackiw-Rebbi state, while staggered gain and loss, switched in time, act as an imaginary Dirac mass on that same state. Together, the two masses form a mass field in space and time whose isolated zeros carry an integer winding. Combining a continuum Dirac description with finite-lattice simulations, we show that the sign of this winding fixes whether the bound state reaches a maximum or a minimum at the switch, while the gain and loss remain below the bulk gap. The windings obey a conservation law: they are created and annihilated in pairs, and their sum along a boundary determines which extrema are protected. Full-wave simulations of a passive waveguide array, in which the propagation distance plays the role of time, reproduce these predictions with loss alone. These results provide a topological handle on the timing of localized optical responses, relevant to switching, gating, and pulse shaping of confined modes in integrated photonic circuits and topological lasers.",
+    "authors": [
+      "Hamdi Barkaoui"
+    ],
+    "published": "2026-11-17T08:09:51Z",
+    "primary": "physics.optics",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22357",
+    "pdf": "https://arxiv.org/pdf/2611.22357v1"
+  },
+  "2611.22662": {
+    "id": "2611.22662",
+    "title": "Domain walls of a spin-chirality ferroelectric as tunable quantum particles",
+    "abstract": "In frustrated spin chains with competing nearest- and next-nearest-neighbor exchange, the vector spin chirality sets the electric polarization, so a ferroelectric domain wall is a domain wall of the chirality. The semiclassical picture suggests nonlocal switching dynamics due to topological constraints on the spins, but little is known about such domain walls in a quantum spin chain. Using density-matrix renormalization group calculations for a frustrated spin-1/2 XXZ chain in which a bond alternation $δ$ opens a spin gap, we show that the wall then becomes a quantum particle. In a finite chain, it has the energy levels and wave functions of a particle in a box, and it moves under an electric field as a particle under a constant force does. In the infinite chain, its mass grows by more than two orders of magnitude as $δ$ decreases and diverges at $δ^*\\approx0.012$, where the bottom of its band becomes flat; below $δ^*$ the band has two degenerate minima away from its center. The large mass results from a near cancellation of in-plane and out-of-plane exchange energies.",
+    "authors": [
+      "Aleksandr Buzdakov",
+      "Atharva Hingane",
+      "Sergey Artyukhin"
+    ],
+    "published": "2026-11-17T12:20:01Z",
+    "primary": "cond-mat.str-el",
+    "comment": "7 pages, 4 figures, Supplemental Material (4 pages)",
+    "url": "https://arxiv.org/abs/2611.22662",
+    "pdf": "https://arxiv.org/pdf/2611.22662v1"
+  },
+  "2611.22573": {
+    "id": "2611.22573",
+    "title": "Targeted material doping to enable the formation and coherent propagation of Laser Induced Periodic Surface Structures (LIPSS): the ZnO paradigm",
+    "abstract": "This work explores how the initial free carrier density governs the formation and coherent propagation of Low Spatial Frequency Laser-Induced Periodic Surface Structures (LSF-LIPSS). As a paradigm we have analyzed the behavior of ad-hoc-doped ZnO films. ZnO is a multifunctional Transparent Conducting Oxide (TCO) with many scientific and technologic uses including applications in biomedicine, photonics, sensing or photocatalysis. Many of them would benefit from the use of large area, electrically anisotropic surfaces. By introducing small amounts of Yb3+ as donor dopant in ZnO films grown by Pulse Laser Deposition (PLD), we have substantially improved its carrier density at room temperature (RT) and its electrical conductivity while preserving the functional properties of pure ZnO. For RT carrier densities ne > 1019 cm-3, coherent propagation of LSF-LIPSS has been successfully achieved upon irradiation with 350 fs laser pulses at 1030 nm at high repetition rate (500 kHz) and for laser scanning speeds well above 1 m/s. However, the ablation mechanism (ZnO sublimation at the LIPSS valleys) and the large melting temperature of ZnO, make the thermal conductivity of the substrate, the film thickness and the irradiation pulse duration to play a crucial role in determining the morphology of the LSF-LIPPS propagated over large areas, especially in avoiding film cracking. The results achieved upon optimization fully confirm the role of free carrier density in the large-scale propagation of high quality LSF-LIPSS in doped ZnO and enable using these structures to easily generate large electrical anisotropies over macroscopic regions with conductivities along the LIPSS several times larger than transversally.",
+    "authors": [
+      "Gonzalo Gomez-Munoz",
+      "Rocio Ariza",
+      "Juan Francisco Ramos-Justicia",
+      "Fatima Cabello Pardos",
+      "Antonio Pablo Pérez-Marín",
+      "Jose Gonzalo",
+      "Belén Sotillo",
+      "Binbing Xia",
+      "Paloma Fernandez",
+      "Javier Solis"
+    ],
+    "published": "2026-11-17T10:59:29Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "22 pages, 8 figures",
+    "url": "https://arxiv.org/abs/2611.22573",
+    "pdf": "https://arxiv.org/pdf/2611.22573v1"
+  },
+  "2611.22694": {
+    "id": "2611.22694",
+    "title": "Thermal and Acoustic Measurements of Hybrid Bonding Stacks",
+    "abstract": "Thermal and structural characterizations of hybrid bonding structures are essential for understanding heat transport in three-dimensional integrated circuits (3D-ICs). In this work, we investigate the effective thermal conductivity of the Cu/dielectric HB layer using time-domain thermoreflectance (TDTR) combined with picosecond ultrasonic technique. Shallow-angle polishing enabled depth-resolved thermal measurements by exposing hybrid bonding layers with different remaining thicknesses, while acoustic echoes were used to identify buried interfaces and determine the thickness. The distinct waveform of the bonding interface echo compared with the Cu/dielectric interface echo suggests that its acoustic response may also reflect the interfacial bonding conditions. The extracted thermal conductivity ranges from 1.14 to 1.75 Wm-1K-1 for the bottom pad layer and from 1.76 to 4.34 Wm-1K-1 for the top pad layer. The difference in thermal conductivity is consistent with the different Cu area fractions of the two layers. Furthermore, the thermal conductivity of the top pad layer increases significantly with the remaining thickness, possibly due to the thermal boundary resistance at the bonding interface, low thermal conductivity of SiCN interlayer, and increased electron scattering in thin Cu structures. Our work demonstrates a practical approach to investigate the thermal properties of buried hybrid bonding layers, providing experimental data for thermal design and modeling of 3D-ICs.",
+    "authors": [
+      "Zirou Chen",
+      "Xinyan Xu",
+      "Zifeng Huang",
+      "Xufei Guo",
+      "Zhe Cheng"
+    ],
+    "published": "2026-11-17T12:40:28Z",
+    "primary": "physics.app-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22694",
+    "pdf": "https://arxiv.org/pdf/2611.22694v1"
+  },
+  "2611.22529": {
+    "id": "2611.22529",
+    "title": "Solvent/Antisolvent-Driven Etching of 2D Layered Halide Perovskite Microcrystals toward Endo-Epitaxial Heterostructures",
+    "abstract": "Engineering internal interfaces within single crystals remains challenging, particularly in soft ionic materials such as layered halide perovskites (LHPs), for which conventional lithographic approaches are difficult to implement. Here we report a solvent/antisolvent-driven strategy for controlled etching of LHP microcrystals, producing well-defined rectangular cavities. Etching initiates at the top surface and proceeds preferentially along the crystallographic [100] and [010] directions. Cavity dimensions are tuned through etching time, temperature and etchant composition. The reaction can be interrupted and resumed, enabling stepwise cavity evolution through successive etching cycles. The resulting cavities serve as confined templates for regrowth of compositionally distinct LHPs, yielding endo-epitaxial heterostructures with designed internal architectures. The approach extends across diverse LHP compositions and antisolvent systems, while sequential precursor addition controls the extent of internal regrowth. This strategy establishes a route to engineering internal heterointerfaces in single-crystal perovskites through controlled chemical etching and confined growth.",
+    "authors": [
+      "Ajeet Singh",
+      "Sudhir Kumar Saini",
+      "Hriday Kumar Pal",
+      "Cara Elisabeth Bradsher",
+      "Sirous Khabbaz Abkenar",
+      "Roman Krahne",
+      "Liberato Manna"
+    ],
+    "published": "2026-11-17T10:20:20Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22529",
+    "pdf": "https://arxiv.org/pdf/2611.22529v1"
+  },
+  "2611.22690": {
+    "id": "2611.22690",
+    "title": "The minimum degree of minimally k-extendable graphs for some k",
+    "abstract": "A graph on at least 2k+2 vertices is k-extendable if every matching of size k extends to a perfect matching, and it is minimally k-extendable if it is k-extendable but deleting any edge is not. Plummer proved that every k-extendable graph is (k+1)-connected. So its minimum degree is at least k+1. Lou and Yu conjectured that a minimally k-extendable graph on at most 4k vertices has minimum degree in {k+1,2k,2k+1}; the case k=1 and the claw-free case of k=2 have been settled previously. We determine the minimum degree of minimally k-extendable graphs for k=2 and k=3, thereby settling the Lou--Yu conjecture for these two values. For k=2 the minimum degree is in {3,4,5}. For k=3 it is in {4,7} at orders 8 and 10, and in {4,6,7} at order 12. The proofs pass to the complement graph and combine Tutte's perfect matching theorem with a classification of four-vertex and six-vertex obstructions. All predicted values are realized by explicit constructions.",
+    "authors": [
+      "Zhiyong Gan",
+      "Yi Huang"
+    ],
+    "published": "2026-11-17T12:37:42Z",
+    "primary": "math.CO",
+    "comment": "12 pages, 1 figure. Submitted to Graphs and Combinatorics",
+    "url": "https://arxiv.org/abs/2611.22690",
+    "pdf": "https://arxiv.org/pdf/2611.22690v1"
+  },
+  "2611.22656": {
+    "id": "2611.22656",
+    "title": "Golomb rulers with real marks: the real and integer optima agree up to ten marks",
+    "abstract": "A Golomb ruler is a set of integer marks whose pairwise differences are distinct. We let the marks be real numbers and ask that every difference be at least 1 and that any two differences be at least 1 apart. Every integer Golomb ruler satisfies these conditions, so the least length $G_R(n)$ of such a real ruler with $n$ marks is at most the optimal Golomb length $G_Z(n)$. Fixing the order of all differences splits the real problem into finitely many polyhedral chambers. A branch-and-bound over these chambers, with an exact rational certificate at every leaf, proves $G_R(n) = G_Z(n)$ for $n \\le 10$. Each proof takes under a minute and is verified by an independent checker that uses only exact arithmetic. An exhaustive exact enumeration of all chamber vertices confirms the result for $n \\le 7$, and shows that there the shortest real rulers are exactly the optimal integer rulers and their mirror images. For every $n$ we show $n(\\sqrt{n}-1)^2 \\le G_R(n) \\le G_Z(n)$, so that $G_R(n) \\sim G_Z(n) \\sim n^2$. Non-integral chamber vertices first appear at $n = 7$: there are 84, all half-integral. Already there, 80 of them are shortest points of their chambers, 40 of them the only one, although the global optimum is integral; a twelve-mark example of the same kind comes from Singer's construction. On the other hand, every Singer ruler with at most 104 marks, cut at the largest gap, is the only shortest point of its own chamber; we conjecture this for all prime powers.",
+    "authors": [
+      "Esther Notik"
+    ],
+    "published": "2026-11-17T12:14:15Z",
+    "primary": "math.CO",
+    "comment": "9 pages, 5 tables. Programs, proof files and exact checkers: https://doi.org/10.5281/zenodo.23843508",
+    "url": "https://arxiv.org/abs/2611.22656",
+    "pdf": "https://arxiv.org/pdf/2611.22656v1"
+  },
+  "2611.22440": {
+    "id": "2611.22440",
+    "title": "The shape of individual differences in judgment: shared axes, personal weights, and when their spread crosses the consensus",
+    "abstract": "People differ in how they judge faces, artworks, photographs and jokes. Previous work measured the size of these differences; we ask what shape they take. We wrote three candidate shapes as nested generative models (same-sign reweighting of shared dimensions, a linear transform that allows reversal, and stimulus-specific offsets) and compared how well they predict people unseen in training, using ten public datasets (about 20,000 raters). The models recovered a person's judgment space from 10-20 judgments and predicted judgments of unseen stimuli. For faces, reweighting was sufficient, and weights opposing the population were not statistically detected. For artworks, weights spread continuously along the shared abstract-figurative direction, and 28 percent of raters fell on the opposite side from the population. This tail was much smaller when a different rater sample judged the same artworks. Individual differences thus differ in shape as well as size, and the shape depends on domain and raters.",
+    "authors": [
+      "Hiroshi Higashi"
+    ],
+    "published": "2026-11-17T09:12:19Z",
+    "primary": "q-bio.NC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22440",
+    "pdf": "https://arxiv.org/pdf/2611.22440v1"
+  },
+  "2611.22507": {
+    "id": "2611.22507",
+    "title": "A sharp minimum degree condition for Hamiltonicity in line graphs of 3-hypergraphs",
+    "abstract": "Let $G$ be the line graph of a $3$-hypergraph, and let $n$ be its order. We prove that if $G$ is $3$-connected, $n\\ge4936$, and $δ(G)\\ge(n+5)/10$, then $G$ is Hamiltonian if and only if it does not belong to an explicitly described family of exceptional graphs. This extends the sharp minimum degree bound of Lai, Shao, and Zhan for $3$-connected claw-free graphs beyond the claw-free setting, since line graphs of $3$-hypergraphs may contain induced claws. The coefficient $1/10$ cannot be decreased, and the constant $5$ in the numerator cannot be replaced by $4$.",
+    "authors": [
+      "Kenta Ozeki",
+      "Leilei Zhang"
+    ],
+    "published": "2026-11-17T10:03:30Z",
+    "primary": "math.CO",
+    "comment": "11 pages. Comments are welcome!",
+    "url": "https://arxiv.org/abs/2611.22507",
+    "pdf": "https://arxiv.org/pdf/2611.22507v1"
+  },
+  "2611.22483": {
+    "id": "2611.22483",
+    "title": "Manufacturing Differential Sparsity: Planner-Hardware Co-Design for Efficient World Model Planning",
+    "abstract": "JEPA-style latent world models let embodied agents plan toward new goals with model predictive control, but they are still too slow for real-life embodied control: sampling-based MPC repeats predictor inference tens of thousands of times per plan, and even on high-end GPUs one planning step can take tens of seconds. We observe substantial latent locality in this repeated-inference workload: the predictor maps close actions to close latents, and inside a quantized predictor this closeness takes a form that hardware can exploit, differential bit-level sparsity. Unlike an input stream, whose temporal similarity is given, a planner itself decides which candidates it evaluates together, so the planner can choose its own references and, with reference forest sampling, manufacture more sparsity: it couples the sampled action sequences of each group to a shared root, with competitive planning quality. We build the accelerator on the insights of the rich line of bit-level sparsity accelerators and design it and the planner tightly coupled as a single co-design: the planner increases sparsity and exposes structure for hardware scheduling, and the bit-exact hardware effectively uses the sparsity that the planner creates. On three JEPA world models, our co-design is 1.28-1.80x faster than a dense accelerator and uses 38-52% less energy, and it is 1.22-1.58x faster than prior bit-sparse design and uses 16-36% less energy, with the same area. To our knowledge, our planner is the first planner that manufactures differential bit-level sparsity across its candidates and exposes its structure for hardware scheduling, and our co-design is the first algorithm-hardware co-design for JEPA-style world-model planning.",
+    "authors": [
+      "Wenbo Zhu",
+      "Paul Yi-Chia Chen",
+      "Yuanhan Li",
+      "Zishen Wan",
+      "Christopher Torng"
+    ],
+    "published": "2026-11-17T09:40:21Z",
+    "primary": "cs.AR",
+    "comment": "14 pages, 11 figures",
+    "url": "https://arxiv.org/abs/2611.22483",
+    "pdf": "https://arxiv.org/pdf/2611.22483v1"
+  },
+  "2611.22070": {
+    "id": "2611.22070",
+    "title": "Why do continual physical learners need sleep?",
+    "abstract": "Sleep is widespread across the animal kingdom, including in organisms without a centralized nervous system. Does learning create a need for sleep, even without biology? To explore this question, we study a disordered spring network trained to perform a sequence of mechanical allosteric tasks through local changes in bond stiffness. We find that continual learning progressively reduces the network's ability to acquire new tasks as individual bonds become increasingly specialized. We identify an exact algebraic relationship between the polarization of bond dominance and the network's remaining learning capacity, providing a quantitative measure of this loss of adaptability. We then demonstrate that random internal perturbations allow individual bonds to estimate their mechanical dominance and locally adjust their stiffnesses to restore learning capacity. However, the forces associated with active learning bias these local measurements and interfere with restoration. Separating learning and repair into wake-like and sleep-like phases removes this interference and improves continual-learning performance. Our results suggest that the need for offline restorative phases can emerge from the mechanics of physical learning, even in systems without biological components.",
+    "authors": [
+      "Nada Elmeligy",
+      "Nidhi Pashine",
+      "J. M. Schwarz"
+    ],
+    "published": "2026-11-17T01:48:08Z",
+    "primary": "physics.bio-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22070",
+    "pdf": "https://arxiv.org/pdf/2611.22070v1"
+  },
+  "2611.21592": {
+    "id": "2611.21592",
+    "title": "Connectivity from activity in spiking neural networks",
+    "abstract": "We show that a wide range of recurrent neural network models obey a simple set of equations tying synaptic connectivity and single-cell response properties to neural correlations. Our modeling framework considers networks in a stationary, asynchronous state and contains a broad class of synaptic filters, spiking nonlinearities, and random-plus-structured connectivity. The resulting equations naturally decompose into contributions from monosynaptic, disynaptic, and higher order paths through the network. We leverage this decomposition to express the effective monosynaptic connection between two neurons in terms of experimentally measurable statistics of the activity, and in particular, their high-frequency correlations. In this way, we show that it is possible to recover network connectivity from neural activity.",
+    "authors": [
+      "Albert J. Wakhloo",
+      "Sebastian Mizera"
+    ],
+    "published": "2026-11-16T18:56:17Z",
+    "primary": "cond-mat.dis-nn",
+    "comment": "29 pages, 13 figures",
+    "url": "https://arxiv.org/abs/2611.21592",
+    "pdf": "https://arxiv.org/pdf/2611.21592v1"
+  },
+  "2611.22643": {
+    "id": "2611.22643",
+    "title": "Complex quasiprobabilities as measurable temporal interference",
+    "abstract": "Quantum dynamics can encode interference information that conventional correlation functions leave unresolved. Here we show that the imaginary component of the extended Kirkwood-Dirac quasiprobability reveals dynamical distinctions absent from out-of-time-order correlators (OTOCs) formed from two repeated Hermitian observables at infinite temperature. We interpret its real and imaginary components as complementary quadratures of interference between many-body echo amplitudes. We prove that the imaginary component vanishes for every unitary evolution if either projective measurement has two outcomes, whereas nonreal values arise for generic unitary dynamics when it has at least three (e.g., spin-1 systems). We develop an algorithm to reconstruct the full quasiprobability from covariances of local probe signals over repeated preparations of randomised initial states, using forward evolution and probe readout only. In a spin-1 chain, a nonzero imaginary signal distinguishes a real Hamiltonian $H$ from $-H$ despite identical corresponding OTOCs, and identifies opposite sides of a pair-conversion resonance at short times while dipolar and quadrupolar OTOCs remain nearly unchanged. These results show how temporal interference resolves dynamical ambiguities and provides additional constraints for Hamiltonian inference.",
+    "authors": [
+      "Wenzheng Dong",
+      "Alexander Yosifov",
+      "Jinzhao Sun"
+    ],
+    "published": "2026-11-17T11:58:18Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22643",
+    "pdf": "https://arxiv.org/pdf/2611.22643v1"
+  },
+  "2611.22635": {
+    "id": "2611.22635",
+    "title": "A Quantum Support Vector Regression Framework for Missing Data Imputation in Ship Performance Data",
+    "abstract": "The Internet of Ships enables vessels to generate vast amounts of data, yet missing values remain a persistent issue. To the best of the authors' knowledge, existing imputation techniques in this domain rely exclusively on classical machine learning. This study investigates quantum support vector regression (QSVR) for imputing missing values in ship performance data. Classical support vector regression and QSVR models based on different quantum feature maps are compared for estimating marine fuel consumption under varying levels of data availability. The case study uses real-world data from a Panamax bulk carrier, covering 37 variables across six categories. Three experiments are conducted: exploratory analysis with three input features, scalability analysis with increasing dimensionality (3 to 18 features), and comparative evaluation under a selected representative configuration. Across all scenarios, both classical and quantum approaches captured the relationship between the inputs and the main-engine fuel-flow rate, maintaining strong imputation performance even under severe data scarcity. ZZFeatureMap_1 achieved the highest average R2 (0.991 in the performance comparison conducted with 60% of the dataset, 90% missing data, and 14 input features, for instance) and the lowest aggregate imputation errors, while the radial basis function kernel was the strongest classical baseline, delivering highly competitive results.",
+    "authors": [
+      "Daniel Maroto Sanchez",
+      "Christian Velasco-Gallego",
+      "Miriam Bastante Chichon",
+      "Jaime Álvarez-Benayas",
+      "Tsoulakos Nikolaos",
+      "J. A. Bravo-Montes"
+    ],
+    "published": "2026-11-17T11:52:18Z",
+    "primary": "quant-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.22635",
+    "pdf": "https://arxiv.org/pdf/2611.22635v1"
+  },
+  "2611.22623": {
+    "id": "2611.22623",
+    "title": "What Do LLMs Use to Judge Synthesis Recipes? An Experimental Analysis on 240 Solid-State Syntheses",
+    "abstract": "Inorganic materials discovery is increasingly limited by synthesis rather than by material design. Large language models (LLMs) are being adopted to propose synthesis conditions with little experimental evidence of their capabilities and biases. Here, we carry out an experimental synthesis benchmark of 240 experiments across eight known and unknown inorganic oxides and subsequently evaluate an LLM as a zero-shot ranker over fixed banks of solid-state synthesis recipes. For each pair of recipes for the same oxide target, `GPT-5.6-Sol` selects the recipe expected to yield higher target-phase purity. We aggregate these pairwise preferences using a regularized Bradley-Terry model to obtain a ranked list of synthesis recipes for a given target material. By comparison with the actual purity, obtained through X-ray diffraction, we measure `GPT-5.6-Sol`'s performance as a zero-shot ranker (0.72 pairwise accuracy). By selective removal of the information exposed to the model during this ranking, we conclude that ranking is driven predominantly by thermal features, with reaction chemistry modulating the effect. Ranking accuracy tracks the purity-temperature correlation by target (Spearman ρ= 0.91\\), \\(p = 0.002\\), and on the six thermally-driven targets withholding all chemical identity hardly impacts performance (0.68) compared to withholding temperature (0.56). Ranking performance was higher on known than unknown targets, but the group-level difference was not statistically conclusive. The methodological choices highlight the need for more experimentally validated synthesis benchmarks and position LLMs as a thermally informed prior.",
+    "authors": [
+      "Derek van Tilborg",
+      "Laura-Bianca Pasca",
+      "Harry Sevi",
+      "Kyle Reeves",
+      "Thomas Loux",
+      "Aikaterini Flessa Savvidou",
+      "Varincka Jean-Gilles",
+      "Marilou Carouge",
+      "Joonatan E. M. Laulainen"
+    ],
+    "published": "2026-11-17T11:37:42Z",
+    "primary": "cs.CE",
+    "comment": "23 pages, 13 figures, NeurIPS Ai4Mat",
+    "url": "https://arxiv.org/abs/2611.22623",
+    "pdf": "https://arxiv.org/pdf/2611.22623v1"
   }
 }
