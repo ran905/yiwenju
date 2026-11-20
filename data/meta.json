@@ -6326,5 +6326,231 @@
     "comment": "",
     "url": "https://arxiv.org/abs/2611.24097",
     "pdf": "https://arxiv.org/pdf/2611.24097v1"
+  },
+  "2611.25189": {
+    "id": "2611.25189",
+    "title": "Cultural invariance in music-evoked emotions",
+    "abstract": "Worldwide, people produce and listen to music to induce, express, and regulate their own and others' emotions. To what extent culture influences the emotions evoked by music is, however, contested. The documented global variation in musical behaviours and emotion concepts suggests substantial cross-cultural differences in how listeners relate to music emotionally, while shared physiology and evolutionary history would predict broad global agreement on the emotional information extracted from music. Some evidence suggests shared processes but experiments on the subject do not represent global diversity in either music or participants. Here, we report a large citizen-science experiment wherein listeners (N = 124,394 in 189 countries; conducted in English) rated their emotional responses to popular Western music and to vocal music produced in mostly small-scale societies drawn from a globally representative corpus (i.e., songs assumed to be unfamiliar in style). We found strong similarity in listeners' emotional responses to music: Average agreement between pairs of countries' listeners was high. Furthermore, across both popular and unfamiliar types of music, emotional responses were shaped far more by individual listeners and the specific songs than by cultural background: Both between-person differences within a country and within-subject differences across songs explained substantially more variance in emotional responses than country-wise differences. Together, these results indicate that a listener's cultural background has only a marginal influence on the emotions they feel in response to music, raising the possibility of universal structure in emotional responses to music.",
+    "authors": [
+      "Lidya Yurdum",
+      "Jan Simson",
+      "Roza G. Kamiloğlu",
+      "Disa A. Sauter",
+      "Samuel A. Mehr"
+    ],
+    "published": "2026-11-18T21:11:44Z",
+    "primary": "q-bio.NC",
+    "comment": "Data, code, materials, and supplementary information are available at https://github.com/themusiclab/music-emotions",
+    "url": "https://arxiv.org/abs/2611.25189",
+    "pdf": "https://arxiv.org/pdf/2611.25189v1"
+  },
+  "2611.25755": {
+    "id": "2611.25755",
+    "title": "Field-free deterministic spin-orbit torque magnetization switching using monolayer WTe2",
+    "abstract": "An important step towards the practical implementation of spin-orbit torque magnetic memory is the field-free switching of the magnetization vector. In this work, we investigate spin-orbit torque-driven magnetization dynamics and switching devices comprising monolayer $\\mathrm{WTe}_2$ as the spin-source material. We perform a comparative analysis of the two phases of $\\mathrm{WTe}_2$, namely the $1\\mathrm{T}_d$ and $1\\mathrm{T}'$ with the necessary symmetries for field-free deterministic magnetization switching. We demonstrate switching in both systems and analyse the dependence of the switching dynamics on the applied bias voltage, ribbon orientation and width of the magnetic layer. Modelling the ferromagnet as an exchange-coupled macrospin within a non-equilibrium Green's function framework, we find that the $x$-ribbon geometry of the $1\\mathrm{T}_d$ $\\mathrm{WTe}_2$ phase generates a significantly larger current-induced spin polarization than the $1\\mathrm{T}'$ phase, resulting in a larger damping-like torque on the adjacent magnetic layer and faster switching. The switching time of $1\\mathrm{T}'$ devices varies strongly and non-monotonically with the width of the magnetic layer. In $1\\mathrm{T}_d$ devices, it remains nearly constant over a broad range of widths, consistent with an edge-dominated torque. These results identify $x$-ribbon $1\\mathrm{T}_d$-$\\mathrm{WTe}_2$ as a promising spin source for field-free SOT-MRAM.",
+    "authors": [
+      "Ganesh Hanchanahal",
+      "Arnav Jain",
+      "Shrushti Tapar",
+      "Saroj P Dash",
+      "Bhaskaran Muralidharan"
+    ],
+    "published": "2026-11-19T08:58:10Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "11 pages, 6 figures, comments welcome",
+    "url": "https://arxiv.org/abs/2611.25755",
+    "pdf": "https://arxiv.org/pdf/2611.25755v1"
+  },
+  "2611.25714": {
+    "id": "2611.25714",
+    "title": "Mitigating Row Buffer Contention Through Multiple Row Buffer (MRB) DRAM",
+    "abstract": "DRAM chips contain multiple banks to handle sev- eral memory requests in parallel. However, requests to different rows of the same bank (e.g., from different cores or workload access patterns) interfere with each other by contending for a single shared row buffer. This introduces row buffer conflicts, which incur performance and energy overheads. In this work, we reduce row buffer conflicts caused by interference by introducing multiple row buffers in each bank. We propose multiple row buffer (MRB) DRAM, which employs a primary global row buffer along with multiple secondary SRAM row buffers in the DRAM chip. These secondary SRAM row buffers act as a cache that enables each bank to serve requests to multiple rows in parallel, thereby improving performance and reducing row buffer conflicts. Our evaluation shows that MRB-DRAM with four SRBs per bank improves performance by an average of 29.7%, 24% in singlecore, multicore systems, respectively, compared to a conventional DDR4 baseline with a modest area overhead of 2%.",
+    "authors": [
+      "K Chitra",
+      "Arjun Dey",
+      "Aryabartta Sahu",
+      "Minesh Patel"
+    ],
+    "published": "2026-11-19T08:24:57Z",
+    "primary": "cs.AR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.25714",
+    "pdf": "https://arxiv.org/pdf/2611.25714v1"
+  },
+  "2611.25941": {
+    "id": "2611.25941",
+    "title": "A Quantum Genetic Algorithm for Optimization of Benchmark Test Functions using Entangled Qutrits",
+    "abstract": "Typically, quantum genetic algorithms are based on qubits, a two-level quantum system. This work investigates the optimization of Rastrigin, Rosen-Brock and Table Holder Function in comparison with Classical Genetic Algorithm (CGA), using two quantum approaches: Quantum Genetic Algorithm (QGA), and Higher-Order Quantum Genetic Algorithm (HO-QGA) based on qutrits, a three-level system. HO-QGA uses higher-dimensional quantum representations, such as entangled qutrits, to test its capability of enhanced optimization. We show that the QGA convergence rate is higher than the CGA, and the solution quality is considerably improved. Based on this study, a three-state quantum object novelly provides more capabilities than qubits in terms of computational and information resources.",
+    "authors": [
+      "Muhammad Farooq",
+      "Mehrosh Talat"
+    ],
+    "published": "2026-11-19T11:25:49Z",
+    "primary": "physics.comp-ph",
+    "comment": "9 pages, 3 figures, 3 algorithms, 3 tables",
+    "url": "https://arxiv.org/abs/2611.25941",
+    "pdf": "https://arxiv.org/pdf/2611.25941v1"
+  },
+  "2611.25908": {
+    "id": "2611.25908",
+    "title": "CRAFT: Analog Circuit Design by Reasoning LLM Agents from Pre-Computed Lookup Tables",
+    "abstract": "Automated analog circuit sizing methods, from black-box optimizers to recent large language model (LLM) agents, typically search the design space with a SPICE simulator in the loop, whereas an experienced designer works out a design by hand analysis. This paper presents CRAFT, a flow in which an LLM agent designs a given topology by calculation, as a designer does, and without an initial sizing. The agent works only through DeX, a service that uses pre-computed lookup tables to provide device characteristics and to solve the whole netlist for its operating point and small-signal response. It thus designs without SPICE, and every final design is verified independently in HSPICE. We test CRAFT on four circuits in a commercial 28 nm process; the largest is a 37-transistor three-stage amplifier with 53 design variables, 20 specifications and 74 saturation constraints. With Claude Opus 5.5, CRAFT meets every specification and constraint in all 20 runs, five per circuit. On that amplifier, with DeX in place of HSPICE and an identical request for both, the same agent passes in 10 of 10 runs instead of 6 of 10 within an hour and is 2.0x faster at the median.",
+    "authors": [
+      "Hyunjun Park",
+      "Seungyub Han",
+      "Jason Jaesung Lee",
+      "Kahyun Kim",
+      "Soohyun Kim",
+      "Inwoo Nam",
+      "Sunmin Kim",
+      "Wooyoung Choi",
+      "Junhyung Kim"
+    ],
+    "published": "2026-11-19T10:55:46Z",
+    "primary": "cs.AR",
+    "comment": "7 pages, 9 figures, 2 tables",
+    "url": "https://arxiv.org/abs/2611.25908",
+    "pdf": "https://arxiv.org/pdf/2611.25908v1"
+  },
+  "2611.25139": {
+    "id": "2611.25139",
+    "title": "Persistence of Multifractal Dynamics at the Mammalian Neuromuscular Junction Across Extracellular Calcium Conditions",
+    "abstract": "The neuromuscular junction represents a relevant experimental model for revealing important biophysical mechanisms underlying synaptic transmission. In this work, we revisited the time-series analysis of electrophysiological recordings obtained from mammalian diaphragm neuromuscular junctions. We applied multifractal detrended fluctuation analysis (MFDFA) to assess whether intervals between spontaneous potentials exhibit multifractal behavior at physiological extracellular calcium concentrations and at hypocalcemic and hypercalcemic levels. Surprisingly, we observed a robust, stable multifractal profile across all electrophysiological recordings, regardless of calcium concentration. Therefore, our results provide support for a rich and complex scenario governing neurotransmitter release. Based on these findings, we discuss their biophysical significance and physiological implications.",
+    "authors": [
+      "Adriano J. da Silva",
+      "Sergio Floquet",
+      "Ricardo F. Lima"
+    ],
+    "published": "2026-11-18T20:18:36Z",
+    "primary": "q-bio.NC",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.25139",
+    "pdf": "https://arxiv.org/pdf/2611.25139v1"
+  },
+  "2611.26037": {
+    "id": "2611.26037",
+    "title": "An improved Moore bound for girths seven and eleven",
+    "abstract": "Let $n(d,k)$ be the minimum number of vertices of a graph of minimum degree $d$ and girth at least $g=2k+1$. A simple counting argument gives the classical lower bound $n(d,k)\\ge m(d,k)=1+d\\sum_{i=0}^{k-1}(d-1)^i$, known as the Moore bound and dating back at least to 1960. Apart from complete graphs and odd cycles, graphs attaining this lower bound can exist only for girth $5$ and degrees $3,7$ and $57$ (Hoffman and Singleton 1960; Bannai and Ito 1973; Damerell 1973). Nevertheless, for more than sixty years this lower bound has not been substantially improved beyond an additive constant. For $k\\geq 3$, i.e. girth at least $7$, the best general bound was $n(d,k)\\ge m(d,k)+2$, due to Bannai and Ito (1981). We show that for fixed girth $7$ and growing degree $d$ we have $n(d,3)\\ge m(d,3)+(1-o(1))d/8$. Furthermore, for girth $11$ we have $n(d,5)\\ge m(d,5)+Ω(d^{3/5})$. In particular, the excess $n(d,k)-m(d,k)$, for $k\\in\\{3,5\\}$, tends to infinity with $d$ and is therefore generally unbounded, which answers a question of Bollobás from 1978. For the degree/diameter problem we obtain similar bounds. A graph of maximum degree $d$ and diameter $3$ or $5$ has at most $m(d,3)-Ω(\\sqrt{d})$ or $m(d,5)-Ω(d^{3/10})$ vertices, respectively. This answers a question of Bermond and Bollobás from 1981: for every constant $c$ there are $d$ and $k$ such that every graph of maximum degree $d$ and diameter $k$ has at least $c$ fewer vertices than the Moore bound.",
+    "authors": [
+      "Frederik Garbe"
+    ],
+    "published": "2026-11-19T12:47:34Z",
+    "primary": "math.CO",
+    "comment": "23 pages, 4 figures",
+    "url": "https://arxiv.org/abs/2611.26037",
+    "pdf": "https://arxiv.org/pdf/2611.26037v1"
+  },
+  "2611.25996": {
+    "id": "2611.25996",
+    "title": "Rational maps with at most three critical values have no Herman rings",
+    "abstract": "We prove that any rational map with at most three critical values has no Herman rings. This generalizes previous results of Shishikura and Milnor on bi-critical rational maps.",
+    "authors": [
+      "Yuming Fu",
+      "Weiwei Su",
+      "Fei Yang"
+    ],
+    "published": "2026-11-19T12:16:53Z",
+    "primary": "math.DS",
+    "comment": "5 pages",
+    "url": "https://arxiv.org/abs/2611.25996",
+    "pdf": "https://arxiv.org/pdf/2611.25996v1"
+  },
+  "2611.25851": {
+    "id": "2611.25851",
+    "title": "Witnessing Molecular Conformation via Optical Cycling Centers",
+    "abstract": "Molecular conformation plays a central role in determining molecular properties and dynamics. Here, we report the production and conformer-resolved spectroscopy of cold calcium 3-hydroxyphenoxide radical (CaOC$_6$H$_4$-3-OH) in a cryogenic buffer-gas cell. Internal rotation of the hydroxyl group gives rise to distinct $anti$- and $syn$-conformers. The CaO moiety acts as an optical cycling center (OCC), enabling the $\\widetilde A - \\widetilde X$ and $\\widetilde B - \\widetilde X$ transitions of both conformers to be resolved by laser-induced fluorescence spectroscopy. Dispersed fluorescence measurements reveal diagonal vibrational branching fractions of 0.91-0.93, indicating favorable optical cycling characteristics. Following excitation of off-diagonal vibronic transitions near the calculated torsional barrier in the $\\widetilde A$ state, the emission remains predominantly conformer specific, indicating that conformational identity is largely preserved over the excited-state fluorescence lifetime. These results demonstrate that a metal-centered OCC can serve as an intrinsic, site-specific optical reporter of molecular conformation, providing a foundation for repetitive optical readout and studies of conformational dynamics at the single-molecule level.",
+    "authors": [
+      "Guo-Zhu Zhu",
+      "Taras Khvorost",
+      "Haowen Zhou",
+      "Guanming Lao",
+      "Claire E. Dickerson",
+      "Cecilia Chang",
+      "Ryan Choi",
+      "Wesley C. Campbell",
+      "Anastassia N. Alexandrova",
+      "Eric R. Hudson"
+    ],
+    "published": "2026-11-19T10:05:28Z",
+    "primary": "physics.chem-ph",
+    "comment": "8 pages, 4 figures (SI 10 pages)",
+    "url": "https://arxiv.org/abs/2611.25851",
+    "pdf": "https://arxiv.org/pdf/2611.25851v1"
+  },
+  "2611.25973": {
+    "id": "2611.25973",
+    "title": "Proof of Stanley's Conjecture on the Leading Ehrhart Coefficients of the Birkhoff Polytope",
+    "abstract": "Let $c(n,k)$ denote the coefficient of $r^{(n-1)^2-k}$ in the Ehrhart polynomial of the $n\\times n$ Birkhoff polytope. For every fixed nonnegative integer $k$, we prove that $c(n,k)/c(n,0)\\sim n^{3k}/(2^k k!)$ as $n\\to\\infty$, confirming a conjecture of Stanley.",
+    "authors": [
+      "Jiahang Liu",
+      "Jinlong Tang"
+    ],
+    "published": "2026-11-19T11:56:24Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.25973",
+    "pdf": "https://arxiv.org/pdf/2611.25973v1"
+  },
+  "2611.25944": {
+    "id": "2611.25944",
+    "title": "Alloying effects on the interface cohesion of grain boundaries in the Ni--Fe--Cr system",
+    "abstract": "Grain boundaries (GBs) in polycrystalline Ni-based alloys strongly influence mechanical strength and fracture behavior, yet the effect of alloying elements such as Fe and Cr on GB cohesion remains difficult to quantify systematically. Using density functional theory (DFT), we compute rigid-body separation (RBS) curves for six symmetric-tilt Ni GBs, extracting the work of separation $W_{\\mathrm{sep}}$ and maximum traction $σ_{\\max}$ via the universal binding energy relation (UBER). We find that substitution of Cr or Fe into the GB plane increases both quantities relative to pure Ni GBs. To overcome the size limitations of DFT, we compare several machine-learning interatomic potential (MLIP) foundation models against the DFT dataset and identify a model achieving quantitative agreement with DFT for $W_{\\mathrm{sep}}$ and $σ_{\\max}$. This MLIP enables systematic sampling of alloying configurations at finer concentration steps. We show that alloying-induced changes in GB cohesion depend on both, element type and local structures, revealing trends that are inaccessible with DFT alone. Extending the analysis to a ternary $\\mathrm{Ni}_{56}\\mathrm{Fe}_{20}\\mathrm{Cr}_{24}$ composition, inspired by the principal constituents of the widely used commercial Alloy 718, shows that the binary trends provide a useful basis for interpreting the combined effect of both substitutes, while explicit ternary calculations are required to capture their interplay quantitatively. Together, these results provide a validated workflow for quantifying the effect of alloying elements on GB cohesion in multicomponent alloys. The resulting values may serve as input for continuum-scale fracture models, paving the way toward atomistically informed multiscale modeling.",
+    "authors": [
+      "Aljoscha Felix Baumann",
+      "Reyhaneh Ghassemizadeh",
+      "Daniel F. Urban"
+    ],
+    "published": "2026-11-19T11:30:51Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.25944",
+    "pdf": "https://arxiv.org/pdf/2611.25944v1"
+  },
+  "2611.25883": {
+    "id": "2611.25883",
+    "title": "Higher-order magnetic hopfions in uniaxial chiral magnets",
+    "abstract": "Chiral magnets host hopfions, but their experimentally observed configurations are largely limited to hopfion rings, heliknotons, and their clusters. Here, we show that uniaxial anisotropy stabilizes a diverse family of knotted and linked hopfions with zero and arbitrary positive Hopf indices. We identify their stability regions in the anisotropy -- field parameter space and introduce a systematic construction based on mapping skyrmion braids into three-dimensional magnetic textures. We find that the minimum energy of stable hopfions increases approximately linearly with the Hopf index.",
+    "authors": [
+      "Vladyslav M. Kuchkin",
+      "Nikolai S. Kiselev"
+    ],
+    "published": "2026-11-19T10:38:50Z",
+    "primary": "cond-mat.mes-hall",
+    "comment": "11 pages, 6 figures",
+    "url": "https://arxiv.org/abs/2611.25883",
+    "pdf": "https://arxiv.org/pdf/2611.25883v1"
+  },
+  "2611.25911": {
+    "id": "2611.25911",
+    "title": "Large transformation strain of $\\mathrm{Ni}_{50}\\mathrm{Fe}_{23}\\mathrm{Ga}_{27}$ microwires produced by the Taylor-Ulitovsky method",
+    "abstract": "The martensitic transformation and associated tensile strain of $\\mathrm{Ni}_{50}\\mathrm{Fe}_{23}\\mathrm{Ga}_{27}$ microwires produced by the Taylor--Ulitovsky method were investigated using thermomechanical analysis, electron backscatter diffraction (EBSD), and in-situ tensile X-ray diffraction (XRD). EBSD mapping at room temperature reveals cubic austenite in a nonstrained part of the microwire and tetragonal martensite in the strained part. Both EBSD and XRD show that both austenite and martensite have $[001]$ directions approximately parallel to the wire axis. The axial transformation strain calculated from the measured lattice parameters is approximately $15.4\\%$. Thermal cycling under constant stresses of $20\\text{--}100~\\mathrm{MPa}$ reveals experimental transformation strains of $13.2\\text{--}14.0\\%$. Increasing tensile stress raises the transformation temperatures, with a stress--temperature slope of approximately $1.52~\\mathrm{MPa}/^\\circ\\mathrm{C}$, comparable to that reported for $[001]$-oriented $\\mathrm{Ni\\text{--}Fe\\text{--}Ga}$ single crystals. Overall, the observations confirm that the large macroscopic strain of up to $14.0\\%$ relates to the nearly complete martensitic transformation in the microwire.",
+    "authors": [
+      "Limpat Nulandaya",
+      "Petr Cejpek",
+      "Ladislav Straka",
+      "Oleg Heczko",
+      "Rastislav Varga"
+    ],
+    "published": "2026-11-19T10:58:08Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.25911",
+    "pdf": "https://arxiv.org/pdf/2611.25911v1"
+  },
+  "2611.25880": {
+    "id": "2611.25880",
+    "title": "Evolving Decoding Algorithms for Quantum Error Correction",
+    "abstract": "Quantum computation entails robustness engineering: a noisy quantum state is measured continuously, and a classical algorithm (the decoder) must infer corrections that reliably remove the noise, fast enough to keep up. We write several published belief-propagation (BP) decoders for quantum low-density parity-check (qLDPC) codes in a Domain-Specific Language (DSL), and search over it with grammatical evolution. Written in the language, the published decoders show their parameters in plain view, allowing us to re-parameterise BP+OSD (ordered statistics decoding) and BP+LSD (localized statistics decoding) decoders with damping, before any search, making each 17.1--41.0$\\times$ faster at a higher error rate, and BP+OSD-0 about 103 faster than the ldpc package's version tuned on the [[72,12,6]] bivariate-bicycle code. Evolution over the language finds decoders that improve the time-error front. One makes 23% fewer logical errors than BP+OSD-0 with damping at 0.64$\\times$ its time, and decoders evolved from random code are more accurate than ldpc's tuned BP+OSD-0 at 1/31 of its time or less. Frozen at one operating point, the two fastest evolved decoders generalize well across noise levels, code sizes and round counts, staying at the time-error front. Ultimately, we demonstrate that capturing expert knowledge within a DSL creates a powerful intermediate layer---one that effectively bridges human intuition and machine-driven optimization to unlock highly efficient quantum error correction.",
+    "authors": [
+      "Eduardo Dueñez",
+      "Edgar Said Hernandez Sanchez",
+      "Edgar A. Duéñez-Guzmán",
+      "Suzanne Sadedin"
+    ],
+    "published": "2026-11-19T10:36:21Z",
+    "primary": "quant-ph",
+    "comment": "5 main pages, 2 main figures. 15 total pages. Accepted in NeurIPS 2026 EvoRobust Workshop",
+    "url": "https://arxiv.org/abs/2611.25880",
+    "pdf": "https://arxiv.org/pdf/2611.25880v1"
   }
 }
