@@ -6552,5 +6552,254 @@
     "comment": "5 main pages, 2 main figures. 15 total pages. Accepted in NeurIPS 2026 EvoRobust Workshop",
     "url": "https://arxiv.org/abs/2611.25880",
     "pdf": "https://arxiv.org/pdf/2611.25880v1"
+  },
+  "2611.26447": {
+    "id": "2611.26447",
+    "title": "Scaling classical hardware for accurate real-time quantum error correction",
+    "abstract": "Fault-tolerant quantum computation requires a classical decoder fast enough to process syndrome measurements at the rate at which they are generated, and to return its decisions with low latency. This is most demanding for superconducting processors, whose fast syndrome cycles force a trade-off between decoding speed and accuracy. Decoders fast enough to keep up sacrifice accuracy, which must be compensated for with larger codes and thus additional physical qubits. Here we introduce Rapids, a streaming neural decoder that is both fast and accurate. We achieve this by co-designing the decoder with a field-programmable gate array (FPGA): the network is built from operations that map cheaply onto the device and trained in its integer arithmetic. For the distance-19 surface code, Rapids decodes each round of syndromes in under a microsecond on a single FPGA, fast enough for superconducting processors, and returns its decisions with the low latency that fault-tolerant algorithms require. Its logical error rate is 240 times lower than that of existing real-time hardware decoders. The same design extends to the color code and the [[144,12,12]] bivariate-bicycle code, on which our decoder is 16 times more accurate than the real-time Relay decoder. We further show that the decoder scales: spread over several FPGAs or hardened into custom silicon, it becomes faster, more accurate, or able to decode larger codes. Classical hardware thus becomes a further resource, alongside qubits, that can be scaled to improve fault-tolerant quantum computers.",
+    "authors": [
+      "Chenyang Jin",
+      "Susanne F. Yelin",
+      "Andi Gu"
+    ],
+    "published": "2026-11-19T17:16:21Z",
+    "primary": "quant-ph",
+    "comment": "13 pages, 5 figures, 4 Extended Data figures, 1 Extended Data table",
+    "url": "https://arxiv.org/abs/2611.26447",
+    "pdf": "https://arxiv.org/pdf/2611.26447v1"
+  },
+  "2611.26018": {
+    "id": "2611.26018",
+    "title": "Does the Workspace Do the Work? A Causal Protocol for Verifying Global-Workspace Computation in a Language Model",
+    "abstract": "Global Workspace Theory (GWT), a leading theory of consciousness, holds that information becomes conscious when it is broadcast to specialized processes that use it. Building a workspace into a network does not reveal what the trained network computes with it: a module that reports an answer may have combined a broadcast message with its own knowledge, or merely forwarded an answer computed elsewhere, and task accuracy and ablation cannot tell these apart. We introduce a causal protocol that identifies who computes when modules communicate. Its central test transplants a message from another input, chosen so that ignoring, relaying and recombining it predict three different answers. On networks built to relay or to recombine, the test assigns the right computation in every case. Among trained workspace models it finds all three outcomes: one leaves its broadcast nearly unused, and of two models that differ only in their training data, one relays and the other recombines. In AFGW, a language model whose modules communicate only through a learned workspace, a transplanted message yields the answer that recombination predicts in 97% of cases, and its content acts by redirecting what the receiver retrieves from its own memory. The tests carry over to other communication designs and to a known interface of a pretrained Transformer, turning GWT's central claim into a testable property of trained models.",
+    "authors": [
+      "Diaoxuan He",
+      "Linqian Wu"
+    ],
+    "published": "2026-11-19T12:33:35Z",
+    "primary": "cs.LG",
+    "comment": "39 pages, 8 figures",
+    "url": "https://arxiv.org/abs/2611.26018",
+    "pdf": "https://arxiv.org/pdf/2611.26018v1"
+  },
+  "2611.26213": {
+    "id": "2611.26213",
+    "title": "Unusual increase in electrical and thermal conductivity of severely deformed CrMnFeCoNi high-entropy alloy: Roles of disordering and nanostructuring in electron and phonon transport",
+    "abstract": "This work investigates how defect engineering and nanostructuring via severe plastic deformation influence electrical and thermal transport in the high-entropy alloy CrMnFeCoNi. High-pressure torsion (HPT) for up to N = 4 turns produces a hierarchical defect structure, including deformation twins at low strains, dislocations and Lomer-Cottrell locks at intermediate strains, and a high fraction of high-angle grain boundaries at large strains. While hardness naturally increases and saturates at ~520 Hv, both electrical and thermal conductivity exhibit an unusual increase upon HPT processing (from 0.953 MS m-1 and 10.3 W m-1 K-1 after homogenization to 1.003 +- 0.005 MS m-1 and 14.4 W m-1 K-1 after N = 4). Analysis based on the Wiedemann-Franz law indicates a modest increase in electron transport (~5%) and a significant increase in phonon transport (~100%) after HPT processing. The phonon mean free path remains small on the order of 0.6-1.1 nm, and comparison with the Cahill-Pohl model shows that heat transport occurs near the minimum thermal conductivity limit, where vibrational modes are strongly scattered. This suggests that the enhancement in thermal transport is not governed by conventional defect scattering, but it is hypothesized that modifications in atomic-scale disorder, such as deformation-induced short-range ordering, are responsible for this unusual behavior. Specific heat capacity increases after HPT, consistent with stored defect energy. The linear thermal expansion exhibits a non-monotonic behavior, decreasing initially due to internal stresses and relaxation effects, and increasing at higher strains due to grain boundary-induced anharmonicity. These findings highlight the complex interplay between defects, atomic-scale disorder, and nanostructure in governing the electrical and thermal properties of severely deformed high-entropy alloys via electron and phonon scattering.",
+    "authors": [
+      "Jacqueline Hidalgo-Jiménez",
+      "Payam Edalati",
+      "Md Amirul Islam",
+      "Makoto Arita",
+      "Dmitry Chernyshov",
+      "Bidyut Baran Saha",
+      "Kaveh Edalati"
+    ],
+    "published": "2026-11-19T14:52:10Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.26213",
+    "pdf": "https://arxiv.org/pdf/2611.26213v1"
+  },
+  "2611.26620": {
+    "id": "2611.26620",
+    "title": "Little Red Dots from Primordial Vacuum Bubbles",
+    "abstract": "Quantum tunneling transverse to the inflaton trajectory can produce $10^6$--$10^8M_\\odot$ primordial black holes at the abundance of JWST's little red dots, without the enhanced curvature perturbations excluded by limits on CMB spectral distortions. Rare vacuum bubbles nucleate during a brief interval of inflation and later form black holes, with adjustable mass and abundance and a narrow mass spectrum of percent-level width. The leading constraint, from accretion, is satisfied for a population matching the bright little red dots even if all the emitted radiation escapes as hard X-rays.",
+    "authors": [
+      "Miguel Barroso Varela",
+      "Katherine Freese",
+      "Matthew Kleban",
+      "Cameron Norton",
+      "Evangelos I. Sfakianakis"
+    ],
+    "published": "2026-11-19T18:58:36Z",
+    "primary": "astro-ph.CO",
+    "comment": "6+9 pages, 2 figures",
+    "url": "https://arxiv.org/abs/2611.26620",
+    "pdf": "https://arxiv.org/pdf/2611.26620v1"
+  },
+  "2611.26176": {
+    "id": "2611.26176",
+    "title": "Dual Action of Electrolyte Additives in High-Voltage Li-Ion Cells",
+    "abstract": "Electrolyte additives have outsized effects on cell performance, but determining their mechanism of action can be difficult. Here, we evaluate whether simple electrochemical tests can reveal which electrode (cathode, anode or both) is targeted by specific additives. Our experiments quantified the rates of reductive and oxidative side-reactions in NMC532 vs. graphite cells containing 12 different electrolyte formulations. We found that gains in interphasial stability were highly correlated, with successful additives decreasing both types of side-reactions by similar magnitude. This dual action could be indicative of the role of crosstalk on cell degradation, as soluble species formed on one electrode can decompose at the other end of the cell. Although electrochemical tests are insufficient for understanding mechanisms of improvement, they can reveal interesting effects that complement other characterization tools.",
+    "authors": [
+      "Aidin I. OBrien",
+      "Bingning Wang",
+      "Stephen E. Trask",
+      "Adam Tornheim",
+      "Chen Liao",
+      "Marco-Tulio F. Rodrigues"
+    ],
+    "published": "2026-11-19T14:27:35Z",
+    "primary": "physics.chem-ph",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.26176",
+    "pdf": "https://arxiv.org/pdf/2611.26176v1"
+  },
+  "2611.26608": {
+    "id": "2611.26608",
+    "title": "Local velocimetry for atomic superfluids: from Riemann rarefaction waves to quantized vortices",
+    "abstract": "We demonstrate local velocimetry for atomic superfluids in two dimensions (2D). Using matter-wave interferometry based on Raman--Bragg beam splitters, we map the local gradient of the phase of the superfluid's wavefunction onto displacement of the interference fringes and reconstruct the 2D velocity field. We illustrate the capabilities of this technique by applying it to two canonical problems. First, we directly observe the self-similar evolution of the velocity field in 1D Riemann rarefaction flows. Second, we map out the full 2D velocity field around quantized vortices, explicitly demonstrating the quantization of velocity circulation.",
+    "authors": [
+      "Yansheng Zhang",
+      "Yi Jiang",
+      "Feiyang Wang",
+      "Louis Depaepe",
+      "J. Q. Matthew Chia",
+      "Christoph Eigen",
+      "Gehrig Carlse",
+      "Zoran Hadzibabic"
+    ],
+    "published": "2026-11-19T18:56:37Z",
+    "primary": "cond-mat.quant-gas",
+    "comment": "11 pages, 8 figures",
+    "url": "https://arxiv.org/abs/2611.26608",
+    "pdf": "https://arxiv.org/pdf/2611.26608v1"
+  },
+  "2611.26539": {
+    "id": "2611.26539",
+    "title": "Large $k$-cross-free families",
+    "abstract": "Two subsets $A,B$ of a finite set $X$ are crossing if $A\\cap B$, $A\\setminus B$, $B\\setminus A$, and $X\\setminus(A\\cup B)$ are all nonempty. A family is $k$-cross-free if it contains no $k$ pairwise crossing members. We construct such families on $n$ elements of size $(\\frac{1}{3}+o(1))kn\\log k$, where the asymptotic is taken as $k$ tends to infinity and is uniform over all integers $n\\ge k$. This disproves the uniform $O(kn)$ bound conjectured by Karzanov and Lomonosov. Our construction consists of cyclic intervals with at most one point deleted, together with their complements. We also prove an $O(kn\\log k)$ upper bound for $k$-cross-free families closed under all cyclic shifts of a fixed cyclic ordering of the ground set.",
+    "authors": [
+      "Jack H. Koolen",
+      "Anyuan Tian"
+    ],
+    "published": "2026-11-19T18:17:31Z",
+    "primary": "math.CO",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.26539",
+    "pdf": "https://arxiv.org/pdf/2611.26539v1"
+  },
+  "2611.25830": {
+    "id": "2611.25830",
+    "title": "Regime-dependent reconstruction of structural connectivity: an in silico study of spatially constrained modular neuronal networks",
+    "abstract": "Inferring structural connectivity from neuronal activity is a major challenge in neuroscience, yet the conditions under which inferred interactions faithfully reflect anatomical connections remain unclear. Here, we investigate in silico how spatial constraints in a neuronal network and its dynamical regime jointly shape structural recoverability. We construct modular networks with varying average axonal lengths and simulate spontaneous activity using the Izhikevich model with synaptic depression across a broad range of excitatory strengths and background noise levels. Using Generalized Transfer Entropy, we infer effective connectivity and compare it with the underlying structural ground-truth at the levels of individual connections and global topology. We observe that the richness in the repertoire of activity patterns is highest in an intermediate regime between globally synchronized and noise-dominated activity, reflecting a balance between global excitation and stochasticity. Optimal structural reconstruction generally occurs under these same conditions, although this correspondence depends on network architecture and is weaker in highly modular networks. Together, these results show that structural recoverability depends jointly on network organization and dynamical regime. More broadly, our findings highlight the risks of treating inferred effective connectivity as a direct surrogate for structural connectivity.",
+    "authors": [
+      "Laia Barjuan",
+      "Hideaki Yamamoto",
+      "M. Ángeles Serrano",
+      "Jordi Soriano"
+    ],
+    "published": "2026-11-19T09:46:22Z",
+    "primary": "q-bio.NC",
+    "comment": "16 pages, 7 figures",
+    "url": "https://arxiv.org/abs/2611.25830",
+    "pdf": "https://arxiv.org/pdf/2611.25830v1"
+  },
+  "2611.25525": {
+    "id": "2611.25525",
+    "title": "Ab-initio cryo-EM reconstruction from moments of denoised images",
+    "abstract": "In single-particle cryo-electron microscopy (cryo-EM), high-resolution three-dimensional (3-D) refinement requires a reliable ab-initio model to converge to the correct structure. Both refinement and existing ab-initio methods estimate the orientations of the particle images together with the 3-D structure, which can be slow for large and noisy datasets. We present a method of moments approach that bypasses orientation estimation and recovers a 3-D ab-initio model from the first three moments of denoised images. On experimental datasets, our method produces ab-initio models rapidly and successfully initializes high-resolution refinement. This is the first successful application of method-of-moments-based ab-initio modeling to experimental datasets without assuming a uniform distribution of orientations.",
+    "authors": [
+      "Yunpeng Shi",
+      "Amit Singer",
+      "Yuguan Wang",
+      "Andy Zhang"
+    ],
+    "published": "2026-11-19T05:26:45Z",
+    "primary": "q-bio.QM",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.25525",
+    "pdf": "https://arxiv.org/pdf/2611.25525v1"
+  },
+  "2611.26588": {
+    "id": "2611.26588",
+    "title": "Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards",
+    "abstract": "A passing UVM regression shows the design agrees with the reference model on what the scoreboard checks, not that it meets the specification. Bugs that pass every test yet violate the specification, termed scoreboard escapes, survive mature testbenches. We present Verify the Verifier, to our knowledge the first framework whose LLM-based Anomaly Cross-Checker examines a passing regression's traces against the specification. Of 564 bugs inserted into four OpenTitan IPs, 68 are candidate scoreboard escapes: non-equivalent, exercised by the tests, yet passing. The framework confirmed 41 as scoreboard escapes with assertions failing on the buggy design and proven on the original.",
+    "authors": [
+      "Ana E. Sanchez Villalobos",
+      "Michael D. Quinn",
+      "Aakash Tyagi",
+      "Minh D. Luu",
+      "David Kebo Houngninou"
+    ],
+    "published": "2026-11-19T18:45:54Z",
+    "primary": "cs.SE",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.26588",
+    "pdf": "https://arxiv.org/pdf/2611.26588v1"
+  },
+  "2611.26604": {
+    "id": "2611.26604",
+    "title": "Scalable Simulation of Strongly Correlated Fermions with Neural Gaussian Tensor Networks",
+    "abstract": "Accurate simulations of strongly correlated electrons remain a central challenge in computational physics. We introduce neural-network Gaussian projected entangled-pair states (NN-GPEPS), which exploit the locally-entangled subspace of Gaussian states to give an architecture more compatible with modern neural networks and an exact contraction cost of $O(N^{3/2})$ on two-dimensional lattices. For the Hubbard model at $U/t=8$ and $1/8$ hole doping, we obtain state-of-the-art variational energies in large lattices of up to 1024 sites. These results demonstrate an accurate approach to strongly correlated fermions by connecting neural networks with Gaussian tensor networks.",
+    "authors": [
+      "Runze Chi",
+      "Ao Chen",
+      "Garnet Kin-Lic Chan"
+    ],
+    "published": "2026-11-19T18:55:44Z",
+    "primary": "cond-mat.str-el",
+    "comment": "16 pages, 10 figures",
+    "url": "https://arxiv.org/abs/2611.26604",
+    "pdf": "https://arxiv.org/pdf/2611.26604v1"
+  },
+  "2611.26556": {
+    "id": "2611.26556",
+    "title": "Edge cuts of bounded degree in sparse graphs",
+    "abstract": "Every simple graph on $n \\ge 2$ vertices with at most $2n-2$ edges can be split into two nonempty parts with at most two crossing edges at each vertex. For $d \\ge 3$ we bound the minimum number of edges in an n-vertex graph without a d-cut.",
+    "authors": [
+      "Anna Neopryatnaya",
+      "Vladimir Verdenko",
+      "Vsevolod Voronov"
+    ],
+    "published": "2026-11-19T18:24:39Z",
+    "primary": "math.CO",
+    "comment": "5 pages",
+    "url": "https://arxiv.org/abs/2611.26556",
+    "pdf": "https://arxiv.org/pdf/2611.26556v1"
+  },
+  "2611.26555": {
+    "id": "2611.26555",
+    "title": "Multiplicative Sidon basis",
+    "abstract": "For a $h \\ge 2$ integer a sequence of positive integers $A$ is called asymptotic basis of order $h$ if every sufficiently large positive integer $n$ can be written as a sum of $h$ elements of $A$. We say a sequence of positive integers $A$ is a multiplicative Sidon sequence if all the products of two elements of the sequence $A$ are distinct. In this paper we prove the existence of a multiplicative Sidon set which is an asymptotic basis of order 2 by using the probabilistic method.",
+    "authors": [
+      "Sándor Z. Kiss",
+      "Csaba Sándor"
+    ],
+    "published": "2026-11-19T18:24:14Z",
+    "primary": "math.NT",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.26555",
+    "pdf": "https://arxiv.org/pdf/2611.26555v1"
+  },
+  "2611.26349": {
+    "id": "2611.26349",
+    "title": "Perfumer: A Large Language Model-based Agentic Framework Accelerating Structural Relaxation and Electronic Band Prediction for First-Principle Calculation",
+    "abstract": "First-principles structural relaxation and band calculations require substantial computation and expertise. Here we present Perfumer, a large language model-based agentic framework that couples Quantum ESPRESSO with two predictive models. Across tested structures, pre-relaxation with Perfumer-relax model followed by QE refinement yielded a 2.75-fold overall speedup over QE alone. Perfumer-band model combines a periodic graph neural network with a latent Hermitian spectral head returns 12 band energies at any requested wavevector, preserving reciprocal lattice periodicity and time-reversal symmetry without constructing Hamiltonian. Trained on 125,153 self-curated band structures, Perfumer-band model reaches a median per-material mean absolute error of 0.157 eV on 2,607 test materials, including lanthanide, actinide and magnetic compounds, from held-out composition families spanning 85 elements, taking about 97 ms per material on two consumer CPU cores. The agent turns natural-language requests into relaxation-to-band workflows, from a single uploaded structure to automatically constructed new candidates and returns predicted properties.",
+    "authors": [
+      "Zhiwei Li",
+      "Yuhao Zhou",
+      "Yikai Yang",
+      "Haonan Wang",
+      "Qing Ye",
+      "Jiancheng Lv",
+      "Kazunari Matsuda"
+    ],
+    "published": "2026-11-19T16:23:33Z",
+    "primary": "cond-mat.mtrl-sci",
+    "comment": "33 pages",
+    "url": "https://arxiv.org/abs/2611.26349",
+    "pdf": "https://arxiv.org/pdf/2611.26349v1"
+  },
+  "2611.26517": {
+    "id": "2611.26517",
+    "title": "From Seed to BLOOM: Autonomously Growing a Better Out-of-Order Core",
+    "abstract": "Improving microprocessor performance while meeting ASIC implementation constraints like area and frequency is a complex and labor-intensive task that requires expertise across computer architecture, hardware design, and performance analysis and profiling. While large teams in industry can afford the engineering resources to target this problem across performance modeling, RTL design, and ASIC implementations, small teams of researchers and engineers cannot take on this huge engineering burden while keeping up with the pace of advancement in processor microarchitecture. Recent advancements in large language model (LLM) agents present a promising substrate to accelerate this traditionally human-intensive process. In this work, we build and evaluate MiracleGro, an agentic AI-based system that, without human intervention, analyzes cycle-level RTL behavior and synthesis results, identifies performance bottlenecks, and translates architectural ideas into RTL implementation in a leading open-source out-of-order superscalar application core, the Berkeley Out-of-Order Machine (BOOM). Taking into account cycle-exact performance, area, and critical path, MiracleGro automatically produces improved BOOM designs that drastically increase the human-optimized BOOM's performance on substantial workload suites such as SPEC CPU2017 with full reference inputs. MiracleGro achieves an 85% IPC speedup and a frequency improvement of 27% in SkyWater 130nm, resulting in a 2.34x wall-clock time speedup on the full SPEC CPU2017 intspeed benchmarks (30 trillion instructions). This result demonstrates the enormous opportunity to harness frontier models to improve state-of-the-art RTL-driven platforms for implementation-grounded microarchitecture research across hardware designs.",
+    "authors": [
+      "Angela Cui",
+      "Ferran Hermida-Rivera",
+      "Jack Toubes",
+      "Jim Fang",
+      "Chengyi Lux Zhang",
+      "Borivoje Nikolić",
+      "Christopher W. Fletcher",
+      "Sagar Karandikar"
+    ],
+    "published": "2026-11-19T17:59:02Z",
+    "primary": "cs.AR",
+    "comment": "",
+    "url": "https://arxiv.org/abs/2611.26517",
+    "pdf": "https://arxiv.org/pdf/2611.26517v1"
   }
 }
